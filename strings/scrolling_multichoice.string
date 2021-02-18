@@ -3,33 +3,69 @@
 #ifdef SCROLLING_MULTICHOICE
 
 #org @sExampleText_1
-Example 1
+Get Pok\emon
 
 #org @sExampleText_2
-Example 2
+Get Item
 
 #org @sExampleText_3
-Example 3
+Warp
 
 #org @sExampleText_4
-Example 4
+Play Song
 
 #org @sExampleText_5
-Example 5
+Set Weather
 
 #org @sExampleText_6
-Example 6
+Wild Pok\emon
 
 #org @sExampleText_7
-Example 7
+Trainer Battle
 
 #org @sExampleText_8
-Example 8
+Metal Coat
 
 #org @sExampleText_9
-Example 9
+King's Rock
 
 #org @sExampleText_10
-Example 10
+Spell Tag
+
+#org @sExampleText_11
+Twisted Spoon
+
+#org @sExampleText_12
+Hard Stone
+
+#org @sExampleText_13
+Prism Scale
+
+#org @sExampleText_14
+Protector
+
+#org @sExampleText_15
+Magmarizer
+
+#org @sExampleText_16
+Electrizer
+
+#org @sExampleText_17
+Razor Fang
+
+#org @sExampleText_18
+Razor Claw
+
+#org @sExampleText_19
+Reaper Cloth
+
+#org @sExampleText_20
+Dragon Scale
+
+#org @sExampleText_21
+Deep Sea Fang
+
+#org @sExampleText_22
+Deep Sea Tooth
 
 #endif

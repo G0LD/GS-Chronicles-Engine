@@ -123,7 +123,7 @@ static const u8* const sMetatileInteractionScripts[] =
 	[MB_TRASH_BIN] = (void*) 0x81A76A8,
 	[MB_CUP] = (void*) 0x81A76B1,
 	[MB_BLINKING_LIGHTS] = (void*) 0x81A76CC,
-	[MB_TOOLS] = (void*) 0x81A76D5,
+	[MB_TOOLS] = (void*) 0x8F1B000,
 	[MB_IMPRESSIVE_MACHINE] = (void*) 0x81A7633,
 	[MB_VIDEO_GAME] = (void*) 0x81A7621,
 	[MB_BURGLARY] = (void*) 0x81A7645,
@@ -1550,7 +1550,7 @@ static const u8* TryUseFlashInDarkCave(void)
 
 	if (gSpecialVar_LastResult && HasBadgeToUseFlash())
 	{
-		if ((Var8004 = gFieldEffectArguments[0] = PartyHasMonWithFieldMovePotential(MOVE_FLASH, ITEM_TM70_FLASH, 0)) < PARTY_SIZE)
+		if ((Var8004 = gFieldEffectArguments[0] = PartyHasMonWithFieldMovePotential(MOVE_FLASH, ITEM_BRIGHTRIDE, 0)) < PARTY_SIZE)
 			return EventScript_UseFlash;
 	}
 
@@ -2333,7 +2333,7 @@ const u8* GetInteractedWaterScript(unusedArg u32 unused1, u8 metatileBehavior, u
 		if (HasBadgeToUseSurf())
 		{
 			#ifdef ONLY_CHECK_ITEM_FOR_HM_USAGE
-			item = ITEM_HM03_SURF;
+			item = ITEM_WAVERIDE;
 			#endif
 
 			u8 partyId = PartyHasMonWithFieldMovePotential(MOVE_SURF, item, SHOULDNT_BE_SURFING);
@@ -2357,7 +2357,7 @@ const u8* GetInteractedWaterScript(unusedArg u32 unused1, u8 metatileBehavior, u
 			if (IsPlayerSurfingNorthOrSouth())
 			{
 				#ifdef ONLY_CHECK_ITEM_FOR_HM_USAGE
-				item = ITEM_HM07_WATERFALL;
+				item = ITEM_DEEPSEARIDE;
 				#endif
 
 				u8 partyId = PartyHasMonWithFieldMovePotential(MOVE_WATERFALL, item, SHOULD_BE_SURFING);
@@ -2380,7 +2380,7 @@ const u8* GetInteractedWaterScript(unusedArg u32 unused1, u8 metatileBehavior, u
 		&& (!gFollowerState.inProgress || gFollowerState.flags & FOLLOWER_FLAG_CAN_ROCK_CLIMB))
 		{
 			#ifdef ONLY_CHECK_ITEM_FOR_HM_USAGE
-			item = ITEM_HM08_ROCK_CLIMB;
+			item = ITEM_CLAMBERRIDE;
 			#endif
 
 			u8 partyId = PartyHasMonWithFieldMovePotential(MOVE_ROCKCLIMB, item, 0);
@@ -2415,7 +2415,7 @@ bool8 TrySetupDiveDownScript(void)
 	{
 		u16 item = ITEM_NONE;
 		#ifdef ONLY_CHECK_ITEM_FOR_HM_USAGE
-		item = ITEM_HM05_DIVE;
+		item = ITEM_DEEPSEARIDE;
 		#endif
 
 		u8 partyId = PartyHasMonWithFieldMovePotential(MOVE_DIVE, item, SHOULD_BE_SURFING);
@@ -2442,7 +2442,7 @@ bool8 TrySetupDiveEmergeScript(void)
 	{
 		u16 item = ITEM_NONE;
 		#ifdef ONLY_CHECK_ITEM_FOR_HM_USAGE
-		item = ITEM_HM05_DIVE;
+		item = ITEM_DEEPSEARIDE;
 		#endif
 
 		u8 partyId = PartyHasMonWithFieldMovePotential(MOVE_DIVE, item, 0);

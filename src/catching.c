@@ -526,13 +526,15 @@ u8 GiveMonToPlayer(struct Pokemon* mon) //Hook in
 	SetMonData(mon, MON_DATA_OT_ID, gSaveBlock2->playerTrainerId);
 
 	if (gMain.inBattle
-	&&  GetPocketByItemId(gLastUsedItem) == POCKET_POKE_BALLS)
-	{
-		if (ItemId_GetType(gLastUsedItem) == BALL_TYPE_HEAL_BALL)
-			HealMon(mon);
-		else if (ItemId_GetType(gLastUsedItem) == BALL_TYPE_FRIEND_BALL)
-			mon->friendship = 200;
-	}
+    &&  GetPocketByItemId(gLastUsedItem) == POCKET_POKE_BALLS)
+    {
+        if (ItemId_GetType(gLastUsedItem) == BALL_TYPE_HEAL_BALL)
+            HealMon(mon);
+        else if (ItemId_GetType(gLastUsedItem) == BALL_TYPE_FRIEND_BALL)
+            mon->friendship = 200;
+        else if (ItemId_GetType(gLastUsedItem) == BALL_TYPE_DREAM_BALL) //added this here
+            mon->hiddenAbility = TRUE;
+    }
 
 	if (gMain.inBattle && IsRaidBattle() && FlagGet(FLAG_BATTLE_FACILITY))
 		SetMonData(mon, MON_DATA_HELD_ITEM, &gNewBS->dynamaxData.backupRaidMonItem);

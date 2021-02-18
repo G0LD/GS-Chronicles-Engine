@@ -1436,7 +1436,7 @@ u16 GetMUS_ForBattle(void)
 		return BGM_BATTLE_BORRIUS_WILD;
 	#else
 		if (IsRaidBattle())
-			return BGM_BATTLE_LEGENDARY_BIRDS;
+			return BGM_BATTLE_LUGIA;
 
 		#ifdef VAR_WILD_BGM_OVERRIDE
 			song = VarGet(VAR_WILD_BGM_OVERRIDE);

@@ -494,9 +494,9 @@ static void SpriteCB_MegaIndicator(struct Sprite* self)
 		s16 shift = 64; // Halfway point for OAM
 
 		if (SIDE(INDICATOR_BANK) == B_SIDE_OPPONENT)
-			shift += 18;
+			shift += 48;
 		else
-			shift += 26;
+			shift += 50;
 
 		// Convert the level to a string to get how long it is
 		u8 buf[10];

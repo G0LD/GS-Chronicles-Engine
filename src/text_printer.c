@@ -41,6 +41,6 @@ bool32 RunTextPrintersForInstantText(void) {
             }
         }
     }
-    
+
     return TRUE;
 }

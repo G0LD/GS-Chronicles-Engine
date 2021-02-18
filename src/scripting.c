@@ -3050,6 +3050,18 @@ extern const u8 sExampleText_7[];
 extern const u8 sExampleText_8[];
 extern const u8 sExampleText_9[];
 extern const u8 sExampleText_10[];
+extern const u8 sExampleText_11[];
+extern const u8 sExampleText_12[];
+extern const u8 sExampleText_13[];
+extern const u8 sExampleText_14[];
+extern const u8 sExampleText_15[];
+extern const u8 sExampleText_16[];
+extern const u8 sExampleText_17[];
+extern const u8 sExampleText_18[];
+extern const u8 sExampleText_19[];
+extern const u8 sExampleText_20[];
+extern const u8 sExampleText_21[];
+extern const u8 sExampleText_22[];
 
 extern const u8 sText_1[];
 extern const u8 sText_2[];
@@ -3077,23 +3089,25 @@ static const u8* sMultichoiceSet1[] =
 	sExampleText_5,
 	sExampleText_6,
 	sExampleText_7,
-	sExampleText_8,
-	sExampleText_9,
-	sExampleText_10,
 };
 
 static const u8* sMultichoiceSet2[] =
 {
-	sExampleText_1,
-	sExampleText_2,
-	sExampleText_3,
-	sExampleText_4,
-	sExampleText_5,
-	sExampleText_6,
-	sExampleText_7,
 	sExampleText_8,
 	sExampleText_9,
 	sExampleText_10,
+	sExampleText_11,
+	sExampleText_12,
+	sExampleText_13,
+	sExampleText_14,
+	sExampleText_15,
+	sExampleText_16,
+	sExampleText_17,
+	sExampleText_18,
+	sExampleText_19,
+	sExampleText_20,
+	sExampleText_21,
+	sExampleText_22,
 };
 
 // Multichoice Lists

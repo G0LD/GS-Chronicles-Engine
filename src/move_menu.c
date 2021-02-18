@@ -70,12 +70,12 @@ static const struct Coords16 sTypeIconPositions[][/*IS_SINGLE_BATTLE*/2] =
 #ifndef UNBOUND //MODIFY THIS
 	[B_POSITION_PLAYER_LEFT] =
 	{
-		[TRUE] = {221, 86}, 	//Single Battle
+		[TRUE] = {116, 97}, 	//Single Battle
 		[FALSE] = {144, 70},	//Double Battle
 	},
 	[B_POSITION_OPPONENT_LEFT] =
 	{
-		[TRUE] = {20, 26}, 		//Single Battle
+		[TRUE] = {126, 35}, 		//Single Battle
 		[FALSE] = {97, 14},		//Double Battle
 	},
 	[B_POSITION_PLAYER_RIGHT] =
@@ -1896,21 +1896,27 @@ void HandleInputChooseAction(void)
 		}
 	}
 	else if (gMain.newKeys & B_BUTTON)
-	{
-		if ((IS_DOUBLE_BATTLE)
-		 && GetBattlerPosition(gActiveBattler) == B_POSITION_PLAYER_RIGHT
-		 && !(gAbsentBattlerFlags & gBitTable[GetBattlerAtPosition(B_POSITION_PLAYER_LEFT)])
-		 && !(gBattleTypeFlags & (BATTLE_TYPE_MULTI | BATTLE_TYPE_INGAME_PARTNER)))
-		{
-		CANCEL_PARTNER:
-			if (gBattleBufferA[gActiveBattler][1] == ACTION_USE_ITEM)
-				return;
+    {
+        if ((IS_DOUBLE_BATTLE)
+         && GetBattlerPosition(gActiveBattler) == B_POSITION_PLAYER_RIGHT
+         && !(gAbsentBattlerFlags & gBitTable[GetBattlerAtPosition(B_POSITION_PLAYER_LEFT)])
+         && !(gBattleTypeFlags & (BATTLE_TYPE_MULTI | BATTLE_TYPE_INGAME_PARTNER)))
+        {
+        CANCEL_PARTNER:
+            if (gBattleBufferA[gActiveBattler][1] == ACTION_USE_ITEM)
+                return;
 
-			PlaySE(SE_SELECT);
-			EmitTwoReturnValues(1, ACTION_CANCEL_PARTNER, 0);
-			PlayerBufferExecCompleted();
-		}
-	}
+            PlaySE(SE_SELECT);
+            EmitTwoReturnValues(1, ACTION_CANCEL_PARTNER, 0);
+            PlayerBufferExecCompleted();
+        }
+        else{
+            PlaySE(SE_SELECT);
+            ActionSelectionDestroyCursorAt(gActionSelectionCursor[gActiveBattler]);
+            gActionSelectionCursor[gActiveBattler] = 3;
+            ActionSelectionCreateCursorAt(gActionSelectionCursor[gActiveBattler], 0);
+        }
+    }
 	else if (gMain.newKeys & START_BUTTON)
 	{
 		SwapHpBarsWithHpText();
@@ -1972,8 +1978,8 @@ static void TryLoadTypeIcons(void)
 			for (u8 typeNum = 0; typeNum < 2; ++typeNum) //Load each type
 			{
 				u8 spriteId;
-				s16 x = sTypeIconPositions[position][IS_SINGLE_BATTLE].x;
-				s16 y = sTypeIconPositions[position][IS_SINGLE_BATTLE].y + (11 * typeNum); //2nd type is 13px below
+				s16 x = sTypeIconPositions[position][IS_SINGLE_BATTLE].x + (10 * typeNum);
+				s16 y = sTypeIconPositions[position][IS_SINGLE_BATTLE].y + (7 * typeNum); //2nd type is 13px below
 
 				u8* type1Ptr;
 				if (gStatuses3[GetBattlerAtPosition(position)] & STATUS3_ILLUSION && !(gBattleTypeFlags & BATTLE_TYPE_CAMOMONS))
@@ -2059,11 +2065,11 @@ static void SpriteCB_CamomonsTypeIcon(struct Sprite* sprite)
 			switch (position) {
 				case B_POSITION_PLAYER_LEFT:
 				case B_POSITION_PLAYER_RIGHT:
-					sprite->pos1.x += 1;
+					sprite->pos1.x += 2;
 					break;
 				case B_POSITION_OPPONENT_LEFT:
 				case B_POSITION_OPPONENT_RIGHT:
-					sprite->pos1.x -= 1;
+					sprite->pos1.x -= 2;
 					break;
 			}
 		}
@@ -2077,11 +2083,11 @@ static void SpriteCB_CamomonsTypeIcon(struct Sprite* sprite)
 		switch (position) {
 			case B_POSITION_PLAYER_LEFT:
 				if (sprite->pos1.x < sTypeIconPositions[position][TRUE].x + 10)
-					sprite->pos1.x += 1;
+					sprite->pos1.x += 2;
 				break;
 			case B_POSITION_OPPONENT_LEFT:
 				if (sprite->pos1.x > sTypeIconPositions[position][TRUE].x - 10)
-					sprite->pos1.x -= 1;
+					sprite->pos1.x -= 2;
 				break;
 		}
 	}
@@ -2091,12 +2097,12 @@ static void SpriteCB_CamomonsTypeIcon(struct Sprite* sprite)
 			case B_POSITION_PLAYER_LEFT:
 			case B_POSITION_PLAYER_RIGHT:
 				if (sprite->pos1.x > sTypeIconPositions[position][FALSE].x - 10)
-					sprite->pos1.x -= 1;
+					sprite->pos1.x -= 2;
 				break;
 			case B_POSITION_OPPONENT_LEFT:
 			case B_POSITION_OPPONENT_RIGHT:
 				if (sprite->pos1.x < sTypeIconPositions[position][FALSE].x + 10)
-					sprite->pos1.x += 1;
+					sprite->pos1.x += 2;
 				break;
 		}
 	}

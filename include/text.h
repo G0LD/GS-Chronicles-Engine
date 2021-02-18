@@ -287,7 +287,6 @@ extern u8 gStringVar1[];
 extern u8 gStringVar2[];
 extern u8 gStringVar3[];
 extern u8 gStringVar4[];
-
 void SetFontsPointer(const struct FontInfo *fonts);
 void DeactivateAllTextPrinters(void);
 bool16 AddTextPrinter(struct TextSubPrinter *textSubPrinter, u8 speed, void (*callback)(struct TextSubPrinter *, u16));
@@ -305,7 +304,6 @@ void DecompressGlyphTile(const u16 *src, u16 *dest);
 u8 GetLastTextColor(u8 colorType);
 void CopyGlyphToWindow(struct TextPrinter *x);
 void ClearTextSpan(struct TextPrinter *textPrinter, u32 width);
-
 u16 Font0Func(struct TextPrinter *textPrinter);
 u16 Font1Func(struct TextPrinter *textPrinter);
 u16 Font2Func(struct TextPrinter *textPrinter);
@@ -314,7 +312,6 @@ u16 Font4Func(struct TextPrinter *textPrinter);
 u16 Font5Func(struct TextPrinter *textPrinter);
 u16 Font7Func(struct TextPrinter *textPrinter);
 u16 Font8Func(struct TextPrinter *textPrinter);
-
 void TextPrinterInitDownArrowCounters(struct TextPrinter *textPrinter);
 void TextPrinterDrawDownArrow(struct TextPrinter *textPrinter);
 void TextPrinterClearDownArrow(struct TextPrinter *textPrinter);

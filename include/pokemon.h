@@ -12,7 +12,7 @@
 #define MON_DATA_OT_NAME            7
 #define MON_DATA_MARKINGS           8
 #define MON_DATA_CHECKSUM           9
-#define MON_DATA_10                10
+#define MON_DATA_ENCRYPT_SEPARATOR 10
 #define MON_DATA_SPECIES           11
 #define MON_DATA_HELD_ITEM         12
 #define MON_DATA_MOVE1             13
@@ -608,6 +608,7 @@ enum EvolutionMethods
 	EVO_LEVEL_DAY,		// above given level during day
 	EVO_HOLD_ITEM_NIGHT,	// level up holding item at night (eg. sneasel)
 	EVO_HOLD_ITEM_DAY,	// level up while holding a specific item during the day (eg. happiny)
+	EVO_HOLD_ITEM,	// level up while holding a specific item.
 	EVO_MOVE,	// knows a given move
 	EVO_OTHER_PARTY_MON,	//another poke in the party, arg is a specific species
 	EVO_LEVEL_SPECIFIC_TIME_RANGE, // above given level with a range (unknown is [start][end]. eg lycanroc -> 1700-1800 hrs -> 0x1112)

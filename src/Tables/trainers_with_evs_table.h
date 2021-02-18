@@ -131,6 +131,7 @@ const struct TrainersWithEvs gTrainersWithEvsSpreads[] =
 		.ivs = 31,
 		.hpEv = 252,
 		.spDefEv = 252,
+		.defEv = 6,
 		.ball = TRAINER_EV_CLASS_BALL,
 		.ability = Ability_Random_1_2,
 	},
@@ -437,6 +438,7 @@ const struct TrainersWithEvs gTrainersWithEvsSpreads[] =
 		.ivs = 31,
 		.hpEv = 252,
 		.spDefEv = 252,
+		.defEv = 6,
 		.ball = TRAINER_EV_CLASS_BALL,
 		.ability = Ability_1,
 	},
@@ -1231,6 +1233,77 @@ const struct TrainersWithEvs gTrainersWithEvsSpreads[] =
 		.ball = TRAINER_EV_CLASS_BALL,
 		.ability = Ability_Hidden,
 	},
+	[121] =
+	{ //Slow Attacker: Sp. Defense Based, Less Speed - Ability_Hidden
+		.nature = NATURE_BRAVE,
+		.ivs = 31,
+		.hpEv = 252,
+		.atkEv = 208,
+		.spDefEv = 48,
+		.ball = TRAINER_EV_CLASS_BALL,
+		.ability = Ability_Hidden,
+	},
+	[122] =
+	{ //Metagross Focused - Ability_1
+		.nature = NATURE_JOLLY,
+		.ivs = 31,
+		.hpEv = 232,
+		.atkEv = 60,
+		.spDefEv = 40,
+		.spdEv = 176,
+		.ball = TRAINER_EV_CLASS_BALL,
+		.ability = Ability_1,
+	},
+	[123] =
+	{ //Defensive Boi - Ability_1
+		.nature = NATURE_JOLLY,
+		.ivs = 31,
+		.hpEv = 252,
+		.defEv = 108,
+		.spDefEv = 148,
+		.ball = TRAINER_EV_CLASS_BALL,
+		.ability = Ability_1,
+	},
+	[124] =
+	{ //Slow Attacker: Sp. Defense Based, Less Speed - Ability_1
+		.nature = NATURE_BRAVE,
+		.ivs = 31,
+		.hpEv = 252,
+		.atkEv = 208,
+		.spDefEv = 48,
+		.ball = TRAINER_EV_CLASS_BALL,
+		.ability = Ability_1,
+	},
+	[125] =
+	{ //Bulky Slow Sp. Attacker: Sp. Defense Based, Less Speed - Ability_Hidden
+		.nature = NATURE_QUIET,
+		.ivs = 31,
+		.hpEv = 252,
+		.defEv = 8,
+		.spAtkEv = 252,
+		.ball = TRAINER_EV_CLASS_BALL,
+		.ability = Ability_Hidden,
+	},
+	[126] =
+	{ //Bulky Slow Sp. Def Bou: Sp. Defense Based, Less Speed - Ability_1
+		.nature = NATURE_SASSY,
+		.ivs = 31,
+		.hpEv = 252,
+		.defEv = 72,
+		.spDefEv = 184,
+		.ball = TRAINER_EV_CLASS_BALL,
+		.ability = Ability_1,
+	},
+	[127] =
+	{ //Physical Sweeper: Tyranitar Focused - Ability_1
+		.nature = NATURE_ADAMANT,
+		.ivs = 31,
+		.hpEv = 132,
+		.atkEv = 252,
+		.spdEv = 124,
+		.ball = TRAINER_EV_CLASS_BALL,
+		.ability = Ability_1,
+	},
 };
 #endif
 
@@ -1266,7 +1339,7 @@ const u8 gBaseIVsByTrainerClass[NUM_TRAINER_CLASSES] =
 	[CLASS_BOSS] = 31,
 	[CLASS_LEADER] = 31,
 	[CLASS_TEAM_ROCKET] = 15,
-	[CLASS_COOLTRAINER] = 25,
+	[CLASS_ACE_TRAINER_M] = 25,
 	[CLASS_ELITE_4] = 31,
 	[CLASS_GENTLEMAN] = 15,
 	[CLASS_RIVAL_2] = 31,

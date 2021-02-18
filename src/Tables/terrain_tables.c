@@ -247,6 +247,175 @@ const struct TerrainTableStruct gTerrainTable[] =
 		},
 
 	//ADD NEW ENTRIES HERE
+	[BATTLE_TERRAIN_SNOW_FIELD + 4] =
+		{
+			.camouflageType = TYPE_ICE,
+			.secretPowerEffect = MOVE_EFFECT_FREEZE,
+			.secretPowerAnim = MOVE_AVALANCHE,
+			.naturePowerMove = MOVE_FROSTBREATH,
+			.burmyForm = SPECIES_NONE,
+		},
+
+	[BATTLE_TERRAIN_VOLCANO + 4] =
+		{
+			.camouflageType = TYPE_FIRE,
+			.secretPowerEffect = MOVE_EFFECT_BURN,
+			.secretPowerAnim = MOVE_INCINERATE,
+			.naturePowerMove = MOVE_LAVAPLUME,
+			.burmyForm = SPECIES_BURMY_SANDY,
+		},
+
+	[BATTLE_TERRAIN_DARK_CAVE_WATER + 4] =
+		{
+			.camouflageType = TYPE_WATER,
+			.secretPowerEffect = MOVE_EFFECT_ATK_MINUS_1,
+			.secretPowerAnim = MOVE_WATERPULSE,
+			.naturePowerMove = MOVE_HYDROPUMP,
+			.burmyForm = SPECIES_NONE,
+		},
+
+	[BATTLE_TERRAIN_DARK_CAVE + 4] =
+		{
+			.camouflageType = TYPE_ROCK,
+			.secretPowerEffect = MOVE_EFFECT_FLINCH,
+			.secretPowerAnim = MOVE_ROCKTHROW,
+			.naturePowerMove = MOVE_POWERGEM,
+			.burmyForm = SPECIES_BURMY_SANDY,
+		},
+
+	[BATTLE_TERRAIN_SNOW_CAVE + 4] =
+		{
+			.camouflageType = TYPE_ICE,
+			.secretPowerEffect = MOVE_EFFECT_FREEZE,
+			.secretPowerAnim = MOVE_AVALANCHE,
+			.naturePowerMove = MOVE_FROSTBREATH,
+			.burmyForm = SPECIES_BURMY_SANDY,
+		},
+
+	[BATTLE_TERRAIN_FOREST + 4] =
+		{
+			.camouflageType = TYPE_BUG,
+			.secretPowerEffect = MOVE_EFFECT_POISON,
+			.secretPowerAnim = MOVE_TWINEEDLE,
+			.naturePowerMove = MOVE_BUGBUZZ,
+			.burmyForm = SPECIES_BURMY,
+		},
+
+	[BATTLE_TERRAIN_ICE_IN_CAVE + 4] =
+		{
+			.camouflageType = TYPE_ICE,
+			.secretPowerEffect = MOVE_EFFECT_FREEZE,
+			.secretPowerAnim = MOVE_ICESHARD,
+			.naturePowerMove = MOVE_ICEBEAM,
+			.burmyForm = SPECIES_NONE,
+		},
+
+	[BATTLE_TERRAIN_RUINS_OF_VOID + 4] =
+		{
+			.camouflageType = TYPE_ROCK,
+			.secretPowerEffect = MOVE_EFFECT_FLINCH,
+			.secretPowerAnim = MOVE_ROCKTHROW,
+			.naturePowerMove = MOVE_POWERGEM,
+			.burmyForm = SPECIES_BURMY_SANDY,
+		},
+
+	[BATTLE_TERRAIN_DISTORTION_WORLD + 4] =
+		{
+			.camouflageType = TYPE_GHOST,
+			.secretPowerEffect = MOVE_EFFECT_DEF_MINUS_1,
+			.secretPowerAnim = MOVE_SHADOWSNEAK,
+			.naturePowerMove = MOVE_SHADOWBALL,
+			.burmyForm = SPECIES_BURMY_SANDY,
+		},
+
+	[BATTLE_TERRAIN_GRASS_GYM + 4] =
+		{
+			.camouflageType = TYPE_GRASS,
+			.secretPowerEffect = MOVE_EFFECT_SLEEP,
+			.secretPowerAnim = MOVE_VINEWHIP,
+			.naturePowerMove = MOVE_ENERGYBALL,
+			.burmyForm = SPECIES_BURMY,
+		},
+
+	[BATTLE_TERRAIN_DESERT + 4] =
+		{
+			.camouflageType = TYPE_GROUND,
+			.secretPowerEffect = MOVE_EFFECT_ACC_MINUS_1,
+			.secretPowerAnim = MOVE_MUDSLAP,
+			.naturePowerMove = MOVE_EARTHPOWER,
+			.burmyForm = SPECIES_BURMY_SANDY,
+		},
+
+	[BATTLE_TERRAIN_WATER_IN_CAVE + 4] =
+		{
+			.camouflageType = TYPE_WATER,
+			.secretPowerEffect = MOVE_EFFECT_ATK_MINUS_1,
+			.secretPowerAnim = MOVE_WATERPULSE,
+			.naturePowerMove = MOVE_HYDROPUMP,
+			.burmyForm = SPECIES_NONE,
+		},
+
+	[BATTLE_TERRAIN_WATER_IN_SNOW_CAVE + 4] =
+		{
+			.camouflageType = TYPE_WATER,
+			.secretPowerEffect = MOVE_EFFECT_ATK_MINUS_1,
+			.secretPowerAnim = MOVE_WATERPULSE,
+			.naturePowerMove = MOVE_HYDROPUMP,
+			.burmyForm = SPECIES_NONE,
+		},
+
+	[BATTLE_TERRAIN_LAVA_IN_VOLCANO + 4] =
+		{
+			.camouflageType = TYPE_FIRE,
+			.secretPowerEffect = MOVE_EFFECT_BURN,
+			.secretPowerAnim = MOVE_INCINERATE,
+			.naturePowerMove = MOVE_LAVAPLUME,
+			.burmyForm = SPECIES_NONE,
+		},
+
+	[BATTLE_TERRAIN_WATER_IN_FOREST + 4] =
+		{
+			.camouflageType = TYPE_WATER,
+			.secretPowerEffect = MOVE_EFFECT_ATK_MINUS_1,
+			.secretPowerAnim = MOVE_WATERPULSE,
+			.naturePowerMove = MOVE_HYDROPUMP,
+			.burmyForm = SPECIES_NONE,
+		},
+
+	[BATTLE_TERRAIN_AUTUMN_GRASS + 4] =
+		{
+			.camouflageType = TYPE_GRASS,
+			.secretPowerEffect = MOVE_EFFECT_SLEEP,
+			.secretPowerAnim = MOVE_VINEWHIP,
+			.naturePowerMove = MOVE_ENERGYBALL,
+			.burmyForm = SPECIES_BURMY,
+		},
+
+	[BATTLE_TERRAIN_AUTUMN_PLAIN + 4] =
+		{
+			.camouflageType = TYPE_NORMAL,
+			.secretPowerEffect = MOVE_EFFECT_PARALYSIS,
+			.secretPowerAnim = MOVE_BODYSLAM,
+			.naturePowerMove = MOVE_TRIATTACK,
+			.burmyForm = SPECIES_BURMY,
+		},
+
+	[BATTLE_TERRAIN_SNOW_GRASS + 4] =
+		{
+			.camouflageType = TYPE_ICE,
+			.secretPowerEffect = MOVE_EFFECT_FREEZE,
+			.secretPowerAnim = MOVE_AVALANCHE,
+			.naturePowerMove = MOVE_FROSTBREATH,
+			.burmyForm = SPECIES_BURMY,
+		},
+	[BATTLE_TERRAIN_NIGHTMARE + 4] =
+		{
+			.camouflageType = TYPE_DARK,
+			.secretPowerEffect = MOVE_EFFECT_SLEEP,
+			.secretPowerAnim = MOVE_FEINTATTACK,
+			.naturePowerMove = MOVE_DARKPULSE,
+			.burmyForm = SPECIES_NONE,
+		},
 
 #ifdef UNBOUND //The ones below are for Pokemon Unbound. Feel free to remove.
 	[BATTLE_TERRAIN_SNOW_FIELD + 4] =

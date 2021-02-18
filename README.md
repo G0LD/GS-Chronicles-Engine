@@ -1,3 +1,8 @@
+# Pokémon GS Chronicles Engine
+This is a fork of Skeli's CFRU repo and it provides the features from the CFRU to Pokémon GS Chronicles. For personal use only. 
+
+**Original CFRU readme.**
+
 # Complete Fire Red Upgrade
 
 ## What is this:

@@ -53,7 +53,6 @@ else:  # Linux, OSX, etc.
         WAV2AGB = 'wav2agb'
         MID2AGB = 'mid2agb'
         GR = "grit"
-
     OBJCOPY = PREFIX + 'objcopy'
 
 SRC = './src'

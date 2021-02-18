@@ -3,6 +3,14 @@
 ##Tables
 gMoveDescriptions 080E5440
 gMoveDescriptions 08137BC8
+gLongMoveNames 080BFAA4
+gLongMoveNames 08125BE4
+gLongMoveNames 08125CE0
+gLongMoveNames 0812606C
+gLongMoveNames 08126128
+gLongMoveNames 081261FC
+gLongMoveNames 0812627C
+gLongMoveNames 08126E64
 gAbilityDescriptions 080001C4
 gAbilityDescriptions 081367A8
 gMoveAnimations 080725D0
@@ -57,9 +65,10 @@ FieldEffectScript_CaveDust 081D9714
 FieldEffectScript_Sparkles 081D9718
 FieldEffectScript_LavaBubbles 081D9768
 FieldEffectScript_MiningScanRing 081D976C
-SystemScript_FindItemMessage 081A67DD
-SystemScript_ObtainItem 08160450
-SystemScript_ObtainItemMessage 081A66AC
+SystemScript_FindItemMessage 08C35662
+SystemScript_ObtainItem 089F0000
+SystemScript_ObtainItemMessage 08C35493
+SystemScript_Pokegear_Dexnav 08F1BBB0
 SystemScript_PickedUpHiddenItem 081A685E
 
 ##Wild -> The Wild
@@ -205,13 +214,6 @@ Wav_sand_footstep_sample 0848EE20
 #ifdef CRITICAL_CAPTURE
 gBattleAnims_Special 08034238
 #endif
-
-##Start Menu
-sStartMenuActionTable 0806EF9C
-sStartMenuActionTable 0806F374
-sStartMenuActionTable 0806F3F8
-sStartMenuDescPointers 0806F138
-sStartMenuDescPointers 0806F368
 
 #ifdef UNBOUND
 TestScript 08B7AD70

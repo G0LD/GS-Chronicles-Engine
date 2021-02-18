@@ -47,6 +47,16 @@
 #080BD34C 9E F7 0A FF
 ##End of Optional Byte Changes##
 
+##16-Character Move Name Limiters##
+080BFA7C 11
+08125B7E 11
+08125C92 11
+08126036 11
+081260E8 11
+081261BC 11
+0812624A 11
+08126E0A 11
+
 ##Remove Things##
 ##Remove Help System
 0800051A C0 46 C0 46 C0 46 C0 46 C0 46

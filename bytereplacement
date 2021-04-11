@@ -7,6 +7,11 @@
 ##Optional Byte Changes##
 ##Don't Count Eggs Healing PKMN Centre
 08083B8E 08 F0 D5 FA
+##Fix Shedinja Evo broken by expasion to 16
+080CE762 00 01
+080CE766 00 00
+#Fix Shedinja Dex Entries broken by evo expansion to 16
+080CE858 00 00
 ##Extend Direct Sound Tracks
 081DD0C8 00 CC
 ##Fix Movement Type 0xC (Hidden)

@@ -966,6 +966,9 @@ void HandleAction_UseMove(void)
 	gBattleCommunication[6] = 0;
 	gCurrMovePos = gChosenMovePos = gBattleStruct->chosenMovePositions[gBankAttacker];
 
+	gNewBS->totalDamageGiven = 0;
+	gNewBS->selfInflictedDamage = 0;
+	gNewBS->lessThanHalfHPBeforeShellBell = FALSE;
 	//Clear spread move things
 	gNewBS->doneDoublesSpreadHit = FALSE;
 	gNewBS->calculatedSpreadMoveData = FALSE;
@@ -1114,14 +1117,12 @@ void HandleAction_UseMove(void)
 
 //Get Move Target
 	u8 atkAbility = ABILITY(gBankAttacker);
+	u8 moveTarget = gBattleMoves[gCurrentMove].target;
 	side = SIDE(gBankAttacker) ^ BIT_SIDE;
 	bank_t selectedTarget = gBattleStruct->moveTarget[gBankAttacker];
 
-	if (gSideTimers[side].followmeTimer != 0
-	&& (gBattleMoves[gCurrentMove].target == MOVE_TARGET_SELECTED || gBattleMoves[gCurrentMove].target == MOVE_TARGET_RANDOM)
-	&& SIDE(gBankAttacker) != SIDE(gSideTimers[side].followmeTarget)
-	&& BATTLER_ALIVE(gSideTimers[side].followmeTarget)
-	&& !IsMoveRedirectionPrevented(gCurrentMove, atkAbility))
+	if ((moveTarget == MOVE_TARGET_SELECTED || moveTarget == MOVE_TARGET_RANDOM)
+	&& IsMoveRedirectedByFollowMe(gCurrentMove, gBankAttacker, side))
 	{
 		gBankTarget = gSideTimers[side].followmeTarget;
 	}
@@ -1435,7 +1436,7 @@ u16 GetMUS_ForBattle(void)
 		return BGM_BATTLE_BORRIUS_WILD;
 	#else
 		if (IsRaidBattle())
-			return BGM_BATTLE_LEGENDARY_BIRDS;
+			return BGM_BATTLE_LUGIA;
 
 		#ifdef VAR_WILD_BGM_OVERRIDE
 			song = VarGet(VAR_WILD_BGM_OVERRIDE);

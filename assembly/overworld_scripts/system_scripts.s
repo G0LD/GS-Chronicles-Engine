@@ -22,7 +22,7 @@ SystemScript_EnableAutoRun:
 	sound 0x2
 	signmsg
 	msgboxsign
-	msgbox gText_AutoRunEnable MSG_SIGN
+	msgbox gText_AutoRunEnable MSG_TRANSPARENT
 	checksound
 	releaseall
 	end
@@ -33,7 +33,7 @@ SystemScript_DisableAutoRun:
 	checksound
 	sound 0x3
 	msgboxsign
-	msgbox gText_AutoRunDisable MSG_SIGN
+	msgbox gText_AutoRunDisable MSG_TRANSPARENT
 	checksound
 	releaseall
 	end
@@ -45,7 +45,7 @@ SystemScript_EnableBikeTurboBoost:
 	sound 0x2
 	signmsg
 	msgboxsign
-	msgbox gText_BikeTurboBoostEnable MSG_SIGN
+	msgbox gText_BikeTurboBoostEnable MSG_TRANSPARENT
 	checksound
 	releaseall
 	end
@@ -56,7 +56,7 @@ SystemScript_DisableBikeTurboBoost:
 	@;checksound
 	sound 0x3
 	msgboxsign
-	msgbox gText_BikeTurboBoostDisable MSG_SIGN
+	msgbox gText_BikeTurboBoostDisable MSG_TRANSPARENT
 	checksound
 	releaseall
 	end
@@ -229,19 +229,19 @@ SystemScript_FindItemMessage:
 	special2 LASTRESULT 0x196
 	copyvar 0x8008 LASTRESULT
 	compare 0x8008 0x1
-	if equal _call 0x81A6821
+	if equal _call 0x8C3576C
 	compare 0x8008 0x0
 	if equal _call SystemScript_FindNormalItem
 	waitfanfare
 	waitmsg
-	msgbox 0x81A5218 MSG_KEEPOPEN 
+	msgbox 0x8C2A3DE MSG_KEEPOPEN 
 	special SPECIAL_CLEAR_ITEM_SPRITE_AFTER_FIND_OBTAIN
 	return
 
 SystemScript_FindNormalItem:
 	compare 0x8005 0x1
 	if greaterthan _goto SystemScript_FindMultipleNormalItems
-	preparemsg 0x81A5231
+	preparemsg 0x8C2A57C
 	return
 
 SystemScript_FindMultipleNormalItems:
@@ -252,6 +252,18 @@ SystemScript_FindMultipleNormalItems:
 
 @;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
+.global SystemScript_Pokegear_Dexnav
+SystemScript_Pokegear_Dexnav:
+	sound 0x5
+	callasm 0x8F1A214 + 1
+	pause 0x3
+	callasm StartMenuDexNavCallback + 1
+	waitstate
+	release
+	end
+
+@;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
 SystemScript_ObtainItem:
 	copyvar 0x8013 0x8012
 	copyvar 0x8004 0x8000 @;Copy item to 0x8004
@@ -259,7 +271,7 @@ SystemScript_ObtainItem:
 	textcolor BLACK
 	additem 0x8000 0x8001
 	copyvar 0x8007 LASTRESULT
-	call 0x81A6697
+	call 0x8C3547E
 	copyvar 0x8012 0x8013
 	return
 
@@ -272,7 +284,7 @@ SystemScript_ObtainItemMessage:
 	if greaterthan _call ObtainedMultipleItemMsg
 	waitfanfare
 	waitmsg
-	msgbox 0x81A5218 MSG_KEEPOPEN @;[PLAYER] put the item in the...
+	msgbox 0x8C2A3DE MSG_KEEPOPEN @;[PLAYER] put the item in the...
 	setvar LASTRESULT 0x1
 	special SPECIAL_CLEAR_ITEM_SPRITE_AFTER_FIND_OBTAIN
 	return
@@ -290,7 +302,7 @@ ObtainedTMHM:
 	return
 
 ObtainedRegularItem:
-	preparemsg 0x81A51F6 @;Obtained the item!
+	preparemsg gText_ObtainedItem @;Obtained the item!
 	return
 	
 ObtainedMultipleItemMsg:
@@ -313,7 +325,7 @@ SystemScript_PickedUpHiddenItem: @;Replaces 81A6885
 	if notequal _call 0x81A68BA @;EventScript_FoundMultipleHiddenItems
 	waitfanfare
 	waitmsg
-	msgbox 0x81A5218 MSG_KEEPOPEN @;gText_PutItemAway
+	msgbox 0x8C2A3DE MSG_KEEPOPEN @;gText_PutItemAway
 	callasm ClearItemSpriteAfterFindHidden
 	special 0x96 @;SetHiddenItemFlag
 	incrementgamestat GAME_STAT_FOUND_HIDDEN_ITEM
@@ -566,80 +578,24 @@ EventScript_LavaSurfEnd:
 
 .global EventScript_UseWaterfall
 EventScript_UseWaterfall:
-	bufferpartypokemon 0x0 0x8004
-	bufferattack 0x1 MOVE_WATERFALL
-	callasm IsUnboundToVar
-	compare LASTRESULT 0x0
-	if equal _goto EventScript_UseWaterfall_Ask
-	checkflag FLAG_AUTO_HMS
-	if SET _goto EventScript_UseWaterfall_SkipAsk
-
-EventScript_UseWaterfall_Ask:
-	msgbox 0x81BE33F MSG_YESNO
-	compare LASTRESULT NO
-	if equal _goto EventScript_WaterfallEnd
-	lockall
-	call FollowerIntoPlayerScript
-	callasm HideFollower
-	msgbox 0x81BDFD7 MSG_KEEPOPEN
-
-EventScript_UseWaterfall_SkipMsg:
-	setanimation 0x0 0x8004
-	doanimation 0x2B
-	callasm FollowMe_WarpSetEnd
-EventScript_WaterfallEnd:
-	releaseall
+	goto 0x876037C
 	end
-
-EventScript_UseWaterfall_SkipAsk:
-	lockall
-	call FollowerIntoPlayerScript
-	callasm HideFollower
-	goto EventScript_UseWaterfall_SkipMsg
 
 .global EventScript_WallOfWater
 EventScript_WallOfWater:
-	msgbox 0x81BE30A MSG_NORMAL
+	goto 0x876037C
 	end
 
 @;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
 .global EventScript_UseSurf
 EventScript_UseSurf:
-	bufferpartypokemon 0x0 0x8004
-	bufferattack 0x1 MOVE_SURF
-	callasm IsUnboundToVar
-	compare LASTRESULT 0x0
-	if equal _goto EventScript_UseSurf_Ask
-	checkflag FLAG_AUTO_HMS
-	if SET _goto EventScript_UseSurf_SkipAsk
-
-EventScript_UseSurf_Ask:
-	callasm IsCurrentAreaSwampToVar
-	compare LASTRESULT 0x0
-	if notequal _goto EventScript_UseSurf_AskMurkyWater
-	msgbox 0x81A556E MSG_YESNO	
-EventScript_UseSurf_CheckAnswer:
-	compare LASTRESULT NO
-	if equal _goto EventScript_SurfEnd
-	lockall
-	msgbox 0x81BDFD7 MSG_KEEPOPEN
-
-EventScript_UseSurf_SkipAsk:
-	lockall
-	setanimation 0x0 0x8004
-	doanimation 0x9
-EventScript_SurfEnd:
-	releaseall
+	goto 0x87602C7
 	end
-
-EventScript_UseSurf_AskMurkyWater:
-	msgbox gText_WaterMurkyBrownUseSurf MSG_YESNO	
-	goto EventScript_UseSurf_CheckAnswer
 
 .global EventScript_WaterDyedBlue
 EventScript_WaterDyedBlue:
-	msgbox gText_WaterDyed MSG_NORMAL
+	goto 0x87602C7
 	end
 
 .global EventScript_WaterMurkyBrown

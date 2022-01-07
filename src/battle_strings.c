@@ -25,6 +25,7 @@ battle_strings.c
 */
 
 extern u8 gMoveNames[][MOVE_NAME_LENGTH + 1];
+extern u8 gLongMoveNames[][MOVE_NAME_LENGTH + 5];
 extern const u8 gAbilityNames[][ABILITY_NAME_LENGTH + 1];
 
 extern u8 gStatusConditionString_DisableProblem[];
@@ -809,7 +810,8 @@ u32 BattleStringExpandPlaceholders(const u8* src, u8* dst)
 				if (gBattleTypeFlags & BATTLE_TYPE_FRONTIER || IsFrontierTrainerId(gTrainerBattleOpponent_B))
 				{
 					CopyFrontierTrainerText(FRONTIER_PLAYER_WON_TEXT, VarGet(VAR_SECOND_OPPONENT), 1);
-					toCpy = gStringVar4;
+					BattleStringExpandPlaceholders(gStringVar4, gStringVar3);
+					toCpy = gStringVar3;
 				}
 				else
 				{
@@ -820,7 +822,8 @@ u32 BattleStringExpandPlaceholders(const u8* src, u8* dst)
 				if (gBattleTypeFlags & BATTLE_TYPE_FRONTIER || IsFrontierTrainerId(gTrainerBattleOpponent_B))
 				{
 					CopyFrontierTrainerText(FRONTIER_PLAYER_LOST_TEXT, VarGet(VAR_SECOND_OPPONENT), 1);
-					toCpy = gStringVar4;
+					BattleStringExpandPlaceholders(gStringVar4, gStringVar3);
+					toCpy = gStringVar3;
 				}
 				break;
 			case B_TXT_PARTNER_CLASS:
@@ -959,7 +962,7 @@ void BufferMoveNameBattle(u16 move, u8* dst)
 		StringCopy(&dst[4], gMoveNames[move]);
 	}
 	else
-		StringCopy(dst, gMoveNames[move]);
+		StringCopy(dst, gLongMoveNames[move]);
 }
 
 void EmitPrintString(u8 bufferId, u16 stringID)

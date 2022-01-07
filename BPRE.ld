@@ -1722,6 +1722,7 @@ SetHBlankCallback = 0x8000700 | 1;
 SetMainCallback1 = 0x80565E0 | 1;
 
 /* Audio Functions */
+ClearPokemonCrySongs = 0x8000944 | 1;
 HandleLowHpMusicChange = 0x8035244 | 1;
 BattleStopLowHpSound = 0x8035314 | 1;
 GetTrainerEncounterMusicId = 0x804367C | 1;
@@ -1817,6 +1818,10 @@ GetEreaderTrainerFrontSpriteId = 0x80E7420 | 1;
 GetEreaderTrainerClassId = 0x80E7440 | 1;
 GetEreaderTrainerName = 0x80E7460 | 1;
 
+/* Instant Text */
+RenderFont = 0x8002E7C | 1;
+sTextPrinters = 0x2020034;
+GetTextSpeedSetting = 0x80f78a8 | 1;
 
 /* IO */
 BG3HOFS = 0x400001C;

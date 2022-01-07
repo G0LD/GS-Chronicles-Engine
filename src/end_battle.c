@@ -135,6 +135,7 @@ void HandleEndTurn_BattleWon(void)
 			case CLASS_LEADER:
 			case CLASS_ELITE_4:
 			case CLASS_CHAMPION:
+			case CLASS_CHAMPION_RS:
 				PlayBGM(BGM_VICTORY_SPECIAL);
 				specialMus = TRUE;
 				break;
@@ -365,9 +366,10 @@ u8 IsRunningFromBattleImpossible(void)
 			gBattleCommunication[MULTISTRING_CHOOSER] = 2;
 			return ABILITY_PREVENTING_ESCAPE;
 		}
+
 		if (side != SIDE(i)
 		&& ABILITY(i) == ABILITY_ARENATRAP
-		&& !CheckGrounding(gActiveBattler))
+		&& CheckGrounding(gActiveBattler))
 		{
 			gBattleScripting.bank = i;
 			gLastUsedAbility = ABILITY(i);

@@ -39,7 +39,7 @@ gMoveAnimations:
 .word 0x81c6f34		@MOVE_NONE
 .word 0x81c6f34		@MOVE_POUND
 .word 0x81cfcea		@MOVE_KARATECHOP
-.word 0x81c6f65		@MOVE_DOUBLESLAP
+.word ANIM_DOUBLESLAP
 .word 0x81c7e63		@MOVE_COMETPUNCH
 .word 0x81c7ced		@MOVE_MEGAPUNCH
 .word 0x81c9455		@MOVE_PAYDAY
@@ -89,7 +89,7 @@ gMoveAnimations:
 .word 0x81d169f		@MOVE_DISABLE
 .word 0x81cf308		@MOVE_ACID
 .word 0x81c7c79		@MOVE_EMBER
-.word ANIM_FLAMETHROWER
+.word 0x81cfa15		@MOVE_FLAMETHROWER
 .word 0x81d0821		@MOVE_MIST
 .word ANIM_WATERGUN
 .word ANIM_HYDROPUMP
@@ -777,6 +777,13 @@ gMoveAnimations:
 .word ANIM_FIERY_WRATH
 .word ANIM_THUNDER_CAGE
 .word ANIM_DRAGON_ENERGY
+.word 0x8f3a5d0		@MOVE_AQUA_SCALES
+.word ANIM_DRAGON_CRUSH
+.word ANIM_FLAMETHROWER
+.word 0x8f3a734		@MOVE_SHARP_FLINT
+.word ANIM_PETALBLIZZARD		@MOVE_FLORAL_STREAM
+.word ANIM_SHINING_BEAM
+.word 0x8f3aa08		@MOVE_STARDUST_PUNCH
 .word ANIM_BREAKNECK_BLITZ
 .word ANIM_BREAKNECK_BLITZ
 .word ANIM_ALL_OUT_PUMMELING
@@ -933,6 +940,30 @@ gMoveAnimations:
 .word ANIM_G_MAX_ONE_BLOW
 .word ANIM_G_MAX_RAPID_FLOW
 .word ANIM_G_MAX_RAPID_FLOW
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+.pool
+ANIM_DOUBLESLAP:
+	loadparticle ANIM_TAG_IMPACT
+	loadparticle ANIM_TAG_QUICK_GUARD_HAND
+	pokespritetoBG side_target
+	setblends 0x80c
+	launchtemplate DOUBLE_SLAP_PALM TEMPLATE_TARGET | 3, 0x3, -64, 6, TRUE
+	pause 8
+	playsound2 0x7F SOUND_PAN_TARGET
+	launchtask AnimTask_move_bank 0x2 0x5 bank_target 2 0 6 1
+	launchtemplate Template_Hit TEMPLATE_TARGET | 1, 0x4, 0x0 0x0 bank_target 0x2
+	pause 20
+	playsound2 0x7F SOUND_PAN_TARGET
+	launchtask AnimTask_move_bank 0x2 0x5 bank_target 2 0 6 1
+	launchtemplate Template_Hit TEMPLATE_TARGET | 1, 0x4, 0x0 0x0 bank_target 0x2
+	waitanimation
+	pokespritefromBG side_target
+	resetblends
+	endanimation
+
+.align 2
+DOUBLE_SLAP_PALM: objtemplate ANIM_TAG_QUICK_GUARD_HAND ANIM_TAG_QUICK_GUARD_HAND OAM_NORMAL_32x32 gDummySpriteAnimTable 0x0 gSpriteAffineAnimTable_DoubleSlap SpriteCB_WakeUpSlap
 
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 .pool
@@ -5181,7 +5212,7 @@ ANIM_WAKEUPSLAP:
 	loadparticle ANIM_TAG_QUICK_GUARD_HAND
 	pokespritetoBG side_target
 	setblends 0x80c
-	launchtemplate WAKE_UP_SLAP_PALM TEMPLATE_TARGET | 3, 0x2, -64, 8
+	launchtemplate WAKE_UP_SLAP_PALM TEMPLATE_TARGET | 3, 0x3, -64, 8, FALSE
 	pause 5
 	launchtask AnimTask_move_bank 0x2 0x5 bank_target 4 0 4 16
 	call WAKE_UP_SLAP_HIT
@@ -15682,10 +15713,11 @@ SkipBankCheck:
 
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 .pool
-@Credits to ghoulslash
+@Credits to Ghoulslash & Skeli
 ANIM_DOUBLEIRONBASH:
 	loadparticle ANIM_TAG_GUST
 	loadparticle ANIM_TAG_IMPACT
+	launchtask AnimTask_GrayscaleParticle 0x5 0x1 ANIM_TAG_IMPACT
 	soundcomplex 0x71 SOUND_PAN_ATTACKER 0x1c 0x2
 	launchtask AnimTask_steel_sprite 0x5 0x3 0x0 0x0 0x0
 	waitanimation
@@ -15695,15 +15727,15 @@ ANIM_DOUBLEIRONBASH:
 	soundcomplex 0x96 SOUND_PAN_ATTACKER 0x14 0x2
 	launchtask AnimTask_TranslateMonElliptical 0x2 0x5 0x0 0xc 0x4 0x1 0x4
 	launchtask AnimTask_AnimateGustTornadoPalette 0x5 0x2 0x1 0x46
-	launchtemplate 0x83e6b1c 0x2 0x5 0xffe7 0x0 0x0 0x0 0x0 	@wing attack
-	launchtemplate 0x83e6b1c 0x2 0x5 0x19 0x0 0x0 0x0 0x0 		@wing attack
+	launchtemplate Template_GustToTarget TEMPLATE_ATTACKER | 2, 0x5 0xffe7 0x0 0x0 0x0 0x0
+	launchtemplate Template_GustToTarget TEMPLATE_ATTACKER | 2, 0x5 0x19 0x0 0x0 0x0 0x0
 	pause 0x18
 	launchtemplate Template_SlideMonToOffset 0x2 0x5 bank_attacker 0x18 0x0 0x0 0x9
-	pause 0x11
-	launchtemplate Template_Hit TEMPLATE_TARGET | 4, 0x4, 0x0 0x0 0x1 0x1
+	pause 0x9
+	playsound2 0x74 SOUND_PAN_TARGET
+	launchtemplate Template_FlashingHit TEMPLATE_TARGET | 3, 0x4, -10, -10, 0x1 0x0
+	launchtemplate Template_FlashingHit TEMPLATE_TARGET | 3, 0x4,  10,  10, 0x1 0x0
 	launchtemplate Template_SlideMonToOffset 0x2 0x5 bank_target 0xffe0 0x0 0x0 0x3
-	waitanimation
-	playsound2 0x81 SOUND_PAN_TARGET
 	waitanimation
 	launchtemplate Template_SlideMonToOriginalPos 0x2 0x3 bank_attacker 0x0 0xb
 	waitanimation
@@ -16956,8 +16988,55 @@ ANIM_FLIP_TURN:
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 .pool
 ANIM_TRIPLE_AXEL:
-	goto 0x81cfecb @MOVE_TRIPLEKICK
+	loadparticle ANIM_TAG_HANDS_AND_FEET
+	loadparticle ANIM_TAG_IMPACT
+	loadparticle ANIM_TAG_ICE_CRYSTALS
+	pokespritetoBG side_target 
+	setblends 0x80c
+	playsound2 0x74 0x3f
+	jumpifmoveturn 0 TRIPLE_AXEL_0
+	jumpifmoveturn 1 TRIPLE_AXEL_1
+	goto TRIPLE_AXEL_2
+
+TRIPLE_AXEL_0:
+	launchtemplate Template_Fist TEMPLATE_TARGET | 4, 0x5 0xfff0 0xfff8 0x14 0x1 0x2
+	launchtemplate Template_Hit TEMPLATE_TARGET | 3, 0x4 0xfff0 0xfff0 0x1 0x2
+	launchtemplate TRIPLE_AXEL_ICE TEMPLATE_TARGET | 1, 0x4 0xfff0 0xfff8 0xff00 0xffd8
+	launchtemplate TRIPLE_AXEL_ICE TEMPLATE_TARGET | 1, 0x4 0xfff0 0xfff8 0x1a0 0xffda
+	launchtask AnimTask_move_bank 0x5 0x5 bank_target 0x4 0x0 0x4 0x1
+	goto TRIPLE_AXEL_END
+
+TRIPLE_AXEL_1:
+	launchtemplate Template_Fist TEMPLATE_TARGET | 4, 0x5 0x8 0x8 0x14 0x1 0x2
+	launchtemplate Template_Hit TEMPLATE_TARGET | 3, 0x4 0x8 0x0 0x1 0x2
+	launchtemplate TRIPLE_AXEL_ICE TEMPLATE_TARGET | 1, 0x4 0x8 0x8 0xa0 0xffe0
+	launchtemplate TRIPLE_AXEL_ICE TEMPLATE_TARGET | 1, 0x4 0x8 0x8 0xff00 0xffd8
+	launchtemplate TRIPLE_AXEL_ICE TEMPLATE_TARGET | 1, 0x4 0x8 0x8 0x1a0 0xffda
+	launchtemplate TRIPLE_AXEL_ICE TEMPLATE_TARGET | 1, 0x4 0x8 0x8 0xfe80 0xffe1
+	launchtask AnimTask_move_bank 0x5 0x5 bank_target 0x4 0x0 0x6 0x1
+	goto TRIPLE_AXEL_END
+
+TRIPLE_AXEL_2:
+	launchtemplate Template_Fist TEMPLATE_TARGET | 4, 0x5 0x0 0x0 0x14 0x1 0x2
+	launchtemplate Template_Hit TEMPLATE_TARGET | 3, 0x4 0x0 0xfff8 0x1 0x1
+	launchtemplate TRIPLE_AXEL_ICE TEMPLATE_TARGET | 1, 0x4 0x0 0x0 0xa0 0xffe0
+	launchtemplate TRIPLE_AXEL_ICE TEMPLATE_TARGET | 1, 0x4 0x0 0x0 0xff00 0xffd8
+	launchtemplate TRIPLE_AXEL_ICE TEMPLATE_TARGET | 1, 0x4 0x0 0x0 0x80 0xfff0
+	launchtemplate TRIPLE_AXEL_ICE TEMPLATE_TARGET | 1, 0x4 0x0 0x0 0x1a0 0xffda
+	launchtemplate TRIPLE_AXEL_ICE TEMPLATE_TARGET | 1, 0x4 0x0 0x0 0xff80 0xffea
+	launchtemplate TRIPLE_AXEL_ICE TEMPLATE_TARGET | 1, 0x4 0x0 0x0 0xfe80 0xffe1
+	launchtask AnimTask_move_bank 0x5 0x5 bank_target 0x6 0x0 0x8 0x1
+
+TRIPLE_AXEL_END:
+	pause 0x4
+	playsound2 0x82 0x3f
+	waitanimation
+	pokespritefromBG side_target
+	resetblends
 	endanimation
+
+.align 2
+TRIPLE_AXEL_ICE: objtemplate ANIM_TAG_ICE_CRYSTALS ANIM_TAG_ICE_CRYSTALS OAM_OFF_BLEND_8x8 0x83E6324 0x0 gDummySpriteAffineAnimTable 0x80B0DF1
 
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 .pool
@@ -17094,6 +17173,18 @@ ANIM_THUNDER_CAGE:
 .pool
 ANIM_DRAGON_ENERGY:
 	goto ANIM_DRAGONPULSE
+	endanimation
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+.pool
+ANIM_DRAGON_CRUSH:
+	goto ANIM_DRAGONHAMMER
+	endanimation
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+.pool
+ANIM_SHINING_BEAM:
+	goto ANIM_LIGHTOFRUIN
 	endanimation
 
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@

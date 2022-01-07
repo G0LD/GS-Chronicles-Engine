@@ -1717,7 +1717,8 @@ void atk45_playanimation(void)
 	||  gBattlescriptCurrInstr[2] == B_ANIM_LOAD_DEFAULT_BG
 	||  gBattlescriptCurrInstr[2] == B_ANIM_LOAD_ABILITY_POP_UP
 	||  gBattlescriptCurrInstr[2] == B_ANIM_DESTROY_ABILITY_POP_UP
-	||  gBattlescriptCurrInstr[2] == B_ANIM_DYNAMAX_START)
+	||  gBattlescriptCurrInstr[2] == B_ANIM_DYNAMAX_START
+	||  gBattlescriptCurrInstr[2] == B_ANIM_POWDER_EXPLOSION)
 	{
 		EmitBattleAnimation(0, gBattlescriptCurrInstr[2], *argumentPtr);
 		MarkBufferBankForExecution(gActiveBattler);
@@ -1797,7 +1798,8 @@ void atk46_playanimation2(void) // animation Id is stored in the first pointer
 	||  *animationIdPtr == B_ANIM_LOAD_DEFAULT_BG
 	||  *animationIdPtr == B_ANIM_LOAD_ABILITY_POP_UP
 	||  *animationIdPtr == B_ANIM_DESTROY_ABILITY_POP_UP
-	||  *animationIdPtr == B_ANIM_DYNAMAX_START)
+	||  *animationIdPtr == B_ANIM_DYNAMAX_START
+	||  *animationIdPtr == B_ANIM_POWDER_EXPLOSION)
 	{
 		EmitBattleAnimation(0, *animationIdPtr, *argumentPtr);
 		MarkBufferBankForExecution(gActiveBattler);
@@ -2977,14 +2979,16 @@ void atk96_weatherdamage(void)
 	gBattleMoveDamage = 0;
 
 	if (gAbsentBattlerFlags & gBitTable[bank])
+	{
 		gBattleMoveDamage = 0;
-
+	}
 	#ifndef NO_GHOST_BATTLES //Ghosts can't take damage from Sand Stream or Snow Warning
 	else if ((gBattleTypeFlags & (BATTLE_TYPE_SCRIPTED_WILD_1 | BATTLE_TYPE_GHOST)) == BATTLE_TYPE_GHOST
 	&&  SIDE(bank) == B_SIDE_OPPONENT)
+	{
 		gBattleMoveDamage = 0;
+	}
 	#endif
-
 	else
 	{
 		if (gBattleWeather & WEATHER_SANDSTORM_ANY)
@@ -2997,6 +3001,7 @@ void atk96_weatherdamage(void)
 		}
 	}
 
+	gNewBS->turnDamageTaken[bank] = gBattleMoveDamage; //For Emergency Exit
 	gBattlescriptCurrInstr++;
 }
 
@@ -3197,7 +3202,7 @@ void atkA1_counterdamagecalculator(void) {
 	{
 		gBattleMoveDamage = gProtectStructs[gBankAttacker].physicalDmg * 2;
 
-		if (gSideTimers[defSide].followmeTimer && gBattleMons[gSideTimers[defSide].followmeTarget].hp)
+		if (IsMoveRedirectedByFollowMe(gCurrentMove, gBankAttacker, defSide))
 			gBankTarget = gSideTimers[defSide].followmeTarget;
 		else
 			gBankTarget = gProtectStructs[gBankAttacker].physicalBank;
@@ -3218,7 +3223,7 @@ void atkA2_mirrorcoatdamagecalculator(void) {
 	{
 		gBattleMoveDamage = gProtectStructs[gBankAttacker].specialDmg * 2;
 
-		if (gSideTimers[defSide].followmeTimer && gBattleMons[gSideTimers[defSide].followmeTarget].hp)
+		if (IsMoveRedirectedByFollowMe(gCurrentMove, gBankAttacker, defSide))
 			gBankTarget = gSideTimers[defSide].followmeTarget;
 		else
 			gBankTarget = gProtectStructs[gBankAttacker].specialBank;
@@ -4154,7 +4159,8 @@ void atkBE_rapidspinfree(void)
 			gNewBS->AuroraVeilTimers[sideDef] = 0;
 			TEXT_BUFFER_SIDE_STATUS(MOVE_AURORAVEIL, 0, sideDef);
 		}
-		else if (gTerrainType != 0) //Since Gen 8
+		else if (gTerrainType != 0 //Since Gen 8
+		&& !(gBattleTypeFlags & BATTLE_TYPE_BATTLE_CIRCUS && gBattleCircusFlags & BATTLE_CIRCUS_TERRAIN)) //Terrain is permanent
 		{
 			BattleScriptPushCursor();
 			gBattlescriptCurrInstr = BattleScript_SetTerrain; //Removes the Terrain
@@ -4271,7 +4277,10 @@ void atkC5_setsemiinvulnerablebit(void) {
 			gNewBS->skyDropTargetsAttacker[gBankTarget] = gBankAttacker;
 
 			if (gSideTimers[SIDE(gBankTarget)].followmeTarget == gBankTarget) //Removes Follow Me's effect
+			{
 				gSideTimers[SIDE(gBankTarget)].followmeTimer = 0;
+				gNewBS->ragePowdered &= ~gBitTable[SIDE(gBankTarget)];
+			}
 	}
 	gBattlescriptCurrInstr++;
 }
@@ -4350,18 +4359,24 @@ void atkC9_jumpifattackandspecialattackcannotfall(void) // memento
 
 void atkCA_setforcedtarget(void) //Follow me
 {
-	if (gCurrentMove == MOVE_SPOTLIGHT)
-	{
-		gSideTimers[SIDE(gBankTarget)].followmeTimer = 1;
-		gSideTimers[SIDE(gBankTarget)].followmeTarget = gBankTarget;
-		gBattlescriptCurrInstr++;
+	switch (gCurrentMove) {
+		case MOVE_SPOTLIGHT:
+			gSideTimers[SIDE(gBankTarget)].followmeTimer = 1;
+			gSideTimers[SIDE(gBankTarget)].followmeTarget = gBankTarget;
+			gNewBS->ragePowdered &= ~gBitTable[SIDE(gBankTarget)];
+			break;
+		case MOVE_RAGEPOWDER:
+			gSideTimers[SIDE(gBankAttacker)].followmeTimer = 1;
+			gSideTimers[SIDE(gBankAttacker)].followmeTarget = gBankAttacker;
+			gNewBS->ragePowdered |= gBitTable[SIDE(gBankAttacker)];
+			break;
+		default:
+			gSideTimers[SIDE(gBankAttacker)].followmeTimer = 1;
+			gSideTimers[SIDE(gBankAttacker)].followmeTarget = gBankAttacker;
+			gNewBS->ragePowdered &= ~gBitTable[SIDE(gBankAttacker)];
 	}
-	else
-	{
-		gSideTimers[SIDE(gBankAttacker)].followmeTimer = 1;
-		gSideTimers[SIDE(gBankAttacker)].followmeTarget = gBankAttacker;
-		gBattlescriptCurrInstr++;
-	}
+
+	gBattlescriptCurrInstr++;
 }
 
 void atkCC_callterrainattack(void) { //nature power

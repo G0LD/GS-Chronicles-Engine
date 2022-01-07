@@ -129,14 +129,7 @@ void __attribute__((long_call)) PartyMenuDisplayYesNoMenu(void);
 static void OpenSummary(u8 taskId);
 static void DisplayPartyPokemonSelectDataSpecial(u8 slot, u8 stringID);
 static void DisplayPartyPokemonPriorityText(u8 stringID, struct PartyMenuBox* ptr, u8 c);
-static bool8 SetUpFieldMove_Fly(void);
-static bool8 SetUpFieldMove_Surf(void);
-static bool8 SetUpFieldMove_Waterfall(void);
 static bool8 SetUpFieldMove_Teleport(void);
-static void FieldCallback_Dive(void);
-static bool8 SetUpFieldMove_Dive(void);
-static void FieldCallback_RockClimb(void);
-static bool8 SetUpFieldMove_RockClimb(void);
 static void FieldCallback_Defog(void);
 static bool8 SetUpFieldMove_Defog(void);
 static void CursorCb_MoveItemCallback(u8 taskId);
@@ -747,21 +740,13 @@ extern const u8 EventScript_Defog[];
 // Field Move IDs
 enum FieldMovesIDs
 {
-	FIELD_MOVE_FLASH,
-	FIELD_MOVE_CUT,
-	FIELD_MOVE_FLY,
-	FIELD_MOVE_STRENGTH,
-	FIELD_MOVE_SURF,
-	FIELD_MOVE_ROCK_SMASH,
-	FIELD_MOVE_WATERFALL,
+	FIELD_MOVE_NULL,
 	FIELD_MOVE_TELEPORT,
 	FIELD_MOVE_DIG,
 	FIELD_MOVE_MILK_DRINK,
 	FIELD_MOVE_SOFT_BOILED,
 	FIELD_MOVE_SWEET_SCENT,
-	FIELD_MOVE_ROCK_CLIMB,
 	FIELD_MOVE_DEFOG,
-	FIELD_MOVE_DIVE,
 	FIELD_MOVE_COUNT
 };
 
@@ -794,21 +779,13 @@ struct
 	[MENU_MOVE_ITEM] = {gMenuText_Move, CursorCb_MoveItem},
 
 	//Field Moves
-	[MENU_FIELD_MOVES + FIELD_MOVE_FLASH] =	      {gMoveNames[MOVE_FLASH], CursorCb_FieldMove},
-	[MENU_FIELD_MOVES + FIELD_MOVE_CUT] =		  {gMoveNames[MOVE_CUT], CursorCb_FieldMove},
-	[MENU_FIELD_MOVES + FIELD_MOVE_FLY] =		  {gMoveNames[MOVE_FLY], CursorCb_FieldMove},
-	[MENU_FIELD_MOVES + FIELD_MOVE_STRENGTH] =	  {gMoveNames[MOVE_STRENGTH], CursorCb_FieldMove},
-	[MENU_FIELD_MOVES + FIELD_MOVE_SURF] =		  {gMoveNames[MOVE_SURF], CursorCb_FieldMove},
-	[MENU_FIELD_MOVES + FIELD_MOVE_ROCK_SMASH] =  {gMoveNames[MOVE_ROCKSMASH], CursorCb_FieldMove},
-	[MENU_FIELD_MOVES + FIELD_MOVE_WATERFALL] =   {gMoveNames[MOVE_WATERFALL], CursorCb_FieldMove},
+	[MENU_FIELD_MOVES + FIELD_MOVE_NULL] =	      {gMoveNames[MOVE_NULL], CursorCb_FieldMove},
 	[MENU_FIELD_MOVES + FIELD_MOVE_TELEPORT] =	  {gMoveNames[MOVE_TELEPORT], CursorCb_FieldMove},
 	[MENU_FIELD_MOVES + FIELD_MOVE_DIG] =		  {gMoveNames[MOVE_DIG], CursorCb_FieldMove},
 	[MENU_FIELD_MOVES + FIELD_MOVE_MILK_DRINK] =  {gMoveNames[MOVE_MILKDRINK], CursorCb_FieldMove},
 	[MENU_FIELD_MOVES + FIELD_MOVE_SOFT_BOILED] = {gMoveNames[MOVE_SOFTBOILED], CursorCb_FieldMove},
 	[MENU_FIELD_MOVES + FIELD_MOVE_SWEET_SCENT] = {gMoveNames[MOVE_SWEETSCENT], CursorCb_FieldMove},
-	[MENU_FIELD_MOVES + FIELD_MOVE_ROCK_CLIMB] =  {gMoveNames[MOVE_ROCKCLIMB], CursorCb_FieldMove},
 	[MENU_FIELD_MOVES + FIELD_MOVE_DEFOG] =	      {gMoveNames[MOVE_DEFOG], CursorCb_FieldMove},
-	[MENU_FIELD_MOVES + FIELD_MOVE_DIVE] =	 	  {gMoveNames[MOVE_DIVE], CursorCb_FieldMove},
 };
 
 struct
@@ -817,75 +794,43 @@ struct
 	u8 msgId;
 } const gFieldMoveCursorCallbacks[] =
 {
-	[FIELD_MOVE_FLASH] = {(void*) 0x80C9B2D, 0x0d},
-	[FIELD_MOVE_CUT] = {(void*) 0x8097899, 0x07},
-	[FIELD_MOVE_FLY] = {SetUpFieldMove_Fly, 0x0d},
-	[FIELD_MOVE_STRENGTH] = {(void*) 0x80D07ED, 0x0d},
-	[FIELD_MOVE_SURF] = {SetUpFieldMove_Surf, 0x08},
-	[FIELD_MOVE_ROCK_SMASH] = {(void*) 0x80C99D9, 0x0d},
-	[FIELD_MOVE_WATERFALL] = {SetUpFieldMove_Waterfall, 0x0d},
+	[FIELD_MOVE_NULL] = {(void*) 0x80C9B2D, 0x0d},
 	[FIELD_MOVE_TELEPORT] = {SetUpFieldMove_Teleport, 0x0d},
 	[FIELD_MOVE_DIG] = {(void*) 0x80C9A79, 0x0d},
 	[FIELD_MOVE_MILK_DRINK] = {(void*) 0x80E5685, 0x10},
 	[FIELD_MOVE_SOFT_BOILED] = {(void*) 0x80E5685, 0x10},
 	[FIELD_MOVE_SWEET_SCENT] = {(void*) 0x80DE0C9, 0x0d},
-	[FIELD_MOVE_ROCK_CLIMB] = {(void*) SetUpFieldMove_RockClimb, 0x0d},
 	[FIELD_MOVE_DEFOG] = {(void*) SetUpFieldMove_Defog, 0x0d},
-	[FIELD_MOVE_DIVE] = {SetUpFieldMove_Dive, 0x0d},
 };
 
 const u8* const gFieldMoveDescriptions[] =
 {
-	[FIELD_MOVE_FLASH] = (void*) 0x8417583, //Flash
-	[FIELD_MOVE_CUT] = (void*) 0x8417533, //Cut
-	[FIELD_MOVE_FLY] = (void*) 0x8417548, //Fly
-	[FIELD_MOVE_STRENGTH] = (void*) 0x841756E, //Strength
-	[FIELD_MOVE_SURF] = (void*) 0x841755D, //Surf
-	[FIELD_MOVE_ROCK_SMASH] = (void*) 0x8417596, //Rock Smash
-	[FIELD_MOVE_WATERFALL] = (void*) 0x84175AE, //Waterfall
+	[FIELD_MOVE_NULL] = (void*) 0x8417583, //Flash
 	[FIELD_MOVE_TELEPORT] = (void*) 0x84175FB, //Teleport
 	[FIELD_MOVE_DIG] = (void*) 0x84175CC, //Dig
 	[FIELD_MOVE_MILK_DRINK] = (void*) 0x84175F1, //Milk Drink
 	[FIELD_MOVE_SOFT_BOILED] = (void*) 0x84175F1, //Softboiled
 	[FIELD_MOVE_SWEET_SCENT] = (void*) 0x84175DE, //Sweet Scent
-	[FIELD_MOVE_ROCK_CLIMB] = gText_FieldMoveDesc_RockClimb,
 	[FIELD_MOVE_DEFOG] = gText_FieldMoveDesc_Defog,
-	[FIELD_MOVE_DIVE] = gText_FieldMoveDesc_Dive,
 };
 
 const u16 gFieldMoves[FIELD_MOVE_COUNT] =
 {
-	[FIELD_MOVE_FLASH] = MOVE_FLASH,
-	[FIELD_MOVE_CUT] = MOVE_CUT,
-	[FIELD_MOVE_FLY] = MOVE_FLY,
-	[FIELD_MOVE_STRENGTH] = MOVE_STRENGTH,
-	[FIELD_MOVE_SURF] = MOVE_SURF,
-	[FIELD_MOVE_ROCK_SMASH] = MOVE_ROCKSMASH,
-	[FIELD_MOVE_WATERFALL] = MOVE_WATERFALL,
+	[FIELD_MOVE_NULL] = MOVE_NULL,
 	[FIELD_MOVE_TELEPORT] = MOVE_TELEPORT,
 	[FIELD_MOVE_DIG] = MOVE_DIG,
 	[FIELD_MOVE_MILK_DRINK] = MOVE_MILKDRINK,
 	[FIELD_MOVE_SOFT_BOILED] = MOVE_SOFTBOILED,
 	[FIELD_MOVE_SWEET_SCENT] = MOVE_SWEETSCENT,
-	[FIELD_MOVE_ROCK_CLIMB] = MOVE_ROCKCLIMB,
 	[FIELD_MOVE_DEFOG] = MOVE_DEFOG,
-	[FIELD_MOVE_DIVE] = MOVE_DIVE,
 };
 
 #ifndef UNBOUND //MODIFY THIS
 
 const u8 gFieldMoveBadgeRequirements[FIELD_MOVE_COUNT] =
 {
-	[FIELD_MOVE_FLASH] = 1,
-	[FIELD_MOVE_CUT] = 2,
-	[FIELD_MOVE_FLY] = 3,
-	[FIELD_MOVE_STRENGTH] = 4,
-	[FIELD_MOVE_SURF] = 5,
-	[FIELD_MOVE_ROCK_SMASH] = 6,
-	[FIELD_MOVE_WATERFALL] = 0,
-	[FIELD_MOVE_ROCK_CLIMB] = 0,
+	[FIELD_MOVE_NULL] = 1,
 	[FIELD_MOVE_DEFOG] = 0,
-	[FIELD_MOVE_DIVE] = 0,
 };
 
 #else //For Pokemon Unbound
@@ -893,15 +838,7 @@ const u8 gFieldMoveBadgeRequirements[FIELD_MOVE_COUNT] =
 const u8 gFieldMoveBadgeRequirements[FIELD_MOVE_COUNT] =
 {
 	[FIELD_MOVE_DEFOG] = 1,
-	[FIELD_MOVE_CUT] = 2,
-	[FIELD_MOVE_ROCK_SMASH] = 3,
-	[FIELD_MOVE_STRENGTH] = 4,
-	[FIELD_MOVE_SURF] = 5,
-	[FIELD_MOVE_ROCK_CLIMB] = 6,
-	[FIELD_MOVE_WATERFALL] = 7,
-	[FIELD_MOVE_DIVE] = 8,
-	[FIELD_MOVE_FLY] = 1,
-	[FIELD_MOVE_FLASH] = 0,
+	[FIELD_MOVE_NULL] = 2,
 };
 
 #endif
@@ -935,17 +872,17 @@ void SetPartyMonFieldSelectionActions(struct Pokemon *mons, u8 slotId)
 	if (k < MAX_MON_MOVES) //Doesn't know 4 field moves
 	{
 		#ifndef DEBUG_HMS
-		bool8 hasHM = CheckBagHasItem(ITEM_HM02_FLY, 1) > 0;
+		bool8 hasHM = CheckBagHasItem(ITEM_SKYDIVERIDE, 1) > 0;
 		u16 species = GetMonData(&mons[slotId], MON_DATA_SPECIES2, NULL);
 		
 		if (species != SPECIES_NONE
 		&& species != SPECIES_EGG
 		&& hasHM
-		&& HasBadgeToUseFieldMove(FIELD_MOVE_FLY)
+		&& HasBadgeToUseFieldMove(FIELD_MOVE_NULL)
 		&& CanMonLearnTMTutor(&mons[slotId], ITEM_HM02_FLY, 0) == CAN_LEARN_MOVE)
 		#endif
 		{
-			AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, MENU_FIELD_MOVES + FIELD_MOVE_FLY);
+			AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, MENU_FIELD_MOVES + FIELD_MOVE_NULL);
 			++k;
 		}
 	}
@@ -979,57 +916,6 @@ void SetPartyMonFieldSelectionActions(struct Pokemon *mons, u8 slotId)
 	AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, MENU_CANCEL1);
 }
 
-static bool8 SetUpFieldMove_Fly(void)
-{
-	if (gFollowerState.inProgress && !(gFollowerState.flags & FOLLOWER_FLAG_CAN_LEAVE_ROUTE))
-		return FALSE;
-
-	if (Overworld_MapTypeAllowsTeleportAndFly(gMapHeader.mapType) == TRUE)
-		return TRUE;
-
-	return FALSE;
-}
-
-#define FieldCallback_Surf (void*) (0x812497C | 1)
-static bool8 SetUpFieldMove_Surf(void)
-{
-	if (gFollowerState.inProgress && !(gFollowerState.flags & FOLLOWER_FLAG_CAN_SURF))
-		return FALSE;
-
-	u16 item = ITEM_NONE;
-	#ifdef ONLY_CHECK_ITEM_FOR_HM_USAGE
-	item = ITEM_HM03_SURF;
-	#endif
-
-	if (PartyHasMonWithFieldMovePotential(MOVE_SURF, item, SHOULDNT_BE_SURFING) < PARTY_SIZE
-	&& IsPlayerFacingSurfableFishableWater() == TRUE)
-	{
-		gFieldCallback2 = FieldCallback_PrepareFadeInFromMenu;
-		gPostMenuFieldCallback = FieldCallback_Surf;
-		return TRUE;
-	}
-
-	return FALSE;
-}
-
-static bool8 SetUpFieldMove_Waterfall(void)
-{
-	s16 x, y;
-
-	if (gFollowerState.inProgress && !(gFollowerState.flags & FOLLOWER_FLAG_CAN_WATERFALL))
-		return FALSE;
-
-	GetXYCoordsOneStepInFrontOfPlayer(&x, &y);
-	if (MetatileBehavior_IsWaterfall(MapGridGetMetatileBehaviorAt(x, y)) == TRUE && IsPlayerSurfingNorthOrSouth() == TRUE)
-	{
-		gFieldCallback2 = FieldCallback_PrepareFadeInFromMenu;
-		gPostMenuFieldCallback = (void*) 0x8124ADD;
-		return TRUE;
-	}
-
-	return FALSE;
-}
-
 #define FieldCallback_Teleport (void*) (0x80F6730 | 1)
 static bool8 SetUpFieldMove_Teleport(void)
 {
@@ -1040,49 +926,6 @@ static bool8 SetUpFieldMove_Teleport(void)
 	{
 		gFieldCallback2 = FieldCallback_PrepareFadeInFromMenu;
 		gPostMenuFieldCallback = FieldCallback_Teleport;
-		return TRUE;
-	}
-
-	return FALSE;
-}
-
-static void FieldCallback_Dive(void)
-{
-	gFieldEffectArguments[0] = GetCursorSelectionMonId();
-	FieldEffectStart(FLDEFF_USE_DIVE);
-}
-
-static bool8 SetUpFieldMove_Dive(void)
-{
-	if (gFollowerState.inProgress && !(gFollowerState.flags & FOLLOWER_FLAG_CAN_DIVE))
-		return FALSE;
-
-	gFieldEffectArguments[1] = TrySetDiveWarp();
-	if (gFieldEffectArguments[1] != 0)
-	{
-		gFieldCallback2 = FieldCallback_PrepareFadeInFromMenu;
-		gPostMenuFieldCallback = FieldCallback_Dive;
-		return TRUE;
-	}
-
-	return FALSE;
-}
-
-static void FieldCallback_RockClimb(void)
-{
-	gFieldEffectArguments[0] = GetCursorSelectionMonId();
-	ScriptContext1_SetupScript(EventScript_RockClimb);
-}
-
-static bool8 SetUpFieldMove_RockClimb(void)
-{
-	if (gFollowerState.inProgress && !(gFollowerState.flags & FOLLOWER_FLAG_CAN_ROCK_CLIMB))
-		return FALSE;
-
-	if (IsPlayerFacingRockClimbableWall())
-	{
-		gFieldCallback2 = FieldCallback_PrepareFadeInFromMenu;
-		gPostMenuFieldCallback = FieldCallback_RockClimb;
 		return TRUE;
 	}
 
@@ -1126,27 +969,27 @@ bool8 HasBadgeToUseFieldMove(unusedArg u8 id)
 
 bool8 HasBadgeToUseSurf(void)
 {
-	return HasBadgeToUseFieldMove(FIELD_MOVE_SURF);
+	return HasBadgeToUseFieldMove(FIELD_MOVE_NULL);
 }
 
 bool8 HasBadgeToUseFlash(void)
 {
-	return HasBadgeToUseFieldMove(FIELD_MOVE_FLASH);
+	return HasBadgeToUseFieldMove(FIELD_MOVE_NULL);
 }
 
 bool8 HasBadgeToUseWaterfall(void)
 {
-	return HasBadgeToUseFieldMove(FIELD_MOVE_WATERFALL);
+	return HasBadgeToUseFieldMove(FIELD_MOVE_NULL);
 }
 
 bool8 HasBadgeToUseRockClimb(void)
 {
-	return HasBadgeToUseFieldMove(FIELD_MOVE_ROCK_CLIMB);
+	return HasBadgeToUseFieldMove(FIELD_MOVE_NULL);
 }
 
 bool8 HasBadgeToUseDive(void)
 {
-	return HasBadgeToUseFieldMove(FIELD_MOVE_DIVE);
+	return HasBadgeToUseFieldMove(FIELD_MOVE_NULL);
 }
 
 //The following specials are meant to help implement "PokeRide" properly
@@ -1213,11 +1056,11 @@ void sp10A_CanUseCutOnTree(void)
 	u16 item = ITEM_NONE;
 
 	#ifdef ONLY_CHECK_ITEM_FOR_HM_USAGE
-	item = ITEM_HM01_CUT;
+	item = ITEM_SHARPRIDE;
 	#endif
 
 	Var8004 = PARTY_SIZE;
-	if (HasBadgeToUseFieldMove(FIELD_MOVE_CUT))
+	if (HasBadgeToUseFieldMove(FIELD_MOVE_NULL))
 		Var8004 = PartyHasMonWithFieldMovePotential(MOVE_CUT, item, SHOULDNT_BE_SURFING);
 }
 
@@ -1226,11 +1069,11 @@ void sp10B_CanUseRockSmashOnRock(void)
 	u16 item = ITEM_NONE;
 
 	#ifdef ONLY_CHECK_ITEM_FOR_HM_USAGE
-	item = ITEM_HM06_ROCK_SMASH;
+	item = ITEM_CRUSHRIDE;
 	#endif
 
 	Var8004 = PARTY_SIZE;
-	if (HasBadgeToUseFieldMove(FIELD_MOVE_ROCK_SMASH))
+	if (HasBadgeToUseFieldMove(FIELD_MOVE_NULL))
 		Var8004 = PartyHasMonWithFieldMovePotential(MOVE_ROCKSMASH, item, SHOULDNT_BE_SURFING);
 }
 
@@ -1239,11 +1082,11 @@ void sp10C_CanUseStrengthOnBoulder(void)
 	u16 item = ITEM_NONE;
 
 	#ifdef ONLY_CHECK_ITEM_FOR_HM_USAGE
-	item = ITEM_HM04_STRENGTH;
+	item = ITEM_HEAVYRIDE;
 	#endif
 
 	Var8004 = PARTY_SIZE;
-	if (HasBadgeToUseFieldMove(FIELD_MOVE_STRENGTH))
+	if (HasBadgeToUseFieldMove(FIELD_MOVE_NULL))
 		Var8004 = PartyHasMonWithFieldMovePotential(MOVE_STRENGTH, item, SHOULDNT_BE_SURFING);
 }
 
@@ -2457,3 +2300,44 @@ void FieldUseFunc_VsSeeker(u8 taskId)
     }
 }
 #endif
+
+void SetChosenMonHiddenAbility(void) //added this
+{
+    struct Pokemon* mon = &gPlayerParty[Var8004];
+    u16 species = GetMonData(mon, MON_DATA_SPECIES, NULL);
+    if(gBaseStats[species].hiddenAbility == ABILITY_NONE){
+        gSpecialVar_LastResult = 0x0;
+    }
+    else{
+        gSpecialVar_LastResult = 0x1;
+        if (gPlayerParty[Var8004].hiddenAbility == TRUE)
+            gPlayerParty[Var8004].hiddenAbility = FALSE;
+        else
+            gPlayerParty[Var8004].hiddenAbility = TRUE;
+    }
+}
+
+void CheckChosenMonHiddenAbility(void) //added this
+{
+    struct Pokemon* mon = &gPlayerParty[Var8004];
+    u8 ability = GetMonAbility(mon);
+    u8 changeTo = ABILITY_NONE;
+    u16 species = GetMonData(mon, MON_DATA_SPECIES, NULL);
+    if (gPlayerParty[Var8004].hiddenAbility == FALSE
+    && gBaseStats[species].hiddenAbility != ABILITY_NONE)
+        changeTo = gBaseStats[species].hiddenAbility;
+    if (gPlayerParty[Var8004].hiddenAbility == TRUE){
+        gPlayerParty[Var8004].hiddenAbility = FALSE;
+        struct Pokemon* mon2 = &gPlayerParty[Var8004];
+        changeTo = GetMonAbility(mon2);
+        gPlayerParty[Var8004].hiddenAbility = TRUE;
+    }
+    if(gBaseStats[species].hiddenAbility == ABILITY_NONE ||  ability == changeTo ){
+        gSpecialVar_LastResult = 0x0;
+    }
+    else{
+        gSpecialVar_LastResult = 0x1;
+        GetMonNickname(mon, gStringVar1);
+        CopyAbilityName(gStringVar2, changeTo);
+    }
+}

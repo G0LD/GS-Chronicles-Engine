@@ -737,6 +737,23 @@ const union AffineAnimCmd* const gSpriteAffineAnimTable_WakeUpSlap[] =
 	sSpriteAffineAnim_WakeUpSlap,
 };
 
+static const union AffineAnimCmd sSpriteAffineAnim_DoubleSlap[] =
+{
+	AFFINEANIMCMD_FRAME(0, 0, 64, 1), //Rotate left 90 degrees
+	AFFINEANIMCMD_FRAME(0, 0, 0, 3), //Do Nothing
+	AFFINEANIMCMD_FRAME(0, -28, 0, 8), //Flatten horizontally (on its side)
+	AFFINEANIMCMD_FRAME(0, 0, 0, 11), //Do Nothing
+	AFFINEANIMCMD_FRAME(0, -288, 0, 1), //Unflatten in other direction
+	AFFINEANIMCMD_FRAME(0, 0, 0, 2), //Do Nothing
+	AFFINEANIMCMD_FRAME(0, 28, 0, 8), //Flatten horizontally (on its side)
+	AFFINEANIMCMD_END
+};
+
+const union AffineAnimCmd* const gSpriteAffineAnimTable_DoubleSlap[] =
+{
+	sSpriteAffineAnim_DoubleSlap,
+};
+
 static const union AffineAnimCmd sSpriteAffineAnim_WingAttackFeather[] =
 {
 	AFFINEANIMCMD_FRAME(0, 0, -1, 14), //Rotate a little right
@@ -1169,10 +1186,26 @@ void AnimTask_ReloadAttackerSprite(u8 taskId)
 	}
 }
 
+static void AnimTask_WaitAttackerCry(u8 taskId)
+{
+	if (!IsCryPlaying())
+	{
+		ClearPokemonCrySongs(); //Reset memory state
+		DestroyAnimVisualTask(taskId);
+	}
+}
+
 void AnimTask_PlayAttackerCry(u8 taskId)
 {
-	PlayCry3(GetIllusionPartyData(gBattleAnimAttacker)->species, 0, 1);
-	DestroyAnimVisualTask(taskId);
+	s8 pan;
+
+	if (SIDE(gBattleAnimAttacker) == B_SIDE_PLAYER)
+		pan = -25;
+	else
+		pan = 25;
+
+	PlayCry3(GetIllusionPartyData(gBattleAnimAttacker)->species, pan, 0);
+	gTasks[taskId].func = AnimTask_WaitAttackerCry;	
 }
 
 u8 ModifyMegaCries(u16 species, u8 mode)
@@ -2501,28 +2534,10 @@ void SpriteCB_ForcePalm(struct Sprite* sprite)
 	sprite->callback = SpriteCB_ForcePalmStep1;
 }
 
-void SpriteCB_WakeUpSlapStep1(struct Sprite *sprite)
-{
-	sprite->pos2.x += sprite->data[1];
-
-	if (sprite->pos2.x >= sprite->data[0])
-		DestroyAnimSprite(sprite);
-}
-
-void SpriteCB_WakeUpSlapStep0(struct Sprite *sprite)
-{
-	sprite->pos2.x -= sprite->data[1];
-
-	if (sprite->pos2.x <= sprite->data[0])
-	{
-		sprite->data[0] = -sprite->data[0];
-		sprite->callback = SpriteCB_WakeUpSlapStep1;
-	}
-}
-
 //Creates a sprite that moves right then then along the target.
 //arg 0: Swipe distance
 //arg 1: Speed
+//arg 2: Less swipes (for Double Slap)
 void SpriteCB_WakeUpSlap(struct Sprite *sprite)
 {
 	switch (sprite->data[7]) { //State
@@ -2530,6 +2545,7 @@ void SpriteCB_WakeUpSlap(struct Sprite *sprite)
 			sprite->pos2.x = gBattleAnimArgs[0];
 			sprite->data[0] = -gBattleAnimArgs[0]; //Swipe distance
 			sprite->data[1] = gBattleAnimArgs[1]; //Swipe speed
+			sprite->data[6] = gBattleAnimArgs[2]; //Less Slaps
 			++sprite->data[7];
 			break;
 		//Right
@@ -2551,7 +2567,11 @@ void SpriteCB_WakeUpSlap(struct Sprite *sprite)
 			if (sprite->pos2.x <= sprite->data[0])
 			{
 				sprite->data[0] = -sprite->data[0];
-				++sprite->data[7];
+
+				if (sprite->data[6])
+					sprite->data[7] = 5; //Destroy
+				else
+					++sprite->data[7];
 			}
 			break;
 		case 5:
@@ -3423,6 +3443,7 @@ void AnimTask_CreateHyperspaceFuryMon(u8 taskId)
 			break;
 		case 3: //Destroy sprite
 			spriteId = gTasks[taskId].data[1];
+			ClearPokemonCrySongs();
 			DestroySpriteAndFreeResources(&gSprites[spriteId]);
 			DestroyAnimVisualTask(taskId);
 			break;
@@ -3923,7 +3944,9 @@ void AnimTask_AllBanksInvisible(u8 taskId)
 	{
 		u8 spriteId = gBattlerSpriteIds[i];
 
-		if (spriteId != 0xFF)
+		if (spriteId == 0xFF || !IsBattlerSpriteVisible(i)) //Pokemon that are already hidden
+			gNewBS->hiddenAnimBattlerSprites |= gBitTable[i]; //Set bit to keep hidden after animation
+		else
 			gSprites[spriteId].invisible = TRUE;
 	}
 
@@ -3936,7 +3959,9 @@ void AnimTask_AllBanksVisible(u8 taskId)
 	{
 		u8 spriteId = gBattlerSpriteIds[i];
 
-		if (spriteId != 0xFF)
+		if (spriteId == 0xFF || gNewBS->hiddenAnimBattlerSprites & gBitTable[i]) //Pokemon that are already hidden
+			gNewBS->hiddenAnimBattlerSprites &= ~gBitTable[i]; //Clear bit to keep hidden after animation
+		else
 			gSprites[spriteId].invisible = FALSE;
 	}
 
@@ -3953,7 +3978,9 @@ void AnimTask_AllBanksInvisibleExceptAttackerAndTarget(u8 taskId)
 		||  spriteId == GetAnimBattlerSpriteId(ANIM_BANK_TARGET))
 			continue;
 
-		if (spriteId != 0xFF)
+		if (spriteId == 0xFF || !IsBattlerSpriteVisible(i)) //Pokemon that are already hidden
+			gNewBS->hiddenAnimBattlerSprites |= gBitTable[i]; //Set bit to keep hidden after animation
+		else
 			gSprites[spriteId].invisible = TRUE;
 	}
 
@@ -3962,6 +3989,8 @@ void AnimTask_AllBanksInvisibleExceptAttackerAndTarget(u8 taskId)
 
 #define RESTORE_HIDDEN_HEALTHBOXES												\
 {																				\
+	if (priority == 0)															\
+		Memset(gNewBS->hiddenHealthboxFlags, 0, sizeof(gNewBS->hiddenHealthboxFlags)); \
 	for (spriteId = 0; spriteId < MAX_SPRITES; ++spriteId)						\
 	{																			\
 		switch (gSprites[spriteId].template->tileTag) {							\
@@ -3981,7 +4010,10 @@ void AnimTask_AllBanksInvisibleExceptAttackerAndTarget(u8 taskId)
 						if (IsRaidBattle()										\
 						&& GetBankPartyData(BANK_RAID_BOSS)->hp == 0			\
 						&& (gSprites[spriteId].template->tileTag == TAG_HEALTHBOX_OPPONENT1_TILE || gSprites[spriteId].template->tileTag == TAG_HEALTHBAR_OPPONENT1_TILE)) \
+						{														\
+							gNewBS->hiddenHealthboxFlags[spriteId / 8] &= ~gBitTable[spriteId % 8]; \
 							continue;											\
+						}														\
 																				\
 						ChangeHealthboxVisibility(spriteId, FALSE);				\
 				}																\
@@ -3992,7 +4024,7 @@ void AnimTask_AllBanksInvisibleExceptAttackerAndTarget(u8 taskId)
 static void ChangeHealthboxVisibility(u8 spriteId, bool8 hide)
 {
 	struct Sprite* sprite = &gSprites[spriteId];
-	
+
 	if (gNewBS == NULL) //Battle struct was already freed at end of battle
 		return;
 

@@ -126,6 +126,25 @@
 #define BATTLE_TERRAIN_AGATHA       	0x11
 #define BATTLE_TERRAIN_LANCE 			0x12
 #define BATTLE_TERRAIN_CHAMPION       	0x13
+#define BATTLE_TERRAIN_SNOW_FIELD			0x14
+#define BATTLE_TERRAIN_VOLCANO				0x15
+#define BATTLE_TERRAIN_DARK_CAVE_WATER		0x16
+#define BATTLE_TERRAIN_DARK_CAVE			0x17
+#define BATTLE_TERRAIN_SNOW_CAVE			0x18
+#define BATTLE_TERRAIN_FOREST				0x19
+#define BATTLE_TERRAIN_ICE_IN_CAVE			0x1A
+#define BATTLE_TERRAIN_RUINS_OF_VOID		0x1B
+#define BATTLE_TERRAIN_DISTORTION_WORLD		0x1C
+#define BATTLE_TERRAIN_GRASS_GYM			0x1D
+#define BATTLE_TERRAIN_DESERT				0x1E
+#define BATTLE_TERRAIN_WATER_IN_CAVE		0x1F
+#define BATTLE_TERRAIN_WATER_IN_SNOW_CAVE	0x20
+#define BATTLE_TERRAIN_LAVA_IN_VOLCANO		0x21
+#define BATTLE_TERRAIN_WATER_IN_FOREST		0x22
+#define BATTLE_TERRAIN_AUTUMN_GRASS			0x23
+#define BATTLE_TERRAIN_AUTUMN_PLAIN			0x24
+#define BATTLE_TERRAIN_SNOW_GRASS			0x25
+#define BATTLE_TERRAIN_NIGHTMARE			0x26
 
 //For Unbound
 #ifdef UNBOUND
@@ -725,6 +744,7 @@ struct NewBattleStruct
 	u8 maxWildfireTimers[NUM_BATTLE_SIDES];
 	u8 maxCannonadeTimers[NUM_BATTLE_SIDES];
 	u8 maxVolcalithTimers[NUM_BATTLE_SIDES];
+	u8 ragePowdered;
 
 	//Personal Counters
 	u8 TelekinesisTimers[MAX_BATTLERS_COUNT];
@@ -783,6 +803,7 @@ struct NewBattleStruct
 	u8 brokeFreeMessage;
 	u8 doSwitchInEffects;
 	u8 devolveForgotMove;
+	u8 hiddenAnimBattlerSprites;
 
 	//Bit Fields for Party
 	u8 BelchCounters;
@@ -860,11 +881,13 @@ struct NewBattleStruct
 	bool8 handlingFaintSwitching : 1;
 	bool8 doingPluckItemEffect : 1;
 	bool8 usedXSpDef : 1; //Needed because it's hooked into the X Sp. Atk
+	bool8 lessThanHalfHPBeforeShellBell : 1; //For Emergency Exit
 
 	//Other
 	u16 LastUsedMove;
 	u16 NewWishHealthSave;
 	u32 totalDamageGiven;
+	u32 selfInflictedDamage; //For Emergency Exit
 	u8 DancerTurnOrder[MAX_BATTLERS_COUNT];
 	u8 PayDayByPartyIndices[PARTY_SIZE];
 	item_t SavedConsumedItems[PARTY_SIZE];
@@ -875,10 +898,10 @@ struct NewBattleStruct
 	u16 failedThrownPokeBall;
 	u32 maxGoldrushMoney;
 	u16 itemBackup[PARTY_SIZE];
-	u8 hiddenHealthboxFlags[MAX_SPRITES / 8]; //~2017AD0
+	u8 hiddenHealthboxFlags[MAX_SPRITES / 8]; //~2017AD8
 
 	//Things for Spread Moves
-	s32 DamageTaken[MAX_BATTLERS_COUNT]; //~0x2017AC0
+	s32 DamageTaken[MAX_BATTLERS_COUNT]; //~0x2017AC8
 	s32 turnDamageTaken[MAX_BATTLERS_COUNT]; //Specifically for multi-hit moves and Emergency Exit
 	u8 criticalMultiplier[MAX_BATTLERS_COUNT];
 	u8 ResultFlags[MAX_BATTLERS_COUNT];

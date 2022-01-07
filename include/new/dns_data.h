@@ -252,35 +252,13 @@ const struct SpecificTilesetFade gSpecificTilesetFades[] =
 {
 	//These Palette Town ones have been left in as examples. Feel free to remove.
 	{ //Palette Town - Player's Door
-		.tilesetPointer = 0x82D4AAC, //Tileset 1
+		.tilesetPointer = 0x8FFFFFF, //Tileset 1
 		.paletteNumToFade = 8,
 		.paletteIndicesToFade =
 		{
 			{8,  RGB(31, 31, 20)},
 			{9,  RGB(31, 31, 11)},
 			{10, RGB(31, 31, 10)},
-			TILESET_PAL_FADE_END
-		},
-	},
-	{ //Palette Town - Oak's Lab Windows
-		.tilesetPointer = 0x82D4AAC, //Tileset 1
-		.paletteNumToFade = 9,
-		.paletteIndicesToFade =
-		{
-			{8,  RGB(31, 31, 20)},
-			{9,  RGB(31, 31, 14)},
-			{10, RGB(31, 30, 0)},
-			TILESET_PAL_FADE_END
-		},
-	},
-	{ //Palette Town - Oak's Lab Door
-		.tilesetPointer = 0x82D4AAC, //Tileset 1
-		.paletteNumToFade = 10,
-		.paletteIndicesToFade =
-		{
-			{8,  RGB(31, 31, 20)},
-			{9,  RGB(31, 31, 14)},
-			{10, RGB(31, 30, 0)},
 			TILESET_PAL_FADE_END
 		},
 	},

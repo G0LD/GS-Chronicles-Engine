@@ -1159,6 +1159,27 @@ A cage made of\nelectricity that traps\nthe target for four\nto five turns.
 #org @DESC_DRAGON_ENERGY
 The higher the\nuser's HP, the\nmore powerful this\nattack becomes.
 
+#org @DESC_AQUA_SCALES
+The foe is cut\nby sharp scales\nIt may also raise\nthe user's Attack.
+
+#org @DESC_DRAGON_CRUSH
+A move based on\nthe user's madness\nIt is certain to\nbe a critical hit.
+
+#org @DESC_MAGMA_GEYSER
+The user attacks\nthe target with a\npillar of fire.\nIt may burn the foe.
+
+#org @DESC_SHARP_FLINT
+The user attacks\nthe opponent by the\npower of the land.\nIt always reduces\nthe foe's Sp. Atk.
+
+#org @DESC_FLORAL_STREAM
+The user stirs up a\nviolent petal storm.\nThis attack is certain\nto never miss.
+
+#org @DESC_SHINING_BEAM
+The user blows into\nsunlight to attack.\nIt also lowers the\nfoe's Sp. Def stat.
+
+#org @DESC_STARDUST_PUNCH
+The user strikes a\nstar-shaped punch.\nThis move always\ngoes first.
+
 #org @DESC_MAX_GUARD
 Enables the user to\nevade all attacks.\nIt may fail if used\nin succession.
 

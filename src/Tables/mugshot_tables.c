@@ -20,8 +20,28 @@ tables to edit:
 #ifdef FLAG_LOAD_MUGSHOT_SPRITE_FROM_TABLE
 const struct MugshotTable sPreBattleMugshotSprites[147] =
 {
-	//[106] = {Silver_MugshotTiles, Silver_MugshotPal, 64 * 64 / 2, 0, -32}, //Example: Replaces Blue's sprite with Silver's mugshot
-	//[124] = {Silver_MugshotTiles, Silver_MugshotPal, 64 * 64 / 2, 0, -32}, //Example: Replaces Player's sprite with Silver's mugshot
+	[133] = {Ethan_MugshotTiles, Ethan_MugshotPal, 64 * 64 / 2, 0, -32},
+	[135] = {Male_MugshotTiles, Male_MugshotPal, 64 * 64 / 2, 0, -32},
+	[134] = {Kris_MugshotTiles, Kris_MugshotPal, 64 * 64 / 2, 0, -32},
+	[136] = {Female_MugshotTiles, Female_MugshotPal, 64 * 64 / 2, 0, -32},
+	[106] = {Silver_MugshotTiles, Silver_MugshotPal, 64 * 64 / 2, 0, -32},
+	[79]  = {Falkner_MugshotTiles, Falkner_MugshotPal, 64 * 64 / 2, 0, -32},
+	[26]  = {Bugsy_MugshotTiles, Bugsy_MugshotPal, 64 * 64 / 2, 0, -32},
+	[27]  = {Whitney_MugshotTiles, Whitney_MugshotPal, 64 * 64 / 2, 0, -32},
+	[75]  = {Morty_MugshotTiles, Morty_MugshotPal, 64 * 64 / 2, 0, -32},
+	[28]  = {Chuck_MugshotTiles, Chuck_MugshotPal, 64 * 64 / 2, 0, -32},
+	[76]  = {Jasmine_MugshotTiles, Jasmine_MugshotPal, 64 * 64 / 2, 0, -32},
+	[112] = {Lorelei_MugshotTiles, Lorelei_MugshotPal, 64 * 64 / 2, 0, -32},
+	[77]  = {Clair_MugshotTiles, Clair_MugshotPal, 64 * 64 / 2, 0, -32},
+	[78]  = {Pryce_MugshotTiles, Pryce_MugshotPal, 64 * 64 / 2, 0, -32},
+	[71]  = {Proton_MugshotTiles, Proton_MugshotPal, 64 * 64 / 2, 0, -32},
+	[72]  = {Petrel_MugshotTiles, Petrel_MugshotPal, 64 * 64 / 2, 0, -32},
+	[73]  = {Archer_MugshotTiles, Archer_MugshotPal, 64 * 64 / 2, 0, -32},
+	[74]  = {Ariana_MugshotTiles, Ariana_MugshotPal, 64 * 64 / 2, 0, -32},
+	[24]  = {Will_MugshotTiles, Will_MugshotPal, 64 * 64 / 2, 0, -32},
+	[25]  = {Aile_MugshotTiles, Aile_MugshotPal, 64 * 64 / 2, 0, -32},
+	[120] = {Koga_MugshotTiles, Koga_MugshotPal, 64 * 64 / 2, 0, -32},
+	[114] = {Karen_MugshotTiles, Karen_MugshotPal, 64 * 64 / 2, 0, -32},
 };
 #endif
 

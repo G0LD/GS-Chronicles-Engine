@@ -8,34 +8,200 @@ Time to Dynamax!\p
 #org @gText_TestTrainerDynamaxMsg
 I now shall unleash the power\nof Dynamax!\p 
 
-//For Pokemon Unbound - Feel free to remove, and do not place strings below
-#ifdef UNBOUND
+#org @sText_Rival1Last
+Not a bad move for a beginner[.]\p 
 
-#org @sText_MirskleFirstMonDown
-Whoaaaaa[.]\nThat was intense[.]\p 
+#org @sText_Rival1LastLowHP
+It's not over yet!\nDon't hold back!\p 
 
-#org @sText_VegaLastSwitchIn
-Prepare yourself for my trump card.\p 
+#org @sText_Rival2Last
+One more Pok\emon means\none more opportunity!\p 
 
-#org @sText_AliceLastSwitchIn
-It's time for you to fly high,\n[FD][06]!\p 
+#org @sText_Rival2LastLowHP
+Don't think We're done!\p 
 
-#org @sText_MelLastSwitchIn
-Fight like the roaring waterfall\nbehind us, [FD][06]!\p 
+#org @sText_Rival3Last
+Impressive as usual. I see[.]\p 
 
-#org @sText_GalavanLastSwitchIn
-Ha ha ha ha!\nIt ain't over yet!\p 
+#org @sText_Rival3LastLowHP
+We can do it!\nI still believe in victory!\p 
 
-#org @sText_TessyLastSwitchIn
-It's tahm for the real fight,\nI reckon'!\p
+#org @sText_Rival4Last
+I feel my Pok\emon's heartbeat[.]\nIt's telling me we can win!\p 
 
-#org @sText_Zeph1LowHP
-Impossible[.]\p 
+#org @sText_Rival4LastLowHP
+We still have energy to continue!\p 
 
-#org @sText_Zeph2LowHP
-No!\nI can't lose again!\p 
+#org @sText_Rival5Last
+I'm not giving up that easily!\nWe will succeed!\p 
 
-#org @sText_MaximaLastSwitchIn
-The power of Mega Evolution[.]\nCan you feel it within your reach?\p 
+#org @sText_Rival5LastLowHP
+We're worthy of the Mega Evolution!\nTime for a last move!\p 
 
-#endif
+#org @sText_Rival6Last
+Our last battle showed me how fun\nbattles could be. I'm enjoying it!\p 
+
+#org @sText_Rival6LastLowHP
+Give us everything you have!\p 
+
+#org @sText_Rival7Last
+Don't leave anything to chance!\nIt's time to decide who will be\lthe first Champion!\p 
+
+#org @sText_Rival7LastLowHP
+My body's shivering of excitment!\nIt's all or nothing now!\p 
+
+#org @sText_Proton1Last
+Just one Pok\emon left?\nWhat's wrong with me!\p 
+
+#org @sText_Proton1LastLowHP
+What the[.]!\p 
+
+#org @sText_Proton2Last
+I'm getting sick of you!\p 
+
+#org @sText_Proton2LastLowHP
+How could it be!\p 
+
+#org @sText_Proton3Last
+Seriously, you'd chase me\nthis far?!\p 
+
+#org @sText_Proton3LastLowHP
+Ugh[.] What are you?!\p 
+
+#org @sText_Ariana1Last
+A brat giving me troubles?\nUnacceptable!\p 
+
+#org @sText_Ariana1LastLowHP
+Let's get this settle now!\p 
+
+#org @sText_Ariana2Last
+Hey, what do you think\nyou're doing?!\p 
+
+#org @sText_Ariana2LastLowHP
+H[.] How[.]\nHow did you become so strong?\p 
+
+#org @sText_Ariana3Last
+No! You're not going into\nthe observation deck!\p 
+
+#org @sText_Ariana3LastLowHP
+No! Not again!\p 
+
+#org @sText_Petrel1Last
+Hey, you're good!\p 
+
+#org @sText_Petrel1LastLowHP
+Wow, strong!\p 
+
+#org @sText_Petrel2Last
+What? Am I losing?\p 
+
+#org @sText_Petrel2LastLowHP
+Hey, wait, are you serious?!\p 
+
+#org @sText_Berkel1Last
+How annoying you are!\p 
+
+#org @sText_Berkel1LastLowHP
+How come my brilliant tactics\nare getting crushed?\p 
+
+#org @sText_Berkel2Last
+You asked me to get mad,\nso be it!\p 
+
+#org @sText_Berkel2LastLowHP
+Leave Team Rocket alone,\nYou silly brat!\p 
+
+#org @sText_Archer1Last
+We can't have you getting in the\nway before news of our resurgence\lreaches Giovanni!\p 
+
+#org @sText_Archer1LastLowHP
+Stop it!\nDon't you see you're crushing\lthe Giovanni's legacy?\p 
+
+#org @sText_Li1Last
+You're such an interesting trainer!\p 
+
+#org @sText_Li1LastLowHP
+That's the attitude!\p 
+
+#org @sText_Mokai1Last
+The way your Pok\emon battle\ncaught my attention[.]\p 
+
+#org @sText_Mokai1LastLowHP
+That's a perfect synchrony!\p 
+
+#org @sText_Falkner1Last
+The wind is finally with us!\p 
+
+#org @sText_Falkner1LastLowHP
+We can still fly!\p 
+
+#org @sText_Bugsy1Last
+Even though it's my last Pok\emon,\nBug Pok\emon are tough!\p 
+
+#org @sText_Bugsy1LastLowHP
+Hang in there! Just a little more!\p 
+
+#org @sText_Whitney1Last
+H-hey! Just one left? But[.]\nI ain't losin' you hear?\p 
+
+#org @sText_Whitney1LastLowHP
+Poor me!\p 
+
+#org @sText_Morty1Last
+No, it's not over yet-- not yet!\nI still believe we can do it!\p 
+
+#org @sText_Morty1LastLowHP
+We've got more discipline\nthan anyone else!\p 
+
+#org @sText_Chuck1Last
+We haven't lost yet!\p 
+
+#org @sText_Chuck1LastLowHP
+No[.] Not[.] yet[.]\p 
+
+#org @sText_Jasmine1Last
+Properly tempered steel won't be\nmade rusty by things like this!\p 
+
+#org @sText_Jasmine1LastLowHP
+Steel will hang on to\nthe very last!\p 
+
+#org @sText_Lorelei1Last
+Our freezing rage will\nmake us better even in the\ltoughest of times!\p 
+
+#org @sText_Lorelei1LastLowHP
+Was that the best you can do?\nYou better use all your power!\p 
+
+#org @sText_Clair1Last
+One last Pok\emon? This is\nwhere the real battle begins!\p 
+
+#org @sText_Clair1LastLowHP
+You're kidding, right? I'm\nsupposed to win! I already decided!\p 
+
+#org @sText_Pryce1Last
+Humph[.]\nYou are quite the Trainer.\p 
+
+#org @sText_Pryce1LastLowHP
+Willow is my middle name. Willow\nis flexible and not easily\lbroken. I'm not giving up yet.\p 
+
+#org @sText_Aile1Last
+Time to get tougher and show you\nwhat a perfect balance means!\p 
+
+#org @sText_Aile1LastLowHP
+My poor Pok\emon!\p 
+
+#org @sText_Will1Last
+Until we reach zero, our power is\nlimitless. I'm not giving up yet!\p 
+
+#org @sText_Will1LastLowHP
+I[.] I can't[.] believe it[.]\p 
+
+#org @sText_Koga1Last
+One Pok\emon left? Ha ha ha!\nI've been counting on this one\lfrom the very beginning!\p 
+
+#org @sText_Koga1LastLowHP
+Ooooof[.]\p 
+
+#org @sText_Karen1Last
+This is far from being backed\ninto a corner!\p 
+
+#org @sText_Karen1LastLowHP
+You're no ordinary Trainer to\nhave gotten this far.\p 

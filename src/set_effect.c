@@ -204,7 +204,7 @@ void SetMoveEffect(bool8 primary, u8 certain)
 	if (CheckTableForSpecialMoveEffect(gBattleCommunication[MOVE_EFFECT_BYTE], sMoveEffectsThatIgnoreSubstitute))
 		goto SKIP_SUBSTITUTE_CHECK;
 
-	if (gBattleMons[gEffectBank].hp == 0)
+	if (!BATTLER_ALIVE(gEffectBank))
 	{
 		++gBattlescriptCurrInstr;
 		goto CLEAR_MOVE_EFFECT_BYTE;
@@ -269,6 +269,9 @@ void SetMoveEffect(bool8 primary, u8 certain)
 		{
 			BattleScriptPush(gBattlescriptCurrInstr + 1);
 
+			if (gBattleCommunication[MOVE_EFFECT_BYTE] == MOVE_EFFECT_TOXIC && IsDynamaxed(gEffectBank))
+				gBattleCommunication[MOVE_EFFECT_BYTE] = MOVE_EFFECT_POISON; //Toxic becomes regular poison on a Dynamaxed opponent
+
 			if (gBattleCommunication[MOVE_EFFECT_BYTE] == MOVE_EFFECT_SLEEP)
 				gBattleMons[gEffectBank].status1 |= ((Random() % 3) + 2);
 			else
@@ -314,7 +317,8 @@ void SetMoveEffect(bool8 primary, u8 certain)
 	}
 	else
 	{
-		if (gBattleMons[gEffectBank].status2 & sStatusFlagsForMoveEffects[gBattleCommunication[MOVE_EFFECT_BYTE]])
+		if (gBattleCommunication[MOVE_EFFECT_BYTE] < NELEMS(sStatusFlagsForMoveEffects) //Error prevention
+		&& gBattleMons[gEffectBank].status2 & sStatusFlagsForMoveEffects[gBattleCommunication[MOVE_EFFECT_BYTE]])
 		{
 			gBattlescriptCurrInstr++;
 		}

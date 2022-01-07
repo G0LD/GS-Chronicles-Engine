@@ -24,6 +24,7 @@ build/*
 *.ips
 *.ups
 *.bps
+*.cheats
 Multi Target Moves Plan.txt
 generatedrepoints
 *__pycache__

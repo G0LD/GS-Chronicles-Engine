@@ -40,3 +40,5 @@ Cover Art.png
 
 # pycache files
 *.pyc
+src/start_menu.cj
+*.nlz

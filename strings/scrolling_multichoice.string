@@ -63,9 +63,16 @@ Reaper Cloth
 Dragon Scale
 
 #org @sExampleText_21
+<<<<<<< Updated upstream
 Deep Sea Fang
 
 #org @sExampleText_22
 Deep Sea Tooth
+=======
+Deep Sea Tooth
+
+#org @sExampleText_22
+Deep Sea Fang
+>>>>>>> Stashed changes
 
 #endif

@@ -35,4 +35,8 @@ RunTextPrintersForInstantTextHook_wasInstantText:
 	bx r1
 
 gUnknown_841F428:
+<<<<<<< Updated upstream
 	.byte 4, 1, 0x7f
+=======
+	.byte 4, 1, 0x7f
+>>>>>>> Stashed changes

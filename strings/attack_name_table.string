@@ -1389,7 +1389,7 @@ Brine
 Fairy Wind
 
 #org @NAME_DOLL_EYES
-Doll Eyes
+B-Doll Eyes
 
 #org @NAME_PLAY_ROUGH
 Play Rough
@@ -1404,7 +1404,7 @@ Drain Kiss
 Dazzle Gleam
 
 #org @NAME_DISARM_CRY
-Disarm Cry
+Disarm Voice
 
 #org @NAME_STEALTH_ROCK
 Stealth Rock
@@ -1698,7 +1698,7 @@ Chatter
 Confide
 
 #org @NAME_WATER_STAR
-Water Star
+Water Shur.
 
 #org @NAME_MYSTIC_FIRE
 Mystic Fire
@@ -1716,7 +1716,7 @@ Hold Back
 Infestation
 
 #org @NAME_POWER_UP_HIT
-Power-Up Hit
+PowerUpPunch
 
 #org @NAME_1000_ARROWS
 1000 Arrows
@@ -1725,7 +1725,7 @@ Power-Up Hit
 1000 Waves
 
 #org @NAME_PARA_CHARGE
-Para Charge
+Parab Charge
 
 #org @NAME_SEARING_SHOT
 Searing Shot
@@ -1767,7 +1767,7 @@ Draco Hammer
 Fire Lash
 
 #org @NAME_FIRST_PRESS
-First Press
+FirstImpress
 
 #org @NAME_FLEUR_CANNON
 Fleur Cannon
@@ -1779,7 +1779,7 @@ Floral Heal
 Gear Up
 
 #org @NAME_HORSEPOWER
-Horsepower
+HiHorsepower
 
 #org @NAME_ICE_HAMMER
 Ice Hammer
@@ -1854,13 +1854,13 @@ Spirit Lock
 Spotlight
 
 #org @NAME_BAD_TANTRUM
-Bad Tantrum
+StompTantrum
 
 #org @NAME_STRENGTH_SAP
 Strength Sap
 
 #org @NAME_SUNSTEEL_RAM
-Sunsteel Ram
+SunsteelStr.
 
 #org @NAME_TEARY_LOOK
 Teary Look
@@ -2157,7 +2157,7 @@ Meteor Beam
 ShellSideArm
 
 #org @NAME_MISTY_EXPLOSION
-MistyExplode
+Mist Burst
 
 #org @NAME_GRASSY_GLIDE
 Grassy Glide
@@ -2221,6 +2221,27 @@ Thunder Cage
 
 #org @NAME_DRAGON_ENERGY
 DragonEnergy
+
+#org @NAME_AQUA_SCALES
+Aqua Scales
+
+#org @NAME_DRAGON_CRUSH
+Dragon Crush
+
+#org @NAME_MAGMA_GEYSER
+Magma Geyser
+
+#org @NAME_SHARP_FLINT
+Sharp Flint
+
+#org @NAME_FLORAL_STREAM
+FloralStream
+
+#org @NAME_SHINING_BEAM
+Shining Beam
+
+#org @NAME_STARDUST_PUNCH
+StardustPnch
 
 #org @Z_Move_1
 Z-Move 1

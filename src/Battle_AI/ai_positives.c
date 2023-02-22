@@ -672,6 +672,11 @@ u8 AIScript_Positives(const u8 bankAtk, const u8 bankDef, const u16 originalMove
 			if (IsTypeZCrystal(data->atkItem, moveType) && !IsMegaZMoveBannedBattle() && !gNewBS->zMoveData.used[bankAtk])
 				INCREASE_VIABILITY(9); //Z-Splash!
 			break;
+		
+		case EFFECT_TELEPORT:
+			if (gBattleTypeFlags & BATTLE_TYPE_TRAINER || SIDE(gBankAttacker) == B_SIDE_PLAYER)
+				goto PIVOT_CHECK;
+			break;
 
 		case EFFECT_DISABLE:
 			if (gDisableStructs[bankDef].disableTimer1 == 0
@@ -1193,7 +1198,7 @@ u8 AIScript_Positives(const u8 bankAtk, const u8 bankDef, const u16 originalMove
 					}
 					else //Double Battle
 					{
-						if (ViableMonCountFromBankLoadPartyRange(bankAtk) <= 2)
+						if (!BankHasMonToSwitchTo(bankAtk))
 							break; //Can't switch
 
 						if (GetMonAbility(GetBankPartyData(bankAtk)) == ABILITY_INTIMIDATE
@@ -1521,7 +1526,9 @@ u8 AIScript_Positives(const u8 bankAtk, const u8 bankDef, const u16 originalMove
 
 		case EFFECT_FOLLOW_ME:
 			if (IS_DOUBLE_BATTLE
+			&& move != MOVE_SPOTLIGHT
 			&& !IsBankIncapacitated(bankDef)
+			&& (move != MOVE_RAGEPOWDER || IsAffectedByPowder(bankDef)) //Rage Powder doesn't affect powder immunities
 			&& BATTLER_ALIVE(data->bankAtkPartner))
 			{
 				u16 predictedMoveOnPartner = IsValidMovePrediction(bankDef, data->bankAtkPartner);
@@ -1733,7 +1740,11 @@ u8 AIScript_Positives(const u8 bankAtk, const u8 bankDef, const u16 originalMove
 				case MOVE_ENTRAINMENT:
 					if (gAbilityRatings[defAbility] >= 5
 					||  gAbilityRatings[atkAbility] <= 0)
-						INCREASE_STATUS_VIABILITY(2);
+					{
+						if (defAbility != atkAbility
+						&& !IsAbilitySuppressed(bankDef))
+							INCREASE_STATUS_VIABILITY(2);
+					}						
 					break;
 
 				case MOVE_SKILLSWAP:

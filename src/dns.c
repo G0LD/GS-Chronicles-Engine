@@ -200,7 +200,6 @@ static u16 FadeColourForDNS(struct PlttData* blend, u8 coeff, s8 r, s8 g, s8 b)
 
 /*
 	u8 coeffMax = 128;
-
 	return (((r * (coeffMax - coeff) + (((r * blend->r) >> 5) * coeff)) >> 8) << 0)
 		 | (((g * (coeffMax - coeff) + (((g * blend->g) >> 5) * coeff)) >> 8) << 5)
 		 | (((b * (coeffMax - coeff) + (((b * blend->b) >> 5) * coeff)) >> 8) << 10);
@@ -474,19 +473,16 @@ int main()
 	u8 monthToIncrease = 12;
 	u32 yearToIncrease = 2019;
 	IncreaseDateByOneDay(&yearToIncrease, &monthToIncrease, &dayToIncrease);
-
 	printf("Date 1 Before Date 2: %d\n", IsDate1BeforeThanDate2(2019, 12, 31, 2019, 05, 30));
 	printf("Is %d a Leap Year: %d\n", 2020, IsLeapYear(2020));
 	printf("Is last day in month: %d\n", IsLastDayInMonth(2020, 02, 29));
 	printf("New Year: %d, New Month: %d, New Day: %d\n", yearToIncrease, monthToIncrease, dayToIncrease);
-
 	printf("06-15-2000 @00:00 to 05-01-2018 @00:00\n");
 	printf("Year difference: %d\n", GetYearDifference(2000, 2018)); //18
 	printf("Month Difference: %d\n", GetMonthDifference(2000, 06, 2018, 05)); //15
 	printf("Day Difference: %d\n", GetDayDifference(2000, 06, 15, 2018, 05, 01)); //6529
 	printf("Hour Difference: %d\n", GetHourDifference(2000, 06, 15, 00, 2018, 05, 01, 00)); //156696
 	printf("Minute Difference: %d\n", GetMinuteDifference(2000, 06, 15, 00, 01, 2018, 05, 01, 00, 00)); //9401759
-
 	return 0;
 }
 */

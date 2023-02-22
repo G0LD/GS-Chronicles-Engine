@@ -9,6 +9,7 @@
 .equ MSG_YESNO, 0x5
 .equ MSG_NORMAL, 0x6
 .equ MSG_POKENAV, 0xA
+.equ MSG_TRANSPARENT, 0xC
 
 @Compare values
 .equ lessthan, 0x0 @A is less than B

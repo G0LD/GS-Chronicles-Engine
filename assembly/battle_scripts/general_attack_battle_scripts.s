@@ -2155,16 +2155,16 @@ BS_103_PriorityMove:
 .global BS_104_TripleKick
 BS_104_TripleKick:
 	attackcanceler
+	accuracycheck BS_MOVE_MISSED 0x0
 	attackstring
 	ppreduce
-	accuracycheck BS_MOVE_MISSED 0x0
 	jumpifmove MOVE_TRIPLEAXEL BS_TripleAxel
 	addbyte TRIPLE_KICK_POWER 10
-	goto BS_STANDARD_HIT
+	goto BS_HIT_FROM_DAMAGE_CALC
 
 BS_TripleAxel:
 	addbyte TRIPLE_KICK_POWER 20
-	goto BS_STANDARD_HIT
+	goto BS_HIT_FROM_DAMAGE_CALC
 
 @;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
@@ -2896,6 +2896,7 @@ FellStingerBS: @;Add in Volt Switch Fix?
 	call STANDARD_DAMAGE
 	prefaintmoveendeffects 0x0
 	faintpokemonaftermove
+	jumpiffainted BANK_ATTACKER BS_MOVE_FAINT
 	jumpiffainted BANK_TARGET FellStingerKill
 	goto BS_MOVE_FAINT
 
@@ -3101,9 +3102,14 @@ BS_152_Thunder:
 @;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
 .global BS_153_Teleport
+.global BattleScript_TeleportFlee
+.global BattleScript_TeleportSwitch
 BS_153_Teleport:
 	attackcanceler
-	jumpifbattletype BATTLE_TRAINER | BATTLE_DOUBLE, FAILED_PRE
+	callasm SetCorrectTeleportBattleScript
+
+BattleScript_TeleportFlee:
+	jumpifbattletype BATTLE_DOUBLE, FAILED_PRE
 	callasm SetTeleportBit
 	getifcantrunfrombattle BANK_ATTACKER
 	jumpifbyte EQUALS BATTLE_COMMUNICATION 0x1 FAILED_PRE
@@ -3116,6 +3122,15 @@ BS_153_Teleport:
 	waitmessage DELAY_1SECOND
 	setbyte BATTLE_OUTCOME 0x5 @;Teleported
 	goto BS_MOVE_END
+
+BattleScript_TeleportSwitch:
+	jumpifcannotswitch BANK_ATTACKER | ATK4F_DONT_CHECK_STATUSES, FAILED_PRE
+	attackstring
+	ppreduce
+	attackanimation
+	waitanimation
+	copybyte SWITCHING_BANK USER_BANK
+	goto BatonPassSwitchOutBS
 
 @;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
@@ -3609,6 +3624,7 @@ BestowBS:
 	attackstringnoprotean
 	ppreduce
 	callasm BestowItem
+	callasm TransferLastUsedItem
 	tryactivateprotean
 	attackanimation
 	waitanimation

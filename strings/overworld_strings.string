@@ -44,13 +44,16 @@ The repellent's effect wore off!\nWould you like to use another one?
 The repellent's effect wore off!
 
 #org @gText_FoundMultipleItems
-[PLAYER] found [BUFFER1] [BUFFER2]!
+You found [BUFFER1] [RED][BUFFER2][BLACK]!
 
 #org @gText_ObtainedMultipleItems
-Obtained [BUFFER1] [BUFFER2]!
+You obtained [BUFFER1] [RED][BUFFER2][BLACK]!
+
+#org @gText_ObtainedItem
+You obtained the [RED][BUFFER2][BLACK]!
 
 #org @gText_ObtainedTMHM
-Obtained a [BUFFER][03]!\nIt contains [BUFFER][02].
+You obtained the [BUFFER][03]\n[RED][BUFFER][02][BLACK]!
 
 #org @gText_UseWhichRegisteredItem
 Use which item?

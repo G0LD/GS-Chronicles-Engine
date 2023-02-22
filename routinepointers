@@ -226,15 +226,16 @@ PlayerAvatarTransition_HandleUnderwater 8471EEC
 MetatileBehavior_IsMuddySlope 835B7FC
 ForcedMovement_MuddySlope 835B800
 
+FieldUseFunc_EVReducingBerry 8F71A68
+FieldUseFunc_EVReducingBerry 8F71A94
+FieldUseFunc_EVReducingBerry 8F71AC0
+FieldUseFunc_EVReducingBerry 8F71AEC
+FieldUseFunc_EVReducingBerry 8F71B18
+FieldUseFunc_EVReducingBerry 8F71B44
+
 #ifdef UNBOUND
 FieldUseFunc_MaxPowder 8876C40
 FieldUseFunc_Honey 8876E7C
-FieldUseFunc_EVReducingBerry 8877C68
-FieldUseFunc_EVReducingBerry 8877C94
-FieldUseFunc_EVReducingBerry 8877CC0
-FieldUseFunc_EVReducingBerry 8877CEC
-FieldUseFunc_EVReducingBerry 8877D18
-FieldUseFunc_EVReducingBerry 8877D44
 FieldUseFunc_VsSeeker 887A054
 FieldUseFunc_FormChangeItem 887BE3C
 FieldUseFunc_FormChangeItem 887BE68

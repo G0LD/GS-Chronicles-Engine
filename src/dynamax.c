@@ -788,6 +788,28 @@ void HandleDeadRaidMonAndDeadPlayer(void)
 		gBattleStruct->field_91 &= ~gBitTable[GetBattlerAtPosition(B_POSITION_PLAYER_LEFT)]; //So the player can still catch even if they have no Pokemon left
 }
 
+#define HEALTHBOX_GFX_HP_BAR_GREEN 3
+#define HEALTHBOX_GFX_HP_BAR_YELLOW 47
+#define HEALTHBOX_GFX_HP_BAR_RED 56
+#define B_HEALTHBAR_PIXELS 48
+u8 GetBattleHealthbarColour(u8 filledPixelsCount, u8 bank)
+{
+	if (IsRaidBattle() && bank == BANK_RAID_BOSS)
+	{
+		//Raid Boss always has their HP bar red
+		return HEALTHBOX_GFX_HP_BAR_RED;
+	}
+	else
+	{
+		if (filledPixelsCount > (B_HEALTHBAR_PIXELS * 50 / 100)) // more than 50 % hp
+			return HEALTHBOX_GFX_HP_BAR_GREEN;
+		else if (filledPixelsCount > (B_HEALTHBAR_PIXELS * 20 / 100)) // more than 20% hp
+			return HEALTHBOX_GFX_HP_BAR_YELLOW;
+		else
+			return HEALTHBOX_GFX_HP_BAR_RED; // 20 % or less
+	}
+}
+
 //Called from Battle Script
 void UpdateHPForDynamax(void)
 {
@@ -1520,7 +1542,9 @@ void CreateRaidShieldSprites(void)
 	u8 bank = BANK_RAID_BOSS;
 	u16 baseStatTotal = GetBaseStatsTotal(SPECIES(bank));
 
+	#ifdef FLAG_RAID_BATTLE_NO_FORCE_END
 	if (!FlagGet(FLAG_RAID_BATTLE_NO_FORCE_END)) //Less shields for battle that ends in 10 turns
+	#endif
 	{
 		switch (baseStatTotal) {
 			case 0 ... 349:
@@ -1536,6 +1560,7 @@ void CreateRaidShieldSprites(void)
 				numShields = 4;
 		}
 	}
+	#ifdef FLAG_RAID_BATTLE_NO_FORCE_END
 	else
 	{
 		switch (baseStatTotal) {
@@ -1555,6 +1580,7 @@ void CreateRaidShieldSprites(void)
 				numShields = MAX_NUM_RAID_SHIELDS;
 		}
 	}
+	#endif
 
 	gNewBS->dynamaxData.shieldCount = numShields;
 	LoadRaidShieldGfx();
@@ -1665,8 +1691,13 @@ static u32 GetRaidRandomNumber(void)
 	u8 lastMapNum = (gSaveBlock1->dynamicWarp.mapNum == 0) ? 0xFF : gSaveBlock1->dynamicWarp.mapNum;
 	u8 lastWarpId = (gSaveBlock1->dynamicWarp.warpId == 0) ? 0xFF : gSaveBlock1->dynamicWarp.warpId;
 	u16 lastPos = (gSaveBlock1->dynamicWarp.x + gSaveBlock1->dynamicWarp.y == 0) ? 0xFFFF : (u16) (gSaveBlock1->dynamicWarp.x + gSaveBlock1->dynamicWarp.y);
+	#ifdef VAR_RAID_NUMBER_OFFSET
+	u16 offset = VarGet(VAR_RAID_NUMBER_OFFSET); //Setting this var changes all the raid spawns for the current hour (helps with better Wishing Piece)
+	#else
+	u16 offset = 0;
+	#endif
 
-	return ((hour * (day + month) * lastMapGroup * (lastMapNum + lastWarpId + lastPos)) + ((hour * (day + month)) ^ dayOfWeek)) ^ T1_READ_32(gSaveBlock2->playerTrainerId);
+	return ((hour * (day + month) * lastMapGroup * (lastMapNum + lastWarpId + lastPos)) + ((hour * (day + month)) ^ dayOfWeek) + offset) ^ T1_READ_32(gSaveBlock2->playerTrainerId);
 }
 
 static bool8 ShouldTryGigantamaxRaidMon(void)

@@ -35,17 +35,23 @@ enum EndTurnEffects
 	ET_Ingrain,
 	ET_Leech_Seed,
 	ET_Item_Effects2,
+	ET_Switch_Out_Abilities2,
 	ET_Poison,
 	ET_Item_Effects3,
+	ET_Switch_Out_Abilities3,
 	ET_Burn,
 	ET_Item_Effects4,
+	ET_Switch_Out_Abilities4,
 	ET_Nightmare,
 	ET_Item_Effects5,
+	ET_Switch_Out_Abilities5,
 	ET_Curse,
 	ET_Item_Effects6,
+	ET_Switch_Out_Abilities6,
 	ET_Trap_Damage,
 	ET_Octolock,
 	ET_Item_Effects7,
+	ET_Switch_Out_Abilities7,
 	ET_Taunt_Timer,
 	ET_Encore_Timer,
 	ET_Disable_Timer,
@@ -97,9 +103,9 @@ enum Block_A
 	ET_Grassy_Terrain,
 	ET_Hydration_ShedSkin_Healer,
 	ET_Item_Effects,
+	ET_Switch_Out_Abilities,
+	MAX_CASES_BLOCK_A,
 };
-
-#define MAX_CASES_BLOCK_A 5
 
 enum Block_B
 {
@@ -107,9 +113,8 @@ enum Block_B
 	ET_SpeedBoost_Moody_BadDreams_SlowStart,
 	ET_Orbz,
 	ET_Harvest_Pickup,
+	MAX_CASES_BLOCK_B,
 };
-
-#define MAX_CASES_BLOCK_B 4
 
 #define TURNBASED_MAX_CASE ET_End
 
@@ -398,6 +403,7 @@ u8 TurnBasedEffects(void)
 							BattleScriptExecute(BattleScript_SeaOfFireDamage);
 							effect++;
 						}
+						gNewBS->turnDamageTaken[gActiveBattler] = gBattleMoveDamage; //For Emergency Exit
 						break;
 
 					case ET_G_Max_VineLash:
@@ -412,6 +418,7 @@ u8 TurnBasedEffects(void)
 							BattleScriptExecute(BattleScript_SeaOfFireDamage);
 							effect++;
 						}
+						gNewBS->turnDamageTaken[gActiveBattler] = gBattleMoveDamage; //For Emergency Exit
 						break;
 
 					case ET_G_Max_Wildfire:
@@ -426,6 +433,7 @@ u8 TurnBasedEffects(void)
 							BattleScriptExecute(BattleScript_SeaOfFireDamage);
 							effect++;
 						}
+						gNewBS->turnDamageTaken[gActiveBattler] = gBattleMoveDamage; //For Emergency Exit
 						break;
 
 					case ET_G_Max_Cannonade:
@@ -440,6 +448,7 @@ u8 TurnBasedEffects(void)
 							BattleScriptExecute(BattleScript_SeaOfFireDamage);
 							effect++;
 						}
+						gNewBS->turnDamageTaken[gActiveBattler] = gBattleMoveDamage; //For Emergency Exit
 						break;
 
 					case ET_G_Max_Volcalith:
@@ -453,6 +462,7 @@ u8 TurnBasedEffects(void)
 							BattleScriptExecute(BattleScript_SeaOfFireDamage);
 							effect++;
 						}
+						gNewBS->turnDamageTaken[gActiveBattler] = gBattleMoveDamage; //For Emergency Exit
 						break;
 
 					case ET_Grassy_Terrain:
@@ -482,6 +492,7 @@ u8 TurnBasedEffects(void)
 								case ABILITY_SHEDSKIN:
 								case ABILITY_HYDRATION:
 								case ABILITY_HEALER:
+								case ABILITY_EMERGENCYEXIT:
 									if (AbilityBattleEffects(ABILITYEFFECT_ENDTURN, gActiveBattler, 0, 0, 0))
 										effect++;
 							}
@@ -545,6 +556,7 @@ u8 TurnBasedEffects(void)
 					BattleScriptExecute(BattleScript_LeechSeedTurnDrain);
 					effect++;
 				}
+				gNewBS->turnDamageTaken[gActiveBattler] = gBattleMoveDamage; //For Emergency Exit
 				break;
 
 			//One item effect checked is done after each time the Pokemon receives damage
@@ -559,6 +571,23 @@ u8 TurnBasedEffects(void)
 				{
 					if (ItemBattleEffects(ItemEffects_EndTurn, gActiveBattler, FALSE, FALSE))
 						effect++;
+				}
+				break;
+			
+			//One ability checked is done after each time the Pokemon receives damage
+			case ET_Switch_Out_Abilities2:
+			case ET_Switch_Out_Abilities3:
+			case ET_Switch_Out_Abilities4:
+			case ET_Switch_Out_Abilities5:
+			case ET_Switch_Out_Abilities6:
+			case ET_Switch_Out_Abilities7:
+				if (BATTLER_ALIVE(gActiveBattler))
+				{
+					switch(ABILITY(gActiveBattler)) {
+						case ABILITY_EMERGENCYEXIT:
+							if (AbilityBattleEffects(ABILITYEFFECT_ENDTURN, gActiveBattler, 0, 0, 0))
+								effect++;
+					}
 				}
 				break;
 
@@ -584,10 +613,13 @@ u8 TurnBasedEffects(void)
 							}
 						}
 						else
+						{
 							BattleScriptExecute(BattleScript_PoisonTurnDmg);
+						}
 						++effect;
 					}
 				}
+				gNewBS->turnDamageTaken[gActiveBattler] = gBattleMoveDamage; //For Emergency Exit
 				break;
 
 			case ET_Burn:
@@ -600,6 +632,7 @@ u8 TurnBasedEffects(void)
 					BattleScriptExecute(BattleScript_BurnTurnDmg);
 					effect++;
 				}
+				gNewBS->turnDamageTaken[gActiveBattler] = gBattleMoveDamage; //For Emergency Exit
 				break;
 
 			case ET_Nightmare:
@@ -618,6 +651,7 @@ u8 TurnBasedEffects(void)
 					else
 						gBattleMons[gActiveBattler].status2 &= ~STATUS2_NIGHTMARE;
 				}
+				gNewBS->turnDamageTaken[gActiveBattler] = gBattleMoveDamage; //For Emergency Exit
 				break;
 
 			case ET_Curse:
@@ -629,6 +663,7 @@ u8 TurnBasedEffects(void)
 					BattleScriptExecute(BattleScript_CurseTurnDmg);
 					effect++;
 				}
+				gNewBS->turnDamageTaken[gActiveBattler] = gBattleMoveDamage; //For Emergency Exit
 				break;
 
 			case ET_Trap_Damage:
@@ -678,6 +713,7 @@ u8 TurnBasedEffects(void)
 						effect++;
 					}
 				}
+				gNewBS->turnDamageTaken[gActiveBattler] = gBattleMoveDamage; //For Emergency Exit
 				break;
 
 			case ET_Octolock:
@@ -935,7 +971,13 @@ u8 TurnBasedEffects(void)
 					&& --gNewBS->AuroraVeilTimers[gBattleStruct->turnEffectsBank] == 0)
 					{
 						gBankAttacker = gBankTarget = gActiveBattler = gBattleStruct->turnEffectsBank;
-						BattleScriptExecute(BattleScript_AuroraVeilEnd);
+						gBattleStringLoader = gText_SideStatusWoreOff;
+						BattleScriptExecute(BattleScript_PrintCustomStringEnd2);
+						gBattleTextBuff1[0] = B_BUFF_PLACEHOLDER_BEGIN;
+						gBattleTextBuff1[1] = B_TXT_COPY_VAR_1;
+						gBattleTextBuff1[2] = MOVE_AURORAVEIL & 0xFF;
+						gBattleTextBuff1[3] = MOVE_AURORAVEIL >> 8;
+						gBattleTextBuff1[4] = EOS;
 						effect++;
 					}
 					break;
@@ -1539,6 +1581,8 @@ u8 TurnBasedEffects(void)
 				gNewBS->megaData.state = 0;
 				gNewBS->calculatedAIPredictions = FALSE;
 				gNewBS->batonPassing = FALSE;
+				gNewBS->NoMoreMovingThisTurn = 0; //May be set during end turn Emergency Exit
+				gNewBS->ragePowdered = 0;
 				gNewBS->dynamaxData.attackAgain = FALSE;
 				gNewBS->dynamaxData.repeatedAttacks = 0;
 				gNewBS->ai.sideSwitchedThisRound = 0;
@@ -1552,6 +1596,7 @@ u8 TurnBasedEffects(void)
 					gNewBS->leftoverHealingDone[i] = FALSE;
 					gNewBS->statRoseThisRound[i] = FALSE;
 					gNewBS->statFellThisRound[i] = FALSE;
+					gNewBS->turnDamageTaken[i] = 0;
 					gNewBS->ai.calculatedAISwitchings[i] = FALSE;
 					gNewBS->recalculatedBestDoublesKillingScores[i] = FALSE;
 					gNewBS->ai.fightingStyle[i] = 0xFF;

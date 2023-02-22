@@ -285,7 +285,7 @@ void MetalBurstDamageCalculator(void)
 	{
 		gBattleMoveDamage = (gProtectStructs[gBankAttacker].physicalDmg * 15) / 10;
 
-		if (gSideTimers[defSide].followmeTimer && gBattleMons[gSideTimers[defSide].followmeTarget].hp)
+		if (IsMoveRedirectedByFollowMe(gCurrentMove, gBankAttacker, defSide))
 			gBankTarget = gSideTimers[defSide].followmeTarget;
 		else
 			gBankTarget = gProtectStructs[gBankAttacker].physicalBank;
@@ -294,7 +294,7 @@ void MetalBurstDamageCalculator(void)
 	{
 		gBattleMoveDamage = (gProtectStructs[gBankAttacker].specialDmg * 15) / 10;
 
-		if (gSideTimers[defSide2].followmeTimer && gBattleMons[gSideTimers[defSide2].followmeTarget].hp)
+		if (IsMoveRedirectedByFollowMe(gCurrentMove, gBankAttacker, defSide2))
 			gBankTarget = gSideTimers[defSide2].followmeTarget;
 		else
 			gBankTarget = gProtectStructs[gBankAttacker].specialBank;
@@ -2164,4 +2164,19 @@ void SetSwitchingBankSwitchingCooldownTo2(void)
 void FaintedBankNameInBuff1(void)
 {
     PREPARE_MON_NICK_BUFFER(gBattleTextBuff1, gBankFainted, gBattlerPartyIndexes[gBankFainted]);
+}
+
+void SetCorrectTeleportBattleScript(void)
+{
+	if (gBattleTypeFlags & BATTLE_TYPE_TRAINER)
+	{
+		gBattlescriptCurrInstr = BattleScript_TeleportSwitch - 5;
+	}
+	else //Wild Battle
+	{
+		if (SIDE(gBankAttacker) == B_SIDE_PLAYER)
+			gBattlescriptCurrInstr = BattleScript_TeleportSwitch - 5;
+		else
+			gBattlescriptCurrInstr = BattleScript_TeleportFlee - 5;
+	}
 }

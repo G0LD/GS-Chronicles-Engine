@@ -1,0 +1,36 @@
+#org @gText_bugscript_Tue
+Tuesday
+
+#org @gText_bugscript_Thu
+Thursday
+
+#org @gText_bugscript_Sat
+Saturday
+
+#org @gText_bugscript_T1
+Today's [BUFFER1].\pThat means the Bug-Catching Contest\nis on today.\pThe rules are simple.\pUsing one of your Pok\emon, catch a\nBug-type Pok\emon to be judged.\pWould you like to give it a try?
+
+#org @gText_bugscript_T2
+Come back if you change your mind.
+
+#org @gText_bugscript_String1
+You are only allowed to bring one\nPok\emon.\pPlease select which one you would\nlike to bring to the contest.
+
+#org @gText_bugscript_String2
+[BUFFER1] will join you.\pThe rest of your team was\ntransferred to Someone's PC.\pThey were placed starting\nin Box \"[BUFFER2]."
+
+#org @gText_bugscript_String3
+You are only allowed to bring one\nPok\emon.\pNormally, we would offer to deposit\nthe rest of your team into a Box.\pHowever, it seems like all of your\nBoxes are full.\pPlease make room and return later.
+
+#org @gText_bugscript_String4
+[BUFFER1] will join you.\pThe rest of your team was\ntransferred to Bill's PC.\pThey were placed starting\nin Box \"[BUFFER2]."
+
+#org @gText_bugscript_T3
+The person who gets the stronger\nbug Pok\emon is the winner.\pYou have only one opportunity to\ncatch a bug Pok\emon.\pIf you run out of Pok\e Balls ask\nthe guard to get some Park Balls.\pOnce you catch a Pok\emon, the\ncontest is over.\pIf you wish to quit then talk\nto the guard and you'll get\lnothing.\pGo out and catch the strongest\nBug-type Pok\emon you can find!
+
+#org @gText_bugscript_T4
+Sorry. You can't enter to the\ncontest with a Pok\emon Egg.
+
+#org @gText_bugscript_String7
+Thanks for participating.\nWe've a new Contest every Tuesday,\lThursday and Saturday.
+

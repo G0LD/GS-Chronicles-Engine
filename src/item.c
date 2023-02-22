@@ -41,6 +41,7 @@ struct BagMenuAlloc
 };
 
 extern const u8 gMoveNames[][MOVE_NAME_LENGTH + 1];
+extern const u8 gLongMoveNames[][MOVE_NAME_LENGTH + 5];
 extern const u8 gText_ThrowInOnePremierBall[];
 extern const u8 gText_ThrowInPremierBalls[];
 extern const u16 gItemsByType[];
@@ -493,7 +494,7 @@ static void StringAppendFullMoveName(u8* dst, const u8* src)
 
 void CopyTMName(u8* dst, u16 itemId)
 {
-	StringCopy(dst, gMoveNames[ItemIdToBattleMoveId(itemId)]);
+	StringCopy(dst, gLongMoveNames[ItemIdToBattleMoveId(itemId)]);
 }
 
 void LoadTMNameWithNo(u8* dst, u16 itemId)
@@ -531,10 +532,7 @@ void LoadTMNameWithNo(u8* dst, u16 itemId)
 	StringAppend(gStringVar4, (void*) 0x846317C);
 	StringAppend(gStringVar4, (void*) 0x8416703);
 
-	if (StringLength(gMoveNames[ItemIdToBattleMoveId(itemId)]) == MOVE_NAME_LENGTH && tmNum > NUM_TMS)
-		StringAppendFullMoveName(gStringVar4, gMoveNames[ItemIdToBattleMoveId(itemId)]);
-	else
-		StringAppend(gStringVar4, gMoveNames[ItemIdToBattleMoveId(itemId)]);
+	StringAppendFullMoveName(gStringVar4, gLongMoveNames[ItemIdToBattleMoveId(itemId)]);
 
 	StringCopy(dst, gStringVar4);
 }
@@ -750,7 +748,7 @@ void CheckTmPurchase(u16 item, u8 taskId)
 		if (GetPocketByItemId(item) == POCKET_TM_HM)
 		{
 			ConvertIntToDecimalStringN(&gStringVar2[0], ItemId_GetPrice(item), 3, 8);
-			StringCopy(&gStringVar3[0], gMoveNames[ItemIdToBattleMoveId(item)]);
+			StringCopy(&gStringVar3[0], gLongMoveNames[ItemIdToBattleMoveId(item)]);
 			BuyMenuDisplayMessage(taskId, &gText_SingleTmBuy[0], BuyMenuConfirmPurchase);
 		}
 		else

@@ -29,7 +29,15 @@ static item_t FindBankKeystone(u8 bank);
 
 static const item_t sKeystoneTable[] =
 {
+	ITEM_MEGA_PENDANT,
+	ITEM_MEGA_RIBBON,
+	ITEM_MEGA_SCARF,
+	ITEM_MEGA_BUTTON,
+	ITEM_MEGA_EARING,
 	ITEM_MEGA_RING,
+	ITEM_MEGA_GLOVE,
+	ITEM_KEYSTONE,
+	ITEM_UNKNOWN_KEYSTONE,
 
 #ifdef UNBOUND
 	ITEM_MEGA_BRACELET,

@@ -1,7 +1,9 @@
 #include "defines.h"
 #include "defines_battle.h"
+#include "../include/string_util.h"
 
 #include "../include/new/battle_util.h"
+#include "../include/new/mega.h"
 #include "../include/new/multi.h"
 #include "../include/new/trainer_sliding.h"
 #include "../include/new/trainer_sliding_data.h"
@@ -70,11 +72,33 @@ static const struct TrainerSlide sTrainerSlides[] =
 	{0x19C, NULL, sText_Koga1Last, sText_Koga1LastLowHP},
 	{0x19D, NULL, sText_Karen1Last, sText_Karen1LastLowHP},
 
+	#ifdef UNBOUND //For Pokemon Unbound - Feel free to remove
+	//Title Defense
+	{0x3B, NULL, sText_IvoryLeagueLastSwitchIn, NULL},
+	{0x3C, NULL, sText_IvoryLeagueLastSwitchIn, NULL},
+	{0x3D, NULL, sText_MarlonLeagueLastSwitchIn, NULL},
+	{0x3E, NULL, sText_MarlonLeagueLastSwitchIn, NULL},
+	{0x3F, NULL, sText_YoungsterLeagueLastSwitchIn, NULL},
+	{0x40, NULL, sText_YoungsterLeagueLastSwitchIn, NULL},
+	{0x41, NULL, NULL, sText_MiloLeagueLastLowHP},
+	{0x42, NULL, NULL, sText_MiloLeagueLastLowHP},
+	{0x43, NULL, NULL, sText_JaxPostGameLastLowHP},
+	{0x44, NULL, NULL, sText_JaxPostGameLastLowHP},
+	{0x45, NULL, sText_RivalLeagueLastSwitchIn, NULL},
+	{0x46, NULL, sText_RivalLeagueLastSwitchIn, NULL},
+	{0x47, NULL, sText_RivalLeagueLastSwitchIn, NULL},
+	{0x1B0, NULL, sText_RivalLeagueLastSwitchIn, NULL},
+	{0x1B1, NULL, sText_RivalLeagueLastSwitchIn, NULL},
+	{0x1B2, NULL, sText_RivalLeagueLastSwitchIn, NULL},
+	#endif
 };
 
 static const struct DynamaxTrainerSlide sDynamaxTrainerSlides[] =
 {
 	{0x17, gText_TestTrainerDynamaxMsg}, //Test data
+	#ifdef UNBOUND
+	{0x1D5, sText_RogueElectivire_DynamaxMsg},
+	#endif
 };
 
 //This file's functions:
@@ -107,12 +131,20 @@ void TrainerSlideOutScriptingBank(void)
 //sliding in anyway. They allow expanded Battle Backgrounds.
 void HandleIntroSlide(u8 terrain)
 {
-	u8 taskId;
+	u8 taskId, bank;
 
-	for (int bank = 0; bank < gBattlersCount; ++bank)
+	if (!AreAbilitiesSuppressed())
 	{
-		if (GetMonAbility(GetBankPartyData(bank)) == ABILITY_ILLUSION)
-			gStatuses3[bank] |= STATUS3_ILLUSION;
+		for (bank = 0; bank < gBattlersCount; ++bank)
+		{
+			if (((gBattleTypeFlags & BATTLE_TYPE_TRAINER) || SIDE(bank) == B_SIDE_PLAYER) //Wild Pokemon can't be hidden
+			&& GetMonAbility(GetBankPartyData(bank)) == ABILITY_ILLUSION)
+			{
+				gStatuses3[bank] |= STATUS3_ILLUSION;
+				if (GetIllusionPartyData(bank) == GetBankPartyData(bank)) //Is trying to hide as itself
+					gStatuses3[bank] &= ~STATUS3_ILLUSION; //Remove the Illusion
+			}
+		}
 	}
 
 	if (gBattleTypeFlags & BATTLE_TYPE_LINK)
@@ -123,12 +155,7 @@ void HandleIntroSlide(u8 terrain)
 	{
 		taskId = CreateTask(BattleIntroSlide3, 0);
 	}
-	else if ((gBattleTypeFlags & BATTLE_TYPE_KYOGRE_GROUDON) && gGameVersion != VERSION_RUBY) //Why?
-	{
-		terrain = BATTLE_TERRAIN_UNDERWATER;
-		taskId = CreateTask(BattleIntroSlide2, 0);
-	}
-	else if (terrain > 0x13) //Terrain Champion
+	else if (terrain > BATTLE_TERRAIN_CHAMPION)
 	{
 		taskId = CreateTask(BattleIntroSlide3, 0);
 	}
@@ -181,7 +208,9 @@ bool8 ShouldDoTrainerSlide(u8 bank, u16 trainerId, u8 caseId)
 			gBattleScripting.bank = bank;
 			switch (caseId) {
 				case TRAINER_SLIDE_LAST_SWITCHIN:
-					if (sTrainerSlides[i].msgLastSwitchIn != NULL && GetEnemyMonCount(TRUE) == 1)
+					if (sTrainerSlides[i].msgLastSwitchIn != NULL
+					&& ((IS_SINGLE_BATTLE && GetEnemyMonCount(TRUE) == 1)
+					 || (IS_DOUBLE_BATTLE && GetEnemyMonCount(TRUE) <= 2)))
 					{
 						gBattleStringLoader = sTrainerSlides[i].msgLastSwitchIn;
 						return TRUE;
@@ -229,10 +258,19 @@ void TryDoDynamaxTrainerSlide(void)
 		trainerId = gTrainerBattleOpponent_A;
 
 	gBattleStringLoader = gText_DefaultTrainerDynamaxMsg;
-	for (i = 0; i < ARRAY_COUNT(sDynamaxTrainerSlides); ++i)
+	for (i = 0; i < NELEMS(sDynamaxTrainerSlides); ++i)
 	{
 		if (trainerId == sDynamaxTrainerSlides[i].trainerId)
 			gBattleStringLoader = sDynamaxTrainerSlides[i].dynamaxMsg;
+	}
+
+	//Try giving any Trainer named "Red" a special string
+	if (i >= NELEMS(sDynamaxTrainerSlides))
+	{
+		u8 redName[] = {CHAR_R, CHAR_e, CHAR_d, EOS};
+
+		if (StringCompare(GetTrainerName(gBattleScripting.bank), redName) == 0) //Trainer's name is "Red"
+			gBattleStringLoader = gText_RedDynamaxMsg;
 	}
 
 	BattleScriptPush(gBattlescriptCurrInstr + 5); //After callasm
@@ -260,10 +298,12 @@ void atkFF1C_handletrainerslidemsg(void)
 
 	switch(caseId) {
 		case 0:
+			gNewBS->trainerSlideInProgress = TRUE; //Prevent's the foe's shadow from having problems
 			gNewBS->savedObjId = gBattlerSpriteIds[gActiveBattler];
 			break;
 
 		case 1:
+			gNewBS->trainerSlideInProgress = FALSE;
 			gBattlerSpriteIds[gActiveBattler] = gNewBS->savedObjId;
 			if (BATTLER_ALIVE(gActiveBattler))
 				BattleLoadOpponentMonSpriteGfx(GetBankPartyData(gActiveBattler), gActiveBattler);

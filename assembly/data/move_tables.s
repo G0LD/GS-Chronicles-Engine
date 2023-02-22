@@ -688,6 +688,7 @@ gPunchingMoves:
 .hword MOVE_ICEHAMMER
 .hword MOVE_PLASMAFISTS
 .hword MOVE_DOUBLEIRONBASH
+.hword MOVE_STARDUST_PUNCH
 .hword MOVE_TABLES_TERMIN
 
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@

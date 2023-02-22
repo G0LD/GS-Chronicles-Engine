@@ -17087,7 +17087,7 @@ static const struct LevelUpMove sMelmetalLevelUpLearnset[] = {
 	LEVEL_UP_MOVE(90, MOVE_HYPERBEAM),
 	LEVEL_UP_END
 };
-/*
+
 static const struct LevelUpMove sGrookeyLevelUpLearnset[] = {
 	LEVEL_UP_MOVE( 1, MOVE_GROWL),
 	LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
@@ -17139,7 +17139,7 @@ static const struct LevelUpMove sRillaboomLevelUpLearnset[] = {
 	LEVEL_UP_MOVE(54, MOVE_ENDEAVOR),
 	LEVEL_UP_MOVE(62, MOVE_BOOMBURST),
 	LEVEL_UP_END
-};*/		
+};		
 
 static const struct LevelUpMove sScorbunnyLevelUpLearnset[] = {
 	LEVEL_UP_MOVE( 1, MOVE_GROWL),
@@ -19890,8 +19890,8 @@ const struct LevelUpMove* const gLevelUpLearnsets[] =
 	[SPECIES_GALLADE_MEGA] = sGalladeLevelUpLearnset,
 	[SPECIES_AUDINO_MEGA] = sAudinoLevelUpLearnset,
 	[SPECIES_DIANCIE_MEGA] = sDiancieLevelUpLearnset,
-	[SPECIES_DIALGA_PRIMAL] = sDialgaLevelUpLearnset,
-	[SPECIES_PALKIA_PRIMAL] = sPalkiaLevelUpLearnset,
+	[SPECIES_DIALGA_ORIGIN] = sDialgaLevelUpLearnset,
+	[SPECIES_PALKIA_ORIGIN] = sPalkiaLevelUpLearnset,
 	[SPECIES_VIVILLON_ARCHIPELAGO] = sVivillonLevelUpLearnset,
 	[SPECIES_VIVILLON_CONTINENTAL] = sVivillonLevelUpLearnset,
 	[SPECIES_VIVILLON_ELEGANT] = sVivillonLevelUpLearnset,
@@ -20073,9 +20073,9 @@ const struct LevelUpMove* const gLevelUpLearnsets[] =
 	[SPECIES_PIKACHU_CAP_PARTNER] = sPikachuLevelUpLearnset,
 	[SPECIES_PICHU_SPIKY] = sPichuLevelUpLearnset,
 	[SPECIES_XERNEAS_NATURAL] = sXerneasLevelUpLearnset,
-	[SPECIES_GROOKEY] = sMeganiumLevelUpLearnset,
-	[SPECIES_THWACKEY] = sTyphlosionLevelUpLearnset,
-	[SPECIES_RILLABOOM] = sFeraligatrLevelUpLearnset,
+	[SPECIES_GROOKEY] = sGrookeyLevelUpLearnset,
+	[SPECIES_THWACKEY] = sThwackeyLevelUpLearnset,
+	[SPECIES_RILLABOOM] = sRillaboomLevelUpLearnset,
 	[SPECIES_SCORBUNNY] = sScorbunnyLevelUpLearnset,
 	[SPECIES_RABOOT] = sRabootLevelUpLearnset,
 	[SPECIES_CINDERACE] = sCinderaceLevelUpLearnset,
@@ -20215,7 +20215,7 @@ const struct LevelUpMove* const gLevelUpLearnsets[] =
 	[SPECIES_SNORLAX_GIGA] = sSnorlaxLevelUpLearnset,
 	[SPECIES_GARBODOR_GIGA] = sGarbodorLevelUpLearnset,
 	[SPECIES_MELMETAL_GIGA] = sMelmetalLevelUpLearnset,
-	[SPECIES_RILLABOOM_GIGA] = sFeraligatrLevelUpLearnset,
+	[SPECIES_RILLABOOM_GIGA] = sRillaboomLevelUpLearnset,
 	[SPECIES_CINDERACE_GIGA] = sCinderaceLevelUpLearnset,
 	[SPECIES_INTELEON_GIGA] = sInteleonLevelUpLearnset,
 	[SPECIES_CORVIKNIGHT_GIGA] = sCorviknightLevelUpLearnset,
@@ -20236,4 +20236,5 @@ const struct LevelUpMove* const gLevelUpLearnsets[] =
 	[SPECIES_URSHIFU_SINGLE_GIGA] = sUrshifuLevelUpLearnset,
 	[SPECIES_URSHIFU_RAPID_GIGA] = sUrshifuRapidLevelUpLearnset,
 };
+
 #endif

@@ -78,7 +78,7 @@ const struct TrainersWithEvs gTrainersWithEvsSpreads[] =
 		.ability = Ability_Random_1_2,
 	},
 	[8] =
-	{ //Bulky Special Attacker 
+	{ //Bulky Special Attacker
 		.nature = NATURE_MODEST,
 		.ivs = 31,
 		.hpEv = 252,
@@ -88,7 +88,7 @@ const struct TrainersWithEvs gTrainersWithEvsSpreads[] =
 		.ability = Ability_Random_1_2,
 	},
 	[9] =
-	{ //Bulky Special Attacker 
+	{ //Bulky Special Attacker
 		.nature = NATURE_MODEST,
 		.ivs = 31,
 		.hpEv = 6,
@@ -98,7 +98,7 @@ const struct TrainersWithEvs gTrainersWithEvsSpreads[] =
 		.ability = Ability_Random_1_2,
 	},
 	[10] =
-	{ //Bulky Special Attacker 
+	{ //Bulky Special Attacker
 		.nature = NATURE_MODEST,
 		.ivs = 31,
 		.hpEv = 6,
@@ -108,20 +108,22 @@ const struct TrainersWithEvs gTrainersWithEvsSpreads[] =
 		.ability = Ability_Random_1_2,
 	},
 	[11] =
-	{ //Physical Wall 
+	{ //Physical Wall
 		.nature = NATURE_BOLD,
 		.ivs = 31,
 		.hpEv = 252,
 		.defEv = 252,
+		.spDefEv = 4,
 		.ball = TRAINER_EV_CLASS_BALL,
 		.ability = Ability_Random_1_2,
 	},
 	[12] =
-	{ //Physical Wall 
+	{ //Physical Wall
 		.nature = NATURE_IMPISH,
 		.ivs = 31,
 		.hpEv = 252,
 		.defEv = 252,
+		.spDefEv = 4,
 		.ball = TRAINER_EV_CLASS_BALL,
 		.ability = Ability_Random_1_2,
 	},
@@ -130,8 +132,8 @@ const struct TrainersWithEvs gTrainersWithEvsSpreads[] =
 		.nature = NATURE_CALM,
 		.ivs = 31,
 		.hpEv = 252,
+		.defEv = 4,
 		.spDefEv = 252,
-		.defEv = 6,
 		.ball = TRAINER_EV_CLASS_BALL,
 		.ability = Ability_Random_1_2,
 	},
@@ -140,6 +142,7 @@ const struct TrainersWithEvs gTrainersWithEvsSpreads[] =
 		.nature = NATURE_CAREFUL,
 		.ivs = 31,
 		.hpEv = 252,
+		.defEv = 4,
 		.spDefEv = 252,
 		.ball = TRAINER_EV_CLASS_BALL,
 		.ability = Ability_Random_1_2,
@@ -148,7 +151,6 @@ const struct TrainersWithEvs gTrainersWithEvsSpreads[] =
 	{ //Mixed Attacker: Attack Based, Less Defense
 		.nature = NATURE_LONELY,
 		.ivs = 31,
-		.hpEv = 6,
 		.atkEv = 128,
 		.spdEv = 252,
 		.spAtkEv = 128,
@@ -159,7 +161,6 @@ const struct TrainersWithEvs gTrainersWithEvsSpreads[] =
 	{ //Mixed Attacker: Attack Based, Less Sp. Defense
 		.nature = NATURE_NAUGHTY,
 		.ivs = 31,
-		.hpEv = 6,
 		.atkEv = 128,
 		.spdEv = 252,
 		.spAtkEv = 128,
@@ -170,7 +171,6 @@ const struct TrainersWithEvs gTrainersWithEvsSpreads[] =
 	{ //Mixed Attacker: Sp. Attack Based, Less Defense
 		.nature = NATURE_MILD,
 		.ivs = 31,
-		.hpEv = 6,
 		.atkEv = 128,
 		.spdEv = 252,
 		.spAtkEv = 128,
@@ -181,7 +181,6 @@ const struct TrainersWithEvs gTrainersWithEvsSpreads[] =
 	{ //Mixed Attacker: Sp. Attack Based, Less Sp. Defense
 		.nature = NATURE_RASH,
 		.ivs = 31,
-		.hpEv = 6,
 		.atkEv = 128,
 		.spdEv = 252,
 		.spAtkEv = 128,
@@ -192,7 +191,6 @@ const struct TrainersWithEvs gTrainersWithEvsSpreads[] =
 	{ //Mixed Attacker: Speed Based, Less Defense
 		.nature = NATURE_HASTY,
 		.ivs = 31,
-		.hpEv = 6,
 		.atkEv = 128,
 		.spdEv = 252,
 		.spAtkEv = 128,
@@ -203,7 +201,6 @@ const struct TrainersWithEvs gTrainersWithEvsSpreads[] =
 	{ //Mixed Attacker: Speed Based, Less Sp. Defense
 		.nature = NATURE_NAIVE,
 		.ivs = 31,
-		.hpEv = 6,
 		.atkEv = 128,
 		.spdEv = 252,
 		.spAtkEv = 128,
@@ -216,7 +213,6 @@ const struct TrainersWithEvs gTrainersWithEvsSpreads[] =
 		.ivs = 31,
 		.hpEv = 252,
 		.defEv = 128,
-		.spdEv = 4,
 		.spDefEv = 128,
 		.ball = TRAINER_EV_CLASS_BALL,
 		.ability = Ability_Random_1_2,
@@ -227,7 +223,6 @@ const struct TrainersWithEvs gTrainersWithEvsSpreads[] =
 		.ivs = 31,
 		.hpEv = 252,
 		.defEv = 128,
-		.spdEv = 4,
 		.spDefEv = 128,
 		.ball = TRAINER_EV_CLASS_BALL,
 		.ability = Ability_Random_1_2,
@@ -238,7 +233,6 @@ const struct TrainersWithEvs gTrainersWithEvsSpreads[] =
 		.ivs = 31,
 		.hpEv = 252,
 		.defEv = 128,
-		.spdEv = 4,
 		.spDefEv = 128,
 		.ball = TRAINER_EV_CLASS_BALL,
 		.ability = Ability_Random_1_2,
@@ -249,7 +243,6 @@ const struct TrainersWithEvs gTrainersWithEvsSpreads[] =
 		.ivs = 31,
 		.hpEv = 252,
 		.defEv = 128,
-		.spdEv = 4,
 		.spDefEv = 128,
 		.ball = TRAINER_EV_CLASS_BALL,
 		.ability = Ability_Random_1_2,
@@ -420,6 +413,7 @@ const struct TrainersWithEvs gTrainersWithEvsSpreads[] =
 		.ivs = 31,
 		.hpEv = 252,
 		.defEv = 252,
+		.spDefEv = 4,
 		.ball = TRAINER_EV_CLASS_BALL,
 		.ability = Ability_1,
 	},
@@ -429,6 +423,7 @@ const struct TrainersWithEvs gTrainersWithEvsSpreads[] =
 		.ivs = 31,
 		.hpEv = 252,
 		.defEv = 252,
+		.spDefEv = 4,
 		.ball = TRAINER_EV_CLASS_BALL,
 		.ability = Ability_1,
 	},
@@ -437,8 +432,8 @@ const struct TrainersWithEvs gTrainersWithEvsSpreads[] =
 		.nature = NATURE_CALM,
 		.ivs = 31,
 		.hpEv = 252,
+		.defEv = 4,
 		.spDefEv = 252,
-		.defEv = 6,
 		.ball = TRAINER_EV_CLASS_BALL,
 		.ability = Ability_1,
 	},
@@ -447,6 +442,7 @@ const struct TrainersWithEvs gTrainersWithEvsSpreads[] =
 		.nature = NATURE_CAREFUL,
 		.ivs = 31,
 		.hpEv = 252,
+		.defEv = 4,
 		.spDefEv = 252,
 		.ball = TRAINER_EV_CLASS_BALL,
 		.ability = Ability_1,
@@ -455,7 +451,6 @@ const struct TrainersWithEvs gTrainersWithEvsSpreads[] =
 	{ //Mixed Attacker: Attack Based, Less Defense - Ability_1
 		.nature = NATURE_LONELY,
 		.ivs = 31,
-		.hpEv = 6,
 		.atkEv = 128,
 		.spdEv = 252,
 		.spAtkEv = 128,
@@ -466,7 +461,6 @@ const struct TrainersWithEvs gTrainersWithEvsSpreads[] =
 	{ //Mixed Attacker: Attack Based, Less Sp. Defense - Ability_1
 		.nature = NATURE_NAUGHTY,
 		.ivs = 31,
-		.hpEv = 6,
 		.atkEv = 128,
 		.spdEv = 252,
 		.spAtkEv = 128,
@@ -477,7 +471,6 @@ const struct TrainersWithEvs gTrainersWithEvsSpreads[] =
 	{ //Mixed Attacker: Sp. Attack Based, Less Defense - Ability_1
 		.nature = NATURE_MILD,
 		.ivs = 31,
-		.hpEv = 6,
 		.atkEv = 128,
 		.spdEv = 252,
 		.spAtkEv = 128,
@@ -488,7 +481,6 @@ const struct TrainersWithEvs gTrainersWithEvsSpreads[] =
 	{ //Mixed Attacker: Sp. Attack Based, Less Sp. Defense - Ability_1
 		.nature = NATURE_RASH,
 		.ivs = 31,
-		.hpEv = 6,
 		.atkEv = 128,
 		.spdEv = 252,
 		.spAtkEv = 128,
@@ -499,7 +491,6 @@ const struct TrainersWithEvs gTrainersWithEvsSpreads[] =
 	{ //Mixed Attacker: Speed Based, Less Defense - Ability_1
 		.nature = NATURE_HASTY,
 		.ivs = 31,
-		.hpEv = 6,
 		.atkEv = 128,
 		.spdEv = 252,
 		.spAtkEv = 128,
@@ -510,7 +501,6 @@ const struct TrainersWithEvs gTrainersWithEvsSpreads[] =
 	{ //Mixed Attacker: Speed Based, Less Sp. Defense - Ability_1
 		.nature = NATURE_NAIVE,
 		.ivs = 31,
-		.hpEv = 6,
 		.atkEv = 128,
 		.spdEv = 252,
 		.spAtkEv = 128,
@@ -523,7 +513,6 @@ const struct TrainersWithEvs gTrainersWithEvsSpreads[] =
 		.ivs = 31,
 		.hpEv = 252,
 		.defEv = 128,
-		.spdEv = 4,
 		.spDefEv = 128,
 		.ball = TRAINER_EV_CLASS_BALL,
 		.ability = Ability_1,
@@ -534,7 +523,6 @@ const struct TrainersWithEvs gTrainersWithEvsSpreads[] =
 		.ivs = 31,
 		.hpEv = 252,
 		.defEv = 128,
-		.spdEv = 4,
 		.spDefEv = 128,
 		.ball = TRAINER_EV_CLASS_BALL,
 		.ability = Ability_1,
@@ -545,7 +533,6 @@ const struct TrainersWithEvs gTrainersWithEvsSpreads[] =
 		.ivs = 31,
 		.hpEv = 252,
 		.defEv = 128,
-		.spdEv = 4,
 		.spDefEv = 128,
 		.ball = TRAINER_EV_CLASS_BALL,
 		.ability = Ability_1,
@@ -556,7 +543,6 @@ const struct TrainersWithEvs gTrainersWithEvsSpreads[] =
 		.ivs = 31,
 		.hpEv = 252,
 		.defEv = 128,
-		.spdEv = 4,
 		.spDefEv = 128,
 		.ball = TRAINER_EV_CLASS_BALL,
 		.ability = Ability_1,
@@ -727,6 +713,7 @@ const struct TrainersWithEvs gTrainersWithEvsSpreads[] =
 		.ivs = 31,
 		.hpEv = 252,
 		.defEv = 252,
+		.spDefEv = 4,
 		.ball = TRAINER_EV_CLASS_BALL,
 		.ability = Ability_2,
 	},
@@ -736,6 +723,7 @@ const struct TrainersWithEvs gTrainersWithEvsSpreads[] =
 		.ivs = 31,
 		.hpEv = 252,
 		.defEv = 252,
+		.spDefEv = 4,
 		.ball = TRAINER_EV_CLASS_BALL,
 		.ability = Ability_2,
 	},
@@ -744,6 +732,7 @@ const struct TrainersWithEvs gTrainersWithEvsSpreads[] =
 		.nature = NATURE_CALM,
 		.ivs = 31,
 		.hpEv = 252,
+		.defEv = 4,
 		.spDefEv = 252,
 		.ball = TRAINER_EV_CLASS_BALL,
 		.ability = Ability_2,
@@ -753,6 +742,7 @@ const struct TrainersWithEvs gTrainersWithEvsSpreads[] =
 		.nature = NATURE_CAREFUL,
 		.ivs = 31,
 		.hpEv = 252,
+		.defEv = 4,
 		.spDefEv = 252,
 		.ball = TRAINER_EV_CLASS_BALL,
 		.ability = Ability_2,
@@ -761,7 +751,6 @@ const struct TrainersWithEvs gTrainersWithEvsSpreads[] =
 	{ //Mixed Attacker: Attack Based, Less Defense - Ability_2
 		.nature = NATURE_LONELY,
 		.ivs = 31,
-		.hpEv = 6,
 		.atkEv = 128,
 		.spdEv = 252,
 		.spAtkEv = 128,
@@ -772,7 +761,6 @@ const struct TrainersWithEvs gTrainersWithEvsSpreads[] =
 	{ //Mixed Attacker: Attack Based, Less Sp. Defense - Ability_2
 		.nature = NATURE_NAUGHTY,
 		.ivs = 31,
-		.hpEv = 6,
 		.atkEv = 128,
 		.spdEv = 252,
 		.spAtkEv = 128,
@@ -783,7 +771,6 @@ const struct TrainersWithEvs gTrainersWithEvsSpreads[] =
 	{ //Mixed Attacker: Sp. Attack Based, Less Defense - Ability_2
 		.nature = NATURE_MILD,
 		.ivs = 31,
-		.hpEv = 6,
 		.atkEv = 128,
 		.spdEv = 252,
 		.spAtkEv = 128,
@@ -794,7 +781,6 @@ const struct TrainersWithEvs gTrainersWithEvsSpreads[] =
 	{ //Mixed Attacker: Sp. Attack Based, Less Sp. Defense - Ability_2
 		.nature = NATURE_RASH,
 		.ivs = 31,
-		.hpEv = 6,
 		.atkEv = 128,
 		.spdEv = 252,
 		.spAtkEv = 128,
@@ -805,7 +791,6 @@ const struct TrainersWithEvs gTrainersWithEvsSpreads[] =
 	{ //Mixed Attacker: Speed Based, Less Defense - Ability_2
 		.nature = NATURE_HASTY,
 		.ivs = 31,
-		.hpEv = 6,
 		.atkEv = 128,
 		.spdEv = 252,
 		.spAtkEv = 128,
@@ -816,7 +801,6 @@ const struct TrainersWithEvs gTrainersWithEvsSpreads[] =
 	{ //Mixed Attacker: Speed Based, Less Sp. Defense - Ability_2
 		.nature = NATURE_NAIVE,
 		.ivs = 31,
-		.hpEv = 6,
 		.atkEv = 128,
 		.spdEv = 252,
 		.spAtkEv = 128,
@@ -829,7 +813,6 @@ const struct TrainersWithEvs gTrainersWithEvsSpreads[] =
 		.ivs = 31,
 		.hpEv = 252,
 		.defEv = 128,
-		.spdEv = 4,
 		.spDefEv = 128,
 		.ball = TRAINER_EV_CLASS_BALL,
 		.ability = Ability_2,
@@ -840,7 +823,6 @@ const struct TrainersWithEvs gTrainersWithEvsSpreads[] =
 		.ivs = 31,
 		.hpEv = 252,
 		.defEv = 128,
-		.spdEv = 4,
 		.spDefEv = 128,
 		.ball = TRAINER_EV_CLASS_BALL,
 		.ability = Ability_2,
@@ -851,7 +833,6 @@ const struct TrainersWithEvs gTrainersWithEvsSpreads[] =
 		.ivs = 31,
 		.hpEv = 252,
 		.defEv = 128,
-		.spdEv = 4,
 		.spDefEv = 128,
 		.ball = TRAINER_EV_CLASS_BALL,
 		.ability = Ability_2,
@@ -862,7 +843,6 @@ const struct TrainersWithEvs gTrainersWithEvsSpreads[] =
 		.ivs = 31,
 		.hpEv = 252,
 		.defEv = 128,
-		.spdEv = 4,
 		.spDefEv = 128,
 		.ball = TRAINER_EV_CLASS_BALL,
 		.ability = Ability_2,
@@ -1033,6 +1013,7 @@ const struct TrainersWithEvs gTrainersWithEvsSpreads[] =
 		.ivs = 31,
 		.hpEv = 252,
 		.defEv = 252,
+		.spDefEv = 4,
 		.ball = TRAINER_EV_CLASS_BALL,
 		.ability = Ability_Hidden,
 	},
@@ -1042,6 +1023,7 @@ const struct TrainersWithEvs gTrainersWithEvsSpreads[] =
 		.ivs = 31,
 		.hpEv = 252,
 		.defEv = 252,
+		.spDefEv = 4,
 		.ball = TRAINER_EV_CLASS_BALL,
 		.ability = Ability_Hidden,
 	},
@@ -1050,6 +1032,7 @@ const struct TrainersWithEvs gTrainersWithEvsSpreads[] =
 		.nature = NATURE_CALM,
 		.ivs = 31,
 		.hpEv = 252,
+		.defEv = 4,
 		.spDefEv = 252,
 		.ball = TRAINER_EV_CLASS_BALL,
 		.ability = Ability_Hidden,
@@ -1059,6 +1042,7 @@ const struct TrainersWithEvs gTrainersWithEvsSpreads[] =
 		.nature = NATURE_CAREFUL,
 		.ivs = 31,
 		.hpEv = 252,
+		.defEv = 4,
 		.spDefEv = 252,
 		.ball = TRAINER_EV_CLASS_BALL,
 		.ability = Ability_Hidden,
@@ -1067,7 +1051,6 @@ const struct TrainersWithEvs gTrainersWithEvsSpreads[] =
 	{ //Mixed Attacker: Attack Based, Less Defense - Ability_Hidden
 		.nature = NATURE_LONELY,
 		.ivs = 31,
-		.hpEv = 6,
 		.atkEv = 128,
 		.spdEv = 252,
 		.spAtkEv = 128,
@@ -1078,7 +1061,6 @@ const struct TrainersWithEvs gTrainersWithEvsSpreads[] =
 	{ //Mixed Attacker: Attack Based, Less Sp. Defense - Ability_Hidden
 		.nature = NATURE_NAUGHTY,
 		.ivs = 31,
-		.hpEv = 6,
 		.atkEv = 128,
 		.spdEv = 252,
 		.spAtkEv = 128,
@@ -1089,7 +1071,6 @@ const struct TrainersWithEvs gTrainersWithEvsSpreads[] =
 	{ //Mixed Attacker: Sp. Attack Based, Less Defense - Ability_Hidden
 		.nature = NATURE_MILD,
 		.ivs = 31,
-		.hpEv = 6,
 		.atkEv = 128,
 		.spdEv = 252,
 		.spAtkEv = 128,
@@ -1100,7 +1081,6 @@ const struct TrainersWithEvs gTrainersWithEvsSpreads[] =
 	{ //Mixed Attacker: Sp. Attack Based, Less Sp. Defense - Ability_Hidden
 		.nature = NATURE_RASH,
 		.ivs = 31,
-		.hpEv = 6,
 		.atkEv = 128,
 		.spdEv = 252,
 		.spAtkEv = 128,
@@ -1111,7 +1091,6 @@ const struct TrainersWithEvs gTrainersWithEvsSpreads[] =
 	{ //Mixed Attacker: Speed Based, Less Defense - Ability_Hidden
 		.nature = NATURE_HASTY,
 		.ivs = 31,
-		.hpEv = 6,
 		.atkEv = 128,
 		.spdEv = 252,
 		.spAtkEv = 128,
@@ -1122,7 +1101,6 @@ const struct TrainersWithEvs gTrainersWithEvsSpreads[] =
 	{ //Mixed Attacker: Speed Based, Less Sp. Defense - Ability_Hidden
 		.nature = NATURE_NAIVE,
 		.ivs = 31,
-		.hpEv = 6,
 		.atkEv = 128,
 		.spdEv = 252,
 		.spAtkEv = 128,
@@ -1135,7 +1113,6 @@ const struct TrainersWithEvs gTrainersWithEvsSpreads[] =
 		.ivs = 31,
 		.hpEv = 252,
 		.defEv = 128,
-		.spdEv = 4,
 		.spDefEv = 128,
 		.ball = TRAINER_EV_CLASS_BALL,
 		.ability = Ability_Hidden,
@@ -1146,7 +1123,6 @@ const struct TrainersWithEvs gTrainersWithEvsSpreads[] =
 		.ivs = 31,
 		.hpEv = 252,
 		.defEv = 128,
-		.spdEv = 4,
 		.spDefEv = 128,
 		.ball = TRAINER_EV_CLASS_BALL,
 		.ability = Ability_Hidden,
@@ -1157,7 +1133,6 @@ const struct TrainersWithEvs gTrainersWithEvsSpreads[] =
 		.ivs = 31,
 		.hpEv = 252,
 		.defEv = 128,
-		.spdEv = 4,
 		.spDefEv = 128,
 		.ball = TRAINER_EV_CLASS_BALL,
 		.ability = Ability_Hidden,
@@ -1168,7 +1143,6 @@ const struct TrainersWithEvs gTrainersWithEvsSpreads[] =
 		.ivs = 31,
 		.hpEv = 252,
 		.defEv = 128,
-		.spdEv = 4,
 		.spDefEv = 128,
 		.ball = TRAINER_EV_CLASS_BALL,
 		.ability = Ability_Hidden,
@@ -1304,6 +1278,227 @@ const struct TrainersWithEvs gTrainersWithEvsSpreads[] =
 		.ball = TRAINER_EV_CLASS_BALL,
 		.ability = Ability_1,
 	},
+	[128] =
+	{
+		.ball = TRAINER_EV_CLASS_BALL,
+		.ability = Ability_1,
+	},
+	[129] =
+	{
+		.ball = TRAINER_EV_CLASS_BALL,
+		.ability = Ability_2,
+	},
+	[130] =
+	{
+		.ball = TRAINER_EV_CLASS_BALL,
+		.ability = Ability_Hidden,
+	},
+
+#ifdef UNBOUND
+	//Special Spreads
+	[124] =
+	{	//Rayquaza
+		.nature = NATURE_JOLLY,
+		.ivs = 31,
+		.hpEv = 252,
+		.defEv = 252,
+		.spAtkEv = 252,
+		.spDefEv = 252,
+		.spdEv = 252,
+		.ball = TRAINER_EV_CLASS_BALL,
+		.ability = Ability_1,
+	},
+	[125] =
+	{	//Hitmontop
+		.nature = NATURE_IMPISH,
+		.ivs = 31,
+		.hpEv = 252,
+		.atkEv = 252,
+		.defEv = 252,
+		.spDefEv = 252,
+		.ball = TRAINER_EV_CLASS_BALL,
+		.ability = Ability_1,
+	},
+	[126] =
+	{	//Insane Jax Arcanine
+		.nature = NATURE_TIMID,
+		.ivs = 31,
+		.hpEv = 252,
+		.spAtkEv = 252,
+		.defEv = 252,
+		.spDefEv = 252,
+		.ball = TRAINER_EV_CLASS_BALL,
+		.ability = Ability_1,
+	},
+	[127] =
+	{	//A-Golem
+		.nature = NATURE_ADAMANT,
+		.ivs = 31,
+		.hpEv = 252,
+		.atkEv = 252,
+		.defEv = 252,
+		.spDefEv = 252,
+		.ball = TRAINER_EV_CLASS_BALL,
+		.ability = Ability_Hidden,
+	},
+	[128] =
+	{	//Benjamin Flygon/Volcarona
+		.nature = NATURE_NAIVE,
+		.ivs = 31,
+		.atkEv = 252,
+		.spAtkEv = 252,
+		.spdEv = 252,
+		.ball = TRAINER_EV_CLASS_BALL,
+		.ability = Ability_Hidden,
+	},
+	[129] =
+	{	//Attack Boosting Stakataka - Ability_1
+        .nature = NATURE_LONELY,
+        .ivs = 31, //15 Def
+        .hpEv = 252,
+        .atkEv = 252,
+        .spDefEv = 6,
+        .ball = TRAINER_EV_CLASS_BALL,
+        .ability = Ability_1,
+    },
+	[130] =
+	{	//Anabelle Insane Mawile
+        .nature = NATURE_ADAMANT,
+        .ivs = 31,
+        .hpEv = 172,
+        .atkEv = 252,
+        .spdEv = 84,
+        .ball = TRAINER_EV_CLASS_BALL,
+        .ability = Ability_2, //Initimidate
+    },
+	[131] =
+	{	//Marlon Aegislash
+        .nature = NATURE_BRAVE,
+        .ivs = 31,
+        .hpEv = 252,
+        .atkEv = 128,
+        .spAtkEv = 128,
+        .ball = TRAINER_EV_CLASS_BALL,
+        .ability = Ability_1, //Stance Change
+    },
+	[132] =
+	{	//Galavan's Insane Mega Ampharos: Hidden Power Grass
+		.nature = NATURE_MODEST,
+		.ivs = 31,
+		.hpEv = 244,
+		.spdEv = 12,
+		.spAtkEv = 252,
+		.ball = TRAINER_EV_CLASS_BALL,
+		.ability = Ability_Hidden,
+	},
+	[133] =
+	{	//Galavan's Insane Metagross: 0 IVs Speed Min Speed
+		.nature = NATURE_BRAVE,
+		.ivs = 31,
+		.hpEv = 252,
+		.atkEv = 252,
+		.spDefEv = 6,
+		.ball = TRAINER_EV_CLASS_BALL,
+		.ability = Ability_1,
+	},
+	[134] =
+	{	//Necrozma-DM Autotomize Set
+		.nature = NATURE_ADAMANT,
+		.ivs = 31,
+		.hpEv = 136,
+		.atkEv = 252,
+		.spdEv = 120,
+		.ball = TRAINER_EV_CLASS_BALL,
+		.ability = Ability_1,
+	},
+	[135] =
+	{	//Physically offensive BH Set, Ability 1
+		.nature = NATURE_JOLLY,
+		.ivs = 31,
+		.hpEv = 252,
+		.atkEv = 252,
+		.defEv = 252,
+		.spdEv = 252,
+		.spAtkEv = 252,
+		.spDefEv = 252,
+		.ball = TRAINER_EV_CLASS_BALL,
+		.ability = Ability_1,
+	},
+	[136] =
+	{	//Physically offensive BH Set, Ability Hidden
+		.nature = NATURE_JOLLY,
+		.ivs = 31,
+		.hpEv = 252,
+		.atkEv = 252,
+		.defEv = 252,
+		.spdEv = 252,
+		.spAtkEv = 252,
+		.spDefEv = 252,
+		.ball = TRAINER_EV_CLASS_BALL,
+		.ability = Ability_Hidden,
+	},
+	[137] =
+	{	//VGC Doubles GeoXern
+		.nature = NATURE_MODEST,
+		.ivs = 31,
+		.defEv = 140,
+		.spdEv = 116,
+		.spAtkEv = 252,
+		.ball = TRAINER_EV_CLASS_BALL,
+		.ability = Ability_1,
+	},
+	[138] =
+	{	//Mixed offensive BH Set Physically Oriented, Ability 1
+		.nature = NATURE_JOLLY,
+		.ivs = 31,
+		.hpEv = 252,
+		.atkEv = 252,
+		.defEv = 252,
+		.spdEv = 252,
+		.spAtkEv = 252,
+		.spDefEv = 252,
+		.ball = TRAINER_EV_CLASS_BALL,
+		.ability = Ability_1,
+	},
+	[139] =
+	{	//Specially offensive BH Set, Ability 1
+		.nature = NATURE_MODEST,
+		.ivs = 31,
+		.hpEv = 252,
+		.defEv = 252,
+		.spdEv = 252,
+		.spAtkEv = 252,
+		.spDefEv = 252,
+		.ball = TRAINER_EV_CLASS_BALL,
+		.ability = Ability_1,
+	},
+	[140] =
+	{	//Mixed offensive BH Set Specially Oriented, Ability 1
+		.nature = NATURE_TIMID,
+		.ivs = 31,
+		.hpEv = 252,
+		.atkEv = 252,
+		.defEv = 252,
+		.spdEv = 252,
+		.spAtkEv = 252,
+		.spDefEv = 252,
+		.ball = TRAINER_EV_CLASS_BALL,
+		.ability = Ability_1,
+	},
+	[141] =
+	{	//Mixed offensive BH Set Physically Oriented, Ability 1
+		.nature = NATURE_JOLLY,
+		.ivs = 31,
+		.hpEv = 252,
+		.atkEv = 252,
+		.defEv = 252,
+		.spdEv = 252,
+		.spAtkEv = 252,
+		.spDefEv = 252,
+		.ball = TRAINER_EV_CLASS_BALL,
+		.ability = Ability_1,
+	},
+#endif
 };
 #endif
 
@@ -1394,6 +1589,7 @@ const u8 gBaseIVsByTrainerClass[NUM_TRAINER_CLASSES] =
 	[CLASS_CRUSH_GIRL] = 15,
 	[CLASS_CRUSH_KIN] = 15,
 	[CLASS_RIVAL] = 25,
+	[CLASS_RIVAL_2] = 31,
 	[CLASS_SCIENTIST] = 15,
 	[CLASS_GENTLEMAN] = 15,
 	[CLASS_MEDIUM] = 10,
@@ -1440,11 +1636,14 @@ const u8 gBaseIVsByTrainerClass[NUM_TRAINER_CLASSES] =
 	[CLASS_LOR] = 18,
 	[CLASS_LOR_ADMIN] = 31,
 	[CLASS_LOR_LEADER] = 31,
+	[CLASS_AGENT] = 31,
 
 	[CLASS_BLACK_EMBOAR] = 18,
 	[CLASS_TERROR_GRANBULL] = 18,
 	[CLASS_BLACK_FERROTHORN] = 25,
+	[CLASS_BLACK_FERROTHORN_BOSS] = 31,
 	[CLASS_SCIENCE_SOCIETY] = 25,
+	[CLASS_BLACK_HORIZON] = 25,
 
 	[CLASS_LEADER] = 31,
 	[CLASS_SINNOH_LEADER] = 31,

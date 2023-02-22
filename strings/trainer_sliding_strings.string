@@ -8,8 +8,11 @@ Time to Dynamax!\p
 #org @gText_TestTrainerDynamaxMsg
 I now shall unleash the power\nof Dynamax!\p 
 
+#org @gText_RedDynamaxMsg
+[.]!\p 
+
 #org @sText_Rival1Last
-Not a bad move for a beginner[.]\p 
+You're doing it great!\p 
 
 #org @sText_Rival1LastLowHP
 It's not over yet!\nDon't hold back!\p 
@@ -18,7 +21,7 @@ It's not over yet!\nDon't hold back!\p
 One more Pok\emon means\none more opportunity!\p 
 
 #org @sText_Rival2LastLowHP
-Don't think We're done!\p 
+Don't think we are done!\p 
 
 #org @sText_Rival3Last
 Impressive as usual. I see[.]\p 
@@ -39,7 +42,7 @@ I'm not giving up that easily!\nWe will succeed!\p
 We're worthy of the Mega Evolution!\nTime for a last move!\p 
 
 #org @sText_Rival6Last
-Our last battle showed me how fun\nbattles could be. I'm enjoying it!\p 
+That's what battles are about,\nI almost forgot how it feels!\p 
 
 #org @sText_Rival6LastLowHP
 Give us everything you have!\p 
@@ -69,10 +72,10 @@ Seriously, you'd chase me\nthis far?!\p
 Ugh[.] What are you?!\p 
 
 #org @sText_Ariana1Last
-A brat giving me troubles?\nUnacceptable!\p 
+A brat cornering me?\nUnacceptable!\p 
 
 #org @sText_Ariana1LastLowHP
-Let's get this settle now!\p 
+Let's finish this already!\p 
 
 #org @sText_Ariana2Last
 Hey, what do you think\nyou're doing?!\p 

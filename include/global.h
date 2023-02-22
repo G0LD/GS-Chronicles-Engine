@@ -160,7 +160,8 @@ enum
 enum
 {
 	OPTIONS_BATTLE_STYLE_SHIFT,
-	OPTIONS_BATTLE_STYLE_SET
+	OPTIONS_BATTLE_STYLE_SET,
+	OPTIONS_BATTLE_STYLE_SEMI_SHIFT,
 };
 
 enum
@@ -169,6 +170,21 @@ enum
 	OPTIONS_EASY_DIFFICULTY,
 	OPTIONS_HARD_DIFFICULTY,
 	OPTIONS_EXPERT_DIFFICULTY,
+};
+
+enum
+{
+	OPTIONS_PROMPT_TAKE_WILD_ITEM,
+	OPTIONS_ALWAYS_TAKE_WILD_ITEM,
+	OPTIONS_NEVER_TAKE_WILD_ITEM,
+};
+
+enum
+{
+	OPTIONS_ITEM_RESTRICTIONS_NONE,
+	OPTIONS_ITEM_RESTRICTIONS_4_ITEMS,
+	OPTIONS_ITEM_RESTRICTIONS_NO_ITEMS,
+	OPTIONS_ITEM_RESTRICTIONS_AI_ONLY,
 };
 
 enum
@@ -408,9 +424,10 @@ struct SaveBlock2 //0x2024588
 	/*0x0A8*/ u32 gcnLinkFlags; // Read by Pokemon Colosseum/XD
 	/*0x0AC*/ u8 field_AC;
 	/*0x0AD*/ u8 field_AD;
-	/*0x0AE*/ u8 filler_AE[0x3E6];
-	/*0x494*/ u32 unkAnnoyingWord;
-	/*0x498*/ u8 filler_548[0x404];
+	/*0x0AE*/ u8 field_AE;
+	/*0x0AF*/ u8 field_AF;
+	/*0x0B0*/ u8 box25[0x6CC];
+	/*0x77C*/ u8 filler_77C[0x11C];
 	/*0x898*/ u16 mapView[0x100];
 	/*0xA98*/ struct LinkBattleRecords linkBattleRecords;
 	/*0xAF0*/ struct BerryCrush berryCrush;
@@ -719,6 +736,7 @@ struct TrainerNameRecord
 
 #define EVENT_OBJECTS_COUNT 16
 #define MAP_OBJECTS_COUNT  16
+#define EVENT_OBJECT_TEMPLATES_COUNT 64
 #define BERRY_TREES_COUNT  128
 #define FLAGS_COUNT        288 // 300
 #define VARS_COUNT         256
@@ -777,7 +795,8 @@ struct SaveBlock1 //0x202552C
 	/*0x3A08*/ u8 filler_3A08[0x44];
 	/*0x3A4C*/ u8 rivalName[PLAYER_NAME_LENGTH + 1];
 	/*0x3A54*/ struct FameCheckerSaveData fameChecker[NUM_FAMECHECKER_PERSONS];
-	/*0x3A94*/ u8 filler_3A94[0x40];
+	/*0x3A94*/ u8 ringChallengeStreaks[0x10];
+	/*0x3AA4*/ u8 filler_3AA4[0x30];
 	/*0x3AD4*/ u8 registeredTexts[UNION_ROOM_KB_ROW_COUNT][21];
 	/*0x3BA8*/ struct TrainerNameRecord trainerNameRecords[20];
 	/*0x3C98*/ struct DaycareMon route5DayCareMon;

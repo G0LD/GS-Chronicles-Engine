@@ -199,7 +199,7 @@ gPartyMenuCursorOptions 08120F74
 gPartyMenuCursorOptions 08121FB8
 gPartyMenuCursorOptions 08122D18
 gPartyMenuCursorOptions 08122D48
-gFieldMoves 08122A7C
+##gFieldMoves 08122A7C
 
 ##Bag Sorter
 sItemMenuActions 08109BA4

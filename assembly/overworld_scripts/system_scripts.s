@@ -24,7 +24,7 @@ SystemScript_EnableAutoRun:
 	sound 0x2
 	signmsg
 	msgboxsign
-	msgbox gText_AutoRunEnable MSG_SIGN
+	msgbox gText_AutoRunEnable MSG_TRANSPARENT
 	releaseall
 	end
 	
@@ -34,7 +34,7 @@ SystemScript_DisableAutoRun:
 	special SPECIAL_STOP_SOUNDS
 	sound 0x3
 	msgboxsign
-	msgbox gText_AutoRunDisable MSG_SIGN
+	msgbox gText_AutoRunDisable MSG_TRANSPARENT
 	releaseall
 	end
 

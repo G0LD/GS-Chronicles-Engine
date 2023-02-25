@@ -423,7 +423,7 @@ EventScript_UseRockClimb:
 	bufferattack 0x1 MOVE_ROCKCLIMB
 	callasm IsUnboundToVar
 	compare LASTRESULT 0x0
-	if equal _goto EventScript_UseRockClimb_Ask
+	if equal _goto EventScript_UseRockClimb_SkipAsk
 	checkflag FLAG_AUTO_HMS
 	if SET _goto EventScript_UseRockClimb_SkipAsk
 
@@ -550,13 +550,22 @@ EventScript_LavaSurfEnd:
 
 .global EventScript_UseWaterfall
 EventScript_UseWaterfall:
-	goto 0x876037C
-	end
+	bufferpartypokemon 0x0 0x8004
+	bufferattack 0x1 MOVE_WATERFALL
+	callasm IsUnboundToVar
+	compare LASTRESULT 0x0
+	if equal _goto EventScript_UseWaterfall_SkipAsk
+	checkflag FLAG_AUTO_HMS
+	if SET _goto EventScript_UseWaterfall_SkipAsk
 
-.global EventScript_WallOfWater
-EventScript_WallOfWater:
-	goto 0x876037C
-	end
+EventScript_UseWaterfall_Ask:
+	msgbox 0x81BE33F MSG_YESNO
+	compare LASTRESULT NO
+	if equal _goto EventScript_WaterfallEnd
+	lockall
+	call FollowerIntoPlayerScript
+	callasm HideFollower
+	msgbox 0x81BDFD7 MSG_KEEPOPEN
 
 EventScript_UseWaterfall_SkipMsg:
 	setanimation 0x0 0x8004
@@ -571,6 +580,11 @@ EventScript_UseWaterfall_SkipAsk:
 	call FollowerIntoPlayerScript
 	callasm HideFollower
 	goto EventScript_UseWaterfall_SkipMsg
+
+.global EventScript_WallOfWater
+EventScript_WallOfWater:
+	msgbox 0x81BE30A MSG_NORMAL
+	end
 
 @;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
@@ -602,11 +616,15 @@ EventScript_UseSandboxWaterfall:
 	goto EventScript_UseADMWaterfall_SkipAsk
 
 @;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-
 .global EventScript_UseSurf
 EventScript_UseSurf:
-	goto 0x87602C7
-	end
+	bufferpartypokemon 0x0 0x8004
+	bufferattack 0x1 MOVE_WATERFALL
+	callasm IsUnboundToVar
+	compare LASTRESULT 0x0
+	if equal _goto EventScript_UseSurf_SkipAsk
+	checkflag FLAG_AUTO_HMS
+	if SET _goto EventScript_UseSurf_SkipAsk
 
 EventScript_UseSurf_Ask:
 	callasm IsPlayerFacingMurkyBrownWaterToVar

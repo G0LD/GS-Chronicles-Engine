@@ -1620,7 +1620,7 @@ static const u8* TryUseFlashInDarkCave(void)
 
 	if (gSpecialVar_LastResult && HasBadgeToUseFlash())
 	{
-		if ((Var8004 = gFieldEffectArguments[0] = PartyHasMonWithFieldMovePotential(MOVE_FLASH, ITEM_TM70_FLASH, 0)) < PARTY_SIZE)
+		if ((Var8004 = gFieldEffectArguments[0] = PartyHasMonWithFieldMovePotential(MOVE_FLASH, ITEM_BRIGHTRIDE, 0)) < PARTY_SIZE)
 			return EventScript_UseFlash;
 	}
 
@@ -2398,8 +2398,7 @@ u8 PartyHasMonWithFieldMovePotential(u16 move, unusedArg u16 item, u8 surfingTyp
 			&& !GetMonData(mon, MON_DATA_IS_EGG, NULL))
 			{
 				#ifdef ONLY_CHECK_ITEM_FOR_HM_USAGE
-				if (hasHM //Must have HM to prevent softlocks
-				&& (MonKnowsMove(mon, move) || CanMonLearnTMTutor(mon, item, 0) == CAN_LEARN_MOVE))
+				if (hasHM) //Must have HM to prevent softlocks
 					return i;
 				#else
 				if (MonKnowsMove(mon, move))
@@ -2500,7 +2499,7 @@ const u8* GetInteractedWaterScript(unusedArg u32 unused1, u8 metatileBehavior, u
 		if (HasBadgeToUseSurf())
 		{
 			#ifdef ONLY_CHECK_ITEM_FOR_HM_USAGE
-			item = ITEM_HM03_SURF;
+			item = ITEM_WAVERIDE;
 			#endif
 
 			u8 partyId = PartyHasMonWithFieldMovePotential(MOVE_SURF, item, SHOULDNT_BE_SURFING);
@@ -2537,7 +2536,7 @@ const u8* GetInteractedWaterScript(unusedArg u32 unused1, u8 metatileBehavior, u
 			if (IsPlayerSurfingNorthOrSouth())
 			{
 				#ifdef ONLY_CHECK_ITEM_FOR_HM_USAGE
-				item = ITEM_HM07_WATERFALL;
+				item = ITEM_CASCADERIDE;
 				#endif
 
 				#ifdef FLAG_BOUGHT_ADM
@@ -2574,7 +2573,7 @@ const u8* GetInteractedWaterScript(unusedArg u32 unused1, u8 metatileBehavior, u
 		&& (!gFollowerState.inProgress || gFollowerState.flags & FOLLOWER_FLAG_CAN_ROCK_CLIMB))
 		{
 			#ifdef ONLY_CHECK_ITEM_FOR_HM_USAGE
-			item = ITEM_HM08_ROCK_CLIMB;
+			item = ITEM_CLAMBERRIDE;
 			#endif
 
 			#ifdef FLAG_BOUGHT_ADM
@@ -2683,7 +2682,7 @@ bool8 TrySetupDiveDownScript(void)
 	{
 		u16 item = ITEM_NONE;
 		#ifdef ONLY_CHECK_ITEM_FOR_HM_USAGE
-		item = ITEM_HM05_DIVE;
+		item = ITEM_DEEPSEARIDE;
 		#endif
 
 		#ifdef FLAG_BOUGHT_ADM
@@ -2718,7 +2717,7 @@ bool8 TrySetupDiveEmergeScript(void)
 	{
 		u16 item = ITEM_NONE;
 		#ifdef ONLY_CHECK_ITEM_FOR_HM_USAGE
-		item = ITEM_HM05_DIVE;
+		item = ITEM_DEEPSEARIDE;
 		#endif
 
 		#ifdef FLAG_BOUGHT_ADM

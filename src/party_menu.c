@@ -995,7 +995,7 @@ void SetPartyMonFieldSelectionActions(struct Pokemon *mons, u8 slotId)
 			{
 				#ifdef ONLY_CHECK_ITEM_FOR_HM_USAGE
 				if (gFieldMoves[j] == MOVE_ROCKCLIMB
-				&& !CheckBagHasItem(ITEM_HM08_ROCK_CLIMB, 1))
+				&& !CheckBagHasItem(ITEM_CLAMBERRIDE, 1))
 					continue; //Don't allow Rock Climbing until the item is obtained
 				#endif
 
@@ -1128,7 +1128,7 @@ static bool8 SetUpFieldMove_Surf(void)
 
 	u16 item = ITEM_NONE;
 	#ifdef ONLY_CHECK_ITEM_FOR_HM_USAGE
-	item = ITEM_HM03_SURF;
+	item = ITEM_WAVERIDE;
 	#endif
 
 	if (PartyHasMonWithFieldMovePotential(MOVE_SURF, item, SHOULDNT_BE_SURFING) < PARTY_SIZE
@@ -1361,7 +1361,7 @@ void sp10A_CanUseCutOnTree(void)
 	u16 item = ITEM_NONE;
 
 	#ifdef ONLY_CHECK_ITEM_FOR_HM_USAGE
-	item = ITEM_HM01_CUT;
+	item = ITEM_SHARPRIDE;
 	#endif
 
 	Var8004 = PARTY_SIZE;
@@ -1386,7 +1386,7 @@ void sp10B_CanUseRockSmashOnRock(void)
 	u16 item = ITEM_NONE;
 
 	#ifdef ONLY_CHECK_ITEM_FOR_HM_USAGE
-	item = ITEM_HM06_ROCK_SMASH;
+	item = ITEM_CRUSHRIDE;
 	#endif
 
 	Var8004 = PARTY_SIZE;
@@ -1411,7 +1411,7 @@ void sp10C_CanUseStrengthOnBoulder(void)
 	u16 item = ITEM_NONE;
 
 	#ifdef ONLY_CHECK_ITEM_FOR_HM_USAGE
-	item = ITEM_HM04_STRENGTH;
+	item = ITEM_HEAVYRIDE;
 	#endif
 
 	Var8004 = PARTY_SIZE;

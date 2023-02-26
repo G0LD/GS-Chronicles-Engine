@@ -553,7 +553,6 @@ CreateBoxMonHook 803DAD2 0
 CanMonLearnTMHM 08043C2C 2
 CanMonLearnTMTutor 08120B20 3
 ItemIdToBattleMoveId 08125A78 1
-RemoveTMPPRestoreHook 08125FC8 2
 LoadTMNameWithNo 08131D48 2
 SortTmHms 0809A624 1
 FixTmHmDiscLoader 081336BC 0
@@ -698,6 +697,20 @@ SlotMachineExpandedCoinsDisplayFix 08140F44 1
 SetInitialSafariZoneParams 080A0ED0 1
 FixSafariZoneWindow 0806EE98 0
 FixSafariZoneBattleWindow 08049D1A 1
+
+##DrawMoveInfoUIMarkers 08133404 0
+##TMCase_MoveCursor_UpdatePrintedDescription 08131F0C 1
+NullFunc 0813368C 1
+##InitWindowTemplatesAndPals 08133244 1
+PrintStringTMCaseOnWindow3 081333c4 0
+NullFunc 08133714 2
+NullFunc 08133730 1
+NullFunc 08133790 2
+NullFunc 081337e4 2
+NullFunc 08133810 1
+
+CreateTMCaseSpriteHook 8131B94 0
+TMCaseMonIconPalChangeHook 8131E5C 0 
 
 #ifdef SCROLLING_MULTICHOICE
 

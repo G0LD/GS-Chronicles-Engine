@@ -831,7 +831,10 @@ EventScript_UseFlash:
 	bufferpartypokemon 0x0 0x8004
 	bufferattack 0x1 MOVE_FLASH
 	setflag FLAG_SYS_USE_FLASH
-	msgbox 0x81BDFD7 MSG_NORMAL
+	setanimation 0x0 0x4001
+	doanimation 0x28
+	waitstate
+	msgbox gText_BrightRideUsed MSG_NORMAL
 	checksound
 	sound 0xC8
 	animateflash 0x0

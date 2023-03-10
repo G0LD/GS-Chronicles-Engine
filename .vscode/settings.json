@@ -2,7 +2,8 @@
     "files.associations": {
         "hooks": "c",
         "list_menu.h": "c",
-        "task.h": "c"
+        "task.h": "c",
+        "dns_data.h": "c"
     },
     "C_Cpp.errorSquiggles": "enabled"
 }

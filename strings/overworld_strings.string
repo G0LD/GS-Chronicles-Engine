@@ -157,6 +157,9 @@ Light is filtering down from above.\nWould you like to use the ADM?
 #org @gText_UsedADMDiveResurface
 The ADM allowed you to resurface!
 
+#org @gText_BrightRideUsed
+The Bright Ride helped your\nPokémon to light up the area!
+
 #org @gText_CantDive
 The sea is deep here. A Pok\emon\nmay be able to go underwater.
 

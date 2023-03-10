@@ -246,15 +246,18 @@ VBlankCB_Battle 8077A9C
 ##HQ Mixer - Credits to Greenphx
 SoundMainRAM 81DD0B4
 
+FieldUseFunc_EVReducingBerry 8F71A68
+FieldUseFunc_EVReducingBerry 8F71A94
+FieldUseFunc_EVReducingBerry 8F71AC0
+FieldUseFunc_EVReducingBerry 8F71AEC
+FieldUseFunc_EVReducingBerry 8F71B18
+FieldUseFunc_EVReducingBerry 8F71B44
+FieldUseFunc_AbilityCapsule 8F70FC0
+FieldUseFunc_AbilityCapsule 8F70FEC
+
 #ifdef UNBOUND
 FieldUseFunc_MaxPowder 8876C40
 FieldUseFunc_Honey 8876E7C
-FieldUseFunc_EVReducingBerry 8877C68
-FieldUseFunc_EVReducingBerry 8877C94
-FieldUseFunc_EVReducingBerry 8877CC0
-FieldUseFunc_EVReducingBerry 8877CEC
-FieldUseFunc_EVReducingBerry 8877D18
-FieldUseFunc_EVReducingBerry 8877D44
 FieldUseFunc_FormChangeItem 887BE3C
 FieldUseFunc_FormChangeItem 887BE68
 FieldUseFunc_FormChangeItem 887BE94
@@ -265,8 +268,6 @@ FieldUseFunc_FormChangeItem 887CCAC
 FieldUseFunc_FormChangeItem 887CCD8
 FieldUseFunc_FormChangeItem 887D308
 FieldUseFunc_FormChangeItem 887D334
-FieldUseFunc_AbilityCapsule 8877168
-FieldUseFunc_AbilityCapsule 887CA9C
 #endif
 
 #ifdef UNBOUND

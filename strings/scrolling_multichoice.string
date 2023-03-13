@@ -68,4 +68,82 @@ Deep Sea Tooth
 #org @sExampleText_22
 Deep Sea Fang
 
+#org @sExampleText_23
+Lonely   [RED]+ATK [BLUE]-DEF
+
+#org @sExampleText_24
+Brave    [RED]+ATK [BLUE]-SPE
+
+#org @sExampleText_25
+Adamant [RED]+ATK [BLUE]-SP.A
+
+#org @sExampleText_26
+Naughty [RED]+ATK [BLUE]-SP.D
+
+#org @sExampleText_27
+Bold     [RED]+DEF [BLUE]-ATK
+
+#org @sExampleText_28
+Relaxed [RED]+DEF [BLUE]-SPE
+
+#org @sExampleText_29
+Impish   [RED]+DEF [BLUE]-SP.A
+
+#org @sExampleText_30
+Lax      [RED]+DEF [BLUE]-SP.D
+
+#org @sExampleText_31
+Timid  [RED]+SPE [BLUE]-ATK
+
+#org @sExampleText_32
+Hasty [RED]+SPE [BLUE]-DEF
+
+#org @sExampleText_33
+Jolly  [RED]+SPE [BLUE]-SP.A
+
+#org @sExampleText_34
+Naive  [RED]+SPE [BLUE]-SP.D
+
+#org @sExampleText_35
+Modest [RED]+SP.A [BLUE]-ATK
+
+#org @sExampleText_36
+Mild     [RED]+SP.A [BLUE]-DEF
+
+#org @sExampleText_37
+Quiet   [RED]+SP.A [BLUE]-SPE
+
+#org @sExampleText_38
+Rash    [RED]+SP.A [BLUE]-SP.D
+
+#org @sExampleText_39
+Calm     [RED]+SP.D [BLUE]-ATK
+
+#org @sExampleText_40
+Gentle  [RED]+SP.D [BLUE]-DEF
+
+#org @sExampleText_41
+Sassy   [RED]+SP.D [BLUE]-SPE
+
+#org @sExampleText_42
+Careful [RED]+SP.D [BLUE]-SP.A
+
+#org @sExampleText_43
+Red Mint       (ATK)
+
+#org @sExampleText_44
+Blue Mint      (DEF)
+
+#org @sExampleText_45
+Green Mint    (SPE)
+
+#org @sExampleText_46
+Azure Mint    (SP.A)
+
+#org @sExampleText_47
+Roseate Mint (SP.D)
+
+#org @sExampleText_48
+Yellow Mint   (Neut.)
+
 #endif

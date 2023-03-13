@@ -2944,6 +2944,44 @@ extern const u8 sExampleText_7[];
 extern const u8 sExampleText_8[];
 extern const u8 sExampleText_9[];
 extern const u8 sExampleText_10[];
+extern const u8 sExampleText_11[];
+extern const u8 sExampleText_12[];
+extern const u8 sExampleText_13[];
+extern const u8 sExampleText_14[];
+extern const u8 sExampleText_15[];
+extern const u8 sExampleText_16[];
+extern const u8 sExampleText_17[];
+extern const u8 sExampleText_18[];
+extern const u8 sExampleText_19[];
+extern const u8 sExampleText_20[];
+extern const u8 sExampleText_21[];
+extern const u8 sExampleText_22[];
+extern const u8 sExampleText_23[];
+extern const u8 sExampleText_24[];
+extern const u8 sExampleText_25[];
+extern const u8 sExampleText_26[];
+extern const u8 sExampleText_27[];
+extern const u8 sExampleText_28[];
+extern const u8 sExampleText_29[];
+extern const u8 sExampleText_30[];
+extern const u8 sExampleText_31[];
+extern const u8 sExampleText_32[];
+extern const u8 sExampleText_33[];
+extern const u8 sExampleText_34[];
+extern const u8 sExampleText_35[];
+extern const u8 sExampleText_36[];
+extern const u8 sExampleText_37[];
+extern const u8 sExampleText_38[];
+extern const u8 sExampleText_39[];
+extern const u8 sExampleText_40[];
+extern const u8 sExampleText_41[];
+extern const u8 sExampleText_42[];
+extern const u8 sExampleText_43[];
+extern const u8 sExampleText_44[];
+extern const u8 sExampleText_45[];
+extern const u8 sExampleText_46[];
+extern const u8 sExampleText_47[];
+extern const u8 sExampleText_48[];
 
 extern const u8 sText_1[];
 extern const u8 sText_2[];
@@ -2971,23 +3009,75 @@ static const u8* sMultichoiceSet1[] =
 	sExampleText_5,
 	sExampleText_6,
 	sExampleText_7,
-	sExampleText_8,
-	sExampleText_9,
-	sExampleText_10,
 };
 
 static const u8* sMultichoiceSet2[] =
 {
-	sExampleText_1,
-	sExampleText_2,
-	sExampleText_3,
-	sExampleText_4,
-	sExampleText_5,
-	sExampleText_6,
-	sExampleText_7,
 	sExampleText_8,
 	sExampleText_9,
 	sExampleText_10,
+	sExampleText_11,
+	sExampleText_12,
+	sExampleText_13,
+	sExampleText_14,
+	sExampleText_15,
+	sExampleText_16,
+	sExampleText_17,
+	sExampleText_18,
+	sExampleText_19,
+	sExampleText_20,
+	sExampleText_21,
+	sExampleText_22,
+};
+
+static const u8* sMultichoiceSet3[] =
+{
+	sExampleText_43,
+	sExampleText_44,
+	sExampleText_45,
+	sExampleText_46,
+	sExampleText_47,
+	sExampleText_48,
+};
+
+static const u8* sMultichoiceSet4[] =
+{
+	sExampleText_23,
+	sExampleText_24,
+	sExampleText_25,
+	sExampleText_26,
+};
+
+static const u8* sMultichoiceSet5[] =
+{
+	sExampleText_27,
+	sExampleText_28,
+	sExampleText_29,
+	sExampleText_30,
+};
+
+static const u8* sMultichoiceSet6[] =
+{
+	sExampleText_31,
+	sExampleText_32,
+	sExampleText_33,
+	sExampleText_34,
+};
+
+static const u8* sMultichoiceSet7[] =
+{
+	sExampleText_35,
+	sExampleText_36,
+	sExampleText_37,
+	sExampleText_38,
+};
+
+static const u8* sMultichoiceSet8[] =
+{
+	sExampleText_39,
+	sExampleText_40,
+	sExampleText_41,
+	sExampleText_42,
 };
 
 // Multichoice Lists
@@ -2995,6 +3085,12 @@ const struct ScrollingMulti gScrollingSets[] =
 {
 	{sMultichoiceSet1, ARRAY_COUNT(sMultichoiceSet1)},
 	{sMultichoiceSet2, ARRAY_COUNT(sMultichoiceSet2)},
+	{sMultichoiceSet3, ARRAY_COUNT(sMultichoiceSet3)},
+	{sMultichoiceSet4, ARRAY_COUNT(sMultichoiceSet4)},
+	{sMultichoiceSet5, ARRAY_COUNT(sMultichoiceSet5)},
+	{sMultichoiceSet6, ARRAY_COUNT(sMultichoiceSet6)},
+	{sMultichoiceSet7, ARRAY_COUNT(sMultichoiceSet7)},
+	{sMultichoiceSet8, ARRAY_COUNT(sMultichoiceSet8)},
 };
 
 //Link number of opts shown at once to the box height

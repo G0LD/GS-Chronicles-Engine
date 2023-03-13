@@ -1,0 +1,47 @@
+#org @gtext_NatureChanger1
+People call me the Nature Changer.\nI know a secret beverage that\lchanges the nature of a Pokémon!\pI just need a special ingredient\nto make this beverage.\pIf you have a mint of whatever\ncolor, I can make it.\pDo you have mints to give me?
+
+#org @gText_NatureChanger2
+What type of beverage you want\nme to make?
+
+#org @gText_NatureChanger3
+Do you really want to switch your\nPokémon's ability to Bashful?
+
+#org @gText_NatureChanger4
+[.]
+
+#org @gText_NatureChanger4.1
+[.] [.]
+
+#org @gText_NatureChanger4.2
+[.] [.] [.]
+
+#org @gText_NatureChanger5
+All done!
+
+#org @gText_NatureChanger6
+Your Pokémon's nature has been\nfully changed!\pCome back whenever you have more\nMints for me.
+
+#org @gText_NatureChangerATK
+Ah! I see you have at least a\nRed Mint!\pI can make a beverage that boosts\na Pokémon's Attack.\pWhich Pokémon will drink it?
+
+#org @gText_NatureChangerDEF
+Ah! I see you have at least a\nBlue Mint!\pI can make a beverage that boosts\na Pokémon's Defense.\pWhich Pokémon will drink it?
+
+#org @gText_NatureChangerSPE
+Ah! I see you have at least a\nGreen Mint!\pI can make a beverage that boosts\na Pokémon's Speed.\pWhich Pokémon will drink it?
+
+#org @gText_NatureChangerSPA
+Ah! I see you have at least an\nAzure Mint!\pI can make a beverage that boosts\na Pokémon's Special Attack.\pWhich Pokémon will drink it?
+
+#org @gText_NatureChangerSPD
+Ah! I see you have at least a\nRoseate Mint!\pI can make a beverage that boosts\na Pokémon's Special Defense.\pWhich Pokémon will drink it?
+
+#org @gText_NatureChangerNEU
+Ah! I see you have at least a\nYellow Mint!\pI can make a beverage that makes\na Pokémon's stats to grow\lat an equal rate.\pWhich Pokémon will drink it?
+
+#org @gText_NoMint
+You don't seem to have the Mint\nI need for the beverage.
+
+#org @gText_Warning
+If you agree with it, your\nPokémon's stats might be\limmediately affected.\pAre you sure you want to continue?

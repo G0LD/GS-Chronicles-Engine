@@ -2978,6 +2978,142 @@ static bool8 TeamDoesntHaveSynergy(const struct BattleTowerSpread* const spread,
 	return FALSE;
 }
 
+void SwitchMonNature(u8 wantedNature) //Credits to Soupercell for kindly sharing this code
+{
+    struct Pokemon* mon = &gPlayerParty[Var8004];
+    // u8 abilityBit = GetMonData(mon, MON_DATA_PERSONALITY, NULL) & 1;
+    u32 speciesPersonality = GetMonData(mon, MON_DATA_PERSONALITY, NULL);
+    u16 species = GetMonData(mon, MON_DATA_SPECIES, NULL);
+    u8 abilityBit = speciesPersonality & 1;
+    u32 personality;
+    u8 gender = GetGenderFromSpeciesAndPersonality(species, speciesPersonality);
+    bool8 isShiny = IsMonShiny(mon);
+    u32 trainerId = GetMonData(mon, MON_DATA_OT_ID, NULL);
+    u16 sid = HIHALF(trainerId);
+    u16 tid = LOHALF(trainerId);
+    do
+    {
+        personality = Random32(); 
+        if (isShiny)
+        {
+            u8 shinyRange = 1;
+            personality = (((shinyRange ^ (sid ^ tid)) ^ LOHALF(personality)) << 16) | LOHALF(personality);
+        }
+        personality &= ~(1);
+        personality |= abilityBit;
+        if (wantedNature == GetNatureFromPersonality(personality))
+            if(GetGenderFromSpeciesAndPersonality(species, personality) == gender)
+            break; // we found a personality with the same nature
+    } while (TRUE);
+
+    SetMonData(mon, MON_DATA_PERSONALITY, &personality);
+    CalculateMonStats(mon);
+}
+
+void SwitchMonNatureAdamant(void)
+{
+    SwitchMonNature(NATURE_ADAMANT); 
+	}
+
+void SwitchMonNatureLonely(void)
+{
+    SwitchMonNature(NATURE_LONELY); 
+	}
+
+void SwitchMonNatureBashful(void) 
+{
+    SwitchMonNature(NATURE_BASHFUL); 
+}
+
+void SwitchMonNatureGentle(void) 
+{
+    SwitchMonNature(NATURE_GENTLE); 
+}
+
+void SwitchMonNatureLax(void)
+{
+    SwitchMonNature(NATURE_LAX); 
+}
+
+void SwitchMonNatureBrave(void)
+{
+    SwitchMonNature(NATURE_BRAVE); 
+	}
+
+void SwitchMonNatureNaughty(void)
+{
+    SwitchMonNature(NATURE_NAUGHTY); 
+	}
+
+void SwitchMonNatureBold(void)
+{
+    SwitchMonNature(NATURE_BOLD); 
+	}
+
+void SwitchMonNatureRelaxed(void)
+{
+    SwitchMonNature(NATURE_RELAXED); 
+	}
+
+void SwitchMonNatureImpish(void)
+{
+    SwitchMonNature(NATURE_IMPISH); 
+	}
+
+void SwitchMonNatureTimid(void)
+{
+    SwitchMonNature(NATURE_TIMID); 
+	}
+
+void SwitchMonNatureHasty(void)
+{
+    SwitchMonNature(NATURE_HASTY); 
+	}
+
+void SwitchMonNatureJolly(void)
+{
+    SwitchMonNature(NATURE_JOLLY); 
+	}
+
+void SwitchMonNatureNaive(void)
+{
+    SwitchMonNature(NATURE_NAIVE); 
+	}
+
+void SwitchMonNatureModest(void)
+{
+    SwitchMonNature(NATURE_MODEST); 
+	}
+
+void SwitchMonNatureMild(void)
+{
+    SwitchMonNature(NATURE_MILD); 
+	}
+
+void SwitchMonNatureQuiet(void)
+{
+    SwitchMonNature(NATURE_QUIET); 
+	}    
+
+void SwitchMonNatureRash(void)
+{
+    SwitchMonNature(NATURE_RASH); 
+	}    
+
+void SwitchMonNatureCalm(void)
+{
+    SwitchMonNature(NATURE_CALM); 
+	}    
+
+void SwitchMonNatureSassy(void)
+{
+    SwitchMonNature(NATURE_SASSY); 
+	}    
+
+void SwitchMonNatureCareful(void)
+{
+    SwitchMonNature(NATURE_CAREFUL); 
+	}
 
 static void AddPlayerMoveTypesToBuilder(struct TeamBuilder* builder, u8 monsCount)
 {

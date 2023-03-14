@@ -146,4 +146,22 @@ Roseate Mint (SP.D)
 #org @sExampleText_48
 Yellow Mint   (Neut.)
 
+#org @sExampleText_49
+HP
+
+#org @sExampleText_50
+Attack
+
+#org @sExampleText_51
+Defense
+
+#org @sExampleText_52
+Special Attack
+
+#org @sExampleText_53
+Special Defense
+
+#org @sExampleText_54
+Speed
+
 #endif

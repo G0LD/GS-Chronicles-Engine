@@ -1,5 +1,6 @@
 ##
 npc 10 5 6 EventScript_NatureChanger
+npc 10 5 9 EventScript_Hypertrainer
 npc 10 5 7 EventScript_Goldenrod_Haircut_guy
 npc 19 0 1 EventScript_bugcatching_guard
 npc 23 0 1 EventScript_bugcatching_guard

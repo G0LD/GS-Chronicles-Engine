@@ -8,6 +8,8 @@
 	@---------------
 EventScript_Hypertrainer:
 	lock
+	checkflag 0x826
+	if 0x0 _goto EventScript_Hypertrainer_NoBadges
 	msgbox gText_Hypertrainer_String1 MSG_YESNO @"You look kinda strong, I must say...."
 	compare LASTRESULT 0x1
 	if 0x0 _goto EventScript_Hypertrainer_NoHT
@@ -66,43 +68,61 @@ EventScript_Hypertrainer_BottleCap:
 	end
 
 EventScript_Hypertrainer_HP:
-	msgbox gText_Hypertrainer_String5 MSG_NORMAL
 	setvar 0x8005 0x0
+	special2 LASTRESULT 0x8
+	compare LASTRESULT 0x1F
+	if 0x1 _goto EventScript_Hypertrainer_MaxIV
+	msgbox gText_Hypertrainer_String5 MSG_NORMAL
 	setvar 0x8006 0x1F
 	special 0x10
 	goto EventScript_Hypertrainer_End
 
 EventScript_Hypertrainer_ATK:
-	msgbox gText_Hypertrainer_String5 MSG_NORMAL
 	setvar 0x8005 0x1
+	special2 LASTRESULT 0x8
+	compare LASTRESULT 0x1F
+	if 0x1 _goto EventScript_Hypertrainer_MaxIV
+	msgbox gText_Hypertrainer_String5 MSG_NORMAL
 	setvar 0x8006 0x1F
 	special 0x10
 	goto EventScript_Hypertrainer_End
 
 EventScript_Hypertrainer_DEF:
-	msgbox gText_Hypertrainer_String5 MSG_NORMAL
 	setvar 0x8005 0x2
+	special2 LASTRESULT 0x8
+	compare LASTRESULT 0x1F
+	if 0x1 _goto EventScript_Hypertrainer_MaxIV
+	msgbox gText_Hypertrainer_String5 MSG_NORMAL
 	setvar 0x8006 0x1F
 	special 0x10
 	goto EventScript_Hypertrainer_End
 
 EventScript_Hypertrainer_SPA:
-	msgbox gText_Hypertrainer_String5 MSG_NORMAL
 	setvar 0x8005 0x4
+	special2 LASTRESULT 0x8
+	compare LASTRESULT 0x1F
+	if 0x1 _goto EventScript_Hypertrainer_MaxIV
+	msgbox gText_Hypertrainer_String5 MSG_NORMAL
 	setvar 0x8006 0x1F
 	special 0x10
 	goto EventScript_Hypertrainer_End
 
 EventScript_Hypertrainer_SPD:
-	msgbox gText_Hypertrainer_String5 MSG_NORMAL
 	setvar 0x8005 0x5
+	special2 LASTRESULT 0x8
+	compare LASTRESULT 0x1F
+	if 0x1 _goto EventScript_Hypertrainer_MaxIV
+	msgbox gText_Hypertrainer_String5 MSG_NORMAL
 	setvar 0x8006 0x1F
 	special 0x10
 	goto EventScript_Hypertrainer_End
 
 EventScript_Hypertrainer_SPE:
-	msgbox gText_Hypertrainer_String5 MSG_NORMAL
 	setvar 0x8005 0x3
+	special2 LASTRESULT 0x8
+	compare LASTRESULT 0x1F
+	if 0x1 _goto EventScript_Hypertrainer_MaxIV
+	msgbox gText_Hypertrainer_String5 MSG_NORMAL
 	setvar 0x8006 0x1F
 	special 0x10
 	goto EventScript_Hypertrainer_End
@@ -122,6 +142,48 @@ EventScript_Hypertrainer_GoldCap:
 	compare LASTRESULT 0x19C
 	if 0x1 _goto EventScript_Hypertrainer_Egg
 	special 0x7C
+	setvar 0x8005 0x0
+	special2 LASTRESULT 0x8
+	compare LASTRESULT 0x1F
+	if 0x1 _goto EventScript_Hypertrainer_CheckATKIV
+	goto EventScript_Hypertrainer_GoldCapHT
+
+EventScript_Hypertrainer_CheckATKIV:
+	setvar 0x8005 0x1
+	special2 LASTRESULT 0x8
+	compare LASTRESULT 0x1F
+	if 0x1 _goto EventScript_Hypertrainer_CheckDEFIV
+	goto EventScript_Hypertrainer_GoldCapHT
+
+EventScript_Hypertrainer_CheckDEFIV:
+	setvar 0x8005 0x2
+	special2 LASTRESULT 0x8
+	compare LASTRESULT 0x1F
+	if 0x1 _goto EventScript_Hypertrainer_CheckSPEIV
+	goto EventScript_Hypertrainer_GoldCapHT
+
+EventScript_Hypertrainer_CheckSPEIV:
+	setvar 0x8005 0x3
+	special2 LASTRESULT 0x8
+	compare LASTRESULT 0x1F
+	if 0x1 _goto EventScript_Hypertrainer_CheckSPAIV
+	goto EventScript_Hypertrainer_GoldCapHT
+
+EventScript_Hypertrainer_CheckSPAIV:
+	setvar 0x8005 0x4
+	special2 LASTRESULT 0x8
+	compare LASTRESULT 0x1F
+	if 0x1 _goto EventScript_Hypertrainer_CheckSPDIV
+	goto EventScript_Hypertrainer_GoldCapHT
+
+EventScript_Hypertrainer_CheckSPDIV:
+	setvar 0x8005 0x1
+	special2 LASTRESULT 0x8
+	compare LASTRESULT 0x1F
+	if 0x1 _goto EventScript_Hypertrainer_IVMax
+	goto EventScript_Hypertrainer_GoldCapHT
+
+EventScript_Hypertrainer_GoldCapHT:
 	msgbox gText_Hypertrainer_String5 MSG_NORMAL
 	setvar 0x8005 0x0
 	setvar 0x8006 0x1F
@@ -163,24 +225,38 @@ EventScript_Hypertrainer_End:
 	goto EventScript_Hypertrainer_NoMoreHT
 	end
 
-	@---------------
 EventScript_Hypertrainer_NoHT:
     setvar 0x8004 0x0
 	msgbox gText_Hypertrainer_String8 MSG_NORMAL @"Then get away from here if you@re\..."
 	release
 	end
 
-	@---------------
 EventScript_Hypertrainer_NoCaps:
 	setvar 0x8004 0x0
 	msgbox gText_Hypertrainer_String9 MSG_NORMAL @"You ain@t have any Big Nugget!\nAr..."
 	release
 	end
 
-	@---------------
 EventScript_Hypertrainer_Egg:
 	setvar 0x8004 0x0
 	msgbox gText_Hypertrainer_String10 MSG_NORMAL @"Hol@ up, that@s a Pok�mon Egg,\nWh..."
+	release
+	end
+
+EventScript_Hypertrainer_MaxIV:
+	setvar 0x8004 0x0
+	msgbox gText_Hypertrainer_String11 MSG_NORMAL 
+	release
+	end
+
+EventScript_Hypertrainer_IVMax:
+	setvar 0x8004 0x0
+	msgbox gText_Hypertrainer_String12 MSG_NORMAL 
+	release
+	end
+
+EventScript_Hypertrainer_NoBadges:
+	msgbox gText_Hypertrainer_String13 MSG_NORMAL 
 	release
 	end
 
@@ -188,11 +264,3 @@ EventScript_Hypertrainer_NoMoreHT:
 	setvar 0x8004 0x0
 	release
 	end
-
-
-
-
-
-
-
-

@@ -1026,14 +1026,14 @@
 #define FLAG_HIDDEN_ITEM(map, item) (FLAG_HIDDEN_ITEMS_START + HIDDEN_ITEM_##map##_##item)
 
 /*
-#define HIDDEN_ITEM_VIRIDIAN_FOREST_POTION                              0
-#define HIDDEN_ITEM_VIRIDIAN_FOREST_ANTIDOTE                            1
-#define HIDDEN_ITEM_MT_MOON_B2F_MOON_STONE                              2
-#define HIDDEN_ITEM_MT_MOON_B2F_ETHER                                   3
-#define HIDDEN_ITEM_ROUTE25_ELIXIR                                      4
-#define HIDDEN_ITEM_ROUTE25_ETHER                                       5
-#define HIDDEN_ITEM_ROUTE9_ETHER                                        6
-#define HIDDEN_ITEM_UNUSED_0x07                                         7
+#define HIDDEN_ITEM_VIRIDIAN_FOREST_POTION                              0//Route 29 Nugget
+#define HIDDEN_ITEM_VIRIDIAN_FOREST_ANTIDOTE                            1//Route 31 Potions
+#define HIDDEN_ITEM_MT_MOON_B2F_MOON_STONE                              2//Route 32 Great Ball
+#define HIDDEN_ITEM_MT_MOON_B2F_ETHER                                   3//Route 34 Water Stone
+#define HIDDEN_ITEM_ROUTE25_ELIXIR                                      4//Goldenrod Sewers Iron
+#define HIDDEN_ITEM_ROUTE25_ETHER                                       5//Goldenrod Sewers Revive
+#define HIDDEN_ITEM_ROUTE9_ETHER                                        6//Goldenrod Sewers Black Sludge
+#define HIDDEN_ITEM_UNUSED_0x07                                         7//Goldenrod Sewers Big Nugget
 #define HIDDEN_ITEM_SSANNE_B1F_CORRIDOR_HYPER_POTION                    8
 #define HIDDEN_ITEM_ROUTE10_SUPER_POTION                                9
 #define HIDDEN_ITEM_ROUTE10_MAX_ETHER                                  10

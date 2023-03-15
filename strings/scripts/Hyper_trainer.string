@@ -1,11 +1,11 @@
 #org @gText_Hypertrainer_String1
-You look kinda strong, I must say.\nA strong trainer like you need to\lhave the best Pokémon, yes?\p=I can make your Pokémon stronger\nby going through Hyper Training.\pHow much? Just get me some shiny\nSilver Caps or Gold Caps.\pWhaddya say?
+You look kinda strong, I must say.\nA strong trainer like you need to\lhave the best Pokémon, yes?\pI can make your Pokémon stronger\nby going through Hyper Training.\pHow much? Just get me some shiny\nSilver Caps or Gold Caps.\pWhaddya say?
 
 #org @gText_Hypertrainer_String2
 Okay, so do you have any\nof these caps?
 
 #org @gText_Hypertrainer_String3
-Wow! That's a nice  Bottle Cap.\pWhich Pokémon d'you want me\nto Hyper train?
+Wow! That's a nice Bottle Cap.\pWhich Pokémon d'you want me\nto Hyper train?
 
 #org @gText_Hypertrainer_String4
 Which stat do you want me to raise?
@@ -27,3 +27,12 @@ You ain't have any Bottle Cap!\nAre you trying to fool me?
 
 #org @gText_Hypertrainer_String10
 Wait. That's a Pokémon Egg!\nI can't Hyper Train it!
+
+#org @gText_Hypertrainer_String11
+Your Pokémon is strong already.\nI can't Hyper Train that stat!
+
+#org @gText_Hypertrainer_String12
+Your Pokémon is strong already.\nHyper Training won't do anything!
+
+#org @gText_Hypertrainer_String13
+I offer a good Hyper Training\nservice for strong trainers.\pYou're not strong enough to use\nHyper Training.\pMaybe if you had more badges\nI'd consider it.

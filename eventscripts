@@ -5,3 +5,5 @@ npc 10 5 7 EventScript_Goldenrod_Haircut_guy
 npc 19 0 1 EventScript_bugcatching_guard
 npc 23 0 1 EventScript_bugcatching_guard
 npc 10 0 5 EventScript_mart_Start
+npc 6 5 3 EventScript_RivalMaleVioletPC
+npc 6 5 0 EventScript_RivalFemaleVioletPC

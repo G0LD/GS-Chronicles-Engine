@@ -115,6 +115,18 @@ The water is dyed a deep blue[.]
 #org @gText_WaterMurkyBrown
 The water is a murky brown[.]
 
+#org @gText_WaveRideSurf
+A wild Seaking helped out by\nusing the Wave Ride!
+
+#org @gText_CascadeRideWaterfall
+The wild Seaking helped out by\nusing the Cascade Ride!
+
+#org @gText_ClamberRideRockclimb
+A wild Machoke helped out by\nusing the Clamber Ride!
+
+#org @gText_BrightRideFlash
+A wild Abra helped out by\nusing the Bright Ride!
+
 #org @gText_WaterMurkyBrownUseSurf
 The water is a murky brown[.]\nWould you like to Surf?
 
@@ -156,9 +168,6 @@ Light is filtering down from above.\nWould you like to use the ADM?
 
 #org @gText_UsedADMDiveResurface
 The ADM allowed you to resurface!
-
-#org @gText_BrightRideUsed
-The Bright Ride helped your\nPokémon to light up the area!
 
 #org @gText_CantDive
 The sea is deep here. A Pok\emon\nmay be able to go underwater.

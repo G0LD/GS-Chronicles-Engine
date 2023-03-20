@@ -450,9 +450,21 @@ EventScript_RockClimb:
 	lockall
 	call FollowerIntoPlayerScript
 	callasm HideFollower
+	setvar 0x8003 0x0
+	setvar 0x8004 0x0
+	special2 0x8008 0x18
+	msgbox gText_ClamberRideRockclimb MSG_NORMAL
+	setvar 0x8003 0x0
+	setvar 0x8004 0x0
+	setvar 0x8005 SPECIES_MACHOKE
+	special 0x16
 	dofieldeffect FLDEFF_USE_ROCK_CLIMB
 	waitfieldeffect FLDEFF_USE_ROCK_CLIMB
 	callasm FollowMe_WarpSetEnd
+	setvar 0x8003 0x0
+	setvar 0x8004 0x0
+	copyvar 0x8005 0x8008
+	special 0x16
 	releaseall
 	end
 
@@ -568,9 +580,26 @@ EventScript_UseWaterfall_Ask:
 	msgbox 0x81BDFD7 MSG_KEEPOPEN
 
 EventScript_UseWaterfall_SkipMsg:
+	lockall
+	setvar 0x8003 0x0
+	setvar 0x8004 0x0
+	special2 0x8008 0x18
+	msgbox gText_CascadeRideWaterfall MSG_NORMAL
+	setvar 0x8003 0x0
+	setvar 0x8004 0x0
+	setvar 0x8005 SPECIES_SEAKING
+	special 0x16
 	setanimation 0x0 0x8004
 	doanimation 0x2B
 	callasm FollowMe_WarpSetEnd
+	waitfieldeffect 0x2B
+	setvar 0x8003 0x0
+	setvar 0x8004 0x0
+	copyvar 0x8005 0x8008
+	special 0x16
+	releaseall
+	end
+
 EventScript_WaterfallEnd:
 	releaseall
 	end
@@ -619,7 +648,7 @@ EventScript_UseSandboxWaterfall:
 .global EventScript_UseSurf
 EventScript_UseSurf:
 	bufferpartypokemon 0x0 0x8004
-	bufferattack 0x1 MOVE_WATERFALL
+	bufferattack 0x1 MOVE_SURF
 	callasm IsUnboundToVar
 	compare LASTRESULT 0x0
 	if equal _goto EventScript_UseSurf_SkipAsk
@@ -639,8 +668,24 @@ EventScript_UseSurf_CheckAnswer:
 
 EventScript_UseSurf_SkipAsk:
 	lockall
+	setvar 0x8003 0x0
+	setvar 0x8004 0x0
+	special2 0x8008 0x18
+	msgbox gText_WaveRideSurf MSG_NORMAL
+	setvar 0x8003 0x0
+	setvar 0x8004 0x0
+	setvar 0x8005 SPECIES_SEAKING
+	special 0x16
 	setanimation 0x0 0x8004
 	doanimation 0x9
+	waitfieldeffect 0x9
+	setvar 0x8003 0x0
+	setvar 0x8004 0x0
+	copyvar 0x8005 0x8008
+	special 0x16
+	releaseall
+	end
+
 EventScript_SurfEnd:
 	releaseall
 	end
@@ -828,17 +873,26 @@ EventScript_UseADMDiveUnderwater_SkipAsk:
 .global EventScript_UseFlash
 EventScript_UseFlash:
 	lockall
-	bufferpartypokemon 0x0 0x8004
-	bufferattack 0x1 MOVE_FLASH
+	setvar 0x8003 0x0
+	setvar 0x8004 0x0
+	special2 0x8008 0x18
 	setflag FLAG_SYS_USE_FLASH
-	setanimation 0x0 0x4001
+	setvar 0x8003 0x0
+	setvar 0x8004 0x0
+	setvar 0x8005 SPECIES_ABRA
+	special 0x16
+	setanimation 0x0 0x8004
 	doanimation 0x28
 	waitstate
-	msgbox gText_BrightRideUsed MSG_NORMAL
+	msgbox gText_BrightRideFlash MSG_NORMAL
 	checksound
 	sound 0xC8
 	animateflash 0x0
 	setflashlevel 0x0
+	setvar 0x8003 0x0
+	setvar 0x8004 0x0
+	copyvar 0x8005 0x8008
+	special 0x16
 	releaseall
 	end
 

@@ -7,3 +7,12 @@ npc 23 0 1 EventScript_bugcatching_guard
 npc 10 0 5 EventScript_mart_Start
 npc 6 5 3 EventScript_RivalMaleVioletPC
 npc 6 5 0 EventScript_RivalFemaleVioletPC
+
+##Trigger Scripts
+tile 3 24 0 EventScript_RivalRoute34_0XC16B40
+tile 3 24 1 EventScript_RivalRoute34_0XC16B40
+tile 3 24 2 EventScript_RivalRoute34_0XC16B40
+tile 3 24 3 EventScript_RivalRoute34_0XC16B40
+tile 3 24 4 EventScript_RivalRoute34_0XC16B40
+tile 3 24 5 EventScript_RivalRoute34_0XC16B40
+tile 3 24 6 EventScript_RivalRoute34_0XC16B40

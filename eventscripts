@@ -1,4 +1,4 @@
-##
+##npc scripts
 npc 10 5 6 EventScript_NatureChanger
 npc 10 5 9 EventScript_Hypertrainer
 npc 10 5 7 EventScript_Goldenrod_Haircut_guy
@@ -16,3 +16,5 @@ tile 3 24 3 EventScript_RivalRoute34_0XC16B40
 tile 3 24 4 EventScript_RivalRoute34_0XC16B40
 tile 3 24 5 EventScript_RivalRoute34_0XC16B40
 tile 3 24 6 EventScript_RivalRoute34_0XC16B40
+tile 1 48 0 EventScript_RivalGoldenrodTower
+tile 1 48 1 EventScript_RivalGoldenrodTower

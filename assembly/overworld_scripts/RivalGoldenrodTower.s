@@ -5,8 +5,14 @@
 .include "../xse_defines.s"
 .include "../asm_defines.s"
 
+.equ ETHAN, 0x6
+.equ KRIS, 0x4
+.equ OAK, 0x3
+.equ BIRCH, 0x2
+.equ ASPRYUS, 0x1
+
 EventScript_RivalGoldenrodTower:
-	release
+	lockall
 	checkflag 0x92E
 	if 0x1 _goto EventScript_RivalGoldenrodTower_Snippet1
 	applymovement 0x1 EventScript_RivalGoldenrodTower_Move1
@@ -33,7 +39,7 @@ EventScript_RivalGoldenrodTower_Snippet2:
 	msgbox gText_RivalGoldenrodTower_String1 MSG_NORMAL @"Hey! you must be [player], right?\..."
 	callstd 0xB
 	applymovement 0x1 EventScript_RivalGoldenrodTower_Move3
-	applymovement MOVE_PLAYER EventScript_RivalGoldenrodTower_Move4
+	applymovement PLAYER EventScript_RivalGoldenrodTower_Move4
 	waitmovement 0x0
 	goto EventScript_RivalGoldenrodTower_Snippet5
 
@@ -46,7 +52,7 @@ EventScript_RivalGoldenrodTower_Snippet3:
 	msgbox gText_RivalGoldenrodTower_String1 MSG_NORMAL @"Hey! you must be [player], right?\..." 
 	callstd 0xB
 	applymovement 0x1 EventScript_RivalGoldenrodTower_Move6
-	applymovement MOVE_PLAYER EventScript_RivalGoldenrodTower_Move7
+	applymovement PLAYER EventScript_RivalGoldenrodTower_Move7
 	waitmovement 0x0
 	goto EventScript_RivalGoldenrodTower_Snippet5
 
@@ -62,12 +68,14 @@ EventScript_RivalGoldenrodTower_Snippet5:
 	call EventScript_RivalGoldenrodTower_Snippet4
 	msgbox gText_RivalGoldenrodTower_String3 MSG_KEEPOPEN @"Allow me to introduce myself.\nMy ..." 
 	callstd 0xB
+	pause 0x30
+	spriteface ASPRYUS RIGHT
+	spriteface PLAYER RIGHT
 	call EventScript_RivalGoldenrodTower_Snippet6
 	msgbox gText_RivalGoldenrodTower_String4 MSG_KEEPOPEN @"Hello! Nice to meet you,\n[player]..."
-	pause 0x12
+	pause 0x30
 	callstd 0xB
 	call EventScript_RivalGoldenrodTower_Snippet7
-	spriteface 0xFF 0x4
 	msgbox gText_RivalGoldenrodTower_String5 MSG_NORMAL @"I heard you were coming to\nGolden..." 
 	callstd 0xB
 	checkgender
@@ -88,10 +96,15 @@ EventScript_RivalGoldenrodTower_Snippet7:
 	return
 
 	@---------------
-EventScript_RivalGoldenrodTower_Snippet8:
+EventScript_RivalGoldenrodTower_Snippet8: @Kris
 	showsprite 0x4
 	applymovement 0x4 EventScript_RivalGoldenrodTower_Move8
 	waitmovement 0x0
+	pause 0x20
+	spriteface ASPRYUS UP
+	spriteface BIRCH UP
+	spriteface PLAYER UP
+	spriteface OAK UP
 	call EventScript_RivalGoldenrodTower_Snippet10
 	msgbox gText_RivalGoldenrodTower_String8 MSG_NORMAL @"Hi! I@m sorry for being late.\nI h..." 
 	callstd 0xB
@@ -106,7 +119,7 @@ EventScript_RivalGoldenrodTower_Snippet8:
 	call EventScript_RivalGoldenrodTower_Snippet11
 	msgbox gText_RivalGoldenrodTower_String10 MSG_NORMAL @"Oh! It@s my sweetie girl!\nYou don..." 
 	callstd 0xB
-	pause 0x12
+	pause 0x20
 	applymovement 0x4 EventScript_RivalGoldenrodTower_Move10
 	waitmovement 0x0
 	spriteface 0x2 0x4
@@ -118,6 +131,10 @@ EventScript_RivalGoldenrodTower_Snippet8:
 	callstd 0xB
 	applymovement 0x4 EventScript_RivalGoldenrodTower_Move11
 	waitmovement 0x0
+	spriteface ASPRYUS UP
+	spriteface BIRCH UP
+	spriteface PLAYER UP
+	spriteface OAK UP
 	call EventScript_RivalGoldenrodTower_Snippet10
 	msgbox gText_RivalGoldenrodTower_String12 MSG_NORMAL @"I@m sorry but I@ve to go.\nI just ..." 
 	callstd 0xB
@@ -125,17 +142,23 @@ EventScript_RivalGoldenrodTower_Snippet8:
 	applymovement 0x4 EventScript_RivalGoldenrodTower_Move12
 	waitmovement 0x0
 	hidesprite 0x4
-	pause 0x16
+	pause 0x20
+	spriteface ASPRYUS DOWN
 	call EventScript_RivalGoldenrodTower_Snippet11
 	msgbox gText_RivalGoldenrodTower_String13 MSG_NORMAL @"I don@t know what is wrong with\nh..." 
 	callstd 0xB
 	goto EventScript_RivalGoldenrodTower_Snippet12
 
 	@---------------
-EventScript_RivalGoldenrodTower_Snippet9:
+EventScript_RivalGoldenrodTower_Snippet9: @Ethan
 	showsprite 0x6
 	applymovement 0x6 EventScript_RivalGoldenrodTower_Move8
 	waitmovement 0x0
+	pause 0x20
+	spriteface ASPRYUS UP
+	spriteface BIRCH UP
+	spriteface PLAYER UP
+	spriteface OAK UP
 	call EventScript_RivalGoldenrodTower_Snippet13
 	msgbox gText_RivalGoldenrodTower_String8 MSG_NORMAL @"Hi! I@m sorry for being late.\nI h..." 
 	callstd 0xB
@@ -144,7 +167,7 @@ EventScript_RivalGoldenrodTower_Snippet9:
 	call EventScript_RivalGoldenrodTower_Snippet13
 	msgbox gText_RivalGoldenrodTower_String9 MSG_NORMAL @"Ah, it@s you, dad. I didn@t expect..." 
 	callstd 0xB
-	pause 0x12
+	pause 0x20
 	applymovement 0x1 EventScript_RivalGoldenrodTower_Move9
 	waitmovement 0x0
 	call EventScript_RivalGoldenrodTower_Snippet11
@@ -162,6 +185,10 @@ EventScript_RivalGoldenrodTower_Snippet9:
 	callstd 0xB
 	applymovement 0x6 EventScript_RivalGoldenrodTower_Move11
 	waitmovement 0x0
+	spriteface ASPRYUS UP
+	spriteface BIRCH UP
+	spriteface PLAYER UP
+	spriteface OAK UP
 	call EventScript_RivalGoldenrodTower_Snippet13
 	msgbox gText_RivalGoldenrodTower_String12 MSG_NORMAL @"I@m sorry but I@ve to go.\nI just ..." 
 	callstd 0xB
@@ -169,7 +196,8 @@ EventScript_RivalGoldenrodTower_Snippet9:
 	applymovement 0x6 EventScript_RivalGoldenrodTower_Move12
 	waitmovement 0x0
 	hidesprite 0x6
-	pause 0x16
+	pause 0x20
+	spriteface ASPRYUS DOWN
 	call EventScript_RivalGoldenrodTower_Snippet11
 	msgbox gText_RivalGoldenrodTower_String15 MSG_NORMAL @"I don@t know what is wrong with\nh..." 
 	callstd 0xB
@@ -189,8 +217,10 @@ EventScript_RivalGoldenrodTower_Snippet11:
 EventScript_RivalGoldenrodTower_Snippet12:
 	applymovement 0x1 EventScript_RivalGoldenrodTower_Move13
 	waitmovement 0x0
-	spriteface 0x2 0x3
-	spriteface 0x3 0x3
+	spriteface ASPRYUS DOWN
+	spriteface BIRCH LEFT
+	spriteface PLAYER UP
+	spriteface OAK LEFT
 	call EventScript_RivalGoldenrodTower_Snippet11
 	msgbox gText_RivalGoldenrodTower_String18 MSG_NORMAL @"By the way, The main reason to\nin..." 
 	callstd 0xB
@@ -199,7 +229,7 @@ EventScript_RivalGoldenrodTower_Snippet12:
 	waitmovement 0x0
 	hidesprite 0x1
 	pause 0x22
-	applymovement MOVE_PLAYER EventScript_RivalGoldenrodTower_Move15
+	applymovement PLAYER EventScript_RivalGoldenrodTower_Move15
 	waitmovement 0x0
 	spriteface 0x2 0x4
 	spriteface 0x3 0x4
@@ -336,20 +366,17 @@ EventScript_RivalGoldenrodTower_Move8:
 .byte 0x12
 .byte 0x12
 .byte 0x12
-.byte 0x0
+.byte walk_down
 .byte 0xFE
 
 EventScript_RivalGoldenrodTower_Move9:
 .byte 0x11
 .byte 0x13
-.byte 0x13
-.byte 0x1
 .byte 0xFE
 
 EventScript_RivalGoldenrodTower_Move10:
 .byte 0x13
 .byte 0x13
-.byte 0x10
 .byte 0x10
 .byte 0x10
 .byte 0x2
@@ -373,9 +400,7 @@ EventScript_RivalGoldenrodTower_Move12:
 
 EventScript_RivalGoldenrodTower_Move13:
 .byte 0x12
-.byte 0x12
 .byte 0x10
-.byte 0x3
 .byte 0xFE
 
 EventScript_RivalGoldenrodTower_Move14:

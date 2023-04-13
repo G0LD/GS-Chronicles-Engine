@@ -1328,6 +1328,18 @@ The user blows into\nsunlight to attack.\nIt also lowers the\nfoe's Sp. Def stat
 #org @DESC_STARDUST_PUNCH
 The user strikes a\nstar-shaped punch.\nThis move always\ngoes first.
 
+#org @DESC_RAGE_FIST
+An attack that\ngrows stronger on\neach successive hit.
+
+#org @DESC_TWIN_BEAM
+The user hits\nthe foe with two\nmystical beams\nin one turn.
+
+#org @DESC_HYPER_DRILL
+The user attacks\nwith a pointy\ndrill, hitting even\nprotected targets.
+
+#org @DESC_KOWTOW_CLEAVE
+The foe is attacked\nwith a sharp blade\nthat cannot be evaded.
+
 #org @DESC_MAX_GUARD
 Enables the user to\nevade all attacks.\nIt may fail if used\nin succession.
 

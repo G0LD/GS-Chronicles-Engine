@@ -689,6 +689,7 @@ gPunchingMoves:
 .hword MOVE_PLASMAFISTS
 .hword MOVE_DOUBLEIRONBASH
 .hword MOVE_STARDUST_PUNCH
+.hword MOVE_RAGEFIST
 .hword MOVE_TABLES_TERMIN
 
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
@@ -1073,6 +1074,7 @@ gTwoStrikesMoves:
 .hword MOVE_DUALWINGBEAT
 .hword MOVE_GEARGRIND
 .hword MOVE_TWINEEDLE
+.hword MOVE_TWINBEAM
 .hword MOVE_TABLES_TERMIN
 
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@

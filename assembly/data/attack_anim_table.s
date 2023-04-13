@@ -817,6 +817,10 @@ gMoveAnimations:
 .word ANIM_PETALBLIZZARD		@MOVE_FLORAL_STREAM
 .word ANIM_SHINING_BEAM
 .word 0x8f3aa08		@MOVE_STARDUST_PUNCH
+.word 0x81ccb76		@MOVE_RAGEFIST
+.word 0x81ceaed		@MOVE_TWINBEAM
+.word ANIM_DRILLRUN @MOVE_HYPERDRILL
+.word ANIM_KOWTOWCLEAVE
 
 @;New attacks go above!
 .word ANIM_BREAKNECK_BLITZ
@@ -28837,3 +28841,29 @@ SetAverageBattlerPositionsHook:
 	bl SetAverageBattlerPositions
 	ldr r0, =0x8076E26 | 1
 	bx r0
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+.pool
+ANIM_KOWTOWCLEAVE:
+	loadparticle ANIM_TAG_CUT @Cut
+	launchtask AnimTask_BlendParticle 0x5 0x5 ANIM_TAG_CUT 0x0 0xD 0xD 0x0
+	pokespritetoBG bank_target
+	loadBG1 BG_NIGHTMARE
+	waitbgfadein
+	playsound2 0x79 SOUND_PAN_TARGET
+	launchtemplate KOWTOW_CLEAVE_LEFT TEMPLATE_TARGET | 2, 0x5, 50, -10, 100, 4 1 @;Move left along bottom
+	pause 0x5
+	launchtask AnimTask_move_bank 0x2 0x5 bank_target 0x0 0x4 0xA 0x1
+	pause 0x15
+	playsound2 0x79 SOUND_PAN_TARGET
+	launchtemplate KOWTOW_CLEAVE_RIGHT TEMPLATE_TARGET | 2, 0x5, -50, 10, 100, 4 0x0 @;Move right along bottom
+	pause 0x5
+	launchtask AnimTask_move_bank 0x2 0x5 bank_target 0x0 0x4 0xA 0x1
+	waitanimation
+	call UNSET_SCROLLING_BG
+	pokespritefromBG bank_target
+	endanimation
+
+.align 2
+KOWTOW_CLEAVE_LEFT: objtemplate ANIM_TAG_CUT ANIM_TAG_CUT OAM_NORMAL_32x32 0x83E3290 0x0 gSpriteAffineAnimTable_NightSlashLeft SpriteCB_HorizontalSlice
+KOWTOW_CLEAVE_RIGHT: objtemplate ANIM_TAG_CUT ANIM_TAG_CUT OAM_NORMAL_32x32 0x83E3290 0x0 gSpriteAffineAnimTable_NightSlashRight SpriteCB_HorizontalSlice

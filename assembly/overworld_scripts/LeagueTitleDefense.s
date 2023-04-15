@@ -150,7 +150,7 @@ EventScript_LeagueTitleDefense_Silver_Chikorita:
     return
 
 EventScript_LeagueTitleDefense_ProfElm:
-    applymovement 0xFE EventScript_LeagueTitleDefense_Move3
+    applymovement 0xFE EventScript_LeagueTitleDefense_Move5
     waitmovement 0x0
     msgbox 0x8C05560 0xA
     msgbox gText_LeagueTitleDefense_ProfElmSpeech1 MSG_NORMAL
@@ -171,3 +171,15 @@ EventScript_LeagueTitleDefense_ProfElm:
     hidesprite 0xFE
     goto EventScript_LeagueTitleDefense_Ending
     end
+
+EventScript_LeagueTitleDefense_ProfElm_Totodile:
+    trainerbattle3 0x3 0x171 0x200 gText_LeagueTitleDefense_SilverSpeech2
+    return
+
+EventScript_LeagueTitleDefense_ProfElm_Chikorita:
+    trainerbattle3 0x3 0x172 0x200 gText_LeagueTitleDefense_SilverSpeech2
+    return
+
+EventScript_LeagueTitleDefense_ProfElm_Cyndaquil:
+    trainerbattle3 0x3 0x170 0x200 gText_LeagueTitleDefense_SilverSpeech2
+    return

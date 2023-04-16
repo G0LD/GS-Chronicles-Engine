@@ -14,6 +14,7 @@ EventScript_LeagueTitleDefense:
     hidesprite 0x1
     hidesprite 0x6
     hidesprite 0x7
+    setflag 0x1501
     getplayerpos 0x8008 0x8009
     compare 0x8008 0x8
     if 0x1 _call EventScript_LeagueTitleDefense_StepRight
@@ -85,13 +86,13 @@ EventScript_LeagueTitleDefense_Naoko:
     showsprite 0x9
     applymovement 0x9 EventScript_LeagueTitleDefense_Move3
     waitmovement 0x0
-    msgbox 0x8C4D19D 0xA
+    msgbox 0x8C4D18E 0xA
     msgbox gText_LeagueTitleDefense_NaokoSpeech1 MSG_NORMAL
     callstd 0xB
     setflag FLAG_SCALE_TRAINER_LEVELS
     trainerbattle3 0x3 0x16D 0x200 gText_LeagueTitleDefense_NaokoSpeech2
     clearflag FLAG_SCALE_TRAINER_LEVELS
-    msgbox 0x8C4D19D 0xA
+    msgbox 0x8C4D18E 0xA
     msgbox gText_LeagueTitleDefense_NaokoSpeech3 MSG_NORMAL
     callstd 0xB
     applymovement 0x9 EventScript_LeagueTitleDefense_Move4

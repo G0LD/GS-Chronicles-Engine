@@ -224,6 +224,10 @@ void HandleEndTurn_BattleWon(void)
 			case CLASS_LEADER:
 			case CLASS_ELITE_4:
 			case CLASS_CHAMPION:
+			case CLASS_CHAMPION_RS:
+			case CLASS_RUIN_MANIAC_RS:
+			case CLASS_RIVAL_2:
+
 				PlayBGM(BGM_VICTORY_SPECIAL);
 				specialMus = TRUE;
 				break;

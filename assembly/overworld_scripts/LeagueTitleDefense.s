@@ -145,15 +145,15 @@ EventScript_LeagueTitleDefense_Silver:
     end
 
 EventScript_LeagueTitleDefense_Silver_Cyndaquil:
-    trainerbattle3 0x3 0x1AA 0x200 gText_LeagueTitleDefense_SilverSpeech2
+    trainerbattle3 0x3 0x169 0x200 gText_LeagueTitleDefense_SilverSpeech2
     return
 
 EventScript_LeagueTitleDefense_Silver_Totodile:
-    trainerbattle3 0x3 0x1AB 0x200 gText_LeagueTitleDefense_SilverSpeech2
+    trainerbattle3 0x3 0x16A 0x200 gText_LeagueTitleDefense_SilverSpeech2
     return
 
 EventScript_LeagueTitleDefense_Silver_Chikorita:
-    trainerbattle3 0x3 0x1AC 0x200 gText_LeagueTitleDefense_SilverSpeech2
+    trainerbattle3 0x3 0x16B 0x200 gText_LeagueTitleDefense_SilverSpeech2
     return
 
 EventScript_LeagueTitleDefense_ProfElm:

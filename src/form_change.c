@@ -626,7 +626,6 @@ void HoldItemFormChange(struct Pokemon* mon, u16 item)
 			break;
 		#endif
 
-		#ifdef PLA_HELD_ORIGIN_ORBS
 		#if (defined SPECIES_DIALGA && defined SPECIES_DIALGA_ORIGIN)
 		case SPECIES_DIALGA:
 			if (itemEffect == ITEM_EFFECT_ADAMANT_ORB)
@@ -649,7 +648,6 @@ void HoldItemFormChange(struct Pokemon* mon, u16 item)
 			if (itemEffect != ITEM_EFFECT_LUSTROUS_ORB)
 				targetSpecies = SPECIES_PALKIA;
 			break;
-		#endif
 		#endif
 
 		#ifdef SPECIES_GENESECT

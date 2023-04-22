@@ -306,3 +306,4 @@ TMCaseMonIconPalChangeHook:
 	mov r0, r5 @Item Id
 	bl ChangeMonIconPalsInTMCase
 	pop {r4-r6, pc}
+	

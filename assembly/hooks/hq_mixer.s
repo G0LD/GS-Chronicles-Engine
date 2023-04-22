@@ -1313,3 +1313,4 @@ C_clear_loop_rest:
     SUBS    R1, R1, #4
     BGT     C_clear_loop_rest
     LDMFD   SP!, {R0, R2-R5, PC}
+    

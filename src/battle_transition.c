@@ -737,7 +737,10 @@ const TaskFunc sBT_Phase2Tasks[] =
 };
 
 #ifdef VAR_BATTLE_TRANSITION_LOGO
-extern const u8 ShadowBattleLogoTiles[];
+extern const u8 TeamRocketBattleLogoTiles[];
+extern const u16 TeamRocketBattleLogoPal[];
+extern const u8 TeamRocketBattleLogoMap[];
+/*extern const u8 ShadowBattleLogoTiles[];
 extern const u16 ShadowBattleLogoPal[];
 extern const u8 ShadowBattleLogoMap[];
 extern const u8 LORBattleLogoTiles[];
@@ -757,12 +760,12 @@ extern const u16 ScienceSocietyBattleLogoPal[];
 extern const u8 ScienceSocietyBattleLogoMap[];
 extern const u8 DynamaxBattleLogoTiles[];
 extern const u16 DynamaxBattleLogoPal[];
-extern const u8 DynamaxBattleLogoMap[];
+extern const u8 DynamaxBattleLogoMap[];*/
 
 const struct BattleTransitionLogo gBattleTransitionLogos[] =
 {
 	#ifndef UNBOUND //Modify this section
-	{},
+	{CLASS_TEAM_ROCKET,TeamRocketBattleLogoTiles, TeamRocketBattleLogoPal, TeamRocketBattleLogoMap},
 	#else //For Pokemon Unbound
 	{0xFF, DynamaxBattleLogoTiles, DynamaxBattleLogoPal, DynamaxBattleLogoMap},
 	{CLASS_SHADOW, ShadowBattleLogoTiles, ShadowBattleLogoPal, ShadowBattleLogoMap},

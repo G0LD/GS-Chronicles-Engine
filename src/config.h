@@ -111,6 +111,8 @@ enum //These vars need to be one after the other (hence the enum)
 #define VAR_RUNTIME_CHANGEABLE 0x5128	//'Secret Base' variables, save 15 consecutive variables for this. 0x4080 in JPAN engine.
 #define VAR_TRAINER_BGM_OVERRIDE 0x5129 //Switches trainer battle song played to the value entered. Useful for regional music switch
 #define VAR_WILD_BGM_OVERRIDE 0x512A    //Switches wild Pokémon battle song played to the value entered. Useful for regional music switch
+#define VAR_BATTLE_TRANSITION_LOGO 0x512B //idk
+#define FLAG_LEGENDARY_APPEARED_STRING 0x1443 //Load string "Species" appeared!
 
 /*===== Healing Place as in JPAN's Engine =====*/
 #define VAR_HEALINGMAP 0x5137 //0x405A in JPAN's Engine

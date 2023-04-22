@@ -2222,6 +2222,84 @@ Thunder Cage
 #org @NAME_LONG_DRAGON_ENERGY
 Dragon Energy
 
+#org @NAME_LONG_ASTRAL_BARRAGE
+Astral Barrage
+
+#org @NAME_LONG_GLACIAL_LANCE
+Glacial Lance
+
+#org @NAME_LONG_DIRE_CLAW
+Dire Claw
+
+#org @NAME_LONG_PSYSHIELD_BASH
+Psyshield Bash
+
+#org @NAME_LONG_POWER_SHIFT
+Power Shift
+
+#org @NAME_LONG_STONE_AXE
+Stone Axe
+
+#org @NAME_LONG_MYSTICAL_POWER
+Mystical Power
+
+#org @NAME_LONG_RAGING_FURY
+Raging Fury
+
+#org @NAME_LONG_WAVE_CRASH
+Wave Crash
+
+#org @NAME_LONG_CHLOROBLAST
+Chloroblast
+
+#org @NAME_LONG_MOUNTAIN_GALE
+Mountain Gale
+
+#org @NAME_LONG_VICTORY_DANCE
+Victory Dance
+
+#org @NAME_LONG_HEADLONG_RUSH
+Headlong Rush
+
+#org @NAME_LONG_BARB_BARRAGE
+Barb Barrage
+
+#org @NAME_LONG_ESPER_WING
+Esper Wing
+
+#org @NAME_LONG_BITTER_MALICE
+Bitter Malice
+
+#org @NAME_LONG_SHELTER
+Shelter
+
+#org @NAME_LONG_TRIPLE_ARROWS
+Triple Arrows
+
+#org @NAME_LONG_INFERNAL_PARADE
+Infernal Parade
+
+#org @NAME_LONG_CEASELESS_EDGE
+Ceaseless Edge
+
+#org @NAME_LONG_BLEAKWIND_STORM
+Bleakwind Storm
+
+#org @NAME_LONG_WILDBOLT_STORM
+Wildbolt Storm
+
+#org @NAME_LONG_SANDSEAR_STORM
+Sandsear Storm
+
+#org @NAME_LONG_SPRINGTIDE_STORM
+Springtide Storm
+
+#org @NAME_LONG_LUNAR_BLESSING
+Lunar Blessing
+
+#org @NAME_LONG_TAKE_HEART
+Take Heart
+
 #org @NAME_LONG_AQUA_SCALES
 Aqua Scales
 
@@ -2243,83 +2321,17 @@ Shining Beam
 #org @NAME_LONG_STARDUST_PUNCH
 Stardust Punch
 
-#org @NAME_ASTRAL_BARRAGE
-Astral Barrage
+#org @NAME_LONG_RAGE_FIST
+Rage Fist
 
-#org @NAME_GLACIAL_LANCE
-Glacial Lance
+#org @NAME_LONG_TWIN_BEAM
+Twin Beam
 
-#org @NAME_DIRE_CLAW
-Dire Claw
+#org @NAME_LONG_HYPER_DRILL
+Hyper Drill
 
-#org @NAME_PSYSHIELD_BASH
-Psyshield Bash
-
-#org @NAME_POWER_SHIFT
-Power Shift
-
-#org @NAME_STONE_AXE
-Stone Axe
-
-#org @NAME_MYSTICAL_POWER
-Mystical Power
-
-#org @NAME_RAGING_FURY
-Raging Fury
-
-#org @NAME_WAVE_CRASH
-Wave Crash
-
-#org @NAME_CHLOROBLAST
-Chloroblast
-
-#org @NAME_MOUNTAIN_GALE
-Mountain Gale
-
-#org @NAME_VICTORY_DANCE
-Victory Dance
-
-#org @NAME_HEADLONG_RUSH
-Headlong Rush
-
-#org @NAME_BARB_BARRAGE
-Barb Barrage
-
-#org @NAME_ESPER_WING
-Esper Wing
-
-#org @NAME_BITTER_MALICE
-Bitter Malice
-
-#org @NAME_SHELTER
-Shelter
-
-#org @NAME_TRIPLE_ARROWS
-Triple Arrows
-
-#org @NAME_INFERNAL_PARADE
-Infernal Parade
-
-#org @NAME_CEASELESS_EDGE
-Ceaseless Edge
-
-#org @NAME_BLEAKWIND_STORM
-Bleakwind Storm
-
-#org @NAME_WILDBOLT_STORM
-Wildbolt Storm
-
-#org @NAME_SANDSEAR_STORM
-Sandsear Storm
-
-#org @NAME_SPRINGTIDE_STORM
-Springtide Storm
-
-#org @NAME_LUNAR_BLESSING
-Lunar Blessing
-
-#org @NAME_TAKE_HEART
-Take Heart
+#org @NAME_LONG_KOWTOW_CLEAVE
+Kowtow Cleave
 
 #org @NAME_LONG_MAX_GUARD
 Guard

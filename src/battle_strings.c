@@ -27,6 +27,7 @@ battle_strings.c
 */
 
 extern u8 gMoveNames[][MOVE_NAME_LENGTH + 1];
+extern u8 gLongMoveNames[][MOVE_NAME_LENGTH + 5];
 
 extern const u8 gStatusConditionString_Frostbite[];
 extern const u8 gStatusConditionString_DisableProblem[];
@@ -1009,7 +1010,7 @@ void BufferMoveNameBattle(u16 move, u8* dst)
 		StringCopy(&dst[4], gMoveNames[move]);
 	}
 	else
-		StringCopy(dst, gMoveNames[move]);
+		StringCopy(dst, gLongMoveNames[move]);
 }
 
 void EmitPrintString(u8 bufferId, u16 stringID)

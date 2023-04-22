@@ -3,6 +3,14 @@
 ##Tables
 gMoveDescriptions 080E5440
 gMoveDescriptions 08137BC8
+gLongMoveNames 080BFAA4
+gLongMoveNames 08125BE4
+gLongMoveNames 08125CE0
+gLongMoveNames 0812606C
+gLongMoveNames 08126128
+gLongMoveNames 081261FC
+gLongMoveNames 0812627C
+gLongMoveNames 08126E64
 gAbilityDescriptions 080001C4
 gAbilityDescriptions 081367A8
 gMoveAnimations 080725D0

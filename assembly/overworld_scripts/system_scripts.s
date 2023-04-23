@@ -302,18 +302,6 @@ SystemScript_FindMultipleNormalItems:
 
 @;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
-.global SystemScript_Pokegear_Dexnav
-SystemScript_Pokegear_Dexnav:
-	sound 0x5
-	callasm 0x8F1A214 + 1
-	pause 0x3
-	callasm StartMenuDexNavCallback + 1
-	waitstate
-	release
-	end
-
-@;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-
 SystemScript_ObtainItem:
 	copyvar 0x8013 0x8012
 	copyvar 0x8004 0x8000 @;Copy item to 0x8004

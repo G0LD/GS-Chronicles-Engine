@@ -246,6 +246,10 @@ VBlankCB_Battle 8077A9C
 ##HQ Mixer - Credits to Greenphx
 SoundMainRAM 81DD0B4
 
+##Assorted Repoints
+CompressedMonToMon 08f3b7ec
+StartMenuDexNavCallback 08f1bff4
+
 FieldUseFunc_EVReducingBerry 8F71A68
 FieldUseFunc_EVReducingBerry 8F71A94
 FieldUseFunc_EVReducingBerry 8F71AC0

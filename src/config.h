@@ -66,6 +66,7 @@
 #define FLAG_KEEP_CONSUMABLE_ITEMS 0x1427 //If set, consumable items are returned after battles
 #define FLAG_UNLOCKED_DEXNAV_HELD_ITEMS 0x142A //If set, possible held items will be displayed for wild Pokemon on the DexNav UI
 #define FLAG_DAILY_EVENTS_START 0xE00 //To flag + 0xFF, resets every new day.
+#define FLAG_LEGENDARY_APPEARED_STRING 0x1443 //Load string "Species" appeared!
 
 /*===== Start Menu/Poketools Flags =====*/
 #define FLAG_SYS_BAG_HIDE 0x141B		//Toggle bag off
@@ -107,12 +108,12 @@ enum //These vars need to be one after the other (hence the enum)
 #define VAR_PLAYER_UNDERWATER 0x5125		//Change underwater sprite.
 #define VAR_TRAINERCARD_MALE 0x5126			//Change trainer card image (male). 0x4060 in JPAN engine.
 #define VAR_TRAINERCARD_FEMALE 0x5127		//Change trainer card image (female). 0x4061 in JPAN engine.
+#define VAR_RUNTIME_CHANGEABLE 0x513E		//'Secret Base' variables, save 15 consecutive variables for this. 0x4080 in JPAN engine.
 
-#define VAR_RUNTIME_CHANGEABLE 0x5128	//'Secret Base' variables, save 15 consecutive variables for this. 0x4080 in JPAN engine.
-#define VAR_TRAINER_BGM_OVERRIDE 0x5129 //Switches trainer battle song played to the value entered. Useful for regional music switch
-#define VAR_WILD_BGM_OVERRIDE 0x512A    //Switches wild Pokémon battle song played to the value entered. Useful for regional music switch
-#define VAR_BATTLE_TRANSITION_LOGO 0x512B //idk
-#define FLAG_LEGENDARY_APPEARED_STRING 0x1443 //Load string "Species" appeared!
+/*===== Assorted Vars =====*/
+#define VAR_TRAINER_BGM_OVERRIDE 0x513F //Switches trainer battle song played to the value entered. Useful for regional music switch
+#define VAR_WILD_BGM_OVERRIDE 0x5140    //Switches wild Pokémon battle song played to the value entered. Useful for regional music switch
+#define VAR_BATTLE_TRANSITION_LOGO 0x5141 //Battle transition logo feature. it seems that setting it up with a value other than 0 causes funny graphic glitches.
 
 /*===== Healing Place as in JPAN's Engine =====*/
 #define VAR_HEALINGMAP 0x5137 //0x405A in JPAN's Engine
@@ -220,7 +221,7 @@ enum //These vars need to be one after the other (hence the enum)
 #define BRIDGE_FIX //If this remains uncommented, the water battle background will only be loaded if the player's surfing sprite is shown
 #define MEGA_EVOLUTION_FEATURE //Comment this line to remove Mega Evolutions
 #define DYNAMAX_FEATURE //Comment this line to remove Dynamax and Raid Battles
-#define TUTORIAL_BATTLES //Comment this line to remove Oak's Tutorial
+//#define TUTORIAL_BATTLES //Comment this line to remove Oak's Tutorial
 //#define TANOBY_RUINS_ENABLED //The Tanoby Ruins will be the only location Unown can be encountered
 //#define ALTERING_CAVE_ENABLED //The Altering Cave from FR will work as intended provided the proper var is set
 #define SWEET_SCENT_ONLY_IN_CLEAR_WEATHER //Sweet Scent won't attract any wild Pokemon if the weather is not clear

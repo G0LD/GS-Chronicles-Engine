@@ -1904,6 +1904,24 @@ u8 GetTrainerBattleTransition(void)
 
 		return B_TRANSITION_CHAMPION;
 	}
+
+	if (gTrainers[gTrainerBattleOpponent_A].trainerClass == CLASS_PASSERBY_BOY)
+		return B_TRANSITION_CHAMPION;
+
+	if (gTrainers[gTrainerBattleOpponent_A].trainerClass == CLASS_RIVAL_KRIS_ETHAN)
+		return B_TRANSITION_CHAMPION;
+
+	if (gTrainers[gTrainerBattleOpponent_A].trainerClass == CLASS_ROCKET_EXECUTIVE)
+		return B_TRANSITION_CHAMPION;
+
+	if (gTrainers[gTrainerBattleOpponent_A].trainerClass == CLASS_LEADER)
+		return B_TRANSITION_CHAMPION;
+
+	if (gTrainers[gTrainerBattleOpponent_A].trainerClass == CLASS_CHALLENGER)
+		return B_TRANSITION_CHAMPION;
+
+	if (gTrainers[gTrainerBattleOpponent_A].trainerClass == CLASS_CHAMPION_KE)
+		return B_TRANSITION_CHAMPION;
 	#endif
 
 	#ifdef TUTORIAL_BATTLES

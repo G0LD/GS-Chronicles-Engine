@@ -846,7 +846,7 @@ static bool8 BT_Phase2CustomLogo_Init(struct Task *task)
 	BT_GetBg0TilemapAndTilesetBase(&tilemapAddr, &tilesetAddr);
 	CpuFill16(0, tilemapAddr, 0x800);
 	LZDecompressVram(customLogoTiles, tilesetAddr);
-	LoadPalette(customLogoPal, 0xF0, 0x20);
+	LoadPalette(customLogoPal, 0x0, 0x20);
 	#endif
 
 	++task->tState;

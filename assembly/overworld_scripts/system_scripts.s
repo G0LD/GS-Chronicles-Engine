@@ -299,6 +299,63 @@ SystemScript_FindMultipleNormalItems:
 	callasm TryAppendSOntoEndOfItemString
 	preparemsg gText_FoundMultipleItems
 	return
+@;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+SystemScript_Whiteout:
+	lockall
+	msgbox 0x81A5E89 MSG_KEEPOPEN
+	call SystemScript_Whiteout_Snippet1
+	checkflag 0x4B0
+	if 0x0 _call SystemScript_Whiteout_Snippet2
+	checkflag 0x4B0
+	if 0x1 _call SystemScript_Whiteout_Snippet3
+	applymovement LASTTALKED SystemScript_Whiteout_Move1
+	waitmovement 0x0
+	fadedefault
+	clearflag 0x140D
+	clearflag 0x140E
+	setvar 0x40F7 0x0
+	releaseall
+	end
+
+	@---------------
+SystemScript_Whiteout_Snippet1:
+	clearflag 0x140E
+	applymovement LASTTALKED SystemScript_Whiteout_Move2
+	waitmovement 0x0
+	doanimation 0x19
+	waitanimation 0x19
+	applymovement LASTTALKED SystemScript_Whiteout_Move3
+	waitmovement 0x0
+	special 0x0
+	return
+
+	@---------------
+SystemScript_Whiteout_Snippet2:
+	msgbox 0x81A5EC0 MSG_KEEPOPEN
+	return
+
+	@---------------
+SystemScript_Whiteout_Snippet3:
+	msgbox 0x81A5F9B MSG_KEEPOPEN
+	return
+
+	@-----------
+	@ Movements
+	@-----------
+
+SystemScript_Whiteout_Move1:
+.byte 0x5B
+.byte 0x1A
+.byte 0xFE
+
+SystemScript_Whiteout_Move2:
+.byte 0xD
+.byte 0xFE
+
+SystemScript_Whiteout_Move3:
+.byte 0xC
+.byte 0xFE
 
 @;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
@@ -368,6 +425,21 @@ SystemScript_PickedUpHiddenItem: @;Replaces 81A6885
 	special 0x96 @;SetHiddenItemFlag
 	incrementgamestat GAME_STAT_FOUND_HIDDEN_ITEM
 	releaseall
+	end
+
+@;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+//---------------
+SystemScript_Debugger:
+	checkflag 0x1381
+	if 0x1 _goto SystemScript_Debugger_Obtained
+	giveitem 0x2D5 0x1 MSG_OBTAIN
+	release
+	setflag 0x1381
+	end
+
+SystemScript_Debugger_Obtained:
+	msgbox gText_Debugger_Obtained_String MSG_NORMAL
 	end
 
 @;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@

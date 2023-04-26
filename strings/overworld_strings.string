@@ -64,6 +64,9 @@ Obtained [BUFFER1] [BUFFER2]!
 #org @gText_ObtainedTMHM
 Obtained a [BUFFER][03]!\nIt contains [BUFFER][02].
 
+#org @gText_Debugger_Obtained_String
+You already got the debugger, so\ngo away and use it wisely.
+
 #org @gText_RegisteredItemSelectButton
 [SELECT_BUTTON] [ALIGN][1E]
 

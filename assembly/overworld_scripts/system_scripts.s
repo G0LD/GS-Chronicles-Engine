@@ -444,6 +444,14 @@ SystemScript_Debugger_Obtained:
 
 @;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
+SystemScript_Debug1:
+	msgbox gText_Debugger_Debug1txt MSG_KEEPOPEN
+	setflag 0x141E
+	release
+	end
+
+@;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
 .macro showselectitems num
 EventScript_ShowSelectItems\num:
 	multichoice 0x0 0x0 TWO_MULTICHOICE_OPTIONS + \num - 2 0x0

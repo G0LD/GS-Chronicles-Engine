@@ -254,6 +254,7 @@ EventScript_RivalGoldenrodTower_Snippet12:
 	msgbox gText_RivalGoldenrodTower_String22 MSG_KEEPOPEN @"You got a DexNav card\ninserted in..."
 	waitfanfare
 	pause 0xC
+	setflag 0x141E
 	call EventScript_RivalGoldenrodTower_Snippet6
 	msgbox gText_RivalGoldenrodTower_String23 MSG_NORMAL @"Be careful to not run when you\nse..." 
 	callstd 0xB

@@ -268,6 +268,7 @@ enum //These vars need to be one after the other (hence the enum)
 #define AUTOSCROLL_TEXT_BY_HOLDING_R //Text will scroll automatically by holding R.
 #define DEXNAV_POKEMON_MOVE_IN_CAVES_WATER //DexNav phenomenon move around a couple times on water and in caves before the battle starts (like in ORAS)
 #define SYNCHRONIZE_GIFT_POKEMON //Gift Pokemon can have their natures manipulated with synchronize
+#define DEBUG_MODE //GS Chronicles specific debugging mode
 
 /*===== Misc Battle Effect Options =====*/
 //#define OLD_BURN_DAMAGE //Uncomment this line if you want burn damage to do 1/8 of max health instead of 1/16

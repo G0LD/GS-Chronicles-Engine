@@ -2991,6 +2991,8 @@ extern const u8 sExampleText_54[];
 extern const u8 sExampleText_55[];
 extern const u8 sExampleText_56[];
 extern const u8 sExampleText_57[];
+extern const u8 sExampleText_58[];
+extern const u8 sExampleText_59[];
 
 extern const u8 sText_1[];
 extern const u8 sText_2[];
@@ -3037,6 +3039,8 @@ static const u8* sMultichoiceSet2[] =
 	sExampleText_20,
 	sExampleText_21,
 	sExampleText_22,
+	sExampleText_58,
+	sExampleText_59,
 };
 
 static const u8* sMultichoiceSet3[] =
@@ -3118,7 +3122,7 @@ const struct ScrollingMulti gScrollingSets[] =
 	{sMultichoiceSet7, ARRAY_COUNT(sMultichoiceSet7)},
 	{sMultichoiceSet8, ARRAY_COUNT(sMultichoiceSet8)},
 	{sMultichoiceSet9, ARRAY_COUNT(sMultichoiceSet9)},
-	{sMultichoiceSet9, ARRAY_COUNT(sMultichoiceSet10)},
+	{sMultichoiceSet10, ARRAY_COUNT(sMultichoiceSet10)},
 };
 
 //Link number of opts shown at once to the box height

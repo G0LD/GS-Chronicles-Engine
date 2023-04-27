@@ -67,6 +67,9 @@ Obtained a [BUFFER][03]!\nIt contains [BUFFER][02].
 #org @gText_Debugger_Obtained_String
 You already got the debugger, so\ngo away and use it wisely.
 
+#org @gText_Debugger_Debug1txt
+Dexnav is enabled!
+
 #org @gText_RegisteredItemSelectButton
 [SELECT_BUTTON] [ALIGN][1E]
 

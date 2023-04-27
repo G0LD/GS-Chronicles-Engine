@@ -22,5 +22,5 @@ tile 1 79 0 EventScript_LeagueTitleDefense
 tile 1 79 1 EventScript_LeagueTitleDefense
 tile 1 79 2 EventScript_LeagueTitleDefense
 
-##Assorted Scripts
 sign 4 1 2 SystemScript_Debugger
+sign 3 5 1 SystemScript_Debug1

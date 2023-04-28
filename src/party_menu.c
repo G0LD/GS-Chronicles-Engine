@@ -971,7 +971,7 @@ void SetPartyMonFieldSelectionActions(struct Pokemon *mons, u8 slotId)
 	#ifdef ONLY_CHECK_ITEM_FOR_HM_USAGE
 	bool8 knowsFly = FALSE;
 	bool8 knowsDig = FALSE;
-	bool8 knowsCut = FALSE;
+	//bool8 knowsCut = FALSE;
 	#endif
 
 	sPartyMenuInternal->numActions = 0;
@@ -1007,8 +1007,8 @@ void SetPartyMonFieldSelectionActions(struct Pokemon *mons, u8 slotId)
 					knowsFly = TRUE; //No point in appending Fly if it is already there
 				else if (gFieldMoves[j] == MOVE_DIG)
 					knowsDig = TRUE;
-				else if (gFieldMoves[j] == MOVE_CUT)
-					knowsCut = TRUE;
+				/*else if (gFieldMoves[j] == MOVE_CUT)
+					knowsCut = TRUE;*/
 				#endif
 			}
 		}

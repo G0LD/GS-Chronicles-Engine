@@ -251,8 +251,6 @@ const struct DNSPalFade gDNSNightFadingByTime[24][6] =
 
 const struct SpecificTilesetFade gSpecificTilesetFades[] =
 {
-	//These Palette Town ones have been left in as examples. Feel free to remove.
-	
 };
 
 #else //For Pokemon Unbound - Feel free to remove

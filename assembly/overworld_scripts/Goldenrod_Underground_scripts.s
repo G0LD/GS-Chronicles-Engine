@@ -103,3 +103,51 @@ EventScript_Goldenrod_Haircut_guy_Done:
 	msgbox gText_Goldenrod_Haircut_guy_T6 MSG_NORMAL
 	release
 	end
+
+@;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+EventScript_itemseller:
+	lock
+	faceplayer
+	checkflag 0x824
+	if 0x0 _goto EventScript_itemseller_NoBadges
+	preparemsg gText_itemseller_T1 @"What you want to buy, kid?"
+	waitmsg
+	pokemart EventScript_itemseller_Items
+	msgbox 0x8C19A78 MSG_KEEPOPEN @"You can come anytime you want!"
+	release
+	end
+
+EventScript_itemseller_NoBadges:
+	msgbox gText_itemseller_T2 MSG_NORMAL
+	release
+	end
+
+EventScript_itemseller_Items:
+.byte ITEM_CHOICE_BAND
+.byte 0x0
+.byte ITEM_CHOICE_SCARF
+.byte 0x0
+.byte ITEM_CHOICE_SPECS
+.byte 0x0
+.byte ITEM_FOCUS_BAND
+.byte 0x0
+.byte ITEM_FOCUS_SASH
+.byte 0x0
+.byte ITEM_LEFTOVERS
+.byte 0x0
+.byte ITEM_BLACK_SLUDGE
+.byte 0x0
+.byte ITEM_LIFE_ORB
+.byte 0x0
+.byte ITEM_TOXIC_ORB
+.byte 0x0
+.byte ITEM_FLAME_ORB
+.byte 0x0
+.byte ITEM_ROCKY_HELMET
+.byte 0x0
+.byte ITEM_ASSAULT_VEST
+.byte 0x0
+.byte ITEM_EVIOLITE
+.byte 0x0
+.byte ENDMART

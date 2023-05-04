@@ -84,7 +84,7 @@ EventScript_RivalMaleVioletPC_Ending:
 	msgbox 0x8C176A6 0xA //"Ethan"
 	msgbox gText_RivalMaleVioletPC_String8 MSG_NORMAL
 	callstd 0xB
-	applymovement 0x1 0x8C10656
+	applymovement 0x4 0x8C10656
 	waitmovement 0x0
 	sound 0x9
 	checksound

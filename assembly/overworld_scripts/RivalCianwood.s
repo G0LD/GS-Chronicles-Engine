@@ -51,9 +51,7 @@ EventScript_RivalCianwood_Snippet1:
 	pause 0x5
 	msgbox gText_RivalCianwood_String1 0xA @"Kris"
 	msgbox gText_RivalCianwood_String10 MSG_KEEPOPEN @"(sigh)\pOk, I@ll do it because I w..."
-	pause 0x5
-	trainerbattle3 0x3 0xA9 0x200 gText_RivalCianwood_String11
-	pause 0x6
+	pause 0xF
 	applymovement 0x3 EventScript_RivalCianwood_Move4
 	msgbox gText_RivalCianwood_String3 0xA @"Aspryus"
 	msgbox gText_RivalCianwood_String12 MSG_NORMAL @"What a splendid battle!\nI@m amaze..." 0XB
@@ -62,8 +60,10 @@ EventScript_RivalCianwood_Snippet1:
 	hidesprite 0x3
 	pause 0x3
 	msgbox gText_RivalCianwood_String1 0xA @"Kris"
-	msgbox gText_RivalCianwood_String13 MSG_NORMAL @"Gosh, I don@t know what to do. Not..." 0XB
+	msgbox gText_RivalCianwood_String13 MSG_KEEPOPEN @"Gosh, I don@t know what to do. Not..." 0XB
 	pause 0x6
+	giveitem ITEM_DESTINY_KNOT 0x1 MSG_OBTAIN
+	msgbox gText_RivalCianwood_String11 MSG_NORMAL
 	applymovement 0x5 EventScript_RivalCianwood_Move6
 	waitmovement 0x0
 	sound 0x9
@@ -113,9 +113,7 @@ EventScript_RivalCianwood_Snippet2:
 	pause 0x5
 	msgbox gText_RivalCianwood_String14 0xA @"Ethan"
 	msgbox gText_RivalCianwood_String10 MSG_KEEPOPEN @"(sigh)\pOk, I@ll do it because I w..."
-	pause 0x5
-	trainerbattle3 0x3 0xAA 0x200 gText_RivalCianwood_String11
-	pause 0x6
+	pause 0xF
 	applymovement 0x3 EventScript_RivalCianwood_Move4
 	waitmovement 0x0
 	msgbox gText_RivalCianwood_String3 0xA @"Aspryus"
@@ -125,8 +123,10 @@ EventScript_RivalCianwood_Snippet2:
 	hidesprite 0x3
 	pause 0x3
 	msgbox gText_RivalCianwood_String14 0xA @"Ethan"
-	msgbox gText_RivalCianwood_String13 MSG_NORMAL @"Gosh, I don@t know what to do. Not..." 0XB
+	msgbox gText_RivalCianwood_String13 MSG_KEEPOPEN @"Gosh, I don@t know what to do. Not..." 0XB
 	pause 0x6
+	giveitem ITEM_DESTINY_KNOT 0x1 MSG_OBTAIN
+	msgbox gText_RivalCianwood_String11 MSG_NORMAL
 	applymovement 0x4 EventScript_RivalCianwood_Move6
 	waitmovement 0x0
 	sound 0x9

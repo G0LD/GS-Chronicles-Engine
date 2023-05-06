@@ -1034,9 +1034,9 @@
 #define HIDDEN_ITEM_ROUTE25_ETHER                                       5//Goldenrod Sewers Revive
 #define HIDDEN_ITEM_ROUTE9_ETHER                                        6//Goldenrod Sewers Black Sludge
 #define HIDDEN_ITEM_UNUSED_0x07                                         7//Goldenrod Sewers Big Nugget
-#define HIDDEN_ITEM_SSANNE_B1F_CORRIDOR_HYPER_POTION                    8
-#define HIDDEN_ITEM_ROUTE10_SUPER_POTION                                9
-#define HIDDEN_ITEM_ROUTE10_MAX_ETHER                                  10
+#define HIDDEN_ITEM_SSANNE_B1F_CORRIDOR_HYPER_POTION                    8//Violet City item
+#define HIDDEN_ITEM_ROUTE10_SUPER_POTION                                9//Ilex Forest Item
+#define HIDDEN_ITEM_ROUTE10_MAX_ETHER                                  10//Route 46 TM117
 #define HIDDEN_ITEM_ROCKET_HIDEOUT_B1F_PP_UP                           11
 #define HIDDEN_ITEM_ROCKET_HIDEOUT_B3F_NUGGET                          12
 #define HIDDEN_ITEM_ROCKET_HIDEOUT_B4F_NEST_BALL                       13

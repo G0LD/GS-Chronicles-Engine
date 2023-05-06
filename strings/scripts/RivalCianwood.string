@@ -23,32 +23,31 @@ I[.] I[.] I don't know what to say\nabout it.
 [PLAYER]! I didn't notice you\nwere around.
 
 #org @gText_RivalCianwood_String9
-Nice to see you, [PLAYER]!\nI was just having a conversation\lwith Kris about the Pokémon League\lwe're working on. I want you two\lbe part of it. I know Kris has the\lpotential to be a tough challenger.\pWhy don't you have a battle and\nshow how strong you've become?
+Nice to see you, [PLAYER]!\nI was just having a conversation\lwith Kris about the Pokémon League\lwe're working on. I want you two\lbe part of it. I know Kris has the\lpotential to be a tough challenger.\pI'm sure she's convinced now and\nwill participate. I'm not mistaken\lwhen I say she's strong enough\lto become a champion.
 
 #org @gText_RivalCianwood_String10
-(sigh)\pOk, I'll do it because I want\nto keep my team well trained.\pI'm stronger than before. Get\nprepared for what's coming!
-
-#org @gText_RivalCianwood_String11
-Even with this result it feels\nlike Metang and I understand each\lother.
+(sigh)\pOkay. I will participate, but\njust because I still want to\lhave Pokémon battles.\pAre you happy now?
 
 #org @gText_RivalCianwood_String12
-What a splendid battle!\nI'm amazed at your skills. It\lseems that Metang and you make a\lgreat team. The way you battle\lmake me feel proud of you\pWell. time to go. There's a\nbuilding we're about to complete.\lThink about it again, Kris. I want\lyou to be part of the brand new\lPokémon League.\pWe'll keep in contact. Take care\nyou two.
+Fantastic!\pI was sure you wouldn't turn down\nsuch a big opportunity to become\lthe best trainer of Johto!\pI'm expecting the best from\nyou two, so don't disappoint me.\pWell. time to go. There's a\nbuilding we're about to complete.\pDon't change your mind, Kris.\nI'm expecting a lot from you!\pWe'll keep in contact. Take care\nyou two.
 
 #org @gText_RivalCianwood_String13
-Gosh, I don't know what to do. Not\nsure if I want to participate. But\lhe is insisting so much. It sounds\llike he's really sorry. After all\lhe's my father and I should give\lhim the opportunity to redeem\lhimself.\pAnyway, I'll keep doing my research\nabout Pokémon eggs. I'm visiting\lMahogany Town soon. Maybe a trip\laround there will clear my mind.\pKeep training because the next time\nwe meet I'll win for sure!
+Gosh, I don't know what to do. Not\nsure if I want to participate, but\lhe is insisting so much. It sounds\llike he's really sorry. After all\lhe's my father and I should give\lhim the opportunity to redeem\lhimself.\pAnyway, there's something I wanted\nto give you before. It may be\luseful if you want to help me with\lmy Pokémon eggs research.
+
+#org @gText_RivalCianwood_String11
+I discovered a Destiny Knot has\nan additional effect that passes\lgenes to the offspring egg Pokémon\lfrom their parents.\pFor now I'll keep doing my research\nabout Pokémon eggs. I'm visiting\lMahogany Town soon. Maybe a trip\laround there will clear my mind.\pKeep training because the next time\nwe'll have a serious battle!
 
 #org @gText_RivalCianwood_String14
 Ethan
 
 #org @gText_RivalCianwood_String15
-You have no idea how excited I am\nto see you again, Ethan!\lWell, I asked you to come\lhere is because I wanted to invite\lyou to take part of the brand new\l[BLUE]Pokémon League [BLACK]I'm investing on.\lWe're looking for the best\ltrainers to participate!
+Ethan!\pI'm so happy to see you again!\nI know we had some problems in\lthe past and I wasn't honest\lwith you.\pI want to invite you once again\nto participate in the Johto\lPokémon League.\pThe construction is almost ready\nand I would like to see you\lparticipate.
 
 #org @gText_RivalCianwood_String16
-No, no, no. You're completely\nmisunderstanding it, champion. The\lactual reason why I wanted you to\lcome is because I wanted to give\lyou something. I know I\lhaven't been the father you always\lexpected me to be, but I want to make\lthings different. I've been busy\lwith my business and not giving\lyou enough attention, but I never\lstopped thinking about your\lwell-being.\pEthan, as a sincere present please\ntake this Pokémon. It was a gift\lfrom an old friend who lives in\lHoenn. Now I want you to take\lcare of it.
+No, no, no. You're completely\nmisunderstanding it, my boy.\pI know it was wrong to manipulate\nyour battles. I just wanted to\lsee you winning and becoming\la sucessful trainer.\pI know you still want to have\nbattles, and I know you can still\learn the last badge to participate\lin the Pokémon League.\pEthan[.]\pI want you to raise a special\nPokémon that was given to me by\la friend from Hoenn.\pPlease have it as an apology\nfor all my mistakes.
 
 #org @gText_RivalCianwood_String17
-Nice to see you, [PLAYER]!\nI was just having a conversation\lwith Ethan about the Pokémon League\lwe're working on. I want you two\lbe part of it. I know Ethan has the\lpotential to be a tough challenger.\pWhy don't you have a battle and\nshow how strong you've become?
+Nice to see you, [PLAYER]!\nI was just having a conversation\lwith Ethan about the Pokémon League\lwe're working on. I want you two\lbe part of it. I know Ethan has the\lpotential to be a tough challenger.\pI'm sure he's convinced now and\nwill participate. I'm not mistaken\lwhen I say he's strong enough\lto become a champion.
 
 #org @gText_RivalCianwood_String18
-What a splendid battle!\nI'm amazed at your skills. It\lseems that Metang and you make a\lgreat team. The way you battle\lmake me feel proud of you\pWell. time to go. There's a\nbuilding we're about to complete.\lThink about it again, Ethan. I want\lyou to be part of the brand new\lPokémon League.\pWe'll keep in contact. Take care\nyou two.
-
+Fantastic!\pI was sure you wouldn't turn down\nsuch a big opportunity to become\lthe best trainer of Johto!\pI'm expecting the best from\nyou two, so don't disappoint me.\pWell. time to go. There's a\nbuilding we're about to complete.\pDon't change your mind, Ethan.\nI'm expecting a lot from you!\pWe'll keep in contact. Take care\nyou two.

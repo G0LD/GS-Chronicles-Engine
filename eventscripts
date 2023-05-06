@@ -9,6 +9,8 @@ npc 10 0 5 EventScript_mart_Start
 npc 6 5 3 EventScript_RivalMaleVioletPC
 npc 6 5 0 EventScript_RivalFemaleVioletPC
 npc 14 4 0 EventScript_Definitive
+npc 3 35 11 EventScript_Randomevent01
+npc 1 94 6 EventScript_RandomEvent02
 
 ##Trigger Scripts
 tile 3 24 0 EventScript_RivalRoute34_0XC16B40
@@ -24,5 +26,8 @@ tile 1 79 0 EventScript_LeagueTitleDefense
 tile 1 79 1 EventScript_LeagueTitleDefense
 tile 1 79 2 EventScript_LeagueTitleDefense
 
-sign 4 1 2 SystemScript_Debugger
-sign 3 5 1 SystemScript_Debug1
+##Map Scripts
+
+##Debugging Scripts
+##sign 4 1 2 SystemScript_Debugger
+##sign 3 5 1 SystemScript_Debug1

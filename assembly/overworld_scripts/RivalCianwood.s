@@ -62,8 +62,11 @@ EventScript_RivalCianwood_Snippet1:
 	msgbox gText_RivalCianwood_String1 0xA @"Kris"
 	msgbox gText_RivalCianwood_String13 MSG_KEEPOPEN @"Gosh, I don@t know what to do. Not..." 0XB
 	pause 0x6
+	callstd 0xB
 	giveitem ITEM_DESTINY_KNOT 0x1 MSG_OBTAIN
+	msgbox gText_RivalCianwood_String1 0xA @"Kris"
 	msgbox gText_RivalCianwood_String11 MSG_NORMAL
+	callstd 0xB
 	applymovement 0x5 EventScript_RivalCianwood_Move6
 	waitmovement 0x0
 	sound 0x9
@@ -125,8 +128,11 @@ EventScript_RivalCianwood_Snippet2:
 	msgbox gText_RivalCianwood_String14 0xA @"Ethan"
 	msgbox gText_RivalCianwood_String13 MSG_KEEPOPEN @"Gosh, I don@t know what to do. Not..." 0XB
 	pause 0x6
+	callstd 0xB
 	giveitem ITEM_DESTINY_KNOT 0x1 MSG_OBTAIN
+	msgbox gText_RivalCianwood_String14 0xA @"Ethan"
 	msgbox gText_RivalCianwood_String11 MSG_NORMAL
+	callstd 0xB
 	applymovement 0x4 EventScript_RivalCianwood_Move6
 	waitmovement 0x0
 	sound 0x9

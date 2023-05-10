@@ -234,7 +234,7 @@ The user rouses\nitself to raise\nits Attack and\nSp. Atk stats.
 The user mystically\ndances, raising its\nSp. Atk, Sp. Def,\nand Speed.
 
 #org @DESC_LEAFTORNADO
-Sharp leaves circle\nthe foe. It may also\nlower the foe's\naccuracy.
+Sharp leaves circle\nthe foe. It also\nlowers the foe's\nspeed.
 
 #org @DESC_LOWSWEEP
 The user attacks\nthe foe's legs,\nlowering its\nSpeed stat.
@@ -255,7 +255,7 @@ The user strikes\nthe foe fiercely.\nIt always results in\na critical hit.
 The foe is soaked\nby a special acid.\nIts power doubles if\nthe foe is poisoned.
 
 #org @DESC_WILDCHARGE
-The user throws an\nelectrified tackle.\nIt hurts the user\na little.
+The user throws an\nelectrified tackle.\nIt may paralyze\nthe target.
 
 #org @DESC_POISONJAB
 The foe is stabbed\nby an arm steeped\nin poison. It may\nalso poison the foe.
@@ -328,7 +328,7 @@ The foe is made to\nswitch out with an\nally. In the wild,\nthe battle ends.
 The foe is made to\nswitch out with an\nally. In the wild,\nthe battle ends.
 
 #org @DESC_MIRRORSHOT
-The user looses\na flash of energy\nto damage and\nlower accuracy.
+The user looses\na flash of energy\nto damage and\nlower speed.
 
 #org @DESC_WOODHAMMER
 The user slams the\nfoe with its hard\nbody, also hurting\nitself a little.
@@ -1311,19 +1311,19 @@ The user heals its\nown statuses and\nraises its Sp. Atk\nand Sp. Def.
 The foe is cut\nby sharp scales\nIt may also raise\nthe user's Attack.
 
 #org @DESC_DRAGON_CRUSH
-A move based on\nthe user's madness\nIt is certain to\nbe a critical hit.
+A move based on\nthe user's madness\nIt also lowers\nthe target's speed.
 
 #org @DESC_MAGMA_GEYSER
-The user attacks\nthe target with a\npillar of fire.\nIt may burn the foe.
+The user attacks\nthe target with a\npillar of fire.\nIt may increase Sp. Atk.
 
 #org @DESC_SHARP_FLINT
-The user attacks\nthe opponent by the\npower of the land.\nIt always reduces\nthe foe's Sp. Atk.
+The user attacks\nthe opponent by the\npower of the land.\nIt leaves behind\nsplinters.
 
 #org @DESC_FLORAL_STREAM
-The user stirs up a\nviolent petal storm.\nThis attack is certain\nto never miss.
+The user stirs up a\nviolent petal storm.\nThis attack increases\nthe user's defense.
 
 #org @DESC_SHINING_BEAM
-The user blows into\nsunlight to attack.\nIt also lowers the\nfoe's Sp. Def stat.
+The user blows into\nsunlight to attack.\nIt also lowers the\nfoe's Sp. Atk stat.
 
 #org @DESC_STARDUST_PUNCH
 The user strikes a\nstar-shaped punch.\nThis move always\ngoes first.

@@ -821,6 +821,10 @@ gMoveAnimations:
 .word 0x81ceaed		@MOVE_TWINBEAM
 .word ANIM_DRILLRUN @MOVE_HYPERDRILL
 .word ANIM_KOWTOWCLEAVE
+.word ANIM_HEADCHARGE @MOVE_RAGINGBULL_NORMAL
+.word ANIM_RAGINGBULL_FIRE
+.word ANIM_RAGINGBULL_WATER
+.word ANIM_RAGINGBULL_FIGHTING
 
 @;New attacks go above!
 .word ANIM_BREAKNECK_BLITZ
@@ -28867,3 +28871,72 @@ ANIM_KOWTOWCLEAVE:
 .align 2
 KOWTOW_CLEAVE_LEFT: objtemplate ANIM_TAG_CUT ANIM_TAG_CUT OAM_NORMAL_32x32 0x83E3290 0x0 gSpriteAffineAnimTable_NightSlashLeft SpriteCB_HorizontalSlice
 KOWTOW_CLEAVE_RIGHT: objtemplate ANIM_TAG_CUT ANIM_TAG_CUT OAM_NORMAL_32x32 0x83E3290 0x0 gSpriteAffineAnimTable_NightSlashRight SpriteCB_HorizontalSlice
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+.pool
+@Credits to Lixdel/G0LD
+ANIM_RAGINGBULL_FIRE:
+	loadparticle ANIM_TAG_IMPACT
+	loadbg1 BG_FIRE
+	waitbgfadeout
+	launchtask AnimTask_scroll_background 0x5 0x4 0x1000 0x0 0x1 0xffff
+	launchtemplate Template_BowMon 0x2 0x1 0x0
+	playsound2 0x9b SOUND_PAN_ATTACKER
+	waitanimation
+	pause 0x2
+	launchtemplate Template_BowMon 0x2 0x1 0x1
+	waitanimation
+	launchtask AnimTask_move_bank 0x2 0x5 0x0 0x2 0x0 0x4 0x1
+	launchtask AnimTask_move_bank 0x2 0x5 bank_target 0x5 0x0 0x6 0x1
+	launchtemplate Template_BowMon 0x2 0x1 0x2
+	launchtemplate Template_FlashingHit 0x83 0x4 0x0 0x0 0x1 0x1
+	playsound2 0x74 SOUND_PAN_TARGET
+	waitanimation
+	call UNSET_SCROLLING_BG
+	endanimation
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+.pool
+@Credits to Lixdel/G0LD
+ANIM_RAGINGBULL_WATER:
+	loadparticle ANIM_TAG_IMPACT
+	loadbg1 BG_WATER_2
+	waitbgfadein
+	launchtask AnimTask_scroll_background 0x5 0x4 0x0 0xF000 0x1 0xffff
+	launchtemplate Template_BowMon 0x2 0x1 0x0
+	playsound2 0x9b SOUND_PAN_ATTACKER
+	waitanimation
+	pause 0x2
+	launchtemplate Template_BowMon 0x2 0x1 0x1
+	waitanimation
+	launchtask AnimTask_move_bank 0x2 0x5 0x0 0x2 0x0 0x4 0x1
+	launchtask AnimTask_move_bank 0x2 0x5 bank_target 0x5 0x0 0x6 0x1
+	launchtemplate Template_BowMon 0x2 0x1 0x2
+	launchtemplate Template_FlashingHit 0x83 0x4 0x0 0x0 0x1 0x1
+	playsound2 0x74 SOUND_PAN_TARGET
+	waitanimation
+	call UNSET_SCROLLING_BG
+	endanimation
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+.pool
+@Credits to Lixdel
+ANIM_RAGINGBULL_FIGHTING:
+	loadparticle ANIM_TAG_IMPACT
+	chooseBG BG_IMPACT_ON_OPPONENT BG_IMPACT_ON_PLAYER BG_IMPACT_ON_OPPONENT
+	waitbgfadein
+	launchtemplate Template_BowMon 0x2 0x1 0x0
+	playsound2 0x9b SOUND_PAN_ATTACKER
+	waitanimation
+	pause 0x2
+	launchtemplate Template_BowMon 0x2 0x1 0x1
+	waitanimation
+	launchtask AnimTask_move_bank 0x2 0x5 0x0 0x2 0x0 0x4 0x1
+	launchtask AnimTask_move_bank 0x2 0x5 bank_target 0x5 0x0 0x6 0x1
+	launchtemplate Template_BowMon 0x2 0x1 0x2
+	launchtemplate Template_FlashingHit 0x83 0x4 0x0 0x0 0x1 0x1
+	playsound2 0x74 SOUND_PAN_TARGET
+	waitanimation
+	loaddefaultBG
+	waitbgfadeout
+	endanimation

@@ -34,7 +34,7 @@ EventScript_bugcatching_guard:
 	bufferpartypokemon 0x0 0x0
 	bufferboxname 0x1 0x4035
 	checkflag 0x834
-	if 0x1 _goto EventScript_bugscript_Snippet3
+	if 0x0 _goto EventScript_bugscript_Snippet3
 	msgbox gText_bugscript_String2 MSG_NORMAL
 	goto EventScript_bugscript_Snippet4
 

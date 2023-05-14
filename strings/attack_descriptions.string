@@ -1340,6 +1340,18 @@ The user attacks\nwith a pointy\ndrill, hitting even\nprotected targets.
 #org @DESC_KOWTOW_CLEAVE
 The foe is attacked\nwith a sharp blade\nthat cannot be evaded.
 
+#org @DESC_RAGINGBULL_NORMAL
+The user tackles the\ntarget like a raging\nbull. This move\ndestroys Light\nScreen and Reflect.
+
+#org @DESC_RAGINGBULL_FIRE
+The user tackles the\ntarget like a raging\nbull. This move\ndestroys Light\nScreen and Reflect.
+
+#org @DESC_RAGINGBULL_WATER
+The user tackles the\ntarget like a raging\nbull. This move\ndestroys Light\nScreen and Reflect.
+
+#org @DESC_RAGINGBULL_FIGHTING
+The user tackles the\ntarget like a raging\nbull. This move\ndestroys Light\nScreen and Reflect.
+
 #org @DESC_MAX_GUARD
 Enables the user to\nevade all attacks.\nIt may fail if used\nin succession.
 

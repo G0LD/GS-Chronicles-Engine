@@ -162,6 +162,8 @@ enum //These vars need to be one after the other (hence the enum)
 #define MB_LOCKED_DOOR 0xA4 //The tile behaviour byte for doors that are locked and cannot be opened
 #define MB_ROCK_CLIMB_WALL 0xA5 //The tile behaviour byte that can be climbed up using Rock Climb
 #define MB_HEADBUTT_TREE 0xA6 //The tile behaviour byte for starting a wild encounter by headbutting a tree
+#define MB_CLIMBABLE_LADDER 0xA7
+#define MB_NON_SURFABLE_WATER 0xA8
 
 #define MAP_PLAYER_HOME ((4 << 8) | 0) //The map bank and map number of the player's home
 
@@ -268,6 +270,7 @@ enum //These vars need to be one after the other (hence the enum)
 #define AUTOSCROLL_TEXT_BY_HOLDING_R //Text will scroll automatically by holding R.
 #define DEXNAV_POKEMON_MOVE_IN_CAVES_WATER //DexNav phenomenon move around a couple times on water and in caves before the battle starts (like in ORAS)
 #define SYNCHRONIZE_GIFT_POKEMON //Gift Pokemon can have their natures manipulated with synchronize
+#define CUSTOM_FILE_SIGNATURE 0x66290096
 //#define DEBUG_MODE //GS Chronicles specific debugging mode
 
 /*===== Misc Battle Effect Options =====*/

@@ -1844,11 +1844,18 @@ u8 GetExceptionMoveType(u8 bankAtk, u16 move)
 			}
 			break;
 
+		case MOVE_RAGINGBULL:
+            if (SPECIES(bankAtk) == SPECIES_TAUROS_P)
+                moveType = TYPE_FIGHTING;
+            else if (SPECIES(bankAtk) == SPECIES_TAUROS_BLAZE_P)
+                moveType = TYPE_FIRE;
+            else if (SPECIES(bankAtk) == SPECIES_TAUROS_AQUA_P)
+                moveType = TYPE_WATER;
+            break;
+
 		case MOVE_AURAWHEEL:
-			#ifdef SPECIES_MORPEKO_HANGRY
 			if (SPECIES(bankAtk) == SPECIES_MORPEKO_HANGRY)
 				moveType = TYPE_DARK;
-			#endif
 			break;
 		
 		case MOVE_TERRAINPULSE:
@@ -1943,12 +1950,19 @@ u8 GetMonExceptionMoveType(struct Pokemon* mon, u16 move)
 			moveType = GetMonType(mon, 0);
 			break;
 
+		case MOVE_RAGINGBULL:
+            if (mon->species == SPECIES_TAUROS_P)
+                moveType = TYPE_FIGHTING;
+            else if (mon->species == SPECIES_TAUROS_BLAZE_P)
+                moveType = TYPE_FIRE;
+            else if (mon->species == SPECIES_TAUROS_AQUA_P)
+                moveType = TYPE_WATER;
+            break;
+
 		case MOVE_AURAWHEEL:
-			#ifdef SPECIES_MORPEKO_HANGRY
 			if (mon->species == SPECIES_MORPEKO_HANGRY)
 				moveType = TYPE_DARK;
 			else
-			#endif
 				moveType = TYPE_ELECTRIC;
 			break;
 

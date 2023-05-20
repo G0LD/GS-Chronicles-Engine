@@ -12503,7 +12503,7 @@ const struct BattleMove gBattleMoves[] =
 		.z_move_effect = Z_EFFECT_RECOVER_HP
 	},
 
-		[MOVE_AQUA_SCALES] =
+	[MOVE_AQUA_SCALES] =
 	{
 		.effect = EFFECT_ATTACK_UP_HIT,
 		.power = 90,
@@ -12679,13 +12679,13 @@ const struct BattleMove gBattleMoves[] =
 		.z_move_effect = 0
 	},
 
-	[MOVE_RAGINGBULL_NORMAL] =
+	[MOVE_RAGINGBULL] =
 	{
 		.effect = EFFECT_BRICK_BREAK,
 		.power = 90,
 		.type = TYPE_NORMAL,
 		.accuracy = 100,
-		.pp = 10,
+		.pp = 15,
 		.secondaryEffectChance = 100,
 		.target = MOVE_TARGET_SELECTED,
 		.priority = 0,
@@ -12695,7 +12695,7 @@ const struct BattleMove gBattleMoves[] =
 		.z_move_effect = 0
 	},
 	
-	[MOVE_RAGINGBULL_FIRE] =
+	[MOVE_FREE1] =
 	{
 		.effect = EFFECT_BRICK_BREAK,
 		.power = 90,
@@ -12711,7 +12711,7 @@ const struct BattleMove gBattleMoves[] =
 		.z_move_effect = 0
 	},
 
-	[MOVE_RAGINGBULL_WATER] =
+	[MOVE_FREE2] =
 	{
 		.effect = EFFECT_BRICK_BREAK,
 		.power = 90,
@@ -12727,7 +12727,7 @@ const struct BattleMove gBattleMoves[] =
 		.z_move_effect = 0
 	},
 
-	[MOVE_RAGINGBULL_FIGHTING] =
+	[MOVE_FREE3] =
 	{
 		.effect = EFFECT_BRICK_BREAK,
 		.power = 90,
@@ -12822,7 +12822,7 @@ const struct BattleMove gBattleMoves[] =
 		.z_move_power = 0,
 		.split = SPLIT_PHYSICAL,
 		.z_move_effect = 0
-	},
+	}, 
 
 	[MOVE_SUPERSONIC_SKYSTRIKE_S] =
 	{
@@ -15783,5 +15783,6 @@ const u8 gDynamaxMovePowers[MOVES_COUNT] =
 	[MOVE_TWINBEAM] = 90,
 	[MOVE_HYPERDRILL] = 130,
 	[MOVE_KOWTOWCLEAVE] = 110,
+	[MOVE_RAGINGBULL] = 160, 
 };
 #endif

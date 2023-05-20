@@ -124,6 +124,12 @@ The water is a murky brown[.]
 #org @gText_WaveRideSurf
 A wild Seaking helped out by\nusing the Wave Ride!
 
+#org @gText_LinkNurse_NoTradingUseUnboundCloud
+I'm sorry, but trading is no longer\navailable from the Cable Club.\pPlease use Unbound Cloud if you wish\nto trade Pok\emon.
+
+#org @gText_NON_SURFABLE_WATER
+There are some things I still\nneed to do before taking\lthis route.
+
 #org @gText_CascadeRideWaterfall
 The wild Seaking helped out by\nusing the Cascade Ride!
 

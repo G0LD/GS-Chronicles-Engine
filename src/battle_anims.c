@@ -7046,3 +7046,25 @@ void SpriteCB_EnemyShadow(struct Sprite *shadowSprite)
 	shadowSprite->pos2.x = battlerSprite->pos2.x;
 	shadowSprite->invisible = invisible;
 }
+
+void AnimTask_GetTaurosForm(u8 taskId)
+{
+    switch (GetAnimAttackerSpecies())
+    {
+        case SPECIES_TAUROS:
+        default:
+            gBattleAnimArgs[7] = 0;
+            break;
+        case SPECIES_TAUROS_P:
+            gBattleAnimArgs[7] = 1;
+            break;
+        case SPECIES_TAUROS_BLAZE_P:
+            gBattleAnimArgs[7] = 2;
+            break;
+        case SPECIES_TAUROS_AQUA_P:
+            gBattleAnimArgs[7] = 3;
+            break;
+    }
+
+    DestroyAnimVisualTask(taskId);
+}

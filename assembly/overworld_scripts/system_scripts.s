@@ -655,7 +655,7 @@ EventScript_UseWaterfall_SkipMsg:
 	msgbox gText_CascadeRideWaterfall MSG_NORMAL
 	setvar 0x8003 0x0
 	setvar 0x8004 0x0
-	setvar 0x8005 SPECIES_SEAKING
+	setvar 0x8005 SPECIES_SEAKING_RIDE
 	special 0x16
 	setanimation 0x0 0x8004
 	doanimation 0x2B
@@ -742,7 +742,7 @@ EventScript_UseSurf_SkipAsk:
 	msgbox gText_WaveRideSurf MSG_NORMAL
 	setvar 0x8003 0x0
 	setvar 0x8004 0x0
-	setvar 0x8005 SPECIES_SEAKING
+	setvar 0x8005 SPECIES_SEAKING_RIDE
 	special 0x16
 	setanimation 0x0 0x8004
 	doanimation 0x9
@@ -947,7 +947,7 @@ EventScript_UseFlash:
 	setflag FLAG_SYS_USE_FLASH
 	setvar 0x8003 0x0
 	setvar 0x8004 0x0
-	setvar 0x8005 SPECIES_ABRA
+	setvar 0x8005 SPECIES_ABRA_RIDE
 	special 0x16
 	setanimation 0x0 0x8004
 	doanimation 0x28
@@ -1234,6 +1234,12 @@ SystemScript_StopZooming:
 	end
 
 @;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+.equ EventScript_CableClub_AbortLink, 0x81BB82F
+EventScript_CableClub_WirelessTrade:
+    msgbox gText_LinkNurse_NoTradingUseUnboundCloud MSG_FACE
+    goto EventScript_CableClub_AbortLink
+
+@;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
 .global SystemScript_DebugMenu
 SystemScript_DebugMenu:
@@ -1290,3 +1296,16 @@ SystemScript_DebugMenu_MaxCoinage:
 SystemScript_DebugMenu_ShinyTeam:
 	callasm DebugMenu_ShinyTeam
 	goto SystemScript_DebugMenu
+
+@;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+.global EventScript_Non_Surfable_Water
+EventScript_Non_Surfable_Water:
+	msgbox gText_NON_SURFABLE_WATER MSG_NORMAL
+	applymovement PLAYER gMove_NON_SURFABLE_WATER
+	waitmovement 0x0
+	end
+
+gMove_NON_SURFABLE_WATER:
+.byte walk_left
+.byte end_m

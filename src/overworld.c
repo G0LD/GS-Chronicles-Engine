@@ -152,6 +152,7 @@ static const u8* const sMetatileInteractionScripts[] =
 	[MB_POKEMART_SIGN] = (void*) 0x81A76DE,
 	[MB_INDIGO_PLATEAU_MARK_DPAD] = (void*) 0x81A76F0,
 	[MB_INDIGO_PLATEAU_MARK_2_DPAD] = (void*) 0x81A76F9,
+	[MB_NON_SURFABLE_WATER] = EventScript_Non_Surfable_Water,
 
 #ifdef MB_LOCKED_DOOR
 	[MB_LOCKED_DOOR] = EventScript_LockedDoor,

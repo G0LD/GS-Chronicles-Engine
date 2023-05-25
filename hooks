@@ -725,6 +725,9 @@ TextPrinterWait 8005680 1
 AutoScrollBattleLevelUpBoxHook1 8026330 0 
 AutoScrollBattleLevelUpBoxHook2 8026350 0
 
+##Pokedex Region Map Fix
+GetSpeciesPokedexAreaMarkers 0813c9dc 2
+
 #ifdef UNBOUND
 GetCurrentLevelCap 801D79C 0
 ChangeTrainerPicPal 801D7A4 2

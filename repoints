@@ -319,6 +319,8 @@ gText_TextSpeedInstant 083cc338
 EventScript_asdf_0XC40000 08f1a110
 SystemScript_Whiteout 0807f5cc
 EventScript_RivalCianwood 089a5fa7
+EventScript_startgame 08a80ff3
+EventScript_startgame 08a81006
 
 #Remove Link Trading
 EventScript_CableClub_WirelessTrade 81BB47D

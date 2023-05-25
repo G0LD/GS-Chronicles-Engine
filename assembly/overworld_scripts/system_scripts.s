@@ -941,6 +941,8 @@ EventScript_UseADMDiveUnderwater_SkipAsk:
 .global EventScript_UseFlash
 EventScript_UseFlash:
 	lockall
+	checkflag 0x820
+	if 0x0 _goto EventScript_UseFlash_None
 	setvar 0x8003 0x0
 	setvar 0x8004 0x0
 	special2 0x8008 0x18
@@ -961,6 +963,10 @@ EventScript_UseFlash:
 	setvar 0x8004 0x0
 	copyvar 0x8005 0x8008
 	special 0x16
+	releaseall
+	end
+
+EventScript_UseFlash_None:
 	releaseall
 	end
 
@@ -1309,3 +1315,35 @@ EventScript_Non_Surfable_Water:
 gMove_NON_SURFABLE_WATER:
 .byte walk_left
 .byte end_m
+
+@;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+EventScript_startgame:
+	lockall
+	callasm 0x89F00D1
+	msgbox gText_startgame_String1 MSG_KEEPOPEN
+	multichoicedefault 0x17 0x9 0x0 0x1 0x1
+	compare LASTRESULT YES
+	if 0x0 _goto EventScript_startgame_Unsupported
+	msgbox gText_startgame_String4 MSG_KEEPOPEN
+	multichoicedefault 0x17 0x9 0x0 0x1 0x1
+	compare LASTRESULT NO
+	if 0x1 _goto EventScript_startgame_RandomizerOn
+	msgbox gText_startgame_String2 MSG_NORMAL
+	callasm 0x89F01E5
+	setvar 0x50F4 0x1
+	warpmuted 0x1 0x62 0xFF 0x15 0xA
+	end
+
+EventScript_startgame_RandomizerOn:
+	setflag 0x1440
+	setflag 0x1441
+	setflag 0x1442
+	msgbox gText_startgame_String3 MSG_NORMAL
+	callasm 0x89F01E5
+	setvar 0x50F4 0x1
+	warpmuted 0x1 0x62 0xFF 0x15 0xA
+	end
+
+EventScript_startgame_Unsupported:
+	msgbox gText_startgame_String5 MSG_KEEPOPEN
+	goto EventScript_startgame_Unsupported

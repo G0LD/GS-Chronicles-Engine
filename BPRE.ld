@@ -1223,10 +1223,14 @@ RegionMap_SetPlayerIconInvisibility = 0x80C4324 | 1;
 RegionMap_CreateFlyIcons = 0x80C4750 | 1;
 RegionMap_CreateDungeonIcons = 0x80C47F0 | 1;
 GetMapName = 0x80C4D78 | 1;
-GetMapSecIdFromWildMonHeader = 0x813CC44 | 1;
-PokemonInAnyEncounterTableInMap = 0x813CBD0 | 1;
-TryGetMapSecPokedexAreaEntry = 0x813CC58 | 1;
-SetAreaSubsprite = 0x81344A4 | 1;
+IsSpeciesInEncounterTable = 0x813cc18 | 1;
+IsSpeciesOnMap = 0x813cbd0 | 1;
+GetMapSecIdFromWildMonHeader = 0x813cc44 | 1;
+FindDexAreaByMapSec = 0x813cc58 | 1;
+GetAreaMarkerSubsprite = 0x81344a4 | 1;
+GetUnlockedSeviiAreas = 0x80cc204 | 1;
+GetRoamerIndex = 0x813cb34 | 1;
+GetRoamerPokedexAreaMarkers = 0x813cb5c | 1;
 
 /* Script Functions */
 SetupNativeScript = 0x80697F4 | 1;

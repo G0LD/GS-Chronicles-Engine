@@ -130,6 +130,21 @@ I'm sorry, but trading is no longer\navailable from the Cable Club.\pPlease use 
 #org @gText_NON_SURFABLE_WATER
 There are some things I still\nneed to do before taking\lthis route.
 
+#org @gText_startgame_String1
+Pokémon GS Chronicles\nBeta v2.7.1 - Build date 05/22/23\pBefore you start the game, Are you\nplaying this game using No\$GBA,\lVisualBoy Advance, JohnGBA, GPemu\lor Eclipse emulator?
+
+#org @gText_startgame_String4
+You can continue playing. Would\nyou like to randomize the Pokémon\lspecies generated?\pThis will create random Pokémon\nwith random abilities and movesets\pRandomize species?
+
+#org @gText_startgame_String2
+Pokémon species will not be\nrandomized.
+
+#org @gText_startgame_String3
+Pokémon species, abilities and\nmovesets will be randomized.
+
+#org @gText_startgame_String5
+The emulator you're using is known\nfor causing random crashes when\lplaying GS Chronicles, making it\lalmost unplayable.\pChange the emulator you're using\nto a recommended one. The best\lemulator to play this game is\lmGBA, RetroArch mGBA core,\lPizzaBoy and Delta emulator.\pPlease close the game and change\nto a supported emulator.
+
 #org @gText_CascadeRideWaterfall
 The wild Seaking helped out by\nusing the Cascade Ride!
 

@@ -762,7 +762,7 @@ void TakeItemFromCaughtMon(void)
 	#endif
 }
 
-void atkF1_trysetcaughtmondexflags(void)
+/*void atkF1_trysetcaughtmondexflags(void)
 {
 	struct Pokemon* mon = LoadTargetPartyData();
 
@@ -802,16 +802,25 @@ void atkF1_trysetcaughtmondexflags(void)
 	u16 species = GetMonData(mon, MON_DATA_SPECIES, NULL);
 	u32 personality = GetMonData(mon, MON_DATA_PERSONALITY, NULL);
 
-	if (GetSetPokedexFlag(SpeciesToNationalPokedexNum(species), FLAG_GET_CAUGHT))
-	{
-		gBattlescriptCurrInstr = T1_READ_PTR(gBattlescriptCurrInstr + 1);
-	}
-	else
-	{
-		HandleSetPokedexFlag(SpeciesToNationalPokedexNum(species), FLAG_SET_CAUGHT, personality);
-		gBattlescriptCurrInstr += 5;
-	}
+	if (species == SPECIES_UNOWN) {
+        SetCaughtUnown(GetUnownLetterByPersonality(personality));
+    }
+
+    species = SpeciesToNationalPokedexNum(species);
+    if (GetSetPokedexFlag(species, FLAG_GET_CAUGHT)) {
+        gBattlescriptCurrInstr = T1_READ_PTR(gBattlescriptCurrInstr + 1);
+    } else {
+        HandleSetPokedexFlag(species, FLAG_SET_CAUGHT, personality);
+        gBattlescriptCurrInstr += 5;
+    }
 }
+
+void SetCaughtUnown(u16 UnownForm) {
+    u32 CaughtUnown = GetCaughtUnown();
+    CaughtUnown |= (1 << UnownForm);
+    VarSet(VAR_UNOWNCAUGHT_PT1, (CaughtUnown & 0x0000FFFF));
+    VarSet(VAR_UNOWNCAUGHT_PT2, (CaughtUnown & 0xFFFF0000) >> 16);
+}*/
 
 void CreateCapturedMonDexPic(u16 species)
 {

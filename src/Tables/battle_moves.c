@@ -1093,7 +1093,7 @@ const struct BattleMove gBattleMoves[] =
 	[MOVE_SUBMISSION] =
 	{
 		.effect = EFFECT_RECOIL,
-		.power = 80,
+		.power = 100,
 		.type = TYPE_FIGHTING,
 		.accuracy = 90,
 		.pp = 20,
@@ -6876,12 +6876,12 @@ const struct BattleMove gBattleMoves[] =
 
 	[MOVE_WILDCHARGE] =
 	{
-		.effect = EFFECT_RECOIL,
+		.effect = EFFECT_PARALYZE_HIT,
 		.power = 100,
 		.type = TYPE_ELECTRIC,
 		.accuracy = 100,
 		.pp = 15,
-		.secondaryEffectChance = 0,
+		.secondaryEffectChance = 20,
 		.target = MOVE_TARGET_SELECTED,
 		.priority = 0,
 		.flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED,

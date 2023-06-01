@@ -5582,7 +5582,7 @@ const struct BattleMove gBattleMoves[] =
 	{
 		.effect = EFFECT_THIEF,
 		.power = 60,
-		.type = TYPE_NORMAL,
+		.type = TYPE_FAIRY,
 		.accuracy = 100,
 		.pp = 25,
 		.secondaryEffectChance = 100,

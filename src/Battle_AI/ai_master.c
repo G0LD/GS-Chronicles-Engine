@@ -98,9 +98,9 @@ void BattleAI_HandleItemUseBeforeAISetup(void)
 	{
 		for (i = 0; i < 4; i++)
 		{
-			if (gTrainers[gTrainerBattleOpponent_A].items[i] != 0)
+			if (GET_TRAINER(gTrainerBattleOpponent_A).items[i] != 0)
 			{
-				BATTLE_HISTORY->trainerItems[BATTLE_HISTORY->itemsNo] = gTrainers[gTrainerBattleOpponent_A].items[i];
+				BATTLE_HISTORY->trainerItems[BATTLE_HISTORY->itemsNo] = GET_TRAINER(gTrainerBattleOpponent_A).items[i];
 				BATTLE_HISTORY->itemsNo++;
 			}
 		}

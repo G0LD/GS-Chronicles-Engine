@@ -1297,7 +1297,7 @@ IsTextPrinterActive = 0x8002E64 | 1;
 TextPrinterDrawDownArrow = 0x80054F8 | 1;
 TextPrinterWaitAutoMode = 0x8005608 | 1;
 GetStringWidth = 0x8005ED4 | 1;
-StringCopy10 = 0x8008CF4 | 1;
+StringCopy_Nickname = 0x8008CF4 | 1;
 StringGetEnd10 = 0x8008D28 | 1;
 StringCopy = 0x8008D84 | 1;
 StringAppend = 0x8008DA4 | 1;
@@ -2119,6 +2119,13 @@ sPal3Override = 0x8463180;
 SetMonIconTransparency = 0x808cfc4 | 1;
 gText_TMCase = 0x84166d3;
 SetPartyHPBarSprite = 0x8097414 | 1;
+
+sNatureStatTable = 0x8252B48;
+
+/*InGame Trades*/
+sInGameTradeMailMessages = 0x826d1a8;
+ItemIsMail = 0x80980f8 | 1;
+gLinkPartnerMail = 0x2031CCC;
 
 /* IO */
 BG3HOFS = 0x400001C;

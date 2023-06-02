@@ -728,6 +728,12 @@ AutoScrollBattleLevelUpBoxHook2 8026350 0
 ##Pokedex Region Map Fix
 GetSpeciesPokedexAreaMarkers 0813c9dc 2
 
+##InGame Trades
+TradeBufferOTnameAndNicknames 8050E24 0
+GetInGameTradeSpeciesInfo 8053A9C 0
+BufferInGameTradeMonName 8053AE4 0
+CreateInGameTradePokemonInternal 8053B48 2
+
 #ifdef UNBOUND
 GetCurrentLevelCap 801D79C 0
 ChangeTrainerPicPal 801D7A4 2

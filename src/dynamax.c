@@ -442,8 +442,8 @@ static item_t FindTrainerDynamaxBand(u16 trainerId)
 
 	for (u8 i = 0; i < TRAINER_ITEM_COUNT; ++i)
 	{
-		if (IsItemDynamaxBand(gTrainers[trainerId].items[i]))
-			return gTrainers[trainerId].items[i];
+		if (IsItemDynamaxBand(GET_TRAINER(trainerId).items[i]))
+			return GET_TRAINER(trainerId).items[i];
 	}
 
 	return ITEM_NONE;

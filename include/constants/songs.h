@@ -165,6 +165,8 @@
 #define MUS_FANFA1 0x101
 #define MUS_FANFA2 0x10D
 
+#define BGM_BATTLE_GYM_LEADER_LAST_POKEMON_GS 0x174
+
 #ifdef UNBOUND //For Unbound
 
 #define SE_RELIC_SONG 0x1DF

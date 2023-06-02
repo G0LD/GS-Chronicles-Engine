@@ -344,14 +344,14 @@ void Mugshots_CreateOpponentPlayerSprites(struct Task* task)
 	//Load Opponent A
 	if (sTrainerEventObjectLocalId != 0 //Used for mugshots
 	#ifdef FR_PRE_BATTLE_MUGSHOT_STYLE
-	|| gTrainers[gTrainerBattleOpponent_A].trainerClass == CLASS_CHAMPION
-	|| gTrainers[gTrainerBattleOpponent_A].trainerClass == CLASS_ELITE_FOUR
-	|| gTrainers[gTrainerBattleOpponent_A].trainerClass == CLASS_PASSERBY_BOY
-	|| gTrainers[gTrainerBattleOpponent_A].trainerClass == CLASS_RIVAL_KRIS_ETHAN
-	|| gTrainers[gTrainerBattleOpponent_A].trainerClass == CLASS_ROCKET_EXECUTIVE
-	|| gTrainers[gTrainerBattleOpponent_A].trainerClass == CLASS_LEADER
-	|| gTrainers[gTrainerBattleOpponent_A].trainerClass == CLASS_CHALLENGER
-	|| gTrainers[gTrainerBattleOpponent_A].trainerClass == CLASS_CHAMPION_KE
+	|| GET_TRAINER(gTrainerBattleOpponent_A).trainerClass == CLASS_CHAMPION
+	|| GET_TRAINER(gTrainerBattleOpponent_A).trainerClass == CLASS_ELITE_FOUR
+	|| GET_TRAINER(gTrainerBattleOpponent_A).trainerClass == CLASS_PASSERBY_BOY
+	|| GET_TRAINER(gTrainerBattleOpponent_A).trainerClass == CLASS_RIVAL_KRIS_ETHAN
+	|| GET_TRAINER(gTrainerBattleOpponent_A).trainerClass == CLASS_ROCKET_EXECUTIVE
+	|| GET_TRAINER(gTrainerBattleOpponent_A).trainerClass == CLASS_LEADER
+	|| GET_TRAINER(gTrainerBattleOpponent_A).trainerClass == CLASS_CHALLENGER
+	|| GET_TRAINER(gTrainerBattleOpponent_A).trainerClass == CLASS_CHAMPION_KE
 
 	#endif
 	)

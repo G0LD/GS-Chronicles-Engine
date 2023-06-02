@@ -47,3 +47,4 @@ test-10.png
 test-11.png
 test-12.png
 *.dat
+.vscode/settings.json

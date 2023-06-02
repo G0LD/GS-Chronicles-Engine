@@ -154,7 +154,7 @@ extern bool8 CanMonParticipateInASkyBattle(struct Pokemon* mon);
 //This file's functions:
 static void TryGiveMonOnlyMetronome(struct Pokemon* mon);
 static u8 CreateNPCTrainerParty(struct Pokemon* const party, const u16 trainerNum, const bool8 firstTrainer, const bool8 side);
-static u8 GetTrainerMonGender(struct Trainer* trainer);
+static u8 GetTrainerMonGender(const struct Trainer* trainer);
 static u8 GetTrainerMonMovePPBonus(void);
 static u8 GetTrainerMonMovePP(u16 move, u8 index);
 #if (defined SCALED_TRAINERS && !defined  DEBUG_NO_LEVEL_SCALING)
@@ -197,6 +197,7 @@ static void PostProcessTeam(struct Pokemon* party, struct TeamBuilder* builder);
 static void TryShuffleMovesForCamomons(struct Pokemon* party, u8 tier, u16 trainerId);
 static u8 GetPartyIdFromPartyData(struct Pokemon* mon);
 static u8 GetHighestMonLevel(const struct Pokemon* const party);
+static void SetAbilityFromEnum(struct Pokemon* mon, u8 abilityNum);
 static void CheckShinyMon(struct Pokemon* mon);
 #ifdef UNBOUND
 extern u8 GetEVSpreadNumForUnboundRivalChallenge(struct Pokemon* mon, u32 aiFlags, u8 trainerClass);
@@ -760,7 +761,7 @@ static u8 CreateNPCTrainerParty(struct Pokemon* const party, const u16 trainerId
 	u32 i, j, nameHash;
 	unusedArg u8 monsCount, baseIV, setMonGender, trainerNameLengthOddness, minPartyLevel, maxPartyLevel,
 	   modifiedAveragePlayerLevel, highestPlayerLevel, canEvolveMon, canEvolveMonBackup, levelScaling, setCustomMoves;
-	struct Trainer* trainer;
+	const struct Trainer* trainer;
 	u32 otid = 0;
 	u8 otIdType = OT_ID_RANDOM_NO_SHINY;
 
@@ -777,7 +778,7 @@ static u8 CreateNPCTrainerParty(struct Pokemon* const party, const u16 trainerId
 			ZeroEnemyPartyMons();
 
 		//Set up necessary data
-		trainer = &gTrainers[trainerId];
+		trainer = GET_TRAINER_PTR(trainerId);
 
 		//Choose Trainer IVs
 		#ifdef VAR_GAME_DIFFICULTY
@@ -974,6 +975,7 @@ static u8 CreateNPCTrainerParty(struct Pokemon* const party, const u16 trainerId
 						MAKE_POKEMON(trainer->party.NoItemCustomMoves);
 						if (setCustomMoves)
 							SET_MOVES(trainer->party.NoItemCustomMoves);
+							SetAbilityFromEnum(&party[i], trainer->party.NoItemCustomMoves[i].ability);
 						break;
 
 					case PARTY_FLAG_HAS_ITEM: ;
@@ -1005,13 +1007,14 @@ static u8 CreateNPCTrainerParty(struct Pokemon* const party, const u16 trainerId
 						if (setCustomMoves)
 							SET_MOVES(trainer->party.ItemCustomMoves);
 						SetMonData(mon, MON_DATA_HELD_ITEM, &trainer->party.ItemCustomMoves[i].heldItem);
+						SetAbilityFromEnum(&party[i], trainer->party.ItemCustomMoves[i].ability);
 						break;
 				}
 			}
 
 			//Assign Trainer information to mon
 			u8 otGender = trainer->gender;
-			const u8* name = TryGetRivalNameByTrainerClass(gTrainers[trainerId].trainerClass);
+			const u8* name = TryGetRivalNameByTrainerClass(GET_TRAINER(trainerId).trainerClass);
 			if (name == NULL) //Not Rival or Rival name isn't tied to Trainer class
 				SetMonData(mon, MON_DATA_OT_NAME, &trainer->trainerName);
 			else
@@ -1039,7 +1042,7 @@ static u8 CreateNPCTrainerParty(struct Pokemon* const party, const u16 trainerId
 
 			//Give EVs
 			#ifdef TRAINERS_WITH_EVS
-			u8 spreadNum = (gTrainers[trainerId].partyFlags & PARTY_FLAG_CUSTOM_MOVES) ? trainer->party.NoItemCustomMoves[i].iv : trainer->party.NoItemDefaultMoves[i].iv;
+			u8 spreadNum = (GET_TRAINER(trainerId).partyFlags & PARTY_FLAG_CUSTOM_MOVES) ? trainer->party.NoItemCustomMoves[i].iv : trainer->party.NoItemDefaultMoves[i].iv;
 
 			#ifdef UNBOUND
 			if ((gTrainers[trainerId].trainerClass == CLASS_RIVAL && gameDifficulty >= OPTIONS_HARD_DIFFICULTY)
@@ -1192,7 +1195,7 @@ static u8 CreateNPCTrainerParty(struct Pokemon* const party, const u16 trainerId
 	return monsCount;
 }
 
-static u8 GetTrainerMonGender(struct Trainer* trainer)
+static u8 GetTrainerMonGender(const struct Trainer* trainer)
 {
 	switch (trainer->trainerClass)
 	{
@@ -1230,6 +1233,30 @@ static u8 GetTrainerMonMovePPBonus(void)
 static u8 GetTrainerMonMovePP(u16 move, u8 index)
 {
 	return CalculatePPWithBonus(move, GetTrainerMonMovePPBonus(), index);
+}
+
+static void SetAbilityFromEnum(struct Pokemon* mon, u8 abilityNum) {
+	switch(abilityNum) {
+		case Ability_Hidden:
+		GIVE_HIDDEN_ABILITY:
+			GiveMonNatureAndAbility(mon, GetNature(mon), 0xFF, FALSE, TRUE, FALSE); //Give Hidden Ability
+			break;
+		case Ability_1:
+		case Ability_2:
+			GiveMonNatureAndAbility(mon, GetNature(mon), MathMin(1, abilityNum - 1), FALSE, TRUE, FALSE);
+			break;
+		case Ability_Random_1_2:
+		GIVE_RANDOM_ABILITY:
+			GiveMonNatureAndAbility(mon, GetNature(mon), Random() % 2, FALSE, TRUE, FALSE);
+			break;
+		case Ability_RandomAll: ;
+			u8 random = Random() % 3;
+
+			if (random == 2)
+				goto GIVE_HIDDEN_ABILITY;
+
+			goto GIVE_RANDOM_ABILITY;
+	}
 }
 
 //These next few functions are related to scaling a Trainer's team dynamically based the player's strength
@@ -1316,7 +1343,7 @@ static bool8 IsBossTrainerClassForLevelScaling(u16 trainerId)
 		return FALSE; //No bosses in easy mode
 	#endif
 
-	switch (gTrainers[trainerId].trainerClass) {
+	switch (GET_TRAINER(trainerId).trainerClass) {
 		case CLASS_LEADER:
 		case CLASS_ELITE_4:
 		case CLASS_CHAMPION:

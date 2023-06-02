@@ -403,13 +403,13 @@ static u8 LoadCorrectTrainerPicId(void)
 	else if (gBattleTypeFlags & BATTLE_TYPE_TWO_OPPONENTS)
 	{
 		if (position == 1)
-			trainerPicId = gTrainers[gTrainerBattleOpponent_A].trainerPic;
+			trainerPicId = GET_TRAINER(gTrainerBattleOpponent_A).trainerPic;
 		else
-			trainerPicId = gTrainers[gTrainerBattleOpponent_B].trainerPic;
+			trainerPicId = GET_TRAINER(gTrainerBattleOpponent_B).trainerPic;
 	}
 	else
 	{
-		trainerPicId = gTrainers[gTrainerBattleOpponent_A].trainerPic;
+		trainerPicId = GET_TRAINER(gTrainerBattleOpponent_A).trainerPic;
 	}
 
 	return trainerPicId;

@@ -8,6 +8,7 @@
 #define _NEWLINE 0xFE
 
 //  Punctutation
+#define _AMPERSAND 0x2D
 #define _EXCLAMATION 0xAB
 #define _QUESTION 0xAC
 #define _APOSTROPHE 0xB4

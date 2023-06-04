@@ -1102,6 +1102,753 @@ const struct TrainerMonItemCustomMoves sParty_RivalEthanRoute34[] = {
     },
 };
 
+const struct TrainerMonNoItemDefaultMoves sParty_YoungsterOwen[] = {
+    {
+        .iv = 0,
+        .lvl = 17,
+        .species = SPECIES_RATTATA_A,
+    },
+    {
+        .iv = 0,
+        .lvl = 18,
+        .species = SPECIES_CACNEA,
+    },
+    {
+        .iv = 0,
+        .lvl = 18,
+        .species = SPECIES_SQUIRTLE,
+    },
+};
+
+const struct TrainerMonNoItemDefaultMoves sParty_PokefanCarter[] = {
+    {
+        .iv = 0,
+        .lvl = 17,
+        .species = SPECIES_SNUBBULL,
+    },
+    {
+        .iv = 0,
+        .lvl = 18,
+        .species = SPECIES_PACHIRISU,
+    },
+};
+
+const struct TrainerMonNoItemDefaultMoves sParty_PicnickerSharona[] = {
+    {
+        .iv = 0,
+        .lvl = 16,
+        .species = SPECIES_BUDEW,
+    },
+    {
+        .iv = 0,
+        .lvl = 16,
+        .species = SPECIES_SUNKERN,
+    },
+    {
+        .iv = 0,
+        .lvl = 16,
+        .species = SPECIES_CHIKORITA,
+    },
+    {
+        .iv = 0,
+        .lvl = 16,
+        .species = SPECIES_BULBASAUR,
+    },
+};
+
+const struct TrainerMonNoItemDefaultMoves sParty_HexManiacStella[] = {
+    {
+        .iv = 0,
+        .lvl = 17,
+        .species = SPECIES_DRIFLOON,
+    },
+    {
+        .iv = 0,
+        .lvl = 17,
+        .species = SPECIES_SABLEYE,
+    },
+    {
+        .iv = 0,
+        .lvl = 18,
+        .species = SPECIES_DUSKULL,
+    },
+};
+
+const struct TrainerMonNoItemDefaultMoves sParty_BreederJacob[] = {
+    {
+        .iv = 0,
+        .lvl = 16,
+        .species = SPECIES_CHINGLING,
+    },
+    {
+        .iv = 0,
+        .lvl = 16,
+        .species = SPECIES_HAPPINY,
+    },
+    {
+        .iv = 0,
+        .lvl = 16,
+        .species = SPECIES_SMOOCHUM,
+    },
+    {
+        .iv = 0,
+        .lvl = 16,
+        .species = SPECIES_MANTYKE,
+    },
+    {
+        .iv = 0,
+        .lvl = 16,
+        .species = SPECIES_MUNCHLAX,
+    },
+};
+
+const struct TrainerMonNoItemDefaultMoves sParty_YoungsterChris[] = {
+    {
+        .iv = 0,
+        .lvl = 16,
+        .species = SPECIES_PSYDUCK,
+    },
+    {
+        .iv = 0,
+        .lvl = 18,
+        .species = SPECIES_NUZLEAF,
+    },
+};
+
+const struct TrainerMonNoItemDefaultMoves sParty_OfficerPeterParker[] = {
+    {
+        .iv = 0,
+        .lvl = 16,
+        .species = SPECIES_HOUNDOOM,
+    },
+    {
+        .iv = 0,
+        .lvl = 17,
+        .species = SPECIES_GROWLITHE,
+    },
+};
+
+const struct TrainerMonNoItemDefaultMoves sParty_LassArlene[] = {
+    {
+        .iv = 0,
+        .lvl = 22,
+        .species = SPECIES_JIGGLYPUFF,
+    },
+    {
+        .iv = 0,
+        .lvl = 23,
+        .species = SPECIES_MARILL,
+    },
+};
+
+const struct TrainerMonNoItemDefaultMoves sParty_BeautyLoretta[] = {
+    {
+        .iv = 0,
+        .lvl = 23,
+        .species = SPECIES_MIME_JR,
+    },
+    {
+        .iv = 0,
+        .lvl = 23,
+        .species = SPECIES_KIRLIA,
+    },
+    {
+        .iv = 0,
+        .lvl = 23,
+        .species = SPECIES_MR_MIME,
+    },
+};
+
+const struct TrainerMonNoItemDefaultMoves sParty_PicnickerAllie[] = {
+    {
+        .iv = 0,
+        .lvl = 24,
+        .species = SPECIES_TOGEPI,
+    },
+    {
+        .iv = 0,
+        .lvl = 23,
+        .species = SPECIES_SNUBBULL,
+    },
+};
+
+const struct TrainerMonNoItemDefaultMoves sParty_PokefanVera[] = {
+    {
+        .iv = 0,
+        .lvl = 23,
+        .species = SPECIES_SNUBBULL,
+    },
+    {
+        .iv = 0,
+        .lvl = 23,
+        .species = SPECIES_SNUBBULL,
+    },
+    {
+        .iv = 0,
+        .lvl = 24,
+        .species = SPECIES_MAWILE,
+    },
+};
+
+const struct TrainerMonNoItemDefaultMoves sParty_PokefanEric[] = {
+    {
+        .iv = 0,
+        .lvl = 24,
+        .species = SPECIES_AZUMARILL,
+    },
+};
+
+const struct TrainerMonItemCustomMoves sParty_LeaderWhitney1[] = {
+    {
+        .iv = 0,
+        .lvl = 24,
+        .heldItem = ITEM_LUM_BERRY,
+        .species = SPECIES_GRANBULL,
+        .moves = {
+            MOVE_CHARM,
+            MOVE_THUNDERFANG,
+            MOVE_PLAYROUGH,
+            MOVE_PSYCHICFANGS,
+        },
+        .ability = 1
+    },
+    {
+        .iv = 0,
+        .lvl = 25,
+        .heldItem = ITEM_APICOT_BERRY,
+        .species = SPECIES_CLEFAIRY,
+        .moves = {
+            MOVE_PLAYROUGH,
+            MOVE_ATTRACT,
+            MOVE_FACADE,
+            MOVE_CAPTIVATE,
+        },
+        .ability = 0
+    },
+    {
+        .iv = 0,
+        .lvl = 27,
+        .heldItem = ITEM_SITRUS_BERRY,
+        .species = SPECIES_MILTANK,
+        .moves = {
+            MOVE_ZENHEADBUTT,
+            MOVE_PLAYROUGH,
+            MOVE_ROLLOUT,
+            MOVE_MILKDRINK,
+        },
+        .ability = 0
+    },
+    {
+        .iv = 0,
+        .lvl = 25,
+        .heldItem = ITEM_EVIOLITE,
+        .species = SPECIES_TOGETIC,
+        .moves = {
+            MOVE_YAWN,
+            MOVE_DRAININGKISS,
+            MOVE_DREAMEATER,
+            MOVE_FACADE,
+        },
+        .ability = 2
+    },
+};
+
+const struct TrainerMonNoItemDefaultMoves sParty_SuperNerdBonji[] = {
+    {
+        .iv = 0,
+        .lvl = 18,
+        .species = SPECIES_EXEGGCUTE,
+    },
+    {
+        .iv = 0,
+        .lvl = 20,
+        .species = SPECIES_SHROOMISH,
+    },
+};
+
+const struct TrainerMonNoItemDefaultMoves sParty_JugglerGlenn[] = {
+    {
+        .iv = 0,
+        .lvl = 17,
+        .species = SPECIES_MAGNEMITE,
+    },
+    {
+        .iv = 0,
+        .lvl = 17,
+        .species = SPECIES_VOLTORB,
+    },
+    {
+        .iv = 0,
+        .lvl = 17,
+        .species = SPECIES_MAGNEMITE,
+    },
+    {
+        .iv = 0,
+        .lvl = 17,
+        .species = SPECIES_ELECTRIKE,
+    },
+};
+
+const struct TrainerMonNoItemDefaultMoves sParty_PokemaniacOscar[] = {
+    {
+        .iv = 0,
+        .lvl = 20,
+        .species = SPECIES_ARON,
+    },
+};
+
+const struct TrainerMonNoItemDefaultMoves sParty_SuperNerdMatt[] = {
+    {
+        .iv = 0,
+        .lvl = 19,
+        .species = SPECIES_CLAMPERL,
+    },
+    {
+        .iv = 0,
+        .lvl = 20,
+        .species = SPECIES_VULPIX_A,
+    },
+};
+
+const struct TrainerMonNoItemDefaultMoves sParty_BattleGirlShelly[] = {
+    {
+        .iv = 0,
+        .lvl = 18,
+        .species = SPECIES_MAKUHITA,
+    },
+    {
+        .iv = 0,
+        .lvl = 19,
+        .species = SPECIES_RIOLU,
+    },
+    {
+        .iv = 0,
+        .lvl = 20,
+        .species = SPECIES_TAUROS_P,
+    },
+};
+
+const struct TrainerMonNoItemDefaultMoves sParty_CamperTimmy[] = {
+    {
+        .iv = 0,
+        .lvl = 19,
+        .species = SPECIES_KOFFING_G,
+    },
+    {
+        .iv = 0,
+        .lvl = 20,
+        .species = SPECIES_FURRET,
+    },
+};
+
+const struct TrainerMonNoItemDefaultMoves sParty_PicnickerCourtney[] = {
+    {
+        .iv = 0,
+        .lvl = 19,
+        .species = SPECIES_CHERUBI,
+    },
+    {
+        .iv = 0,
+        .lvl = 20,
+        .species = SPECIES_ROSELIA,
+    },
+};
+
+const struct TrainerMonNoItemDefaultMoves sParty_YoungsterCarlos[] = {
+    {
+        .iv = 0,
+        .lvl = 19,
+        .species = SPECIES_PHANPY,
+    },
+    {
+        .iv = 0,
+        .lvl = 20,
+        .species = SPECIES_TEDDIURSA,
+    },
+    {
+        .iv = 0,
+        .lvl = 21,
+        .species = SPECIES_LOMBRE,
+    },
+};
+
+const struct TrainerMonNoItemDefaultMoves sParty_FireBreatherScourge[] = {
+    {
+        .iv = 0,
+        .lvl = 19,
+        .species = SPECIES_NUMEL,
+    },
+    {
+        .iv = 0,
+        .lvl = 20,
+        .species = SPECIES_MONFERNO,
+    },
+    {
+        .iv = 0,
+        .lvl = 20,
+        .species = SPECIES_COMBUSKEN,
+    },
+};
+
+const struct TrainerMonNoItemDefaultMoves sParty_JugglerNoland[] = {
+    {
+        .iv = 0,
+        .lvl = 16,
+        .species = SPECIES_VOLTORB,
+    },
+    {
+        .iv = 0,
+        .lvl = 16,
+        .species = SPECIES_MAGNEMITE,
+    },
+    {
+        .iv = 0,
+        .lvl = 16,
+        .species = SPECIES_GEODUDE_A,
+    },
+    {
+        .iv = 0,
+        .lvl = 16,
+        .species = SPECIES_VOLTORB,
+    },
+    {
+        .iv = 0,
+        .lvl = 18,
+        .species = SPECIES_MAGNEMITE,
+    },
+};
+
+const struct TrainerMonNoItemDefaultMoves sParty_BugCatcherLouis[] = {
+    {
+        .iv = 0,
+        .lvl = 20,
+        .species = SPECIES_VENONAT,
+    },
+    {
+        .iv = 0,
+        .lvl = 20,
+        .species = SPECIES_SURSKIT,
+    },
+};
+
+const struct TrainerMonNoItemDefaultMoves sParty_BirdKeeperMike[] = {
+    {
+        .iv = 0,
+        .lvl = 18,
+        .species = SPECIES_STARAVIA,
+    },
+    {
+        .iv = 0,
+        .lvl = 19,
+        .species = SPECIES_PIDGEOTTO,
+    },
+    {
+        .iv = 0,
+        .lvl = 20,
+        .species = SPECIES_SWABLU,
+    },
+};
+
+const struct TrainerMonNoItemDefaultMoves sParty_LassJackie[] = {
+    {
+        .iv = 0,
+        .lvl = 19,
+        .species = SPECIES_CUBONE,
+    },
+    {
+        .iv = 0,
+        .lvl = 20,
+        .species = SPECIES_ILLUMISE,
+    },
+};
+
+const struct TrainerMonNoItemDefaultMoves sParty_PokeFanLarissa[] = {
+    {
+        .iv = 0,
+        .lvl = 20,
+        .species = SPECIES_MEOWTH_G,
+    },
+    {
+        .iv = 0,
+        .lvl = 21,
+        .species = SPECIES_GLAMEOW,
+    },
+};
+
+const struct TrainerMonNoItemDefaultMoves sParty_LassGina[] = {
+    {
+        .iv = 0,
+        .lvl = 20,
+        .species = SPECIES_CORSOLA,
+    },
+    {
+        .iv = 0,
+        .lvl = 21,
+        .species = SPECIES_VOLBEAT,
+    },
+};
+
+const struct TrainerMonNoItemDefaultMoves sParty_PokemaniacCalvin[] = {
+    {
+        .iv = 0,
+        .lvl = 22,
+        .species = SPECIES_RHYHORN,
+    },
+};
+
+const struct TrainerMonNoItemDefaultMoves sParty_PicnickerLillie[] = {
+    {
+        .iv = 0,
+        .lvl = 20,
+        .species = SPECIES_ZIGZAGOON,
+    },
+    {
+        .iv = 0,
+        .lvl = 20,
+        .species = SPECIES_PONYTA_G,
+    },
+    {
+        .iv = 0,
+        .lvl = 21,
+        .species = SPECIES_WOOPER_P,
+    },
+};
+
+const struct TrainerMonNoItemDefaultMoves sParty_PokeFanLucas[] = {
+    {
+        .iv = 0,
+        .lvl = 22,
+        .species = SPECIES_PLUSLE,
+    },
+    {
+        .iv = 0,
+        .lvl = 22,
+        .species = SPECIES_MINUN,
+    },
+};
+
+const struct TrainerMonNoItemDefaultMoves sParty_PsychicVizzio[] = {
+    {
+        .iv = 0,
+        .lvl = 20,
+        .species = SPECIES_KADABRA,
+    },
+    {
+        .iv = 0,
+        .lvl = 21,
+        .species = SPECIES_BRONZOR,
+    },
+};
+
+const struct TrainerMonNoItemDefaultMoves sParty_SchoolKidDonny[] = {
+    {
+        .iv = 0,
+        .lvl = 22,
+        .species = SPECIES_TANGELA,
+    },
+};
+
+const struct TrainerMonNoItemDefaultMoves sParty_LassBeatrice[] = {
+    {
+        .iv = 0,
+        .lvl = 25,
+        .species = SPECIES_GLAMEOW,
+    },
+    {
+        .iv = 0,
+        .lvl = 26,
+        .species = SPECIES_SANDSHREW_A,
+    },
+    {
+        .iv = 0,
+        .lvl = 26,
+        .species = SPECIES_VESPIQUEN,
+    },
+};
+
+const struct TrainerMonNoItemDefaultMoves sParty_RocketGrunt7[] = {
+    {
+        .iv = 0,
+        .lvl = 18,
+        .species = SPECIES_ROSELIA,
+    },
+    {
+        .iv = 0,
+        .lvl = 19,
+        .species = SPECIES_CORPHISH,
+    },
+};
+
+const struct TrainerMonNoItemDefaultMoves sParty_RocketGrunt8[] = {
+    {
+        .iv = 0,
+        .lvl = 19,
+        .species = SPECIES_SHUPPET,
+    },
+    {
+        .iv = 0,
+        .lvl = 19,
+        .species = SPECIES_DIGLETT_A,
+    },
+    {
+        .iv = 0,
+        .lvl = 20,
+        .species = SPECIES_DROWZEE,
+    },
+};
+
+const struct TrainerMonNoItemDefaultMoves sParty_RocketGrunt9[] = {
+    {
+        .iv = 0,
+        .lvl = 20,
+        .species = SPECIES_MEOWTH,
+    },
+    {
+        .iv = 0,
+        .lvl = 21,
+        .species = SPECIES_SPOINK,
+    },
+};
+
+const struct TrainerMonNoItemDefaultMoves sParty_RocketGrunt10[] = {
+    {
+        .iv = 0,
+        .lvl = 20,
+        .species = SPECIES_GRIMER,
+    },
+    {
+        .iv = 0,
+        .lvl = 20,
+        .species = SPECIES_RATTATA,
+    },
+    {
+        .iv = 0,
+        .lvl = 21,
+        .species = SPECIES_CROAGUNK,
+    },
+};
+
+const struct TrainerMonNoItemDefaultMoves sParty_RocketGrunt11[] = {
+    {
+        .iv = 0,
+        .lvl = 20,
+        .species = SPECIES_NIDORINA,
+    },
+    {
+        .iv = 0,
+        .lvl = 21,
+        .species = SPECIES_SABLEYE,
+    },
+};
+
+const struct TrainerMonNoItemDefaultMoves sParty_RocketGrunt12[] = {
+    {
+        .iv = 0,
+        .lvl = 20,
+        .species = SPECIES_POOCHYENA,
+    },
+    {
+        .iv = 0,
+        .lvl = 21,
+        .species = SPECIES_FARFETCHD_G,
+    },
+};
+
+const struct TrainerMonNoItemDefaultMoves sParty_RocketGrunt13[] = {
+    {
+        .iv = 0,
+        .lvl = 20,
+        .species = SPECIES_DROWZEE,
+    },
+    {
+        .iv = 0,
+        .lvl = 21,
+        .species = SPECIES_SLUGMA,
+    },
+    {
+        .iv = 0,
+        .lvl = 22,
+        .species = SPECIES_KECLEON,
+    },
+};
+
+const struct TrainerMonNoItemDefaultMoves sParty_RocketGrunt14[] = {
+    {
+        .iv = 0,
+        .lvl = 20,
+        .species = SPECIES_DUSTOX,
+    },
+    {
+        .iv = 0,
+        .lvl = 21,
+        .species = SPECIES_WAILMER,
+    },
+    {
+        .iv = 0,
+        .lvl = 22,
+        .species = SPECIES_GLOOM,
+    },
+};
+
+const struct TrainerMonNoItemDefaultMoves sParty_RocketGrunt15[] = {
+    {
+        .iv = 0,
+        .lvl = 22,
+        .species = SPECIES_MEDITITE,
+    },
+};
+
+const struct TrainerMonNoItemCustomMoves sParty_ExecutiveProton2[] = {
+    {
+        .iv = 0,
+        .lvl = 22,
+        .species = SPECIES_NIDORINO,
+        .moves = {
+            MOVE_BITE,
+            MOVE_DOUBLEKICK,
+            MOVE_POISONFANG,
+            MOVE_SMARTSTRIKE,
+        },
+        .ability = 1
+    },
+    {
+        .iv = 0,
+        .lvl = 22,
+        .species = SPECIES_PINSIR,
+        .moves = {
+            MOVE_UTURN,
+            MOVE_DETECT,
+            MOVE_REVENGE,
+            MOVE_THROATCHOP,
+        },
+        .ability = 1
+    },
+    {
+        .iv = 0,
+        .lvl = 23,
+        .species = SPECIES_BUIZEL,
+        .moves = {
+            MOVE_AQUAJET,
+            MOVE_BITE,
+            MOVE_ICEFANG,
+            MOVE_DIG,
+        },
+        .ability = 1
+    },
+    {
+        .iv = 0,
+        .lvl = 24,
+        .species = SPECIES_MAGMAR,
+        .moves = {
+            MOVE_FEINTATTACK,
+            MOVE_BRICKBREAK,
+            MOVE_THUNDERPUNCH,
+            MOVE_FIREPUNCH,
+        },
+        .ability = 1
+    },
+};
+
 /*
 const struct TrainerMonNoItemDefaultMoves sParty_[] = {
     {
@@ -1911,6 +2658,591 @@ const struct Trainer gTrainers[] = {
         .aiFlags = AI_SCRIPT_SETUP_FIRST_TURN | AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_CHECK_GOOD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
         .partySize = NELEMS(sParty_RivalEthanRoute34),
         .party = {.ItemCustomMoves = sParty_RivalEthanRoute34}
+    },
+
+    [TRAINER_YOUNGSTER_OWEN] = {
+        .partyFlags = 0,
+        .trainerClass = CLASS_YOUNGSTER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = TRAINER_PIC_YOUNGSTER,
+        .trainerName = {_O, _w, _e, _n, _END},
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .partySize = NELEMS(sParty_YoungsterOwen),
+        .party = {.NoItemDefaultMoves = sParty_YoungsterOwen}
+    },
+
+    [TRAINER_POKE_FAN_M_CARTER] = {
+        .partyFlags = 0,
+        .trainerClass = CLASS_POKEFAN,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = TRAINER_PIC_POKEFAN_M,
+        .trainerName = {_C, _a, _r, _t, _e, _r, _END},
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .partySize = NELEMS(sParty_PokefanCarter),
+        .party = {.NoItemDefaultMoves = sParty_PokefanCarter}
+    },
+
+    [TRAINER_PICNICKER_SHARONA] = {
+        .partyFlags = 0,
+        .trainerClass = CLASS_PICNICKER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE | F_TRAINER_FEMALE,
+        .trainerPic = TRAINER_PIC_PICNICKER,
+        .trainerName = {_S, _h, _a, _r, _o, _n, _a, _END},
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .partySize = NELEMS(sParty_PicnickerSharona),
+        .party = {.NoItemDefaultMoves = sParty_PicnickerSharona}
+    },
+
+    [TRAINER_HEX_MANIAC_STELLA] = {
+        .partyFlags = 0,
+        .trainerClass = CLASS_HEX_MANIAC,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE | F_TRAINER_FEMALE,
+        .trainerPic = TRAINER_PIC_HEX_MANIAC,
+        .trainerName = {_S, _t, _e, _l, _l, _a, _END},
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .partySize = NELEMS(sParty_HexManiacStella),
+        .party = {.NoItemDefaultMoves = sParty_HexManiacStella}
+    },
+
+    [TRAINER_PKMN_BREEDER_M_JACOB] = {
+        .partyFlags = 0,
+        .trainerClass = CLASS_PKMN_BREEDER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = TRAINER_PIC_PKMN_BREEDER_M,
+        .trainerName = {_J, _a, _c, _o, _b, _END},
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .partySize = NELEMS(sParty_BreederJacob),
+        .party = {.NoItemDefaultMoves = sParty_BreederJacob}
+    },
+
+    [TRAINER_YOUNGSTER_CHRIS] = {
+        .partyFlags = 0,
+        .trainerClass = CLASS_YOUNGSTER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = TRAINER_PIC_YOUNGSTER,
+        .trainerName = {_C, _h, _r, _i, _s, _END},
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .partySize = NELEMS(sParty_YoungsterChris),
+        .party = {.NoItemDefaultMoves = sParty_YoungsterChris}
+    },
+
+    [TRAINER_OFFICER_PETER] = {
+        .partyFlags = 0,
+        .trainerClass = CLASS_OFFICER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = TRAINER_PIC_OFFICER,
+        .trainerName = {_P, _e, _t, _e, _r, _END},
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .partySize = NELEMS(sParty_OfficerPeterParker),
+        .party = {.NoItemDefaultMoves = sParty_OfficerPeterParker}
+    },
+
+    [TRAINER_OFFICER_PARKER] = {
+        .partyFlags = 0,
+        .trainerClass = CLASS_OFFICER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = TRAINER_PIC_OFFICER,
+        .trainerName = {_P, _a, _r, _k, _e, _r, _END},
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .partySize = NELEMS(sParty_OfficerPeterParker),
+        .party = {.NoItemDefaultMoves = sParty_OfficerPeterParker}
+    },
+
+    [TRAINER_LASS_ARLENE] = {
+        .partyFlags = 0,
+        .trainerClass = CLASS_LASS,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE | F_TRAINER_FEMALE,
+        .trainerPic = TRAINER_PIC_LASS,
+        .trainerName = {},
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .partySize = NELEMS(sParty_LassArlene),
+        .party = {.NoItemDefaultMoves = sParty_LassArlene}
+    },
+
+    [TRAINER_BEAUTY_LORETTA] = {
+        .partyFlags = 0,
+        .trainerClass = CLASS_BEAUTY,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE | F_TRAINER_FEMALE,
+        .trainerPic = TRAINER_PIC_BEAUTY,
+        .trainerName = {_L, _o, _r, _e, _r, _t, _t, _a, _END},
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .partySize = NELEMS(sParty_BeautyLoretta),
+        .party = {.NoItemDefaultMoves = sParty_BeautyLoretta}
+    },
+
+    [TRAINER_PICNICKER_ALLIE] = {
+        .partyFlags = 0,
+        .trainerClass = CLASS_PICNICKER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE | F_TRAINER_FEMALE,
+        .trainerPic = TRAINER_PIC_PICNICKER,
+        .trainerName = {_A, _l, _l, _i, _e, _END},
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .partySize = NELEMS(sParty_PicnickerAllie),
+        .party = {.NoItemDefaultMoves = sParty_PicnickerAllie}
+    },
+
+    [TRAINER_POKE_FAN_F_VERA] = {
+        .partyFlags = 0,
+        .trainerClass = CLASS_POKEFAN,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE | F_TRAINER_FEMALE,
+        .trainerPic = TRAINER_PIC_POKEFAN_F,
+        .trainerName = {_V, _e, _r, _a, _END},
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .partySize = NELEMS(sParty_PokefanVera),
+        .party = {.NoItemDefaultMoves = sParty_PokefanVera}
+    },
+
+    [TRAINER_POKE_FAN_M_ERIC] = {
+        .partyFlags = 0,
+        .trainerClass = CLASS_POKEFAN,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE | F_TRAINER_FEMALE,
+        .trainerPic = TRAINER_PIC_POKEFAN_M,
+        .trainerName = {_E, _r, _i, _c, _END},
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .partySize = NELEMS(sParty_PokefanEric),
+        .party = {.NoItemDefaultMoves = sParty_PokefanEric}
+    },
+
+    [TRAINER_LEADER_WHITNEY_1] = {
+        .partyFlags = PARTY_FLAG_CUSTOM_MOVES | PARTY_FLAG_HAS_ITEM,
+        .trainerClass = CLASS_LEADER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE | F_TRAINER_FEMALE,
+        .trainerPic = TRAINER_PIC_WHITNEY,
+        .trainerName = {_W, _h, _i, _t, _n, _e, _y, _END},
+        .items = {ITEM_SUPER_POTION, ITEM_FULL_HEAL},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_SETUP_FIRST_TURN | AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_CHECK_GOOD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .partySize = NELEMS(sParty_LeaderWhitney1),
+        .party = {.ItemCustomMoves = sParty_LeaderWhitney1}
+    },
+
+    [TRAINER_SUPER_NERD_BONJI] = {
+        .partyFlags = 0,
+        .trainerClass = CLASS_SUPER_NERD,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = TRAINER_PIC_SUPER_NERD,
+        .trainerName = {_B, _o, _n, _j, _i, _END},
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .partySize = NELEMS(sParty_SuperNerdBonji),
+        .party = {.NoItemDefaultMoves = sParty_SuperNerdBonji}
+    },
+
+    [TRAINER_JUGGLER_GLENN] = {
+        .partyFlags = 0,
+        .trainerClass = CLASS_JUGGLER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = TRAINER_PIC_JUGGLER,
+        .trainerName = {_G, _l, _e, _n, _n, _END},
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .partySize = NELEMS(sParty_JugglerGlenn),
+        .party = {.NoItemDefaultMoves = sParty_JugglerGlenn}
+    },
+
+    [TRAINER_POKEMANIAC_OSCAR] = {
+        .partyFlags = 0,
+        .trainerClass = CLASS_POKEMANIAC,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = TRAINER_PIC_POKEMANIAC,
+        .trainerName = {_O, _s, _c, _a, _r, _END},
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .partySize = NELEMS(sParty_PokemaniacOscar),
+        .party = {.NoItemDefaultMoves = sParty_PokemaniacOscar}
+    },
+
+    [TRAINER_SUPER_NERD_MATT] = {
+        .partyFlags = 0,
+        .trainerClass = CLASS_SUPER_NERD,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = TRAINER_PIC_SUPER_NERD,
+        .trainerName = {_M, _a, _t, _t, _END},
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .partySize = NELEMS(sParty_SuperNerdMatt),
+        .party = {.NoItemDefaultMoves = sParty_SuperNerdMatt}
+    },
+
+    [TRAINER_BATTLE_GIRL_SHELLY] = {
+        .partyFlags = 0,
+        .trainerClass = CLASS_BATTLE_GIRL,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE | F_TRAINER_FEMALE,
+        .trainerPic = TRAINER_PIC_BATTLE_GIRL,
+        .trainerName = {_S, _h, _e, _l, _l, _y, _END},
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .partySize = NELEMS(sParty_BattleGirlShelly),
+        .party = {.NoItemDefaultMoves = sParty_BattleGirlShelly}
+    },
+
+    [TRAINER_CAMPER_TIMMY] = {
+        .partyFlags = 0,
+        .trainerClass = CLASS_CAMPER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = TRAINER_PIC_CAMPER,
+        .trainerName = {_T, _i, _m, _m, _y, _END},
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .partySize = NELEMS(sParty_CamperTimmy),
+        .party = {.NoItemDefaultMoves = sParty_CamperTimmy}
+    },
+
+    [TRAINER_PICNICKER_COURTNEY] = {
+        .partyFlags = 0,
+        .trainerClass = CLASS_PICNICKER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE | F_TRAINER_FEMALE,
+        .trainerPic = TRAINER_PIC_PICNICKER,
+        .trainerName = {_C, _o, _u, _r, _t, _n, _e, _y, _END},
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .partySize = NELEMS(sParty_PicnickerCourtney),
+        .party = {.NoItemDefaultMoves = sParty_PicnickerCourtney}
+    },
+
+    [TRAINER_YOUNGSTER_CARLOS] = {
+        .partyFlags = 0,
+        .trainerClass = CLASS_YOUNGSTER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = TRAINER_PIC_YOUNGSTER,
+        .trainerName = {_C, _a, _r, _l, _o, _s, _END},
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .partySize = NELEMS(sParty_YoungsterCarlos),
+        .party = {.NoItemDefaultMoves = sParty_YoungsterCarlos}
+    },
+
+    [TRAINER_FIREBREATHER_SCOURGE] = {
+        .partyFlags = 0,
+        .trainerClass = CLASS_FIRE_BREATHER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = TRAINER_PIC_FIREBREATHER,
+        .trainerName = {_S, _c, _o, _u, _r, _g, _e, _END},
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .partySize = NELEMS(sParty_FireBreatherScourge),
+        .party = {.NoItemDefaultMoves = sParty_FireBreatherScourge}
+    },
+
+    [TRAINER_JUGGLER_NOLAND] = {
+        .partyFlags = 0,
+        .trainerClass = CLASS_JUGGLER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = TRAINER_PIC_JUGGLER,
+        .trainerName = {_N, _o, _l, _a, _n, _d, _END},
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .partySize = NELEMS(sParty_JugglerNoland),
+        .party = {.NoItemDefaultMoves = sParty_JugglerNoland}
+    },
+
+    [TRAINER_BUG_CATCHER_LOUIS] = {
+        .partyFlags = 0,
+        .trainerClass = CLASS_BUG_CATCHER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = TRAINER_PIC_BUG_CATCHER,
+        .trainerName = {_L, _o, _u, _i, _s, _END},
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .partySize = NELEMS(sParty_BugCatcherLouis),
+        .party = {.NoItemDefaultMoves = sParty_BugCatcherLouis}
+    },
+
+    [TRAINER_BIRD_KEEPER_MIKE] = {
+        .partyFlags = 0,
+        .trainerClass = CLASS_BIRD_KEEPER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = TRAINER_PIC_BIRD_KEEPER,
+        .trainerName = {_M, _i, _k, _e, _END},
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .partySize = NELEMS(sParty_BirdKeeperMike),
+        .party = {.NoItemDefaultMoves = sParty_BirdKeeperMike}
+    },
+
+    [TRAINER_LASS_JACKIE] = {
+        .partyFlags = 0,
+        .trainerClass = CLASS_LASS,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE | F_TRAINER_FEMALE,
+        .trainerPic = TRAINER_PIC_LASS,
+        .trainerName = {_J, _a, _c, _k, _i, _e, _END},
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .partySize = NELEMS(sParty_LassJackie),
+        .party = {.NoItemDefaultMoves = sParty_LassJackie}
+    },
+
+    [TRAINER_POKE_FAN_F_LARISSA] = {
+        .partyFlags = 0,
+        .trainerClass = CLASS_POKEFAN,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE | F_TRAINER_FEMALE,
+        .trainerPic = TRAINER_PIC_POKEFAN_F,
+        .trainerName = {_L, _a, _r, _i, _s, _s, _a, _END},
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .partySize = NELEMS(sParty_PokeFanLarissa),
+        .party = {.NoItemDefaultMoves = sParty_PokeFanLarissa}
+    },
+
+    [TRAINER_LASS_GINA] = {
+        .partyFlags = 0,
+        .trainerClass = CLASS_LASS,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE | F_TRAINER_FEMALE,
+        .trainerPic = TRAINER_PIC_LASS,
+        .trainerName = {_G, _i, _n, _a, _END},
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .partySize = NELEMS(sParty_LassGina),
+        .party = {.NoItemDefaultMoves = sParty_LassGina}
+    },
+
+    [TRAINER_POKEMANIAC_CALVIN] = {
+        .partyFlags = 0,
+        .trainerClass = CLASS_POKEMANIAC,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = TRAINER_PIC_POKEMANIAC,
+        .trainerName = {_C, _a, _l, _v, _i, _n, _END},
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .partySize = NELEMS(sParty_PokemaniacCalvin),
+        .party = {.NoItemDefaultMoves = sParty_PokemaniacCalvin}
+    },
+
+    [TRAINER_PICNICKER_LILLIE] = {
+        .partyFlags = 0,
+        .trainerClass = CLASS_PICNICKER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE | F_TRAINER_FEMALE,
+        .trainerPic = TRAINER_PIC_PICNICKER,
+        .trainerName = {_L, _i, _l, _l, _i, _e, _END},
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .partySize = NELEMS(sParty_PicnickerLillie),
+        .party = {.NoItemDefaultMoves = sParty_PicnickerLillie}
+    },
+
+    [TRAINER_POKE_FAN_M_LUCAS] = {
+        .partyFlags = 0,
+        .trainerClass = CLASS_POKEFAN,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = TRAINER_PIC_POKEFAN_M,
+        .trainerName = {_L, _u, _c, _a, _s, _END},
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .partySize = NELEMS(sParty_PokeFanLucas),
+        .party = {.NoItemDefaultMoves = sParty_PokeFanLucas}
+    },
+
+    [TRAINER_PSYCHIC_M_VIZZIO] = {
+        .partyFlags = 0,
+        .trainerClass = CLASS_PSYCHIC,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = TRAINER_PIC_PSYCHIC_M,
+        .trainerName = {_V, _i, _z, _z, _i, _o, _END},
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .partySize = NELEMS(sParty_PsychicVizzio),
+        .party = {.NoItemDefaultMoves = sParty_PsychicVizzio}
+    },
+
+    [TRAINER_SCHOOL_KID_DONNY] = {
+        .partyFlags = 0,
+        .trainerClass = CLASS_SCHOOL_KID,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = TRAINER_PIC_SCHOOL_BOY,
+        .trainerName = {_D, _o, _n, _n, _y, _END},
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .partySize = NELEMS(sParty_SchoolKidDonny),
+        .party = {.NoItemDefaultMoves = sParty_SchoolKidDonny}
+    },
+
+    [TRAINER_LASS_BEATRICE] = {
+        .partyFlags = 0,
+        .trainerClass = CLASS_LASS,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE | F_TRAINER_FEMALE,
+        .trainerPic = TRAINER_PIC_LASS,
+        .trainerName = {_B, _e, _a, _t, _r, _i, _c, _e, _END},
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .partySize = NELEMS(sParty_LassBeatrice),
+        .party = {.NoItemDefaultMoves = sParty_LassBeatrice}
+    },
+
+    [TRAINER_TEAM_ROCKET_GRUNT_7] = {
+        .partyFlags = 0,
+        .trainerClass = CLASS_TEAM_ROCKET,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE | F_TRAINER_FEMALE,
+        .trainerPic = TRAINER_PIC_ROCKET_GRUNT_F,
+        .trainerName = {_G, _r, _u, _n, _t, _END},
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .partySize = NELEMS(sParty_RocketGrunt7),
+        .party = {.NoItemDefaultMoves = sParty_RocketGrunt7}
+    },
+
+    [TRAINER_TEAM_ROCKET_GRUNT_8] = {
+        .partyFlags = 0,
+        .trainerClass = CLASS_TEAM_ROCKET,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M,
+        .trainerName = {_G, _r, _u, _n, _t, _END},
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .partySize = NELEMS(sParty_RocketGrunt8),
+        .party = {.NoItemDefaultMoves = sParty_RocketGrunt8}
+    },
+
+    [TRAINER_TEAM_ROCKET_GRUNT_9] = {
+        .partyFlags = 0,
+        .trainerClass = CLASS_TEAM_ROCKET,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE | F_TRAINER_FEMALE,
+        .trainerPic = TRAINER_PIC_ROCKET_GRUNT_F,
+        .trainerName = {_G, _r, _u, _n, _t, _END},
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .partySize = NELEMS(sParty_RocketGrunt9),
+        .party = {.NoItemDefaultMoves = sParty_RocketGrunt9}
+    },
+
+    [TRAINER_TEAM_ROCKET_GRUNT_10] = {
+        .partyFlags = 0,
+        .trainerClass = CLASS_TEAM_ROCKET,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M,
+        .trainerName = {_G, _r, _u, _n, _t, _END},
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .partySize = NELEMS(sParty_RocketGrunt10),
+        .party = {.NoItemDefaultMoves = sParty_RocketGrunt10}
+    },
+
+    [TRAINER_TEAM_ROCKET_GRUNT_11] = {
+        .partyFlags = 0,
+        .trainerClass = CLASS_TEAM_ROCKET,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE | F_TRAINER_FEMALE,
+        .trainerPic = TRAINER_PIC_ROCKET_GRUNT_F,
+        .trainerName = {_G, _r, _u, _n, _t, _END},
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .partySize = NELEMS(sParty_RocketGrunt11),
+        .party = {.NoItemDefaultMoves = sParty_RocketGrunt11}
+    },
+
+    [TRAINER_TEAM_ROCKET_GRUNT_12] = {
+        .partyFlags = 0,
+        .trainerClass = CLASS_TEAM_ROCKET,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M,
+        .trainerName = {_G, _r, _u, _n, _t, _END},
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .partySize = NELEMS(sParty_RocketGrunt12),
+        .party = {.NoItemDefaultMoves = sParty_RocketGrunt12}
+    },
+
+    [TRAINER_TEAM_ROCKET_GRUNT_13] = {
+        .partyFlags = 0,
+        .trainerClass = CLASS_TEAM_ROCKET,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M,
+        .trainerName = {_G, _r, _u, _n, _t, _END},
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .partySize = NELEMS(sParty_RocketGrunt13),
+        .party = {.NoItemDefaultMoves = sParty_RocketGrunt13}
+    },
+
+    [TRAINER_TEAM_ROCKET_GRUNT_14] = {
+        .partyFlags = 0,
+        .trainerClass = CLASS_TEAM_ROCKET,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE | F_TRAINER_FEMALE,
+        .trainerPic = TRAINER_PIC_ROCKET_GRUNT_F,
+        .trainerName = {_G, _r, _u, _n, _t, _END},
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .partySize = NELEMS(sParty_RocketGrunt14),
+        .party = {.NoItemDefaultMoves = sParty_RocketGrunt14}
+    },
+
+    [TRAINER_TEAM_ROCKET_GRUNT_15] = {
+        .partyFlags = 0,
+        .trainerClass = CLASS_TEAM_ROCKET,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M,
+        .trainerName = {_G, _r, _u, _n, _t, _END},
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .partySize = NELEMS(sParty_RocketGrunt15),
+        .party = {.NoItemDefaultMoves = sParty_RocketGrunt15}
+    },
+
+    [TRAINER_ROCKET_EXECUTIVE_PROTON_2] = {
+        .partyFlags = PARTY_FLAG_CUSTOM_MOVES,
+        .trainerClass = CLASS_ROCKET_EXECUTIVE,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = TRAINER_PIC_PROTON,
+        .trainerName = {_P, _r, _o, _t, _o, _n, _END},
+        .items = {ITEM_SUPER_POTION},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .partySize = NELEMS(sParty_ExecutiveProton2),
+        .party = {.NoItemCustomMoves = sParty_ExecutiveProton2}
     },
 
 

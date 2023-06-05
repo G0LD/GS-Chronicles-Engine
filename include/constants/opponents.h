@@ -127,7 +127,7 @@
 #define TRAINER_BEAUTY_RELI                      122
 #define TRAINER_PSYCHIC_M_MORRIS                 123
 #define TRAINER_POKE_FAN_F_GIOVANNA              124
-#define TRAINER_POKE_FAN__GIORNO                 125
+#define TRAINER_POKE_FAN_M_GIORNO                125
 #define TRAINER_SAILOR_SAIBOT                    126
 #define TRAINER_ACE_TRAINER_M_DAVIS              127
 #define TRAINER_GENTLEMAN_BYRON                  128
@@ -145,7 +145,7 @@
 #define TRAINER_SWIMMER_F_BRIANNA                140
 #define TRAINER_TUBER_M_DWAYNE                   141
 #define TRAINER_SWIMMER_M_LIAM                   142
-#define TRAINER_SWIMMER_F_SHANE                  143
+#define TRAINER_SWIMMER_F_JANICE                 143
 #define TRAINER_TUBER_F_ERNESTINE                144
 #define TRAINER_HIKER_RICKY                      145
 #define TRAINER_HIKER_JEFF                       146

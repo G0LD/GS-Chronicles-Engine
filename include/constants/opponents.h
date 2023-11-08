@@ -64,7 +64,7 @@
 #define TRAINER_RIVAL_KRIS_ROUTE34                59
 #define TRAINER_RIVAL_ETHAN_ROUTE34               60
 #define TRAINER_YOUNGSTER_OWEN                    61
-#define TRAINER_POKE_FAN_M_OWEN                   62
+#define TRAINER_POKE_FAN_M_DEVON                  62
 #define TRAINER_PICNICKER_SHARONA                 63
 #define TRAINER_HEX_MANIAC_STELLA                 64
 #define TRAINER_PKMN_BREEDER_M_JACOB              65
@@ -165,7 +165,7 @@
 #define TRAINER_SWIMMER_M_BRYCE                  160
 #define TRAINER_SWIMMER_F_HANNAH                 161
 #define TRAINER_SWIMMER_M_MARK                   162
-#define TRAINER_SWIMMER_F_HERMAN                 163
+#define TRAINER_SWIMMER_F_EMMA                   163
 #define TRAINER_FISHERMAN_COOPER                 164
 #define TRAINER_SUPER_NERD_STEVE                 165
 #define TRAINER_HIKER_WINSTON                    166
@@ -211,14 +211,14 @@
 #define TRAINER_BOARDER_WILLIAM                  206
 #define TRAINER_SKIER_LINA                       207
 #define TRAINER_SKIER_BJORN                      208
-#define TRAINER_BOARDER_ELAINE                   209
+#define TRAINER_SKIER_ELAINE                     209
 #define TRAINER_FISHERMAN_BOJACK                 210
 #define TRAINER_FISHERMAN_DINO                   211
-#define TRAINER_DISHERMAN_DWAYNE                 212
+#define TRAINER_FISHERMAN_DWAYNE                 212
 #define TRAINER_SUPER_NERD_MACKEY                213
 #define TRAINER_ACE_TRAINER_F_TETRA              214
 #define TRAINER_ACE_TRAINER_M_NED                215
-#define TRAINER_ACE_TRAINER_JASON                216
+#define TRAINER_ACE_TRAINER_M_JADEN              216
 #define TRAINER_ACE_TRAINER_F_IRIS               217
 #define TRAINER_ACE_TRAINER_M_GENE               218
 #define TRAINER_FISHERMAN_LEWIS                  219
@@ -274,8 +274,8 @@
 #define TRAINER_SWIMMER_F_SHEILA                 269
 #define TRAINER_GENTLEMAN_TERRANCE               270
 #define TRAINER_ACE_TRAINER_F_NORA               271
-#define TRAINER_ACE_TRAINER_GIBSON               272
-#define TRAINER_SWIMME_F_GRACE                   273
+#define TRAINER_ACE_TRAINER_M_GIBSON             272
+#define TRAINER_SWIMMER_F_GRACE                  273
 #define TRAINER_YOUNG_COUPLE_JOEY_AND_MAI        274
 #define TRAINER_ACE_TRAINER_M_ROBBIE             275
 #define TRAINER_ACE_TRAINER_M_ARNOLD             276
@@ -287,9 +287,9 @@
 #define TRAINER_ACE_TRAINER_M_CAMERON            282
 #define TRAINER_SUPER_NERD_PRESTON               283
 #define TRAINER_ACE_TRAINER_M_RANDALL            284
-#define TRAINER_ACE_TRIANER_M_LUCA               285
+#define TRAINER_ACE_TRAINER_M_LUCA               285
 #define TRAINER_ROCKER_JIMI                      286
-#define TRAINER_ACE_TRAINER_ANYA                 287
+#define TRAINER_ACE_TRAINER_F_ANYA               287
 #define TRAINER_ACE_COUPLE_BENNY_AND_KAI         288
 #define TRAINER_JUGGLER_SHAWN                    289
 #define TRAINER_ACE_TRAINER_M_GREGORY            290
@@ -300,7 +300,7 @@
 #define TRAINER_ACE_TRAINER_F_MINA               295
 #define TRAINER_ACE_TRAINER_M_JASON              296
 #define TRAINER_FISHERMAN_COREY                  297
-#define TRAINER_ACE_TRAINER_TRINA                298
+#define TRAINER_ACE_TRAINER_F_TRINA              298
 #define TRAINER_BOARDER_JOHN                     299
 #define TRAINER_LEADER_PRYCE_1                   300
 #define TRAINER_PKMN_TRAINER_KRIS                301

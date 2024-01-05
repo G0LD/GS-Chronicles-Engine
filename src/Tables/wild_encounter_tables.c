@@ -435,13 +435,13 @@ const struct WildPokemonInfo gRoute43_LandMonsInfoNight = {21,gRoute43_LandMonsN
 const struct WildPokemon gLakeofRage_LandMonsNight[] =
 
 {
-    {33, 37, SPECIES_ABSOL},
+    {33, 37, SPECIES_EXEGGUTOR_A},
     {33, 37, SPECIES_BRELOOM},
     {34, 34, SPECIES_CORSOLA_G},
     {34, 34, SPECIES_CORSOLA_G},
     {34, 38, SPECIES_WEEZING_G},
     {34, 38, SPECIES_WEEZING_G},
-    {33, 37, SPECIES_ABSOL},
+    {33, 37, SPECIES_EXEGGUTOR_A},
     {33, 37, SPECIES_BRELOOM},
     {35, 39, SPECIES_SIRFETCHD},
     {35, 39, SPECIES_SPIRITOMB},
@@ -449,7 +449,7 @@ const struct WildPokemon gLakeofRage_LandMonsNight[] =
     {35, 39, SPECIES_SPIRITOMB},
 };
 
-const struct WildPokemonInfo gLakeofRage_LandMonsInfoNight = {21,gRoute43_LandMonsNight};
+const struct WildPokemonInfo gLakeofRage_LandMonsInfoNight = {21,gLakeofRage_LandMonsNight};
 
 const struct WildPokemon gRoute44_LandMonsNight[] =
 

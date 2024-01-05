@@ -7110,6 +7110,1320 @@ const struct TrainerMonItemCustomMoves sParty_LeaderFalkner2[] = {
     },
 };
 
+const struct TrainerMonItemCustomMoves sParty_LeaderBugsy2[] = {
+    {
+        .iv = 0,
+        .lvl = 100,
+        .heldItem = ITEM_ROCKY_HELMET,
+        .species = SPECIES_SHUCKLE,
+        .moves = {
+            MOVE_POWERSPLIT,
+            MOVE_TOXIC,
+            MOVE_STONEEDGE,
+            MOVE_CURSE,
+        },
+        .ability = 1
+    },
+    {
+        .iv = 0,
+        .lvl = 100,
+        .heldItem = ITEM_QUICK_CLAW,
+        .species = SPECIES_ARMALDO,
+        .moves = {
+            MOVE_SWORDSDANCE,
+            MOVE_XSCISSOR,
+            MOVE_STONEEDGE,
+            MOVE_EARTHQUAKE,
+        },
+        .ability = 1
+    },
+    {
+        .iv = 0,
+        .lvl = 100,
+        .heldItem = ITEM_CHOICE_BAND,
+        .species = SPECIES_HERACROSS,
+        .moves = {
+            MOVE_SHADOWCLAW,
+            MOVE_MEGAHORN,
+            MOVE_STONEEDGE,
+            MOVE_CLOSECOMBAT,
+        },
+        .ability = 1
+    },
+    {
+        .iv = 0,
+        .lvl = 100,
+        .heldItem = ITEM_FOCUS_SASH,
+        .species = SPECIES_SHEDINJA,
+        .moves = {
+            MOVE_XSCISSOR,
+            MOVE_SHADOWSNEAK,
+            MOVE_WILLOWISP,
+            MOVE_SWORDSDANCE,
+        },
+        .ability = 1
+    },
+    {
+        .iv = 0,
+        .lvl = 100,
+        .heldItem = ITEM_SCIZORITE,
+        .species = SPECIES_SCIZOR,
+        .moves = {
+            MOVE_SWORDSDANCE,
+            MOVE_BULLETPUNCH,
+            MOVE_ROOST,
+            MOVE_KNOCKOFF,
+        },
+        .ability = 1
+    },
+};
+
+const struct TrainerMonItemCustomMoves sParty_LeaderWhitney2[] = {
+    {
+        .iv = 0,
+        .lvl = 100,
+        .heldItem = ITEM_LIFE_ORB,
+        .species = SPECIES_GRANBULL,
+        .moves = {
+            MOVE_SUPERFANG,
+            MOVE_CRUNCH,
+            MOVE_PLAYROUGH,
+            MOVE_HEALBELL,
+        },
+        .ability = 1
+    },
+    {
+        .iv = 0,
+        .lvl = 100,
+        .heldItem = ITEM_LEFTOVERS,
+        .species = SPECIES_CLEFABLE,
+        .moves = {
+            MOVE_MOONBLAST,
+            MOVE_SOFTBOILED,
+            MOVE_LIGHTSCREEN,
+            MOVE_THUNDERWAVE,
+        },
+        .ability = 2
+    },
+    {
+        .iv = 0,
+        .lvl = 100,
+        .heldItem = ITEM_LIFE_ORB,
+        .species = SPECIES_TOGEKISS,
+        .moves = {
+            MOVE_NASTYPLOT,
+            MOVE_AIRSLASH,
+            MOVE_ROOST,
+            MOVE_HEALBELL,
+        },
+        .ability = 2
+    },
+    {
+        .iv = 0,
+        .lvl = 100,
+        .heldItem = ITEM_LUM_BERRY,
+        .species = SPECIES_MILTANK,
+        .moves = {
+            MOVE_BRICKBREAK,
+            MOVE_ZENHEADBUTT,
+            MOVE_PLAYROUGH,
+            MOVE_MILKDRINK,
+        },
+        .ability = 0
+    },
+    {
+        .iv = 0,
+        .lvl = 100,
+        .heldItem = ITEM_MAWILITE,
+        .species = SPECIES_MAWILE,
+        .moves = {
+            MOVE_SWORDSDANCE,
+            MOVE_PLAYROUGH,
+            MOVE_SUCKERPUNCH,
+            MOVE_KNOCKOFF,
+        },
+        .ability = 1
+    },
+};
+
+const struct TrainerMonItemCustomMoves sParty_LeaderMorty2[] = {
+    {
+        .iv = 0,
+        .lvl = 100,
+        .heldItem = ITEM_SITRUS_BERRY,
+        .species = SPECIES_DRIFBLIM,
+        .moves = {
+            MOVE_SUBSTITUTE,
+            MOVE_CALMMIND,
+            MOVE_SHADOWBALL,
+            MOVE_AURASPHERE,
+        },
+        .ability = 1
+    },
+    {
+        .iv = 0,
+        .lvl = 100,
+        .heldItem = ITEM_THICK_CLUB,
+        .species = SPECIES_MAROWAK_A,
+        .moves = {
+            MOVE_WILLOWISP,
+            MOVE_SHADOWBONE,
+            MOVE_BONEMERANG,
+            MOVE_FLAREBLITZ,
+        },
+        .ability = 1
+    },
+    {
+        .iv = 0,
+        .lvl = 100,
+        .heldItem = ITEM_KASIB_BERRY,
+        .species = SPECIES_MISMAGIUS,
+        .moves = {
+            MOVE_SHADOWBALL,
+            MOVE_POWERGEM,
+            MOVE_PERISHSONG,
+            MOVE_PAINSPLIT,
+        },
+        .ability = 1
+    },
+    {
+        .iv = 0,
+        .lvl = 100,
+        .heldItem = ITEM_BLACK_SLUDGE,
+        .species = SPECIES_GENGAR,
+        .moves = {
+            MOVE_SUBSTITUTE,
+            MOVE_NASTYPLOT,
+            MOVE_SHADOWBALL,
+            MOVE_DAZZLINGGLEAM,
+        },
+        .ability = 1
+    },
+    {
+        .iv = 0,
+        .lvl = 100,
+        .heldItem = ITEM_SABLENITE,
+        .species = SPECIES_SABLEYE,
+        .moves = {
+            MOVE_KNOCKOFF,
+            MOVE_WILLOWISP,
+            MOVE_PROTECT,
+            MOVE_RECOVER,
+        },
+        .ability = 1
+    },
+};
+
+const struct TrainerMonItemCustomMoves sParty_LeaderChuck2[] = {
+    {
+        .iv = 0,
+        .lvl = 100,
+        .heldItem = ITEM_CHOICE_SCARF,
+        .species = SPECIES_SIRFETCHD,
+        .moves = {
+            MOVE_SWORDSDANCE,
+            MOVE_METEORASSAULT,
+            MOVE_BRAVEBIRD,
+            MOVE_ROOST,
+        },
+        .ability = 0
+    },
+    {
+        .iv = 0,
+        .lvl = 100,
+        .heldItem = ITEM_LIFE_ORB,
+        .species = SPECIES_LUCARIO,
+        .moves = {
+            MOVE_CLOSECOMBAT,
+            MOVE_METEORMASH,
+            MOVE_EXTREMESPEED,
+            MOVE_DARKPULSE,
+        },
+        .ability = 1
+    },
+    {
+        .iv = 0,
+        .lvl = 100,
+        .heldItem = ITEM_LEFTOVERS,
+        .species = SPECIES_HARIYAMA,
+        .moves = {
+            MOVE_BELLYDRUM,
+            MOVE_DRAINPUNCH,
+            MOVE_THUNDERPUNCH,
+            MOVE_POISONJAB,
+        },
+        .ability = 0
+    },
+    {
+        .iv = 0,
+        .lvl = 100,
+        .heldItem = ITEM_WATER_GEM,
+        .species = SPECIES_POLIWRATH,
+        .moves = {
+            MOVE_WAVECRASH,
+            MOVE_CLOSECOMBAT,
+            MOVE_ICEPUNCH,
+            MOVE_DARKESTLARIAT,
+        },
+        .ability = 1
+    },
+    {
+        .iv = 0,
+        .lvl = 100,
+        .heldItem = ITEM_GALLADITE,
+        .species = SPECIES_GALLADE,
+        .moves = {
+            MOVE_SWORDSDANCE,
+            MOVE_CLOSECOMBAT,
+            MOVE_ZENHEADBUTT,
+            MOVE_KNOCKOFF,
+        },
+        .ability = 0
+    },
+};
+
+const struct TrainerMonItemCustomMoves sParty_LeaderJasmine2[] = {
+    {
+        .iv = 0,
+        .lvl = 100,
+        .heldItem = ITEM_AIR_BALLOON,
+        .species = SPECIES_MAGNEZONE,
+        .moves = {
+            MOVE_IRONDEFENSE,
+            MOVE_THUNDERBOLT,
+            MOVE_BODYPRESS,
+            MOVE_STEELBEAM,
+        },
+        .ability = 2
+    },
+    {
+        .iv = 0,
+        .lvl = 100,
+        .heldItem = ITEM_CHOICE_BAND,
+        .species = SPECIES_AGGRON,
+        .moves = {
+            MOVE_HEADSMASH,
+            MOVE_LOWKICK,
+            MOVE_BODYPRESS,
+            MOVE_HEATCRASH,
+        },
+        .ability = 1
+    },
+    {
+        .iv = 0,
+        .lvl = 100,
+        .heldItem = ITEM_SITRUS_BERRY,
+        .species = SPECIES_PERRSERKER,
+        .moves = {
+            MOVE_IRONHEAD,
+            MOVE_FAKEOUT,
+            MOVE_SWAGGER,
+            MOVE_PLAYROUGH,
+        },
+        .ability = 0
+    },
+    {
+        .iv = 0,
+        .lvl = 100,
+        .heldItem = ITEM_WATER_GEM,
+        .species = SPECIES_EMPOLEON,
+        .moves = {
+            MOVE_SCALD,
+            MOVE_TOXIC,
+            MOVE_KNOCKOFF,
+            MOVE_STEELBEAM,
+        },
+        .ability = 0
+    },
+    {
+        .iv = 0,
+        .lvl = 100,
+        .heldItem = ITEM_STEELIXITE,
+        .species = SPECIES_STEELIX,
+        .moves = {
+            MOVE_GYROBALL,
+            MOVE_EARTHQUAKE,
+            MOVE_CURSE,
+            MOVE_BODYPRESS,
+        },
+        .ability = 0
+    },
+};
+
+const struct TrainerMonItemCustomMoves sParty_LeaderClair2[] = {
+    {
+        .iv = 0,
+        .lvl = 100,
+        .heldItem = ITEM_LIFE_ORB,
+        .species = SPECIES_AMPHAROS,
+        .moves = {
+            MOVE_VOLTSWITCH,
+            MOVE_HEALBELL,
+            MOVE_THUNDERWAVE,
+            MOVE_DRACOMETEOR,
+        },
+        .ability = 1
+    },
+    {
+        .iv = 0,
+        .lvl = 100,
+        .heldItem = ITEM_CHESTO_BERRY,
+        .species = SPECIES_KINGDRA,
+        .moves = {
+            MOVE_REST,
+            MOVE_WATERFALL,
+            MOVE_DRAGONDANCE,
+            MOVE_OUTRAGE,
+        },
+        .ability = 2
+    },
+    {
+        .iv = 0,
+        .lvl = 100,
+        .heldItem = ITEM_CHOICE_SCARF,
+        .species = SPECIES_FLYGON,
+        .moves = {
+            MOVE_EARTHQUAKE,
+            MOVE_OUTRAGE,
+            MOVE_UTURN,
+            MOVE_DRAGONCLAW,
+        },
+        .ability = 1
+    },
+    {
+        .iv = 0,
+        .lvl = 100,
+        .heldItem = ITEM_LEFTOVERS,
+        .species = SPECIES_ALTARIA,
+        .moves = {
+            MOVE_DRAGONDANCE,
+            MOVE_FACADE,
+            MOVE_ROOST,
+            MOVE_DRAGONPULSE,
+        },
+        .ability = 0
+    },
+    {
+        .iv = 0,
+        .lvl = 100,
+        .heldItem = ITEM_GYARADOSITE,
+        .species = SPECIES_GYARADOS,
+        .moves = {
+            MOVE_DRAGONDANCE,
+            MOVE_CRUNCH,
+            MOVE_EARTHQUAKE,
+            MOVE_SUBSTITUTE,
+        },
+        .ability = 1
+    },
+};
+
+const struct TrainerMonNoItemDefaultMoves sParty_HexManiacBlair[] = {
+    {
+        .iv = 0,
+        .lvl = 30,
+        .species = SPECIES_DRIFLOON,
+    },
+    {
+        .iv = 0,
+        .lvl = 30,
+        .species = SPECIES_HAUNTER,
+    },
+};
+
+const struct TrainerMonNoItemDefaultMoves sParty_AceTrainerAlexia[] = {
+    {
+        .iv = 0,
+        .lvl = 29,
+        .species = SPECIES_BELLOSSOM,
+    },
+    {
+        .iv = 0,
+        .lvl = 30,
+        .species = SPECIES_LANTURN,
+    },
+};
+
+const struct TrainerMonNoItemDefaultMoves sParty_AceTrainerRiley[] = {
+    {
+        .iv = 0,
+        .lvl = 29,
+        .species = SPECIES_ARBOK,
+    },
+    {
+        .iv = 0,
+        .lvl = 31,
+        .species = SPECIES_DUGTRIO_A,
+    },
+};
+
+const struct TrainerMonNoItemDefaultMoves sParty_AceTrainerAndriy[] = {
+    {
+        .iv = 0,
+        .lvl = 30,
+        .species = SPECIES_RELICANTH,
+    },
+    {
+        .iv = 0,
+        .lvl = 30,
+        .species = SPECIES_STARAVIA,
+    },
+};
+
+const struct TrainerMonNoItemDefaultMoves sParty_HikerDerek[] = {
+    {
+        .iv = 0,
+        .lvl = 38,
+        .species = SPECIES_RHYDON,
+    },
+    {
+        .iv = 0,
+        .lvl = 38,
+        .species = SPECIES_RAMPARDOS,
+    },
+};
+
+const struct TrainerMonNoItemDefaultMoves sParty_HexManiacGermana[] = {
+    {
+        .iv = 0,
+        .lvl = 37,
+        .species = SPECIES_MISDREAVUS,
+    },
+    {
+        .iv = 0,
+        .lvl = 38,
+        .species = SPECIES_DUSCLOPS,
+    },
+};
+
+const struct TrainerMonNoItemDefaultMoves sParty_RocketScientist4[] = {
+    {
+        .iv = 0,
+        .lvl = 35,
+        .species = SPECIES_MUK_A,
+    },
+    {
+        .iv = 0,
+        .lvl = 35,
+        .species = SPECIES_WEEZING_G,
+    },
+    {
+        .iv = 0,
+        .lvl = 35,
+        .species = SPECIES_MR_MIME_G,
+    },
+};
+
+const struct TrainerMonItemCustomMoves sParty_ChallengerJoey1[] = {
+    {
+        .iv = 115,
+        .lvl = 100,
+        .heldItem = ITEM_ROCKY_HELMET,
+        .species = SPECIES_SABLEYE,
+        .moves = {
+            MOVE_WILLOWISP,
+            MOVE_ENCORE,
+            MOVE_KNOCKOFF,
+            MOVE_RECOVER,
+        },
+        .ability = 0
+    },
+    {
+        .iv = 90,
+        .lvl = 100,
+        .heldItem = ITEM_FLAME_ORB,
+        .species = SPECIES_RATICATE,
+        .moves = {
+            MOVE_SUPERFANG,
+            MOVE_SKITTERSMACK,
+            MOVE_SUCKERPUNCH,
+            MOVE_UTURN,
+        },
+        .ability = 2
+    },
+    {
+        .iv = 32,
+        .lvl = 100,
+        .heldItem = ITEM_CHOICE_SCARF,
+        .species = SPECIES_STARAPTOR,
+        .moves = {
+            MOVE_BRAVEBIRD,
+            MOVE_CLOSECOMBAT,
+            MOVE_UTURN,
+            MOVE_DOUBLEEDGE,
+        },
+        .ability = 1
+    },
+    {
+        .iv = 33,
+        .lvl = 100,
+        .heldItem = ITEM_CHOICE_SPECS,
+        .species = SPECIES_CHIMECHO,
+        .moves = {
+            MOVE_PSYCHIC,
+            MOVE_BOOMBURST,
+            MOVE_CALMMIND,
+            MOVE_THUNDERWAVE,
+        },
+        .ability = 1
+    },
+    {
+        .iv = 32,
+        .lvl = 100,
+        .heldItem = ITEM_LIFE_ORB,
+        .species = SPECIES_TAUROS_BLAZE_P,
+        .moves = {
+            MOVE_RAGINGBULL,
+            MOVE_CLOSECOMBAT,
+            MOVE_OUTRAGE,
+            MOVE_BULKUP,
+        },
+        .ability = 1
+    },
+    {
+        .iv = 92,
+        .lvl = 100,
+        .heldItem = ITEM_FIGHTINIUM_Z,
+        .species = SPECIES_BRELOOM,
+        .moves = {
+            MOVE_SPORE,
+            MOVE_MACHPUNCH,
+            MOVE_BULLETSEED,
+            MOVE_BULLETPUNCH,
+        },
+        .ability = 0
+    },
+};
+
+const struct TrainerMonItemCustomMoves sParty_ChallengerSayo1[] = {
+    {
+        .iv = 77,
+        .lvl = 100,
+        .heldItem = ITEM_LEFTOVERS,
+        .species = SPECIES_CHERRIM,
+        .moves = {
+            MOVE_SUNNYDAY,
+            MOVE_SYNTHESIS,
+            MOVE_SEEDFLARE,
+            MOVE_DAZZLINGGLEAM,
+        },
+        .ability = 1
+    },
+    {
+        .iv = 33,
+        .lvl = 100,
+        .heldItem = ITEM_SITRUS_BERRY,
+        .species = SPECIES_MISMAGIUS,
+        .moves = {
+            MOVE_NASTYPLOT,
+            MOVE_SHADOWBALL,
+            MOVE_DRAININGKISS,
+            MOVE_TAUNT,
+        },
+        .ability = 1
+    },
+    {
+        .iv = 32,
+        .lvl = 100,
+        .heldItem = ITEM_FLAME_ORB,
+        .species = SPECIES_URSALUNA,
+        .moves = {
+            MOVE_HEADLONGRUSH,
+            MOVE_FACADE,
+            MOVE_ICEPUNCH,
+            MOVE_PLAYROUGH,
+        },
+        .ability = 1
+    },
+    {
+        .iv = 33,
+        .lvl = 100,
+        .heldItem = ITEM_CHOICE_SCARF,
+        .species = SPECIES_MASQUERAIN,
+        .moves = {
+            MOVE_QUIVERDANCE,
+            MOVE_SURF,
+            MOVE_BUGBUZZ,
+            MOVE_STICKYWEB,
+        },
+        .ability = 1
+    },
+    {
+        .iv = 66,
+        .lvl = 100,
+        .heldItem = ITEM_ASSAULT_VEST,
+        .species = SPECIES_AZUMARILL,
+        .moves = {
+            MOVE_PLAYROUGH,
+            MOVE_AQUAJET,
+            MOVE_WAVECRASH,
+            MOVE_SUPERPOWER,
+        },
+        .ability = 2
+    },
+    {
+        .iv = 93,
+        .lvl = 100,
+        .heldItem = ITEM_CHOICE_SPECS,
+        .species = SPECIES_ESPEON,
+        .moves = {
+            MOVE_PSYCHIC,
+            MOVE_DAZZLINGGLEAM,
+            MOVE_SHADOWBALL,
+            MOVE_TRICK,
+        },
+        .ability = 0
+    },
+};
+
+const struct TrainerMonItemCustomMoves sParty_ChallengerLorelei1[] = {
+    {
+        .iv = 31,
+        .lvl = 100,
+        .heldItem = ITEM_NEVER_MELT_ICE,
+        .species = SPECIES_SANDSLASH,
+        .moves = {
+            MOVE_SWORDSDANCE,
+            MOVE_ICESHARD,
+            MOVE_SMARTSTRIKE,
+            MOVE_DIG,
+        },
+        .ability = 1
+    },
+    {
+        .iv = 93,
+        .lvl = 100,
+        .heldItem = ITEM_CHOICE_SCARF,
+        .species = SPECIES_FROSLASS,
+        .moves = {
+            MOVE_SHADOWBALL,
+            MOVE_SPIKES,
+            MOVE_DESTINYBOND,
+            MOVE_ICYWIND,
+        },
+        .ability = 0
+    },
+    {
+        .iv = 41,
+        .lvl = 100,
+        .heldItem = ITEM_CHESTO_BERRY,
+        .species = SPECIES_LAPRAS,
+        .moves = {
+            MOVE_FREEZEDRY,
+            MOVE_SURF,
+            MOVE_REST,
+            MOVE_BODYPRESS,
+        },
+        .ability = 1
+    },
+    {
+        .iv = 93,
+        .lvl = 100,
+        .heldItem = ITEM_CHOICE_SPECS,
+        .species = SPECIES_GLACEON,
+        .moves = {
+            MOVE_CALMMIND,
+            MOVE_FREEZEDRY,
+            MOVE_WATERPULSE,
+            MOVE_SHADOWBALL,
+        },
+        .ability = 0
+    },
+    {
+        .iv = 107,
+        .lvl = 100,
+        .heldItem = ITEM_ICIUM_Z,
+        .species = SPECIES_GLALIE,
+        .moves = {
+            MOVE_SHEERCOLD,
+            MOVE_FREEZEDRY,
+            MOVE_TAUNT,
+            MOVE_PROTECT,
+        },
+        .ability = 0
+    },
+    {
+        .iv = 33,
+        .lvl = 100,
+        .heldItem = ITEM_LEFTOVERS,
+        .species = SPECIES_MR_RIME,
+        .moves = {
+            MOVE_PSYCHIC,
+            MOVE_FREEZEDRY,
+            MOVE_STOMPINGTANTRUM,
+            MOVE_DAZZLINGGLEAM,
+        },
+        .ability = 1
+    },
+};
+
+const struct TrainerMonItemCustomMoves sParty_ChallengerClair1[] = {
+    {
+        .iv = 33,
+        .lvl = 100,
+        .heldItem = ITEM_LIFE_ORB,
+        .species = SPECIES_AMPHAROS,
+        .moves = {
+            MOVE_DISCHARGE,
+            MOVE_CHARGE,
+            MOVE_DRAGONPULSE,
+            MOVE_FOCUSBLAST,
+        },
+        .ability = 1
+    },
+    {
+        .iv = 74,
+        .lvl = 100,
+        .heldItem = ITEM_LEFTOVERS,
+        .species = SPECIES_AGGRON,
+        .moves = {
+            MOVE_STEALTHROCK,
+            MOVE_HEAVYSLAM,
+            MOVE_EARTHQUAKE,
+            MOVE_FIREPUNCH,
+        },
+        .ability = 2
+    },
+    {
+        .iv = 91,
+        .lvl = 100,
+        .heldItem = ITEM_CHESTO_BERRY,
+        .species = SPECIES_ANNIHILAPE,
+        .moves = {
+            MOVE_BULKUP,
+            MOVE_REST,
+            MOVE_RAGEFIST,
+            MOVE_DRAINPUNCH,
+        },
+        .ability = 0
+    },
+    {
+        .iv = 33,
+        .lvl = 100,
+        .heldItem = ITEM_CHOICE_SPECS,
+        .species = SPECIES_KINGDRA,
+        .moves = {
+            MOVE_SURF,
+            MOVE_HURRICANE,
+            MOVE_DRACOMETEOR,
+            MOVE_AQUARING,
+        },
+        .ability = 1
+    },
+    {
+        .iv = 46,
+        .lvl = 100,
+        .heldItem = ITEM_ASSAULT_VEST,
+        .species = SPECIES_SALAMENCE,
+        .moves = {
+            MOVE_DRACOMETEOR,
+            MOVE_DUALWINGBEAT,
+            MOVE_FLAMETHROWER,
+            MOVE_EARTHQUAKE,
+        },
+        .ability = 1
+    },
+    {
+        .iv = 32,
+        .lvl = 100,
+        .heldItem = ITEM_GYARADOSITE,
+        .species = SPECIES_GYARADOS,
+        .moves = {
+            MOVE_DRAGONDANCE,
+            MOVE_CRUNCH,
+            MOVE_EARTHQUAKE,
+            MOVE_BOUNCE,
+        },
+        .ability = 1
+    },
+};
+
+const struct TrainerMonItemCustomMoves sParty_ChallengerElm1Typhlosion[] = {
+    {
+        .iv = 32,
+        .lvl = 100,
+        .heldItem = ITEM_LIFE_ORB,
+        .species = SPECIES_AMBIPOM,
+        .moves = {
+            MOVE_FAKEOUT,
+            MOVE_UTURN,
+            MOVE_THIEF,
+            MOVE_GRASSYGLIDE,
+        },
+        .ability = 1
+    },
+    {
+        .iv = 71,
+        .lvl = 100,
+        .heldItem = ITEM_ROCKY_HELMET,
+        .species = SPECIES_SKARMORY,
+        .moves = {
+            MOVE_SPIKES,
+            MOVE_IRONDEFENSE,
+            MOVE_BODYPRESS,
+            MOVE_ROOST,
+        },
+        .ability = 2
+    },
+    {
+        .iv = 35,
+        .lvl = 100,
+        .heldItem = ITEM_LEFTOVERS,
+        .species = SPECIES_WYRDEER,
+        .moves = {
+            MOVE_PSYSHIELDBASH,
+            MOVE_HIGHHORSEPOWER,
+            MOVE_REFLECT,
+            MOVE_LIGHTSCREEN,
+        },
+        .ability = 1
+    },
+    {
+        .iv = 38,
+        .lvl = 100,
+        .heldItem = ITEM_SITRUS_BERRY,
+        .species = SPECIES_FARIGIRAF,
+        .moves = {
+            MOVE_STOREDPOWER,
+            MOVE_NASTYPLOT,
+            MOVE_AGILITY,
+            MOVE_TWINBEAM,
+        },
+        .ability = 1
+    },
+    {
+        .iv = 55,
+        .lvl = 100,
+        .heldItem = ITEM_CHOICE_SPECS,
+        .species = SPECIES_TOGEKISS,
+        .moves = {
+            MOVE_AIRSLASH,
+            MOVE_NASTYPLOT,
+            MOVE_AURASPHERE,
+            MOVE_ROOST,
+        },
+        .ability = 1
+    },
+    {
+        .iv = 93,
+        .lvl = 100,
+        .heldItem = ITEM_TYPHLOSIONITE,
+        .species = SPECIES_TYPHLOSION,
+        .moves = {
+            MOVE_NASTYPLOT,
+            MOVE_SHARP_FLINT,
+            MOVE_MAGMA_GEYSER,
+            MOVE_PLAYROUGH,
+        },
+        .ability = 0
+    },
+};
+
+const struct TrainerMonItemCustomMoves sParty_ChallengerElm1Feraligatr[] = {
+    {
+        .iv = 32,
+        .lvl = 100,
+        .heldItem = ITEM_LIFE_ORB,
+        .species = SPECIES_AMBIPOM,
+        .moves = {
+            MOVE_FAKEOUT,
+            MOVE_UTURN,
+            MOVE_THIEF,
+            MOVE_GRASSYGLIDE,
+        },
+        .ability = 1
+    },
+    {
+        .iv = 71,
+        .lvl = 100,
+        .heldItem = ITEM_ROCKY_HELMET,
+        .species = SPECIES_SKARMORY,
+        .moves = {
+            MOVE_SPIKES,
+            MOVE_IRONDEFENSE,
+            MOVE_BODYPRESS,
+            MOVE_ROOST,
+        },
+        .ability = 2
+    },
+    {
+        .iv = 35,
+        .lvl = 100,
+        .heldItem = ITEM_LEFTOVERS,
+        .species = SPECIES_WYRDEER,
+        .moves = {
+            MOVE_PSYSHIELDBASH,
+            MOVE_HIGHHORSEPOWER,
+            MOVE_REFLECT,
+            MOVE_LIGHTSCREEN,
+        },
+        .ability = 1
+    },
+    {
+        .iv = 38,
+        .lvl = 100,
+        .heldItem = ITEM_SITRUS_BERRY,
+        .species = SPECIES_FARIGIRAF,
+        .moves = {
+            MOVE_STOREDPOWER,
+            MOVE_NASTYPLOT,
+            MOVE_AGILITY,
+            MOVE_TWINBEAM,
+        },
+        .ability = 1
+    },
+    {
+        .iv = 55,
+        .lvl = 100,
+        .heldItem = ITEM_CHOICE_SPECS,
+        .species = SPECIES_TOGEKISS,
+        .moves = {
+            MOVE_AIRSLASH,
+            MOVE_NASTYPLOT,
+            MOVE_AURASPHERE,
+            MOVE_ROOST,
+        },
+        .ability = 1
+    },
+    {
+        .iv = 32,
+        .lvl = 100,
+        .heldItem = ITEM_FERALIGATITE,
+        .species = SPECIES_FERALIGATR,
+        .moves = {
+            MOVE_BULKUP,
+            MOVE_AQUA_SCALES,
+            MOVE_DRAGON_CRUSH,
+            MOVE_ICEPUNCH,
+        },
+        .ability = 0
+    },
+};
+
+const struct TrainerMonItemCustomMoves sParty_ChallengerElm1Meganium[] = {
+    {
+        .iv = 32,
+        .lvl = 100,
+        .heldItem = ITEM_LIFE_ORB,
+        .species = SPECIES_AMBIPOM,
+        .moves = {
+            MOVE_FAKEOUT,
+            MOVE_UTURN,
+            MOVE_THIEF,
+            MOVE_GRASSYGLIDE,
+        },
+        .ability = 1
+    },
+    {
+        .iv = 71,
+        .lvl = 100,
+        .heldItem = ITEM_ROCKY_HELMET,
+        .species = SPECIES_SKARMORY,
+        .moves = {
+            MOVE_SPIKES,
+            MOVE_IRONDEFENSE,
+            MOVE_BODYPRESS,
+            MOVE_ROOST,
+        },
+        .ability = 2
+    },
+    {
+        .iv = 35,
+        .lvl = 100,
+        .heldItem = ITEM_LEFTOVERS,
+        .species = SPECIES_WYRDEER,
+        .moves = {
+            MOVE_PSYSHIELDBASH,
+            MOVE_HIGHHORSEPOWER,
+            MOVE_REFLECT,
+            MOVE_LIGHTSCREEN,
+        },
+        .ability = 1
+    },
+    {
+        .iv = 38,
+        .lvl = 100,
+        .heldItem = ITEM_SITRUS_BERRY,
+        .species = SPECIES_FARIGIRAF,
+        .moves = {
+            MOVE_STOREDPOWER,
+            MOVE_NASTYPLOT,
+            MOVE_AGILITY,
+            MOVE_TWINBEAM,
+        },
+        .ability = 1
+    },
+    {
+        .iv = 55,
+        .lvl = 100,
+        .heldItem = ITEM_CHOICE_SPECS,
+        .species = SPECIES_TOGEKISS,
+        .moves = {
+            MOVE_AIRSLASH,
+            MOVE_NASTYPLOT,
+            MOVE_AURASPHERE,
+            MOVE_ROOST,
+        },
+        .ability = 1
+    },
+    {
+        .iv = 103,
+        .lvl = 100,
+        .heldItem = ITEM_MEGANIUMITE,
+        .species = SPECIES_MEGANIUM,
+        .moves = {
+            MOVE_FLORAL_STREAM,
+            MOVE_SHINING_BEAM,
+            MOVE_SYNTHESIS,
+            MOVE_SLEEPPOWDER,
+        },
+        .ability = 0
+    },
+};
+
+const struct TrainerMonItemCustomMoves sParty_RivalSilver5Typhlosion[] = {
+    {
+        .iv = 32,
+        .lvl = 61,
+        .heldItem = ITEM_CHOICE_BAND,
+        .species = SPECIES_WEAVILE,
+        .moves = {
+            MOVE_NIGHTSLASH,
+            MOVE_ICICLECRASH,
+            MOVE_AGILITY,
+            MOVE_CRUSHCLAW,
+        },
+        .ability = 1
+    },
+    {
+        .iv = 93,
+        .lvl = 63,
+        .heldItem = ITEM_CHOICE_SPECS,
+        .species = SPECIES_ALAKAZAM,
+        .moves = {
+            MOVE_NASTYPLOT,
+            MOVE_PSYCHIC,
+            MOVE_DAZZLINGGLEAM,
+            MOVE_FOCUSBLAST,
+        },
+        .ability = 0
+    },
+    {
+        .iv = 93,
+        .lvl = 62,
+        .heldItem = ITEM_BLACK_SLUDGE,
+        .species = SPECIES_CROBAT,
+        .moves = {
+            MOVE_ACROBATICS,
+            MOVE_TOXIC,
+            MOVE_CROSSPOISON,
+            MOVE_ROOST,
+        },
+        .ability = 0
+    },
+    {
+        .iv = 93,
+        .lvl = 62,
+        .heldItem = ITEM_LEFTOVERS,
+        .species = SPECIES_GENGAR,
+        .moves = {
+            MOVE_WILLOWISP,
+            MOVE_SHADOWBALL,
+            MOVE_FOCUSBLAST,
+            MOVE_SUBSTITUTE,
+        },
+        .ability = 0
+    },
+    {
+        .iv = 46,
+        .lvl = 63,
+        .heldItem = ITEM_SITRUS_BERRY,
+        .species = SPECIES_ELECTIVIRE,
+        .moves = {
+            MOVE_ELECTRICTERRAIN,
+            MOVE_WILDCHARGE,
+            MOVE_ICEPUNCH,
+            MOVE_THUNDERWAVE,
+        },
+        .ability = 1
+    },
+    {
+        .iv = 93,
+        .lvl = 65,
+        .heldItem = ITEM_TYPHLOSIONITE,
+        .species = SPECIES_TYPHLOSION,
+        .moves = {
+            MOVE_MAGMA_GEYSER,
+            MOVE_SOLARBEAM,
+            MOVE_SHARP_FLINT,
+            MOVE_NASTYPLOT,
+        },
+        .ability = 0
+    },
+};
+
+const struct TrainerMonItemCustomMoves sParty_RivalSilver5Feraligatr[] = {
+    {
+        .iv = 32,
+        .lvl = 61,
+        .heldItem = ITEM_CHOICE_BAND,
+        .species = SPECIES_WEAVILE,
+        .moves = {
+            MOVE_NIGHTSLASH,
+            MOVE_ICICLECRASH,
+            MOVE_AGILITY,
+            MOVE_CRUSHCLAW,
+        },
+        .ability = 1
+    },
+    {
+        .iv = 93,
+        .lvl = 63,
+        .heldItem = ITEM_CHOICE_SPECS,
+        .species = SPECIES_ALAKAZAM,
+        .moves = {
+            MOVE_NASTYPLOT,
+            MOVE_PSYCHIC,
+            MOVE_DAZZLINGGLEAM,
+            MOVE_FOCUSBLAST,
+        },
+        .ability = 0
+    },
+    {
+        .iv = 93,
+        .lvl = 62,
+        .heldItem = ITEM_BLACK_SLUDGE,
+        .species = SPECIES_CROBAT,
+        .moves = {
+            MOVE_ACROBATICS,
+            MOVE_TOXIC,
+            MOVE_CROSSPOISON,
+            MOVE_ROOST,
+        },
+        .ability = 0
+    },
+    {
+        .iv = 93,
+        .lvl = 62,
+        .heldItem = ITEM_LEFTOVERS,
+        .species = SPECIES_GENGAR,
+        .moves = {
+            MOVE_WILLOWISP,
+            MOVE_SHADOWBALL,
+            MOVE_FOCUSBLAST,
+            MOVE_SUBSTITUTE,
+        },
+        .ability = 0
+    },
+    {
+        .iv = 46,
+        .lvl = 63,
+        .heldItem = ITEM_SITRUS_BERRY,
+        .species = SPECIES_ELECTIVIRE,
+        .moves = {
+            MOVE_ELECTRICTERRAIN,
+            MOVE_WILDCHARGE,
+            MOVE_ICEPUNCH,
+            MOVE_THUNDERWAVE,
+        },
+        .ability = 1
+    },
+    {
+        .iv = 101,
+        .lvl = 65,
+        .heldItem = ITEM_FERALIGATITE,
+        .species = SPECIES_FERALIGATR,
+        .moves = {
+            MOVE_AQUA_SCALES,
+            MOVE_DRAGON_CRUSH,
+            MOVE_SCREECH,
+            MOVE_IRONTAIL,
+        },
+        .ability = 0
+    },
+};
+
+const struct TrainerMonItemCustomMoves sParty_RivalSilver5Meganium[] = {
+    {
+        .iv = 32,
+        .lvl = 61,
+        .heldItem = ITEM_CHOICE_BAND,
+        .species = SPECIES_WEAVILE,
+        .moves = {
+            MOVE_NIGHTSLASH,
+            MOVE_ICICLECRASH, 
+            MOVE_AGILITY,
+            MOVE_CRUSHCLAW,
+        },
+        .ability = 1
+    },
+    {
+        .iv = 93,
+        .lvl = 63,
+        .heldItem = ITEM_CHOICE_SPECS,
+        .species = SPECIES_ALAKAZAM,
+        .moves = {
+            MOVE_NASTYPLOT,
+            MOVE_PSYCHIC,
+            MOVE_DAZZLINGGLEAM,
+            MOVE_FOCUSBLAST,
+        },
+        .ability = 0
+    },
+    {
+        .iv = 93,
+        .lvl = 62,
+        .heldItem = ITEM_BLACK_SLUDGE,
+        .species = SPECIES_CROBAT,
+        .moves = {
+            MOVE_ACROBATICS,
+            MOVE_TOXIC,
+            MOVE_CROSSPOISON,
+            MOVE_ROOST,
+        },
+        .ability = 0
+    },
+    {
+        .iv = 93,
+        .lvl = 62,
+        .heldItem = ITEM_LEFTOVERS,
+        .species = SPECIES_GENGAR,
+        .moves = {
+            MOVE_WILLOWISP,
+            MOVE_SHADOWBALL,
+            MOVE_FOCUSBLAST,
+            MOVE_SUBSTITUTE,
+        },
+        .ability = 0
+    },
+    {
+        .iv = 46,
+        .lvl = 63,
+        .heldItem = ITEM_SITRUS_BERRY,
+        .species = SPECIES_ELECTIVIRE,
+        .moves = {
+            MOVE_ELECTRICTERRAIN,
+            MOVE_WILDCHARGE,
+            MOVE_ICEPUNCH,
+            MOVE_THUNDERWAVE,
+        },
+        .ability = 1
+    },
+    {
+        .iv = 101,
+        .lvl = 65,
+        .heldItem = ITEM_MEGANIUMITE,
+        .species = SPECIES_MEGANIUM,
+        .moves = {
+            MOVE_SHINING_BEAM,
+            MOVE_FLORAL_STREAM,
+            MOVE_SYNTHESIS,
+            MOVE_REFLECT,
+        },
+        .ability = 0
+    },
+};
+
 /*
 const struct TrainerMonNoItemDefaultMoves sParty_[] = {
     {
@@ -11576,6 +12890,318 @@ const struct Trainer gTrainers[] = {
         .aiFlags = AI_SCRIPT_SETUP_FIRST_TURN | AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_CHECK_GOOD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
         .partySize = NELEMS(sParty_LeaderFalkner2),
         .party = {.ItemCustomMoves = sParty_LeaderFalkner2}
+    },
+
+    [TRAINER_LEADER_BUGSY_2] = {
+        .partyFlags = PARTY_FLAG_CUSTOM_MOVES | PARTY_FLAG_HAS_ITEM,
+        .trainerClass = CLASS_LEADER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = TRAINER_PIC_BUGSY,
+        .trainerName = {_B, _u, _g, _s, _y, _END},
+        .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_KEYSTONE},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_SETUP_FIRST_TURN | AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_CHECK_GOOD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .partySize = NELEMS(sParty_LeaderBugsy2),
+        .party = {.ItemCustomMoves = sParty_LeaderBugsy2}
+    },
+
+    [TRAINER_LEADER_WHITNEY_2] = {
+        .partyFlags = PARTY_FLAG_CUSTOM_MOVES | PARTY_FLAG_HAS_ITEM,
+        .trainerClass = CLASS_LEADER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE | F_TRAINER_FEMALE,
+        .trainerPic = TRAINER_PIC_WHITNEY,
+        .trainerName = {_W, _h, _i, _t, _n, _e, _y, _END},
+        .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_KEYSTONE},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_SETUP_FIRST_TURN | AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_CHECK_GOOD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .partySize = NELEMS(sParty_LeaderWhitney2),
+        .party = {.ItemCustomMoves = sParty_LeaderWhitney2}
+    },
+
+    [TRAINER_LEADER_MORTY_2] = {
+        .partyFlags = PARTY_FLAG_CUSTOM_MOVES | PARTY_FLAG_HAS_ITEM,
+        .trainerClass = CLASS_LEADER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = TRAINER_PIC_MORTY,
+        .trainerName = {_M, _o, _r, _t, _y, _END},
+        .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_KEYSTONE},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_SETUP_FIRST_TURN | AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_CHECK_GOOD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .partySize = NELEMS(sParty_LeaderMorty2),
+        .party = {.ItemCustomMoves = sParty_LeaderMorty2}
+    },
+
+    [TRAINER_LEADER_CHUCK_2] = {
+        .partyFlags = PARTY_FLAG_CUSTOM_MOVES | PARTY_FLAG_HAS_ITEM,
+        .trainerClass = CLASS_LEADER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = TRAINER_PIC_CHUCK,
+        .trainerName = {_C, _h, _u, _c, _k, _END},
+        .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_KEYSTONE},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_SETUP_FIRST_TURN | AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_CHECK_GOOD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .partySize = NELEMS(sParty_LeaderChuck2),
+        .party = {.ItemCustomMoves = sParty_LeaderChuck2}
+    },
+
+    [TRAINER_LEADER_JASMINE_2] = {
+        .partyFlags = PARTY_FLAG_CUSTOM_MOVES | PARTY_FLAG_HAS_ITEM,
+        .trainerClass = CLASS_LEADER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE | F_TRAINER_FEMALE,
+        .trainerPic = TRAINER_PIC_JASMINE,
+        .trainerName = {_J, _a, _s, _m, _i, _n, _e, _END},
+        .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_KEYSTONE},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_SETUP_FIRST_TURN | AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_CHECK_GOOD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .partySize = NELEMS(sParty_LeaderJasmine2),
+        .party = {.ItemCustomMoves = sParty_LeaderJasmine2}
+    },
+
+    [TRAINER_LEADER_PRYCE_2] = {
+        .partyFlags = PARTY_FLAG_CUSTOM_MOVES | PARTY_FLAG_HAS_ITEM,
+        .trainerClass = CLASS_LEADER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = TRAINER_PIC_PRYCE,
+        .trainerName = {_P, _r, _y, _c, _e, _END},
+        .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_KEYSTONE},
+        .doubleBattle = FALSE,
+        .aiFlags =  AI_SCRIPT_SETUP_FIRST_TURN | AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_CHECK_GOOD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .partySize = NELEMS(sParty_LeaderPryce1),
+        .party = {.ItemCustomMoves = sParty_LeaderPryce1}
+    },
+
+    [TRAINER_LEADER_CLAIR_2] = {
+        .partyFlags = PARTY_FLAG_CUSTOM_MOVES | PARTY_FLAG_HAS_ITEM,
+        .trainerClass = CLASS_LEADER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE | F_TRAINER_FEMALE,
+        .trainerPic = TRAINER_PIC_CLAIR,
+        .trainerName = {_C, _l, _a, _i, _r, _END},
+        .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_KEYSTONE},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_SETUP_FIRST_TURN | AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_CHECK_GOOD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .partySize = NELEMS(sParty_LeaderClair2),
+        .party = {.ItemCustomMoves = sParty_LeaderClair2}
+    },
+
+    [TRAINER_HEX_MANIAC_BLAIR] = {
+        .partyFlags = 0,
+        .trainerClass = CLASS_HEX_MANIAC,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE | F_TRAINER_FEMALE,
+        .trainerPic = TRAINER_PIC_HEX_MANIAC,
+        .trainerName = {_B, _l, _a, _i, _r, _END},
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .partySize = NELEMS(sParty_HexManiacBlair),
+        .party = {.NoItemDefaultMoves = sParty_HexManiacBlair}
+    },
+
+    [TRAINER_ACE_TRAINER_F_ALEXIA] = {
+        .partyFlags = 0,
+        .trainerClass = CLASS_ACE_TRAINER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE | F_TRAINER_FEMALE,
+        .trainerPic = TRAINER_PIC_ACETRAINER_F,
+        .trainerName = {_A, _l, _e, _x, _i, _a, _END},
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_SETUP_FIRST_TURN | AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_CHECK_GOOD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .partySize = NELEMS(sParty_AceTrainerAlexia),
+        .party = {.NoItemDefaultMoves = sParty_AceTrainerAlexia}
+    },
+
+    [TRAINER_ACE_TRAINER_F_RILEY] = {
+        .partyFlags = 0,
+        .trainerClass = CLASS_ACE_TRAINER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE | F_TRAINER_FEMALE,
+        .trainerPic = TRAINER_PIC_ACETRAINER_F,
+        .trainerName = {_R, _i, _l, _e, _y, _END},
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_SETUP_FIRST_TURN | AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_CHECK_GOOD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .partySize = NELEMS(sParty_AceTrainerRiley),
+        .party = {.NoItemDefaultMoves = sParty_AceTrainerRiley}
+    },
+
+    [TRAINER_ACE_TRAINER_M_ANDRIY] = {
+        .partyFlags = 0,
+        .trainerClass = CLASS_ACE_TRAINER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = TRAINER_PIC_ACETRAINER_M,
+        .trainerName = {_A, _n, _d, _r, _i, _y, _END},
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_SETUP_FIRST_TURN | AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_CHECK_GOOD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .partySize = NELEMS(sParty_AceTrainerAndriy),
+        .party = {.NoItemDefaultMoves = sParty_AceTrainerAndriy}
+    },
+
+    [TRAINER_HIKER_DEREK] = {
+        .partyFlags = 0,
+        .trainerClass = CLASS_HIKER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = TRAINER_PIC_HIKER,
+        .trainerName = {_D, _e, _r, _e, _k, _END},
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .partySize = NELEMS(sParty_HikerDerek),
+        .party = {.NoItemDefaultMoves = sParty_HikerDerek}
+    },
+
+    [TRAINER_HEX_MANIAC_GERMANA] = {
+        .partyFlags = 0,
+        .trainerClass = CLASS_HEX_MANIAC,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE | F_TRAINER_FEMALE,
+        .trainerPic = TRAINER_PIC_HEX_MANIAC,
+        .trainerName = {_G, _e, _r, _m, _a, _n, _a, _END},
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .partySize = NELEMS(sParty_HexManiacGermana),
+        .party = {.NoItemDefaultMoves = sParty_HexManiacGermana}
+    },
+
+    [TRAINER_TEAM_ROCKET_SCIENTIST_4] = {
+        .partyFlags = 0,
+        .trainerClass = CLASS_TEAM_ROCKET,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = TRAINER_PIC_SCIENTIST_M,
+        .trainerName = {_S, _c, _i, _e, _n, _t, _i, _s, _t, _END},
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .partySize = NELEMS(sParty_RocketScientist4),
+        .party = {.NoItemDefaultMoves = sParty_RocketScientist4}
+    },
+
+    [TRAINER_CHALLENGER_SILVER_TYPHLOSION] = {
+        .partyFlags = PARTY_FLAG_CUSTOM_MOVES | PARTY_FLAG_HAS_ITEM,
+        .trainerClass = CLASS_CHALLENGER_2,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = TRAINER_PIC_SILVER,
+        .trainerName = {_T, _E, _R, _R, _Y, _END},
+        .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_MEGA_RING},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_SETUP_FIRST_TURN | AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_CHECK_GOOD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .partySize = NELEMS(sParty_RivalSilver5Typhlosion),
+        .party = {.ItemCustomMoves = sParty_RivalSilver5Typhlosion}
+    },
+
+    [TRAINER_CHALLENGER_SILVER_FERALIGATR] = {
+        .partyFlags = PARTY_FLAG_CUSTOM_MOVES | PARTY_FLAG_HAS_ITEM,
+        .trainerClass = CLASS_CHALLENGER_2,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = TRAINER_PIC_SILVER,
+        .trainerName = {_T, _E, _R, _R, _Y, _END},
+        .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_MEGA_RING},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_SETUP_FIRST_TURN | AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_CHECK_GOOD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .partySize = NELEMS(sParty_RivalSilver5Feraligatr),
+        .party = {.ItemCustomMoves = sParty_RivalSilver5Feraligatr}
+    },
+
+    [TRAINER_CHALLENGER_SILVER_MEGANIUM] = {
+        .partyFlags = PARTY_FLAG_CUSTOM_MOVES | PARTY_FLAG_HAS_ITEM,
+        .trainerClass = CLASS_CHALLENGER_2,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = TRAINER_PIC_SILVER,
+        .trainerName = {_T, _E, _R, _R, _Y, _END},
+        .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_MEGA_RING},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_SETUP_FIRST_TURN | AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_CHECK_GOOD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .partySize = NELEMS(sParty_RivalSilver5Meganium),
+        .party = {.ItemCustomMoves = sParty_RivalSilver5Meganium}
+    },
+
+    [TRAINER_CHALLENGER_JOEY] = {
+        .partyFlags = PARTY_FLAG_CUSTOM_MOVES | PARTY_FLAG_HAS_ITEM,
+        .trainerClass = CLASS_CHALLENGER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = TRAINER_PIC_YOUNGSTER,
+        .trainerName = {_J, _o, _e, _y, _END},
+        .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_SETUP_FIRST_TURN | AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_CHECK_GOOD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .partySize = NELEMS(sParty_ChallengerJoey1),
+        .party = {.ItemCustomMoves = sParty_ChallengerJoey1}
+    },
+
+    [TRAINER_CHALLENGER_SAYO] = {
+        .partyFlags = PARTY_FLAG_CUSTOM_MOVES | PARTY_FLAG_HAS_ITEM,
+        .trainerClass = CLASS_CHALLENGER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE | F_TRAINER_FEMALE,
+        .trainerPic = TRAINER_PIC_KIMONO_GIRL,
+        .trainerName = {_S, _a, _y, _o, _END},
+        .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_SETUP_FIRST_TURN | AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_CHECK_GOOD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .partySize = NELEMS(sParty_ChallengerSayo1),
+        .party = {.ItemCustomMoves = sParty_ChallengerSayo1}
+    },
+
+    [TRAINER_CHALLENGER_LORELEI] = {
+        .partyFlags = PARTY_FLAG_CUSTOM_MOVES | PARTY_FLAG_HAS_ITEM,
+        .trainerClass = CLASS_CHALLENGER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE | F_TRAINER_FEMALE,
+        .trainerPic = TRAINER_PIC_LORELEI,
+        .trainerName = {_L, _o, _r, _e, _l, _e, _i, _END},
+        .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_SETUP_FIRST_TURN | AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_CHECK_GOOD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .partySize = NELEMS(sParty_ChallengerLorelei1),
+        .party = {.ItemCustomMoves = sParty_ChallengerLorelei1}
+    },
+
+    [TRAINER_CHALLENGER_CLAIR] = {
+        .partyFlags = PARTY_FLAG_CUSTOM_MOVES | PARTY_FLAG_HAS_ITEM,
+        .trainerClass = CLASS_CHALLENGER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE | F_TRAINER_FEMALE,
+        .trainerPic = TRAINER_PIC_CLAIR,
+        .trainerName = {_C, _l, _a, _i, _r, _END},
+        .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_MEGA_GLOVE},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_SETUP_FIRST_TURN | AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_CHECK_GOOD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .partySize = NELEMS(sParty_ChallengerClair1),
+        .party = {.ItemCustomMoves = sParty_ChallengerClair1}
+    },
+
+    [TRAINER_CHALLENGER_PROF_ELM_TYPHLOSION] = {
+        .partyFlags = PARTY_FLAG_CUSTOM_MOVES | PARTY_FLAG_HAS_ITEM,
+        .trainerClass = CLASS_CHALLENGER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = TRAINER_PIC_PROFELM,
+        .trainerName = {_P, _r, _o, _f, _PERIOD, _SPACE, _E, _l, _m, _END},
+        .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_KEYSTONE},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_SETUP_FIRST_TURN | AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_CHECK_GOOD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .partySize = NELEMS(sParty_ChallengerElm1Typhlosion),
+        .party = {.ItemCustomMoves = sParty_ChallengerElm1Typhlosion}
+    },
+
+    [TRAINER_CHALLENGER_PROF_ELM_FERALIGATR] = {
+        .partyFlags = PARTY_FLAG_CUSTOM_MOVES | PARTY_FLAG_HAS_ITEM,
+        .trainerClass = CLASS_CHALLENGER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = TRAINER_PIC_PROFELM,
+        .trainerName = {_P, _r, _o, _f, _PERIOD, _SPACE, _E, _l, _m, _END},
+        .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_KEYSTONE},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_SETUP_FIRST_TURN | AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_CHECK_GOOD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .partySize = NELEMS(sParty_ChallengerElm1Feraligatr),
+        .party = {.ItemCustomMoves = sParty_ChallengerElm1Feraligatr}
+    },
+
+    [TRAINER_CHALLENGER_PROF_ELM_MEGANIUM] = {
+        .partyFlags = PARTY_FLAG_CUSTOM_MOVES | PARTY_FLAG_HAS_ITEM,
+        .trainerClass = CLASS_CHALLENGER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = TRAINER_PIC_PROFELM,
+        .trainerName = {_P, _r, _o, _f, _PERIOD, _SPACE, _E, _l, _m, _END},
+        .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_KEYSTONE},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_SETUP_FIRST_TURN | AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_CHECK_GOOD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .partySize = NELEMS(sParty_ChallengerElm1Meganium),
+        .party = {.ItemCustomMoves = sParty_ChallengerElm1Meganium}
     },
 
 

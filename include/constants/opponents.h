@@ -347,13 +347,13 @@
 #define TRAINER_LEADER_JASMINE_2                 342
 #define TRAINER_LEADER_PRYCE_2                   343
 #define TRAINER_LEADER_CLAIR_2                   344
-#define TRAINER_ACE_TRAINER_F_ALEXIA             345
-#define TRAINER_ACE_TRAINER_F_RINA               346
-#define TRAINER_HIKER_DERECK                     347
-#define TRAINER_BOSS_GIOVANNI                    348//FREE SLOT
-#define TRAINER_BOSS_GIOVANNI_2                  349
+#define TRAINER_HEX_MANIAC_BLAIR                 345
+#define TRAINER_ACE_TRAINER_F_ALEXIA             346
+#define TRAINER_ACE_TRAINER_F_RILEY              347
+#define TRAINER_ACE_TRAINER_M_ANDRIY             348
+#define TRAINER_HIKER_DEREK                      349/*FREE SLOTS START HERE
 #define TRAINER_LEADER_GIOVANNI                  350
-#define TRAINER_TEAM_ROCKET_GRUNT                351/*FREE SLOTS
+#define TRAINER_TEAM_ROCKET_GRUNT                351
 #define TRAINER_TEAM_ROCKET_GRUNT_2              352
 #define TRAINER_TEAM_ROCKET_GRUNT_3              353
 #define TRAINER_TEAM_ROCKET_GRUNT_4              354

@@ -304,6 +304,10 @@
 
 #define VARS_END                   0x40FF
 
+// Unown Report Vars
+#define VAR_UNOWNCAUGHT_PT1 0x43b8
+#define VAR_UNOWNCAUGHT_PT2 0x43b9
+
 #define SPECIAL_VARS_START         0x8000
 
 #define VAR_0x8000                 0x8000

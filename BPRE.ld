@@ -2116,6 +2116,8 @@ ListMenuLoadStdPalAt = 0x8107d38 | 1;
 gTMCaseMainWindowPalette = 0x841f408;
 sPal3Override = 0x8463180;
 
+GetUnownLetterByPersonality = 0x08096F98|1;
+
 SetMonIconTransparency = 0x808cfc4 | 1;
 gText_TMCase = 0x84166d3;
 SetPartyHPBarSprite = 0x8097414 | 1;

@@ -896,7 +896,7 @@ static u8 CreateNPCTrainerParty(struct Pokemon* const party, const u16 trainerId
 		maxPartyLevel = 0;
 		modifiedAveragePlayerLevel = 0;
 		highestPlayerLevel = 0;
-		canEvolveMon = FALSE;
+		canEvolveMon = FALSE; 
 		#endif
 
 		#ifdef FLAG_POKEMON_RANDOMIZER
@@ -1046,7 +1046,7 @@ static u8 CreateNPCTrainerParty(struct Pokemon* const party, const u16 trainerId
 
 			#ifdef UNBOUND
 			if ((gTrainers[trainerId].trainerClass == CLASS_RIVAL && gameDifficulty >= OPTIONS_HARD_DIFFICULTY)
-			 || (gTrainers[trainerId].trainerClass == CLASS_RIVAL_2 && gameDifficulty == OPTIONS_HARD_DIFFICULTY)) //Not for Insane
+			 || (gTrainers[trainerId].trainerClass == CLASS_CHALLENGER_2 && gameDifficulty == OPTIONS_HARD_DIFFICULTY)) //Not for Insane
 				spreadNum = GetEVSpreadNumForUnboundRivalChallenge(mon, trainer->aiFlags, gTrainers[trainerId].trainerClass);
 			#endif
 
@@ -1204,7 +1204,7 @@ static u8 GetTrainerMonGender(const struct Trainer* trainer)
 		case CLASS_ELITE_4:
 		case CLASS_CHAMPION:
 		case CLASS_RIVAL:
-		case CLASS_RIVAL_2:
+		case CLASS_CHALLENGER_2:
 		case CLASS_BOSS:
 		#ifdef UNBOUND
 		case CLASS_LOR:
@@ -1347,7 +1347,7 @@ static bool8 IsBossTrainerClassForLevelScaling(u16 trainerId)
 		case CLASS_LEADER:
 		case CLASS_ELITE_4:
 		case CLASS_CHAMPION:
-		case CLASS_RIVAL_2:
+		case CLASS_CHALLENGER_2:
 		case CLASS_BOSS:
 		#ifdef UNBOUND
 		case CLASS_SUCCESSOR:

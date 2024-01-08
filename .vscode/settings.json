@@ -6,7 +6,8 @@
         "dns_data.h": "c",
         "defines.h": "c",
         "defines_battle.h": "c",
-        "trainer_classes.h": "c"
+        "trainer_classes.h": "c",
+        "string_util.h": "c"
     },
     "C_Cpp.errorSquiggles": "enabled"
 }

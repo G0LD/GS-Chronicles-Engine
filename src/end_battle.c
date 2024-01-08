@@ -226,7 +226,7 @@ void HandleEndTurn_BattleWon(void)
 			case CLASS_CHAMPION:
 			case CLASS_CHAMPION_KE:
 			case CLASS_CHALLENGER:
-			case CLASS_RIVAL_2:
+			case CLASS_CHALLENGER_2:
 
 				PlayBGM(BGM_VICTORY_SPECIAL);
 				specialMus = TRUE;

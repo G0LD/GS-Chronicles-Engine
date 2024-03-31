@@ -4935,7 +4935,7 @@ const struct TrainerMonItemCustomMoves sParty_ExecutiveArcher[] = {
         .ability = 1
     },
     {
-        .iv = 4,
+        .iv = 94,
         .lvl = 51,
         .heldItem = ITEM_HOUNDOOMINITE,
         .species = SPECIES_HOUNDOOM,
@@ -5733,7 +5733,7 @@ const struct TrainerMonItemCustomMoves sParty_LeaderPryce1[] = {
         .ability = 0
     },
     {
-        .iv = 43,
+        .iv = 131,
         .lvl = 57,
         .heldItem = ITEM_CHOICE_BAND,
         .species = SPECIES_NINETALES_A,
@@ -5756,7 +5756,7 @@ const struct TrainerMonItemCustomMoves sParty_LeaderPryce1[] = {
             MOVE_SURF,
             MOVE_BLIZZARD,
         },
-        .ability = 0
+        .ability = 1
     },
     {
         .iv = 91,
@@ -5782,7 +5782,7 @@ const struct TrainerMonItemCustomMoves sParty_LeaderPryce1[] = {
             MOVE_WOODHAMMER,
             MOVE_EARTHQUAKE,
         },
-        .ability = 0
+        .ability = 1
     },
 };
 
@@ -11767,7 +11767,7 @@ const struct Trainer gTrainers[] = {
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
         .trainerPic = TRAINER_PIC_ARCHER,
         .trainerName = {_A, _r, _c, _h, _e, _r, _END},
-        .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_DESTINY_KNOT},
+        .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_RADIO_AMPLIFIER},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_SETUP_FIRST_TURN | AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_CHECK_GOOD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
         .partySize = NELEMS(sParty_ExecutiveArcher),
@@ -11832,7 +11832,7 @@ const struct Trainer gTrainers[] = {
         .trainerClass = CLASS_ACE_TRAINER,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
         .trainerPic = TRAINER_PIC_ACETRAINER_M,
-        .trainerName = {_I, _s, _a, _i, _a, _h},
+        .trainerName = {_I, _s, _a, _i, _a, _h, _END},
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_SETUP_FIRST_TURN | AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_CHECK_GOOD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
@@ -12472,6 +12472,46 @@ const struct Trainer gTrainers[] = {
         .party = {.ItemCustomMoves = sParty_LeaderPryce1}
     },
 
+        [TRAINER_SILVER_LEAGUE_TYPHLOSION] = {
+        .partyFlags = PARTY_FLAG_CUSTOM_MOVES | PARTY_FLAG_HAS_ITEM,
+        .trainerClass = CLASS_RIVAL,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = TRAINER_PIC_SILVER,
+        .trainerName = {_T, _E, _R, _R, _Y, _END},
+        .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_MEGA_RING},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_SETUP_FIRST_TURN | AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_CHECK_GOOD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .partySize = NELEMS(sParty_RivalSilver5Typhlosion),
+        .party = {.ItemCustomMoves = sParty_RivalSilver5Typhlosion}
+    },
+
+    [TRAINER_SILVER_LEAGUE_FERALIGATR] = {
+        .partyFlags = PARTY_FLAG_CUSTOM_MOVES | PARTY_FLAG_HAS_ITEM,
+        .trainerClass = CLASS_RIVAL,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = TRAINER_PIC_SILVER,
+        .trainerName = {_T, _E, _R, _R, _Y, _END},
+        .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_MEGA_RING},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_SETUP_FIRST_TURN | AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_CHECK_GOOD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .partySize = NELEMS(sParty_RivalSilver5Feraligatr),
+        .party = {.ItemCustomMoves = sParty_RivalSilver5Feraligatr}
+    },
+
+    [TRAINER_SILVER_LEAGUE_MEGANIUM] = {
+        .partyFlags = PARTY_FLAG_CUSTOM_MOVES | PARTY_FLAG_HAS_ITEM,
+        .trainerClass = CLASS_RIVAL,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = TRAINER_PIC_SILVER,
+        .trainerName = {_T, _E, _R, _R, _Y, _END},
+        .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_MEGA_RING},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_SETUP_FIRST_TURN | AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_CHECK_GOOD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .partySize = NELEMS(sParty_RivalSilver5Meganium),
+        .party = {.ItemCustomMoves = sParty_RivalSilver5Meganium}
+    },
+
+
     [TRAINER_PKMN_TRAINER_KRIS] = {
         .partyFlags = PARTY_FLAG_CUSTOM_MOVES | PARTY_FLAG_HAS_ITEM,
         .trainerClass = CLASS_CHAMPION_KE,
@@ -12940,7 +12980,7 @@ const struct Trainer gTrainers[] = {
         .gender = F_TRAINER_FEMALE,
         .trainerPic = TRAINER_PIC_AILE,
         .trainerName = {_A, _i, _l, _e, _END},
-        .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_MEGA_RIBBON},
+        .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_MEGA_RIBBON},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_SETUP_FIRST_TURN | AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_CHECK_GOOD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
         .partySize = NELEMS(sParty_EliteFourAile1),
@@ -12954,7 +12994,7 @@ const struct Trainer gTrainers[] = {
         .gender = F_TRAINER_FEMALE,
         .trainerPic = TRAINER_PIC_WILL,
         .trainerName = {_W, _i, _l, _l, _END},
-        .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_MEGA_BUTTON},
+        .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_MEGA_BUTTON},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_SETUP_FIRST_TURN | AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_CHECK_GOOD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
         .partySize = NELEMS(sParty_EliteFourWill1),
@@ -12967,7 +13007,7 @@ const struct Trainer gTrainers[] = {
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
         .trainerPic = TRAINER_PIC_KOGA,
         .trainerName = {_K, _o, _g, _a, _END},
-        .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_MEGA_SCARF},
+        .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_MEGA_SCARF},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_SETUP_FIRST_TURN | AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_CHECK_GOOD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
         .partySize = NELEMS(sParty_EliteFourKoga1),
@@ -12981,7 +13021,7 @@ const struct Trainer gTrainers[] = {
         .gender = F_TRAINER_FEMALE,
         .trainerPic = TRAINER_PIC_KAREN,
         .trainerName = {_K, _a, _r, _e, _n, _END},
-        .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_MEGA_EARING},
+        .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_MEGA_EARING},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_SETUP_FIRST_TURN | AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_CHECK_GOOD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
         .partySize = NELEMS(sParty_EliteFourKaren1),

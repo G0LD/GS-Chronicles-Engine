@@ -251,6 +251,18 @@ const struct DNSPalFade gDNSNightFadingByTime[24][6] =
 
 const struct SpecificTilesetFade gSpecificTilesetFades[] =
 {
+	//These Palette Town ones have been left in as examples. Feel free to remove.
+	{ //Palette Town - Player's Door
+		.tilesetPointer = 0x8FFFFFF, //Tileset 1
+		.paletteNumToFade = 8,
+		.paletteIndicesToFade =
+		{
+			{8,  RGB(31, 31, 20)},
+			{9,  RGB(31, 31, 11)},
+			{10, RGB(31, 31, 10)},
+			TILESET_PAL_FADE_END
+		},
+	},
 };
 
 #else //For Pokemon Unbound - Feel free to remove

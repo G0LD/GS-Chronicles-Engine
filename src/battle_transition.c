@@ -773,6 +773,7 @@ const struct BattleTransitionLogo gBattleTransitionLogos[] =
 {
 	#ifndef UNBOUND //Modify this section
 	{CLASS_TEAM_ROCKET,TeamRocketBattleLogoTiles, TeamRocketBattleLogoPal, TeamRocketBattleLogoMap},
+	{CLASS_ROCKET_ADMIN,TeamRocketBattleLogoTiles, TeamRocketBattleLogoPal, TeamRocketBattleLogoMap},
 	#else //For Pokemon Unbound
 	{0xFF, DynamaxBattleLogoTiles, DynamaxBattleLogoPal, DynamaxBattleLogoMap},
 	{CLASS_SHADOW, ShadowBattleLogoTiles, ShadowBattleLogoPal, ShadowBattleLogoMap},

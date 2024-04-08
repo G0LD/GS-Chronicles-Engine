@@ -525,14 +525,12 @@ EventScript_RockClimb:
 	setvar 0x8003 0x0
 	setvar 0x8004 0x0
 	setvar 0x8005 SPECIES_MACHOKE
-	special 0x16
 	dofieldeffect FLDEFF_USE_ROCK_CLIMB
 	waitfieldeffect FLDEFF_USE_ROCK_CLIMB
 	callasm FollowMe_WarpSetEnd
 	setvar 0x8003 0x0
 	setvar 0x8004 0x0
 	copyvar 0x8005 0x8008
-	special 0x16
 	releaseall
 	end
 
@@ -656,15 +654,13 @@ EventScript_UseWaterfall_SkipMsg:
 	setvar 0x8003 0x0
 	setvar 0x8004 0x0
 	setvar 0x8005 SPECIES_SEAKING_RIDE
-	special 0x16
-	setanimation 0x0 0x8004
+	setanimation 0x0 0xF
 	doanimation 0x2B
 	callasm FollowMe_WarpSetEnd
 	waitfieldeffect 0x2B
 	setvar 0x8003 0x0
 	setvar 0x8004 0x0
 	copyvar 0x8005 0x8008
-	special 0x16
 	releaseall
 	end
 
@@ -743,14 +739,12 @@ EventScript_UseSurf_SkipAsk:
 	setvar 0x8003 0x0
 	setvar 0x8004 0x0
 	setvar 0x8005 SPECIES_SEAKING_RIDE
-	special 0x16
-	setanimation 0x0 0x8004
+	setanimation 0x0 0xF
 	doanimation 0x9
 	waitfieldeffect 0x9
 	setvar 0x8003 0x0
 	setvar 0x8004 0x0
 	copyvar 0x8005 0x8008
-	special 0x16
 	releaseall
 	end
 
@@ -950,8 +944,7 @@ EventScript_UseFlash:
 	setvar 0x8003 0x0
 	setvar 0x8004 0x0
 	setvar 0x8005 SPECIES_ABRA_RIDE
-	special 0x16
-	setanimation 0x0 0x8004
+	setanimation 0x0 0xF
 	doanimation 0x28
 	waitstate
 	msgbox gText_BrightRideFlash MSG_NORMAL
@@ -962,7 +955,6 @@ EventScript_UseFlash:
 	setvar 0x8003 0x0
 	setvar 0x8004 0x0
 	copyvar 0x8005 0x8008
-	special 0x16
 	releaseall
 	end
 

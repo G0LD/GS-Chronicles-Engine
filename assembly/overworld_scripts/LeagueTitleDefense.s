@@ -51,7 +51,6 @@ EventScript_LeagueTitleDefense_Lorelei:
     msgbox 0x8C3DFE1 0xA
     msgbox gText_LeagueTitleDefense_LoreleiSpeech1 MSG_NORMAL
     callstd 0xB
-    setflag FLAG_SCALE_TRAINER_LEVELS
     trainerbattle3 0x3 0x16E 0x200 gText_LeagueTitleDefense_LoreleiSpeech2
     clearflag FLAG_SCALE_TRAINER_LEVELS
     msgbox 0x8C3DFE1 0xA
@@ -70,7 +69,6 @@ EventScript_LeagueTitleDefense_Joey:
     msgbox gText_LeagueTitleDefense_JoeyName 0xA
     msgbox gText_LeagueTitleDefense_JoeySpeech1 MSG_NORMAL
     callstd 0xB
-    setflag FLAG_SCALE_TRAINER_LEVELS
     trainerbattle3 0x3 0x16C 0x200 gText_LeagueTitleDefense_JoeySpeech2
     clearflag FLAG_SCALE_TRAINER_LEVELS
     msgbox 0x8C3DFE1 0xA
@@ -89,7 +87,6 @@ EventScript_LeagueTitleDefense_Naoko:
     msgbox 0x8C4D18E 0xA
     msgbox gText_LeagueTitleDefense_NaokoSpeech1 MSG_NORMAL
     callstd 0xB
-    setflag FLAG_SCALE_TRAINER_LEVELS
     trainerbattle3 0x3 0x16D 0x200 gText_LeagueTitleDefense_NaokoSpeech2
     clearflag FLAG_SCALE_TRAINER_LEVELS
     msgbox 0x8C4D18E 0xA
@@ -108,7 +105,6 @@ EventScript_LeagueTitleDefense_Clair:
     msgbox 0x8C4A5DB 0xA
     msgbox gText_LeagueTitleDefense_ClairSpeech1 MSG_NORMAL
     callstd 0xB
-    setflag FLAG_SCALE_TRAINER_LEVELS
     trainerbattle3 0x3 0x16F 0x200 gText_LeagueTitleDefense_ClairSpeech2
     clearflag FLAG_SCALE_TRAINER_LEVELS
     msgbox 0x8C4A5DB 0xA
@@ -127,7 +123,6 @@ EventScript_LeagueTitleDefense_Silver:
     msgbox 0x8C09516 0xA
     msgbox gText_LeagueTitleDefense_SilverSpeech1 MSG_NORMAL
     callstd 0xB
-    setflag FLAG_SCALE_TRAINER_LEVELS
     compare VAR_STARTER_CHOSEN_SILVER SPECIES_CYNDAQUIL
     if 0x1 _call EventScript_LeagueTitleDefense_Silver_Cyndaquil
     compare VAR_STARTER_CHOSEN_SILVER SPECIES_TOTODILE
@@ -163,7 +158,6 @@ EventScript_LeagueTitleDefense_ProfElm:
     msgbox 0x8C05560 0xA
     msgbox gText_LeagueTitleDefense_ProfElmSpeech1 MSG_NORMAL
     callstd 0xB
-    setflag FLAG_SCALE_TRAINER_LEVELS
     compare VAR_STARTER_CHOSEN_SILVER SPECIES_CYNDAQUIL
     if 0x1 _call EventScript_LeagueTitleDefense_ProfElm_Totodile
     compare VAR_STARTER_CHOSEN_SILVER SPECIES_TOTODILE

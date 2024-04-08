@@ -7617,7 +7617,7 @@ const struct TrainerMonNoItemDefaultMoves sParty_RocketScientist4[] = {
 const struct TrainerMonItemCustomMoves sParty_ChallengerJoey1[] = {
     {
         .iv = 115,
-        .lvl = 100,
+        .lvl = 85,
         .heldItem = ITEM_ROCKY_HELMET,
         .species = SPECIES_SABLEYE,
         .moves = {
@@ -7630,7 +7630,7 @@ const struct TrainerMonItemCustomMoves sParty_ChallengerJoey1[] = {
     },
     {
         .iv = 90,
-        .lvl = 100,
+        .lvl = 85,
         .heldItem = ITEM_FLAME_ORB,
         .species = SPECIES_RATICATE,
         .moves = {
@@ -7642,8 +7642,8 @@ const struct TrainerMonItemCustomMoves sParty_ChallengerJoey1[] = {
         .ability = 2
     },
     {
-        .iv = 32,
-        .lvl = 100,
+        .iv = 0,
+        .lvl = 85,
         .heldItem = ITEM_CHOICE_SCARF,
         .species = SPECIES_STARAPTOR,
         .moves = {
@@ -7656,7 +7656,7 @@ const struct TrainerMonItemCustomMoves sParty_ChallengerJoey1[] = {
     },
     {
         .iv = 33,
-        .lvl = 100,
+        .lvl = 85,
         .heldItem = ITEM_CHOICE_SPECS,
         .species = SPECIES_CHIMECHO,
         .moves = {
@@ -7668,8 +7668,8 @@ const struct TrainerMonItemCustomMoves sParty_ChallengerJoey1[] = {
         .ability = 1
     },
     {
-        .iv = 32,
-        .lvl = 100,
+        .iv = 0,
+        .lvl = 85,
         .heldItem = ITEM_LIFE_ORB,
         .species = SPECIES_TAUROS_BLAZE_P,
         .moves = {
@@ -7681,8 +7681,8 @@ const struct TrainerMonItemCustomMoves sParty_ChallengerJoey1[] = {
         .ability = 1
     },
     {
-        .iv = 92,
-        .lvl = 100,
+        .iv = 0,
+        .lvl = 85,
         .heldItem = ITEM_FIGHTINIUM_Z,
         .species = SPECIES_BRELOOM,
         .moves = {
@@ -7697,8 +7697,8 @@ const struct TrainerMonItemCustomMoves sParty_ChallengerJoey1[] = {
 
 const struct TrainerMonItemCustomMoves sParty_ChallengerSayo1[] = {
     {
-        .iv = 77,
-        .lvl = 100,
+        .iv = 0,
+        .lvl = 85,
         .heldItem = ITEM_LEFTOVERS,
         .species = SPECIES_CHERRIM,
         .moves = {
@@ -7710,8 +7710,8 @@ const struct TrainerMonItemCustomMoves sParty_ChallengerSayo1[] = {
         .ability = 1
     },
     {
-        .iv = 33,
-        .lvl = 100,
+        .iv = 0,
+        .lvl = 85,
         .heldItem = ITEM_SITRUS_BERRY,
         .species = SPECIES_MISMAGIUS,
         .moves = {
@@ -7724,7 +7724,7 @@ const struct TrainerMonItemCustomMoves sParty_ChallengerSayo1[] = {
     },
     {
         .iv = 32,
-        .lvl = 100,
+        .lvl = 85,
         .heldItem = ITEM_FLAME_ORB,
         .species = SPECIES_URSALUNA,
         .moves = {
@@ -7736,8 +7736,8 @@ const struct TrainerMonItemCustomMoves sParty_ChallengerSayo1[] = {
         .ability = 1
     },
     {
-        .iv = 33,
-        .lvl = 100,
+        .iv = 0,
+        .lvl = 85,
         .heldItem = ITEM_CHOICE_SCARF,
         .species = SPECIES_MASQUERAIN,
         .moves = {
@@ -7750,7 +7750,7 @@ const struct TrainerMonItemCustomMoves sParty_ChallengerSayo1[] = {
     },
     {
         .iv = 66,
-        .lvl = 100,
+        .lvl = 85,
         .heldItem = ITEM_ASSAULT_VEST,
         .species = SPECIES_AZUMARILL,
         .moves = {
@@ -7763,7 +7763,7 @@ const struct TrainerMonItemCustomMoves sParty_ChallengerSayo1[] = {
     },
     {
         .iv = 93,
-        .lvl = 100,
+        .lvl = 85,
         .heldItem = ITEM_CHOICE_SPECS,
         .species = SPECIES_ESPEON,
         .moves = {
@@ -7778,8 +7778,8 @@ const struct TrainerMonItemCustomMoves sParty_ChallengerSayo1[] = {
 
 const struct TrainerMonItemCustomMoves sParty_ChallengerLorelei1[] = {
     {
-        .iv = 31,
-        .lvl = 100,
+        .iv = 0,
+        .lvl = 85,
         .heldItem = ITEM_NEVER_MELT_ICE,
         .species = SPECIES_SANDSLASH,
         .moves = {
@@ -7792,7 +7792,7 @@ const struct TrainerMonItemCustomMoves sParty_ChallengerLorelei1[] = {
     },
     {
         .iv = 93,
-        .lvl = 100,
+        .lvl = 85,
         .heldItem = ITEM_CHOICE_SCARF,
         .species = SPECIES_FROSLASS,
         .moves = {
@@ -7805,7 +7805,7 @@ const struct TrainerMonItemCustomMoves sParty_ChallengerLorelei1[] = {
     },
     {
         .iv = 41,
-        .lvl = 100,
+        .lvl = 85,
         .heldItem = ITEM_CHESTO_BERRY,
         .species = SPECIES_LAPRAS,
         .moves = {
@@ -7817,8 +7817,8 @@ const struct TrainerMonItemCustomMoves sParty_ChallengerLorelei1[] = {
         .ability = 1
     },
     {
-        .iv = 93,
-        .lvl = 100,
+        .iv = 0,
+        .lvl = 85,
         .heldItem = ITEM_CHOICE_SPECS,
         .species = SPECIES_GLACEON,
         .moves = {
@@ -7830,8 +7830,8 @@ const struct TrainerMonItemCustomMoves sParty_ChallengerLorelei1[] = {
         .ability = 0
     },
     {
-        .iv = 107,
-        .lvl = 100,
+        .iv = 0,
+        .lvl = 85,
         .heldItem = ITEM_ICIUM_Z,
         .species = SPECIES_GLALIE,
         .moves = {
@@ -7844,7 +7844,7 @@ const struct TrainerMonItemCustomMoves sParty_ChallengerLorelei1[] = {
     },
     {
         .iv = 33,
-        .lvl = 100,
+        .lvl = 85,
         .heldItem = ITEM_LEFTOVERS,
         .species = SPECIES_MR_RIME,
         .moves = {
@@ -7859,8 +7859,8 @@ const struct TrainerMonItemCustomMoves sParty_ChallengerLorelei1[] = {
 
 const struct TrainerMonItemCustomMoves sParty_ChallengerClair1[] = {
     {
-        .iv = 33,
-        .lvl = 100,
+        .iv = 0,
+        .lvl = 85,
         .heldItem = ITEM_LIFE_ORB,
         .species = SPECIES_AMPHAROS,
         .moves = {
@@ -7872,8 +7872,8 @@ const struct TrainerMonItemCustomMoves sParty_ChallengerClair1[] = {
         .ability = 1
     },
     {
-        .iv = 74,
-        .lvl = 100,
+        .iv = 0,
+        .lvl = 85,
         .heldItem = ITEM_LEFTOVERS,
         .species = SPECIES_AGGRON,
         .moves = {
@@ -7886,7 +7886,7 @@ const struct TrainerMonItemCustomMoves sParty_ChallengerClair1[] = {
     },
     {
         .iv = 91,
-        .lvl = 100,
+        .lvl = 85,
         .heldItem = ITEM_CHESTO_BERRY,
         .species = SPECIES_ANNIHILAPE,
         .moves = {
@@ -7899,7 +7899,7 @@ const struct TrainerMonItemCustomMoves sParty_ChallengerClair1[] = {
     },
     {
         .iv = 33,
-        .lvl = 100,
+        .lvl = 85,
         .heldItem = ITEM_CHOICE_SPECS,
         .species = SPECIES_KINGDRA,
         .moves = {
@@ -7911,8 +7911,8 @@ const struct TrainerMonItemCustomMoves sParty_ChallengerClair1[] = {
         .ability = 1
     },
     {
-        .iv = 46,
-        .lvl = 100,
+        .iv = 0,
+        .lvl = 85,
         .heldItem = ITEM_ASSAULT_VEST,
         .species = SPECIES_SALAMENCE,
         .moves = {
@@ -7925,7 +7925,7 @@ const struct TrainerMonItemCustomMoves sParty_ChallengerClair1[] = {
     },
     {
         .iv = 32,
-        .lvl = 100,
+        .lvl = 85,
         .heldItem = ITEM_GYARADOSITE,
         .species = SPECIES_GYARADOS,
         .moves = {
@@ -7940,8 +7940,8 @@ const struct TrainerMonItemCustomMoves sParty_ChallengerClair1[] = {
 
 const struct TrainerMonItemCustomMoves sParty_ChallengerElm1Typhlosion[] = {
     {
-        .iv = 32,
-        .lvl = 100,
+        .iv = 0,
+        .lvl = 85,
         .heldItem = ITEM_LIFE_ORB,
         .species = SPECIES_AMBIPOM,
         .moves = {
@@ -7954,7 +7954,7 @@ const struct TrainerMonItemCustomMoves sParty_ChallengerElm1Typhlosion[] = {
     },
     {
         .iv = 71,
-        .lvl = 100,
+        .lvl = 85,
         .heldItem = ITEM_ROCKY_HELMET,
         .species = SPECIES_SKARMORY,
         .moves = {
@@ -7967,7 +7967,7 @@ const struct TrainerMonItemCustomMoves sParty_ChallengerElm1Typhlosion[] = {
     },
     {
         .iv = 35,
-        .lvl = 100,
+        .lvl = 85,
         .heldItem = ITEM_LEFTOVERS,
         .species = SPECIES_WYRDEER,
         .moves = {
@@ -7979,8 +7979,8 @@ const struct TrainerMonItemCustomMoves sParty_ChallengerElm1Typhlosion[] = {
         .ability = 1
     },
     {
-        .iv = 38,
-        .lvl = 100,
+        .iv = 0,
+        .lvl = 85,
         .heldItem = ITEM_SITRUS_BERRY,
         .species = SPECIES_FARIGIRAF,
         .moves = {
@@ -7992,8 +7992,8 @@ const struct TrainerMonItemCustomMoves sParty_ChallengerElm1Typhlosion[] = {
         .ability = 1
     },
     {
-        .iv = 55,
-        .lvl = 100,
+        .iv = 0,
+        .lvl = 85,
         .heldItem = ITEM_CHOICE_SPECS,
         .species = SPECIES_TOGEKISS,
         .moves = {
@@ -8006,7 +8006,7 @@ const struct TrainerMonItemCustomMoves sParty_ChallengerElm1Typhlosion[] = {
     },
     {
         .iv = 93,
-        .lvl = 100,
+        .lvl = 85,
         .heldItem = ITEM_TYPHLOSIONITE,
         .species = SPECIES_TYPHLOSION,
         .moves = {
@@ -8021,8 +8021,8 @@ const struct TrainerMonItemCustomMoves sParty_ChallengerElm1Typhlosion[] = {
 
 const struct TrainerMonItemCustomMoves sParty_ChallengerElm1Feraligatr[] = {
     {
-        .iv = 32,
-        .lvl = 100,
+        .iv = 0,
+        .lvl = 85,
         .heldItem = ITEM_LIFE_ORB,
         .species = SPECIES_AMBIPOM,
         .moves = {
@@ -8035,7 +8035,7 @@ const struct TrainerMonItemCustomMoves sParty_ChallengerElm1Feraligatr[] = {
     },
     {
         .iv = 71,
-        .lvl = 100,
+        .lvl = 85,
         .heldItem = ITEM_ROCKY_HELMET,
         .species = SPECIES_SKARMORY,
         .moves = {
@@ -8048,7 +8048,7 @@ const struct TrainerMonItemCustomMoves sParty_ChallengerElm1Feraligatr[] = {
     },
     {
         .iv = 35,
-        .lvl = 100,
+        .lvl = 85,
         .heldItem = ITEM_LEFTOVERS,
         .species = SPECIES_WYRDEER,
         .moves = {
@@ -8060,8 +8060,8 @@ const struct TrainerMonItemCustomMoves sParty_ChallengerElm1Feraligatr[] = {
         .ability = 1
     },
     {
-        .iv = 38,
-        .lvl = 100,
+        .iv = 0,
+        .lvl = 85,
         .heldItem = ITEM_SITRUS_BERRY,
         .species = SPECIES_FARIGIRAF,
         .moves = {
@@ -8073,8 +8073,8 @@ const struct TrainerMonItemCustomMoves sParty_ChallengerElm1Feraligatr[] = {
         .ability = 1
     },
     {
-        .iv = 55,
-        .lvl = 100,
+        .iv = 0,
+        .lvl = 85,
         .heldItem = ITEM_CHOICE_SPECS,
         .species = SPECIES_TOGEKISS,
         .moves = {
@@ -8087,7 +8087,7 @@ const struct TrainerMonItemCustomMoves sParty_ChallengerElm1Feraligatr[] = {
     },
     {
         .iv = 32,
-        .lvl = 100,
+        .lvl = 85,
         .heldItem = ITEM_FERALIGATITE,
         .species = SPECIES_FERALIGATR,
         .moves = {
@@ -8102,8 +8102,8 @@ const struct TrainerMonItemCustomMoves sParty_ChallengerElm1Feraligatr[] = {
 
 const struct TrainerMonItemCustomMoves sParty_ChallengerElm1Meganium[] = {
     {
-        .iv = 32,
-        .lvl = 100,
+        .iv = 0,
+        .lvl = 85,
         .heldItem = ITEM_LIFE_ORB,
         .species = SPECIES_AMBIPOM,
         .moves = {
@@ -8116,7 +8116,7 @@ const struct TrainerMonItemCustomMoves sParty_ChallengerElm1Meganium[] = {
     },
     {
         .iv = 71,
-        .lvl = 100,
+        .lvl = 85,
         .heldItem = ITEM_ROCKY_HELMET,
         .species = SPECIES_SKARMORY,
         .moves = {
@@ -8129,7 +8129,7 @@ const struct TrainerMonItemCustomMoves sParty_ChallengerElm1Meganium[] = {
     },
     {
         .iv = 35,
-        .lvl = 100,
+        .lvl = 85,
         .heldItem = ITEM_LEFTOVERS,
         .species = SPECIES_WYRDEER,
         .moves = {
@@ -8141,8 +8141,8 @@ const struct TrainerMonItemCustomMoves sParty_ChallengerElm1Meganium[] = {
         .ability = 1
     },
     {
-        .iv = 38,
-        .lvl = 100,
+        .iv = 0,
+        .lvl = 85,
         .heldItem = ITEM_SITRUS_BERRY,
         .species = SPECIES_FARIGIRAF,
         .moves = {
@@ -8154,8 +8154,8 @@ const struct TrainerMonItemCustomMoves sParty_ChallengerElm1Meganium[] = {
         .ability = 1
     },
     {
-        .iv = 55,
-        .lvl = 100,
+        .iv = 0,
+        .lvl = 85,
         .heldItem = ITEM_CHOICE_SPECS,
         .species = SPECIES_TOGEKISS,
         .moves = {
@@ -8168,7 +8168,7 @@ const struct TrainerMonItemCustomMoves sParty_ChallengerElm1Meganium[] = {
     },
     {
         .iv = 103,
-        .lvl = 100,
+        .lvl = 85,
         .heldItem = ITEM_MEGANIUMITE,
         .species = SPECIES_MEGANIUM,
         .moves = {
@@ -8412,6 +8412,249 @@ const struct TrainerMonItemCustomMoves sParty_RivalSilver5Meganium[] = {
     {
         .iv = 101,
         .lvl = 65,
+        .heldItem = ITEM_MEGANIUMITE,
+        .species = SPECIES_MEGANIUM,
+        .moves = {
+            MOVE_SHINING_BEAM,
+            MOVE_FLORAL_STREAM,
+            MOVE_SYNTHESIS,
+            MOVE_REFLECT,
+        },
+        .ability = 0
+    },
+};
+
+const struct TrainerMonItemCustomMoves sParty_ChallengerSilver5Typhlosion[] = {
+    {
+        .iv = 32,
+        .lvl = 85,
+        .heldItem = ITEM_CHOICE_BAND,
+        .species = SPECIES_WEAVILE,
+        .moves = {
+            MOVE_NIGHTSLASH,
+            MOVE_ICICLECRASH,
+            MOVE_AGILITY,
+            MOVE_CRUSHCLAW,
+        },
+        .ability = 1
+    },
+    {
+        .iv = 93,
+        .lvl = 85,
+        .heldItem = ITEM_CHOICE_SPECS,
+        .species = SPECIES_ALAKAZAM,
+        .moves = {
+            MOVE_NASTYPLOT,
+            MOVE_PSYCHIC,
+            MOVE_DAZZLINGGLEAM,
+            MOVE_FOCUSBLAST,
+        },
+        .ability = 0
+    },
+    {
+        .iv = 0,
+        .lvl = 85,
+        .heldItem = ITEM_BLACK_SLUDGE,
+        .species = SPECIES_CROBAT,
+        .moves = {
+            MOVE_ACROBATICS,
+            MOVE_TOXIC,
+            MOVE_CROSSPOISON,
+            MOVE_ROOST,
+        },
+        .ability = 0
+    },
+    {
+        .iv = 0,
+        .lvl = 85,
+        .heldItem = ITEM_LEFTOVERS,
+        .species = SPECIES_GENGAR,
+        .moves = {
+            MOVE_WILLOWISP,
+            MOVE_SHADOWBALL,
+            MOVE_FOCUSBLAST,
+            MOVE_SUBSTITUTE,
+        },
+        .ability = 0
+    },
+    {
+        .iv = 0,
+        .lvl = 85,
+        .heldItem = ITEM_SITRUS_BERRY,
+        .species = SPECIES_ELECTIVIRE,
+        .moves = {
+            MOVE_ELECTRICTERRAIN,
+            MOVE_WILDCHARGE,
+            MOVE_ICEPUNCH,
+            MOVE_THUNDERWAVE,
+        },
+        .ability = 1
+    },
+    {
+        .iv = 93,
+        .lvl = 65,
+        .heldItem = ITEM_TYPHLOSIONITE,
+        .species = SPECIES_TYPHLOSION,
+        .moves = {
+            MOVE_MAGMA_GEYSER,
+            MOVE_SOLARBEAM,
+            MOVE_SHARP_FLINT,
+            MOVE_NASTYPLOT,
+        },
+        .ability = 0
+    },
+};
+
+const struct TrainerMonItemCustomMoves sParty_ChallengerSilver5Feraligatr[] = {
+    {
+        .iv = 32,
+        .lvl = 85,
+        .heldItem = ITEM_CHOICE_BAND,
+        .species = SPECIES_WEAVILE,
+        .moves = {
+            MOVE_NIGHTSLASH,
+            MOVE_ICICLECRASH,
+            MOVE_AGILITY,
+            MOVE_CRUSHCLAW,
+        },
+        .ability = 1
+    },
+    {
+        .iv = 93,
+        .lvl = 85,
+        .heldItem = ITEM_CHOICE_SPECS,
+        .species = SPECIES_ALAKAZAM,
+        .moves = {
+            MOVE_NASTYPLOT,
+            MOVE_PSYCHIC,
+            MOVE_DAZZLINGGLEAM,
+            MOVE_FOCUSBLAST,
+        },
+        .ability = 0
+    },
+    {
+        .iv = 0,
+        .lvl = 85,
+        .heldItem = ITEM_BLACK_SLUDGE,
+        .species = SPECIES_CROBAT,
+        .moves = {
+            MOVE_ACROBATICS,
+            MOVE_TOXIC,
+            MOVE_CROSSPOISON,
+            MOVE_ROOST,
+        },
+        .ability = 0
+    },
+    {
+        .iv = 0,
+        .lvl = 85,
+        .heldItem = ITEM_LEFTOVERS,
+        .species = SPECIES_GENGAR,
+        .moves = {
+            MOVE_WILLOWISP,
+            MOVE_SHADOWBALL,
+            MOVE_FOCUSBLAST,
+            MOVE_SUBSTITUTE,
+        },
+        .ability = 0
+    },
+    {
+        .iv = 0,
+        .lvl = 85,
+        .heldItem = ITEM_SITRUS_BERRY,
+        .species = SPECIES_ELECTIVIRE,
+        .moves = {
+            MOVE_ELECTRICTERRAIN,
+            MOVE_WILDCHARGE,
+            MOVE_ICEPUNCH,
+            MOVE_THUNDERWAVE,
+        },
+        .ability = 1
+    },
+    {
+        .iv = 101,
+        .lvl = 85,
+        .heldItem = ITEM_FERALIGATITE,
+        .species = SPECIES_FERALIGATR,
+        .moves = {
+            MOVE_AQUA_SCALES,
+            MOVE_DRAGON_CRUSH,
+            MOVE_SCREECH,
+            MOVE_IRONTAIL,
+        },
+        .ability = 0
+    },
+};
+
+const struct TrainerMonItemCustomMoves sParty_ChallengerSilver5Meganium[] = {
+    {
+        .iv = 32,
+        .lvl = 85,
+        .heldItem = ITEM_CHOICE_BAND,
+        .species = SPECIES_WEAVILE,
+        .moves = {
+            MOVE_NIGHTSLASH,
+            MOVE_ICICLECRASH, 
+            MOVE_AGILITY,
+            MOVE_CRUSHCLAW,
+        },
+        .ability = 1
+    },
+    {
+        .iv = 93,
+        .lvl = 85,
+        .heldItem = ITEM_CHOICE_SPECS,
+        .species = SPECIES_ALAKAZAM,
+        .moves = {
+            MOVE_NASTYPLOT,
+            MOVE_PSYCHIC,
+            MOVE_DAZZLINGGLEAM,
+            MOVE_FOCUSBLAST,
+        },
+        .ability = 0
+    },
+    {
+        .iv = 0,
+        .lvl = 85,
+        .heldItem = ITEM_BLACK_SLUDGE,
+        .species = SPECIES_CROBAT,
+        .moves = {
+            MOVE_ACROBATICS,
+            MOVE_TOXIC,
+            MOVE_CROSSPOISON,
+            MOVE_ROOST,
+        },
+        .ability = 0
+    },
+    {
+        .iv = 0,
+        .lvl = 85,
+        .heldItem = ITEM_LEFTOVERS,
+        .species = SPECIES_GENGAR,
+        .moves = {
+            MOVE_WILLOWISP,
+            MOVE_SHADOWBALL,
+            MOVE_FOCUSBLAST,
+            MOVE_SUBSTITUTE,
+        },
+        .ability = 0
+    },
+    {
+        .iv = 0,
+        .lvl = 85,
+        .heldItem = ITEM_SITRUS_BERRY,
+        .species = SPECIES_ELECTIVIRE,
+        .moves = {
+            MOVE_ELECTRICTERRAIN,
+            MOVE_WILDCHARGE,
+            MOVE_ICEPUNCH,
+            MOVE_THUNDERWAVE,
+        },
+        .ability = 1
+    },
+    {
+        .iv = 101,
+        .lvl = 85,
         .heldItem = ITEM_MEGANIUMITE,
         .species = SPECIES_MEGANIUM,
         .moves = {
@@ -13240,8 +13483,8 @@ const struct Trainer gTrainers[] = {
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_MEGA_RING},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_SETUP_FIRST_TURN | AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_CHECK_GOOD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
-        .partySize = NELEMS(sParty_RivalSilver5Typhlosion),
-        .party = {.ItemCustomMoves = sParty_RivalSilver5Typhlosion}
+        .partySize = NELEMS(sParty_ChallengerSilver5Typhlosion),
+        .party = {.ItemCustomMoves = sParty_ChallengerSilver5Typhlosion}
     },
 
     [TRAINER_CHALLENGER_SILVER_FERALIGATR] = {
@@ -13253,8 +13496,8 @@ const struct Trainer gTrainers[] = {
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_MEGA_RING},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_SETUP_FIRST_TURN | AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_CHECK_GOOD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
-        .partySize = NELEMS(sParty_RivalSilver5Feraligatr),
-        .party = {.ItemCustomMoves = sParty_RivalSilver5Feraligatr}
+        .partySize = NELEMS(sParty_ChallengerSilver5Feraligatr),
+        .party = {.ItemCustomMoves = sParty_ChallengerSilver5Feraligatr}
     },
 
     [TRAINER_CHALLENGER_SILVER_MEGANIUM] = {
@@ -13266,8 +13509,8 @@ const struct Trainer gTrainers[] = {
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_MEGA_RING},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_SETUP_FIRST_TURN | AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_CHECK_GOOD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
-        .partySize = NELEMS(sParty_RivalSilver5Meganium),
-        .party = {.ItemCustomMoves = sParty_RivalSilver5Meganium}
+        .partySize = NELEMS(sParty_ChallengerSilver5Meganium),
+        .party = {.ItemCustomMoves = sParty_ChallengerSilver5Meganium}
     },
 
     [TRAINER_CHALLENGER_JOEY] = {

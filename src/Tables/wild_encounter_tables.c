@@ -291,9 +291,9 @@ const struct WildPokemon gRoute36_Grotto_LandMonsNight[] =
     {9, 11, SPECIES_SHUPPET},
     {8, 10, SPECIES_SHROOMISH},
     {8, 10, SPECIES_SHROOMISH},
-    {10, 12, SPECIES_ZANGOOSE},
+    {10, 12, SPECIES_SEVIPER},
     {10, 12, SPECIES_MIME_JR},
-    {10, 12, SPECIES_ZANGOOSE},
+    {10, 12, SPECIES_SEVIPER},
     {10, 12, SPECIES_MIME_JR},
 };
 
@@ -568,9 +568,9 @@ const struct WildPokemonInfo gIcePath_1F_LandMonsInfoNight = {8,gIcePath_1F_Land
 const struct WildPokemon gIcePath_2F_LandMonsNight[] =
 
 {
-    {35, 39, SPECIES_GOLEM},
+    {35, 39, SPECIES_GOLEM_A},
     {35, 39, SPECIES_CROBAT},
-    {35, 39, SPECIES_GOLEM},
+    {35, 39, SPECIES_GOLEM_A},
     {35, 39, SPECIES_CROBAT},
     {36, 40, SPECIES_ABOMASNOW},
     {36, 40, SPECIES_DUGTRIO},
@@ -587,9 +587,9 @@ const struct WildPokemonInfo gIcePath_2F_LandMonsInfoNight = {8,gIcePath_2F_Land
 const struct WildPokemon gIcePath_3F_LandMonsNight[] =
 
 {
-    {35, 39, SPECIES_GOLEM},
+    {35, 39, SPECIES_GOLEM_A},
     {35, 39, SPECIES_CROBAT},
-    {35, 39, SPECIES_GOLEM},
+    {35, 39, SPECIES_GOLEM_A},
     {35, 39, SPECIES_CROBAT},
     {36, 40, SPECIES_ABOMASNOW},
     {36, 40, SPECIES_DUGTRIO_A},

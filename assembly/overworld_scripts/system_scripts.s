@@ -654,7 +654,7 @@ EventScript_UseWaterfall_SkipMsg:
 	setvar 0x8003 0x0
 	setvar 0x8004 0x0
 	setvar 0x8005 SPECIES_SEAKING_RIDE
-	setanimation 0x0 0xF
+	setanimation 0x0 0x0
 	doanimation 0x2B
 	callasm FollowMe_WarpSetEnd
 	waitfieldeffect 0x2B
@@ -739,7 +739,7 @@ EventScript_UseSurf_SkipAsk:
 	setvar 0x8003 0x0
 	setvar 0x8004 0x0
 	setvar 0x8005 SPECIES_SEAKING_RIDE
-	setanimation 0x0 0xF
+	setanimation 0x0 0x0
 	doanimation 0x9
 	waitfieldeffect 0x9
 	setvar 0x8003 0x0
@@ -944,7 +944,7 @@ EventScript_UseFlash:
 	setvar 0x8003 0x0
 	setvar 0x8004 0x0
 	setvar 0x8005 SPECIES_ABRA_RIDE
-	setanimation 0x0 0xF
+	setanimation 0x0 0x0
 	doanimation 0x28
 	waitstate
 	msgbox gText_BrightRideFlash MSG_NORMAL
@@ -1235,7 +1235,7 @@ SystemScript_StopZooming:
 .equ EventScript_CableClub_AbortLink, 0x81BB82F
 EventScript_CableClub_WirelessTrade:
     msgbox gText_LinkNurse_NoTradingUseUnboundCloud MSG_FACE
-    goto EventScript_CableClub_AbortLink
+    end
 
 @;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
@@ -1339,3 +1339,10 @@ EventScript_startgame_RandomizerOn:
 EventScript_startgame_Unsupported:
 	msgbox gText_startgame_String5 MSG_KEEPOPEN
 	goto EventScript_startgame_Unsupported
+
+@;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+.global EventScript_startgame_Version
+EventScript_startgame_Version:
+	msgbox gText__startgame_String6 MSG_SIGN
+	end
+	

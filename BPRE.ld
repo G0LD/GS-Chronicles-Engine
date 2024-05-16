@@ -2129,6 +2129,11 @@ sInGameTradeMailMessages = 0x826d1a8;
 ItemIsMail = 0x80980f8 | 1;
 gLinkPartnerMail = 0x2031CCC;
 
+/* Party menu options */
+Task_InitMoveRelearnerMenu = 0x80E4660 | 1;
+CB2_ReturnToPartyMenuFromSummaryScreen = 0x8122DBC | 1;
+DisplayMoveTutorMenu = 0x80e4634 | 1;
+
 /* IO */
 BG3HOFS = 0x400001C;
 DMA0_SRC = 0x40000B0;

@@ -10,6 +10,12 @@ Move
 #org @gText_MoveItemWhere
 Move to where?
 
+#org @gMenuText_Nickname
+Nickname
+
+#org @gMenuText_Relearn
+Relearn
+
 #org @gText_FieldMoveDesc_RockClimb
 Scale rocky cliffs.
 

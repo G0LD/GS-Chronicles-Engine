@@ -7,7 +7,8 @@
         "defines.h": "c",
         "defines_battle.h": "c",
         "trainer_classes.h": "c",
-        "string_util.h": "c"
+        "string_util.h": "c",
+        "pokemon_summary_screen.h": "c"
     },
     "C_Cpp.errorSquiggles": "enabled"
 }

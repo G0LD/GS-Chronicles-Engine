@@ -11,6 +11,7 @@ npc 6 5 0 EventScript_RivalFemaleVioletPC
 npc 14 4 0 EventScript_Definitive
 npc 3 35 11 EventScript_Randomevent01
 npc 1 94 6 EventScript_RandomEvent02
+npc 9 1 5 EventScript_CableClub_WirelessTrade
 
 ##Trigger Scripts
 tile 3 24 0 EventScript_RivalRoute34_0XC16B40
@@ -27,6 +28,10 @@ tile 1 79 1 EventScript_LeagueTitleDefense
 tile 1 79 2 EventScript_LeagueTitleDefense
 
 ##Map Scripts
+
+##Sign Scripts
+sign 26 1 0 EventScript_startgame_Version
+sign 26 1 1 EventScript_startgame_Version
 
 ##Debugging Scripts
 ##sign 4 1 2 SystemScript_Debugger

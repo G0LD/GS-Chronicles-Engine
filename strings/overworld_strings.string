@@ -125,13 +125,16 @@ The water is a murky brown[.]
 A wild Seaking helped out by\nusing the Wave Ride!
 
 #org @gText_LinkNurse_NoTradingUseUnboundCloud
-I'm sorry, but trading is no longer\navailable from the Cable Club.\pPlease use Unbound Cloud if you wish\nto trade Pok\emon.
+Were you looking for someone\nto trade your Pokémon?\pI'm sorry, but trading is no longer\navailable from the Cable Club.\pPlease use Unbound Cloud if you wish\nto trade Pok\emon.\pVisit [RED]unboundcloud.com[BLACK] to use\nUnbound Cloud trading.
 
 #org @gText_NON_SURFABLE_WATER
 There are some things I still\nneed to do before taking\lthis route.
 
 #org @gText_startgame_String1
-Pokémon GS Chronicles\nBeta v2.7.1 - Build date 05/25/23\pBefore you start the game, Are you\nplaying this game using No\$GBA,\lVisualBoy Advance, JohnGBA, GPemu\lor Eclipse emulator?
+Pokémon GS Chronicles\nBeta v2.7.3 - Build date 05/12/24\pBefore you start the game, Are you\nplaying this game using No\$GBA,\lVisualBoy Advance, JohnGBA, GPemu\lor Eclipse emulator?
+
+#org @gText__startgame_String6
+A very clean window with a note\nattached to it that reads:\pPokémon GS Chronicles v2.7.3\nBuild: 05/12/24 23:03:54 GMT -6
 
 #org @gText_startgame_String4
 You can continue playing. Would\nyou like to randomize the Pokémon\lspecies generated?\pThis will create random Pokémon\nwith random abilities and movesets\pRandomize species?

@@ -321,6 +321,8 @@ SystemScript_Whiteout 0807f5cc
 EventScript_RivalCianwood 089a5fa7
 EventScript_startgame 08a80ff3
 EventScript_startgame 08a81006
+gText_GSC_Version 0800C8E4
+gText_GSC_Version 0800C9B4
 
 #Remove Link Trading
 EventScript_CableClub_WirelessTrade 81BB47D

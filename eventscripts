@@ -1,17 +1,22 @@
 ##npc scripts
-npc 10 5 6 EventScript_NatureChanger
-npc 10 5 9 EventScript_Hypertrainer
-npc 10 5 7 EventScript_Goldenrod_Haircut_guy
+npc 10 5 6  EventScript_NatureChanger
+npc 10 5 9  EventScript_Hypertrainer
+npc 10 5 7  EventScript_Goldenrod_Haircut_guy
 npc 10 5 10 EventScript_itemseller
-npc 19 0 1 EventScript_bugcatching_guard
-npc 23 0 1 EventScript_bugcatching_guard
-npc 10 0 5 EventScript_mart_Start
-npc 6 5 3 EventScript_RivalMaleVioletPC
-npc 6 5 0 EventScript_RivalFemaleVioletPC
-npc 14 4 0 EventScript_Definitive
+npc 19 0 1  EventScript_bugcatching_guard
+npc 23 0 1  EventScript_bugcatching_guard
+npc 10 0 5  EventScript_mart_Start
+npc 6 5 3   EventScript_RivalMaleVioletPC
+npc 6 5 0   EventScript_RivalFemaleVioletPC
+npc 14 4 0  EventScript_Definitive
 npc 3 35 11 EventScript_Randomevent01
-npc 1 94 6 EventScript_RandomEvent02
-npc 9 1 5 EventScript_CableClub_WirelessTrade
+npc 1 94 6  EventScript_RandomEvent02
+npc 9 1 5   EventScript_CableClub_WirelessTrade
+npc 1 75 0  EventScript_E4Rematches_Will
+npc 1 76 0  EventScript_E4Rematches_Koga
+npc 1 77 0  EventScript_E4Rematches_Aile
+npc 1 78 0  EventScript_E4Rematches_Karen
+npc 9 0 0   EventScript_Randomevent03
 
 ##Trigger Scripts
 tile 3 24 0 EventScript_RivalRoute34_0XC16B40

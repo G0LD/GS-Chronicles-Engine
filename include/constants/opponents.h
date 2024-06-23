@@ -351,11 +351,11 @@
 #define TRAINER_ACE_TRAINER_F_ALEXIA             346
 #define TRAINER_ACE_TRAINER_F_RILEY              347
 #define TRAINER_ACE_TRAINER_M_ANDRIY             348
-#define TRAINER_HIKER_DEREK                      349/*FREE SLOTS START HERE
-#define TRAINER_LEADER_GIOVANNI                  350
-#define TRAINER_TEAM_ROCKET_GRUNT                351
-#define TRAINER_TEAM_ROCKET_GRUNT_2              352
-#define TRAINER_TEAM_ROCKET_GRUNT_3              353
+#define TRAINER_HIKER_DEREK                      349
+#define TRAINER_ELITE_FOUR_AILE_2                350
+#define TRAINER_ELITE_FOUR_WILL_2                351
+#define TRAINER_ELITE_FOUR_KOGA_2                352
+#define TRAINER_ELITE_FOUR_KAREN_2               353/*FREE SLOTS START HERE
 #define TRAINER_TEAM_ROCKET_GRUNT_4              354
 #define TRAINER_TEAM_ROCKET_GRUNT_5              355
 #define TRAINER_TEAM_ROCKET_GRUNT_6              356

@@ -7,6 +7,7 @@
 
 .equ FLAG_SCALE_TRAINER_LEVELS, 0x140E
 .equ VAR_STARTER_CHOSEN_SILVER, 0x4060
+.equ VAR_TITLE_DEFENSE_VICTORIES, 0x4029
 	
 	@---------------
 EventScript_LeagueTitleDefense:
@@ -196,6 +197,9 @@ EventScript_LeagueTitleDefense_Ending:
     hidesprite 0x5
     sound 0x9
     pause 0x16
+    compare VAR_TITLE_DEFENSE_VICTORIES 0xFFFF
+    if equal _goto EventScript_LeagueTitleDefense_None @If value is 0xFFFF, don't add anything. Prevents data overflow.
+    addvar VAR_TITLE_DEFENSE_VICTORIES 0x1
     applymovement PLAYER EventScript_LeagueTitleDefense_Move8
     warp 0x1 0x50 0xFF 0x5 0x10
     end
@@ -215,6 +219,14 @@ EventScript_LeagueTitleDefense_EndingElm:
     hidesprite 0x5
     sound 0x9
     pause 0x16
+    compare VAR_TITLE_DEFENSE_VICTORIES 0xFFFF
+    if equal _goto EventScript_LeagueTitleDefense_None @If value is 0xFFFF, don't add anything. Prevents data overflow.
+    addvar VAR_TITLE_DEFENSE_VICTORIES 0x1
+    applymovement PLAYER EventScript_LeagueTitleDefense_Move8
+    warp 0x1 0x50 0xFF 0x5 0x10
+    end
+
+EventScript_LeagueTitleDefense_None:
     applymovement PLAYER EventScript_LeagueTitleDefense_Move8
     warp 0x1 0x50 0xFF 0x5 0x10
     end

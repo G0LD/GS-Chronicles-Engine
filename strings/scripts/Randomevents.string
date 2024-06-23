@@ -34,3 +34,17 @@ M[.]my shadow is moving by itself!\pW[.]watch out!
 #org @gText_RandomEvent02_String8
 I feel relieved[.]\pI never imagined a Pokémon was\nhiding in my shadow.\pThat Pokémon didn't seem to be\nmean. Does it mean it just wanted\lme to guide it to whoever was\lcarrying that glowing feather?\pWhatever[.]\pEven if it wasn't a mean creature,\nit put me through a lot of pain\land torment for days.\pMy only desire is to never see\nthat creature again.\pAnd you[.]\pI don't know who you are, but I\nwant you to stay away and never\ldare to talk to me again.
 
+#org @gText_RandomEvent03_String1
+Are you collecting Gym badges?\pYou must be some kind of strong\ntrainer. Don't you?\pI think you seem strong enough\nto even become the Champion\lof Johto.\pIf you ever manage to become the\nChampion more than one time, then\lI'll consider giving you my most\lprecious possession.
+
+#org @gText_RandomEvent03_String2
+Amazing! You truly became the\nChampion of Johto!\pI didn't know you were that\nstrong, I must say.\pI'm a man of my word, and I'll\nkeep the promise:\pDefend your Champion title at\nleast two times at the Pokémon\lLeague, and I'll reward you\lwith my most precious possession.\pFeeling afraid? Even a strong\ntrainer, like the dragon tamer\lLance wouldn't dare to do that.
+
+#org @gText_RandomEvent03_String3
+A promise is a promise. I hope you\nencounter so many shiny Pokémon,\lthat you would fill the entire\lPokémon with shiny Pokémon only.
+
+#org @gText_RandomEvent03_String4
+You gotta be kidding me, right?\nHow come you managed to defend\lyour Champion title more than one,\lbut two times!\pIt's impossible! No one ever has\never been able to do that, not\leven Professor Oak when he was\lthe Champion of the Indigo League!\pWell. I'm not a liar, so here's my\nmost precious possession.
+
+#org @gText_RandomEvent03_String5
+This little thing is an amulet I\ngot from a weird old lady at\lSlateport City in Hoenn.\pIt attracts shiny Pokémon wherever\nyou go. I don't know how, but this\lthing works.\pThat's it I guess. Next time\nI'll think about an even more\lelaborated challenge before\lgiving my stuff out!

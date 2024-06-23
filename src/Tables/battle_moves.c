@@ -12049,7 +12049,7 @@ const struct BattleMove gBattleMoves[] =
 	[MOVE_DIRECLAW] =
 	{
 		.effect = EFFECT_TRI_ATTACK,
-		.power = 60,
+		.power = 80,
 		.type = TYPE_POISON,
 		.accuracy = 100,
 		.pp = 15,
@@ -12057,7 +12057,7 @@ const struct BattleMove gBattleMoves[] =
 		.target = MOVE_TARGET_SELECTED,
 		.priority = 0,
 		.flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED,
-		.z_move_power = 120,
+		.z_move_power = 140,
 		.split = SPLIT_PHYSICAL,
 		.z_move_effect = 0
 	},
@@ -15741,7 +15741,7 @@ const u8 gDynamaxMovePowers[MOVES_COUNT] =
 	[MOVE_DRAGONENERGY] = 150,
 	[MOVE_ASTRALBARRAGE] = 140,
 	[MOVE_GLACIALLANCE] = 140,
-	[MOVE_DIRECLAW] = 110,
+	[MOVE_DIRECLAW] = 130,
 	[MOVE_PSYSHIELDBASH] = 120,
 	[MOVE_MYSTICALPOWER] = 120,
 	#ifdef ACTUAL_PLA_MOVE_POWERS

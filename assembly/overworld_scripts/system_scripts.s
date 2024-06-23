@@ -1346,3 +1346,11 @@ EventScript_startgame_Version:
 	msgbox gText__startgame_String6 MSG_SIGN
 	end
 	
+@;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+.global EventScript_exit
+EventScript_exit:
+	special 0x127
+	msgbox gText_startgame_String5 MSG_KEEPOPEN
+	special 0x128
+	warpmuted 0x9 0x1 0xFF 0x11 0x13
+	end

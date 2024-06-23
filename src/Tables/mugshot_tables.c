@@ -21,8 +21,10 @@ tables to edit:
 const struct MugshotTable sPreBattleMugshotSprites[147] =
 {
 	[133] = {Ethan_MugshotTiles, Ethan_MugshotPal, 64 * 64 / 2, 0, -32},
+	[12] =  {Ethan_MugshotTiles, Ethan_MugshotPal, 64 * 64 / 2, 0, -32},
 	[135] = {Male_MugshotTiles, Male_MugshotPal, 64 * 64 / 2, 0, -32},
 	[134] = {Kris_MugshotTiles, Kris_MugshotPal, 64 * 64 / 2, 0, -32},
+	[11] =  {Kris_MugshotTiles, Kris_MugshotPal, 64 * 64 / 2, 0, -32},
 	[136] = {Female_MugshotTiles, Female_MugshotPal, 64 * 64 / 2, 0, -32},
 	[106] = {Silver_MugshotTiles, Silver_MugshotPal, 64 * 64 / 2, 0, -32},
 	[79]  = {Falkner_MugshotTiles, Falkner_MugshotPal, 64 * 64 / 2, 0, -32},

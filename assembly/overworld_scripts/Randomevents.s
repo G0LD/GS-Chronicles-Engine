@@ -79,3 +79,37 @@ EventScript_RandomEvent02_Snippet1:
 	fadescreen 0x0
 	release
 	end
+
+@---------------
+EventScript_Randomevent03:
+	lock
+	faceplayer
+	checkflag 0x1500
+	if equal _goto EventScript_Randomevent03_Snippet1
+	msgbox gText_RandomEvent03_String1 MSG_NORMAL
+	release
+	end
+
+EventScript_Randomevent03_Snippet1:
+	checkflag 0x305
+	if equal _goto  EventScript_Randomevent03_Snippet2
+	compare 0x4029 0x2
+	if greaterorequal _goto EventScript_Randomevent03_Snippet3
+	msgbox gText_RandomEvent03_String2 MSG_NORMAL
+	release
+	end
+	
+
+EventScript_Randomevent03_Snippet2:
+	msgbox gText_RandomEvent03_String3 MSG_NORMAL
+	release
+	end
+
+EventScript_Randomevent03_Snippet3:
+	msgbox gText_RandomEvent03_String4 MSG_KEEPOPEN
+	pause 0x10
+	giveitem ITEM_SHINY_CHARM 0x1 MSG_OBTAIN
+	msgbox gText_RandomEvent03_String5 MSG_NORMAL
+	setflag 0x305
+	release
+	end

@@ -2,7 +2,7 @@
 
 ##Tables
 gMoveDescriptions 080E5440
-gMoveDescriptions 08137BC8
+gMoveDescriptions 08137BCC
 gLongMoveNames 080BFAA4
 gLongMoveNames 08125BE4
 gLongMoveNames 08125CE0
@@ -103,7 +103,7 @@ gText_ItemPumpedMon 083FE424
 gText_AbilityBlocksHealBell 083FE484
 gText_AbilityCuredStatusProblem 083FE49C
 gText_BattleMenu 080EA760
-gText_UnknownLocation 08137618
+gText_UnknownLocation 0813761C
 
 sText_GotMoneyForWinning 083FDF84
 sText_OutofUsablePokemon 083FDF88
@@ -316,13 +316,13 @@ gText_TextSpeedInstant 083cc338
 #endif
 
 ##GS Chronicles repoints
-EventScript_asdf_0XC40000 08f1a110
 SystemScript_Whiteout 0807f5cc
 EventScript_RivalCianwood 089a5fa7
 EventScript_startgame 08a80ff3
 EventScript_startgame 08a81006
 gText_GSC_Version 0800C8E4
 gText_GSC_Version 0800C9B4
+gText_GSC_Version 08CF0EB4
 
 #Remove Link Trading
 EventScript_CableClub_WirelessTrade 81BB47D

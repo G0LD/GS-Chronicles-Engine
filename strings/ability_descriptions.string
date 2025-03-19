@@ -11,7 +11,7 @@ Can't be frozen solid.
 Keeps user and allies awake.
 
 #org @DESC_SKILLLINK
-Multi-hit moves hit five times.
+Multi-hit moves hit\nfive times.
 
 #org @DESC_MOTORDRIVE
 Turns electricity into Speed.
@@ -23,10 +23,10 @@ Reduces damage at full HP.
 Boosts weaker moves.
 
 #org @DESC_SCRAPPY
-Moves hit Ghost-type Pok\emon.
+Moves hit Ghost-type\nPok\emon.
 
 #org @DESC_SUPERLUCK
-Critical hits land more often.
+Critical hits land\nmore often.
 
 #org @DESC_SNIPER
 Boosts critical hits.
@@ -50,7 +50,7 @@ Reflects status moves.
 Boosts moves with recoil.
 
 #org @DESC_SHEERFORCE
-Trades added effects for power.
+Trades added effects\nfor power.
 
 #org @DESC_IRONFIST
 Boosts punching moves.
@@ -62,7 +62,7 @@ Ups power against same gender.
 Boosts moves in a sandstorm.
 
 #org @DESC_SOLARPOWER
-Trades HP for power in sunshine.
+Trades HP for power\nin sunshine.
 
 #org @DESC_HEATPROOF
 Heat protection.
@@ -71,7 +71,7 @@ Heat protection.
 Prefers the rain to heat.
 
 #org @DESC_TINTEDLENS
-Boosts "not very effective\" moves.
+Boosts "not very\neffective\" moves.
 
 #org @DESC_SOLIDROCK
 #org @DESC_FILTER
@@ -80,13 +80,13 @@ Weakens super effective moves.
 
 #org @DESC_INFILTRATOR
 #ifdef UNBOUND
-Passes through barriers and Fog.
+Passes through barriers\nand Fog.
 #else
 Passes through barriers.
 #endif
 
 #org @DESC_DOWNLOAD
-Adjusts power from foe's stats.
+Adjusts power from\nfoe's stats.
 
 #org @DESC_POISONHEAL
 Restores HP if poisoned.
@@ -95,13 +95,13 @@ Restores HP if poisoned.
 Slight HP recovery in hail.
 
 #org @DESC_MOODY
-Ups one stat and downs another.
+Ups one stat and\ndowns another.
 
 #org @DESC_HYDRATION
-Heals status problems in rain.
+Heals status problems\nin rain.
 
 #org @DESC_HEALER
-May heal ally's status problems.
+May heal ally's\nstatus problems.
 
 #org @DESC_SNOWCLOAK
 Ups evasion in hail.
@@ -110,25 +110,25 @@ Ups evasion in hail.
 Ups evasion if confused.
 
 #org @DESC_SNOWWARNING
-Summons a hailstorm in battle.
+Summons a hailstorm\nin battle.
 
 #org @DESC_QUICKFEET
 Ups Speed if suffering.
 
 #org @DESC_SAPSIPPER
-Boosts Attack if hit by Grass.
+Boosts Attack if hit\nby Grass.
 
 #org @DESC_OVERCOAT
-Immune to weather and powder.
+Immune to weather\nand powder.
 
 #org @DESC_MAGICGUARD
 Only damaged by attacks.
 
 #org @DESC_BULLETPROOF
-Avoids ball and bomb moves.
+Avoids ball and\nbomb moves.
 
 #org @DESC_GALEWINGS
-Flying-type moves hit first.
+Flying-type moves\nhit first.
 
 #org @DESC_MOXIE
 #org @DESC_CHILLINGNEIGH
@@ -142,7 +142,7 @@ May disable a foe's move.
 
 #org @DESC_GOOEY
 #org @DESC_TANGLINGHAIR
-Lowers the foe's Speed if hit.
+Lowers the foe's\nSpeed if hit.
 
 #org @DESC_MUMMY
 Spreads with contact.
@@ -154,73 +154,73 @@ Hurts to touch.
 Raises Speed in a sandstorm.
 
 #org @DESC_ANALYTIC
-Moving last boosts power.
+Moving last boosts\npower.
 
 #org @DESC_NOGUARD
-Ensures that all moves land.
+Ensures that all\nmoves land.
 
 #org @DESC_MEGALAUNCHER
-Boosts aura and pulse moves.
+Boosts aura and\npulse moves.
 
 #org @DESC_TOUGHCLAWS
-Boosts moves that make contact.
+Boosts moves that\nmake contact.
 
 #org @DESC_STRONGJAW
 Boosts biting moves.
 
 #org @DESC_VICTORYSTAR
-Raises own and ally's accuracy.
+Raises own and ally's\naccuracy.
 
 #org @DESC_STORMDRAIN
-Draws in water to up Sp. Atk.
+Draws in water to up\nSp. Atk.
 
 #org @DESC_DARKAURA
-Powers up Dark-type moves.
+Powers up Dark-type\nmoves.
 
 #org @DESC_FAIRYAURA
-Powers up Fairy-type moves.
+Powers up Fairy-type\nmoves.
 
 #org @DESC_AURABREAK
 Reverses Aura Abilities.
 
 #org @DESC_REFRIGERATE
-Normal moves become Ice.
+Normal moves become\nIce.
 
 #org @DESC_PIXILATE
-Normal moves become Fairy.
+Normal moves become\nFairy.
 
 #org @DESC_AERILATE
-Normal moves become Flying.
+Normal moves become\nFlying.
 
 #org @DESC_NORMALIZE
-All moves become Normal-type.
+All moves become\nNormal-type.
 
 #org @DESC_UNBURDEN
-Doubles Speed if item is lost.
+Doubles Speed if\nitem is lost.
 
 #org @DESC_SIMPLE
 Doubles stat changes.
 
 #org @DESC_UNAWARE
-Ignores foe's stat changes.
+Ignores foe's stat\nchanges.
 
 #org @DESC_DEFIANT
-Attack rises when stats fall.
+Attack rises when\nstats fall.
 
 #org @DESC_COMPETITIVE
-Sp. Atk rises when stats fall.
+Sp. Atk rises when\nstats fall.
 
 #org @DESC_DEFEATIST
 Gives up at half HP.
 
 #org @DESC_SLOWSTART
-Takes a while to get going.
+Takes a while to\nget going.
 
 #org @DESC_TOXICBOOST
-Attack rises when poisoned.
+Attack rises when\npoisoned.
 
 #org @DESC_FLAREBOOST
-Sp. Atk rises when burned.
+Sp. Atk rises when\nburned.
 
 #org @DESC_FURCOAT
 Halves physical damage.

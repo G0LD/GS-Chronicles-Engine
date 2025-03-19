@@ -102,7 +102,7 @@
 #define EVO_MODE_ITEM_USE   2
 #define EVO_MODE_ITEM_CHECK 3 // If an Everstone is being held, still want to show that the stone *could* be used on that Pokémon to evolve
 
-#define SHINY_ODDS 132 // Actual probability is SHINY_ODDS/65536
+#define SHINY_ODDS 8 // Actual probability is SHINY_ODDS/65536
 
 // Learning moves
 #define MON_ALREADY_KNOWS_MOVE 0xFFFE

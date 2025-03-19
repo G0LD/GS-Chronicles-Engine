@@ -123,21 +123,21 @@ static const struct Coords16 sTypeIconPositions[][/*IS_SINGLE_BATTLE*/2] =
 #ifndef UNBOUND //MODIFY THIS
 	[B_POSITION_PLAYER_LEFT] =
 	{
-		[TRUE] = {221, 86}, 	//Single Battle
-		[FALSE] = {144, 70},	//Double Battle
+		[TRUE] = {224, 86}, 	//Single Battle
+		[FALSE] = {141, 70},	//Double Battle
 	},
 	[B_POSITION_OPPONENT_LEFT] =
 	{
-		[TRUE] = {20, 26}, 		//Single Battle
-		[FALSE] = {97, 14},		//Double Battle
+		[TRUE] = {19, 26}, 		//Single Battle
+		[FALSE] = {100, 15},		//Double Battle
 	},
 	[B_POSITION_PLAYER_RIGHT] =
 	{
-		[FALSE] = {156, 96},	//Double Battle
+		[FALSE] = {153, 96},	//Double Battle
 	},
 	[B_POSITION_OPPONENT_RIGHT] =
 	{
-		[FALSE] = {85, 39},		//Double Battle
+		[FALSE] = {88, 40},		//Double Battle
 	},
 #else //For Pokemon Unbound
 	[B_POSITION_PLAYER_LEFT] =

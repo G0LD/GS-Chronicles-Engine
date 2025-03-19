@@ -87,7 +87,7 @@
 #define SE_NOTE_C 0x37
 #define SE_NOTE_D 0x38
 #define SE_NOTE_E 0x39
-#define SE_NOTE_F 0x3A
+#define SE_MENU_CLOSE_HGSS 0x3A
 #define SE_NOTE_G 0x3B
 #define SE_NOTE_A 0x3C
 #define SE_NOTE_B 0x3D

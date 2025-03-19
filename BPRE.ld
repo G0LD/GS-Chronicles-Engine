@@ -2134,6 +2134,9 @@ Task_InitMoveRelearnerMenu = 0x80E4660 | 1;
 CB2_ReturnToPartyMenuFromSummaryScreen = 0x8122DBC | 1;
 DisplayMoveTutorMenu = 0x80e4634 | 1;
 
+/* Custom GSC Functions*/
+PokegearInit = 0x8fe0d20 | 1;
+
 /* IO */
 BG3HOFS = 0x400001C;
 DMA0_SRC = 0x40000B0;

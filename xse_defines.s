@@ -19,6 +19,21 @@
 .equ CHOSEN_ITEM, 0x800E
 .equ LASTTALKED, 0x800F
 
+.equ Press_A, 0x1
+.equ Press_B, 0x2
+.equ Press_Select, 0x4
+.equ Press_Start, 0x8
+.equ Press_Right, 0x10
+.equ Press_Left, 0x20
+.equ Press_Up, 0x40
+.equ Press_Down, 0x80
+.equ Press_R, 0x100
+.equ Press_L, 0x200
+.equ Press_DownA, 0x81
+.equ Press_UpA, 0x41
+.equ Press_LeftA, 0x21
+.equ Press_RightA, 0x11
+
 .equ look_down, 0x0
 .equ look_up, 0x1
 .equ look_left, 0x2

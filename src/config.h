@@ -67,6 +67,7 @@
 #define FLAG_UNLOCKED_DEXNAV_HELD_ITEMS 0x142A //If set, possible held items will be displayed for wild Pokemon on the DexNav UI
 #define FLAG_DAILY_EVENTS_START 0xE00 //To flag + 0xFF, resets every new day.
 #define FLAG_LEGENDARY_APPEARED_STRING 0x1443 //Load string "Species" appeared!
+#define FLAG_DISABLE_POKEDEX_REGISTRY 0x1444 //Disables the Pokédex to prevent caught Pokémon to be registered
 
 /*===== Start Menu/Poketools Flags =====*/
 #define FLAG_SYS_BAG_HIDE 0x141B		//Toggle bag off
@@ -346,7 +347,7 @@ enum //These vars need to be one after the other (hence the enum)
 #define TAKE_WILD_MON_ITEM_ON_CAPTURE //Items held by Wild Pokemon when caught can be placed in the bag at the player's request
 //#define PAYDAY_MONEY_CAP //Pay Day and G-Max Gold Rush should cap at $99999 per battle
 //#define QUICK_CLAW_PROCING_ALWAYS_ALLOWS_FLEEING //Fleeing from wild battles will never fail the turn a Quick Claw activates
-//#define FROSTBITE //Replaces the Freeze status condition with the Frostbite status condition from PLA
+#define FROSTBITE //Replaces the Freeze status condition with the Frostbite status condition from PLA
 
 /* DexNav Options */
 //See "include/new/dexnav_config.h"

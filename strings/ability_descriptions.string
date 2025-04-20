@@ -226,14 +226,14 @@ Sp. Atk rises when\nburned.
 Halves physical damage.
 
 #org @DESC_WONDERSKIN
-Ups status move evasion.
+Ups status move\nevasion.
 
 #org @DESC_PROTEAN
 #org @DESC_LIBERO
-Changes type to match move.
+Changes type to\nmatch move.
 
 #org @DESC_PARENTALBOND
-Moves get a weaker second hit.
+Moves get a weaker\nsecond hit.
 
 #org @DESC_MOLDBREAKER
 #org @DESC_TURBOBLAZE
@@ -247,7 +247,7 @@ Transforms below half HP.
 Transforms after a KO.
 
 #org @DESC_BEASTBOOST
-KOing a foe ups highest stat.
+KOing a foe ups\nhighest stat.
 
 #org @DESC_CORROSION
 May poison any type.
@@ -257,10 +257,10 @@ Takes one hit with no damage.
 
 #org @DESC_EMERGENCYEXIT
 #org @DESC_WIMPOUT
-Switches out below half HP.
+Switches out below\nhalf HP.
 
 #org @DESC_FLUFFY
-Halves contact hits. Weak to Fire.
+Halves contact hits.\nWeak to Fire.
 
 #org @DESC_BROKEN_1
 #org @DESC_BROKEN_2
@@ -270,82 +270,82 @@ No special Ability.
 Transforms below half HP.
 
 #org @DESC_RKS_SYSTEM
-Changes type to match Memory.
+Changes type to match\nMemory.
 
 #org @DESC_SCHOOLING
 Schools up with high HP.
 
 #org @DESC_SHADOWSHIELD
-Reduces damage at full HP.
+Reduces damage at\nfull HP.
 
 #org @DESC_SHIELDSDOWN
-Lowers shields below half HP.
+Lowers shields below\nhalf HP.
 
 #org @DESC_SLUSHRUSH
 Boosts speed in Hail.
 
 #org @DESC_SOULHEART
-Knockouts boost Sp. Atk.
+Knockouts boost\nSp. Atk.
 
 #org @DESC_STAMINA
-Taking a hit raises Defense.
+Taking a hit raises\nDefense.
 
 #org @DESC_STEELWORKER
-Powers up Steel-type moves.
+Powers up\nSteel-type moves.
 
 #org @DESC_TRIAGE
-Gives priority to healing moves.
+Gives priority to\nhealing moves.
 
 #org @DESC_WATERBUBBLE
-Ups Water attacks. Prevents burn.
+Ups Water attacks.\nPrevents burn.
 
 #org @DESC_WATERCOMPACTION
-Water-type hits raise Defense.
+Water-type hits\nraise Defense.
 
 #org @DESC_STALL
 Often attacks last.
 
 #org @DESC_MULTITYPE
-Changes type to match held Plate.
+Changes type to match\nheld Plate.
 
 #org @DESC_ELECTRICSURGE
-Creates an Electric Terrain.
+Creates an Electric\nTerrain.
 
 #org @DESC_GRASSYSURGE
-Creates a Grassy Terrain.
+Creates a Grassy\nTerrain.
 
 #org @DESC_MISTYSURGE
-Creates a Misty Terrain.
+Creates a Misty\nTerrain.
 
 #org @DESC_PSYCHICSURGE
-Creates a Psychic Terrain.
+Creates a Psychic\nTerrain.
 
 #org @DESC_SURGESURFER
-Boosts Speed on Electric Terrain.
+Boosts Speed on\nElectric Terrain.
 
 #org @DESC_GRASSPELT
-Ups Defense on Grassy Terrain.
+Ups Defense on\nGrassy Terrain.
 
 #org @DESC_ANGERPOINT
-Maxes Attack after a critical hit.
+Maxes Attack after\na critical hit.
 
 #org @DESC_ANTICIPATION
-Senses super effective moves.
+Senses super\neffective moves.
 
 #org @DESC_FOREWARN
-Warns of the foe's strongest move.
+Warns of the foe's\nstrongest move.
 
 #org @DESC_FRISK
-Reveals the foe's held item.
+Reveals the foe's\nheld item.
 
 #org @DESC_CONTRARY
 Reverses stat changes.
 
 #org @DESC_UNNERVE
-Stops the foe from eating Berries.
+Stops the foe from\neating Berries.
 
 #org @DESC_WEAKARMOR
-Hits up Speed but drop Defense.
+Hits up Speed but\ndrop Defense.
 
 #org @DESC_HEAVYMETAL
 Doubles weight.
@@ -357,58 +357,58 @@ Halves weight.
 Flinching raises Speed.
 
 #org @DESC_IMPOSTER
-Transforms upon entering battle.
+Transforms upon\nentering battle.
 
 #org @DESC_JUSTIFIED
-Dark-type hits raise Attack.
+Dark-type hits\nraise Attack.
 
 #org @DESC_RATTLED
-Scary move types raise Speed.
+Scary move types\nraise Speed.
 
 #org @DESC_MERCILESS
-Critically hits poisoned foes.
+Critically hits\npoisoned foes.
 
 #org @DESC_AROMAVEIL
-Protects against mental problems.
+Protects against\nmove restrictions.
 
 #org @DESC_FLOWERVEIL
-Protects Grass-types from status.
+Protects Grass-types\nfrom status.
 
 #org @DESC_LEAFGUARD
-Protects from status when sunny.
+Protects from status\nwhen sunny.
 
 #org @DESC_KLUTZ
 Can't use items.
 
 #org @DESC_FLOWERGIFT
-Powers up team when sunny.
+Powers up team\nwhen sunny.
 
 #org @DESC_BADDREAMS
 Hurts sleeping foes.
 
 #org @DESC_PICKPOCKET
-Steals foe's item when hit.
+Steals foe's item\nwhen hit.
 
 #org @DESC_PORTALPOWER
-Weakens non-contact moves.
+Weakens non-contact\nmoves.
 
 #org @DESC_POISONTOUCH
-Can poison foe on contact.
+Can poison foe\non contact.
 
 #org @DESC_MAGICIAN
-Can steal foe's item after attack.
+Can steal foe's\nitem after attack.
 
 #org @DESC_STANCECHANGE
-Switches form when attacking.
+Switches form when\nattacking.
 
 #org @DESC_PRIMORDIALSEA
-Summons a heavy rainstorm.
+Summons a heavy\nrainstorm.
 
 #org @DESC_DESOLATELAND
-Summons extremely harsh sunlight.
+Summons an extremely\nharsh sunlight.
 
 #org @DESC_DELTASTREAM
-Summons a mysterious air current.
+Summons a mysterious\nair current.
 
 #org @DESC_BERSERK
 Ups Sp. Atk below half HP.
@@ -417,7 +417,7 @@ Ups Sp. Atk below half HP.
 Never makes contact.
 
 #org @DESC_LIQUIDVOICE
-Sound moves become Water-type.
+Sound moves become\nWater-type.
 
 #org @DESC_QUEENLYMAJESTY
 Blocks priority moves.
@@ -432,16 +432,16 @@ Blocks priority moves.
 Eats Berries early.
 
 #org @DESC_HONEYGATHER
-Picks up Honey after battle.
+Picks up Honey\nafter battle.
 
 #org @DESC_FRIENDGUARD
-Reduces damage done to allies.
+Reduces damage done\nto allies.
 
 #org @DESC_HARVEST
-Can regain consumed Berries.
+Can regain consumed\nBerries.
 
 #org @DESC_TELEPATHY
-Protects from allies' moves.
+Protects from allies'\nmoves.
 
 #org @DESC_ILLUSION
 Enters battle disguised.
@@ -453,7 +453,7 @@ Eating Berries restores HP.
 Gives item to ally after use.
 
 #org @DESC_STAKEOUT
-Doubles damage on replacements.
+Doubles damage on\nreplacements.
 
 #org @DESC_COMATOSE
 Acts as if asleep.
@@ -466,13 +466,13 @@ Powers up allies.
 
 #org @DESC_RECEIVER
 #org @DESC_POWEROFALCHEMY
-Takes over a KOed ally's Ability.
+Takes over a KOed\nally's Ability.
 
 #org @DESC_NEUROFORCE
-Powers up super effective hits.
+Powers up super\neffective hits.
 
 #org @DESC_GALVANIZE
-Normal moves become Electric.
+Normal moves become\nElectric.
 
 //Sword and Shield Abilities.
 
@@ -483,29 +483,29 @@ Ups Attack on entry.
 Ups Defense on entry.
 
 #org @DESC_BALLFETCH
-Fetches first failed Pok\e Ball.
+Fetches first failed\nPok\e Ball.
 
 #org @DESC_COTTONDOWN
 Lowers everyone's Speed when hit.
 
 #org @DESC_MIRRORARMOR
-Bounces back stat decreases.
+Bounces back stat\ndecreases.
 
 #org @DESC_GULPMISSILE
-Spits prey if hit after a swim.
+Spits prey if hit\nafter a swim.
 
 #org @DESC_STALWART
 #org @DESC_PROPELLERTAIL
 Moves ignore redirection.
 
 #org @DESC_STEAMENGINE
-Fire and Water hits boost Speed.
+Fire and Water hits\nboost Speed.
 
 #org @DESC_PUNKROCK
-Ups and resists sound moves.
+Ups and resists\nsound moves.
 
 #org @DESC_SANDSPIT
-Creates a sandstorm when hit.
+Creates a sandstorm\nwhen hit.
 
 #org @DESC_ICESCALES
 Halves special damage.
@@ -514,61 +514,61 @@ Halves special damage.
 Doubles Berry effects.
 
 #org @DESC_ICEFACE
-Free physical hit. Hail renews.
+Free physical hit.\nHail renews.
 
 #org @DESC_POWERSPOT
 Powers up ally moves.
 
 #org @DESC_MIMICRY
-Changes type with terrain.
+Changes type with \nterrain.
 
 #org @DESC_SCREENCLEANER
-Screens are removed on entry.
+Screens are removed\non entry.
 
 #org @DESC_STEELYSPIRIT
-Boosts own and ally Steel moves.
+Boosts own and\nally Steel moves.
 
 #org @DESC_PERISHBODY
-Gives a perish count on contact.
+Gives a perish count\non contact.
 
 #org @DESC_WANDERINGSPIRIT
-Trades Abilities on contact.
+Trades Abilities on\ncontact.
 
 #org @DESC_GORILLATACTICS
-Ups Attack, but allows one move.
+Ups Attack, but allows\none move.
 
 #org @DESC_NEUTRALISINGGAS
-All Abilities are nullified.
+All Abilities are\nnullified.
 
 #org @DESC_PASTEL_VEIL
-Protects team from poison.
+Protects team from\npoison.
 
 #org @DESC_HUNGERSWITCH
 Changes form each turn.
 
 #org @DESC_UNSEENFIST
-Contact moves bypass Protect.
+Contact moves bypass\nProtect.
 
 #org @DESC_DRAGONSMAW
-Powers up Dragon-type moves.
+Powers up Dragon-type\nmoves.
 
 #org @DESC_TRANSISTOR
-Powers up Electric-type moves.
+Powers up Electric-type\nmoves.
 
 #org @DESC_GRIMNEIGH
-Knockouts boost Sp. Atk.
+Knockouts boost\nSp. Atk.
 
 #org @DESC_ASONE_GRIM
-Both Unnerve and Grim Neigh.
+Both Unnerve and\nGrim Neigh.
 
 #org @DESC_ASONE_CHILLING
-Both Unnerve and Chilling Neigh.
+Both Unnerve and\nChilling Neigh.
 
 #org @DESC_QUICKDRAW
 Sometimes moves quicker.
 
 #org @DESC_CURIOUSMEDICINE
-Resets ally's stat changes.
+Resets ally's stat\nchanges.
 
 //Unbound Custom Abilities//
 

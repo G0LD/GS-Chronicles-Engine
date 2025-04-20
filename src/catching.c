@@ -813,14 +813,7 @@ void atkF1_trysetcaughtmondexflags(void)
         HandleSetPokedexFlag(species, FLAG_SET_CAUGHT, personality);
         gBattlescriptCurrInstr += 5;
     }
-}
-
-/*void SetCaughtUnown(u16 UnownForm) {
-    u32 CaughtUnown = GetCaughtUnown();
-    CaughtUnown |= (1 << UnownForm);
-    VarSet(VAR_UNOWNCAUGHT_PT1, (CaughtUnown & 0x0000FFFF));
-    VarSet(VAR_UNOWNCAUGHT_PT2, (CaughtUnown & 0xFFFF0000) >> 16);
-}*/
+} 
 
 void CreateCapturedMonDexPic(u16 species)
 {

@@ -78,6 +78,8 @@ extern const u8 Karen_MugshotTiles[];
 extern const u8 Karen_MugshotPal[];
 extern const u8 Elm_MugshotTiles[];
 extern const u8 Elm_MugshotPal[];
+extern const u8 KimonoGirl_MugshotTiles[];
+extern const u8 KimonoGirl_MugshotPal[];
 
 //Big Mugshot Pals
 extern const u16 Big_Mugshot_BlackPal[];

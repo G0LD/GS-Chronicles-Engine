@@ -518,24 +518,177 @@ EventScript_RockClimb:
 	lockall
 	call FollowerIntoPlayerScript
 	callasm HideFollower
-	setvar 0x8003 0x0
-	setvar 0x8004 0x0
-	special2 0x8008 0x18
+	countpokemon
+	compare LASTRESULT 5
+	if lessthan _goto EventScript_RockClimb_NoDeposit
+	setvar 0x8004 5 @;Select Slot 6
+	setvar 0x8000 1
+	special 0x14D @;Deposit 6th Slot Pokemon
+	goto EventScript_RockClimb_NoDeposit
+
+EventScript_RockClimb_NoDeposit:
+	compare 0x4031 152 @;check Chikorita as starter
+	if 0x1 _call  EventScript_Chiko
+	compare 0x4031 155 @;check Cyndaquil as starter
+	if 0x1 _call  EventScript_Cynda
+	compare 0x4031 158 @;check Totodile as starter
+	if 0x1 _call  EventScript_Toto
 	msgbox gText_ClamberRideRockclimb MSG_NORMAL
 	setvar 0x8003 0x0
-	setvar 0x8004 0x0
+	setvar 0x8004 0x5
 	setvar 0x8005 SPECIES_MACHOKE
+	special 0x16
 	dofieldeffect FLDEFF_USE_ROCK_CLIMB
 	waitfieldeffect FLDEFF_USE_ROCK_CLIMB
 	callasm FollowMe_WarpSetEnd
-	setvar 0x8003 0x0
-	setvar 0x8004 0x0
-	copyvar 0x8005 0x8008
+	setvar 0x8004 5 @;Select Slot 6
+	special 0x62 @;Erase Slot 6 Pokemon
+	setvar 0x8004 0
+	setvar 0x8000 0
+	special 0x14D @;retrieve slot 6 Pokémon
 	releaseall
 	end
 
 @;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+.global EventScript_UseCut
+EventScript_UseCut:
+	lockall
+	countpokemon
+	compare LASTRESULT 5
+	if lessthan _goto EventScript_UseCut_NoDeposit
+	setvar 0x8004 5 @;Select Slot 6
+	setvar 0x8000 1
+	special 0x14D @;Deposit 6th Slot Pokemon
+	goto EventScript_UseCut_NoDeposit
 
+EventScript_UseCut_NoDeposit:
+	compare 0x4031 152 @;check Chikorita as starter
+	if 0x1 _call  EventScript_Chiko
+	compare 0x4031 155 @;check Cyndaquil as starter
+	if 0x1 _call  EventScript_Cynda
+	compare 0x4031 158 @;check Totodile as starter
+	if 0x1 _call  EventScript_Toto
+	setvar 0x8003 0x0
+	setvar 0x8004 0x5
+	setvar 0x8005 SPECIES_BELLSPROUT
+	special 0x16
+	msgbox 0x08C6FAC7 MSG_NORMAL @;"A wild Bellsprout helped out by..."
+	setanimation 0x0 0x5
+	doanimation 0x2
+	waitfieldeffect 0x2
+	setvar 0x8004 5 @;Select Slot 6
+	special 0x62 @;Erase Slot 6 Pokemon
+	setvar 0x8004 0
+	setvar 0x8000 0
+	special 0x14D @;retrieve slot 6 Pokémon
+	goto 0x81BDF76
+
+@;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+.global EventScript_UseRockSmash
+EventScript_UseRockSmash:
+	lockall
+	countpokemon
+	compare LASTRESULT 5
+	if lessthan _goto EventScript_UseRockSmash_NoDeposit
+	setvar 0x8004 5 @;Select Slot 6
+	setvar 0x8000 1
+	special 0x14D @;Deposit 6th Slot Pokemon
+	goto EventScript_UseRockSmash_NoDeposit
+
+EventScript_UseRockSmash_NoDeposit:
+	compare 0x4031 152 @;check Chikorita as starter
+	if 0x1 _call  EventScript_Chiko
+	compare 0x4031 155 @;check Cyndaquil as starter
+	if 0x1 _call  EventScript_Cynda
+	compare 0x4031 158 @;check Totodile as starter
+	if 0x1 _call  EventScript_Toto
+	setvar 0x8003 0x0
+	setvar 0x8004 0x5
+	setvar 0x8005 SPECIES_MACHOKE
+	special 0x16
+	msgbox 0x8C6FA93 MSG_KEEPOPEN @"A wild Machoke helped out by\nusin..."
+	setanimation 0x0 0x5
+	doanimation 0x25
+	waitfieldeffect 0x25
+	setvar 0x8004 5 @;Select Slot 6
+	special 0x62 @;Erase Slot 6 Pokemon
+	setvar 0x8004 0
+	setvar 0x8000 0
+	special 0x14D @;retrieve slot 6 Pokémon
+	goto 0x8C5FA5E
+
+@;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+.global EventScript_UseStrength
+EventScript_UseStrength:
+	lockall
+	countpokemon
+	compare LASTRESULT 5
+	if lessthan _goto EventScript_UseStrength_NoDeposit
+	setvar 0x8004 5 @;Select Slot 6
+	setvar 0x8000 1
+	special 0x14D @;Deposit 6th Slot Pokemon
+	goto EventScript_UseStrength_NoDeposit
+
+EventScript_UseStrength_NoDeposit:
+	compare 0x4031 152 @;check Chikorita as starter
+	if 0x1 _call  EventScript_Chiko
+	compare 0x4031 155 @;check Cyndaquil as starter
+	if 0x1 _call  EventScript_Cynda
+	compare 0x4031 158 @;check Totodile as starter
+	if 0x1 _call  EventScript_Toto
+	setvar 0x8003 0x0
+	setvar 0x8004 0x5
+	setvar 0x8005 SPECIES_MACHOKE
+	special 0x16
+	setanimation 0x0 0x5
+	doanimation 0x28
+	waitfieldeffect 0x28
+	msgbox 0x8C6FB3B MSG_NORMAL @"A wild Machoke helped out by\nusin..."
+	setflag 0x805
+	setvar 0x8004 5 @;Select Slot 6
+	special 0x62 @;Erase Slot 6 Pokemon
+	setvar 0x8004 0
+	setvar 0x8000 0
+	special 0x14D @;retrieve slot 6 Pokémon
+	releaseall
+	end
+
+@;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+.global EventScript_UseWhirlpool
+EventScript_UseWhirlpool:
+	lockall
+	checkflag 0x9B3
+	if 0x0 _goto 0x8C6FB6F
+	countpokemon
+	compare LASTRESULT 5
+	if lessthan _goto EventScript_UseWhirlpool_NoDeposit
+	setvar 0x8004 5 @;Select Slot 6
+	setvar 0x8000 1
+	special 0x14D @;Deposit 6th Slot Pokemon
+	goto EventScript_UseWhirlpool_NoDeposit
+
+EventScript_UseWhirlpool_NoDeposit:
+	compare 0x4031 152 @;check Chikorita as starter
+	if 0x1 _call  EventScript_Chiko
+	compare 0x4031 155 @;check Cyndaquil as starter
+	if 0x1 _call  EventScript_Cynda
+	compare 0x4031 158 @;check Totodile as starter
+	if 0x1 _call  EventScript_Toto
+	setvar 0x8003 0x0
+	setvar 0x8004 0x5
+	setvar 0x8005 SPECIES_SEAKING
+	special 0x16
+	setanimation 0x0 0x5
+	doanimation 0x25
+	waitfieldeffect 0x25
+	setvar 0x8004 5 @;Select Slot 6
+	special 0x62 @;Erase Slot 6 Pokemon
+	setvar 0x8004 0
+	setvar 0x8000 0
+	special 0x14D @;retrieve slot 6 Pokémon
+	goto 0x8C2A484
+
+@;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 .global EventScript_UseADMRockClimb
 EventScript_UseADMRockClimb:
 	checkflag FLAG_AUTO_HMS
@@ -647,20 +800,35 @@ EventScript_UseWaterfall_Ask:
 
 EventScript_UseWaterfall_SkipMsg:
 	lockall
-	setvar 0x8003 0x0
-	setvar 0x8004 0x0
-	special2 0x8008 0x18
 	msgbox gText_CascadeRideWaterfall MSG_NORMAL
+	countpokemon
+	compare LASTRESULT 5
+	if lessthan _goto EventScript_UseWaterfall_NoDeposit
+	setvar 0x8004 5 @;Select Slot 6
+	setvar 0x8000 1
+	special 0x14D @;Deposit 6th Slot Pokemon
+	goto EventScript_UseWaterfall_NoDeposit
+
+EventScript_UseWaterfall_NoDeposit:
+	compare 0x4031 152 @;check Chikorita as starter
+	if 0x1 _call  EventScript_Chiko
+	compare 0x4031 155 @;check Cyndaquil as starter
+	if 0x1 _call  EventScript_Cynda
+	compare 0x4031 158 @;check Totodile as starter
+	if 0x1 _call  EventScript_Toto
 	setvar 0x8003 0x0
-	setvar 0x8004 0x0
-	setvar 0x8005 SPECIES_SEAKING_RIDE
-	setanimation 0x0 0x0
+	setvar 0x8004 0x5
+	setvar 0x8005 SPECIES_SEAKING
+	special 0x16
+	setanimation 0x0 0x5
 	doanimation 0x2B
 	callasm FollowMe_WarpSetEnd
 	waitfieldeffect 0x2B
-	setvar 0x8003 0x0
-	setvar 0x8004 0x0
-	copyvar 0x8005 0x8008
+	setvar 0x8004 5 @;Select Slot 6
+	special 0x62 @;Erase Slot 6 Pokemon
+	setvar 0x8004 0
+	setvar 0x8000 0
+	special 0x14D @;retrieve slot 6 Pokémon
 	releaseall
 	end
 
@@ -732,21 +900,48 @@ EventScript_UseSurf_CheckAnswer:
 
 EventScript_UseSurf_SkipAsk:
 	lockall
-	setvar 0x8003 0x0
-	setvar 0x8004 0x0
-	special2 0x8008 0x18
 	msgbox gText_WaveRideSurf MSG_NORMAL
-	setvar 0x8003 0x0
-	setvar 0x8004 0x0
-	setvar 0x8005 SPECIES_SEAKING_RIDE
-	setanimation 0x0 0x0
+	countpokemon
+	compare LASTRESULT 5
+	if lessthan _goto EventScript_UseSurf_NoDeposit
+	setvar 0x8004 5 @;Select Slot 6
+	setvar 0x8000 1
+	special 0x14D @;Deposit 6th Slot Pokemon
+	goto EventScript_UseSurf_NoDeposit
+
+EventScript_UseSurf_NoDeposit:
+	compare 0x4031 152 @;check Chikorita as starter
+	if 0x1 _call  EventScript_Chiko
+	compare 0x4031 155 @;check Cyndaquil as starter
+	if 0x1 _call  EventScript_Cynda
+	compare 0x4031 158 @;check Totodile as starter
+	if 0x1 _call  EventScript_Toto
+	setvar 0x8003 0
+	setvar 0x8004 5
+	setvar 0x8005 SPECIES_SEAKING
+	special 0x16
+	setanimation 0x0 0x5
 	doanimation 0x9
 	waitfieldeffect 0x9
-	setvar 0x8003 0x0
-	setvar 0x8004 0x0
-	copyvar 0x8005 0x8008
+	setvar 0x8004 5 @;Select Slot 6
+	special 0x62 @;Erase Slot 6 Pokemon
+	setvar 0x8004 0
+	setvar 0x8000 0
+	special 0x14D @;retrieve slot 6 Pokémon
 	releaseall
 	end
+
+EventScript_Chiko:
+	givepokemon SPECIES_CHIKORITA 1 0 0 0 0
+	return
+
+EventScript_Cynda:
+	givepokemon SPECIES_CYNDAQUIL 1 0 0 0 0
+	return
+
+EventScript_Toto:
+	givepokemon SPECIES_TOTODILE 1 0 0 0 0
+	return
 
 EventScript_SurfEnd:
 	releaseall
@@ -937,14 +1132,27 @@ EventScript_UseFlash:
 	lockall
 	checkflag 0x820
 	if 0x0 _goto EventScript_UseFlash_None
-	setvar 0x8003 0x0
-	setvar 0x8004 0x0
-	special2 0x8008 0x18
+	countpokemon
+	compare LASTRESULT 5
+	if lessthan _goto EventScript_UseFlash_NoDeposit
+	setvar 0x8004 5 @;Select Slot 6
+	setvar 0x8000 1
+	special 0x14D @;Deposit 6th Slot Pokemon
+	goto EventScript_UseFlash_NoDeposit
+
+EventScript_UseFlash_NoDeposit:
+	compare 0x4031 152 @;check Chikorita as starter
+	if 0x1 _call  EventScript_Chiko
+	compare 0x4031 155 @;check Cyndaquil as starter
+	if 0x1 _call  EventScript_Cynda
+	compare 0x4031 158 @;check Totodile as starter
+	if 0x1 _call  EventScript_Toto
 	setflag FLAG_SYS_USE_FLASH
 	setvar 0x8003 0x0
-	setvar 0x8004 0x0
-	setvar 0x8005 SPECIES_ABRA_RIDE
-	setanimation 0x0 0x0
+	setvar 0x8004 0x5
+	setvar 0x8005 SPECIES_ABRA
+	special 0x16
+	setanimation 0x0 0x5
 	doanimation 0x28
 	waitstate
 	msgbox gText_BrightRideFlash MSG_NORMAL
@@ -952,9 +1160,11 @@ EventScript_UseFlash:
 	sound 0xC8
 	animateflash 0x0
 	setflashlevel 0x0
-	setvar 0x8003 0x0
-	setvar 0x8004 0x0
-	copyvar 0x8005 0x8008
+	setvar 0x8004 5 @;Select Slot 6
+	special 0x62 @;Erase Slot 6 Pokemon
+	setvar 0x8004 0
+	setvar 0x8000 0
+	special 0x14D @;retrieve slot 6 Pokémon
 	releaseall
 	end
 
@@ -1354,3 +1564,5 @@ EventScript_exit:
 	special 0x128
 	warpmuted 0x9 0x1 0xFF 0x11 0x13
 	end
+
+@;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@

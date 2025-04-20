@@ -16,6 +16,7 @@
 //Functions Hooked In
 void SetNewPartySelectTarget2(s8* highlightedMon, s8 movementDir);
 void CursorCb_Summary(u8 taskId);
+void delete_pokemon();
 u8 ChangeSummaryScreenMon(u8 delta);
 u8 ChoosePokemon_LoadMaxPKMNStr(const u8** strPtr, bool8 loadString);
 void CursorCb_Enter(u8 taskId);

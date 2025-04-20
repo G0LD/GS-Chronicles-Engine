@@ -1039,7 +1039,7 @@
 #define HIDDEN_ITEM_ROUTE10_MAX_ETHER                                  10//Route 46 TM117
 #define HIDDEN_ITEM_ROCKET_HIDEOUT_B1F_PP_UP                           11
 #define HIDDEN_ITEM_ROCKET_HIDEOUT_B3F_NUGGET                          12
-#define HIDDEN_ITEM_ROCKET_HIDEOUT_B4F_NEST_BALL                       13
+#define HIDDEN_ITEM_ROCKET_HIDEOUT_B4F_NEST_BALL                       13//S.S Aqua Luxury Ball
 #define HIDDEN_ITEM_POKEMON_TOWER_5F_BIG_MUSHROOM                      14
 #define HIDDEN_ITEM_ROUTE13_PP_UP                                      15
 #define HIDDEN_ITEM_UNUSED_0x10                                        16
@@ -1456,3 +1456,22 @@
 #define FLAG_SPECIAL_FLAG_0x4002    0x4002
 #define FLAG_SPECIAL_FLAG_0x4003    0x4003
 #define FLAG_SPECIAL_FLAG_0x4004    0x4004
+
+//GS Chronicles Badges
+#define FLAG_BADGE_VIOLET 0x820
+#define FLAG_BADGE_AZALEA 0x821
+#define FLAG_BADGE_GOLDENROD 0x822
+#define FLAG_BADGE_ECRUTEAK 0x823
+#define FLAG_BADGE_CIANWOOD 0x824
+#define FLAG_BADGE_OLIVINE 0x825
+#define FLAG_BADGE_MAHOGANY 0x826
+#define FLAG_BADGE_BLACKTHORN 0x827
+
+#define FLAG_BADGE_PEWTER 0x14C
+#define FLAG_BADGE_CERULEAN 0x14D
+#define FLAG_BADGE_VERMILION 0x14E
+#define FLAG_BADGE_CELADON 0x14F
+#define FLAG_BADGE_FUCHSIA 0x150
+#define FLAG_BADGE_SAFFRON 0x151
+#define FLAG_BADGE_CINNABAR 0x152
+#define FLAG_BADGE_VIRIDIAN 0x153

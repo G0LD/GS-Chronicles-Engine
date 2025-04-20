@@ -9,7 +9,8 @@
         "trainer_classes.h": "c",
         "string_util.h": "c",
         "pokemon_summary_screen.h": "c",
-        "util.h": "c"
+        "util.h": "c",
+        "flags.h": "c"
     },
     "C_Cpp.errorSquiggles": "enabled"
 }

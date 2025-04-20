@@ -317,6 +317,10 @@ gText_TextSpeedInstant 083cc338
 
 ##GS Chronicles repoints
 SystemScript_Whiteout 0807f5cc
+EventScript_UseCut 087600d8
+EventScript_UseRockSmash 08760166
+EventScript_UseStrength 087601ff
+EventScript_UseWhirlpool 08c2a42c
 EventScript_RivalCianwood 089a5fa7
 EventScript_startgame 08a80ff3
 EventScript_startgame 08a81006

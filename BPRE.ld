@@ -2136,6 +2136,18 @@ DisplayMoveTutorMenu = 0x80e4634 | 1;
 
 /* Custom GSC Functions*/
 PokegearInit = 0x8fe0d20 | 1;
+CB2_OptionsMenuFromStartMenu = 0x8F0B330 | 1;
+gHelpSystemEnabled = 0x3005ecc;
+FieldClearVBlankHBlankCallbacks = 0x80569bc | 1;
+FieldCB_WarpExitFadeFromBlack = 0x807df7c | 1;
+ShowPlayerTrainerCard = 0x808b698 | 1;
+StdTextPal = 0x841f408; 
+gNumSafariBalls = 0x2039994;
+gSafariZoneStepCounter = 0x2039996;
+CB2_OpenPokedexFromStartMenu = 0x810275c | 1;
+CB2_PartyMenuFromStartMenu = 0x8126eb0 | 1;
+
+SetCaughtUnown = 0x8B00A10 | 1;
 
 /* IO */
 BG3HOFS = 0x400001C;

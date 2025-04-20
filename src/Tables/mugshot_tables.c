@@ -44,7 +44,7 @@ const struct MugshotTable sPreBattleMugshotSprites[147] =
 	[25]  = {Aile_MugshotTiles, Aile_MugshotPal, 64 * 64 / 2, 0, -32},
 	[120] = {Koga_MugshotTiles, Koga_MugshotPal, 64 * 64 / 2, 0, -32},
 	[114] = {Karen_MugshotTiles, Karen_MugshotPal, 64 * 64 / 2, 0, -32},
-	[80]  = {Elm_MugshotTiles, Elm_MugshotPal, 64 * 64 / 2, 0, -32},
+	[3]  =  {KimonoGirl_MugshotTiles, KimonoGirl_MugshotPal, 64 * 64 / 2, 0, -32},
 };
 #endif
 

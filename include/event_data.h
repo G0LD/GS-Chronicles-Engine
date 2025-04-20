@@ -5,6 +5,9 @@
 #include "constants/flags.h"
 #include "constants/vars.h"
 
+void SetCaughtUnown(u16 UnownForm);
+u16 GetUnownLetterByPersonality(u32 personality);
+
 u8 __attribute__((long_call)) FlagSet(u16 id);
 u8 __attribute__((long_call)) FlagClear(u16 id);
 bool8 __attribute__((long_call)) FlagGet(u16 id);

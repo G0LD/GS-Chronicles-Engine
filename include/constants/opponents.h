@@ -355,11 +355,7 @@
 #define TRAINER_ELITE_FOUR_AILE_2                350
 #define TRAINER_ELITE_FOUR_WILL_2                351
 #define TRAINER_ELITE_FOUR_KOGA_2                352
-#define TRAINER_ELITE_FOUR_KAREN_2               353/*FREE SLOTS START HERE
-#define TRAINER_TEAM_ROCKET_GRUNT_4              354
-#define TRAINER_TEAM_ROCKET_GRUNT_5              355
-#define TRAINER_TEAM_ROCKET_GRUNT_6              356
-#define TRAINER_TEAM_ROCKET_GRUNT_7              357*/
+#define TRAINER_ELITE_FOUR_KAREN_2               353
 #define TRAINER_TEAM_ROCKET_GRUNT_45             358
 #define TRAINER_HEX_MANIAC_GERMANA               359
 #define TRAINER_TEAM_ROCKET_SCIENTIST_4          360
@@ -372,17 +368,29 @@
 #define TRAINER_CHALLENGER_CLAIR                 367
 #define TRAINER_CHALLENGER_PROF_ELM_TYPHLOSION   368
 #define TRAINER_CHALLENGER_PROF_ELM_FERALIGATR   369
-#define TRAINER_CHALLENGER_PROF_ELM_MEGANIUM     370/*
-#define TRAINER_TEAM_ROCKET_GRUNT_21             371
+#define TRAINER_CHALLENGER_PROF_ELM_MEGANIUM     370
 
 //GS Chronicles Kanto Trainers
-#define TRAINER_TEAM_ROCKET_GRUNT_22             372
-#define TRAINER_TEAM_ROCKET_GRUNT_23             373
-#define TRAINER_TEAM_ROCKET_GRUNT_24             374
-#define TRAINER_TEAM_ROCKET_GRUNT_25             375
-#define TRAINER_TEAM_ROCKET_GRUNT_26             376
-#define TRAINER_TEAM_ROCKET_GRUNT_27             377
-#define TRAINER_TEAM_ROCKET_GRUNT_28             378
+
+/*Vermilion City Gym*/
+#define TRAINER_JUGGLER_GATTO                    354
+#define TRAINER_GUITARIST_CARLOS                 355
+#define TRAINER_GENTLEMAN_RYAN                   356
+
+/*S.S. Aqua Fist*/
+#define TRAINER_POKE_FAN_M_HOWARD                357
+#define TRAINER_TWINS_MAY_AND_MEI                371
+#define TRAINER_FIREBREATHER_BARNES              372
+#define TRAINER_HIKER_QUINTON                    373
+#define TRAINER_SAILOR_HANDSOME                  374
+#define TRAINER_PICNICKER_JEANNIE                375
+#define TRAINER_JUGGLER_GARRET                   376
+#define TRAINER_SAILOR_PETE                      377
+#define TRAINER_BURGLAR_COOPER                   378
+
+
+
+/*
 #define TRAINER_TEAM_ROCKET_GRUNT_29             379
 #define TRAINER_TEAM_ROCKET_GRUNT_30             380
 #define TRAINER_TEAM_ROCKET_GRUNT_31             381
@@ -420,14 +428,14 @@
 #define TRAINER_ELITE_FOUR_KAREN                 413//JOHTO ELITE 4
 #define TRAINER_LEADER_BROCK                     414
 #define TRAINER_LEADER_MISTY                     415
-#define TRAINER_LEADER_LT_SURGE                  416
+#define TRAINER_LEADER_LT_SURGE_1                416
 #define TRAINER_LEADER_ERIKA                     417
 #define TRAINER_LEADER_KOGA                      418
 #define TRAINER_LEADER_BLAINE                    419
 #define TRAINER_LEADER_SABRINA                   420
 #define TRAINER_GENTLEMAN_THOMAS                 421
 #define TRAINER_GENTLEMAN_ARTHUR                 422
-#define TRAINER_GENTLEMAN_TUCKER                 423
+#define TRAINER_LEADER_LT_SURGE_2                423
 #define TRAINER_GENTLEMAN_NORTON                 424
 #define TRAINER_GENTLEMAN_WALTER                 425
 #define TRAINER_SILVER_LEAGUE_TYPHLOSION         426//RIVAL JOHTO LEAGUE
@@ -540,8 +548,8 @@
 #define TRAINER_TWINS_ELI_ANNE_2                 533
 #define TRAINER_YOUNGSTER_JOHNSON                534
 #define TRAINER_BIKER_RICARDO                    535
-#define TRAINER_BIKER_JAREN                      536/*
-#define TRAINER_TEAM_ROCKET_GRUNT_43             537
+#define TRAINER_BIKER_JAREN                      536
+/*#define TRAINER_TEAM_ROCKET_GRUNT_43           537
 #define TRAINER_TEAM_ROCKET_GRUNT_44             538
 #define TRAINER_TEAM_ROCKET_GRUNT_45             539
 #define TRAINER_TEAM_ROCKET_GRUNT_46             540
@@ -571,7 +579,7 @@
 #define TRAINER_LADY_GILLIAN                     564
 #define TRAINER_YOUNGSTER_DESTIN                 565
 #define TRAINER_SWIMMER_MALE_TOBY                566
-#define TRAINER_TEAM_ROCKET_GRUNT_49             567/*
+/*#define TRAINER_TEAM_ROCKET_GRUNT_49           567
 #define TRAINER_TEAM_ROCKET_GRUNT_50             568
 #define TRAINER_TEAM_ROCKET_GRUNT_51             569*/
 #define TRAINER_BIRD_KEEPER_MILO                 570

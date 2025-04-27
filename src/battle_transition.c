@@ -350,6 +350,7 @@ void Mugshots_CreateOpponentPlayerSprites(struct Task* task)
 	|| GET_TRAINER(gTrainerBattleOpponent_A).trainerClass == CLASS_RIVAL_KRIS_ETHAN
 	|| GET_TRAINER(gTrainerBattleOpponent_A).trainerClass == CLASS_ROCKET_EXECUTIVE
 	|| GET_TRAINER(gTrainerBattleOpponent_A).trainerClass == CLASS_LEADER
+	|| GET_TRAINER(gTrainerBattleOpponent_A).trainerClass == CLASS_LEADER_KANTO
 	|| GET_TRAINER(gTrainerBattleOpponent_A).trainerClass == CLASS_CHALLENGER
 	|| GET_TRAINER(gTrainerBattleOpponent_A).trainerClass == CLASS_CHAMPION_KE
 

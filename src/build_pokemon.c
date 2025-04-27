@@ -1202,6 +1202,7 @@ static u8 GetTrainerMonGender(const struct Trainer* trainer)
 		case CLASS_TEAM_ROCKET: //Otherwise all Grunts have the same genders
 		case CLASS_LEADER:
 		case CLASS_ELITE_4:
+		case CLASS_LEADER_KANTO:
 		case CLASS_CHAMPION:
 		case CLASS_RIVAL:
 		case CLASS_CHALLENGER_2:
@@ -1345,6 +1346,7 @@ static bool8 IsBossTrainerClassForLevelScaling(u16 trainerId)
 
 	switch (GET_TRAINER(trainerId).trainerClass) {
 		case CLASS_LEADER:
+		case CLASS_LEADER_KANTO:
 		case CLASS_ELITE_4:
 		case CLASS_CHAMPION:
 		case CLASS_CHALLENGER_2:

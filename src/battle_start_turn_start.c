@@ -1917,6 +1917,9 @@ u8 GetTrainerBattleTransition(void)
 	if (gTrainers[gTrainerBattleOpponent_A].trainerClass == CLASS_LEADER)
 		return B_TRANSITION_CHAMPION;
 
+	if (gTrainers[gTrainerBattleOpponent_A].trainerClass == CLASS_LEADER_KANTO)
+		return B_TRANSITION_CHAMPION;
+
 	if (gTrainers[gTrainerBattleOpponent_A].trainerClass == CLASS_CHALLENGER)
 		return B_TRANSITION_CHAMPION;
 

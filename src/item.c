@@ -81,7 +81,7 @@ static void Task_SortFinish(u8 taskId);
 static void FinishBagSortIntro(u8 taskId);
 
 //General Utility Functions
-u16 SanitizeItemId(u16 itemId)
+u16 SanitizeItemId(u16 itemId) 
 {
 	if (itemId >= ITEMS_COUNT)
 		return ITEM_NONE;

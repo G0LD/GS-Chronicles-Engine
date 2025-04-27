@@ -24,7 +24,7 @@
 /*
 daycare.c
 	functions that handle all daycare functions, including attribute inheritance and step counts
-*/
+*/ 
 
 #define EGG_LVL_UP_MOVES_ARRAY_COUNT 50
 
@@ -697,6 +697,31 @@ void CreateEgg(struct Pokemon *mon, u16 species) //The function used by the give
 	SetMonData(mon, MON_DATA_LANGUAGE, &language);
 	SetMonData(mon, MON_DATA_IS_EGG, &isEgg);
 	HealMon(mon);
+}
+
+void sp151_GiveCustomEgg()
+{
+    u16 species = Var8005;
+    u16 customEggIndex = Var8006;
+    struct Pokemon *mon = AllocZeroed(sizeof(struct Pokemon));
+    bool8 isEgg;
+    bool8 sentToPc;
+
+    CreateEgg(mon, species);
+    isEgg = TRUE;
+    SetMonData(mon, MON_DATA_IS_EGG, &isEgg);
+    switch(customEggIndex)
+    {
+        case 0: //example placeholder
+            SetMonMoveSlot(mon, MOVE_TACKLE, 0);
+            SetMonMoveSlot(mon, MOVE_HARDEN, 1);
+            SetMonMoveSlot(mon, MOVE_METEORMASH, 2);
+            SetMonMoveSlot(mon, MOVE_EARTHQUAKE, 3);
+            break;
+    }
+
+    sentToPc = GiveMonToPlayer(mon);
+    Free(mon);
 }
 
 //Decide features to inherit

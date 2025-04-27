@@ -43,8 +43,20 @@ const struct MugshotTable sPreBattleMugshotSprites[147] =
 	[24]  = {Will_MugshotTiles, Will_MugshotPal, 64 * 64 / 2, 0, -32},
 	[25]  = {Aile_MugshotTiles, Aile_MugshotPal, 64 * 64 / 2, 0, -32},
 	[120] = {Koga_MugshotTiles, Koga_MugshotPal, 64 * 64 / 2, 0, -32},
-	[114] = {Karen_MugshotTiles, Karen_MugshotPal, 64 * 64 / 2, 0, -32},
+	[81]  = {Karen_MugshotTiles, Karen_MugshotPal, 64 * 64 / 2, 0, -32},
 	[3]  =  {KimonoGirl_MugshotTiles, KimonoGirl_MugshotPal, 64 * 64 / 2, 0, -32},
+	[116]  =  {Brock_MugshotTiles, Brock_MugshotPal, 64 * 64 / 2, 0, -32},
+	[117]  =  {Misty_MugshotTiles, Misty_MugshotPal, 64 * 64 / 2, 0, -32},
+	[118] = {LtSurge_MugshotTiles, LtSurge_MugshotPal, 64 * 64 / 2, 0, -32},
+	[119]  =  {Erika_MugshotTiles, Erika_MugshotPal, 64 * 64 / 2, 0, -32},
+	[123]  =  {Janine_MugshotTiles, Janine_MugshotPal, 64 * 64 / 2, 0, -32},
+	[122]  =  {Sabrina_MugshotTiles, Sabrina_MugshotPal, 64 * 64 / 2, 0, -32},
+	[121]  =  {Blaine_MugshotTiles, Blaine_MugshotPal, 64 * 64 / 2, 0, -32},
+	[124]  =  {Blue_MugshotTiles, Blue_MugshotPal, 64 * 64 / 2, 0, -32},
+	[113]  =  {Bruno_MugshotTiles, Bruno_MugshotPal, 64 * 64 / 2, 0, -32},
+	[114]  =  {Agatha_MugshotTiles, Agatha_MugshotPal, 64 * 64 / 2, 0, -32},
+	[115]  =  {Lance_MugshotTiles, Lance_MugshotPal, 64 * 64 / 2, 0, -32},
+	[125]  =  {Red_MugshotTiles, Red_MugshotPal, 64 * 64 / 2, 0, -32},
 };
 #endif
 

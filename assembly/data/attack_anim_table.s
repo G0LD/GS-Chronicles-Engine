@@ -822,6 +822,9 @@ gMoveAnimations:
 .word ANIM_DRILLRUN @MOVE_HYPERDRILL
 .word ANIM_KOWTOWCLEAVE
 .word ANIM_RAGINGBULL
+.word 0x81c6f34		@MOVE_FREE1
+.word 0x81c6f34		@MOVE_FREE2
+.word 0x81c6f34		@MOVE_FREE3
 
 @;New attacks go above!
 .word ANIM_BREAKNECK_BLITZ

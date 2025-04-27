@@ -7794,7 +7794,7 @@ const struct TrainerMonItemCustomMoves sParty_ChallengerLorelei1[] = {
         .iv = 0,
         .lvl = 85,
         .heldItem = ITEM_NEVER_MELT_ICE,
-        .species = SPECIES_SANDSLASH,
+        .species = SPECIES_SANDSLASH_A,
         .moves = {
             MOVE_SWORDSDANCE,
             MOVE_ICESHARD,
@@ -8951,6 +8951,352 @@ const struct TrainerMonItemCustomMoves sParty_EliteFourKaren2[] = {
         .ability = 0
     },
 };
+/*Kanto Team Rosters Starts Here*/
+const struct TrainerMonNoItemDefaultMoves sParty_JugglerGatto[] = {
+    {
+        .iv = 252,
+        .lvl =73,
+        .species = SPECIES_ELECTIVIRE,
+    },
+    {
+        .iv = 0,
+        .lvl =73,
+        .species = SPECIES_TOGEDEMARU,
+    },
+    {
+        .iv = 0,
+        .lvl =75,
+        .species = SPECIES_ELECTRODE,
+    },
+};
+
+const struct TrainerMonNoItemDefaultMoves sParty_GuitaristCarlos[] = {
+    {
+        .iv = 252,
+        .lvl =73,
+        .species = SPECIES_AMPHAROS,
+    },
+    {
+        .iv = 0,
+        .lvl =74,
+        .species = SPECIES_EMOLGA,
+    },
+    {
+        .iv = 0,
+        .lvl =75,
+        .species = SPECIES_TOXTRICITY,
+    },
+};
+
+const struct TrainerMonNoItemDefaultMoves sParty_GentlemanRyan[] = {
+    {
+        .iv = 252,
+        .lvl =75,
+        .species = SPECIES_ZEBSTRIKA,
+    },
+    {
+        .iv = 0,
+        .lvl =76,
+        .species = SPECIES_MANECTRIC,
+    },
+};
+
+
+const struct TrainerMonItemCustomMoves sParty_LeaderSurge1[] = {
+    {
+        .iv = 0,
+        .lvl =78,
+        .heldItem = ITEM_SHUCA_BERRY,
+        .species = SPECIES_LANTURN,
+        .moves = {
+            MOVE_SURF,
+            MOVE_THUNDERBOLT,
+            MOVE_RAINDANCE,
+            MOVE_THUNDERWAVE,
+        },
+        .ability = 0
+    },
+    {
+        .iv = 0,
+        .lvl =80,
+        .heldItem = ITEM_THROAT_SPRAY,
+        .species = SPECIES_TOXTRICITY_LOW_KEY,
+        .moves = {
+            MOVE_OVERDRIVE,
+            MOVE_BOOMBURST,
+            MOVE_NUZZLE,
+            MOVE_ICEPUNCH,
+        },
+        .ability = 1
+    },
+    {
+        .iv = 0,
+        .lvl =81,
+        .heldItem = ITEM_AIR_BALLOON,
+        .species = SPECIES_JOLTEON,
+        .moves = {
+            MOVE_DOUBLETEAM,
+            MOVE_LIGHTSCREEN,
+            MOVE_REFLECT,
+            MOVE_THUNDERBOLT,
+        },
+        .ability = 1
+    },
+    {
+        .iv = 0,
+        .lvl =82,
+        .heldItem = ITEM_ELECTRIC_GEM,
+        .species = SPECIES_EELEKTROSS,
+        .moves = {
+            MOVE_LIQUIDATION,
+            MOVE_VOLTSWITCH,
+            MOVE_STOMPINGTANTRUM,
+            MOVE_GRASSKNOT,
+        },
+        .ability = 1
+    },
+    {
+        .iv = 0,
+        .lvl =83,
+        .heldItem = ITEM_ELECTRIUM_Z,
+        .species = SPECIES_RAICHU,
+        .moves = {
+            MOVE_VOLTTACKLE,
+            MOVE_IRONTAIL,
+            MOVE_NUZZLE,
+            MOVE_KNOCKOFF,
+        },
+        .ability = 1
+    },
+};
+
+const struct TrainerMonItemCustomMoves sParty_LeaderSurge2[] = {
+    {
+        .iv = 0,
+        .lvl =88,
+        .heldItem = ITEM_SHUCA_BERRY,
+        .species = SPECIES_LANTURN,
+        .moves = {
+            MOVE_SURF,
+            MOVE_THUNDERBOLT,
+            MOVE_RAINDANCE,
+            MOVE_THUNDERWAVE,
+        },
+        .ability = 0
+    },
+    {
+        .iv = 0,
+        .lvl =90,
+        .heldItem = ITEM_LUM_BERRY,
+        .species = SPECIES_EELEKTROSS,
+        .moves = {
+            MOVE_LIQUIDATION,
+            MOVE_VOLTSWITCH,
+            MOVE_STOMPINGTANTRUM,
+            MOVE_GRASSKNOT,
+        },
+        .ability = 1
+    },
+    {
+        .iv = 0,
+        .lvl =91,
+        .heldItem = ITEM_AIR_BALLOON,
+        .species = SPECIES_ELECTRODE_H,
+        .moves = {
+            MOVE_CHLOROBLAST,
+            MOVE_THUNDERBOLT,
+            MOVE_THUNDERWAVE,
+            MOVE_SPORE,
+        },
+        .ability = 0
+    },
+    {
+        .iv = 0,
+        .lvl =92,
+        .heldItem = ITEM_ELECTRIC_GEM,
+        .species = SPECIES_ROTOM_FAN,
+        .moves = {
+            MOVE_AIRSLASH,
+            MOVE_ICYWIND,
+            MOVE_THUNDERBOLT,
+            MOVE_WILLOWISP,
+        },
+        .ability = 1
+    },
+    {
+        .iv = 0,
+        .lvl =93,
+        .heldItem = ITEM_ELECTRIUM_Z,
+        .species = SPECIES_RAICHU,
+        .moves = {
+            MOVE_VOLTTACKLE,
+            MOVE_IRONTAIL,
+            MOVE_NUZZLE,
+            MOVE_KNOCKOFF,
+        },
+        .ability = 1
+    },
+};
+const struct TrainerMonItemDefaultMoves sParty_PokefanHoward[] = {
+    {
+        .iv = 0,
+        .lvl =62,
+        .heldItem = ITEM_SITRUS_BERRY,
+        .species = SPECIES_WIGGLYTUFF,
+    },
+    {
+        .iv = 0,
+        .lvl =64,
+        .heldItem = ITEM_NORMAL_GEM,
+        .species = SPECIES_PURUGLY,
+    },
+};
+const struct TrainerMonNoItemDefaultMoves sParty_TwinsMayMei[] = {
+    {
+        .iv = 0,
+        .lvl =64,
+        .species = SPECIES_SOLROCK,
+    },
+    {
+        .iv = 0,
+        .lvl =64,
+        .species = SPECIES_LUNATONE,
+    },
+};
+const struct TrainerMonNoItemDefaultMoves sParty_FirebreatherBarnes[] = {
+    {
+        .iv = 0,
+        .lvl =61,
+        .species = SPECIES_TORKOAL,
+    },
+    {
+        .iv = 0,
+        .lvl =61,
+        .species = SPECIES_MUK_A,
+    },
+    {
+        .iv = 0,
+        .lvl =63,
+        .species = SPECIES_INFERNAPE,
+    },
+};
+const struct TrainerMonNoItemDefaultMoves sParty_HikerQuinton[] = {
+    {
+        .iv = 0,
+        .lvl =60,
+        .species = SPECIES_DONPHAN,
+    },
+    {
+        .iv = 0,
+        .lvl =62,
+        .species = SPECIES_GOLEM_A,
+    },
+    {
+        .iv = 0,
+        .lvl =63,
+        .species = SPECIES_FLYGON,
+    },
+};
+const struct TrainerMonNoItemDefaultMoves sParty_SailorHandsome[] = {
+    {
+        .iv = 0,
+        .lvl =65,
+        .species = SPECIES_CROAGUNK,
+    },
+};
+const struct TrainerMonNoItemDefaultMoves sParty_PicnickerJeannie[] = {
+    {
+        .iv = 0,
+        .lvl =60,
+        .species = SPECIES_LINOONE,
+    },
+    {
+        .iv = 0,
+        .lvl =61,
+        .species = SPECIES_PACHIRISU,
+    },
+    {
+        .iv = 0,
+        .lvl =63,
+        .species = SPECIES_URSARING,
+    },
+};
+const struct TrainerMonNoItemDefaultMoves sParty_JugglerGarret[] = {
+    {
+        .iv = 0,
+        .lvl =61,
+        .species = SPECIES_ELECTRODE,
+    },
+    {
+        .iv = 0,
+        .lvl =61,
+        .species = SPECIES_ELECTRODE,
+    },
+    {
+        .iv = 0,
+        .lvl =63,
+        .species = SPECIES_MAGNEZONE,
+    },
+    {
+        .iv = 0,
+        .lvl =62,
+        .species = SPECIES_FORRETRESS,
+    },
+};
+const struct TrainerMonNoItemDefaultMoves sParty_SailorPete[] = {
+    {
+        .iv = 0,
+        .lvl =63,
+        .species = SPECIES_HARIYAMA,
+    },
+    {
+        .iv = 0,
+        .lvl =63,
+        .species = SPECIES_POLITOED,
+    },
+};
+const struct TrainerMonItemCustomMoves sParty_BurglarCooper[] = {
+    {
+        .iv = 0,
+        .lvl =64,
+        .heldItem = ITEM_LIFE_ORB,
+        .species = SPECIES_PERSIAN,
+        .moves = {
+            MOVE_NIGHTSLASH,
+            MOVE_FAKEOUT,
+            MOVE_COVET,
+            MOVE_UTURN,
+        },
+        .ability = 1
+    },
+    {
+        .iv = 0,
+        .lvl =64,
+        .heldItem = ITEM_LEFTOVERS,
+        .species = SPECIES_ABSOL,
+        .moves = {
+            MOVE_NIGHTSLASH,
+            MOVE_SUCKERPUNCH,
+            MOVE_WILLOWISP,
+            MOVE_IRONTAIL,
+        },
+        .ability = 1
+    },
+    {
+        .iv = 0,
+        .lvl =67,
+        .heldItem = ITEM_DARK_GEM,
+        .species = SPECIES_THIEVUL,
+        .moves = {
+            MOVE_DARKPULSE,
+            MOVE_NASTYPLOT,
+            MOVE_ROAR,
+            MOVE_PSYCHIC,
+        },
+        .ability = 0
+    },
+};
+
 
 /*
 const struct TrainerMonNoItemDefaultMoves sParty_[] = {
@@ -13960,6 +14306,188 @@ const struct Trainer gTrainers[] = {
         .party = {.ItemCustomMoves = sParty_EliteFourKaren2}
     },
 
+/*Kanto Trainer battles start here*/
+
+    [TRAINER_LEADER_LT_SURGE_1] = {
+        .partyFlags = PARTY_FLAG_CUSTOM_MOVES | PARTY_FLAG_HAS_ITEM,
+        .trainerClass = CLASS_LEADER_KANTO,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = TRAINER_PIC_LT_SURGE,
+        .trainerName = {_L, _t, _PERIOD, _SPACE, _S, _u, _r, _g, _e, _END},
+        .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_SETUP_FIRST_TURN | AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_CHECK_GOOD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .partySize = NELEMS(sParty_LeaderSurge1),
+        .party = {.ItemCustomMoves = sParty_LeaderSurge1}
+    },
+
+    [TRAINER_LEADER_LT_SURGE_2] = {
+        .partyFlags = PARTY_FLAG_CUSTOM_MOVES | PARTY_FLAG_HAS_ITEM,
+        .trainerClass = CLASS_LEADER_KANTO,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = TRAINER_PIC_LT_SURGE,
+        .trainerName = {_L, _t, _PERIOD, _SPACE, _S, _u, _r, _g, _e, _END},
+        .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_SETUP_FIRST_TURN | AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_CHECK_GOOD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .partySize = NELEMS(sParty_LeaderFalkner2),
+        .party = {.ItemCustomMoves = sParty_LeaderSurge2}
+    },
+
+    [TRAINER_JUGGLER_GATTO] = {
+        .partyFlags = 0,
+        .trainerClass = CLASS_JUGGLER,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = TRAINER_PIC_JUGGLER,
+        .trainerName = {_G, _a, _t, _t, _o, _END},
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .partySize = NELEMS(sParty_JugglerGatto),
+        .party = {.NoItemDefaultMoves = sParty_JugglerGatto}
+    },
+    [TRAINER_GUITARIST_CARLOS] = {
+        .partyFlags = 0,
+        .trainerClass = CLASS_GUITARIST,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = TRAINER_PIC_GUITARIST,
+        .trainerName = {_C, _a, _r, _l, _o, _s, _END},
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .partySize = NELEMS(sParty_GuitaristCarlos),
+        .party = {.NoItemDefaultMoves = sParty_GuitaristCarlos}
+    },
+
+    [TRAINER_GENTLEMAN_RYAN] = {
+        .partyFlags = 0,
+        .trainerClass = CLASS_GENTLEMAN,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = TRAINER_PIC_GENTLEMAN,
+        .trainerName = {_R, _y, _a, _n, _END},
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .partySize = NELEMS(sParty_GentlemanRyan),
+        .party = {.NoItemDefaultMoves = sParty_GentlemanRyan}
+    },
+
+    [TRAINER_POKE_FAN_M_HOWARD] = {
+        .partyFlags = PARTY_FLAG_HAS_ITEM,
+        .trainerClass = CLASS_POKEFAN,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = TRAINER_PIC_POKEFAN_M,
+        .trainerName = {_H, _o, _w, _a, _r, _d, _END},
+        .items = {ITEM_FULL_HEAL},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .partySize = NELEMS(sParty_PokefanHoward),
+        .party = {.ItemDefaultMoves = sParty_PokefanHoward}
+    },
+
+    [TRAINER_TWINS_MAY_AND_MEI] = {
+        .partyFlags = 0,
+        .trainerClass = CLASS_TWINS,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = TRAINER_PIC_TWINS,
+        .trainerName = {_M, _a, _y, _AMPERSAND, _M, _e, _i, _END},
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .partySize = NELEMS(sParty_TwinsMayMei),
+        .party = {.NoItemDefaultMoves = sParty_TwinsMayMei}
+    },
+
+    [TRAINER_FIREBREATHER_BARNES] = {
+        .partyFlags = 0,
+        .trainerClass = CLASS_FIRE_BREATHER,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = TRAINER_PIC_FIREBREATHER,
+        .trainerName = {_B, _a, _r, _n, _e, _s, _END},
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .partySize = NELEMS(sParty_FirebreatherBarnes),
+        .party = {.NoItemDefaultMoves = sParty_FirebreatherBarnes}
+    },
+
+    [TRAINER_HIKER_QUINTON] = {
+        .partyFlags = 0,
+        .trainerClass = CLASS_HIKER,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = TRAINER_PIC_HIKER,
+        .trainerName = {_Q, _u, _i, _n, _t, _o, _n, _END},
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .partySize = NELEMS(sParty_HikerQuinton),
+        .party = {.NoItemDefaultMoves = sParty_HikerQuinton}
+    },
+
+    [TRAINER_SAILOR_HANDSOME] = {
+        .partyFlags = 0,
+        .trainerClass = CLASS_SAILOR,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = TRAINER_PIC_SAILOR,
+        .trainerName = {_H, _a, _n, _d, _s, _o, _m, _e, _END},
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .partySize = NELEMS(sParty_SailorHandsome),
+        .party = {.NoItemDefaultMoves = sParty_SailorHandsome}
+    },
+
+    [TRAINER_PICNICKER_JEANNIE] = {
+        .partyFlags = 0,
+        .trainerClass = CLASS_PICNICKER,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = TRAINER_PIC_PICNICKER,
+        .trainerName = {_J, _e, _a, _n, _n, _i, _e, _END},
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .partySize = NELEMS(sParty_PicnickerJeannie),
+        .party = {.NoItemDefaultMoves = sParty_PicnickerJeannie}
+    },
+
+    [TRAINER_JUGGLER_GARRET] = {
+        .partyFlags = 0,
+        .trainerClass = CLASS_JUGGLER,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = TRAINER_PIC_JUGGLER,
+        .trainerName = {_G, _a, _r, _r, _e, _t, _END},
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .partySize = NELEMS(sParty_JugglerGarret),
+        .party = {.NoItemDefaultMoves = sParty_JugglerGarret}
+    },
+
+    [TRAINER_SAILOR_PETE] = {
+        .partyFlags = 0,
+        .trainerClass = CLASS_SAILOR,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = TRAINER_PIC_SAILOR,
+        .trainerName = {_P, _e, _t, _e, _END},
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .partySize = NELEMS(sParty_SailorPete),
+        .party = {.NoItemDefaultMoves = sParty_SailorPete}
+    },
+
+    [TRAINER_BURGLAR_COOPER] = {
+        .partyFlags = PARTY_FLAG_CUSTOM_MOVES | PARTY_FLAG_HAS_ITEM,
+        .trainerClass = CLASS_BURGLAR,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = TRAINER_PIC_BURGLAR,
+        .trainerName = {_C, _o, _o, _p, _e, _r, _END},
+        .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_SETUP_FIRST_TURN | AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_CHECK_GOOD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .partySize = NELEMS(sParty_BurglarCooper),
+        .party = {.ItemCustomMoves = sParty_BurglarCooper}
+    },
 
     /*
     [TRAINER_] = {
@@ -13967,7 +14495,7 @@ const struct Trainer gTrainers[] = {
         .trainerClass = CLASS_,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
         .trainerPic = TRAINER_PIC_,
-        .trainerName = {},
+        .trainerName = {_, _, _, _, _, _, _, _END},
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT,

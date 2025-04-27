@@ -707,6 +707,9 @@
 #Ou yeah chacarron macarron
 ##080000A8 48 41 43 4B 47 53 43 45
 
+#Shiny Routine Upgrade
+##09C7E6B6 00 48 00 47 31 21 B0 08
+
 #ifdef UNBOUND
 
 ##Specific For Unbound, overrites a hook that shouldn't be there with vanilla data.##

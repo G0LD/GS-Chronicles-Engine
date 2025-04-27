@@ -14,6 +14,7 @@ u16 __attribute__((long_call)) GetEggSpecies(u16 species);
 //void __attribute__((long_call)) SetInitialEggData(struct Pokemon *mon, u16 species, struct DayCare *daycare);
 void __attribute__((long_call)) RemoveEggFromDayCare(struct DayCare *daycare);
 void __attribute__((long_call)) RemoveIVIndexFromList(u8 *ivs, u8 selectedIv);
+void *AllocZeroed(u32 size);
 bool8 __attribute__((long_call)) ShouldEggHatch(void);
 //u8 __attribute__((long_call)) GetDaycareCompatibilityScore(struct DayCare *daycare);
 u8 __attribute__((long_call)) GetNumLevelsGainedForDaycareMon(struct DaycareMon *daycareMon);

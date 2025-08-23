@@ -38,6 +38,8 @@ extern u8 gText_InGameTrade_Diabolo[];
 extern u8 gText_InGameTrade_Misa[];
 extern u8 gText_InGameTrade_Gallardo[];
 extern u8 gText_InGameTrade_Ferruccio[];
+extern u8 gText_InGameTrade_Ghoul[];
+extern u8 gText_InGameTrade_JohnC[];
 
 static const struct InGameTrade sInGameTrades[] = {
     [INGAME_TRADE_SANDSHREW_A] = 
@@ -215,6 +217,22 @@ static const struct InGameTrade sInGameTrades[] = {
         .otGender = MALE,
         .nature = NATURE_ADAMANT,
         .requestedSpecies = SPECIES_TAUROS
+    },
+    [INGAME_TRADE_SPIRITOMB] = 
+    {
+        .nickname = gText_InGameTrade_Ghoul,
+        .species = SPECIES_SPIRITOMB,
+        .ivs = {24, 21, 31, 12, 31, 22},
+        .abilityNum = 0,
+        .otId = 666,
+        .conditions = {5, 5, 5, 5, 30},
+        .personality = 0x482cac89,
+        .heldItem = ITEM_DARK_GEM,
+        .mailNum = 255,
+        .otName = gText_InGameTrade_JohnC,
+        .otGender = MALE,
+        .nature = NATURE_ADAMANT,
+        .requestedSpecies = SPECIES_DUSCLOPS
     }
 };
 

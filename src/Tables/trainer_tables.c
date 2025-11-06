@@ -9165,6 +9165,19 @@ const struct TrainerMonItemCustomMoves sParty_AgathaTagTeam[] = {
         },
         .ability = 1
     },
+    {
+        .iv = 0,
+        .lvl =80,
+        .heldItem = ITEM_LUM_BERRY,
+        .species = SPECIES_UMBREON,
+        .moves = {
+            MOVE_NASTYPLOT,
+            MOVE_SANDATTACK,
+            MOVE_DARKPULSE,
+            MOVE_SHADOWSNEAK,
+        },
+        .ability = 1
+    },
 };
 
 const struct TrainerMonItemDefaultMoves sParty_PokefanHoward[] = {

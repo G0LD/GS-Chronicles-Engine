@@ -1789,14 +1789,14 @@ bool8 Overworld_IsBikingAllowed(void)
 //If you use Spherical Ice's sideways stairs
 static bool8 MetatileBehavior_IsWestSidewaysStairs(u8 behaviour)
 {
-	return behaviour == 0xB5 || behaviour == 0xB2 || behaviour == 0xB0 || behaviour == 0xB3 //Stairs
-		|| behaviour == 0xB1; //Tile at bottom
+	return behaviour == 0xD5 || behaviour == 0xD2 || behaviour == 0xD0 || behaviour == 0xD3 //Stairs
+		|| behaviour == 0xD1; //Tile at bottom
 }
 
 static bool8 MetatileBehavior_IsEastSidewaysStairs(u8 behaviour)
 {
-	return behaviour == 0xB5 || behaviour == 0xB2 || behaviour == 0xB0 || behaviour == 0xB3 //Stairs
-		|| behaviour == 0xB4; //Tile at bottom
+	return behaviour == 0xD5 || behaviour == 0xD2 || behaviour == 0xD0 || behaviour == 0xD3 //Stairs
+		|| behaviour == 0xD4; //Tile at bottom
 }
 
 static bool8 PlayerIsMovingOnSidewaysStairs(u8 direction)

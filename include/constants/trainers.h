@@ -176,7 +176,7 @@
 //Backsprites
 #define TRAINER_BACK_PIC_RED              	0
 #define TRAINER_BACK_PIC_LEAF             	1
-#define TRAINER_BACK_PIC_BRENDAN          	2
+#define TRAINER_BACK_PIC_AGATHA          	2
 #define TRAINER_BACK_PIC_MAY              	3
 #define TRAINER_BACK_PIC_POKE_DUDE        	4
 #define TRAINER_BACK_PIC_OLD_MAN 			5

@@ -388,10 +388,8 @@
 #define TRAINER_SAILOR_PETE                      377
 #define TRAINER_BURGLAR_COOPER                   378
 
-
-
+#define TRAINER_AGATHA_TAG_TEAM                  379
 /*
-#define TRAINER_TEAM_ROCKET_GRUNT_29             379
 #define TRAINER_TEAM_ROCKET_GRUNT_30             380
 #define TRAINER_TEAM_ROCKET_GRUNT_31             381
 #define TRAINER_TEAM_ROCKET_GRUNT_32             382

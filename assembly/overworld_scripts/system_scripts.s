@@ -1129,7 +1129,7 @@ EventScript_UseADMDiveUnderwater_SkipAsk:
 .equ FLAG_SYS_USE_FLASH, 0x806
 .global EventScript_UseFlash
 EventScript_UseFlash:
-	lockall
+	lock
 	checkflag 0x820
 	if 0x0 _goto EventScript_UseFlash_None
 	countpokemon
@@ -1169,7 +1169,7 @@ EventScript_UseFlash_NoDeposit:
 	end
 
 EventScript_UseFlash_None:
-	releaseall
+	special 0x6 
 	end
 
 @;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@

@@ -9137,6 +9137,36 @@ const struct TrainerMonItemCustomMoves sParty_LeaderSurge2[] = {
         .ability = 1
     },
 };
+
+const struct TrainerMonItemCustomMoves sParty_AgathaTagTeam[] = {
+    {
+        .iv = 0,
+        .lvl =79,
+        .heldItem = ITEM_FOCUS_BAND,
+        .species = SPECIES_SABLEYE,
+        .moves = {
+            MOVE_HELPINGHAND,
+            MOVE_SHADOWCLAW,
+            MOVE_NIGHTSLASH,
+            MOVE_RECOVER,
+        },
+        .ability = 0
+    },
+    {
+        .iv = 0,
+        .lvl =80,
+        .heldItem = ITEM_LUM_BERRY,
+        .species = SPECIES_GENGAR,
+        .moves = {
+            MOVE_NASTYPLOT,
+            MOVE_SPITE,
+            MOVE_SHADOWBALL,
+            MOVE_SHADOWSNEAK,
+        },
+        .ability = 1
+    },
+};
+
 const struct TrainerMonItemDefaultMoves sParty_PokefanHoward[] = {
     {
         .iv = 0,
@@ -14487,6 +14517,19 @@ const struct Trainer gTrainers[] = {
         .aiFlags = AI_SCRIPT_SETUP_FIRST_TURN | AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_CHECK_GOOD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
         .partySize = NELEMS(sParty_BurglarCooper),
         .party = {.ItemCustomMoves = sParty_BurglarCooper}
+    },
+
+    [TRAINER_AGATHA_TAG_TEAM] = {
+        .partyFlags = PARTY_FLAG_CUSTOM_MOVES | PARTY_FLAG_HAS_ITEM,
+        .trainerClass = CLASS_PKMN_TRAINER_1,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = TRAINER_PIC_LT_SURGE,
+        .trainerName = {_A, _g, _a, _t, _h, _a, _END},
+        .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_SETUP_FIRST_TURN | AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_CHECK_GOOD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .partySize = NELEMS(sParty_AgathaTagTeam),
+        .party = {.ItemCustomMoves = sParty_AgathaTagTeam}
     },
 
     /*

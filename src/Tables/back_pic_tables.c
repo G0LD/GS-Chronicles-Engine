@@ -27,7 +27,7 @@ tables to edit:
 
 PAL_DEFINE(PlayerMale)
 PAL_DEFINE(PlayerFemale)
-PAL_DEFINE(Brendan)
+PAL_DEFINE(Agatha)
 PAL_DEFINE(May)
 PAL_DEFINE(Silver)
 PAL_DEFINE(Lance)
@@ -61,7 +61,7 @@ PAL_DEFINE(Tessy)
 
 const struct CompressedSpritePalette gTrainerBackPicPaletteTable[] =
 {
-	PAL_ENTRY(BRENDAN, Brendan)
+	PAL_ENTRY(AGATHA, Agatha)
 	PAL_ENTRY(MAY, May)
 	PAL_ENTRY(POKE_DUDE, PokeDude)
 	PAL_ENTRY(OLD_MAN, OldMan)
@@ -106,7 +106,7 @@ const struct CompressedSpritePalette gTrainerBackPicPaletteTable[] =
 
 #define gTrainerBackAnims_Red (const union AnimCmd* const*) 0x8239F44
 #define gTrainerBackAnims_Leaf (const union AnimCmd* const*) 0x8239F4C
-#define gTrainerBackAnims_Brendan (const union AnimCmd* const*) 0x8239F54
+#define gTrainerBackAnims_Agatha (const union AnimCmd* const*) 0x8239F44
 #define gTrainerBackAnims_May (const union AnimCmd* const*) 0x8239F54
 #define gTrainerBackAnims_PokeDude (const union AnimCmd* const*) 0x8239F54
 #define gTrainerBackAnims_OldMan (const union AnimCmd* const*) 0x8239F5C
@@ -150,7 +150,7 @@ const union AnimCmd* const* const gTrainerBackAnimsPtrTable[] =
 {
 	[TRAINER_BACK_PIC_RED] = gTrainerBackAnims_Red,
 	[TRAINER_BACK_PIC_LEAF] = gTrainerBackAnims_Leaf,
-	[TRAINER_BACK_PIC_BRENDAN] = gTrainerBackAnims_Brendan,
+	[TRAINER_BACK_PIC_AGATHA] = gTrainerBackAnims_Agatha,
 	[TRAINER_BACK_PIC_MAY] = gTrainerBackAnims_May,
 	[TRAINER_BACK_PIC_POKE_DUDE] = gTrainerBackAnims_PokeDude,
 	[TRAINER_BACK_PIC_OLD_MAN] = gTrainerBackAnims_OldMan,
@@ -192,7 +192,7 @@ const struct MonCoords gTrainerBackPicCoords[] =
 {
 	[TRAINER_BACK_PIC_RED] = 		{.coords = 8, .y_offset = 5},
 	[TRAINER_BACK_PIC_LEAF] = 		{.coords = 8, .y_offset = 5},
-	[TRAINER_BACK_PIC_BRENDAN] = 	{.coords = 8, .y_offset = 4},
+	[TRAINER_BACK_PIC_AGATHA] = 	{.coords = 8, .y_offset = 4},
 	[TRAINER_BACK_PIC_MAY] = 		{.coords = 8, .y_offset = 4},
 	[TRAINER_BACK_PIC_POKE_DUDE] = 	{.coords = 8, .y_offset = 4},
 	[TRAINER_BACK_PIC_OLD_MAN] = 	{.coords = 8, .y_offset = 4},
@@ -262,7 +262,7 @@ const struct MonCoords gTrainerBackPicCoords[] =
 		{gTrainerBackPic_##name##Tiles + 0x2000, 0x800, 0},              \
 	};
 
-FOUR_FRAME_TABLE(Brendan)
+FIVE_FRAME_TABLE(Agatha)
 FOUR_FRAME_TABLE(May)
 FOUR_FRAME_TABLE(Silver)
 FIVE_FRAME_TABLE(Lance)
@@ -346,7 +346,7 @@ const struct SpriteTemplate gSpriteTemplateTable_TrainerBackSprites[] =
 {
 	[TRAINER_BACK_PIC_RED] = BACK_TEMPLATE(Red)
 	[TRAINER_BACK_PIC_LEAF] = BACK_TEMPLATE(Leaf)
-	[TRAINER_BACK_PIC_BRENDAN] = BACK_TEMPLATE(Brendan)
+	[TRAINER_BACK_PIC_AGATHA] = BACK_TEMPLATE(Agatha)
 	[TRAINER_BACK_PIC_MAY] = BACK_TEMPLATE(May)
 	[TRAINER_BACK_PIC_POKE_DUDE] = BACK_TEMPLATE(PokeDude)
 	[TRAINER_BACK_PIC_OLD_MAN] = BACK_TEMPLATE(OldMan)

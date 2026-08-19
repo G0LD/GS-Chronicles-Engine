@@ -1,6 +1,6 @@
 # Pokemon GS Chronicles Engine
 
-##Game Developed by Ruki Studios
+## Game Developed by Ruki Studios.
 This code is the one is used for the development of Pokemon GS Chronicles. This has been heavily edited, so don't try to use it for another project since it will give you lots of errors.
 
 Someday, I'll  switch to a decomp base. For now, I'll leave it as it is. Below is the original description of the CFRU repo:

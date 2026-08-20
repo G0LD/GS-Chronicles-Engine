@@ -82,6 +82,9 @@ It's your worst nightmare!\p
 #org @BattleText_LegendaryAppeared
 [FD][06] appeared!\p
 
+#org @BattleText_RogueAppeared
+A rogue [FD][06] from another\ndimension appeared!\p
+
 #org @BattleText_WildPkmnAppearedPause
 A wild [FD][06] appeared![FC][08][7F]
 

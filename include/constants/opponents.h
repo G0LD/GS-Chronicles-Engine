@@ -389,21 +389,20 @@
 #define TRAINER_BURGLAR_COOPER                   378
 
 #define TRAINER_AGATHA_TAG_TEAM                  379
-/*
-#define TRAINER_TEAM_ROCKET_GRUNT_30             380
-#define TRAINER_TEAM_ROCKET_GRUNT_31             381
-#define TRAINER_TEAM_ROCKET_GRUNT_32             382
-#define TRAINER_TEAM_ROCKET_GRUNT_33             383
-#define TRAINER_TEAM_ROCKET_GRUNT_34             384
-#define TRAINER_TEAM_ROCKET_GRUNT_35             385
-#define TRAINER_TEAM_ROCKET_GRUNT_36             386
-#define TRAINER_TEAM_ROCKET_GRUNT_37             387
-#define TRAINER_TEAM_ROCKET_GRUNT_38             388
-#define TRAINER_TEAM_ROCKET_GRUNT_39             389
-#define TRAINER_TEAM_ROCKET_GRUNT_40             390
-#define TRAINER_TEAM_ROCKET_GRUNT_41             391*/
-#define TRAINER_COOLTRAINER_SAMUEL               392
-#define TRAINER_COOLTRAINER_GEORGE               393
+#define TRAINER_PKMN_TRAINER_BRUNO               380
+#define TRAINER_LORELEI_TAG_TEAM                 381
+#define TRAINER_BLUE_TAG_TEAM                    382
+#define TRAINER_TEAM_ROCKET_GRUNT_46             383
+#define TRAINER_TEAM_ROCKET_GRUNT_47             384
+#define TRAINER_TEAM_ROCKET_GRUNT_48             385
+#define TRAINER_TEAM_ROCKET_GRUNT_49             386
+#define TRAINER_ROCKET_ADMIN_BERKEL_3            387
+#define TRAINER_TEAM_ROCKET_GRUNT_50             388
+#define TRAINER_TEAM_ROCKET_GRUNT_51             389
+#define TRAINER_TEAM_ROCKET_GRUNT_52             390
+#define TRAINER_ROCKET_EXECUTIVE_PROTON_4        391
+#define TRAINER_LEA                   392
+#define TRAINER_L                   393
 #define TRAINER_COOLTRAINER_COLBY                394
 #define TRAINER_COOLTRAINER_PAUL                 395
 #define TRAINER_COOLTRAINER_ROLANDO              396
@@ -427,14 +426,14 @@
 #define TRAINER_LEADER_BROCK                     414
 #define TRAINER_LEADER_MISTY                     415
 #define TRAINER_LEADER_LT_SURGE_1                416
-#define TRAINER_LEADER_ERIKA                     417
+#define TRAINER_LEADER_ERIKA_1                   417
 #define TRAINER_LEADER_KOGA                      418
 #define TRAINER_LEADER_BLAINE                    419
 #define TRAINER_LEADER_SABRINA                   420
 #define TRAINER_GENTLEMAN_THOMAS                 421
 #define TRAINER_GENTLEMAN_ARTHUR                 422
 #define TRAINER_LEADER_LT_SURGE_2                423
-#define TRAINER_GENTLEMAN_NORTON                 424
+#define TRAINER_LEADER_ERIKA_2                   424
 #define TRAINER_GENTLEMAN_WALTER                 425
 #define TRAINER_SILVER_LEAGUE_TYPHLOSION         426//RIVAL JOHTO LEAGUE
 #define TRAINER_SILVER_LEAGUE_FERALIGATR         427//RIVAL JOHTO LEAGUE

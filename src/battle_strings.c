@@ -153,7 +153,7 @@ void BufferStringBattle(u16 stringID)
 					stringPtr = BattleText_GhostAppearedNoID; //0x83FD2D9
 			}
 			else if (gBattleTypeFlags & BATTLE_TYPE_SCRIPTED_WILD_1)
-				stringPtr = BattleText_WildPkmnAppeared6; //0x83FD297
+				stringPtr = BattleText_RogueAppeared; //0x83FD297
 			#endif
 
 			#ifdef FLAG_WORST_NIGHTMARE_STRING
@@ -175,7 +175,7 @@ void BufferStringBattle(u16 stringID)
 			else
 			{
 				#ifdef MAPSEC_DISTORTION_WORLD
-				if (GetCurrentRegionMapSectionId() == MAPSEC_DISTORTION_WORLD)
+				if (GetCurrentRegionMapSectionId() == 0x6A)
 					stringPtr = BattleText_DistortionWorldMonAttacked;
 				else
 				#endif
@@ -184,6 +184,11 @@ void BufferStringBattle(u16 stringID)
 					stringPtr = BattleText_LegendaryAppeared;
 				else
 				#endif
+				#ifdef FLAG_ROGUE_APPEARED_STRING
+				if (FlagGet(FLAG_ROGUE_APPEARED_STRING))
+					stringPtr = BattleText_RogueAppeared;
+				else 
+				#endif 
 
 				stringPtr = BattleText_WildPkmnAppeared; //0x83FD284
 			}

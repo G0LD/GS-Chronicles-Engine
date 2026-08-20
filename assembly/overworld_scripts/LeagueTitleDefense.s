@@ -197,6 +197,8 @@ EventScript_LeagueTitleDefense_Ending:
     hidesprite 0x5
     sound 0x9
     pause 0x16
+    compare 0x5012 41
+    if lessthan _call EventScript_LeagueTitleDefense_KantoTrigger
     compare VAR_TITLE_DEFENSE_VICTORIES 0xFFFF
     if equal _goto EventScript_LeagueTitleDefense_None @If value is 0xFFFF, don't add anything. Prevents data overflow.
     addvar VAR_TITLE_DEFENSE_VICTORIES 0x1
@@ -225,6 +227,10 @@ EventScript_LeagueTitleDefense_EndingElm:
     applymovement PLAYER EventScript_LeagueTitleDefense_Move8
     warp 0x1 0x50 0xFF 0x5 0x10
     end
+
+EventScript_LeagueTitleDefense_KantoTrigger:
+    setvar 0x5012 41
+    return
 
 EventScript_LeagueTitleDefense_None:
     applymovement PLAYER EventScript_LeagueTitleDefense_Move8

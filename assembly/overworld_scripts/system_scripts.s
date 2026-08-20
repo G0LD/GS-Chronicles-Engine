@@ -879,13 +879,8 @@ EventScript_UseSandboxWaterfall:
 @;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 .global EventScript_UseSurf
 EventScript_UseSurf:
-	bufferpartypokemon 0x0 0x8004
-	bufferattack 0x1 MOVE_SURF
-	callasm IsUnboundToVar
-	compare LASTRESULT 0x0
-	if equal _goto EventScript_UseSurf_SkipAsk
-	checkflag FLAG_AUTO_HMS
-	if SET _goto EventScript_UseSurf_SkipAsk
+	goto 0x87602C7
+	end
 
 EventScript_UseSurf_Ask:
 	callasm IsPlayerFacingMurkyBrownWaterToVar

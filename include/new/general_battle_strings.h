@@ -21,6 +21,7 @@ extern const u8 BattleText_TwoWildAttacked[];
 extern const u8 BattleText_DistortionWorldMonAttacked[];
 extern const u8 BattleText_WorstNightmare[];
 extern const u8 BattleText_LegendaryAppeared[];
+extern const u8 BattleText_RogueAppeared[];
 extern const u8 BattleText_GoTwoPkmn_BattleSands[];
 extern const u8 BattleText_GoPkmn_BattleSands[];
 extern const u8 BattleText_PartnerWithdrewPkmn[];

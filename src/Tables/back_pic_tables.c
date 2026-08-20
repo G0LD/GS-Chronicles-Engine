@@ -31,6 +31,7 @@ PAL_DEFINE(Agatha)
 PAL_DEFINE(May)
 PAL_DEFINE(Silver)
 PAL_DEFINE(Lance)
+PAL_DEFINE(Blue)
 PAL_DEFINE(Marlon)
 PAL_DEFINE(MarlonArm)
 PAL_DEFINE(MarlonPlayerM)
@@ -67,6 +68,7 @@ const struct CompressedSpritePalette gTrainerBackPicPaletteTable[] =
 	PAL_ENTRY(OLD_MAN, OldMan)
 	PAL_ENTRY(SILVER, Silver)
 	PAL_ENTRY(LANCE, Lance)
+	PAL_ENTRY(BLUE, Blue)
 
 #ifndef UNBOUND
 	PAL_ENTRY(RED, Red)
@@ -112,6 +114,7 @@ const struct CompressedSpritePalette gTrainerBackPicPaletteTable[] =
 #define gTrainerBackAnims_OldMan (const union AnimCmd* const*) 0x8239F5C
 #define gTrainerBackAnims_Silver (const union AnimCmd* const*) 0x8239F5C
 #define gTrainerBackAnims_Lance (const union AnimCmd* const*) 0x8239F54
+#define gTrainerBackAnims_Blue (const union AnimCmd* const*) 0x8239F54
 #define gTrainerBackAnims_PokeKid (const union AnimCmd* const*) 0x8239F54
 #define gTrainerBackAnims_Rival (const union AnimCmd* const*) 0x8239F44
 #define gTrainerBackAnims_Jax (const union AnimCmd* const*) 0x8239F44
@@ -156,6 +159,7 @@ const union AnimCmd* const* const gTrainerBackAnimsPtrTable[] =
 	[TRAINER_BACK_PIC_OLD_MAN] = gTrainerBackAnims_OldMan,
 	[TRAINER_BACK_PIC_SILVER] = gTrainerBackAnims_Silver,
 	[TRAINER_BACK_PIC_LANCE] = gTrainerBackAnims_Lance,
+	[TRAINER_BACK_PIC_BLUE] = gTrainerBackAnims_Blue,
 
 #ifdef UNBOUND
 	[TRAINER_BACK_PIC_MARLON] = gTrainerBackAnims_Marlon,
@@ -198,6 +202,7 @@ const struct MonCoords gTrainerBackPicCoords[] =
 	[TRAINER_BACK_PIC_OLD_MAN] = 	{.coords = 8, .y_offset = 4},
 	[TRAINER_BACK_PIC_SILVER] = 	{.coords = 8, .y_offset = 4},
 	[TRAINER_BACK_PIC_LANCE] = 		{.coords = 8, .y_offset = 4},
+	[TRAINER_BACK_PIC_BLUE] = 		{.coords = 8, .y_offset = 4},
 
 #ifdef UNBOUND
 	[TRAINER_BACK_PIC_MARLON] =            {.coords = 8, .y_offset = 4},
@@ -266,6 +271,7 @@ FIVE_FRAME_TABLE(Agatha)
 FOUR_FRAME_TABLE(May)
 FOUR_FRAME_TABLE(Silver)
 FIVE_FRAME_TABLE(Lance)
+FOUR_FRAME_TABLE(Blue)
 
 #ifdef UNBOUND
 
@@ -352,6 +358,7 @@ const struct SpriteTemplate gSpriteTemplateTable_TrainerBackSprites[] =
 	[TRAINER_BACK_PIC_OLD_MAN] = BACK_TEMPLATE(OldMan)
 	[TRAINER_BACK_PIC_SILVER] = BACK_TEMPLATE(Silver)
 	[TRAINER_BACK_PIC_LANCE] = BACK_TEMPLATE(Lance)
+	[TRAINER_BACK_PIC_BLUE] = BACK_TEMPLATE(Blue)
 
 #ifdef UNBOUND
 	[TRAINER_BACK_PIC_MARLON] = BACK_TEMPLATE(Marlon)

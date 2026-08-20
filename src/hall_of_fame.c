@@ -1,4 +1,6 @@
 #include "defines.h"
+#include "../include/text.h"
+#include "../include/window.h"
 #include "../include/hall_of_fame.h"
 #include "../include/field_weather.h"
 #include "../include/menu.h"
@@ -10,6 +12,10 @@
 #include "../include/string_util.h"
 
 #include "../include/new/mega.h"
+#include "../include/new/text.h"
+#include "../include/new/general_battle_strings.h"
+#include "../include/new/battle_strings.h"
+#include "../include/new/battle_strings_2.h"
 
 //Hall of Fame Fix for Expanded Pokemon
 //Based on https://github.com/Sagiri/fame-hall
@@ -30,6 +36,7 @@ void Task_HofPC_DrawSpritesPrintText(u8 taskId);
 void Task_HofPC_PrintMonInfo(u8 taskId);
 void Task_Hof_InitMonData(u8 taskId);
 void HallOfFame_PrintMonInfo(struct HallofFameMon *currMon, unusedArg u8 a1, unusedArg u8 a2);
+//static void HallOfFame_PrintWelcomeText(u8 a0, u8 a1);
 
 void CB2_DoHallOfFameScreen(void)
 {
@@ -141,6 +148,32 @@ static void Task_Hof_InitTeamSaveData(u8 taskId)
 	gTasks[taskId].func = Task_Hof_TrySaveData;
 }
 
+/*static void HallOfFame_PrintWelcomeText(u8 not, u8 used)
+{
+    int i;
+	const u8 *stringPtr = NULL;
+
+    // Check your variable to determine which text to display
+    // Replace 'VAR_YOUR_VARIABLE' with the actual variable ID you want to use
+    if (VarGet(0x51EF) == 1)
+    {
+        stringPtr = gText_FirstChampionHOF;
+    }
+    else
+    {
+        stringPtr = gText_WelcomeToHOF;
+    }
+
+    // Calculate the X position dynamically based on whichever text is chosen
+    x = (0xD0 - GetStringWidth(2, textToPrint, 0)) / 2;
+
+    FillWindowPixelBuffer(0, PIXEL_FILL(0));
+    PutWindowTilemap(0);
+    
+    // Print the selected text
+    AddTextPrinterParameterized3(0, 2, x, 1, textColor[0], 0, textToPrint);
+    CopyWindowToVram(0, COPYWIN_BOTH);
+}*/
 
 void Task_Hof_DisplayMon(u8 taskId)
 {

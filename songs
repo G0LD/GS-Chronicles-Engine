@@ -1,10 +1,12 @@
 ##Footstep Noises
 250 sand_footstep
 251 grass_footstep
+265 mus_hg_vs_gym_leader_kanto
 274 mus_hg_rocket_takeover
 279 mus_hg_cherrygrove
 280 mus_hg_violet
 308 mus_hg_azalea
+350 mus_hg_follow_me
 353 mus_hg_encounter_rocket
 
 360 mus_hg_spiky_eared_pichu
@@ -24,3 +26,4 @@
 393 legend2_FINA
 394 mus_gsc_legend_DD
 395 mus_gsc_legend_kanto #Rearranged from Dark Violet
+396 mus_hg_radio_oak

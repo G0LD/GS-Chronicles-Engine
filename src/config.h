@@ -68,6 +68,7 @@
 #define FLAG_DAILY_EVENTS_START 0xE00 //To flag + 0xFF, resets every new day.
 #define FLAG_LEGENDARY_APPEARED_STRING 0x1443 //Load string "Species" appeared!
 #define FLAG_DISABLE_POKEDEX_REGISTRY 0x1444 //Disables the Pokédex to prevent caught Pokémon to be registered
+#define FLAG_ROGUE_APPEARED_STRING 0x1445 //Load string for mad Pokemon!
 
 /*===== Start Menu/Poketools Flags =====*/
 #define FLAG_SYS_BAG_HIDE 0x141B		//Toggle bag off
@@ -115,6 +116,7 @@ enum //These vars need to be one after the other (hence the enum)
 #define VAR_TRAINER_BGM_OVERRIDE 0x513F //Switches trainer battle song played to the value entered. Useful for regional music switch
 #define VAR_WILD_BGM_OVERRIDE 0x5140    //Switches wild Pokémon battle song played to the value entered. Useful for regional music switch
 #define VAR_BATTLE_TRANSITION_LOGO 0x5141 //Battle transition logo feature. it seems that setting it up with a value other than 0 causes funny graphic glitches.
+#define VAR_DYNAMIC_SHINY_RATE 0x5142 //Var to handle dynamic shiny rates. Credits to Defa.
 
 /*===== Healing Place as in JPAN's Engine =====*/
 #define VAR_HEALINGMAP 0x5137 //0x405A in JPAN's Engine

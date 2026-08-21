@@ -9878,7 +9878,7 @@ const struct TrainerMonItemCustomMoves sParty_LeaderBrock1[] = {
     {
         .iv = 0,
         .lvl =83,
-        .heldItem = ITEM_AERODACTITE,
+        .heldItem = ITEM_AERODACTYLITE,
         .species = SPECIES_AERODACTYL, //M-Aerodactyl
         .moves = {
             MOVE_ROCKSLIDE,
@@ -9945,7 +9945,7 @@ const struct TrainerMonItemCustomMoves sParty_LeaderBrock2[] = {
     {
         .iv = 0,
         .lvl =93,
-        .heldItem = ITEM_AERODACTITE,
+        .heldItem = ITEM_AERODACTYLITE,
         .species = SPECIES_AERODACTYL, //M-Aerodactyl
         .moves = {
             MOVE_ROCKSLIDE,
@@ -9961,7 +9961,7 @@ const struct TrainerMonItemCustomMoves sParty_LeaderMisty1[] = {
         .iv = 0,
         .lvl =78,
         .heldItem = ITEM_DAMP_ROCK,
-        .species = SPECIES_PELIPEER,
+        .species = SPECIES_PELIPPER,
         .moves = {
             MOVE_HURRICANE,
             MOVE_ROOST,
@@ -9977,7 +9977,7 @@ const struct TrainerMonItemCustomMoves sParty_LeaderMisty1[] = {
         .species = SPECIES_PRIMARINA,
         .moves = {
             MOVE_MOONBLAST,
-            MOVE_PSYCHICNOISE,
+            MOVE_PSYCHIC,
             MOVE_SPARKLINGARIA,
             MOVE_DRAININGKISS,
         },
@@ -10028,7 +10028,7 @@ const struct TrainerMonItemCustomMoves sParty_LeaderMisty2[] = {
         .iv = 0,
         .lvl =88,
         .heldItem = ITEM_DAMP_ROCK,
-        .species = SPECIES_PELIPEER,
+        .species = SPECIES_PELIPPER,
         .moves = {
             MOVE_HURRICANE,
             MOVE_ROOST,
@@ -10094,7 +10094,7 @@ const struct TrainerMonItemCustomMoves sParty_LeaderJanine1[] = {
        {
         .iv = 0,
         .lvl =78,
-        .heldItem = ITEM_DAMP_ROCK,
+        .heldItem = ITEM_BLACK_SLUDGE,
         .species = SPECIES_CLODSIRE,
         .moves = {
             MOVE_EARTHQUAKE,
@@ -10108,7 +10108,7 @@ const struct TrainerMonItemCustomMoves sParty_LeaderJanine1[] = {
         .iv = 0,
         .lvl =80,
         .heldItem = ITEM_ASSAULT_VEST,
-        .species = SPECIES_OVERQUIL,
+        .species = SPECIES_OVERQWIL,
         .moves = {
             MOVE_SWORDSDANCE,
             MOVE_GUNKSHOT,
@@ -10175,7 +10175,7 @@ const struct TrainerMonItemCustomMoves sParty_LeaderJanine2[] = {
         .iv = 0,
         .lvl =90,
         .heldItem = ITEM_ASSAULT_VEST,
-        .species = SPECIES_OVERQUIL,
+        .species = SPECIES_OVERQWIL,
         .moves = {
             MOVE_SWORDSDANCE,
             MOVE_GUNKSHOT,
@@ -10244,7 +10244,7 @@ const struct TrainerMonItemCustomMoves sParty_LeaderSabrina1[] = {
         .heldItem = ITEM_ROCKY_HELMET,
         .species = SPECIES_ESPEON,
         .moves = {
-            MOVE_PSYCHICNOISE,
+            MOVE_PSYCHIC,
             MOVE_THUNDERWAVE,
             MOVE_MORNINGSUN,
             MOVE_SHADOWBALL,
@@ -10260,7 +10260,7 @@ const struct TrainerMonItemCustomMoves sParty_LeaderSabrina1[] = {
             MOVE_SCALD,
             MOVE_SLACKOFF,
             MOVE_TELEPORT,
-            MOVE_PSYCHICNOISE,
+            MOVE_PSYCHIC,
         },
         .ability = 0
     },
@@ -10280,12 +10280,12 @@ const struct TrainerMonItemCustomMoves sParty_LeaderSabrina1[] = {
     {
         .iv = 0,
         .lvl =83,
-        .heldItem = ITEM_ALAKAZAMITE,
+        .heldItem = ITEM_ALAKAZITE,
         .species = SPECIES_ALAKAZAM, //M-Alakazam
         .moves = {
             MOVE_PSYSHOCK,
             MOVE_FOCUSBLAST,
-            MOVE_DAZLINGGLEAM,
+            MOVE_DAZZLINGGLEAM,
             MOVE_THUNDERWAVE,
         },
         .ability = 0
@@ -10327,7 +10327,7 @@ const struct TrainerMonItemCustomMoves sParty_LeaderSabrina2[] = {
             MOVE_SCALD,
             MOVE_SLACKOFF,
             MOVE_TELEPORT,
-            MOVE_PSYCHICNOISE,
+            MOVE_PSYCHIC,
         },
         .ability = 0
     },
@@ -10347,12 +10347,12 @@ const struct TrainerMonItemCustomMoves sParty_LeaderSabrina2[] = {
     {
         .iv = 0,
         .lvl =93,
-        .heldItem = ITEM_ALAKAZAMITE,
+        .heldItem = ITEM_ALAKAZITE,
         .species = SPECIES_ALAKAZAM, //M-Alakazam
         .moves = {
             MOVE_PSYSHOCK,
             MOVE_FOCUSBLAST,
-            MOVE_DAZLINGGLEAM,
+            MOVE_DAZZLINGGLEAM,
             MOVE_THUNDERWAVE,
         },
         .ability = 0
@@ -10367,7 +10367,7 @@ const struct TrainerMonItemCustomMoves sParty_LeaderBlaine1[] = {
         .moves = {
             MOVE_STEALTHROCK,
             MOVE_LAVAPLUME,
-            MOVE_YAWM,
+            MOVE_YAWN,
             MOVE_SOLARBEAM,
         },
         .ability = 2
@@ -10434,7 +10434,7 @@ const struct TrainerMonItemCustomMoves sParty_LeaderBlaine2[] = {
         .moves = {
             MOVE_STEALTHROCK,
             MOVE_LAVAPLUME,
-            MOVE_YAWM,
+            MOVE_YAWN,
             MOVE_SOLARBEAM,
         },
         .ability = 2
@@ -10551,7 +10551,7 @@ const struct TrainerMonItemCustomMoves sParty_LeaderBlue1[] = {
         .heldItem = ITEM_HERACRONITE,
         .species = SPECIES_HERACROSS,//M-Heracross
         .moves = {
-            MOVE_SOWRDSDANCE,
+            MOVE_SWORDSDANCE,
             MOVE_CLOSECOMBAT,
             MOVE_ROCKBLAST,
             MOVE_PINMISSILE,
@@ -10631,7 +10631,7 @@ const struct TrainerMonItemCustomMoves sParty_LeaderBlue2[] = {
         .heldItem = ITEM_HERACRONITE,
         .species = SPECIES_HERACROSS,//M-Heracross
         .moves = {
-            MOVE_SOWRDSDANCE,
+            MOVE_SWORDSDANCE,
             MOVE_CLOSECOMBAT,
             MOVE_ROCKBLAST,
             MOVE_PINMISSILE,
@@ -16092,7 +16092,7 @@ const struct Trainer gTrainers[] = {
         .trainerClass = CLASS_LEADER_KANTO,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
         .gender = F_TRAINER_FEMALE,
-        .trainerPic = TRAINER_PIC_MISTY,//Change to Janine ID once sprite is inserted
+        .trainerPic = TRAINER_PIC_JANINE,
         .trainerName = {_J, _a, _n, _i, _n, _e, _END},
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_KEYSTONE},
         .doubleBattle = FALSE,
@@ -16105,7 +16105,7 @@ const struct Trainer gTrainers[] = {
         .trainerClass = CLASS_LEADER_KANTO,
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
         .gender = F_TRAINER_FEMALE,
-        .trainerPic = TRAINER_PIC_MISTY,//Change to Janine ID once sprite is inserted
+        .trainerPic = TRAINER_PIC_JANINE,
         .trainerName = {_J, _a, _n, _i, _n, _e, _END},
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_KEYSTONE},
         .doubleBattle = FALSE,

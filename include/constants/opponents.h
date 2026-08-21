@@ -401,11 +401,11 @@
 #define TRAINER_TEAM_ROCKET_GRUNT_51             389
 #define TRAINER_TEAM_ROCKET_GRUNT_52             390
 #define TRAINER_ROCKET_EXECUTIVE_PROTON_4        391
-#define TRAINER_LEA                   392
-#define TRAINER_L                   393
-#define TRAINER_COOLTRAINER_COLBY                394
-#define TRAINER_COOLTRAINER_PAUL                 395
-#define TRAINER_COOLTRAINER_ROLANDO              396
+#define TRAINER_LEADER_MISTY_2                   392
+#define TRAINER_LEADER_JANINE_2                  393
+#define TRAINER_LEADER_SABRINA_2                 394
+#define TRAINER_LEADER_BLAINE_2                  395
+#define TRAINER_LEADER_BLUE_2                    396
 #define TRAINER_COOLTRAINER_GILBERT              397
 #define TRAINER_COOLTRAINER_OWEN                 398
 #define TRAINER_COOLTRAINER_BERKE                399
@@ -423,18 +423,18 @@
 #define TRAINER_ELITE_FOUR_WILL                  411//JOHTO ELITE 4
 #define TRAINER_ELITE_FOUR_KOGA                  412//JOHTO ELITE 4
 #define TRAINER_ELITE_FOUR_KAREN                 413//JOHTO ELITE 4
-#define TRAINER_LEADER_BROCK                     414
-#define TRAINER_LEADER_MISTY                     415
+#define TRAINER_LEADER_BROCK_1                   414
+#define TRAINER_LEADER_MISTY_1                   415
 #define TRAINER_LEADER_LT_SURGE_1                416
 #define TRAINER_LEADER_ERIKA_1                   417
-#define TRAINER_LEADER_KOGA                      418
-#define TRAINER_LEADER_BLAINE                    419
-#define TRAINER_LEADER_SABRINA                   420
-#define TRAINER_GENTLEMAN_THOMAS                 421
-#define TRAINER_GENTLEMAN_ARTHUR                 422
+#define TRAINER_LEADER_JANINE_1                  418
+#define TRAINER_LEADER_BLAINE_1                  419
+#define TRAINER_LEADER_SABRINA_1                 420
+#define TRAINER_LEADER_BLUE_1                    421
+#define TRAINER_GENTLEMAN_A                     422
 #define TRAINER_LEADER_LT_SURGE_2                423
 #define TRAINER_LEADER_ERIKA_2                   424
-#define TRAINER_GENTLEMAN_WALTER                 425
+#define TRAINER_LEADER_BROCK_2                   425
 #define TRAINER_SILVER_LEAGUE_TYPHLOSION         426//RIVAL JOHTO LEAGUE
 #define TRAINER_SILVER_LEAGUE_FERALIGATR         427//RIVAL JOHTO LEAGUE
 #define TRAINER_SILVER_LEAGUE_MEGANIUM           428//RIVAL JOHTO LEAGUE

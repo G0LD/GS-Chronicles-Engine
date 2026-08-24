@@ -776,7 +776,7 @@
 
 //GS Chronicles Exclusive Moves
 #define MOVE_TORRENTSCALES 0x2FF //Formerly Aqua Scales
-#define MOVE_COLOSSALFANGS 0x300 //Formerly Dragon Crush. Better fits Mega-Feraligatr
+#define MOVE_COLOSSALJAW 0x300 //Formerly Dragon Crush. Better fits Mega-Feraligatr
 #define MOVE_MAGMAGEYSER 0x301
 #define MOVE_PYROEDGESTORM 0x302 //Formerly Sharp Flint
 #define MOVE_SOLARCANNON 0x303 //Formerly Floral Stream

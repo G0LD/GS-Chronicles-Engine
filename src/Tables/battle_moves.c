@@ -12503,7 +12503,7 @@ const struct BattleMove gBattleMoves[] =
 		.z_move_effect = Z_EFFECT_RECOVER_HP
 	},
 
-	[MOVE_AQUA_SCALES] =
+	[MOVE_TORRENTSCALES] =
 	{
 		.effect = EFFECT_ATTACK_UP_HIT,
 		.power = 90,
@@ -12519,11 +12519,11 @@ const struct BattleMove gBattleMoves[] =
 		.z_move_effect = 0
 	},
 
-	[MOVE_DRAGON_CRUSH] =
+	[MOVE_COLOSSALJAW] =
 	{
 		.effect = EFFECT_SPEED_DOWN_HIT,
 		.power = 110,
-		.type = TYPE_DRAGON,
+		.type = TYPE_NORMAL,
 		.accuracy = 95,
 		.pp = 10,
 		.secondaryEffectChance = 100,
@@ -12535,7 +12535,7 @@ const struct BattleMove gBattleMoves[] =
 		.z_move_effect = 0
 	},
 
-	[MOVE_MAGMA_GEYSER] =
+	[MOVE_MAGMAGEYSER] =
 	{
 		.effect = EFFECT_SPECIAL_ATTACK_UP_HIT,
 		.power = 90,
@@ -12551,7 +12551,7 @@ const struct BattleMove gBattleMoves[] =
 		.z_move_effect = 0
 	},
 
-	[MOVE_SHARP_FLINT] =
+	[MOVE_PYROEDGESTORM] =
 	{
 		.effect = EFFECT_SPLINTER,
 		.power = 110,
@@ -12567,7 +12567,7 @@ const struct BattleMove gBattleMoves[] =
 		.z_move_effect = 0
 	},
 
-	[MOVE_FLORAL_STREAM] =
+	[MOVE_SOLARCANNON] =
 	{
 		.effect = EFFECT_DEFENSE_UP_HIT,
 		.power = 90,
@@ -12583,11 +12583,11 @@ const struct BattleMove gBattleMoves[] =
 		.z_move_effect = 0
 	},
 
-	[MOVE_SHINING_BEAM] =
+	[MOVE_AROMABLAST] =
 	{
 		.effect = EFFECT_SPECIAL_ATTACK_DOWN_HIT,
 		.power = 110,
-		.type = TYPE_STEEL,
+		.type = TYPE_FAIRY,
 		.accuracy = 95,
 		.pp = 10,
 		.secondaryEffectChance = 100,
@@ -12599,7 +12599,7 @@ const struct BattleMove gBattleMoves[] =
 		.z_move_effect = 0
 	},
 
-	[MOVE_STARDUST_PUNCH] =
+	[MOVE_STARDUSTPUNCH] =
 	{
 		.effect = EFFECT_DEFENSE_UP_HIT,
 		.power = 70,
@@ -12695,7 +12695,7 @@ const struct BattleMove gBattleMoves[] =
 		.z_move_effect = 0
 	},
 	
-	[MOVE_FREE1] =
+	[MOVE_BLOODMOON] =//Still pending to create Move Data
 	{
 		.effect = EFFECT_BRICK_BREAK,
 		.power = 90,
@@ -12711,27 +12711,27 @@ const struct BattleMove gBattleMoves[] =
 		.z_move_effect = 0
 	},
 
-	[MOVE_FREE2] =
+	[MOVE_SNOWSCAPE] =//Still pending to create Move Data. COne of Hail for now
 	{
-		.effect = EFFECT_BRICK_BREAK,
-		.power = 90,
-		.type = TYPE_WATER,
-		.accuracy = 100,
+		.effect = EFFECT_HAIL,
+		.power = 0,
+		.type = TYPE_ICE,
+		.accuracy = 0,
 		.pp = 10,
-		.secondaryEffectChance = 100,
-		.target = MOVE_TARGET_SELECTED,
+		.secondaryEffectChance = 0,
+		.target = MOVE_TARGET_USER,
 		.priority = 0,
-		.flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED,
-		.z_move_power = 160,
-		.split = SPLIT_PHYSICAL,
-		.z_move_effect = 0
+		.flags = 0,
+		.z_move_power = 0,
+		.split = SPLIT_STATUS,
+		.z_move_effect = Z_EFFECT_SPD_UP_1
 	},
 
-	[MOVE_FREE3] =
+	[MOVE_GLINTINGFANGS] =
 	{
 		.effect = EFFECT_BRICK_BREAK,
 		.power = 90,
-		.type = TYPE_FIGHTING,
+		.type = TYPE_ELECTRIC,//Deals also Psychic-type damage
 		.accuracy = 100,
 		.pp = 10,
 		.secondaryEffectChance = 100,
@@ -15772,13 +15772,13 @@ const u8 gDynamaxMovePowers[MOVES_COUNT] =
 	[MOVE_WILDBOLTSTORM] = 130,
 	[MOVE_SANDSEARSTORM] = 130,
 	[MOVE_SPRINGTIDESTORM] = 130,
-	[MOVE_AQUA_SCALES] = 110,
-	[MOVE_DRAGON_CRUSH] = 130,
-	[MOVE_MAGMA_GEYSER] = 110,
-	[MOVE_SHARP_FLINT] = 130,
-	[MOVE_FLORAL_STREAM] = 110,
-	[MOVE_SHINING_BEAM] = 130,
-	[MOVE_STARDUST_PUNCH] = 110,
+	[MOVE_TORRENTSCALES] = 110,
+	[MOVE_COLOSSALJAW] = 130,
+	[MOVE_MAGMAGEYSER] = 110,
+	[MOVE_PYROEDGESTORM] = 130,
+	[MOVE_SOLARCANNON] = 110,
+	[MOVE_AROMABLAST] = 130,
+	[MOVE_STARDUSTPUNCH] = 110,
 	[MOVE_RAGEFIST] = 90,
 	[MOVE_TWINBEAM] = 90,
 	[MOVE_HYPERDRILL] = 130,

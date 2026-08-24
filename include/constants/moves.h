@@ -775,13 +775,14 @@
 #define MOVE_TAKEHEART 0x2FE
 
 //GS Chronicles Exclusive Moves
-#define MOVE_AQUA_SCALES 0x2FF
-#define MOVE_DRAGON_CRUSH 0x300
-#define MOVE_MAGMA_GEYSER 0x301
-#define MOVE_SHARP_FLINT 0x302
-#define MOVE_FLORAL_STREAM 0x303 //Will be changed to Sol Cannon
-#define MOVE_SHINING_BEAM 0x304
-#define MOVE_STARDUST_PUNCH 0x305
+#define MOVE_TORRENTSCALES 0x2FF //Formerly Aqua Scales
+#define MOVE_COLOSSALFANGS 0x300 //Formerly Dragon Crush. Better fits Mega-Feraligatr
+#define MOVE_MAGMAGEYSER 0x301
+#define MOVE_PYROEDGESTORM 0x302 //Formerly Sharp Flint
+#define MOVE_SOLARCANNON 0x303 //Formerly Floral Stream
+#define MOVE_AROMABLAST 0x304 //Formerly Shining Beam
+#define MOVE_STARDUSTPUNCH 0x305
+#define MOVE_GLINTINGFANGS 0x30D //Deals Both Electric and Psychic damage
 
 //Scarlet & Violet Moves
 #define MOVE_RAGEFIST 0x306
@@ -789,9 +790,8 @@
 #define MOVE_HYPERDRILL 0x308
 #define MOVE_KOWTOWCLEAVE 0x309
 #define MOVE_RAGINGBULL 0x30A
-#define MOVE_FREE1 0x30B
-#define MOVE_FREE2 0x30C
-#define MOVE_FREE3 0x30D
+#define MOVE_BLOODMOON 0x30B
+#define MOVE_SNOWSCAPE 0x30C //Should deprecate Hail soon
 
 //Z-Moves
 #define MOVE_BREAKNECK_BLITZ_P 0x30E

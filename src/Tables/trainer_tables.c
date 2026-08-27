@@ -16187,6 +16187,30 @@ const struct Trainer gTrainers[] = {
         .partySize = NELEMS(sParty_LeaderBlue2),
         .party = {.ItemCustomMoves = sParty_LeaderBlue2}
     },
+    [TRAINER_CAMPER_JERRY] = {
+        .partyFlags = 0,
+        .trainerClass = CLASS_CAMPER,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = TRAINER_PIC_CAMPER,
+        .trainerName = {_J, _e, _r, _r, _y, _END},
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_SETUP_FIRST_TURN | AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_CHECK_GOOD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .partySize = NELEMS(sParty_CamperJerry),
+        .party = {.NoItemDefaultMoves = sParty_CamperJerry}
+    },
+    [TRAINER_HIKER_EDWIN] = {
+        .partyFlags = 0,
+        .trainerClass = CLASS_HIKER,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = TRAINER_PIC_HIKER,
+        .trainerName = {_E, _d, _w, _i, _n, _END},
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_SETUP_FIRST_TURN | AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_CHECK_GOOD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
+        .partySize = NELEMS(sParty_HikerEdwin),
+        .party = {.NoItemDefaultMoves = sParty_HikerEdwin}
+    },
     /*
     [TRAINER_] = {
         .partyFlags = 0,

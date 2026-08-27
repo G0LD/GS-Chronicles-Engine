@@ -377,7 +377,7 @@
 #define TRAINER_GUITARIST_CARLOS                 355
 #define TRAINER_GENTLEMAN_RYAN                   356
 
-/*S.S. Aqua Fist*/
+/*S.S. Aqua Fist Voyage*/
 #define TRAINER_POKE_FAN_M_HOWARD                357
 #define TRAINER_TWINS_MAY_AND_MEI                371
 #define TRAINER_FIREBREATHER_BARNES              372
@@ -406,6 +406,7 @@
 #define TRAINER_LEADER_SABRINA_2                 394
 #define TRAINER_LEADER_BLAINE_2                  395
 #define TRAINER_LEADER_BLUE_2                    396
+
 #define TRAINER_COOLTRAINER_GILBERT              397
 #define TRAINER_COOLTRAINER_OWEN                 398
 #define TRAINER_COOLTRAINER_BERKE                399
@@ -419,6 +420,7 @@
 #define TRAINER_COOLTRAINER_BROOKE               407
 #define TRAINER_COOLTRAINER_AUSTINA              408
 #define TRAINER_COOLTRAINER_JULIE                409
+
 #define TRAINER_ELITE_FOUR_AILE                  410//JOHTO ELITE 4
 #define TRAINER_ELITE_FOUR_WILL                  411//JOHTO ELITE 4
 #define TRAINER_ELITE_FOUR_KOGA                  412//JOHTO ELITE 4
@@ -438,43 +440,52 @@
 #define TRAINER_SILVER_LEAGUE_TYPHLOSION         426//RIVAL JOHTO LEAGUE
 #define TRAINER_SILVER_LEAGUE_FERALIGATR         427//RIVAL JOHTO LEAGUE
 #define TRAINER_SILVER_LEAGUE_MEGANIUM           428//RIVAL JOHTO LEAGUE
-#define TRAINER_RIVAL_POKENON_TOWER_SQUIRTLE     429
-#define TRAINER_RIVAL_POKENON_TOWER_BULBASAUR    430
-#define TRAINER_RIVAL_POKENON_TOWER_CHARMANDER   431
-#define TRAINER_RIVAL_SILPH_SQUIRTLE             432
-#define TRAINER_RIVAL_SILPH_BULBASAUR            433
-#define TRAINER_RIVAL_SILPH_CHARMANDER           434
-#define TRAINER_RIVAL_ROUTE22_LATE_SQUIRTLE      435
-#define TRAINER_RIVAL_ROUTE22_LATE_BULBASAUR     436
-#define TRAINER_RIVAL_ROUTE22_LATE_CHARMANDER    437
-#define TRAINER_CHAMPION_FIRST_SQUIRTLE          438
-#define TRAINER_CHAMPION_FIRST_BULBASAUR         439
-#define TRAINER_CHAMPION_FIRST_CHARMANDER        440
-#define TRAINER_CHANNELER_PATRICIA               441
-#define TRAINER_CHANNELER_CARLY                  442
-#define TRAINER_CHANNELER_HOPE                   443
-#define TRAINER_CHANNELER_PAULA                  444
-#define TRAINER_CHANNELER_LAUREL                 445
-#define TRAINER_CHANNELER_JODY                   446
-#define TRAINER_CHANNELER_TAMMY                  447
-#define TRAINER_CHANNELER_RUTH                   448
-#define TRAINER_CHANNELER_KARINA                 449
-#define TRAINER_CHANNELER_JANAE                  450
-#define TRAINER_CHANNELER_ANGELICA               451
-#define TRAINER_CHANNELER_EMILIA                 452
-#define TRAINER_CHANNELER_JENNIFER               453
-#define TRAINER_CHANNELER_1                      454
-#define TRAINER_CHANNELER_2                      455
-#define TRAINER_CHANNELER_3                      456
-#define TRAINER_CHANNELER_4                      457
-#define TRAINER_CHANNELER_5                      458
-#define TRAINER_CHANNELER_6                      459
-#define TRAINER_CHANNELER_7                      460
-#define TRAINER_CHANNELER_8                      461
-#define TRAINER_CHANNELER_AMANDA                 462
-#define TRAINER_CHANNELER_STACY                  463
-#define TRAINER_CHANNELER_TASHA                  464
-#define TRAINER_HIKER_JEREMY                     465
+#define TRAINER_SILVER_VIRIDIAN_TYPHLOSION       429
+#define TRAINER_SILVER_VIRIDIAN_FERALIGATR       430
+#define TRAINER_SILVER_VIRIDIAN_MEGANIUM         431
+
+/*Pewter Gym Trainers*/
+#define TRAINER_CAMPER_JERRY                     432
+#define TRAINER_HIKER_EDWIN                      433
+/*Cerulean Gym Trainers*/
+#define TRAINER_SAILOR_ERNIE                     434
+#define TRAINER_SAILOR_EDDIE                     435
+#define TRAINER_SWIMMER_F_DIANNE                 436
+#define TRAINER_SWIMMER_F_JOY                    437
+#define TRAINER_SWIMMER_F_BRIANA                 438
+/*Celadon Gym Trainers*/
+#define TRAINER_BEAUTY_ZOEY                      439
+#define TRAINER_AROMA_LADY_TANYA                 440
+#define TRAINER_BEAUTY_JULIA                     441
+#define TRAINER_AROMA_LADY_MICHELLE              442
+/*Fuchsia Gym Trainers*/
+#define TRAINER_NINJA_BOY_SHIGEKI                443
+#define TRAINER_NINJA_BOY_JIN                    444
+#define TRAINER_NINJA_BOY_KOICHI                 445
+#define TRAINER_NINJA_GIRL_AOI                   446
+#define TRAINER_NINJA_GIRL_ATSU                  447
+#define TRAINER_NINJA_GIRL_FUMIKA                448
+/*Saffron Gym Trainers*/
+#define TRAINER_CHANNELER_REBECCA                449
+#define TRAINER_PSYCHIC_M_JARED                  450
+#define TRAINER_CHANNELER_DARCY                  451
+#define TRAINER_HEX_MANIAC_LYNN                  452
+#define TRAINER_PSYCHIC_M_FRANKLIN               453
+#define TRAINER_PSYCHIC_F_WANDA                  454
+#define TRAINER_PSYCHIC_M_CRISS                  455
+/*Cinnabar Gym Trainers*/
+#define TRAINER_SCIENTIST_LOWELL                 456
+#define TRAINER_SCIENTIST_DANIEL                 457
+#define TRAINER_SCIENTIST_LINDEN                 458
+#define TRAINER_SUPER_NERD_CARY                  459
+#define TRAINER_SUPER_NERD_WALDO                 460
+#define TRAINER_SUPER_NERD_MERLE                 461
+/*Viridian Gym Trainers*/
+#define TRAINER_ACE_TRAINER_M_ARABELLA           462
+#define TRAINER_ACE_TRAINER_F_SALMA              463
+#define TRAINER_ACE_TRAINER_M_FRANKIE            464
+#define TRAINER_DOUBLE_TEAM_DEX_AND_DEBB         465
+
 #define TRAINER_PICNICKER_ALMA                   466
 #define TRAINER_PICNICKER_SUSIE                  467
 #define TRAINER_PICNICKER_VALERIE                468

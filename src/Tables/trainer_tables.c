@@ -9968,7 +9968,7 @@ const struct TrainerMonItemCustomMoves sParty_LeaderMisty1[] = {
             MOVE_SURF,
             MOVE_WEATHERBALL,
         },
-        .ability = 0
+        .ability = 2
     },
     {
         .iv = 0,
@@ -10035,7 +10035,7 @@ const struct TrainerMonItemCustomMoves sParty_LeaderMisty2[] = {
             MOVE_SURF,
             MOVE_WEATHERBALL,
         },
-        .ability = 0
+        .ability = 2
     },
     {
         .iv = 0,

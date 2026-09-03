@@ -426,7 +426,7 @@ gSkyBattleBannedMoves:
 .hword MOVE_LANDSWRATH
 .hword MOVE_PRECIPICEBLADES
 .hword MOVE_PSYCHICTERRAIN
-.hword MOVE_SHARP_FLINT
+.hword MOVE_LAVAEDGESTORM
 .hword MOVE_TABLES_TERMIN
 
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
@@ -688,7 +688,7 @@ gPunchingMoves:
 .hword MOVE_ICEHAMMER
 .hword MOVE_PLASMAFISTS
 .hword MOVE_DOUBLEIRONBASH
-.hword MOVE_STARDUST_PUNCH
+.hword MOVE_STARDUSTPUNCH
 .hword MOVE_RAGEFIST
 .hword MOVE_TABLES_TERMIN
 
@@ -886,7 +886,7 @@ gIgnoreStatChangesMoves:
 .hword MOVE_SACREDSWORD
 .hword MOVE_CHIPAWAY
 .hword MOVE_DARKESTLARIAT
-.hword MOVE_STARDUST_PUNCH
+.hword MOVE_STARDUSTPUNCH
 .hword MOVE_TABLES_TERMIN
 
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
@@ -922,7 +922,7 @@ gAlwaysCriticalMoves:
 .hword MOVE_FROSTBREATH
 .hword MOVE_SURGINGSTRIKES
 .hword MOVE_WICKEDBLOW
-.hword MOVE_DRAGON_CRUSH
+.hword MOVE_COLOSSALJAW
 .hword MOVE_TABLES_TERMIN
 
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
@@ -1023,7 +1023,7 @@ gMovesCanUnfreezeAttacker:
 .hword MOVE_STEAMERUPTION
 .hword MOVE_BURNUP
 .hword MOVE_PYROBALL
-.hword MOVE_MAGMA_GEYSER
+.hword MOVE_MAGMAGEYSER
 .hword MOVE_TABLES_TERMIN
 
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
@@ -1032,7 +1032,7 @@ gMovesCanUnfreezeTarget:
 .hword MOVE_SCALD
 .hword MOVE_STEAMERUPTION
 .hword MOVE_SCORCHINGSANDS
-.hword MOVE_MAGMA_GEYSER
+.hword MOVE_MAGMAGEYSER
 .hword MOVE_TABLES_TERMIN
 
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@

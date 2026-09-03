@@ -778,7 +778,7 @@
 #define MOVE_TORRENTSCALES 0x2FF //Formerly Aqua Scales
 #define MOVE_COLOSSALJAW 0x300 //Formerly Dragon Crush. Better fits Mega-Feraligatr
 #define MOVE_MAGMAGEYSER 0x301
-#define MOVE_PYROEDGESTORM 0x302 //Formerly Sharp Flint
+#define MOVE_LAVAEDGESTORM 0x302 //Formerly Sharp Flint
 #define MOVE_SOLARCANNON 0x303 //Formerly Floral Stream
 #define MOVE_AROMABLAST 0x304 //Formerly Shining Beam
 #define MOVE_STARDUSTPUNCH 0x305
@@ -964,4 +964,4 @@
 
 #define LAST_MOVE_INDEX     MOVE_G_MAX_RAPID_FLOW_S
 #define MOVES_COUNT        (MOVE_G_MAX_RAPID_FLOW_S + 1)
-#define NON_Z_MOVE_COUNT   (MOVE_FREE3 + 1)
+#define NON_Z_MOVE_COUNT   (MOVE_GLINTINGFANGS + 1)

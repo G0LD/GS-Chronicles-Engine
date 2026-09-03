@@ -12551,7 +12551,7 @@ const struct BattleMove gBattleMoves[] =
 		.z_move_effect = 0
 	},
 
-	[MOVE_PYROEDGESTORM] =
+	[MOVE_LAVAEDGESTORM] =
 	{
 		.effect = EFFECT_SPLINTER,
 		.power = 110,
@@ -15775,7 +15775,7 @@ const u8 gDynamaxMovePowers[MOVES_COUNT] =
 	[MOVE_TORRENTSCALES] = 110,
 	[MOVE_COLOSSALJAW] = 130,
 	[MOVE_MAGMAGEYSER] = 110,
-	[MOVE_PYROEDGESTORM] = 130,
+	[MOVE_LAVAEDGESTORM] = 130,
 	[MOVE_SOLARCANNON] = 110,
 	[MOVE_AROMABLAST] = 130,
 	[MOVE_STARDUSTPUNCH] = 110,

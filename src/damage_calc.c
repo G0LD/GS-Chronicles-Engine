@@ -1468,6 +1468,12 @@ TYPE_LOOP:
 		moveType = TYPE_FLYING;
 		goto TYPE_LOOP;
 	}
+
+	if (move == MOVE_GLINTINGFANGS && moveType != TYPE_PSYCHIC)
+	{
+		moveType = TYPE_PSYCHIC;
+		goto TYPE_LOOP;
+	}
 }
 
 void TypeDamageModificationPartyMon(u8 atkAbility, struct Pokemon* monDef, u16 move, u8 moveType, u8* flags)
@@ -1489,6 +1495,11 @@ TYPE_LOOP_AI:
 	if (move == MOVE_FLYINGPRESS && moveType != TYPE_FLYING)
 	{
 		moveType = TYPE_FLYING;
+		goto TYPE_LOOP_AI;
+	}
+	if (move == MOVE_GLINTINGFANGS && moveType != TYPE_PSYCHIC)
+	{
+		moveType = TYPE_PSYCHIC;
 		goto TYPE_LOOP_AI;
 	}
 }

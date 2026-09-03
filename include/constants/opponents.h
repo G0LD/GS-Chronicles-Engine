@@ -452,7 +452,7 @@
 #define TRAINER_SAILOR_EDDIE                     435
 #define TRAINER_SWIMMER_F_DIANNE                 436
 #define TRAINER_SWIMMER_F_JOY                    437
-#define TRAINER_SWIMMER_F_BRIANA                 438
+#define TRAINER_SWIMMER_F_MOLLIE                 438
 /*Celadon Gym Trainers*/
 #define TRAINER_BEAUTY_ZOEY                      439
 #define TRAINER_AROMA_LADY_TANYA                 440
@@ -468,7 +468,7 @@
 /*Saffron Gym Trainers*/
 #define TRAINER_CHANNELER_REBECCA                449
 #define TRAINER_PSYCHIC_M_JARED                  450
-#define TRAINER_CHANNELER_DARCY                  451
+#define TRAINER_HEX_MANIAC_DARCY                 451
 #define TRAINER_HEX_MANIAC_LYNN                  452
 #define TRAINER_PSYCHIC_M_FRANKLIN               453
 #define TRAINER_PSYCHIC_F_WANDA                  454

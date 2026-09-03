@@ -1307,25 +1307,25 @@ The user heals its\nown statuses and\nrestores HP. It also\nraises evasiveness.
 #org @DESC_TAKE_HEART
 The user heals its\nown statuses and\nraises its Sp. Atk\nand Sp. Def.
 
-#org @DESC_AQUA_SCALES
+#org @DESC_TORRENT_SCALES
 The foe is cut\nby sharp scales\nIt may also raise\nthe user's Attack.
 
-#org @DESC_DRAGON_CRUSH
+#org @DESC_MOVE_COLOSSALJAW
 A move based on\nthe user's madness\nIt also lowers\nthe target's speed.
 
 #org @DESC_MAGMA_GEYSER
 The user attacks\nthe target with a\npillar of fire.\nIt may increase Sp. Atk.
 
-#org @DESC_SHARP_FLINT
+#org @DESC_LAVA_EDGESTORM
 The user attacks\nthe opponent by the\npower of the land.\nIt leaves behind\nsplinters.
 
-#org @DESC_FLORAL_STREAM
+#org @DESC_SOLAR_CANNON
 The user stirs up a\nviolent petal storm.\nThis attack increases\nthe user's defense.
 
-#org @DESC_SHINING_BEAM
+#org @DESC_AROMABLAST
 The user blows into\nsunlight to attack.\nIt also lowers the\nfoe's Sp. Atk stat.
 
-#org @DESC_STARDUST_PUNCH
+#org @DESC_STARDUSTPUNCH
 The user strikes a\nstar-shaped punch.\nThis move always\ngoes first.
 
 #org @DESC_RAGE_FIST
@@ -1340,17 +1340,17 @@ The user attacks\nwith a pointy\ndrill, hitting even\nprotected targets.
 #org @DESC_KOWTOW_CLEAVE
 The foe is attacked\nwith a sharp blade\nthat cannot be evaded.
 
-#org @DESC_RAGINGBULL_NORMAL
+#org @DESC_RAGING_BULL
 The user tackles the\ntarget like a raging\nbull. This move\ndestroys Light\nScreen and Reflect.
 
-#org @DESC_RAGINGBULL_FIRE
+#org @DESC_BLOOD_MOON
 The user tackles the\ntarget like a raging\nbull. This move\ndestroys Light\nScreen and Reflect.
 
-#org @DESC_RAGINGBULL_WATER
+#org @DESC_SNOWSCAPE
 The user tackles the\ntarget like a raging\nbull. This move\ndestroys Light\nScreen and Reflect.
 
-#org @DESC_RAGINGBULL_FIGHTING
-The user tackles the\ntarget like a raging\nbull. This move\ndestroys Light\nScreen and Reflect.
+#org @DESC_GLINTING_FANGS
+The user bites the\ntarget and destroys\nall walls. This move\nis both Electric and\nPsychic-Type.
 
 #org @DESC_MAX_GUARD
 Enables the user to\nevade all attacks.\nIt may fail if used\nin succession.

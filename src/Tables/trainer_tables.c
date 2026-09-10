@@ -9064,13 +9064,13 @@ const struct TrainerMonItemCustomMoves sParty_LeaderSurge1[] = {
     {
         .iv = 0,
         .lvl =83,
-        .heldItem = ITEM_EVERSTONE,
-        .species = SPECIES_RAICHU,
+        .heldItem = ITEM_RAICHUNITEX,
+        .species = SPECIES_RAICHU,//M-Raichu X
         .moves = {
             MOVE_VOLTTACKLE,
             MOVE_IRONTAIL,
             MOVE_NUZZLE,
-            MOVE_KNOCKOFF,
+            MOVE_SURF,
         },
         .ability = 1
     },
@@ -9132,13 +9132,13 @@ const struct TrainerMonItemCustomMoves sParty_LeaderSurge2[] = {
     {
         .iv = 0,
         .lvl =93,
-        .heldItem = ITEM_EVERSTONE,
-        .species = SPECIES_RAICHU,
+        .heldItem = ITEM_RAICHUNITEY,
+        .species = SPECIES_RAICHU,//M-Raichu Y
         .moves = {
-            MOVE_VOLTTACKLE,
-            MOVE_IRONTAIL,
-            MOVE_NUZZLE,
-            MOVE_KNOCKOFF,
+            MOVE_ZAPCANNON,
+            MOVE_SURF,
+            MOVE_FAKEOUT,
+            MOVE_VOLTSWITCH,
         },
         .ability = 1
     },
@@ -9749,7 +9749,7 @@ const struct TrainerMonItemCustomMoves sParty_LeaderErika1[] = {
     {
         .iv = 0,
         .lvl =83,
-        .heldItem = ITEM_EVERSTONE,
+        .heldItem = ITEM_VICTREEBELITE,
         .species = SPECIES_VICTREEBEL, //M-Victreebel
         .moves = {
             MOVE_SLUDGEWAVE,
@@ -9817,7 +9817,7 @@ const struct TrainerMonItemCustomMoves sParty_LeaderErika2[] = {
     {
         .iv = 0,
         .lvl =93,
-        .heldItem = ITEM_EVERSTONE,
+        .heldItem = ITEM_VICTREEBELITE,
         .species = SPECIES_VICTREEBEL, //M-Victreebel
         .moves = {
             MOVE_SLUDGEWAVE,
@@ -9884,12 +9884,12 @@ const struct TrainerMonItemCustomMoves sParty_LeaderBrock1[] = {
     {
         .iv = 0,
         .lvl =83,
-        .heldItem = ITEM_AERODACTYLITE,
-        .species = SPECIES_AERODACTYL, //M-Aerodactyl
+        .heldItem = ITEM_BARBARACITE,
+        .species = SPECIES_BARBARACLE, //M-Barbaracle
         .moves = {
-            MOVE_ROCKSLIDE,
-            MOVE_DUALWINGBEAT,
-            MOVE_CRUNCH,
+            MOVE_STONEEDGE,
+            MOVE_SHELLSMASH,
+            MOVE_CLOSECOMBAT,
             MOVE_HEADLONGRUSH,
         },
         .ability = 1
@@ -9951,12 +9951,12 @@ const struct TrainerMonItemCustomMoves sParty_LeaderBrock2[] = {
     {
         .iv = 0,
         .lvl =93,
-        .heldItem = ITEM_AERODACTYLITE,
-        .species = SPECIES_AERODACTYL, //M-Aerodactyl
+        .heldItem = ITEM_BARBARACITE,
+        .species = SPECIES_BARBARACLE, //M-Barbaracle
         .moves = {
-            MOVE_ROCKSLIDE,
-            MOVE_DUALWINGBEAT,
-            MOVE_CRUNCH,
+            MOVE_STONEEDGE,
+            MOVE_SHELLSMASH,
+            MOVE_CLOSECOMBAT,
             MOVE_HEADLONGRUSH,
         },
         .ability = 1
@@ -10018,7 +10018,7 @@ const struct TrainerMonItemCustomMoves sParty_LeaderMisty1[] = {
     {
         .iv = 0,
         .lvl =83,
-        .heldItem = ITEM_EVERSTONE, //ITEM_STARMINITE
+        .heldItem = ITEM_STARMINITE, //ITEM_STARMINITE
         .species = SPECIES_STARMIE, //M-Starmie
         .moves = {
             MOVE_LIQUIDATION,
@@ -10085,7 +10085,7 @@ const struct TrainerMonItemCustomMoves sParty_LeaderMisty2[] = {
     {
         .iv = 0,
         .lvl =93,
-        .heldItem = ITEM_EVERSTONE, //ITEM_STARMINITE
+        .heldItem = ITEM_STARMINITE,
         .species = SPECIES_STARMIE, //M-Starmie
         .moves = {
             MOVE_LIQUIDATION,
@@ -10152,7 +10152,7 @@ const struct TrainerMonItemCustomMoves sParty_LeaderJanine1[] = {
     {
         .iv = 0,
         .lvl =83,
-        .heldItem = ITEM_EVERSTONE, //ITEM_Dragalgite
+        .heldItem = ITEM_DRAGALGITE,
         .species = SPECIES_DRAGALGE, //M-Dragalge
         .moves = {
             MOVE_FLIPTURN,
@@ -10219,7 +10219,7 @@ const struct TrainerMonItemCustomMoves sParty_LeaderJanine2[] = {
     {
         .iv = 0,
         .lvl =93,
-        .heldItem = ITEM_EVERSTONE, //ITEM_Dragalgite
+        .heldItem = ITEM_DRAGALGITE,
         .species = SPECIES_DRAGALGE, //M-Dragalge
         .moves = {
             MOVE_FLIPTURN,
@@ -10272,19 +10272,6 @@ const struct TrainerMonItemCustomMoves sParty_LeaderSabrina1[] = {
     },
     {
         .iv = 0,
-        .lvl =82,
-        .heldItem = ITEM_SITRUS_BERRY,
-        .species = SPECIES_FARIGIRAF,
-        .moves = {
-            MOVE_PSYCHIC,
-            MOVE_THUNDERBOLT,
-            MOVE_HYPERVOICE,
-            MOVE_AMNESIA,
-        },
-        .ability = 2
-    },
-    {
-        .iv = 0,
         .lvl =83,
         .heldItem = ITEM_ALAKAZITE,
         .species = SPECIES_ALAKAZAM, //M-Alakazam
@@ -10293,6 +10280,19 @@ const struct TrainerMonItemCustomMoves sParty_LeaderSabrina1[] = {
             MOVE_FOCUSBLAST,
             MOVE_DAZZLINGGLEAM,
             MOVE_THUNDERWAVE,
+        },
+        .ability = 0
+    },
+    {
+        .iv = 0,
+        .lvl =82,
+        .heldItem = ITEM_MEOWSTICITE,
+        .species = SPECIES_MEOWSTIC_FEMALE, //M-Meowstic
+        .moves = {
+            MOVE_PSYCHIC,
+            MOVE_NASTYPLOT,
+            MOVE_DAZZLINGGLEAM,
+            MOVE_CHARM,
         },
         .ability = 0
     },
@@ -10339,19 +10339,6 @@ const struct TrainerMonItemCustomMoves sParty_LeaderSabrina2[] = {
     },
     {
         .iv = 0,
-        .lvl =92,
-        .heldItem = ITEM_SITRUS_BERRY,
-        .species = SPECIES_FARIGIRAF,
-        .moves = {
-            MOVE_PSYCHIC,
-            MOVE_THUNDERBOLT,
-            MOVE_HYPERVOICE,
-            MOVE_AMNESIA,
-        },
-        .ability = 2
-    },
-    {
-        .iv = 0,
         .lvl =93,
         .heldItem = ITEM_ALAKAZITE,
         .species = SPECIES_ALAKAZAM, //M-Alakazam
@@ -10360,6 +10347,19 @@ const struct TrainerMonItemCustomMoves sParty_LeaderSabrina2[] = {
             MOVE_FOCUSBLAST,
             MOVE_DAZZLINGGLEAM,
             MOVE_THUNDERWAVE,
+        },
+        .ability = 0
+    },
+    {
+        .iv = 0,
+        .lvl =92,
+        .heldItem = ITEM_MEOWSTICITE,
+        .species = SPECIES_MEOWSTIC_FEMALE, //M-Meowstic
+        .moves = {
+            MOVE_PSYCHIC,
+            MOVE_NASTYPLOT,
+            MOVE_DAZZLINGGLEAM,
+            MOVE_CHARM,
         },
         .ability = 0
     },
@@ -10407,7 +10407,7 @@ const struct TrainerMonItemCustomMoves sParty_LeaderBlaine1[] = {
     {
         .iv = 0,
         .lvl =82,
-        .heldItem = ITEM_EVERSTONE,//Chandelurite
+        .heldItem = ITEM_CHANDELURITE,
         .species = SPECIES_CHANDELURE,//M-Chandelure
         .moves = {
             MOVE_FLAMETHROWER,
@@ -10474,7 +10474,7 @@ const struct TrainerMonItemCustomMoves sParty_LeaderBlaine2[] = {
     {
         .iv = 0,
         .lvl =92,
-        .heldItem = ITEM_EVERSTONE,//Chandelurite
+        .heldItem = ITEM_CHANDELURITE,
         .species = SPECIES_CHANDELURE,//M-Chandelure
         .moves = {
             MOVE_FLAMETHROWER,
@@ -10554,13 +10554,13 @@ const struct TrainerMonItemCustomMoves sParty_LeaderBlue1[] = {
     {
         .iv = 0,
         .lvl =82,
-        .heldItem = ITEM_HERACRONITE,
-        .species = SPECIES_HERACROSS,//M-Heracross
+        .heldItem = ITEM_LUCARIONITEZ,
+        .species = SPECIES_LUCARIO,//M-Lucario Z
         .moves = {
-            MOVE_SWORDSDANCE,
-            MOVE_CLOSECOMBAT,
-            MOVE_ROCKBLAST,
-            MOVE_PINMISSILE,
+            MOVE_CALMMIND,
+            MOVE_VACUUMWAVE,
+            MOVE_AURASPHERE,
+            MOVE_FLASHCANNON,
         },
         .ability = 0
     },
@@ -10634,13 +10634,13 @@ const struct TrainerMonItemCustomMoves sParty_LeaderBlue2[] = {
     {
         .iv = 0,
         .lvl =92,
-        .heldItem = ITEM_HERACRONITE,
-        .species = SPECIES_HERACROSS,//M-Heracross
+        .heldItem = ITEM_LUCARIONITEZ,
+        .species = SPECIES_LUCARIO,//M-Lucario Z
         .moves = {
-            MOVE_SWORDSDANCE,
-            MOVE_CLOSECOMBAT,
-            MOVE_ROCKBLAST,
-            MOVE_PINMISSILE,
+            MOVE_CALMMIND,
+            MOVE_VACUUMWAVE,
+            MOVE_AURASPHERE,
+            MOVE_FLASHCANNON,
         },
         .ability = 0
     },
@@ -15674,7 +15674,7 @@ const struct Trainer gTrainers[] = {
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
         .trainerPic = TRAINER_PIC_LT_SURGE,
         .trainerName = {_L, _t, _PERIOD, _SPACE, _S, _u, _r, _g, _e, _END},
-        .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE},
+        .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_KEYSTONE},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_SETUP_FIRST_TURN | AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_CHECK_GOOD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
         .partySize = NELEMS(sParty_LeaderSurge1),
@@ -15687,7 +15687,7 @@ const struct Trainer gTrainers[] = {
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
         .trainerPic = TRAINER_PIC_LT_SURGE,
         .trainerName = {_L, _t, _PERIOD, _SPACE, _S, _u, _r, _g, _e, _END},
-        .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE},
+        .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_KEYSTONE},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_SETUP_FIRST_TURN | AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_CHECK_GOOD_MOVE | AI_SCRIPT_TRY_TO_FAINT,
         .partySize = NELEMS(sParty_LeaderFalkner2),

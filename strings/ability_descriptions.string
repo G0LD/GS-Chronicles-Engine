@@ -184,13 +184,13 @@ Powers up Fairy-type\nmoves.
 Reverses Aura Abilities.
 
 #org @DESC_REFRIGERATE
-Normal moves become\nIce.
+Normal moves become\nIce-type.
 
 #org @DESC_PIXILATE
-Normal moves become\nFairy.
+Normal moves become\nFairy-type.
 
 #org @DESC_AERILATE
-Normal moves become\nFlying.
+Normal moves become\nFlying-type.
 
 #org @DESC_NORMALIZE
 All moves become\nNormal-type.
@@ -339,7 +339,7 @@ Warns of the foe's\nstrongest move.
 Reveals the foe's\nheld item.
 
 #org @DESC_CONTRARY
-Reverses stat changes.
+Reverses stat\nchanges.
 
 #org @DESC_UNNERVE
 Stops the foe from\neating Berries.
@@ -354,7 +354,7 @@ Doubles weight.
 Halves weight.
 
 #org @DESC_STEADFAST
-Flinching raises Speed.
+Flinching raises\nSpeed.
 
 #org @DESC_IMPOSTER
 Transforms upon\nentering battle.
@@ -411,7 +411,7 @@ Summons an extremely\nharsh sunlight.
 Summons a mysterious\nair current.
 
 #org @DESC_BERSERK
-Ups Sp. Atk below half HP.
+Ups Sp. Atk below\nhalf HP.
 
 #org @DESC_LONGREACH
 Never makes contact.
@@ -420,13 +420,13 @@ Never makes contact.
 Sound moves become\nWater-type.
 
 #org @DESC_QUEENLYMAJESTY
-Blocks priority moves.
+Blocks priority\nmoves.
 
 #org @DESC_INNARDSOUT
-Fainting damages the foe.
+Fainting damages\nthe foe.
 
 #org @DESC_DAZZLING
-Blocks priority moves.
+Blocks priority\nmoves.
 
 #org @DESC_GLUTTONY
 Eats Berries early.
@@ -444,10 +444,10 @@ Can regain consumed\nBerries.
 Protects from allies'\nmoves.
 
 #org @DESC_ILLUSION
-Enters battle disguised.
+Enters battle\ndisguised.
 
 #org @DESC_CHEEKPOUCH
-Eating Berries restores HP.
+Eating Berries\nrestores HP.
 
 #org @DESC_SYMBIOSIS
 Gives item to ally after use.
@@ -504,8 +504,8 @@ Fire and Water hits\nboost Speed.
 #org @DESC_PUNKROCK
 Ups and resists\nsound moves.
 
-#org @DESC_SANDSPIT
-Creates a sandstorm\nwhen hit.
+#org @gText_AbilityDescription_Dragonize
+Normal moves become\nDragon-type.
 
 #org @DESC_ICESCALES
 Halves special damage.
@@ -569,6 +569,15 @@ Sometimes moves quicker.
 
 #org @DESC_CURIOUSMEDICINE
 Resets ally's stat\nchanges.
+
+#org @gText_AbilityDescription_Megasol
+User moves always have\nsunlight effect.
+
+#org @gText_AbilityDescription_Sharpness
+Boosts the power of\nslicing moves.
+
+#org @gText_AbilityDescription_AuraGuard
+Halves the damage\nfrom contact moves.
 
 //Unbound Custom Abilities//
 

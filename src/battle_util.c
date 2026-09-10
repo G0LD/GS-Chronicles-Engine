@@ -1649,7 +1649,7 @@ u8 AttacksThisTurn(u8 bank, u16 move) // Note: returns 1 if it's a charging turn
 	if (ITEM_EFFECT(bank) == ITEM_EFFECT_POWER_HERB)
 		return 2;
 
-	if (moveEffect == EFFECT_SOLARBEAM && (gBattleWeather & WEATHER_SUN_ANY) && WEATHER_HAS_EFFECT)
+	if (moveEffect == EFFECT_SOLARBEAM && (((gBattleWeather & WEATHER_SUN_ANY) && WEATHER_HAS_EFFECT) || ABILITY(bank) == ABILITY_MEGA_SOL))
 		return 2;
 
 	if (moveEffect == EFFECT_SKULL_BASH

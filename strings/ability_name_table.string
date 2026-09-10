@@ -743,8 +743,8 @@ Steam Engine
 #org @NAME_PUNK_ROCK
 Punk Rock
 
-#org @NAME_SAND_SPIT
-Sand Spit
+#org @gText_AbilityName_Dragonize
+Dragonize
 
 #org @NAME_ICE_SCALES
 Ice Scales
@@ -883,3 +883,37 @@ Face Shield
 
 #org @gText_AbilityName_RoyalRoar
 Royal Roar
+
+//New + Custom Abilities//
+#org @gText_AbilityName_CudChew
+Cud Chew
+
+#org @gText_AbilityName_Sharpness
+Sharpness
+
+#org @gText_AbilityName_SupremeOverlord
+Supreme Overlord
+
+#org @gText_AbilityName_ArmorTail
+Armor Tail
+
+#org @gText_AbilityName_MindsEye
+Mind's Eye
+
+#org @gText_AbilityName_PiercingDrill
+Piercing Drill
+
+#org @gText_AbilityName_Eelevate
+Eelevate
+
+#org @gText_AbilityName_MegaSol
+Mega Sol
+
+#org @gText_AbilityName_FireMane
+Fire Mane
+
+#org @gText_AbilityName_AuraGuard
+Aura Guard
+
+#org @gText_AbilityName_IgneousRage
+Igneous Rage

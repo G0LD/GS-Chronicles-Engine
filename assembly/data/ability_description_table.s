@@ -256,7 +256,7 @@ gAbilityDescriptions:
 .word DESC_STALWART
 .word DESC_STEAMENGINE
 .word DESC_PUNKROCK
-.word DESC_SANDSPIT
+.word gText_AbilityDescription_Dragonize
 .word DESC_ICESCALES
 .word DESC_RIPEN
 .word DESC_ICEFACE

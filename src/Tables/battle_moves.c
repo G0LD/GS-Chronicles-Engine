@@ -12522,7 +12522,7 @@ const struct BattleMove gBattleMoves[] =
 	[MOVE_COLOSSALJAW] =
 	{
 		.effect = EFFECT_SPEED_DOWN_HIT,
-		.power = 110,
+		.power = 90,
 		.type = TYPE_NORMAL,
 		.accuracy = 95,
 		.pp = 10,
@@ -12554,7 +12554,7 @@ const struct BattleMove gBattleMoves[] =
 	[MOVE_LAVAEDGESTORM] =
 	{
 		.effect = EFFECT_SPLINTER,
-		.power = 110,
+		.power = 100,
 		.type = TYPE_GROUND,
 		.accuracy = 95,
 		.pp = 10,
@@ -12586,7 +12586,7 @@ const struct BattleMove gBattleMoves[] =
 	[MOVE_AROMABLAST] =
 	{
 		.effect = EFFECT_SPECIAL_ATTACK_DOWN_HIT,
-		.power = 110,
+		.power = 100,
 		.type = TYPE_FAIRY,
 		.accuracy = 95,
 		.pp = 10,

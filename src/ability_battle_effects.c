@@ -331,7 +331,6 @@ const s8 gAbilityRatings[ABILITIES_COUNT] =
 	#endif
 	[ABILITY_STEAMENGINE] = 3,
 	[ABILITY_PUNKROCK] = 2,
-	[ABILITY_SANDSPIT] = 5,
 	[ABILITY_ICESCALES] = 7,
 	[ABILITY_RIPEN] = 4,
 	[ABILITY_ICEFACE] = 4,
@@ -2207,7 +2206,7 @@ u8 AbilityBattleEffects(u8 caseID, u8 bank, u8 ability, u8 special, u16 moveArg)
 				break;
 
 			case ABILITY_SANDSPIT:
-				if (MOVE_HAD_EFFECT
+				if (MOVE_HAD_EFFECT 
 				&& TOOK_DAMAGE(bank)
 				&& gBankAttacker != bank
 				&& !(gBattleWeather & (WEATHER_SANDSTORM_ANY | WEATHER_PRIMAL_ANY | WEATHER_CIRCUS)))

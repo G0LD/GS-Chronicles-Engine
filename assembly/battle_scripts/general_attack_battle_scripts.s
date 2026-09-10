@@ -3092,6 +3092,7 @@ BS_151_Solarbeam:
 	jumpifabilitypresent ABILITY_CLOUDNINE, BSSolarbeamDecideTurn
 	@;jumpifabilitypresent ABILITY_AIRLOCK, BSSolarbeamDecideTurn
 	jumpifhelditemeffect BANK_ATTACKER, ITEM_EFFECT_UTILITY_UMBRELLA, BSSolarbeamDecideTurn
+	jumpifability BANK_ATTACKER ABILITY_BALLFETCH BSSolarbeamOnFirstTurn @; Mega Sol acts as harsh sunlight for its user.
 	jumpifweather WEATHER_SUN_ANY BSSolarbeamOnFirstTurn
 
 BSSolarbeamDecideTurn:

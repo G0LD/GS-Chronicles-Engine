@@ -1646,7 +1646,8 @@ void atk1B_cleareffectsonfaint(void) {
 				#ifdef BGM_BATTLE_GYM_LEADER_LAST_POKEMON_GS
 				if ((gBattleTypeFlags & (BATTLE_TYPE_TRAINER | BATTLE_TYPE_DOUBLE)) == (BATTLE_TYPE_TRAINER | BATTLE_TYPE_DOUBLE) //Double Gym battle
 				&& !(gBattleTypeFlags & (BATTLE_TYPE_LINK | BATTLE_TYPE_FRONTIER | BATTLE_TYPE_TRAINER_TOWER))
-				&& GET_TRAINER(gTrainerBattleOpponent_A).trainerClass == CLASS_LEADER
+				&& (GET_TRAINER(gTrainerBattleOpponent_A).trainerClass == CLASS_LEADER 
+                 || GET_TRAINER(gTrainerBattleOpponent_A).trainerClass == CLASS_LEADER_KANTO)
 				&& SIDE(gActiveBattler) == B_SIDE_OPPONENT //Enemy mon fainted
 				&& ViableMonCount(gEnemyParty) == 1) //1 left exactly
 				{
@@ -4644,7 +4645,9 @@ void atkC0_recoverbasedonsunlight(void)
 
 	if (!BATTLER_MAX_HP(gBankAttacker))
 	{
-		if (gBattleWeather == 0 || gBattleWeather & WEATHER_AIR_CURRENT_PRIMAL || !WEATHER_HAS_EFFECT)
+		if ((gBattleWeather == 0 && ABILITY(gBankAttacker) != ABILITY_MEGA_SOL)
+		|| gBattleWeather & WEATHER_AIR_CURRENT_PRIMAL
+		|| !WEATHER_HAS_EFFECT)
 		{
 			NO_WEATHER_EFFECT:
 			gBattleMoveDamage = GetBaseMaxHP(gBankAttacker) / 2;
@@ -4656,7 +4659,7 @@ void atkC0_recoverbasedonsunlight(void)
 			else
 				gBattleMoveDamage = GetBaseMaxHP(gBankAttacker) / 2;
 		}
-		else if (gBattleWeather & WEATHER_SUN_ANY)
+		else if ((gBattleWeather & WEATHER_SUN_ANY) || ABILITY(gBankAttacker) == ABILITY_MEGA_SOL)
 		{
 			if (AffectedBySun(gBankAttacker))
 				gBattleMoveDamage = (2 * GetBaseMaxHP(gBankAttacker)) / 3;

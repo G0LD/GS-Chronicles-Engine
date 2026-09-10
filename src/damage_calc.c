@@ -1712,6 +1712,8 @@ u8 GetMoveTypeSpecialPostAbility(u16 move, u8 atkAbility, bool8 zMoveActive)
 					return TYPE_FLYING;
 				case ABILITY_GALVANIZE:
 					return TYPE_ELECTRIC;
+				case ABILITY_DRAGONIZE:
+					return TYPE_DRAGON;
 			}
 		}
 
@@ -1759,6 +1761,7 @@ static bool8 AbilityCanChangeTypeAndBoost(u16 move, u8 atkAbility, u8 electrifyT
 				case ABILITY_PIXILATE:
 				case ABILITY_AERILATE:
 				case ABILITY_GALVANIZE:
+				case ABILITY_DRAGONIZE:
 					return TRUE;
 			}
 		}
@@ -1790,7 +1793,9 @@ u8 GetExceptionMoveType(u8 bankAtk, u16 move)
 			break;
 
 		case MOVE_WEATHERBALL:
-			if (gBattleWeather & WEATHER_RAIN_ANY && !ItemEffectIgnoresSunAndRain(effect) && WEATHER_HAS_EFFECT)
+			if (ABILITY(bankAtk) == ABILITY_MEGA_SOL && !ItemEffectIgnoresSunAndRain(effect))
+				moveType = TYPE_FIRE;
+			else if (gBattleWeather & WEATHER_RAIN_ANY && !ItemEffectIgnoresSunAndRain(effect) && WEATHER_HAS_EFFECT)
 				moveType = TYPE_WATER;
 			else if (gBattleWeather & WEATHER_SANDSTORM_ANY && WEATHER_HAS_EFFECT)
 				moveType = TYPE_ROCK;
@@ -1918,7 +1923,9 @@ u8 GetMonExceptionMoveType(struct Pokemon* mon, u16 move)
 		case MOVE_WEATHERBALL:
 			if (gMain.inBattle)
 			{
-				if (gBattleWeather & WEATHER_RAIN_ANY && !ItemEffectIgnoresSunAndRain(effect) && WEATHER_HAS_EFFECT)
+				if (ability == ABILITY_MEGA_SOL && !ItemEffectIgnoresSunAndRain(effect))
+					moveType = TYPE_FIRE;
+				else if (gBattleWeather & WEATHER_RAIN_ANY && !ItemEffectIgnoresSunAndRain(effect) && WEATHER_HAS_EFFECT)
 					moveType = TYPE_WATER;
 				else if (gBattleWeather & WEATHER_SANDSTORM_ANY && WEATHER_HAS_EFFECT)
 					moveType = TYPE_ROCK;
@@ -3091,7 +3098,7 @@ static s32 CalculateBaseDamage(struct DamageCalc* data)
 	//Weather Boost
 	if (WEATHER_HAS_EFFECT && !ItemEffectIgnoresSunAndRain(data->defItemEffect))
 	{
-		if (gBattleWeather & WEATHER_RAIN_ANY)
+		if (data->atkAbility == ABILITY_MEGA_SOL && !ItemEffectIgnoresSunAndRain(data->atkItemEffect))
 		{
 			switch (data->moveType) {
 				case TYPE_FIRE:
@@ -3182,14 +3189,18 @@ static s32 CalculateBaseDamage(struct DamageCalc* data)
 			break;
 
 		case ABILITY_FLUFFY:
-		//2x Boost / 0.5x Decrement
-			if (data->moveType == TYPE_FIRE)
-				damage *= 2;
-
-			if ((useMonAtk && CheckContactByMon(move, data->monAtk))
-			|| (!useMonAtk && CheckContact(move, bankAtk, bankDef)))
-				damage /= 2;
-			break;
+    	//2x Boost / 0.5x Decrement
+		 	if (data->moveType == TYPE_FIRE)
+    			{
+        			if (data->monAtk->species != SPECIES_LUCARIO_MEGA_Z) //Ignore Mega Lucario Z for Aura Guard
+        			{
+            			damage *= 2;
+        			}
+    			}
+   			 if ((useMonAtk && CheckContactByMon(move, data->monAtk))
+    		|| (!useMonAtk && CheckContact(move, bankAtk, bankDef)))
+        		damage /= 2;
+    		break;
 
 		case ABILITY_PUNKROCK:
 		//0.5x Decrement
@@ -3961,6 +3972,7 @@ static u16 AdjustBasePower(struct DamageCalc* data, u16 power)
 		case ABILITY_REFRIGERATE:
 		case ABILITY_GALVANIZE:
 		case ABILITY_NORMALIZE:
+		case ABILITY_DRAGONIZE:
 		//1.2x / 1.3x Boost
 			if ((!useMonAtk && AbilityCanChangeTypeAndBoost(move, data->atkAbility, gNewBS->ElectrifyTimers[bankAtk], (gNewBS->zMoveData.active || gNewBS->zMoveData.viewing)))
 			||   (useMonAtk && AbilityCanChangeTypeAndBoost(move, data->atkAbility, 0, FALSE)))
@@ -3981,7 +3993,9 @@ static u16 AdjustBasePower(struct DamageCalc* data, u16 power)
 
 		case ABILITY_STRONGJAW:
 		//1.5x Boost
-			if (gSpecialMoveFlags[move].gBitingMoves)
+			if (SpeciesHasSharpness(useMonAtk ? data->atkSpecies : GetProperAbilityPopUpSpecies(bankAtk))
+			 ? gSpecialMoveFlags[move].gSlicingMoves
+			 : gSpecialMoveFlags[move].gBitingMoves)
 				power = (power * 15) / 10;
 			break;
 

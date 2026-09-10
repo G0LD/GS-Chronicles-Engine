@@ -225,7 +225,7 @@ enum //These vars need to be one after the other (hence the enum)
 //#define OVERWRITE_BG_FOR_LEADER_CHAMPION //If this remains uncommented, special Battle Background palettes will be loaded in for battles against Gym Leaders and the Champion
 #define BRIDGE_FIX //If this remains uncommented, the water battle background will only be loaded if the player's surfing sprite is shown
 #define MEGA_EVOLUTION_FEATURE //Comment this line to remove Mega Evolutions
-#define DYNAMAX_FEATURE //Comment this line to remove Dynamax and Raid Battles
+//#define DYNAMAX_FEATURE //Comment this line to remove Dynamax and Raid Battles
 //#define TUTORIAL_BATTLES //Comment this line to remove Oak's Tutorial
 //#define TANOBY_RUINS_ENABLED //The Tanoby Ruins will be the only location Unown can be encountered
 //#define ALTERING_CAVE_ENABLED //The Altering Cave from FR will work as intended provided the proper var is set

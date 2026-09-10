@@ -28,6 +28,16 @@ extern const u8 gText_AbilityName_WimpOut[];
 extern const u8 gText_AbilityName_QueenlyMajesty[];
 extern const u8 gText_AbilityName_PowerOfAlchemy[];
 extern const u8 gText_AbilityName_PropellerTail[];
+extern const u8 gText_AbilityName_MegaSol[];
+extern const u8 gText_AbilityName_Dragonize[];
+extern const u8 gText_AbilityName_PiercingDrill[];
+extern const u8 gText_AbilityName_Eelevate[];
+extern const u8 gText_AbilityName_ArmorTail[];
+extern const u8 gText_AbilityName_CudChew[];
+extern const u8 gText_AbilityName_Sharpness[];
+extern const u8 gText_AbilityName_IgneousRage[];
+extern const u8 gText_AbilityName_AuraGuard[];
+
 
 //Unbound Custom Abilities
 extern const u8 gText_AbilityName_NineLives[];
@@ -57,6 +67,10 @@ extern const u8 gText_AbilityDescription_Evaporate[];
 extern const u8 gText_AbilityDescription_GrassDash[];
 extern const u8 gText_AbilityDescription_SlipperyTail[];
 extern const u8 gText_AbilityDescription_DrillBeak[];
+extern const u8 gText_AbilityDescription_Megasol[];
+extern const u8 gText_AbilityDescription_Dragonize[];
+extern const u8 gText_AbilityDescription_Sharpness[];
+extern const u8 gText_AbilityDescription_AuraGuard[];
 
 const u8* GetAbilityNameOverride(const u8 ability, const u16 species) //Bypasses the 255 Ability limitation and implements clone Abilities
 {
@@ -242,6 +256,10 @@ const u8* GetAbilityNameOverride(const u8 ability, const u16 species) //Bypasses
 				case NATIONAL_DEX_VESPIQUEN:
 				#endif
 					return gText_AbilityName_QueenlyMajesty;
+				#ifdef NATIONAL_DEX_FARIGIRAF
+				case NATIONAL_DEX_FARIGIRAF:
+					return gText_AbilityName_ArmorTail;
+				#endif
 			}
 			break;
 		case ABILITY_RECEIVER:
@@ -351,6 +369,64 @@ const u8* GetAbilityNameOverride(const u8 ability, const u16 species) //Bypasses
 				#endif
 			}
 			break;
+		case ABILITY_BALLFETCH:
+			switch (dexNum)
+			{
+				#ifdef NATIONAL_DEX_MEGANIUM
+				case NATIONAL_DEX_MEGANIUM:
+					return gText_AbilityName_MegaSol;
+				#endif
+			}
+			break;
+		case ABILITY_BERSERK:
+			switch (dexNum)
+			{
+				#ifdef NATIONAL_DEX_TYPHLOSION
+				case NATIONAL_DEX_TYPHLOSION:
+					return gText_AbilityName_IgneousRage;
+				#endif
+			}
+			break;
+		case ABILITY_UNSEENFIST:
+			switch (dexNum)
+			{
+				#ifdef NATIONAL_DEX_EXCADRILL
+				case NATIONAL_DEX_EXCADRILL:
+					return gText_AbilityName_PiercingDrill;
+				#endif
+			}
+			break;
+			case ABILITY_LEVITATE:
+			switch (dexNum)
+			{
+				#ifdef NATIONAL_DEX_EELEKTROSS
+				case NATIONAL_DEX_EELEKTROSS:
+					return gText_AbilityName_Eelevate;
+				#endif
+			}
+			break;
+		case ABILITY_HARVEST:
+			switch (dexNum)
+			{
+				#if (defined NATIONAL_DEX_FARIGIRAF && defined NATIONAL_DEX_TAUROS)
+				case NATIONAL_DEX_FARIGIRAF:
+				case NATIONAL_DEX_TAUROS:
+					return gText_AbilityName_CudChew;
+				#endif
+			}
+			break;
+		case ABILITY_STRONGJAW:
+			if (SpeciesHasSharpness(species))
+				return gText_AbilityName_Sharpness;
+			break;
+		case ABILITY_FLUFFY:
+			switch (dexNum)
+			{
+				#ifdef NATIONAL_DEX_LUCARIO
+				case NATIONAL_DEX_LUCARIO:
+					return gText_AbilityName_AuraGuard;
+				#endif
+			}
 	}
 
 	return NULL;
@@ -387,6 +463,18 @@ const u8* GetAbilityDescriptionOverride(const u8 ability, const u16 species) //B
 		case ABILITY_MERCILESS:
 			if (SpeciesHasDrillBeak(species))
 				return gText_AbilityDescription_DrillBeak;
+			break;
+		case ABILITY_BALLFETCH:
+			if (SpeciesHasMegaSol(species))
+				return gText_AbilityDescription_Megasol;
+			break;
+		case ABILITY_FLUFFY:
+			if (SpeciesHasAuraGuard(species))
+				return gText_AbilityDescription_AuraGuard;
+			break;
+		case ABILITY_STRONGJAW:
+			if (SpeciesHasSharpness(species))
+				return gText_AbilityDescription_Sharpness;
 			break;
 	}
 
@@ -509,6 +597,35 @@ bool8 SpeciesHasSlipperyTail(unusedArg u16 species) //Custom Unbound Ability
 {
 	#ifdef SPECIES_SEVIPER
 	return species == SPECIES_SEVIPER;
+	#else
+	return FALSE;
+	#endif
+}
+
+bool8 SpeciesHasMegaSol(unusedArg u16 species)
+{
+	#ifdef SPECIES_MEGANIUM_MEGA
+	return species == SPECIES_MEGANIUM_MEGA;
+	#else
+	return FALSE;
+	#endif
+}
+
+bool8 SpeciesHasAuraGuard(unusedArg u16 species)
+{
+	#ifdef SPECIES_LUCARIO_MEGA_Z
+	return species == SPECIES_LUCARIO_MEGA_Z;
+	#else
+	return FALSE;
+	#endif
+}
+
+bool8 SpeciesHasSharpness(unusedArg u16 species)
+{
+	#if (defined SPECIES_KLEAVOR && defined SPECIES_SAMUROTT_H && defined SPECIES_GALLADE)
+	return species == SPECIES_KLEAVOR 
+		|| species == SPECIES_SAMUROTT_H 
+		|| species == SPECIES_GALLADE;
 	#else
 	return FALSE;
 	#endif

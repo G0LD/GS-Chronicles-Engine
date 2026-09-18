@@ -261,6 +261,11 @@ FieldUseFunc_EVReducingBerry 8F71B44
 FieldUseFunc_AbilityCapsule 8F70FC0
 FieldUseFunc_AbilityCapsule 8F70FEC
 
+#ifdef HQ_MIXER
+##Ipatix's HQ Sound Mixer
+SoundMainRAM 81DD0B4
+#endif
+
 #ifdef UNBOUND
 FieldUseFunc_MaxPowder 8876C40
 FieldUseFunc_Honey 8876E7C

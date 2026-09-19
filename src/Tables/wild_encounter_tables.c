@@ -622,6 +622,1033 @@ const struct WildPokemon gIcePath_4F_LandMonsNight[] =
 
 const struct WildPokemonInfo gIcePath_4F_LandMonsInfoNight = {8,gIcePath_4F_LandMonsNight};
 
+// Route 1
+const struct WildPokemon gRoute1_LandMonsNight[] =
+{
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+};
+const struct WildPokemonInfo gRoute1_LandMonsInfoNight = {8, gRoute1_LandMonsNight};
+
+// Route 2
+const struct WildPokemon gRoute2_LandMonsNight[] =
+{
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+};
+const struct WildPokemonInfo gRoute2_LandMonsInfoNight = {8, gRoute2_LandMonsNight};
+
+// Route 3
+const struct WildPokemon gRoute3_LandMonsNight[] =
+{
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+};
+const struct WildPokemonInfo gRoute3_LandMonsInfoNight = {8, gRoute3_LandMonsNight};
+
+// Route 4
+const struct WildPokemon gRoute4_LandMonsNight[] =
+{
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+};
+const struct WildPokemonInfo gRoute4_LandMonsInfoNight = {8, gRoute4_LandMonsNight};
+
+// Route 5
+const struct WildPokemon gRoute5_LandMonsNight[] =
+{
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+};
+const struct WildPokemonInfo gRoute5_LandMonsInfoNight = {8, gRoute5_LandMonsNight};
+
+// Route 6
+const struct WildPokemon gRoute6_LandMonsNight[] =
+{
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+};
+const struct WildPokemonInfo gRoute6_LandMonsInfoNight = {8, gRoute6_LandMonsNight};
+
+// Route 7
+const struct WildPokemon gRoute7_LandMonsNight[] =
+{
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+};
+const struct WildPokemonInfo gRoute7_LandMonsInfoNight = {8, gRoute7_LandMonsNight};
+
+// Route 8
+const struct WildPokemon gRoute8_LandMonsNight[] =
+{
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+};
+const struct WildPokemonInfo gRoute8_LandMonsInfoNight = {8, gRoute8_LandMonsNight};
+
+// Route 9
+const struct WildPokemon gRoute9_LandMonsNight[] =
+{
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+};
+const struct WildPokemonInfo gRoute9_LandMonsInfoNight = {8, gRoute9_LandMonsNight};
+
+// Route 10
+const struct WildPokemon gRoute10_LandMonsNight[] =
+{
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+};
+const struct WildPokemonInfo gRoute10_LandMonsInfoNight = {8, gRoute10_LandMonsNight};
+
+// Route 11
+const struct WildPokemon gRoute11_LandMonsNight[] =
+{
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+};
+const struct WildPokemonInfo gRoute11_LandMonsInfoNight = {8, gRoute11_LandMonsNight};
+
+// Route 12
+const struct WildPokemon gRoute12_LandMonsNight[] =
+{
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+};
+const struct WildPokemonInfo gRoute12_LandMonsInfoNight = {8, gRoute12_LandMonsNight};
+
+// Route 13
+const struct WildPokemon gRoute13_LandMonsNight[] =
+{
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+};
+const struct WildPokemonInfo gRoute13_LandMonsInfoNight = {8, gRoute13_LandMonsNight};
+
+// Route 14
+const struct WildPokemon gRoute14_LandMonsNight[] =
+{
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+};
+const struct WildPokemonInfo gRoute14_LandMonsInfoNight = {8, gRoute14_LandMonsNight};
+
+// Route 15
+const struct WildPokemon gRoute15_LandMonsNight[] =
+{
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+};
+const struct WildPokemonInfo gRoute15_LandMonsInfoNight = {8, gRoute15_LandMonsNight};
+
+// Route 16
+const struct WildPokemon gRoute16_LandMonsNight[] =
+{
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+};
+const struct WildPokemonInfo gRoute16_LandMonsInfoNight = {8, gRoute16_LandMonsNight};
+
+// Route 17
+const struct WildPokemon gRoute17_LandMonsNight[] =
+{
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+};
+const struct WildPokemonInfo gRoute17_LandMonsInfoNight = {8, gRoute17_LandMonsNight};
+
+// Route 18
+const struct WildPokemon gRoute18_LandMonsNight[] =
+{
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+};
+const struct WildPokemonInfo gRoute18_LandMonsInfoNight = {8, gRoute18_LandMonsNight};
+
+// Route 19
+const struct WildPokemon gRoute19_LandMonsNight[] =
+{
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+};
+const struct WildPokemonInfo gRoute19_LandMonsInfoNight = {8, gRoute19_LandMonsNight};
+
+// Route 20
+const struct WildPokemon gRoute20_LandMonsNight[] =
+{
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+};
+const struct WildPokemonInfo gRoute20_LandMonsInfoNight = {8, gRoute20_LandMonsNight};
+
+// Route 21
+const struct WildPokemon gRoute21A_LandMonsNight[] =
+{
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+};
+const struct WildPokemonInfo gRoute21A_LandMonsInfoNight = {8, gRoute21A_LandMonsNight};
+
+// Route 22
+const struct WildPokemon gRoute22_LandMonsNight[] =
+{
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+};
+const struct WildPokemonInfo gRoute22_LandMonsInfoNight = {8, gRoute22_LandMonsNight};
+
+// Route 23
+const struct WildPokemon gRoute23_LandMonsNight[] =
+{
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+};
+const struct WildPokemonInfo gRoute23_LandMonsInfoNight = {8, gRoute23_LandMonsNight};
+
+// Route 24
+const struct WildPokemon gRoute24_LandMonsNight[] =
+{
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+};
+const struct WildPokemonInfo gRoute24_LandMonsInfoNight = {8, gRoute24_LandMonsNight};
+
+// Route 25
+const struct WildPokemon gRoute25_LandMonsNight[] =
+{
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+};
+const struct WildPokemonInfo gRoute25_LandMonsInfoNight = {8, gRoute25_LandMonsNight};
+
+// Route 26
+const struct WildPokemon gRoute26_LandMonsNight[] =
+{
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+};
+const struct WildPokemonInfo gRoute26_LandMonsInfoNight = {8, gRoute26_LandMonsNight};
+
+// Route 27
+const struct WildPokemon gRoute27_LandMonsNight[] =
+{
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+};
+const struct WildPokemonInfo gRoute27_LandMonsInfoNight = {8, gRoute27_LandMonsNight};
+
+// Route 28
+const struct WildPokemon gRoute28_LandMonsNight[] =
+{
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+};
+const struct WildPokemonInfo gRoute28_LandMonsInfoNight = {8, gRoute28_LandMonsNight};
+
+// Seafoam Islands 1F
+const struct WildPokemon gSeafoamIslands1F_LandMonsNight[] =
+{
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+};
+const struct WildPokemonInfo gSeafoamIslands1F_LandMonsInfoNight = {8, gSeafoamIslands1F_LandMonsNight};
+
+// Seafoam Islands 2F
+const struct WildPokemon gSeafoamIslands2F_LandMonsNight[] =
+{
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+};
+const struct WildPokemonInfo gSeafoamIslands2F_LandMonsInfoNight = {8, gSeafoamIslands2F_LandMonsNight};
+
+// Seafoam Islands 3F
+const struct WildPokemon gSeafoamIslands3F_LandMonsNight[] =
+{
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+};
+const struct WildPokemonInfo gSeafoamIslands3F_LandMonsInfoNight = {8, gSeafoamIslands3F_LandMonsNight};
+
+// Seafoam Islands 4F
+const struct WildPokemon gSeafoamIslands4F_LandMonsNight[] =
+{
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+};
+const struct WildPokemonInfo gSeafoamIslands4F_LandMonsInfoNight = {8, gSeafoamIslands4F_LandMonsNight};
+
+// Seafoam Islands 5F
+const struct WildPokemon gSeafoamIslands5F_LandMonsNight[] =
+{
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+};
+const struct WildPokemonInfo gSeafoamIslands5F_LandMonsInfoNight = {8, gSeafoamIslands5F_LandMonsNight};
+
+// Digletts Cave
+const struct WildPokemon gDiglettsCave_LandMonsNight[] =
+{
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+};
+const struct WildPokemonInfo gDiglettsCave_LandMonsInfoNight = {8, gDiglettsCave_LandMonsNight};
+
+// Viridian Forest 1F
+const struct WildPokemon gViridianForest1F_LandMonsNight[] =
+{
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+};
+const struct WildPokemonInfo gViridianForest1F_LandMonsInfoNight = {8, gViridianForest1F_LandMonsNight};
+
+// Viridian Forest 2F
+const struct WildPokemon gViridianForest2F_LandMonsNight[] =
+{
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+};
+const struct WildPokemonInfo gViridianForest2F_LandMonsInfoNight = {8, gViridianForest2F_LandMonsNight};
+
+// Mt Moon 1F
+const struct WildPokemon gMtMoon1F_LandMonsNight[] =
+{
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+};
+const struct WildPokemonInfo gMtMoon1F_LandMonsInfoNight = {8, gMtMoon1F_LandMonsNight};
+
+// Mt Moon 2F
+const struct WildPokemon gMtMoon2F_LandMonsNight[] =
+{
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+};
+const struct WildPokemonInfo gMtMoon2F_LandMonsInfoNight = {8, gMtMoon2F_LandMonsNight};
+
+// Mt Moon 3F
+const struct WildPokemon gMtMoon3F_LandMonsNight[] =
+{
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+};
+const struct WildPokemonInfo gMtMoon3F_LandMonsInfoNight = {8, gMtMoon3F_LandMonsNight};
+
+// Tohjo Falls 1F
+const struct WildPokemon gTohjoFalls1F_LandMonsNight[] =
+{
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+};
+const struct WildPokemonInfo gTohjoFalls1F_LandMonsInfoNight = {8, gTohjoFalls1F_LandMonsNight};
+
+// Tohjo Falls 2F
+const struct WildPokemon gTohjoFalls2F_LandMonsNight[] =
+{
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+};
+const struct WildPokemonInfo gTohjoFalls2F_LandMonsInfoNight = {8, gTohjoFalls2F_LandMonsNight};
+
+// Route 12 Tunnel
+const struct WildPokemon gRoute12Tunnel_LandMonsNight[] =
+{
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+};
+const struct WildPokemonInfo gRoute12Tunnel_LandMonsInfoNight = {8, gRoute12Tunnel_LandMonsNight};
+
+// Kanto Victory Road 1F
+const struct WildPokemon gKantoVictoryRoad1F_LandMonsNight[] =
+{
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+};
+const struct WildPokemonInfo gKantoVictoryRoad1F_LandMonsInfoNight = {8, gKantoVictoryRoad1F_LandMonsNight};
+
+// Kanto Victory Road 2F
+const struct WildPokemon gKantoVictoryRoad2F_LandMonsNight[] =
+{
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+};
+const struct WildPokemonInfo gKantoVictoryRoad2F_LandMonsInfoNight = {8, gKantoVictoryRoad2F_LandMonsNight};
+
+// Kanto Victory Road 3F
+const struct WildPokemon gKantoVictoryRoad3F_LandMonsNight[] =
+{
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+};
+const struct WildPokemonInfo gKantoVictoryRoad3F_LandMonsInfoNight = {8, gKantoVictoryRoad3F_LandMonsNight};
+
+// Rock Tunnel 1F
+const struct WildPokemon gRockTunnel1F_LandMonsNight[] =
+{
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+};
+const struct WildPokemonInfo gRockTunnel1F_LandMonsInfoNight = {8, gRockTunnel1F_LandMonsNight};
+
+// Rock Tunnel 2F
+const struct WildPokemon gRockTunnel2F_LandMonsNight[] =
+{
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+};
+const struct WildPokemonInfo gRockTunnel2F_LandMonsInfoNight = {8, gRockTunnel2F_LandMonsNight};
+
+// Mt Silver Cave 1F
+const struct WildPokemon gMtSilverCave1F_LandMonsNight[] =
+{
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+};
+const struct WildPokemonInfo gMtSilverCave1F_LandMonsInfoNight = {8, gMtSilverCave1F_LandMonsNight};
+
+// Mt Silver Cave 2F
+const struct WildPokemon gMtSilverCave2F_LandMonsNight[] =
+{
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+};
+const struct WildPokemonInfo gMtSilverCave2F_LandMonsInfoNight = {8, gMtSilverCave2F_LandMonsNight};
+
+// Mt Silver Cave Special Room
+const struct WildPokemon gMtSilverCaveSpecialRoom_LandMonsNight[] =
+{
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+};
+const struct WildPokemonInfo gMtSilverCaveSpecialRoom_LandMonsInfoNight = {8, gMtSilverCaveSpecialRoom_LandMonsNight};
+
+// Mt Silver Cave Moltres Room
+const struct WildPokemon gMtSilverCaveMoltresRoom_LandMonsNight[] =
+{
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+};
+const struct WildPokemonInfo gMtSilverCaveMoltresRoom_LandMonsInfoNight = {8, gMtSilverCaveMoltresRoom_LandMonsNight};
+
+// Mt Silver Cave 3F
+const struct WildPokemon gMtSilverCave3F_LandMonsNight[] =
+{
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+};
+const struct WildPokemonInfo gMtSilverCave3F_LandMonsInfoNight = {8, gMtSilverCave3F_LandMonsNight};
+
+// Mt Silver Cave Lower Mountain
+const struct WildPokemon gMtSilverCaveLowerMountain_LandMonsNight[] =
+{
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+};
+const struct WildPokemonInfo gMtSilverCaveLowerMountain_LandMonsInfoNight = {8, gMtSilverCaveLowerMountain_LandMonsNight};
+
+// Mt Silver Cave Upper Mountain
+const struct WildPokemon gMtSilverCaveUpperMountain_LandMonsNight[] =
+{
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+};
+const struct WildPokemonInfo gMtSilverCaveUpperMountain_LandMonsInfoNight = {8, gMtSilverCaveUpperMountain_LandMonsNight};
+
+// Cerulean Cave 1F
+const struct WildPokemon gCeruleanCave1F_LandMonsNight[] =
+{
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+};
+const struct WildPokemonInfo gCeruleanCave1F_LandMonsInfoNight = {8, gCeruleanCave1F_LandMonsNight};
+
+// Cerulean Cave 2F
+const struct WildPokemon gCeruleanCave2F_LandMonsNight[] =
+{
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+};
+const struct WildPokemonInfo gCeruleanCave2F_LandMonsInfoNight = {8, gCeruleanCave2F_LandMonsNight};
+
+// Cerulean Cave 3F
+const struct WildPokemon gCeruleanCave3F_LandMonsNight[] =
+{
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+};
+const struct WildPokemonInfo gCeruleanCave3F_LandMonsInfoNight = {8, gCeruleanCave3F_LandMonsNight};
+
+
 const struct WildPokemonHeader gWildMonMorningHeaders[] =
 {
 	{
@@ -900,6 +1927,473 @@ const struct WildPokemonHeader gWildMonNightHeaders[] =
         .mapGroup = MAP_GROUP(SAFFRON_CITY_CLASSIC),
         .mapNum = MAP_NUM(SAFFRON_CITY_CLASSIC),
         .landMonsInfo = &gLakeofRage_LandMonsInfoNight,
+        .waterMonsInfo = NULL,
+        .rockSmashMonsInfo = NULL,
+        .fishingMonsInfo = NULL,
+    },
+    /*Kanto Night Wild Encounter Maps start here
+    {
+        .mapGroup = MAP_GROUP(),
+        .mapNum = MAP_NUM(),
+        .landMonsInfo = &g_LandMonsInfoNight,
+        .waterMonsInfo = NULL,
+        .rockSmashMonsInfo = NULL,
+        .fishingMonsInfo = NULL,
+    },
+    */
+   //Night-time encounters
+    {
+        .mapGroup = MAP_GROUP(GSC_ROUTE_1),
+        .mapNum = MAP_NUM(GSC_ROUTE_1),
+        .landMonsInfo = &gRoute1_LandMonsInfoNight,
+        .waterMonsInfo = NULL,
+        .rockSmashMonsInfo = NULL,
+        .fishingMonsInfo = NULL,
+    },
+    {
+        .mapGroup = MAP_GROUP(GSC_ROUTE_2),
+        .mapNum = MAP_NUM(GSC_ROUTE_2),
+        .landMonsInfo = &gRoute2_LandMonsInfoNight,
+        .waterMonsInfo = NULL,
+        .rockSmashMonsInfo = NULL,
+        .fishingMonsInfo = NULL,
+    },
+    {
+        .mapGroup = MAP_GROUP(GSC_ROUTE_3),
+        .mapNum = MAP_NUM(GSC_ROUTE_3),
+        .landMonsInfo = &gRoute3_LandMonsInfoNight,
+        .waterMonsInfo = NULL,
+        .rockSmashMonsInfo = NULL,
+        .fishingMonsInfo = NULL,
+    },
+    {
+        .mapGroup = MAP_GROUP(GSC_ROUTE_4),
+        .mapNum = MAP_NUM(GSC_ROUTE_4),
+        .landMonsInfo = &gRoute4_LandMonsInfoNight,
+        .waterMonsInfo = NULL,
+        .rockSmashMonsInfo = NULL,
+        .fishingMonsInfo = NULL,
+    },
+    {
+        .mapGroup = MAP_GROUP(GSC_ROUTE_5),
+        .mapNum = MAP_NUM(GSC_ROUTE_5),
+        .landMonsInfo = &gRoute5_LandMonsInfoNight,
+        .waterMonsInfo = NULL,
+        .rockSmashMonsInfo = NULL,
+        .fishingMonsInfo = NULL,
+    },
+    {
+        .mapGroup = MAP_GROUP(GSC_ROUTE_6),
+        .mapNum = MAP_NUM(GSC_ROUTE_6),
+        .landMonsInfo = &gRoute6_LandMonsInfoNight,
+        .waterMonsInfo = NULL,
+        .rockSmashMonsInfo = NULL,
+        .fishingMonsInfo = NULL,
+    },
+    {
+        .mapGroup = MAP_GROUP(GSC_ROUTE_7),
+        .mapNum = MAP_NUM(GSC_ROUTE_7),
+        .landMonsInfo = &gRoute7_LandMonsInfoNight,
+        .waterMonsInfo = NULL,
+        .rockSmashMonsInfo = NULL,
+        .fishingMonsInfo = NULL,
+    },
+    {
+        .mapGroup = MAP_GROUP(GSC_ROUTE_8),
+        .mapNum = MAP_NUM(GSC_ROUTE_8),
+        .landMonsInfo = &gRoute8_LandMonsInfoNight,
+        .waterMonsInfo = NULL,
+        .rockSmashMonsInfo = NULL,
+        .fishingMonsInfo = NULL,
+    },
+    {
+        .mapGroup = MAP_GROUP(GSC_ROUTE_9),
+        .mapNum = MAP_NUM(GSC_ROUTE_9),
+        .landMonsInfo = &gRoute9_LandMonsInfoNight,
+        .waterMonsInfo = NULL,
+        .rockSmashMonsInfo = NULL,
+        .fishingMonsInfo = NULL,
+    },
+    {
+        .mapGroup = MAP_GROUP(GSC_ROUTE_10),
+        .mapNum = MAP_NUM(GSC_ROUTE_10),
+        .landMonsInfo = &gRoute10_LandMonsInfoNight,
+        .waterMonsInfo = NULL,
+        .rockSmashMonsInfo = NULL,
+        .fishingMonsInfo = NULL,
+    },
+    {
+        .mapGroup = MAP_GROUP(GSC_ROUTE_11),
+        .mapNum = MAP_NUM(GSC_ROUTE_11),
+        .landMonsInfo = &gRoute11_LandMonsInfoNight,
+        .waterMonsInfo = NULL,
+        .rockSmashMonsInfo = NULL,
+        .fishingMonsInfo = NULL,
+    },
+    {
+        .mapGroup = MAP_GROUP(GSC_ROUTE_12),
+        .mapNum = MAP_NUM(GSC_ROUTE_12),
+        .landMonsInfo = &gRoute12_LandMonsInfoNight,
+        .waterMonsInfo = NULL,
+        .rockSmashMonsInfo = NULL,
+        .fishingMonsInfo = NULL,
+    },
+    {
+        .mapGroup = MAP_GROUP(GSC_ROUTE_13),
+        .mapNum = MAP_NUM(GSC_ROUTE_13),
+        .landMonsInfo = &gRoute13_LandMonsInfoNight,
+        .waterMonsInfo = NULL,
+        .rockSmashMonsInfo = NULL,
+        .fishingMonsInfo = NULL,
+    },
+    {
+        .mapGroup = MAP_GROUP(GSC_ROUTE_14),
+        .mapNum = MAP_NUM(GSC_ROUTE_14),
+        .landMonsInfo = &gRoute14_LandMonsInfoNight,
+        .waterMonsInfo = NULL,
+        .rockSmashMonsInfo = NULL,
+        .fishingMonsInfo = NULL,
+    },
+    {
+        .mapGroup = MAP_GROUP(GSC_ROUTE_15),
+        .mapNum = MAP_NUM(GSC_ROUTE_15),
+        .landMonsInfo = &gRoute15_LandMonsInfoNight,
+        .waterMonsInfo = NULL,
+        .rockSmashMonsInfo = NULL,
+        .fishingMonsInfo = NULL,
+    },
+    {
+        .mapGroup = MAP_GROUP(GSC_ROUTE_16),
+        .mapNum = MAP_NUM(GSC_ROUTE_16),
+        .landMonsInfo = &gRoute16_LandMonsInfoNight,
+        .waterMonsInfo = NULL,
+        .rockSmashMonsInfo = NULL,
+        .fishingMonsInfo = NULL,
+    },
+    {
+        .mapGroup = MAP_GROUP(GSC_ROUTE_17),
+        .mapNum = MAP_NUM(GSC_ROUTE_17),
+        .landMonsInfo = &gRoute17_LandMonsInfoNight,
+        .waterMonsInfo = NULL,
+        .rockSmashMonsInfo = NULL,
+        .fishingMonsInfo = NULL,
+    },
+    {
+        .mapGroup = MAP_GROUP(GSC_ROUTE_18),
+        .mapNum = MAP_NUM(GSC_ROUTE_18),
+        .landMonsInfo = &gRoute18_LandMonsInfoNight,
+        .waterMonsInfo = NULL,
+        .rockSmashMonsInfo = NULL,
+        .fishingMonsInfo = NULL,
+    },
+    {
+        .mapGroup = MAP_GROUP(GSC_ROUTE_19),
+        .mapNum = MAP_NUM(GSC_ROUTE_19),
+        .landMonsInfo = &gRoute19_LandMonsInfoNight,
+        .waterMonsInfo = NULL,
+        .rockSmashMonsInfo = NULL,
+        .fishingMonsInfo = NULL,
+    },
+    {
+        .mapGroup = MAP_GROUP(GSC_ROUTE_20),
+        .mapNum = MAP_NUM(GSC_ROUTE_20),
+        .landMonsInfo = &gRoute20_LandMonsInfoNight,
+        .waterMonsInfo = NULL,
+        .rockSmashMonsInfo = NULL,
+        .fishingMonsInfo = NULL,
+    },
+    {
+        .mapGroup = MAP_GROUP(GSC_ROUTE_21_A),
+        .mapNum = MAP_NUM(GSC_ROUTE_21_A),
+        .landMonsInfo = &gRoute21A_LandMonsInfoNight,
+        .waterMonsInfo = NULL,
+        .rockSmashMonsInfo = NULL,
+        .fishingMonsInfo = NULL,
+    },
+    {
+        .mapGroup = MAP_GROUP(GSC_ROUTE_22),
+        .mapNum = MAP_NUM(GSC_ROUTE_22),
+        .landMonsInfo = &gRoute22_LandMonsInfoNight,
+        .waterMonsInfo = NULL,
+        .rockSmashMonsInfo = NULL,
+        .fishingMonsInfo = NULL,
+    },
+    {
+        .mapGroup = MAP_GROUP(GSC_ROUTE_23),
+        .mapNum = MAP_NUM(GSC_ROUTE_23),
+        .landMonsInfo = &gRoute23_LandMonsInfoNight,
+        .waterMonsInfo = NULL,
+        .rockSmashMonsInfo = NULL,
+        .fishingMonsInfo = NULL,
+    },
+    {
+        .mapGroup = MAP_GROUP(GSC_ROUTE_24),
+        .mapNum = MAP_NUM(GSC_ROUTE_24),
+        .landMonsInfo = &gRoute24_LandMonsInfoNight,
+        .waterMonsInfo = NULL,
+        .rockSmashMonsInfo = NULL,
+        .fishingMonsInfo = NULL,
+    },
+    {
+        .mapGroup = MAP_GROUP(GSC_ROUTE_25),
+        .mapNum = MAP_NUM(GSC_ROUTE_25),
+        .landMonsInfo = &gRoute25_LandMonsInfoNight,
+        .waterMonsInfo = NULL,
+        .rockSmashMonsInfo = NULL,
+        .fishingMonsInfo = NULL,
+    },
+    {
+        .mapGroup = MAP_GROUP(GSC_ROUTE_26),
+        .mapNum = MAP_NUM(GSC_ROUTE_26),
+        .landMonsInfo = &gRoute26_LandMonsInfoNight,
+        .waterMonsInfo = NULL,
+        .rockSmashMonsInfo = NULL,
+        .fishingMonsInfo = NULL,
+    },
+    {
+        .mapGroup = MAP_GROUP(GSC_ROUTE_27),
+        .mapNum = MAP_NUM(GSC_ROUTE_27),
+        .landMonsInfo = &gRoute27_LandMonsInfoNight,
+        .waterMonsInfo = NULL,
+        .rockSmashMonsInfo = NULL,
+        .fishingMonsInfo = NULL,
+    },
+    {
+        .mapGroup = MAP_GROUP(GSC_ROUTE_28),
+        .mapNum = MAP_NUM(GSC_ROUTE_28),
+        .landMonsInfo = &gRoute28_LandMonsInfoNight,
+        .waterMonsInfo = NULL,
+        .rockSmashMonsInfo = NULL,
+        .fishingMonsInfo = NULL,
+    },
+    {
+        .mapGroup = MAP_GROUP(GSC_SEAFOAM_ISLANDS_1F),
+        .mapNum = MAP_NUM(GSC_SEAFOAM_ISLANDS_1F),
+        .landMonsInfo = &gSeafoamIslands1F_LandMonsInfoNight,
+        .waterMonsInfo = NULL,
+        .rockSmashMonsInfo = NULL,
+        .fishingMonsInfo = NULL,
+    },
+    {
+        .mapGroup = MAP_GROUP(GSC_SEAFOAM_ISLANDS_2F),
+        .mapNum = MAP_NUM(GSC_SEAFOAM_ISLANDS_2F),
+        .landMonsInfo = &gSeafoamIslands2F_LandMonsInfoNight,
+        .waterMonsInfo = NULL,
+        .rockSmashMonsInfo = NULL,
+        .fishingMonsInfo = NULL,
+    },
+    {
+        .mapGroup = MAP_GROUP(GSC_SEAFOAM_ISLANDS_3F),
+        .mapNum = MAP_NUM(GSC_SEAFOAM_ISLANDS_3F),
+        .landMonsInfo = &gSeafoamIslands3F_LandMonsInfoNight,
+        .waterMonsInfo = NULL,
+        .rockSmashMonsInfo = NULL,
+        .fishingMonsInfo = NULL,
+    },
+    {
+        .mapGroup = MAP_GROUP(GSC_SEAFOAM_ISLANDS_4F),
+        .mapNum = MAP_NUM(GSC_SEAFOAM_ISLANDS_4F),
+        .landMonsInfo = &gSeafoamIslands4F_LandMonsInfoNight,
+        .waterMonsInfo = NULL,
+        .rockSmashMonsInfo = NULL,
+        .fishingMonsInfo = NULL,
+    },
+    {
+        .mapGroup = MAP_GROUP(GSC_SEAFOAM_ISLANDS_5F),
+        .mapNum = MAP_NUM(GSC_SEAFOAM_ISLANDS_5F),
+        .landMonsInfo = &gSeafoamIslands5F_LandMonsInfoNight,
+        .waterMonsInfo = NULL,
+        .rockSmashMonsInfo = NULL,
+        .fishingMonsInfo = NULL,
+    },
+    {
+        .mapGroup = MAP_GROUP(GSC_DIGGLETS_CAVE),
+        .mapNum = MAP_NUM(GSC_DIGGLETS_CAVE),
+        .landMonsInfo = &gDiglettsCave_LandMonsInfoNight,
+        .waterMonsInfo = NULL,
+        .rockSmashMonsInfo = NULL,
+        .fishingMonsInfo = NULL,
+    },
+    {
+        .mapGroup = MAP_GROUP(GSC_VIRIDIAN_FOREST_1F),
+        .mapNum = MAP_NUM(GSC_VIRIDIAN_FOREST_1F),
+        .landMonsInfo = &gViridianForest1F_LandMonsInfoNight,
+        .waterMonsInfo = NULL,
+        .rockSmashMonsInfo = NULL,
+        .fishingMonsInfo = NULL,
+    },
+    {
+        .mapGroup = MAP_GROUP(GSC_VIRIDIAN_FOREST_2F),
+        .mapNum = MAP_NUM(GSC_VIRIDIAN_FOREST_2F),
+        .landMonsInfo = &gViridianForest2F_LandMonsInfoNight,
+        .waterMonsInfo = NULL,
+        .rockSmashMonsInfo = NULL,
+        .fishingMonsInfo = NULL,
+    },
+    {
+        .mapGroup = MAP_GROUP(GSC_MT_MOON_1F),
+        .mapNum = MAP_NUM(GSC_MT_MOON_1F),
+        .landMonsInfo = &gMtMoon1F_LandMonsInfoNight,
+        .waterMonsInfo = NULL,
+        .rockSmashMonsInfo = NULL,
+        .fishingMonsInfo = NULL,
+    },
+    {
+        .mapGroup = MAP_GROUP(GSC_MT_MOON_2F),
+        .mapNum = MAP_NUM(GSC_MT_MOON_2F),
+        .landMonsInfo = &gMtMoon2F_LandMonsInfoNight,
+        .waterMonsInfo = NULL,
+        .rockSmashMonsInfo = NULL,
+        .fishingMonsInfo = NULL,
+    },
+    {
+        .mapGroup = MAP_GROUP(GSC_MT_MOON_3F),
+        .mapNum = MAP_NUM(GSC_MT_MOON_3F),
+        .landMonsInfo = &gMtMoon3F_LandMonsInfoNight,
+        .waterMonsInfo = NULL,
+        .rockSmashMonsInfo = NULL,
+        .fishingMonsInfo = NULL,
+    },
+    {
+        .mapGroup = MAP_GROUP(GSC_TOHJO_FALLS_1F),
+        .mapNum = MAP_NUM(GSC_TOHJO_FALLS_1F),
+        .landMonsInfo = &gTohjoFalls1F_LandMonsInfoNight,
+        .waterMonsInfo = NULL,
+        .rockSmashMonsInfo = NULL,
+        .fishingMonsInfo = NULL,
+    },
+    {
+        .mapGroup = MAP_GROUP(GSC_TOHJO_FALLS_2F),
+        .mapNum = MAP_NUM(GSC_TOHJO_FALLS_2F),
+        .landMonsInfo = &gTohjoFalls2F_LandMonsInfoNight,
+        .waterMonsInfo = NULL,
+        .rockSmashMonsInfo = NULL,
+        .fishingMonsInfo = NULL,
+    },
+    {
+        .mapGroup = MAP_GROUP(GSC_ROUTE_12_TUNNEL),
+        .mapNum = MAP_NUM(GSC_ROUTE_12_TUNNEL),
+        .landMonsInfo = &gRoute12Tunnel_LandMonsInfoNight,
+        .waterMonsInfo = NULL,
+        .rockSmashMonsInfo = NULL,
+        .fishingMonsInfo = NULL,
+    },
+    {
+        .mapGroup = MAP_GROUP(GSC_KANTO_VICTORY_ROAD_1F),
+        .mapNum = MAP_NUM(GSC_KANTO_VICTORY_ROAD_1F),
+        .landMonsInfo = &gKantoVictoryRoad1F_LandMonsInfoNight,
+        .waterMonsInfo = NULL,
+        .rockSmashMonsInfo = NULL,
+        .fishingMonsInfo = NULL,
+    },
+    {
+        .mapGroup = MAP_GROUP(GSC_KANTO_VICTORY_ROAD_2F),
+        .mapNum = MAP_NUM(GSC_KANTO_VICTORY_ROAD_2F),
+        .landMonsInfo = &gKantoVictoryRoad2F_LandMonsInfoNight,
+        .waterMonsInfo = NULL,
+        .rockSmashMonsInfo = NULL,
+        .fishingMonsInfo = NULL,
+    },
+    {
+        .mapGroup = MAP_GROUP(GSC_KANTO_VICTORY_ROAD_3F),
+        .mapNum = MAP_NUM(GSC_KANTO_VICTORY_ROAD_3F),
+        .landMonsInfo = &gKantoVictoryRoad3F_LandMonsInfoNight,
+        .waterMonsInfo = NULL,
+        .rockSmashMonsInfo = NULL,
+        .fishingMonsInfo = NULL,
+    },
+    {
+        .mapGroup = MAP_GROUP(GSC_ROCK_TUNNEL_1F),
+        .mapNum = MAP_NUM(GSC_ROCK_TUNNEL_1F),
+        .landMonsInfo = &gRockTunnel1F_LandMonsInfoNight,
+        .waterMonsInfo = NULL,
+        .rockSmashMonsInfo = NULL,
+        .fishingMonsInfo = NULL,
+    },
+    {
+        .mapGroup = MAP_GROUP(GSC_ROCK_TUNNEL_2F),
+        .mapNum = MAP_NUM(GSC_ROCK_TUNNEL_2F),
+        .landMonsInfo = &gRockTunnel2F_LandMonsInfoNight,
+        .waterMonsInfo = NULL,
+        .rockSmashMonsInfo = NULL,
+        .fishingMonsInfo = NULL,
+    },
+    {
+        .mapGroup = MAP_GROUP(GSC_MT_SILVER_CAVE_1F),
+        .mapNum = MAP_NUM(GSC_MT_SILVER_CAVE_1F),
+        .landMonsInfo = &gMtSilverCave1F_LandMonsInfoNight,
+        .waterMonsInfo = NULL,
+        .rockSmashMonsInfo = NULL,
+        .fishingMonsInfo = NULL,
+    },
+    {
+        .mapGroup = MAP_GROUP(GSC_MT_SILVER_CAVE_2F),
+        .mapNum = MAP_NUM(GSC_MT_SILVER_CAVE_2F),
+        .landMonsInfo = &gMtSilverCave2F_LandMonsInfoNight,
+        .waterMonsInfo = NULL,
+        .rockSmashMonsInfo = NULL,
+        .fishingMonsInfo = NULL,
+    },
+    {
+        .mapGroup = MAP_GROUP(GSC_MT_SILVER_CAVE_SPECIAL_ROOM),
+        .mapNum = MAP_NUM(GSC_MT_SILVER_CAVE_SPECIAL_ROOM),
+        .landMonsInfo = &gMtSilverCaveSpecialRoom_LandMonsInfoNight,
+        .waterMonsInfo = NULL,
+        .rockSmashMonsInfo = NULL,
+        .fishingMonsInfo = NULL,
+    },
+    {
+        .mapGroup = MAP_GROUP(GSC_MT_SILVER_CAVE_MOLTRES_ROOM),
+        .mapNum = MAP_NUM(GSC_MT_SILVER_CAVE_MOLTRES_ROOM),
+        .landMonsInfo = &gMtSilverCaveMoltresRoom_LandMonsInfoNight,
+        .waterMonsInfo = NULL,
+        .rockSmashMonsInfo = NULL,
+        .fishingMonsInfo = NULL,
+    },
+    {
+        .mapGroup = MAP_GROUP(GSC_MT_SILVER_CAVE_3F),
+        .mapNum = MAP_NUM(GSC_MT_SILVER_CAVE_3F),
+        .landMonsInfo = &gMtSilverCave3F_LandMonsInfoNight,
+        .waterMonsInfo = NULL,
+        .rockSmashMonsInfo = NULL,
+        .fishingMonsInfo = NULL,
+    },
+    {
+        .mapGroup = MAP_GROUP(GSC_MT_SILVER_CAVE_LOWER_MOUNTAIN),
+        .mapNum = MAP_NUM(GSC_MT_SILVER_CAVE_LOWER_MOUNTAIN),
+        .landMonsInfo = &gMtSilverCaveLowerMountain_LandMonsInfoNight,
+        .waterMonsInfo = NULL,
+        .rockSmashMonsInfo = NULL,
+        .fishingMonsInfo = NULL,
+    },
+    {
+        .mapGroup = MAP_GROUP(GSC_MT_SILVER_CAVE_UPPER_MOUNTAIN),
+        .mapNum = MAP_NUM(GSC_MT_SILVER_CAVE_UPPER_MOUNTAIN),
+        .landMonsInfo = &gMtSilverCaveUpperMountain_LandMonsInfoNight,
+        .waterMonsInfo = NULL,
+        .rockSmashMonsInfo = NULL,
+        .fishingMonsInfo = NULL,
+    },
+    {
+        .mapGroup = MAP_GROUP(GSC_CERULEAN_CAVE_1F),
+        .mapNum = MAP_NUM(GSC_CERULEAN_CAVE_1F),
+        .landMonsInfo = &gCeruleanCave1F_LandMonsInfoNight,
+        .waterMonsInfo = NULL,
+        .rockSmashMonsInfo = NULL,
+        .fishingMonsInfo = NULL,
+    },
+    {
+        .mapGroup = MAP_GROUP(GSC_CERULEAN_CAVE_2F),
+        .mapNum = MAP_NUM(GSC_CERULEAN_CAVE_2F),
+        .landMonsInfo = &gCeruleanCave2F_LandMonsInfoNight,
+        .waterMonsInfo = NULL,
+        .rockSmashMonsInfo = NULL,
+        .fishingMonsInfo = NULL,
+    },
+    {
+        .mapGroup = MAP_GROUP(GSC_CERULEAN_CAVE_3F),
+        .mapNum = MAP_NUM(GSC_CERULEAN_CAVE_3F),
+        .landMonsInfo = &gCeruleanCave3F_LandMonsInfoNight,
         .waterMonsInfo = NULL,
         .rockSmashMonsInfo = NULL,
         .fishingMonsInfo = NULL,

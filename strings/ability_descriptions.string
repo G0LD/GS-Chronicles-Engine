@@ -411,7 +411,7 @@ Summons an extremely\nharsh sunlight.
 Summons a mysterious\nair current.
 
 #org @DESC_BERSERK
-Boosts Sp. Atk when\na hit halves HP.
+Boosts Sp. Atk when a\nhit lowers HP below half.
 
 #org @DESC_LONGREACH
 User moves never\nmake contact.

@@ -67,6 +67,7 @@ static u16 GetZMovePower(u16 zMove);
 static u16 GetMaxMovePower(u16 maxMove);
 static u32 AdjustWeight(u32 weight, ability_t, item_effect_t, bank_t, bool8 check_nimble);
 static u8 GetFlingPower(u16 item, u16 species, u8 ability, u8 bank, bool8 partyCheck);
+/*static u8 GetLegendPlateJudgmentType(u8 defType1, u8 defType2);*/
 static u32 ScreensWeakenDamage(u32 damage, bool8 screensUp, u8 atkAbility, u8 bankDef);
 static void AdjustDamage(bool8 CheckFalseSwipe);
 static void ApplyRandomDmgMultiplier(void);
@@ -255,6 +256,15 @@ void atk05_damagecalc(void)
 	struct DamageCalc data = {0};
 	u8 moveTarget = GetBaseMoveTarget(gCurrentMove, gBankAttacker);
 	gBattleStruct->dynamicMoveType = GetMoveTypeSpecial(gBankAttacker, gCurrentMove);
+
+	if (gCurrentMove == MOVE_JUDGMENT
+		&& ITEM_EFFECT(gBankAttacker) == ITEM_EFFECT_LEGEND_PLATE)
+	{
+		gBattleStruct->dynamicMoveType = GetLegendPlateJudgmentType(
+		gBattleMons[gBankTarget].type1,
+		gBattleMons[gBankTarget].type2
+		);
+	}
 
 	if (gNewBS->calculatedSpreadMoveData && gMultiHitCounter == 0)
 	{
@@ -1066,6 +1076,15 @@ u8 TypeCalc(u16 move, u8 bankAtk, u8 bankDef, struct Pokemon* monAtk)
 		moveType = GetMoveTypeSpecial(bankAtk, move);
 	}
 
+	if (move == MOVE_JUDGMENT
+		&& ITEM_EFFECT(bankAtk) == ITEM_EFFECT_LEGEND_PLATE)
+	{
+    	moveType = GetLegendPlateJudgmentType(
+        gBattleMons[bankDef].type1,
+        gBattleMons[bankDef].type2
+    	);
+	}
+
 	if (IsTargetAbilityIgnored(defAbility, atkAbility, move))
 		defAbility = ABILITY_NONE; //Ignore Ability
 
@@ -1147,6 +1166,12 @@ u8 AI_TypeCalc(u16 move, u8 bankAtk, u8 bankDef, struct Pokemon* monDef) //bankD
 		defType1 = gBattleMons[imposterBank].type1;
 		defType2 = gBattleMons[imposterBank].type2;
 		defType3 = gBattleMons[imposterBank].type3;
+	}
+
+	if (move == MOVE_JUDGMENT
+		&& ITEM_EFFECT(bankAtk) == ITEM_EFFECT_LEGEND_PLATE)
+	{
+    	moveType = GetLegendPlateJudgmentType(defType1, defType2);
 	}
 
 	if (IsTargetAbilityIgnored(defAbility, atkAbility, move))
@@ -1286,6 +1311,124 @@ u8 AI_SpecialTypeCalc(u16 move, u8 bankAtk, u8 bankDef)
 	return flags;
 }
 
+static const u8 sLegendPlateTypes[] =
+{
+    TYPE_NORMAL,
+    TYPE_FIGHTING,
+    TYPE_FLYING,
+    TYPE_POISON,
+    TYPE_GROUND,
+    TYPE_ROCK,
+    TYPE_BUG,
+    TYPE_GHOST,
+    TYPE_STEEL,
+    TYPE_FIRE,
+    TYPE_WATER,
+    TYPE_GRASS,
+    TYPE_ELECTRIC,
+    TYPE_PSYCHIC,
+    TYPE_ICE,
+    TYPE_DRAGON,
+    TYPE_DARK,
+    TYPE_FAIRY,
+};
+
+#define LEGEND_PLATE_TYPE_COUNT \
+    (sizeof(sLegendPlateTypes) / sizeof(sLegendPlateTypes[0]))
+
+u8 GetLegendPlateJudgmentType(u8 defType1, u8 defType2)
+{
+    u8 candidates[LEGEND_PLATE_TYPE_COUNT];
+    u8 candidateCount = 0;
+    u16 bestEffectiveness = 0;
+
+    for (u8 i = 0; i < LEGEND_PLATE_TYPE_COUNT; i++)
+    {
+        u8 type = sLegendPlateTypes[i];
+        u8 type1 = gTypeEffectiveness[type][defType1];
+        u8 type2 = gTypeEffectiveness[type][defType2];
+
+        if (type1 == TYPE_MUL_NO_DATA)
+            type1 = TYPE_MUL_NORMAL;
+
+        if (type2 == TYPE_MUL_NO_DATA)
+            type2 = TYPE_MUL_NORMAL;
+
+        u16 effectiveness = type1 * type2;
+
+        if (effectiveness > bestEffectiveness)
+            bestEffectiveness = effectiveness;
+    }
+
+    for (u8 i = 0; i < LEGEND_PLATE_TYPE_COUNT; i++)
+    {
+        u8 type = sLegendPlateTypes[i];
+        u8 type1 = gTypeEffectiveness[type][defType1];
+        u8 type2 = gTypeEffectiveness[type][defType2];
+
+        if (type1 == TYPE_MUL_NO_DATA)
+            type1 = TYPE_MUL_NORMAL;
+
+        if (type2 == TYPE_MUL_NO_DATA)
+            type2 = TYPE_MUL_NORMAL;
+
+        if ((u16)type1 * type2 == bestEffectiveness)
+            candidates[candidateCount++] = type;
+    }
+
+    if (candidateCount == 1)
+        return candidates[0];
+
+    u8 bestResistance = 0xFF;
+    u8 newCount = 0;
+
+    for (u8 i = 0; i < candidateCount; i++)
+    {
+        u8 multiplier = gTypeEffectiveness[candidates[i]][defType1];
+
+        if (multiplier == TYPE_MUL_NO_DATA)
+            multiplier = TYPE_MUL_NORMAL;
+
+        if (multiplier < bestResistance)
+        {
+            bestResistance = multiplier;
+            newCount = 0;
+        }
+
+        if (multiplier == bestResistance)
+            candidates[newCount++] = candidates[i];
+    }
+
+    candidateCount = newCount;
+
+    if (candidateCount == 1)
+        return candidates[0];
+
+    bestResistance = 0xFF;
+    newCount = 0;
+
+    for (u8 i = 0; i < candidateCount; i++)
+    {
+        u8 multiplier = gTypeEffectiveness[candidates[i]][defType2];
+
+        if (multiplier == TYPE_MUL_NO_DATA)
+            multiplier = TYPE_MUL_NORMAL;
+
+        if (multiplier < bestResistance)
+        {
+            bestResistance = multiplier;
+            newCount = 0;
+        }
+
+        if (multiplier == bestResistance)
+            candidates[newCount++] = candidates[i];
+    }
+
+    candidateCount = newCount;
+
+    return candidates[Random() % candidateCount];
+}
+
 //The TypeCalc for showing move effectiveness on the move menu
 u8 VisualTypeCalc(u16 move, u8 bankAtk, u8 bankDef)
 {
@@ -1300,6 +1443,16 @@ u8 VisualTypeCalc(u16 move, u8 bankAtk, u8 bankDef)
 
 	atkAbility = ABILITY(bankAtk);
 	moveType = GetMoveTypeSpecial(bankAtk, move);
+
+	if (move == MOVE_JUDGMENT
+		&& ITEM_EFFECT(bankAtk) == ITEM_EFFECT_LEGEND_PLATE)
+	{
+    	moveType = GetLegendPlateJudgmentType(
+        gBattleMons[bankDef].type1,
+        gBattleMons[bankDef].type2
+    	);
+	}
+
 	moveEffect = gBattleMoves[move].effect;
 
 	struct Pokemon* monIllusion = GetIllusionPartyData(bankDef);
@@ -2580,6 +2733,15 @@ static s32 CalculateBaseDamage(struct DamageCalc* data)
 
 		data->moveSplit = CalcMoveSplit(move, bankAtk, bankDef);
 		data->moveType = GetMoveTypeSpecial(bankAtk, move);
+
+		if (move == MOVE_JUDGMENT
+		&& ITEM_EFFECT(bankAtk) == ITEM_EFFECT_LEGEND_PLATE)
+			{
+    			data->moveType = GetLegendPlateJudgmentType(
+        		gBattleMons[bankDef].type1,
+        		gBattleMons[bankDef].type2
+    			);
+			}
 
 		if (useMonDef)
 			data->resultFlags = AI_TypeCalc(move, bankAtk, bankDef, data->monDef);

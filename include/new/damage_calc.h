@@ -92,6 +92,7 @@ u8 GetMonMoveTypeSpecial(struct Pokemon* monAtk, u16 move);
 u8 GetExceptionMoveType(u8 bankAtk, move_t);
 u8 GetMonExceptionMoveType(struct Pokemon*, move_t);
 u8 CalcMonHiddenPowerType(struct Pokemon* mon);
+u8 GetLegendPlateJudgmentType(u8 defType1, u8 defType2);
 
 void atk05_damagecalc(void);
 void FutureSightDamageCalc(void);

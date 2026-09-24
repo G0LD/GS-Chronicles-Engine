@@ -72,9 +72,11 @@ tables to edit:
 
 extern u8 AddPalRef(u8 Type, u16 PalTag);
 extern u8 BuildFrontierParty(struct Pokemon* party, u16 trainerNum, bool8 firstTrainer, bool8 ForPlayer, u8 side);
+void ClearMiniBox(void);
 
 extern const struct SwarmData gSwarmTable[];
 extern const species_t gSkyBattleBannedSpeciesList[];
+extern u8 sSafariZoneStatsWindowId;
 
 #ifdef AUTO_NAMING_SCREEN_SWAP
 static u8 GetTextCaretPosition(void);
@@ -3193,4 +3195,57 @@ void SetScrollingListSize(unusedArg u8 taskId)
 	gTasks[taskId].data[3] = 1;	//y
 	gTasks[taskId].data[4] = 0xC;	//width?
 #endif
+}
+
+void CheckIfFirstEnemyMonShiny() {
+	Var8000 = IsMonShiny(&gEnemyParty[0]);
+}
+
+struct WindowTemplate template = 
+{
+    .bg = 0,
+    .tilemapLeft = 1,
+    .tilemapTop = 12,
+    .width = 9,
+    .height = 3,
+    .paletteNum = 15,
+    .baseBlock = 0x100
+};
+
+extern const u8 gMiniBoxTiles[];
+extern const u16 gMiniBoxPal[];
+
+static const u8 sMiniBoxTextColors[] = {
+    TEXT_COLOR_TRANSPARENT,  // Fundo
+    TEXT_COLOR_DARK_GREY,        // Texto
+    TEXT_COLOR_LIGHT_GREY     // Sombra
+};
+
+void MiniBoxOpen(void)
+{
+	ClearMiniBox();
+    sSafariZoneStatsWindowId = AddWindow(&template);
+
+    if (sSafariZoneStatsWindowId == 0xFF)
+        return;
+
+    LoadPalette(gMiniBoxPal, BG_PLTT_ID(15), 16 * sizeof(u16));
+    BlitBitmapToWindow(sSafariZoneStatsWindowId, gMiniBoxTiles, 0, 0, 72, 16);
+
+    if (gLoadPointer == NULL)
+        return;
+
+    StringExpandPlaceholders(gStringVar4, gLoadPointer);
+	AddTextPrinterParameterized3(sSafariZoneStatsWindowId, 2, 8, 2, sMiniBoxTextColors, TEXT_SPEED_FF, gStringVar4);
+    PutWindowTilemap(sSafariZoneStatsWindowId);
+    CopyWindowToVram(sSafariZoneStatsWindowId, 2);
+}
+
+void ClearMiniBox(void)
+{
+	sSafariZoneStatsWindowId = AddWindow(&template);
+
+    ClearStdWindowAndFrameToTransparent(sSafariZoneStatsWindowId, TRUE);
+    RemoveWindow(sSafariZoneStatsWindowId);
+	CopyWindowToVram(sSafariZoneStatsWindowId, 2);
 }

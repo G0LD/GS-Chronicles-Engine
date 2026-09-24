@@ -449,6 +449,16 @@ void EmitChooseMove(u8 bufferId, bool8 isDoubleBattle, bool8 NoPpNumber, struct 
 
 		tempMoveStruct->moveTypes[i] = GetMoveTypeSpecial(gActiveBattler, move);
 
+		if (originalMove == MOVE_JUDGMENT
+			&& ITEM_EFFECT(gActiveBattler) == ITEM_EFFECT_LEGEND_PLATE
+			&& !(IS_DOUBLE_BATTLE && CountAliveMonsInBattle(BATTLE_ALIVE_DEF_SIDE, gActiveBattler, foe) >= 2))
+		{
+    		tempMoveStruct->moveTypes[i] = GetLegendPlateJudgmentType(
+        	gBattleMons[foe].type1,
+        	gBattleMons[foe].type2
+    		);
+		}
+
 		if (IS_DOUBLE_BATTLE && CountAliveMonsInBattle(BATTLE_ALIVE_DEF_SIDE, gActiveBattler, foe) >= 2) //Because target can vary, display only attacker's modifiers
 		{
 			tempMoveStruct->movePowers[i] = CalcVisualBasePower(gActiveBattler, gActiveBattler, move, TRUE);

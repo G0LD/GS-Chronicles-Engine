@@ -1468,6 +1468,24 @@ const struct WildPokemon gRockTunnel2F_LandMonsNight[] =
 };
 const struct WildPokemonInfo gRockTunnel2F_LandMonsInfoNight = {8, gRockTunnel2F_LandMonsNight};
 
+// Mt Silver Base
+const struct WildPokemon gMtSilverBase_LandMonsNight[] =
+{
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_BIDOOF},
+};
+const struct WildPokemonInfo gMtSilverBase_LandMonsInfoNight = {8, gMtSilverBase_LandMonsNight};
+
 // Mt Silver Cave 1F
 const struct WildPokemon gMtSilverCave1F_LandMonsNight[] =
 {
@@ -2314,6 +2332,14 @@ const struct WildPokemonHeader gWildMonNightHeaders[] =
         .mapGroup = MAP_GROUP(GSC_ROCK_TUNNEL_2F),
         .mapNum = MAP_NUM(GSC_ROCK_TUNNEL_2F),
         .landMonsInfo = &gRockTunnel2F_LandMonsInfoNight,
+        .waterMonsInfo = NULL,
+        .rockSmashMonsInfo = NULL,
+        .fishingMonsInfo = NULL,
+    },
+    {
+        .mapGroup = MAP_GROUP(GSC_MT_SILVER),
+        .mapNum = MAP_NUM(GSC_MT_SILVER),
+        .landMonsInfo = &gMtSilverBase_LandMonsInfoNight,
         .waterMonsInfo = NULL,
         .rockSmashMonsInfo = NULL,
         .fishingMonsInfo = NULL,

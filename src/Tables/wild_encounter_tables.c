@@ -625,324 +625,324 @@ const struct WildPokemonInfo gIcePath_4F_LandMonsInfoNight = {8,gIcePath_4F_Land
 // Route 1
 const struct WildPokemon gRoute1_LandMonsNight[] =
 {
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
+    {55, 60, SPECIES_RATTATA_A},
+    {50, 55, SPECIES_STARLY},
+    {65, 70, SPECIES_RATICATE_A},
+    {60, 65, SPECIES_STARAVIA},
+    {55, 60, SPECIES_MEOWTH_A},
+    {55, 60, SPECIES_FOONGUS},
+    {65, 70, SPECIES_PERSIAN_A},
+    {65, 70, SPECIES_AMOONGUS},
+    {60, 70, SPECIES_CARNIVINE},
+    {60, 70, SPECIES_KECLEON},
+    {60, 70, SPECIES_CARNIVINE},
+    {60, 70, SPECIES_KECLEON},
 };
 const struct WildPokemonInfo gRoute1_LandMonsInfoNight = {8, gRoute1_LandMonsNight};
 
 // Route 2
 const struct WildPokemon gRoute2_LandMonsNight[] =
 {
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
+    {55, 60, SPECIES_FOONGUS},
+    {50, 55, SPECIES_VENIPEDE},
+    {60, 65, SPECIES_WHIRLIPEDE},
+    {50, 55, SPECIES_TYMPOLE},
+    {50, 55, SPECIES_PAWNIARD},
+    {50, 55, SPECIES_IMPIDIMP},
+    {60, 65, SPECIES_PALPITOAD},
+    {60, 65, SPECIES_BISHARP},
+    {60, 65, SPECIES_MORGREM},
+    {60, 70, SPECIES_MORPEKO},
+    {60, 65, SPECIES_MORGREM},
+    {60, 70, SPECIES_MORPEKO},
 };
 const struct WildPokemonInfo gRoute2_LandMonsInfoNight = {8, gRoute2_LandMonsNight};
 
 // Route 3
 const struct WildPokemon gRoute3_LandMonsNight[] =
 {
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
+    {50, 55, SPECIES_SANDILE},
+    {55, 60, SPECIES_GLIGAR},
+    {50, 55, SPECIES_AXEW},
+    {55, 60, SPECIES_VULLABY},
+    {60, 65, SPECIES_KROKOROK},
+    {65, 70, SPECIES_GLISCOR},
+    {60, 65, SPECIES_FRAXURE},
+    {65, 70, SPECIES_MANDIBUZZ},
+    {70, 75, SPECIES_KROOKODILE},
+    {60, 70, SPECIES_DRAMPA},
+    {70, 75, SPECIES_KROOKODILE},
+    {60, 70, SPECIES_DRAMPA},
 };
 const struct WildPokemonInfo gRoute3_LandMonsInfoNight = {8, gRoute3_LandMonsNight};
 
 // Route 4
 const struct WildPokemon gRoute4_LandMonsNight[] =
 {
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
+    {50, 55, SPECIES_SANDILE},
+    {55, 60, SPECIES_MILCERY},
+    {60, 65, SPECIES_KROKOROK},
+    {55, 60, SPECIES_DWEBBLE},
+    {65, 70, SPECIES_TOXTRICITY},
+    {65, 70, SPECIES_ALCREMIE},
+    {65, 70, SPECIES_CRUSTLE},
+    {55, 60, SPECIES_TOXEL},
+    {55, 60, SPECIES_SANDYGHAST},
+    {55, 60, SPECIES_ELGYEM},
+    {55, 60, SPECIES_SANDYGHAST},
+    {55, 60, SPECIES_ELGYEM},
 };
 const struct WildPokemonInfo gRoute4_LandMonsInfoNight = {8, gRoute4_LandMonsNight};
 
 // Route 5
 const struct WildPokemon gRoute5_LandMonsNight[] =
 {
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
+    {60, 70, SPECIES_DITTO},
+    {55, 60, SPECIES_TOXEL},
+    {60, 70, SPECIES_DITTO},
+    {55, 60, SPECIES_CLOBBOPUS},
+    {55, 60, SPECIES_EEVEE},
+    {55, 60, SPECIES_BUNEARY},
+    {65, 70, SPECIES_TOXTRICITY},
+    {65, 70, SPECIES_GRAPPLOCT},
+    {65, 70, SPECIES_LOPUNNY},
+    {60, 70, SPECIES_FALINKS},
+    {65, 70, SPECIES_LOPUNNY},
+    {60, 70, SPECIES_FALINKS},
 };
 const struct WildPokemonInfo gRoute5_LandMonsInfoNight = {8, gRoute5_LandMonsNight};
 
 // Route 6
 const struct WildPokemon gRoute6_LandMonsNight[] =
 {
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
+    {50, 55, SPECIES_GOOMY},
+    {50, 55, SPECIES_VENIPEDE},
+    {60, 65, SPECIES_SLIGGOO},
+    {60, 65, SPECIES_SLIGGOO_H},
+    {55, 60, SPECIES_HIPPOPOTAS},
+    {60, 65, SPECIES_WHIRLIPEDE},
+    {70, 75, SPECIES_GOODRA},
+    {70, 75, SPECIES_GOODRA_H},
+    {65, 70, SPECIES_HIPPOWDON},
+    {70, 75, SPECIES_SCOLIPEDE},
+    {65, 70, SPECIES_HIPPOWDON},
+    {70, 75, SPECIES_SCOLIPEDE},
 };
 const struct WildPokemonInfo gRoute6_LandMonsInfoNight = {8, gRoute6_LandMonsNight};
 
 // Route 7
 const struct WildPokemon gRoute7_LandMonsNight[] =
 {
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
+    {50, 55, SPECIES_ZIGZAGOON_G},
+    {60, 70, SPECIES_KOMALA},
+    {60, 65, SPECIES_LINOONE_G},
+    {55, 60, SPECIES_DRIFLOON},
+    {50, 55, SPECIES_DEINO},
+    {55, 60, SPECIES_MURKROW},
+    {70, 75, SPECIES_OBSTAGOON},
+    {65, 70, SPECIES_DRIFBLIM},
+    {60, 65, SPECIES_ZWEILOUS},
+    {65, 70, SPECIES_HONCHKROW},
+    {60, 65, SPECIES_ZWEILOUS},
+    {65, 70, SPECIES_HONCHKROW},
 };
 const struct WildPokemonInfo gRoute7_LandMonsInfoNight = {8, gRoute7_LandMonsNight};
 
 // Route 8
 const struct WildPokemon gRoute8_LandMonsNight[] =
 {
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
+    {50, 55, SPECIES_ODDISH},
+    {55, 60, SPECIES_FOMANTIS},
+    {55, 60, SPECIES_HOUNDOUR},
+    {60, 65, SPECIES_GLOOM},
+    {55, 60, SPECIES_FOONGUS},
+    {60, 70, SPECIES_ABSOL},
+    {70, 75, SPECIES_VILEPLUME},
+    {65, 70, SPECIES_AMOONGUS},
+    {65, 70, SPECIES_LURANTIS},
+    {60, 70, SPECIES_SEVIPER},
+    {65, 70, SPECIES_LURANTIS},
+    {60, 70, SPECIES_SEVIPER},
 };
 const struct WildPokemonInfo gRoute8_LandMonsInfoNight = {8, gRoute8_LandMonsNight};
 
 // Route 9
 const struct WildPokemon gRoute9_LandMonsNight[] =
 {
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
+    {50, 55, SPECIES_TYMPOLE},
+    {50, 55, SPECIES_BELDUM},
+    {60, 55, SPECIES_PALPITOAD},
+    {60, 55, SPECIES_METANG},
+    {60, 70, SPECIES_MINUN},
+    {60, 70, SPECIES_ILLUMISE},
+    {70, 55, SPECIES_SEISMITOAD},
+    {70, 55, SPECIES_METAGROSS},
+    {60, 70, SPECIES_MORPEKO},
+    {60, 70, SPECIES_PINCURCHIN},
+    {60, 70, SPECIES_MORPEKO},
+    {60, 70, SPECIES_PINCURCHIN},
 };
 const struct WildPokemonInfo gRoute9_LandMonsInfoNight = {8, gRoute9_LandMonsNight};
 
 // Route 10
 const struct WildPokemon gRoute10_LandMonsNight[] =
 {
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
+    {50, 55, SPECIES_TYMPOLE},
+    {50, 55, SPECIES_BELDUM},
+    {60, 55, SPECIES_PALPITOAD},
+    {60, 55, SPECIES_METANG},
+    {60, 70, SPECIES_MINUN},
+    {60, 70, SPECIES_ILLUMISE},
+    {70, 55, SPECIES_SEISMITOAD},
+    {70, 55, SPECIES_METAGROSS},
+    {60, 70, SPECIES_MORPEKO},
+    {60, 70, SPECIES_PINCURCHIN},
+    {60, 70, SPECIES_MORPEKO},
+    {60, 70, SPECIES_PINCURCHIN},
 };
 const struct WildPokemonInfo gRoute10_LandMonsInfoNight = {8, gRoute10_LandMonsNight};
 
 // Route 11
 const struct WildPokemon gRoute11_LandMonsNight[] =
 {
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
+    {55, 60, SPECIES_DROWZEE},
+    {55, 60, SPECIES_PETILIL},
+    {65, 70, SPECIES_LILLIGANT},
+    {60, 70, SPECIES_HAWLUCHA},
+    {55, 60, SPECIES_SCRAGGY},
+    {60, 70, SPECIES_SPINDA},
+    {65, 70, SPECIES_HYPNO},
+    {65, 70, SPECIES_SCRAFTY},
+    {60, 70, SPECIES_PINSIR},
+    {60, 70, SPECIES_HAWLUCHA},
+    {60, 70, SPECIES_PINSIR},
+    {60, 70, SPECIES_HAWLUCHA},
 };
 const struct WildPokemonInfo gRoute11_LandMonsInfoNight = {8, gRoute11_LandMonsNight};
 
 // Route 12
 const struct WildPokemon gRoute12_LandMonsNight[] =
 {
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
+    {50, 55, SPECIES_ZUBAT},
+    {55, 60, SPECIES_HOOTHOOT},
+    {60, 65, SPECIES_GOLBAT},
+    {65, 70, SPECIES_NOCTOWL},
+    {55, 60, SPECIES_EKANS},
+    {55, 60, SPECIES_VULLABY},
+    {70, 75, SPECIES_CROBAT},
+    {65, 70, SPECIES_ARBOK},
+    {60, 70, SPECIES_SEVIPER},
+    {65, 70, SPECIES_MANDIBUZZ},
+    {60, 70, SPECIES_SEVIPER},
+    {65, 70, SPECIES_MANDIBUZZ},
 };
 const struct WildPokemonInfo gRoute12_LandMonsInfoNight = {8, gRoute12_LandMonsNight};
 
 // Route 13
 const struct WildPokemon gRoute13_LandMonsNight[] =
 {
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
+    {50, 55, SPECIES_ZUBAT},
+    {55, 60, SPECIES_HOOTHOOT},
+    {60, 65, SPECIES_GOLBAT},
+    {65, 70, SPECIES_NOCTOWL},
+    {55, 60, SPECIES_EKANS},
+    {55, 60, SPECIES_VULLABY},
+    {70, 75, SPECIES_CROBAT},
+    {65, 70, SPECIES_ARBOK},
+    {60, 70, SPECIES_SEVIPER},
+    {65, 70, SPECIES_MANDIBUZZ},
+    {60, 70, SPECIES_SEVIPER},
+    {65, 70, SPECIES_MANDIBUZZ},
 };
 const struct WildPokemonInfo gRoute13_LandMonsInfoNight = {8, gRoute13_LandMonsNight};
 
 // Route 14
 const struct WildPokemon gRoute14_LandMonsNight[] =
 {
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
+    {50, 55, SPECIES_STARLY},
+    {55, 60, SPECIES_NATU},
+    {60, 65, SPECIES_STARAVIA},
+    {65, 70, SPECIES_XATU},
+    {55, 60, SPECIES_DUNSPARCE},
+    {55, 60, SPECIES_MURKROW},
+    {70, 75, SPECIES_STARAPTOR},
+    {65, 70, SPECIES_DUDUNSPARCE},
+    {65, 70, SPECIES_HONCHKROW},
+    {60, 70, SPECIES_SIGILYPH},
+    {65, 70, SPECIES_HONCHKROW},
+    {60, 70, SPECIES_SIGILYPH},
 };
 const struct WildPokemonInfo gRoute14_LandMonsInfoNight = {8, gRoute14_LandMonsNight};
 
 // Route 15
 const struct WildPokemon gRoute15_LandMonsNight[] =
 {
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
+    {50, 55, SPECIES_HOPPIP},
+    {55, 60, SPECIES_NINCADA},
+    {60, 65, SPECIES_SKIPLOOM},
+    {65, 70, SPECIES_NINJASK},
+    {55, 60, SPECIES_NOIBAT},
+    {55, 60, SPECIES_GLIGAR},
+    {70, 75, SPECIES_JUMPLUFF},
+    {65, 70, SPECIES_NOIVERN},
+    {65, 70, SPECIES_GLISCOR},
+    {60, 70, SPECIES_HAWLUCHA},
+    {65, 70, SPECIES_GLISCOR},
+    {60, 70, SPECIES_HAWLUCHA},
 };
 const struct WildPokemonInfo gRoute15_LandMonsInfoNight = {8, gRoute15_LandMonsNight};
 
 // Route 16
 const struct WildPokemon gRoute16_LandMonsNight[] =
 {
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
+    {60, 70, SPECIES_TAUROS},
+    {60, 70, SPECIES_MILTANK},
+    {60, 70, SPECIES_SIGILYPH},
+    {60, 70, SPECIES_CHATOT},
+    {55, 60, SPECIES_MUNNA},
+    {55, 60, SPECIES_ELGYEM},
+    {65, 70, SPECIES_MUSHARNA},
+    {65, 70, SPECIES_BEHEEYEM},
+    {60, 70, SPECIES_KECLEON},
+    {60, 70, SPECIES_SPINDA},
+    {60, 70, SPECIES_KECLEON},
+    {60, 70, SPECIES_SPINDA},
 };
 const struct WildPokemonInfo gRoute16_LandMonsInfoNight = {8, gRoute16_LandMonsNight};
 
 // Route 17
 const struct WildPokemon gRoute17_LandMonsNight[] =
 {
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
+    {55, 60, SPECIES_SPEAROW},
+    {50, 55, SPECIES_ZUBAT},
+    {65, 70, SPECIES_FEAROW},
+    {60, 65, SPECIES_GOLBAT},
+    {55, 60, SPECIES_NOIBAT},
+    {55, 60, SPECIES_ELECTRIKE},
+    {70, 75, SPECIES_CROBAT},
+    {65, 70, SPECIES_NOIVERN},
+    {65, 70, SPECIES_MANECTRIC},
+    {60, 70, SPECIES_HITMONCHAN},
+    {65, 70, SPECIES_MANECTRIC},
+    {60, 70, SPECIES_HITMONCHAN},
 };
 const struct WildPokemonInfo gRoute17_LandMonsInfoNight = {8, gRoute17_LandMonsNight};
 
 // Route 18
 const struct WildPokemon gRoute18_LandMonsNight[] =
 {
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
+    {50, 55, SPECIES_DUSKULL},
+    {55, 60, SPECIES_PARAS},
+    {60, 65, SPECIES_DUSCLOPS},
+    {55, 60, SPECIES_SHUPPET},
+    {55, 60, SPECIES_MISDREAVUS},
+    {65, 70, SPECIES_PARASECT},
+    {70, 75, SPECIES_DUSKNOIR},
+    {65, 70, SPECIES_BANETTE},
+    {65, 70, SPECIES_MISMAGIUS},
+    {60, 70, SPECIES_HITMONTOP},
+    {65, 70, SPECIES_MISMAGIUS},
+    {60, 70, SPECIES_HITMONTOP},
 };
 const struct WildPokemonInfo gRoute18_LandMonsInfoNight = {8, gRoute18_LandMonsNight};
 
@@ -985,684 +985,684 @@ const struct WildPokemonInfo gRoute20_LandMonsInfoNight = {8, gRoute20_LandMonsN
 // Route 21
 const struct WildPokemon gRoute21A_LandMonsNight[] =
 {
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
+    {55, 60, SPECIES_EXEGGCUTE},
+    {60, 70, SPECIES_PINCURCHIN},
+    {65, 70, SPECIES_EXEGGUTOR},
+    {50, 55, SPECIES_IMPIDIMP},
+    {55, 60, SPECIES_INKAY},
+    {55, 60, SPECIES_MANTYKE},
+    {60, 65, SPECIES_MORGREM},
+    {65, 70, SPECIES_MALAMAR},
+    {65, 70, SPECIES_MANTINE},
+    {55, 60, SPECIES_WIMPOD},
+    {65, 70, SPECIES_MANTINE},
+    {55, 60, SPECIES_WIMPOD},
 };
 const struct WildPokemonInfo gRoute21A_LandMonsInfoNight = {8, gRoute21A_LandMonsNight};
 
 // Route 22
 const struct WildPokemon gRoute22_LandMonsNight[] =
 {
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
+    {50, 55, SPECIES_NIDORAN_F},
+    {50, 55, SPECIES_MANKEY},
+    {60, 65, SPECIES_NIDORINA},
+    {60, 65, SPECIES_PRIMEAPE},
+    {55, 60, SPECIES_PONYTA_G},
+    {55, 60, SPECIES_VULPIX_A},
+    {70, 75, SPECIES_NIDOQUEEN},
+    {70, 75, SPECIES_ANNIHILAPE},
+    {65, 70, SPECIES_RAPIDASH_G},
+    {65, 70, SPECIES_NINETALES_A},
+    {65, 70, SPECIES_RAPIDASH_G},
+    {65, 70, SPECIES_NINETALES_A},
 };
 const struct WildPokemonInfo gRoute22_LandMonsInfoNight = {8, gRoute22_LandMonsNight};
 
 // Route 23
 const struct WildPokemon gRoute23_LandMonsNight[] =
 {
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
+    {65, 70, SPECIES_MALAMAR},
+    {65, 70, SPECIES_BANETTE},
+    {60, 70, SPECIES_SCRAFTY},
+    {65, 70, SPECIES_FROSLASS},
+    {70, 75, SPECIES_GENGAR},
+    {70, 75, SPECIES_CHANDELURE},
+    {65, 70, SPECIES_PYROAR},
+    {65, 70, SPECIES_PYROAR},
+    {70, 75, SPECIES_VICTREEBEL},
+    {70, 75, SPECIES_VICTREEBEL},
+    {70, 75, SPECIES_VICTREEBEL},
+    {70, 75, SPECIES_VICTREEBEL},
 };
 const struct WildPokemonInfo gRoute23_LandMonsInfoNight = {8, gRoute23_LandMonsNight};
 
 // Route 24
 const struct WildPokemon gRoute24_LandMonsNight[] =
 {
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
+    {50, 55, SPECIES_SEEDOT},
+    {50, 55, SPECIES_TYMPOLE},
+    {60, 65, SPECIES_NUZLEAF},
+    {60, 65, SPECIES_PALPITOAD},
+    {55, 60, SPECIES_DROWZEE},
+    {55, 60, SPECIES_WOOBAT},
+    {65, 70, SPECIES_HYPNO},
+    {65, 70, SPECIES_SWOOBAT},
+    {50, 55, SPECIES_AZURILL},
+    {55, 60, SPECIES_AIPOM},
+    {50, 55, SPECIES_AZURILL},
+    {55, 60, SPECIES_AIPOM},
 };
 const struct WildPokemonInfo gRoute24_LandMonsInfoNight = {8, gRoute24_LandMonsNight};
 
 // Route 25
 const struct WildPokemon gRoute25_LandMonsNight[] =
 {
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
+    {60, 65, SPECIES_TOGETIC},
+    {50, 55, SPECIES_ODDISH},
+    {55, 60, SPECIES_ZORUA_H},
+    {70, 75, SPECIES_TOGEKISS},
+    {60, 65, SPECIES_GLOOM},
+    {60, 65, SPECIES_ROSELIA},
+    {65, 70, SPECIES_ZOROARK_H},
+    {50, 55, SPECIES_BUDEW},
+    {70, 75, SPECIES_VILEPLUME},
+    {70, 75, SPECIES_ROSERADE},
+    {70, 75, SPECIES_VILEPLUME},
+    {70, 75, SPECIES_ROSERADE},
 };
 const struct WildPokemonInfo gRoute25_LandMonsInfoNight = {8, gRoute25_LandMonsNight};
 
 // Route 26
 const struct WildPokemon gRoute26_LandMonsNight[] =
 {
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
+    {65, 70, SPECIES_ARBOK},
+    {60, 65, SPECIES_GOLBAT},
+    {70, 75, SPECIES_VILEPLUME},
+    {65, 70, SPECIES_PARASECT},
+    {65, 70, SPECIES_VENOMOTH},
+    {60, 65, SPECIES_PRIMEAPE},
+    {70, 75, SPECIES_GENGAR},
+    {65, 70, SPECIES_HYPNO},
+    {65, 70, SPECIES_EXEGGUTOR},
+    {60, 65, SPECIES_RHYDON},
+    {65, 70, SPECIES_EXEGGUTOR},
+    {60, 65, SPECIES_RHYDON},
 };
 const struct WildPokemonInfo gRoute26_LandMonsInfoNight = {8, gRoute26_LandMonsNight};
 
 // Route 27
 const struct WildPokemon gRoute27_LandMonsNight[] =
 {
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
+    {65, 70, SPECIES_NOCTOWL},
+    {65, 70, SPECIES_ARIADOS},
+    {70, 75, SPECIES_CROBAT},
+    {65, 70, SPECIES_XATU},
+    {70, 75, SPECIES_JUMPLUFF},
+    {65, 70, SPECIES_QUAGSIRE},
+    {65, 70, SPECIES_WOBBUFFET},
+    {65, 70, SPECIES_GRANBULL},
+    {65, 70, SPECIES_HOUNDOOM},
+    {60, 65, SPECIES_URSARING},
+    {65, 70, SPECIES_HOUNDOOM},
+    {60, 65, SPECIES_URSARING},
 };
 const struct WildPokemonInfo gRoute27_LandMonsInfoNight = {8, gRoute27_LandMonsNight};
 
 // Route 28
 const struct WildPokemon gRoute28_LandMonsNight[] =
 {
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
+    {50, 55, SPECIES_GIBLE},
+    {50, 55, SPECIES_DRATINI},
+    {50, 55, SPECIES_GOOMY},
+    {50, 55, SPECIES_BAGON},
+    {50, 55, SPECIES_TRAPINCH},
+    {50, 55, SPECIES_AXEW},
+    {50, 55, SPECIES_GOOMY},
+    {50, 55, SPECIES_BAGON},
+    {50, 55, SPECIES_TRAPINCH},
+    {50, 55, SPECIES_AXEW},
+    {50, 55, SPECIES_TRAPINCH},
+    {50, 55, SPECIES_AXEW},
 };
 const struct WildPokemonInfo gRoute28_LandMonsInfoNight = {8, gRoute28_LandMonsNight};
 
 // Seafoam Islands 1F
 const struct WildPokemon gSeafoamIslands1F_LandMonsNight[] =
 {
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
+    {55, 60, SPECIES_BINACLE},
+    {60, 70, SPECIES_PYUKUMUKU},
+    {50, 55, SPECIES_SWINUB},
+    {65, 70, SPECIES_CRABOMINABLE},
+    {55, 60, SPECIES_SEEL},
+    {50, 55, SPECIES_SPHEAL},
+    {55, 60, SPECIES_WIMPOD},
+    {50, 55, SPECIES_TYNAMO},
+    {55, 60, SPECIES_MAREANIE},
+    {60, 70, SPECIES_CORSOLA},
+    {55, 60, SPECIES_MAREANIE},
+    {60, 70, SPECIES_CORSOLA},
 };
 const struct WildPokemonInfo gSeafoamIslands1F_LandMonsInfoNight = {8, gSeafoamIslands1F_LandMonsNight};
 
 // Seafoam Islands 2F
 const struct WildPokemon gSeafoamIslands2F_LandMonsNight[] =
 {
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
+    {50, 55, SPECIES_ROGGENROLA},
+    {65, 70, SPECIES_BARBARACLE},
+    {60, 65, SPECIES_PILOSWINE},
+    {55, 60, SPECIES_DARUMAKA_G},
+    {65, 70, SPECIES_DEWGONG},
+    {60, 65, SPECIES_SEALEO},
+    {65, 70, SPECIES_GOLISOPOD},
+    {60, 65, SPECIES_EELEKTRIK},
+    {65, 70, SPECIES_TOXAPEX},
+    {55, 60, SPECIES_CORSOLA_G},
+    {65, 70, SPECIES_TOXAPEX},
+    {55, 60, SPECIES_CORSOLA_G},
 };
 const struct WildPokemonInfo gSeafoamIslands2F_LandMonsInfoNight = {8, gSeafoamIslands2F_LandMonsNight};
 
 // Seafoam Islands 3F
 const struct WildPokemon gSeafoamIslands3F_LandMonsNight[] =
 {
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
+    {60, 65, SPECIES_BOLDORE},
+    {55, 60, SPECIES_BERGMITE},
+    {70, 75, SPECIES_MAMOSWINE},
+    {65, 70, SPECIES_DARMANITAN_G},
+    {55, 60, SPECIES_SNORUNT},
+    {70, 75, SPECIES_WALREIN},
+    {55, 60, SPECIES_SNEASEL},
+    {70, 75, SPECIES_EELEKTROSS},
+    {55, 60, SPECIES_SMOOCHUM},
+    {65, 70, SPECIES_CURSOLA},
+    {55, 60, SPECIES_SMOOCHUM},
+    {65, 70, SPECIES_CURSOLA},
 };
 const struct WildPokemonInfo gSeafoamIslands3F_LandMonsInfoNight = {8, gSeafoamIslands3F_LandMonsNight};
 
 // Seafoam Islands 4F
 const struct WildPokemon gSeafoamIslands4F_LandMonsNight[] =
 {
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_GIGALITH},
+    {50, 50, SPECIES_CRABRAWLER},
+    {50, 50, SPECIES_BRUXISH},
+    {50, 50, SPECIES_AVALUGG},
+    {50, 50, SPECIES_GLALIE},
+    {50, 50, SPECIES_AVALUGG_H},
+    {50, 50, SPECIES_WEAVILE},
+    {50, 50, SPECIES_FROSLASS},
+    {50, 50, SPECIES_JYNX},
+    {50, 50, SPECIES_DELIBIRD},
+    {50, 50, SPECIES_JYNX},
+    {50, 50, SPECIES_DELIBIRD},
 };
 const struct WildPokemonInfo gSeafoamIslands4F_LandMonsInfoNight = {8, gSeafoamIslands4F_LandMonsNight};
 
 // Seafoam Islands 5F
 const struct WildPokemon gSeafoamIslands5F_LandMonsNight[] =
 {
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
+    {65, 70, SPECIES_DEWGONG},
+    {65, 70, SPECIES_GOLDUCK},
+    {70, 75, SPECIES_WALREIN},
+    {65, 70, SPECIES_WEAVILE},
+    {70, 75, SPECIES_MAMOSWINE},
+    {65, 70, SPECIES_GLALIE},
+    {65, 70, SPECIES_FROSLASS},
+    {65, 70, SPECIES_STARMIE},
+    {60, 70, SPECIES_LAPRAS},
+    {65, 70, SPECIES_CLOYSTER},
+    {60, 70, SPECIES_LAPRAS},
+    {65, 70, SPECIES_CLOYSTER},
 };
 const struct WildPokemonInfo gSeafoamIslands5F_LandMonsInfoNight = {8, gSeafoamIslands5F_LandMonsNight};
 
 // Digletts Cave
 const struct WildPokemon gDiglettsCave_LandMonsNight[] =
 {
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
+    {55, 60, SPECIES_DIGLETT},
+    {55, 60, SPECIES_DIGLETT},
+    {55, 60, SPECIES_DRILBUR},
+    {55, 60, SPECIES_DRILBUR},
+    {65, 70, SPECIES_DUGTRIO},
+    {55, 60, SPECIES_SILICOBRA},
+    {65, 70, SPECIES_EXCADRILL},
+    {65, 70, SPECIES_SANDACONDA},
+    {60, 70, SPECIES_STUNFISK},
+    {60, 70, SPECIES_STUNFISK_G},
+    {60, 70, SPECIES_STUNFISK},
+    {60, 70, SPECIES_STUNFISK_G},
 };
 const struct WildPokemonInfo gDiglettsCave_LandMonsInfoNight = {8, gDiglettsCave_LandMonsNight};
 
 // Viridian Forest 1F
 const struct WildPokemon gViridianForest1F_LandMonsNight[] =
 {
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
+    {65, 70, SPECIES_AMOONGUS},
+    {70, 75, SPECIES_SCOLIPEDE},
+    {65, 70, SPECIES_AMOONGUS},
+    {70, 75, SPECIES_SCOLIPEDE},
+    {70, 75, SPECIES_SEISMITOAD},
+    {60, 65, SPECIES_BISHARP},
+    {70, 75, SPECIES_KINGAMBIT},
+    {60, 70, SPECIES_KOMALA},
+    {70, 75, SPECIES_GRIMMSNARL},
+    {60, 70, SPECIES_MORPEKO},
+    {70, 75, SPECIES_GRIMMSNARL},
+    {60, 70, SPECIES_MORPEKO},
 };
 const struct WildPokemonInfo gViridianForest1F_LandMonsInfoNight = {8, gViridianForest1F_LandMonsNight};
 
 // Viridian Forest 2F
 const struct WildPokemon gViridianForest2F_LandMonsNight[] =
 {
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
+    {65, 70, SPECIES_AMOONGUS},
+    {70, 75, SPECIES_SCOLIPEDE},
+    {65, 70, SPECIES_AMOONGUS},
+    {70, 75, SPECIES_SCOLIPEDE},
+    {70, 75, SPECIES_SEISMITOAD},
+    {60, 65, SPECIES_BISHARP},
+    {70, 75, SPECIES_KINGAMBIT},
+    {60, 70, SPECIES_KOMALA},
+    {70, 75, SPECIES_GRIMMSNARL},
+    {60, 70, SPECIES_MORPEKO},
+    {70, 75, SPECIES_GRIMMSNARL},
+    {60, 70, SPECIES_MORPEKO},
 };
 const struct WildPokemonInfo gViridianForest2F_LandMonsInfoNight = {8, gViridianForest2F_LandMonsNight};
 
 // Mt Moon 1F
 const struct WildPokemon gMtMoon1F_LandMonsNight[] =
 {
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
+    {55, 60, SPECIES_WOOBAT},
+    {55, 60, SPECIES_NOSEPASS},
+    {55, 60, SPECIES_DWEBBLE},
+    {50, 55, SPECIES_NIDORAN_M},
+    {50, 55, SPECIES_NIODRAN_F},
+    {50, 55, SPECIES_IGGLYBUFF},
+    {55, 60, SPECIES_ELGYEM},
+    {50, 55, SPECIES_ARON},
+    {50, 55, SPECIES_CLEFAIRY},
+    {50, 55, SPECIES_LARVITAR},
+    {50, 55, SPECIES_CLEFAIRY},
+    {50, 55, SPECIES_LARVITAR},
 };
 const struct WildPokemonInfo gMtMoon1F_LandMonsInfoNight = {8, gMtMoon1F_LandMonsNight};
 
 // Mt Moon 2F
 const struct WildPokemon gMtMoon2F_LandMonsNight[] =
 {
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
+    {60, 70, SPECIES_SOLROCK},
+    {60, 70, SPECIES_LUNATONE},
+    {60, 70, SPECIES_SHUCKLE},
+    {60, 65, SPECIES_NIDORINO},
+    {60, 65, SPECIES_NIDORINA},
+    {60, 65, SPECIES_JIGGLYPUFF},
+    {60, 70, SPECIES_MINIOR},
+    {60, 70, SPECIES_CARBINK},
+    {60, 65, SPECIES_LAIRON},
+    {60, 65, SPECIES_PUPITAR},
+    {60, 65, SPECIES_LAIRON},
+    {60, 65, SPECIES_PUPITAR},
 };
 const struct WildPokemonInfo gMtMoon2F_LandMonsInfoNight = {8, gMtMoon2F_LandMonsNight};
 
 // Mt Moon 3F
 const struct WildPokemon gMtMoon3F_LandMonsNight[] =
 {
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
+    {65, 70, SPECIES_SWOOBAT},
+    {65, 70, SPECIES_PROBOPASS},
+    {65, 70, SPECIES_CRUSTLE},
+    {70, 75, SPECIES_NIDOKING},
+    {70, 75, SPECIES_NIDOQUEEN},
+    {70, 75, SPECIES_WIGGLYTUFF},
+    {65, 70, SPECIES_BEHEEYEM},
+    {70, 75, SPECIES_AGGRON},
+    {65, 70, SPECIES_CLEFABLE},
+    {70, 75, SPECIES_TYRANITAR},
+    {65, 70, SPECIES_CLEFABLE},
+    {70, 75, SPECIES_TYRANITAR},
 };
 const struct WildPokemonInfo gMtMoon3F_LandMonsInfoNight = {8, gMtMoon3F_LandMonsNight};
 
 // Tohjo Falls 1F
 const struct WildPokemon gTohjoFalls1F_LandMonsNight[] =
 {
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
+    {55, 60, SPECIES_MISDREAVUS},
+    {55, 60, SPECIES_SHUPPET},
+    {55, 60, SPECIES_YAMASK_G},
+    {55, 60, SPECIES_ZORUA},
+    {65, 70, SPECIES_MISMAGIUS},
+    {65, 70, SPECIES_BANETTE},
+    {65, 70, SPECIES_RUNERIGUS},
+    {65, 70, SPECIES_ZOROARK,
+    {70, 75, SPECIES_DRAGAPULT},
+    {70, 75, SPECIES_AEGISLASH},
+    {70, 75, SPECIES_DRAGAPULT},
+    {70, 75, SPECIES_AEGISLASH},
 };
 const struct WildPokemonInfo gTohjoFalls1F_LandMonsInfoNight = {8, gTohjoFalls1F_LandMonsNight};
 
 // Tohjo Falls 2F
 const struct WildPokemon gTohjoFalls2F_LandMonsNight[] =
 {
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
+    {55, 60, SPECIES_VULLABY},
+    {50, 55, SPECIES_LITWICK},
+    {55, 60, SPECIES_YAMASK},
+    {55, 60, SPECIES_ZORUA_H},
+    {65, 70, SPECIES_MANDIBUZZ},
+    {60, 65, SPECIES_LAMPENT},
+    {65, 70, SPECIES_COFAGRIGUS},
+    {65, 70, SPECIES_ZOROARK_H},
+    {60, 70, SPECIES_MIMIKYU},
+    {70, 75, SPECIES_CHANDELURE},
+    {60, 70, SPECIES_MIMIKYU},
+    {70, 75, SPECIES_CHANDELURE},
 };
 const struct WildPokemonInfo gTohjoFalls2F_LandMonsInfoNight = {8, gTohjoFalls2F_LandMonsNight};
 
 // Route 12 Tunnel
 const struct WildPokemon gRoute12Tunnel_LandMonsNight[] =
 {
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
+    {55, 60, SPECIES_VULLABY},
+    {50, 55, SPECIES_LITWICK},
+    {55, 60, SPECIES_YAMASK},
+    {55, 60, SPECIES_ZORUA_H},
+    {65, 70, SPECIES_MANDIBUZZ},
+    {60, 65, SPECIES_LAMPENT},
+    {65, 70, SPECIES_COFAGRIGUS},
+    {65, 70, SPECIES_ZOROARK_H},
+    {60, 70, SPECIES_MIMIKYU},
+    {70, 75, SPECIES_CHANDELURE},
+    {60, 70, SPECIES_MIMIKYU},
+    {70, 75, SPECIES_CHANDELURE},
 };
 const struct WildPokemonInfo gRoute12Tunnel_LandMonsInfoNight = {8, gRoute12Tunnel_LandMonsNight};
 
 // Kanto Victory Road 1F
 const struct WildPokemon gKantoVictoryRoad1F_LandMonsNight[] =
 {
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
+    {65, 70, SPECIES_LOPUNNY},
+    {60, 70, SPECIES_AUDINO},
+    {70, 75, SPECIES_ALAKAZAM},
+    {65, 70, SPECIES_MEDICHAM},
+    {70, 75, SPECIES_PIDGEOT},
+    {65, 70, SPECIES_MANECTRIC},
+    {70, 75, SPECIES_CLEFABLE},
+    {60, 70, SPECIES_KANGASKHAN},
+    {70, 75, SPECIES_GARDEVOIR},
+    {70, 75, SPECIES_GALLADE},
+    {70, 75, SPECIES_GARDEVOIR},
+    {70, 75, SPECIES_GALLADE},
 };
 const struct WildPokemonInfo gKantoVictoryRoad1F_LandMonsInfoNight = {8, gKantoVictoryRoad1F_LandMonsNight};
 
 // Kanto Victory Road 2F
 const struct WildPokemon gKantoVictoryRoad2F_LandMonsNight[] =
 {
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
+    {70, 75, SPECIES_AGGRON},
+    {65, 70, SPECIES_STEELIX},
+    {65, 70, SPECIES_HOUNDOOM},
+    {65, 70, SPECIES_ALTARIA},
+    {60, 70, SPECIES_HAWLUCHA},
+    {70, 75, SPECIES_AMPHAROS},
+    {60, 70, SPECIES_MAWILE},
+    {60, 70, SPECIES_SABLEYE},
+    {60, 70, SPECIES_ABSOL},
+    {60, 70, SPECIES_AERODACTYL},
+    {60, 70, SPECIES_ABSOL},
+    {60, 70, SPECIES_AERODACTYL},
 };
 const struct WildPokemonInfo gKantoVictoryRoad2F_LandMonsInfoNight = {8, gKantoVictoryRoad2F_LandMonsNight};
 
 // Kanto Victory Road 3F
 const struct WildPokemon gKantoVictoryRoad3F_LandMonsNight[] =
 {
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
+    {65, 70, SPECIES_ABOMASNOW},
+    {65, 70, SPECIES_CAMERUPT},
+    {65, 70, SPECIES_GOLURK},
+    {65, 70, SPECIES_GLALIE},
+    {65, 70, SPECIES_EXCADRILL},
+    {70, 75, SPECIES_EELEKTROSS},
+    {60, 70, SPECIES_SKARMORY},
+    {60, 70, SPECIES_FALINKS},
+    {65, 70, SPECIES_LUCARIO},
+    {60, 70, SPECIES_DRAMPA},
+    {65, 70, SPECIES_LUCARIO},
+    {60, 70, SPECIES_DRAMPA},
 };
 const struct WildPokemonInfo gKantoVictoryRoad3F_LandMonsInfoNight = {8, gKantoVictoryRoad3F_LandMonsNight};
 
 // Rock Tunnel 1F
 const struct WildPokemon gRockTunnel1F_LandMonsNight[] =
 {
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
+    {50, 55, SPECIES_GEODUDE},
+    {50, 55, SPECIES_GEODUDE_A},
+    {55, 60, SPECIES_JOLTIK},
+    {55, 60, SPECIES_GOLETT},
+    {55, 60, SPECIES_ONIX},
+    {50, 55, SPECIES_ROLYCOLY},
+    {55, 60, SPECIES_FERROSEED},
+    {60, 70, SPECIES_DURALUDON,
+    {60, 70, SPECIES_SABLEYE},
+    {60, 70, SPECIES_MAWILE},
+    {60, 70, SPECIES_SABLEYE},
+    {60, 70, SPECIES_MAWILE},
 };
 const struct WildPokemonInfo gRockTunnel1F_LandMonsInfoNight = {8, gRockTunnel1F_LandMonsNight};
 
 // Rock Tunnel 2F
 const struct WildPokemon gRockTunnel2F_LandMonsNight[] =
 {
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
+    {60, 65, SPECIES_GRAVELER},
+    {60, 65, SPECIES_GRAVELER_A},
+    {65, 70, SPECIES_GALVANTULA},
+    {65, 70, SPECIES_GOLURK},
+    {65, 70, SPECIES_STEELIX},
+    {60, 65, SPECIES_CARKOAL},
+    {65, 70, SPECIES_FERROTHORN},
+    {60, 70, SPECIES_DURALUDON},
+    {70, 75, SPECIES_GOLEM_A},
+    {70, 75, SPECIES_GOLEM},
+    {70, 75, SPECIES_GOLEM_A},
+    {70, 75, SPECIES_GOLEM},
 };
 const struct WildPokemonInfo gRockTunnel2F_LandMonsInfoNight = {8, gRockTunnel2F_LandMonsNight};
 
 // Mt Silver Base
 const struct WildPokemon gMtSilverBase_LandMonsNight[] =
 {
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
+    {60, 65, SPECIES_GABITE},
+    {60, 65, SPECIES_DRAGONAIR},
+    {60, 65, SPECIES_SLIGGOO},
+    {60, 65, SPECIES_SHELGON},
+    {60, 65, SPECIES_VIBRAVA},
+    {60, 65, SPECIES_FRAXURE},
+    {60, 65, SPECIES_SLIGGOO},
+    {60, 65, SPECIES_SHELGON},
+    {60, 65, SPECIES_VIBRAVA},
+    {60, 65, SPECIES_FRAXURE},
+    {60, 65, SPECIES_VIBRAVA},
+    {60, 65, SPECIES_FRAXURE},
 };
 const struct WildPokemonInfo gMtSilverBase_LandMonsInfoNight = {8, gMtSilverBase_LandMonsNight};
 
 // Mt Silver Cave 1F
 const struct WildPokemon gMtSilverCave1F_LandMonsNight[] =
 {
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
+    {70, 75, SPECIES_GARCHOMP},
+    {70, 75, SPECIES_DRAGONITE},
+    {70, 75, SPECIES_GOODRA},
+    {70, 75, SPECIES_SALAMENCE},
+    {70, 75, SPECIES_FLYGON},
+    {70, 75, SPECIES_HAXORUS},
+    {70, 75, SPECIES_GOODRA},
+    {70, 75, SPECIES_SALAMENCE},
+    {70, 75, SPECIES_FLYGON},
+    {70, 75, SPECIES_HAXORUS},
+    {70, 75, SPECIES_FLYGON},
+    {70, 75, SPECIES_HAXORUS},
 };
 const struct WildPokemonInfo gMtSilverCave1F_LandMonsInfoNight = {8, gMtSilverCave1F_LandMonsNight};
 
 // Mt Silver Cave 2F
 const struct WildPokemon gMtSilverCave2F_LandMonsNight[] =
 {
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
+    {50, 55, SPECIES_LARVITAR},
+    {50, 55, SPECIES_BELDUM},
+    {50, 55, SPECIES_DEINO},
+    {50, 55, SPECIES_JANGMO-O},
+    {50, 55, SPECIES_DREEPY},
+    {50, 55, SPECIES_GOOMY},
+    {50, 55, SPECIES_DEINO},
+    {50, 55, SPECIES_JANGMO-O},
+    {50, 55, SPECIES_DREEPY},
+    {50, 55, SPECIES_GOOMY},
+    {50, 55, SPECIES_DREEPY},
+    {50, 55, SPECIES_GOOMY},
 };
 const struct WildPokemonInfo gMtSilverCave2F_LandMonsInfoNight = {8, gMtSilverCave2F_LandMonsNight};
 
 // Mt Silver Cave Special Room
 const struct WildPokemon gMtSilverCaveSpecialRoom_LandMonsNight[] =
 {
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
+    {50, 50, SPECIES_PIKACHU},
+    {50, 50, SPECIES_SNORLAX},
+    {50, 50, SPECIES_LAPRAS},
+    {50, 50, SPECIES_ESPEON},
+    {50, 50, SPECIES_UMBREON},
+    {50, 50, SPECIES_MACHAMP},
+    {50, 50, SPECIES_ARCANINE},
+    {50, 50, SPECIES_CHARIZARD},
+    {50, 50, SPECIES_VENUSAUR},
+    {50, 50, SPECIES_BLASTOISE},
+    {50, 50, SPECIES_VENUSAUR},
+    {50, 50, SPECIES_BLASTOISE},
 };
 const struct WildPokemonInfo gMtSilverCaveSpecialRoom_LandMonsInfoNight = {8, gMtSilverCaveSpecialRoom_LandMonsNight};
 
 // Mt Silver Cave Moltres Room
 const struct WildPokemon gMtSilverCaveMoltresRoom_LandMonsNight[] =
 {
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
+    {65, 70, SPECIES_CAMERUPT},
+    {60, 70, SPECIES_TORKOAL},
+    {70, 75, SPECIES_MAGMORTAR},
+    {65, 70, SPECIES_MAGCARGO},
+    {65, 70, SPECIES_VOLCARONA},
+    {65, 70, SPECIES_PYROAR},
+    {70, 75, SPECIES_COALOSSAL},
+    {60, 70, SPECIES_TURTONATOR},
+    {65, 70, SPECIES_CENTISKORCH},
+    {65, 70, SPECIES_HOUNDOOM},
+    {65, 70, SPECIES_CENTISKORCH},
+    {65, 70, SPECIES_HOUNDOOM},
 };
 const struct WildPokemonInfo gMtSilverCaveMoltresRoom_LandMonsInfoNight = {8, gMtSilverCaveMoltresRoom_LandMonsNight};
 
 // Mt Silver Cave 3F
 const struct WildPokemon gMtSilverCave3F_LandMonsNight[] =
 {
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
+    {60, 65, SPECIES_PUPITAR},
+    {60, 65, SPECIES_METANG},
+    {60, 65, SPECIES_ZWEILOUS},
+    {60, 65, SPECIES_HAKAMO-O},
+    {60, 65, SPECIES_DRAKLOAK},
+    {60, 65, SPECIES_SLIGGOO_H},
+    {60, 65, SPECIES_ZWEILOUS},
+    {60, 65, SPECIES_HAKAMO-O},
+    {60, 65, SPECIES_DRAKLOAK},
+    {60, 65, SPECIES_SLIGGOO_H},
+    {60, 65, SPECIES_DRAKLOAK},
+    {60, 65, SPECIES_SLIGGOO_H},
 };
 const struct WildPokemonInfo gMtSilverCave3F_LandMonsInfoNight = {8, gMtSilverCave3F_LandMonsNight};
 
 // Mt Silver Cave Lower Mountain
 const struct WildPokemon gMtSilverCaveLowerMountain_LandMonsNight[] =
 {
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
+    {70, 75, SPECIES_TYRANITAR},
+    {70, 75, SPECIES_METAGROSS},
+    {70, 75, SPECIES_HYDREIGON},
+    {70, 75, SPECIES_KOMMO-O},
+    {70, 75, SPECIES_DRAGAPULT},
+    {70, 75, SPECIES_GOODRA_H},
+    {70, 75, SPECIES_HYDREIGON},
+    {70, 75, SPECIES_KOMMO-O},
+    {70, 75, SPECIES_DRAGAPULT},
+    {70, 75, SPECIES_GOODRA_H},
+    {70, 75, SPECIES_DRAGAPULT},
+    {70, 75, SPECIES_GOODRA_H},
 };
 const struct WildPokemonInfo gMtSilverCaveLowerMountain_LandMonsInfoNight = {8, gMtSilverCaveLowerMountain_LandMonsNight};
 
 // Mt Silver Cave Upper Mountain
 const struct WildPokemon gMtSilverCaveUpperMountain_LandMonsNight[] =
 {
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
+    {65, 70, SPECIES_EXEGGUTOR},
+    {70, 75, SPECIES_AMPHAROS},
+    {65, 70, SPECIES_ALTARIA},
+    {60, 70, SPECIES_DRAMPA},
+    {65, 70, SPECIES_NOIVERN},
+    {60, 70, SPECIES_TURTONATOR},
+    {65, 70, SPECIES_ALTARIA},
+    {60, 70, SPECIES_DRAMPA},
+    {65, 70, SPECIES_NOIVERN},
+    {60, 70, SPECIES_TURTONATOR},
+    {65, 70, SPECIES_NOIVERN},
+    {60, 70, SPECIES_TURTONATOR},
 };
 const struct WildPokemonInfo gMtSilverCaveUpperMountain_LandMonsInfoNight = {8, gMtSilverCaveUpperMountain_LandMonsNight};
 
 // Cerulean Cave 1F
 const struct WildPokemon gCeruleanCave1F_LandMonsNight[] =
 {
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
+    {70, 75, SPECIES_GOODRA_H},
+    {60, 70, SPECIES_DURALUDON},
+    {65, 70, SPECIES_VOLCARONA},
+    {65, 70, SPECIES_VOLCARONA},
+    {70, 75, SPECIES_URSALUNA},
+    {70, 75, SPECIES_URSALUNA},
+    {70, 75, SPECIES_KINGAMBIT},
+    {70, 75, SPECIES_KINGAMBIT},
+    {70, 75, SPECIES_KINGAMBIT},
+    {70, 75, SPECIES_KINGAMBIT},
+    {70, 75, SPECIES_KINGAMBIT},
+    {70, 75, SPECIES_KINGAMBIT},
 };
 const struct WildPokemonInfo gCeruleanCave1F_LandMonsInfoNight = {8, gCeruleanCave1F_LandMonsNight};
 
 // Cerulean Cave 2F
 const struct WildPokemon gCeruleanCave2F_LandMonsNight[] =
 {
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
+    {70, 75, SPECIES_TYRANITAR},
+    {70, 75, SPECIES_FLYGON},
+    {70, 75, SPECIES_METAGROSS},
+    {70, 75, SPECIES_METAGROSS},
+    {70, 75, SPECIES_SALAMENCE},
+    {70, 75, SPECIES_SALAMENCE},
+    {70, 75, SPECIES_DRAGONITE},
+    {70, 75, SPECIES_DRAGONITE},
+    {70, 75, SPECIES_DRAGONITE},
+    {70, 75, SPECIES_DRAGONITE},
+    {70, 75, SPECIES_DRAGONITE},
+    {70, 75, SPECIES_DRAGONITE},
 };
 const struct WildPokemonInfo gCeruleanCave2F_LandMonsInfoNight = {8, gCeruleanCave2F_LandMonsNight};
 
 // Cerulean Cave 3F
 const struct WildPokemon gCeruleanCave3F_LandMonsNight[] =
 {
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
-    {50, 50, SPECIES_BIDOOF},
+    {70, 75, SPECIES_GOODRA},
+    {70, 75, SPECIES_DRAGAPULT},
+    {70, 75, SPECIES_GARCHOMP},
+    {70, 75, SPECIES_GARCHOMP},
+    {70, 75, SPECIES_HYDREIGON},
+    {70, 75, SPECIES_HYDREIGON,
+    {70, 75, SPECIES_KOMMO-O},
+    {70, 75, SPECIES_KOMMO-O},
+    {70, 75, SPECIES_KOMMO-O},
+    {70, 75, SPECIES_KOMMO-O},
+    {70, 75, SPECIES_KOMMO-O},
+    {70, 75, SPECIES_KOMMO-O},
 };
 const struct WildPokemonInfo gCeruleanCave3F_LandMonsInfoNight = {8, gCeruleanCave3F_LandMonsNight};
 

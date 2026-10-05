@@ -552,103 +552,33 @@ EventScript_RockClimb_NoDeposit:
 @;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 .global EventScript_UseCut
 EventScript_UseCut:
-	lockall
-	countpokemon
-	compare LASTRESULT 5
-	if lessthan _goto EventScript_UseCut_NoDeposit
-	setvar 0x8004 5 @;Select Slot 6
-	setvar 0x8000 1
-	special 0x14D @;Deposit 6th Slot Pokemon
-	goto EventScript_UseCut_NoDeposit
-
-EventScript_UseCut_NoDeposit:
-	compare 0x4031 152 @;check Chikorita as starter
-	if 0x1 _call  EventScript_Chiko
-	compare 0x4031 155 @;check Cyndaquil as starter
-	if 0x1 _call  EventScript_Cynda
-	compare 0x4031 158 @;check Totodile as starter
-	if 0x1 _call  EventScript_Toto
-	setvar 0x8003 0x0
-	setvar 0x8004 0x5
-	setvar 0x8005 SPECIES_BELLSPROUT
-	special 0x16
-	msgbox 0x08C6FAC7 MSG_NORMAL @;"A wild Bellsprout helped out by..."
-	setanimation 0x0 0x5
-	doanimation 0x2
-	waitfieldeffect 0x2
-	setvar 0x8004 5 @;Select Slot 6
-	special 0x62 @;Erase Slot 6 Pokemon
-	setvar 0x8004 0
-	setvar 0x8000 0
-	special 0x14D @;retrieve slot 6 Pokémon
+	cry SPECIES_BELLSPROUT 1
+	msgbox 0x08C6FAC7 MSG_KEEPOPEN @;"A wild Bellsprout helped out by..."
+	waitcry
+	pause 15
+	closeonkeypress
+	sound 121
 	goto 0x81BDF76
 
 @;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 .global EventScript_UseRockSmash
 EventScript_UseRockSmash:
-	lockall
-	countpokemon
-	compare LASTRESULT 5
-	if lessthan _goto EventScript_UseRockSmash_NoDeposit
-	setvar 0x8004 5 @;Select Slot 6
-	setvar 0x8000 1
-	special 0x14D @;Deposit 6th Slot Pokemon
-	goto EventScript_UseRockSmash_NoDeposit
-
-EventScript_UseRockSmash_NoDeposit:
-	compare 0x4031 152 @;check Chikorita as starter
-	if 0x1 _call  EventScript_Chiko
-	compare 0x4031 155 @;check Cyndaquil as starter
-	if 0x1 _call  EventScript_Cynda
-	compare 0x4031 158 @;check Totodile as starter
-	if 0x1 _call  EventScript_Toto
-	setvar 0x8003 0x0
-	setvar 0x8004 0x5
-	setvar 0x8005 SPECIES_MACHOKE
-	special 0x16
+	cry SPECIES_MACHOKE 0x1
 	msgbox 0x8C6FA93 MSG_KEEPOPEN @"A wild Machoke helped out by\nusin..."
-	setanimation 0x0 0x5
-	doanimation 0x25
-	waitfieldeffect 0x25
-	setvar 0x8004 5 @;Select Slot 6
-	special 0x62 @;Erase Slot 6 Pokemon
-	setvar 0x8004 0
-	setvar 0x8000 0
-	special 0x14D @;retrieve slot 6 Pokémon
+	waitcry
+	sound 124
 	goto 0x8C5FA5E
 
 @;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 .global EventScript_UseStrength
 EventScript_UseStrength:
 	lockall
-	countpokemon
-	compare LASTRESULT 5
-	if lessthan _goto EventScript_UseStrength_NoDeposit
-	setvar 0x8004 5 @;Select Slot 6
-	setvar 0x8000 1
-	special 0x14D @;Deposit 6th Slot Pokemon
-	goto EventScript_UseStrength_NoDeposit
-
-EventScript_UseStrength_NoDeposit:
-	compare 0x4031 152 @;check Chikorita as starter
-	if 0x1 _call  EventScript_Chiko
-	compare 0x4031 155 @;check Cyndaquil as starter
-	if 0x1 _call  EventScript_Cynda
-	compare 0x4031 158 @;check Totodile as starter
-	if 0x1 _call  EventScript_Toto
-	setvar 0x8003 0x0
-	setvar 0x8004 0x5
-	setvar 0x8005 SPECIES_MACHOKE
-	special 0x16
 	setanimation 0x0 0x5
 	doanimation 0x28
-	waitfieldeffect 0x28
+	cry SPECIES_MACHOKE 1
 	msgbox 0x8C6FB3B MSG_NORMAL @"A wild Machoke helped out by\nusin..."
+	waitcry
 	setflag 0x805
-	setvar 0x8004 5 @;Select Slot 6
-	special 0x62 @;Erase Slot 6 Pokemon
-	setvar 0x8004 0
-	setvar 0x8000 0
 	special 0x14D @;retrieve slot 6 Pokémon
 	releaseall
 	end
@@ -656,36 +586,6 @@ EventScript_UseStrength_NoDeposit:
 @;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 .global EventScript_UseWhirlpool
 EventScript_UseWhirlpool:
-	lockall
-	checkflag 0x9B3
-	if 0x0 _goto 0x8C6FB6F
-	countpokemon
-	compare LASTRESULT 5
-	if lessthan _goto EventScript_UseWhirlpool_NoDeposit
-	setvar 0x8004 5 @;Select Slot 6
-	setvar 0x8000 1
-	special 0x14D @;Deposit 6th Slot Pokemon
-	goto EventScript_UseWhirlpool_NoDeposit
-
-EventScript_UseWhirlpool_NoDeposit:
-	compare 0x4031 152 @;check Chikorita as starter
-	if 0x1 _call  EventScript_Chiko
-	compare 0x4031 155 @;check Cyndaquil as starter
-	if 0x1 _call  EventScript_Cynda
-	compare 0x4031 158 @;check Totodile as starter
-	if 0x1 _call  EventScript_Toto
-	setvar 0x8003 0x0
-	setvar 0x8004 0x5
-	setvar 0x8005 SPECIES_SEAKING
-	special 0x16
-	setanimation 0x0 0x5
-	doanimation 0x25
-	waitfieldeffect 0x25
-	setvar 0x8004 5 @;Select Slot 6
-	special 0x62 @;Erase Slot 6 Pokemon
-	setvar 0x8004 0
-	setvar 0x8000 0
-	special 0x14D @;retrieve slot 6 Pokémon
 	goto 0x8C2A484
 
 @;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
@@ -1124,47 +1024,23 @@ EventScript_UseADMDiveUnderwater_SkipAsk:
 .equ FLAG_SYS_USE_FLASH, 0x806
 .global EventScript_UseFlash
 EventScript_UseFlash:
-	lock
+	lockall
 	checkflag 0x820
 	if 0x0 _goto EventScript_UseFlash_None
-	countpokemon
-	compare LASTRESULT 5
-	if lessthan _goto EventScript_UseFlash_NoDeposit
-	setvar 0x8004 5 @;Select Slot 6
-	setvar 0x8000 1
-	special 0x14D @;Deposit 6th Slot Pokemon
-	goto EventScript_UseFlash_NoDeposit
-
-EventScript_UseFlash_NoDeposit:
-	compare 0x4031 152 @;check Chikorita as starter
-	if 0x1 _call  EventScript_Chiko
-	compare 0x4031 155 @;check Cyndaquil as starter
-	if 0x1 _call  EventScript_Cynda
-	compare 0x4031 158 @;check Totodile as starter
-	if 0x1 _call  EventScript_Toto
+	cry SPECIES_ABRA 0x1
+	waitcry
+	pause 18
 	setflag FLAG_SYS_USE_FLASH
-	setvar 0x8003 0x0
-	setvar 0x8004 0x5
-	setvar 0x8005 SPECIES_ABRA
-	special 0x16
-	setanimation 0x0 0x5
-	doanimation 0x28
-	waitstate
 	msgbox gText_BrightRideFlash MSG_NORMAL
 	checksound
 	sound 0xC8
 	animateflash 0x0
 	setflashlevel 0x0
-	setvar 0x8004 5 @;Select Slot 6
-	special 0x62 @;Erase Slot 6 Pokemon
-	setvar 0x8004 0
-	setvar 0x8000 0
-	special 0x14D @;retrieve slot 6 Pokémon
 	releaseall
 	end
 
 EventScript_UseFlash_None:
-	special 0x6 
+	releaseall
 	end
 
 @;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
@@ -1446,59 +1322,7 @@ EventScript_CableClub_WirelessTrade:
 
 .global SystemScript_DebugMenu
 SystemScript_DebugMenu:
-	lockall
-	multichoiceoption gText_DebugMenu_SetFlag 0
-	multichoiceoption gText_DebugMenu_GiveItem 1
-	multichoiceoption gText_DebugMenu_Level100Team 2
-	multichoiceoption gText_DebugMenu_MaxCoinage 3
-	multichoiceoption gText_DebugMenu_ShinyTeam 4
-	multichoice 0x0 0x0 FIVE_MULTICHOICE_OPTIONS 0x0
-	switch LASTRESULT
-	case 0, SystemScript_DebugMenu_SetFlag
-	case 1, SystemScript_DebugMenu_GiveItem
-	case 2, SystemScript_DebugMenu_Level100Team
-	case 3, SystemScript_DebugMenu_MaxCoinage
-	case 4, SystemScript_DebugMenu_ShinyTeam
-SystemScript_DebugMenu_End:
-	releaseall
-	end
-
-SystemScript_DebugMenu_SetFlag:
-	multichoiceoption gText_DebugMenu_AllBadges 0
-	multichoiceoption gText_DebugMenu_GameClear 1
-	multichoiceoption gText_DebugMenu_Pokedexes 2
-	multichoiceoption gText_DebugMenu_FlySpots 3
-	multichoiceoption gText_DebugMenu_CustomFlag 4
-	multichoice 0x0 0x0 FIVE_MULTICHOICE_OPTIONS 0x0
-	compare LASTRESULT 0x5
-	if greaterorequal _goto SystemScript_DebugMenu_End
-	callasm DebugMenu_ProcessSetFlag
-	goto SystemScript_DebugMenu_SetFlag
-
-SystemScript_DebugMenu_GiveItem:
-	multichoiceoption gText_DebugMenu_UsefulKeyItems 0
-	multichoiceoption gText_DebugMenu_GeneralUsefulItems 1
-	multichoiceoption gText_DebugMenu_PokeBalls 2
-	multichoiceoption gText_DebugMenu_Berries 3
-	multichoiceoption gText_DebugMenu_TMs 4
-	multichoiceoption gText_DebugMenu_AllItems 5
-	multichoice 0x0 0x0 SIX_MULTICHOICE_OPTIONS 0x0
-	compare LASTRESULT 0x6
-	if greaterorequal _goto SystemScript_DebugMenu_End
-	callasm DebugMenu_ProcessGiveItem
-	goto SystemScript_DebugMenu_GiveItem
-
-SystemScript_DebugMenu_Level100Team:
-	callasm DebugMenu_SetTeamToLevel100
-	goto SystemScript_DebugMenu
-
-SystemScript_DebugMenu_MaxCoinage:
-	callasm DebugMenu_MaxMoneyAndCoins
-	goto SystemScript_DebugMenu
-
-SystemScript_DebugMenu_ShinyTeam:
-	callasm DebugMenu_ShinyTeam
-	goto SystemScript_DebugMenu
+	goto 0x8C4176A
 
 @;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 

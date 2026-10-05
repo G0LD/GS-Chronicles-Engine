@@ -699,9 +699,8 @@
 084631A9 02
 
 ##Assorted Stuff
-#ifdef DEBUG_MODE 
-08aa03bc 6A 17 C4
-08078A98 20 4E 16 09
+#ifdef DEBUG_MODE
+08078ab0 20 4E 16 09
 #endif
 
 #Ou yeah chacarron macarron

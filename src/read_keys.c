@@ -259,8 +259,14 @@ bool8 StartLButtonFunc(void)
 
 bool8 StartRButtonFunc(void)
 {
-	if (IsDexNavHudActive() || InUnionRoom())
-		return FALSE;
+    if (IsDexNavHudActive() || InUnionRoom())
+        return FALSE;
+
+	#ifdef DEBUG_MODE
+    ScriptContext2_Enable();
+    ScriptContext1_SetupScript(SystemScript_DebugMenu);
+    return TRUE;
+	#endif
 
 	u16 dexNavSpecies = VarGet(VAR_DEXNAV);
 

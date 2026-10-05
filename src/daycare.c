@@ -705,7 +705,6 @@ void sp151_GiveCustomEgg()
     u16 customEggIndex = Var8006;
     struct Pokemon *mon = AllocZeroed(sizeof(struct Pokemon));
     bool8 isEgg;
-    bool8 sentToPc;
 
     CreateEgg(mon, species);
     isEgg = TRUE;
@@ -720,7 +719,7 @@ void sp151_GiveCustomEgg()
             break;
     }
 
-    sentToPc = GiveMonToPlayer(mon);
+    GiveMonToPlayer(mon);
     Free(mon);
 }
 

@@ -2255,8 +2255,8 @@ static const u16 s4StarFrontierRaidBattleDrops[] =
 	/* 25 %*/ ITEM_NONE,
 	/* 25 %*/ ITEM_NONE,
 	/*  5 %*/ ITEM_LEFTOVERS,
-	/*  4 %*/ ITEM_WISHING_PIECE,
-	/*  1 %*/ ITEM_WISHING_PIECE,
+	/*  4 %*/ ITEM_MASTER_BALL,
+	/*  1 %*/ ITEM_MASTER_BALL,
 };
 
 static const u16 s56StarFrontierRaidBattleDrops[] =
@@ -2270,9 +2270,9 @@ static const u16 s56StarFrontierRaidBattleDrops[] =
 	/* 30 %*/ ITEM_NORMAL_GEM,
 	/* 25 %*/ ITEM_PP_MAX,
 	/* 25 %*/ ITEM_LEFTOVERS,
-	/*  5 %*/ ITEM_WISHING_PIECE,
-	/*  4 %*/ ITEM_WISHING_PIECE,
-	/*  1 %*/ ITEM_WISHING_PIECE,
+	/*  5 %*/ ITEM_MASTER_BALL,
+	/*  4 %*/ ITEM_MASTER_BALL,
+	/*  1 %*/ ITEM_MASTER_BALL,
 };
 
 static u16 ModifyFrontierRaidDropItem(u16 item)

@@ -2399,7 +2399,8 @@ u8 PartyHasMonWithFieldMovePotential(u16 move, unusedArg u16 item, u8 surfingTyp
 			&& !GetMonData(mon, MON_DATA_IS_EGG, NULL))
 			{
 				#ifdef ONLY_CHECK_ITEM_FOR_HM_USAGE
-				if (hasHM) //Must have HM to prevent softlocks
+				if (hasHM //Must have HM to prevent softlocks
+				&& (MonKnowsMove(mon, move) || CanMonLearnTMTutor(mon, item, 0) == CAN_LEARN_MOVE))
 					return i;
 				#else
 				if (MonKnowsMove(mon, move))

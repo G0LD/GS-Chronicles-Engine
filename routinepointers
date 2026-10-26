@@ -184,6 +184,7 @@ sp11A_ClearRaidBattleFlag 081601C8
 sp11B_AllRaidBattlesCompleted 081601CC
 sp11C_GiveRaidBattleRewards 081601D0
 
+MysteryGift_Start 081601E8
 sp12C_DoEnterPhraseScreen 08160210
 sp12D_CompareEnteredPhrase 08160214
 
@@ -210,7 +211,7 @@ LinkNpcFix 0805efe4
 #OeiCaveEffect 081d98a9
 #PokeToolsFunc 083a7348
 #PokeToolsFunc 0806F404
-StartMenuDexNavCallback 08F629D1
+##StartMenuDexNavCallback 08F629D1
 
 ##Second Options Menu
 #CB2_InitQuestMenu 0806F534
@@ -246,9 +247,10 @@ VBlankCB_Battle 8011B80
 VBlankCB_Battle 802AAC4
 VBlankCB_Battle 8077A9C
 
-##Assorted Repoints
+##Assorted GS Chronicles Repoints
 CompressedMonToMon 08f3b7ec
-StartMenuDexNavCallback 08f1bff4
+PokegearDexNavCallback 091d84ec
+GetBattleMusicDexRegion 08f68170
 MiniBoxOpen 089f008f
 
 FieldUseFunc_EVReducingBerry 8F71A68
@@ -263,6 +265,11 @@ FieldUseFunc_AbilityCapsule 8F70FEC
 #ifdef HQ_MIXER
 ##Ipatix's HQ Sound Mixer
 SoundMainRAM 81DD0B4
+#endif
+
+#ifdef NEW_BAG_UI_EXPANSION
+NewBag_DisplayItemMessageInBag 8108E7C
+NewBag_GoToBagMenu 8107DC0
 #endif
 
 #ifdef UNBOUND

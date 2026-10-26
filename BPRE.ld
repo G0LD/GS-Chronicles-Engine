@@ -2135,8 +2135,8 @@ CB2_ReturnToPartyMenuFromSummaryScreen = 0x8122DBC | 1;
 DisplayMoveTutorMenu = 0x80e4634 | 1;
 
 /* Custom GSC Functions*/
-PokegearInit = 0x8fe0d20 | 1;
-CB2_OptionsMenuFromStartMenu = 0x8F0B330 | 1;
+PokegearInit = 0x8FB231C | 1;
+CB2_OptionsMenuFromStartMenu = 0x8F0B398 | 1;
 gHelpSystemEnabled = 0x3005ecc;
 FieldClearVBlankHBlankCallbacks = 0x80569bc | 1;
 FieldCB_WarpExitFadeFromBlack = 0x807df7c | 1;
@@ -2146,6 +2146,27 @@ gNumSafariBalls = 0x2039994;
 gSafariZoneStepCounter = 0x2039996;
 CB2_OpenPokedexFromStartMenu = 0x810275c | 1;
 CB2_PartyMenuFromStartMenu = 0x8126eb0 | 1;
+PlayCry_Normal = 0x8071df0 | 1;
+
+/* New Bag */
+IsWritingMailAllowed = 0x80BF6D8 | 1;
+CB2_ChooseMonToGiveItem = 0x8126EDC | 1;
+ItemId_GetImportance = 0x809A990 | 1;
+ItemIsMail = 0x80980F8 | 1;
+ItemId_GetBattleFunc = 0x809AA68 | 1;
+MenuHelpers_IsLinkActive = 0x80BF708 | 1;
+/* New Bag: u32-typed aliases (agbcc does not zero-extend u8 returns) */
+NBv_ItemIsMail = 0x80980F8 | 1;
+NBv_LinkActive = 0x80BF708 | 1;
+NBv_InUnionRoom = 0x811B0D0 | 1;
+NBv_Importance = 0x809A990 | 1;
+NBv_PartyCount = 0x8040C3C | 1;
+NBv_ItemType = 0x809A9FC | 1;
+NBv_Pocket = 0x809A9D8 | 1;
+NBv_AddPCItem = 0x809A3C8 | 1;
+InitTMCase = 0x81317F8 | 1;
+InitBerryPouch = 0x813CD50 | 1;
+DecompressAndCopyTileDataToVram = 0x80F6878 | 1;
 
 SetCaughtUnown = 0x8B00A10 | 1;
 

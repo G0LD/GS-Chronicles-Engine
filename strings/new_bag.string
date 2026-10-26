@@ -1,0 +1,146 @@
+#org @gText_NB_TabLabel0
+Healing
+
+#org @gText_NB_TabLabel1
+Balls
+
+#org @gText_NB_TabLabel2
+Items
+
+#org @gText_NB_TabLabel3
+Key
+
+#org @gText_NB_TabLabel4
+Mega
+
+#org @gText_NB_TabLabel5
+Evo.
+
+#org @gText_NB_Close
+.
+
+#org @gText_NB_Use
+Use
+
+#org @gText_NB_Give
+Give
+
+#org @gText_NB_Toss
+Toss
+
+#org @gText_NB_Register
+Register
+
+#org @gText_NB_Unregister
+Unregister
+
+#org @gText_NB_Cancel
+Cancel
+
+#org @gText_NB_Yes
+Yes
+
+#org @gText_NB_No
+No
+
+#org @gText_NB_TossHowMany
+Throw away how many?
+
+#org @gText_NB_ThrowAway
+Throw away
+
+#org @gText_NB_ThrewAway
+Threw away
+
+#org @gText_NB_NoPokemon
+You have no Pokémon.
+
+#org @gText_NB_CantHold
+This item cannot be held.
+
+#org @gText_NB_CantWriteMail
+MAIL cannot be written here.
+
+#org @gText_NB_Reg
+REG
+
+#org @gText_NB_FooterSelect
+Select
+
+#org @gText_NB_FooterConfirm
+Confirm
+
+#org @gText_NB_FooterCancel
+Cancel
+
+#org @gText_NB_FooterTab
+Switch
+
+#org @gText_NB_CatHP
+HP Restorer
+
+#org @gText_NB_CatStatus
+Status Healer
+
+#org @gText_NB_CatPP
+PP Restorer
+
+#org @gText_NB_CatBattle
+Battle Item
+
+#org @gText_NB_CatBoost
+Stat Booster
+
+#org @gText_NB_CatRepel
+Repel
+
+#org @gText_NB_CatHeld
+Held Item
+
+#org @gText_NB_CatMega
+Mega Stone
+
+#org @gText_NB_CatEvo
+Evolution Item
+
+#org @gText_NB_CatTM
+TM/HM
+
+#org @gText_NB_CatKey
+Key Item
+
+#org @gText_NB_CatBall
+Poké Ball
+
+#org @gText_NB_CatBerry
+Berry
+
+#org @gText_NB_CatItem
+Item
+
+#org @gText_NB_SellHowMany
+Sell how many?
+
+#org @gText_NB_CantBuy
+I can't buy that.
+
+#org @gText_NB_ICanPay
+I can pay
+
+#org @gText_NB_WouldThatBeOK
+Would that be OK?
+
+#org @gText_NB_Sold
+Sold
+
+#org @gText_NB_For
+for
+
+#org @gText_NB_DepositHowMany
+Deposit how many?
+
+#org @gText_NB_Deposited
+Deposited
+
+#org @gText_NB_NoRoomPC
+There is no room to store items.

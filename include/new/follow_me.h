@@ -31,11 +31,17 @@ void FollowMe_WarpSetEnd(void);
 bool8 IsFollowerAtCoords(s16 x, s16 y);
 void CreateFollowerAvatar(void);
 void TryAttachFollowerToPlayer(void);
+bool8 IsFollowerPokemon(void);
 
 //Functions Hooked In
 void PlayerGoThroughDoor(u8 taskId);
 void sp0D1_SetUpFollowerSprite(void);
 void sp0D2_DestroyFollowerSprite(void);
+
+//New Added
+u16 GetMiniStepCount(u8 speed);
+void RunMiniStep(struct Sprite *sprite, u8 speed, u8 currentFrame);
+void CreateSparkleSprite(void);
 
 //Exported Data Structures
 
@@ -74,4 +80,3 @@ struct Follower
 #define DEFAULT_FOLLOWER_LOCAL_ID 0xFE
 
 extern struct Follower gFollowerState; //0x203B818
-

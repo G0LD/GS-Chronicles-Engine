@@ -20,8 +20,8 @@ extern u8 gText_InGameTrade_Maiuuhau[];
 extern u8 gText_InGameTrade_Okelani[];
 extern u8 gText_InGameTrade_Bravo[];
 extern u8 gText_InGameTrade_Inaki[];
-extern u8 gText_InGameTrade_MsNido[];
-extern u8 gText_InGameTrade_Saige[];
+extern u8 gText_InGameTrade_Nautilus[];
+extern u8 gText_InGameTrade_Paige[];
 extern u8 gText_InGameTrade_Chding[];
 extern u8 gText_InGameTrade_Elyssa[];
 extern u8 gText_InGameTrade_Nina[];
@@ -76,19 +76,19 @@ static const struct InGameTrade sInGameTrades[] = {
     }, 
     [INGAME_TRADE_NIDORAN] = 
     {
-        .nickname = gText_InGameTrade_MsNido,
-        .species = SPECIES_NIDORAN_F,
+        .nickname = gText_InGameTrade_Nautilus,
+        .species = SPECIES_SEADRA,
         .ivs = {22, 18, 25, 19, 15, 22},
         .abilityNum = 0,
         .otId = 63184,
         .conditions = {5, 5, 5, 5, 30},
         .personality = 0x4c970b89,
-        .heldItem = ITEM_TINY_MUSHROOM,
+        .heldItem = ITEM_DRAGON_SCALE,
         .mailNum = 255,
-        .otName = gText_InGameTrade_Saige,
+        .otName = gText_InGameTrade_Paige,
         .otGender = FEMALE,
         .nature = NATURE_BOLD,
-        .requestedSpecies = SPECIES_NIDORAN_M
+        .requestedSpecies = SPECIES_STARMIE
     }, 
     [INGAME_TRADE_FARFETCHD] = 
     {

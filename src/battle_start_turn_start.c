@@ -1715,6 +1715,36 @@ static void TrySetupRaidBossRepeatedAttack(u8 actionFuncId)
 	}
 }
 
+// Map-section lookup is implemented in wild_pokemon_area.c. Used also for popups to idenfity which region the player is at.
+extern u8 GetBattleMusicDexRegion(u16 mapSection);
+
+struct RegionBattleMusic
+{
+    u16 trainerSong;
+    u16 wildSong;
+};
+
+static const struct RegionBattleMusic sRegionBattleMusic[] =
+{
+    { BGM_BATTLE_TRAINER,       BGM_BATTLE_WILD   }, // 0: Johto (sDexAreas_Kanto)
+    { BGM_BATTLE_TRAINER_KANTO, BGM_BATTLE_WILD_KANTO   }, // 1: Kanto (sDexAreas_Sevii1)
+    { BGM_BATTLE_TRAINER,       BGM_BATTLE_WILD   }, // 2: sDexAreas_Sevii2
+    { BGM_BATTLE_TRAINER,       BGM_BATTLE_WILD   }, // 3: sDexAreas_Sevii3
+    { BGM_BATTLE_TRAINER,       BGM_BATTLE_WILD   }, // 4: sDexAreas_Sevii4
+    { BGM_BATTLE_TRAINER,       BGM_BATTLE_WILD   }, // 5: sDexAreas_Sevii5
+    { BGM_BATTLE_TRAINER,       BGM_BATTLE_WILD   }, // 6: sDexAreas_Sevii6
+    { BGM_BATTLE_TRAINER,       BGM_BATTLE_WILD   }, // 7: sDexAreas_Sevii7
+};
+
+static u16 GetRegionBattleMusic(bool8 trainerBattle)
+{
+    u8 region = GetBattleMusicDexRegion(gMapHeader.regionMapSectionId);
+    if (region >= ARRAY_COUNT(sRegionBattleMusic))
+        return 0; // Map not listed: use existing default
+    return trainerBattle ? sRegionBattleMusic[region].trainerSong
+                         : sRegionBattleMusic[region].wildSong;
+}
+
 static u16 GetRandomBattleBGM(void)
 {
 	u16 song;
@@ -1810,11 +1840,9 @@ u16 GetMUS_ForBattle(void)
 			}
 		}
 
-		#ifdef VAR_TRAINER_BGM_OVERRIDE
-			song = VarGet(VAR_TRAINER_BGM_OVERRIDE);
-			if (song != 0)
-				return song;
-		#endif
+		song = GetRegionBattleMusic(TRUE);
+		if (song != 0)
+			return song;
 
 		#ifdef UNBOUND
 			return BGM_BATTLE_BORRIUS_TRAINER;
@@ -1841,11 +1869,9 @@ u16 GetMUS_ForBattle(void)
 		if (IsRaidBattle())
 			return BGM_BATTLE_RAID_BOSS;
 
-		#ifdef VAR_WILD_BGM_OVERRIDE
-			song = VarGet(VAR_WILD_BGM_OVERRIDE);
-			if (song != 0)
-				return song;
-		#endif
+		song = GetRegionBattleMusic(FALSE);
+		if (song != 0)
+			return song;
 
 		u16 dexNum = SpeciesToNationalPokedexNum(species);
 		if (dexNum >= NATIONAL_DEX_GROOKEY && dexNum < NATIONAL_DEX_CALYREX)
@@ -1856,11 +1882,9 @@ u16 GetMUS_ForBattle(void)
 		if (IsRaidBattle())
 			return BGM_BATTLE_DEOXYS;
 
-		#ifdef VAR_WILD_BGM_OVERRIDE
-			song = VarGet(VAR_WILD_BGM_OVERRIDE);
-			if (song != 0)
-				return song;
-		#endif
+		song = GetRegionBattleMusic(FALSE);
+		if (song != 0)
+			return song;
 
 		return BGM_BATTLE_WILD;
 	#endif

@@ -3818,6 +3818,15 @@ bool8 StartMenuDexNavCallback(void)
 	return FALSE;
 }
 
+void PokegearDexNavCallback(void)
+{
+    sDexNavGUIPtr = Calloc(sizeof(struct DexNavGUIData));
+    if (sDexNavGUIPtr == NULL)
+    return;
+    gMain.state = 0;
+    SetMainCallback2(CB2_DexNav);
+}
+
 
 // ========================================== //
 // ============ Script Specials ============= //

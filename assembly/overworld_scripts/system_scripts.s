@@ -518,34 +518,10 @@ EventScript_RockClimb:
 	lockall
 	call FollowerIntoPlayerScript
 	callasm HideFollower
-	countpokemon
-	compare LASTRESULT 5
-	if lessthan _goto EventScript_RockClimb_NoDeposit
-	setvar 0x8004 5 @;Select Slot 6
-	setvar 0x8000 1
-	special 0x14D @;Deposit 6th Slot Pokemon
-	goto EventScript_RockClimb_NoDeposit
-
-EventScript_RockClimb_NoDeposit:
-	compare 0x4031 152 @;check Chikorita as starter
-	if 0x1 _call  EventScript_Chiko
-	compare 0x4031 155 @;check Cyndaquil as starter
-	if 0x1 _call  EventScript_Cynda
-	compare 0x4031 158 @;check Totodile as starter
-	if 0x1 _call  EventScript_Toto
 	msgbox gText_ClamberRideRockclimb MSG_NORMAL
-	setvar 0x8003 0x0
-	setvar 0x8004 0x5
-	setvar 0x8005 SPECIES_MACHOKE
-	special 0x16
 	dofieldeffect FLDEFF_USE_ROCK_CLIMB
 	waitfieldeffect FLDEFF_USE_ROCK_CLIMB
 	callasm FollowMe_WarpSetEnd
-	setvar 0x8004 5 @;Select Slot 6
-	special 0x62 @;Erase Slot 6 Pokemon
-	setvar 0x8004 0
-	setvar 0x8000 0
-	special 0x14D @;retrieve slot 6 Pokémon
 	releaseall
 	end
 
@@ -557,7 +533,11 @@ EventScript_UseCut:
 	waitcry
 	pause 15
 	closeonkeypress
-	sound 121
+	setflag 0x1
+	setanimation 0x0 0x1
+	doanimation 0x2
+	waitfieldeffect 0x2
+	clearflag 0x1
 	goto 0x81BDF76
 
 @;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
@@ -565,27 +545,39 @@ EventScript_UseCut:
 EventScript_UseRockSmash:
 	cry SPECIES_MACHOKE 0x1
 	msgbox 0x8C6FA93 MSG_KEEPOPEN @"A wild Machoke helped out by\nusin..."
+	setflag 0x1
+	setanimation 0x0 0x5
+	doanimation 0x25
+	waitfieldeffect 0x25
 	waitcry
-	sound 124
+	clearflag 0x1
 	goto 0x8C5FA5E
 
 @;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 .global EventScript_UseStrength
 EventScript_UseStrength:
 	lockall
-	setanimation 0x0 0x5
-	doanimation 0x28
 	cry SPECIES_MACHOKE 1
-	msgbox 0x8C6FB3B MSG_NORMAL @"A wild Machoke helped out by\nusin..."
+	msgbox 0x8C6FB3B MSG_KEEPOPEN @"A wild Machoke helped out by\nusin..."
 	waitcry
+	setflag 0x1
+	setanimation 0x0 0x1
+	doanimation 0x28
+	waitfieldeffect 0x28
 	setflag 0x805
-	special 0x14D @;retrieve slot 6 Pokémon
+	clearflag 0x1
 	releaseall
 	end
 
 @;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 .global EventScript_UseWhirlpool
 EventScript_UseWhirlpool:
+	lockall
+	checkflag 0x9B3
+	if 0x0 _goto 0x8C6FB6F
+	setanimation 0x0 0x5
+	doanimation 0x25
+	waitfieldeffect 0x25
 	goto 0x8C2A484
 
 @;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
@@ -681,54 +673,15 @@ EventScript_LavaSurfEnd:
 
 .global EventScript_UseWaterfall
 EventScript_UseWaterfall:
-	bufferpartypokemon 0x0 0x8004
-	bufferattack 0x1 MOVE_WATERFALL
-	callasm IsUnboundToVar
-	compare LASTRESULT 0x0
-	if equal _goto EventScript_UseWaterfall_SkipAsk
-	checkflag FLAG_AUTO_HMS
-	if SET _goto EventScript_UseWaterfall_SkipAsk
-
-EventScript_UseWaterfall_Ask:
-	msgbox 0x81BE33F MSG_YESNO
-	compare LASTRESULT NO
-	if equal _goto EventScript_WaterfallEnd
 	lockall
-	call FollowerIntoPlayerScript
-	callasm HideFollower
-	msgbox 0x81BDFD7 MSG_KEEPOPEN
-
-EventScript_UseWaterfall_SkipMsg:
-	lockall
+	checkflag 0x9B5
+	if 0x0 _goto EventScript_WallOfWater
 	msgbox gText_CascadeRideWaterfall MSG_NORMAL
-	countpokemon
-	compare LASTRESULT 5
-	if lessthan _goto EventScript_UseWaterfall_NoDeposit
-	setvar 0x8004 5 @;Select Slot 6
-	setvar 0x8000 1
-	special 0x14D @;Deposit 6th Slot Pokemon
-	goto EventScript_UseWaterfall_NoDeposit
-
-EventScript_UseWaterfall_NoDeposit:
-	compare 0x4031 152 @;check Chikorita as starter
-	if 0x1 _call  EventScript_Chiko
-	compare 0x4031 155 @;check Cyndaquil as starter
-	if 0x1 _call  EventScript_Cynda
-	compare 0x4031 158 @;check Totodile as starter
-	if 0x1 _call  EventScript_Toto
-	setvar 0x8003 0x0
-	setvar 0x8004 0x5
-	setvar 0x8005 SPECIES_SEAKING
-	special 0x16
 	setanimation 0x0 0x5
+	sound 120
 	doanimation 0x2B
 	callasm FollowMe_WarpSetEnd
 	waitfieldeffect 0x2B
-	setvar 0x8004 5 @;Select Slot 6
-	special 0x62 @;Erase Slot 6 Pokemon
-	setvar 0x8004 0
-	setvar 0x8000 0
-	special 0x14D @;retrieve slot 6 Pokémon
 	releaseall
 	end
 
@@ -740,7 +693,7 @@ EventScript_UseWaterfall_SkipAsk:
 	lockall
 	call FollowerIntoPlayerScript
 	callasm HideFollower
-	goto EventScript_UseWaterfall_SkipMsg
+	goto EventScript_UseWaterfall
 
 .global EventScript_WallOfWater
 EventScript_WallOfWater:
@@ -779,72 +732,20 @@ EventScript_UseSandboxWaterfall:
 @;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 .global EventScript_UseSurf
 EventScript_UseSurf:
-	goto 0x87602C7
+	goto EventScript_UseSurf_SkipAsk @0x87602C7
 	end
-
-EventScript_UseSurf_Ask:
-	callasm IsPlayerFacingMurkyBrownWaterToVar
-	compare LASTRESULT 0x0
-	if notequal _goto EventScript_UseSurf_AskMurkyWater
-	msgbox 0x81A556E MSG_YESNO	
-EventScript_UseSurf_CheckAnswer:
-	compare LASTRESULT NO
-	if equal _goto EventScript_SurfEnd
-	lockall
-	msgbox 0x81BDFD7 MSG_KEEPOPEN
 
 EventScript_UseSurf_SkipAsk:
 	lockall
 	msgbox gText_WaveRideSurf MSG_NORMAL
-	countpokemon
-	compare LASTRESULT 5
-	if lessthan _goto EventScript_UseSurf_NoDeposit
-	setvar 0x8004 5 @;Select Slot 6
-	setvar 0x8000 1
-	special 0x14D @;Deposit 6th Slot Pokemon
-	goto EventScript_UseSurf_NoDeposit
-
-EventScript_UseSurf_NoDeposit:
-	compare 0x4031 152 @;check Chikorita as starter
-	if 0x1 _call  EventScript_Chiko
-	compare 0x4031 155 @;check Cyndaquil as starter
-	if 0x1 _call  EventScript_Cynda
-	compare 0x4031 158 @;check Totodile as starter
-	if 0x1 _call  EventScript_Toto
-	setvar 0x8003 0
-	setvar 0x8004 5
-	setvar 0x8005 SPECIES_SEAKING
-	special 0x16
 	setanimation 0x0 0x5
 	doanimation 0x9
 	waitfieldeffect 0x9
-	setvar 0x8004 5 @;Select Slot 6
-	special 0x62 @;Erase Slot 6 Pokemon
-	setvar 0x8004 0
-	setvar 0x8000 0
-	special 0x14D @;retrieve slot 6 Pokémon
-	releaseall
-	end
-
-EventScript_Chiko:
-	givepokemon SPECIES_CHIKORITA 1 0 0 0 0
-	return
-
-EventScript_Cynda:
-	givepokemon SPECIES_CYNDAQUIL 1 0 0 0 0
-	return
-
-EventScript_Toto:
-	givepokemon SPECIES_TOTODILE 1 0 0 0 0
-	return
-
-EventScript_SurfEnd:
 	releaseall
 	end
 
 EventScript_UseSurf_AskMurkyWater:
-	msgbox gText_WaterMurkyBrownUseSurf MSG_YESNO	
-	goto EventScript_UseSurf_CheckAnswer
+	end
 
 .global EventScript_WaterDyedBlue
 EventScript_WaterDyedBlue:
@@ -867,9 +768,9 @@ EventScript_UseADMSurf:
 	compare LASTRESULT 0x0
 	if notequal _goto EventScript_UseADMSurf_AskMurkyWater
 	msgbox gText_OfferSurfWithADM MSG_YESNO	
+
 EventScript_UseADMSurf_CheckAnswer:
 	compare LASTRESULT NO
-	if equal _goto EventScript_SurfEnd
 	lockall
 	bufferpartypokemon 0x0 0x8004
 	msgbox gText_ADMBlewUpInflatablePokemon MSG_KEEPOPEN
@@ -895,9 +796,9 @@ EventScript_UseSandboxSurf:
 	compare LASTRESULT 0x0
 	if notequal _goto EventScript_UseSandboxSurf_AskMurkyWater
 	msgbox 0x81A556E MSG_YESNO	
+
 EventScript_UseSandboxSurf_CheckAnswer:
 	compare LASTRESULT NO
-	if equal _goto EventScript_SurfEnd
 	lockall
 	callasm GetFirstNonEggIn8004
 	bufferpartypokemon 0x0 0x8004

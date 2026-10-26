@@ -27,6 +27,7 @@
 #include "../include/new/set_z_effect.h"
 #include "../include/new/stat_buffs.h"
 #include "../include/new/util.h"
+#include "../include/new/pss_oam_graphics.h"
 
 /*
 dynamax.c
@@ -41,13 +42,24 @@ dynamax.c
 
 #define GFX_TAG_GIGANTAMAX_ICON 0x2715 //Some battle tag
 #define GFX_TAG_MAX_FRIENDSHIP_ICON 0x2716 //Some battle tag
+#define GFX_TAG_PSS_ICON 0x2717
+
+#define PSS_ICON_X  214
+#define PSS_ICON_Y   59
+#define PSS_NO_SPRITE MAX_SPRITES
 
 extern const u8 GigantamaxSummaryScreenIconTiles[];
 extern const u16 GigantamaxSummaryScreenIconPal[];
 extern const u8 MaxFriendshipSummaryScreenIconTiles[];
 extern const u16 MaxFriendshipSummaryScreenIconPal[];
 
+static const u16 sPssObjPalette[16];
+static const u8 sPssObjTiles[768];
+static u8 sPssSpriteId = PSS_NO_SPRITE;
+
 //This file's functions:
+void CreateSummaryScreenPssIcon(void);
+void DestroySummaryScreenPssIcon(void);
 static bool8 IsBannedHeldItemForDynamax(u16 item);
 static const u8* DoDynamax(u8 bank);
 static const u8* DoGigantamax(u8 bank);
@@ -149,6 +161,76 @@ static const struct OamData sMaxFriendshipIconOam =
 	.priority = 0, //Above all
 };
 #endif
+
+static const struct OamData sPssIconOam =
+{
+    .affineMode = ST_OAM_AFFINE_OFF,
+    .objMode = ST_OAM_OBJ_NORMAL,
+    .shape = SPRITE_SHAPE(32x16),
+    .size = SPRITE_SIZE(32x16),
+    .priority = 0,
+};
+
+static void SpriteCB_PssIcon(struct Sprite* sprite)
+{
+    u8 selected;
+    u16 move;
+    u8 category;
+
+    // Only display on the detailed moves page.
+    if (sMonSummaryScreen == NULL
+    ||  sMonSummaryScreen->curPageIndex != PSS_PAGE_MOVES_INFO
+    ||  sMonSummaryScreen->flippingPages)
+    {
+        sprite->invisible = TRUE;
+        return;
+    }
+
+    selected = *(volatile u8*)0x0203B16D;
+
+    if (selected >= 4)
+    {
+        sprite->invisible = TRUE;
+        return;
+    }
+
+    move = sMonSummaryScreen->moveIds[selected];
+
+    if (move == 0)
+    {
+        sprite->invisible = TRUE;
+        return;
+    }
+
+    category = ((const u8*)&gBattleMoves[move])[0xA];
+
+    if (category > 2)
+    {
+        sprite->invisible = TRUE;
+        return;
+    }
+
+    sprite->oam.tileNum = sprite->data[0] + category * 8;
+    sprite->invisible = FALSE;
+}
+
+static const struct SpriteTemplate sPssIconTemplate =
+{
+    .tileTag = GFX_TAG_PSS_ICON,
+    .paletteTag = 0xFFFF,
+    .oam = &sPssIconOam,
+    .anims = gDummySpriteAnimTable,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = SpriteCB_PssIcon,
+};
+
+static const struct SpriteSheet sPssSpriteSheet =
+{
+    sPssObjTiles,
+    sizeof(sPssObjTiles),
+    GFX_TAG_PSS_ICON,
+};
 
 static const struct SpriteTemplate sSummaryScreenGigantamaxIconTemplate =
 {
@@ -1475,7 +1557,7 @@ void CreateSummaryScreenGigantamaxIcon(void)
 	//Base the position of the icon off of where the Poke Ball sprite is
 	struct Sprite* ballSprite = &gSprites[sMonSummaryScreen->ballIconSpriteId];
 
-	if (sMonSummaryScreen->currentMon.gigantamax)
+	if (false)
 	{
 		LoadCompressedSpriteSheetUsingHeap(&sSummaryScreenGigantamaxIconSpriteSheet);
 		LoadPalette(sSummaryScreenGigantamaxIconSpritePalette.data, (15 * 16) + 0x100, 32); //Load into last sprite palette slot
@@ -1529,6 +1611,43 @@ void CreateSummaryScreenGigantamaxIcon(void)
 	else
 		ballSprite->data[1] = MAX_SPRITES; //No icon
 	#endif
+	CreateSummaryScreenPssIcon();
+}
+
+
+void CreateSummaryScreenPssIcon(void)
+{
+    u8 id;
+
+    if (sPssSpriteId < MAX_SPRITES)
+        return;
+
+    LoadSpriteSheet(&sPssSpriteSheet);
+    LoadPalette(sPssObjPalette, 0x1F0, 32);
+
+    id = CreateSprite(
+        &sPssIconTemplate,
+        PSS_ICON_X,
+        PSS_ICON_Y,
+        0
+    );
+
+    if (id < MAX_SPRITES)
+    {
+        sPssSpriteId = id;
+
+        // Force OBJ palette 15.
+        gSprites[id].oam.paletteNum = 15;
+
+        // Save the original tile number for category switching.
+        gSprites[id].data[0] = gSprites[id].oam.tileNum;
+
+        SpriteCB_PssIcon(&gSprites[id]);
+    }
+    else
+    {
+        FreeSpriteTilesByTag(GFX_TAG_PSS_ICON);
+    }
 }
 
 void SummaryScreen_ChangeCaughtBallSpriteVisibility(u8 invisible)
@@ -1547,8 +1666,20 @@ void SummaryScreen_ChangeCaughtBallSpriteVisibility(u8 invisible)
 	#endif
 }
 
+void DestroySummaryScreenPssIcon(void)
+{
+    if (sPssSpriteId < MAX_SPRITES)
+    {
+        DestroySprite(&gSprites[sPssSpriteId]);
+        FreeSpriteTilesByTag(GFX_TAG_PSS_ICON);
+
+        sPssSpriteId = MAX_SPRITES;
+    }
+}
+
 void SummaryScreen_DestroyCaughtBallSprite(void)
 {
+	DestroySummaryScreenPssIcon();
 	u8 ballSpriteId = sMonSummaryScreen->ballIconSpriteId;
 	u8 gigantamaxIconSpriteId = gSprites[sMonSummaryScreen->ballIconSpriteId].data[0];
 	unusedArg u8 maxFriendshipIconSpriteId = gSprites[sMonSummaryScreen->ballIconSpriteId].data[1];

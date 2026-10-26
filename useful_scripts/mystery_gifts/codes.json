@@ -1,0 +1,26 @@
+{
+  "project": "C:/Users/Overlord Gaia/Documents/GitHub/GS-Chronicles-Engine",
+  "flag_base": 5200,
+  "music": 400,
+  "next_slot": 6,
+  "codes": [
+    {
+      "code": "IMMATEST",
+      "species": "ARCEUS",
+      "level": 50,
+      "shiny": false,
+      "ha": false,
+      "held": "LEGEND_PLATE",
+      "nature": "(random)",
+      "moves": [
+        "JUDGMENT",
+        "EXTREMESPEED",
+        "RECOVER",
+        "HYPERBEAM"
+      ],
+      "reward": "RARE_CANDY",
+      "qty": 100,
+      "slot": 0
+    }
+  ]
+}

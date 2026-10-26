@@ -132,7 +132,6 @@ gMoveNames 323460
 gMoveNames 441996
 gMoveNames 636196
 gMoveNames 776240
-gMoveNames 785060
 gBattleMoves 818576
 gBattleMoves 818688
 gBattleMoves 818996
@@ -163,6 +162,7 @@ gBattleMoves 938956
 gBattleMoves 939068
 gBallSpriteTemplates 980600
 gBallSpriteTemplates 980940
+gBallParticleSpriteTemplates 983656
 gBallOpenParticleAnimNums 983668
 gBallParticleSpritesheets 984544
 gBallParticlePalettes 984552
@@ -198,16 +198,9 @@ gMoveNames 1165028
 gMoveNames 1201852
 gMoveNames 1202504
 gMoveNames 1202732
-gMoveNames 1203172
-gMoveNames 1203424
 gMoveNames 1204216
-gMoveNames 1204332
-gMoveNames 1204520
-gMoveNames 1204732
-gMoveNames 1204860
 gMoveNames 1206256
 gMoveNames 1206400
-gMoveNames 1207908
 gMoveNames 1252884
 gBattleMoves 1258712
 gBattleMoves 1258792

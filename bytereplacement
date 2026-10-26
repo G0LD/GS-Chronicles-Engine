@@ -700,7 +700,8 @@
 
 ##Assorted Stuff
 #ifdef DEBUG_MODE
-08078ab0 20 4E 16 09
+08078ab0 00 B0 F7 08
+08078ab4 70 B2 F7 08
 #endif
 
 #Ou yeah chacarron macarron
@@ -716,6 +717,14 @@
 081DD0C0 00 E3 03 02
 081DD0B8 50 5F 00 03
 081DC094 51 5F 00 03
+#endif
+
+#ifdef NEW_BAG_UI_EXPANSION
+##New Bag: safe 4-argument hook for DisplayItemMessageInBag (push r4; ldr r4,=fn; mov ip,r4; pop r4; bx ip)
+08108E70 10 B4 02 4C A4 46 10 BC 60 47 00 00
+
+##New Bag: safe hook for GoToBagMenu (push r4; ldr r4,=fn; mov ip,r4; pop r4; bx ip)
+08107DB4 10 B4 02 4C A4 46 10 BC 60 47 00 00
 #endif
 
 #ifdef UNBOUND

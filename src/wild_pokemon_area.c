@@ -16,120 +16,143 @@ extern const struct WildPokemonHeader gWildMonMorningHeaders[];
 extern const struct WildPokemonHeader gWildMonNightHeaders[];
 
 static const u16 sDexAreas_Kanto[][2] = {
-    { MAPSEC_PALLET_TOWN,          1 },
-    { MAPSEC_VIRIDIAN_CITY,        2 },
-    { MAPSEC_PEWTER_CITY,          3 },
-    { MAPSEC_CERULEAN_CITY,        4 },
-    { MAPSEC_LAVENDER_TOWN,        5 },
-    { MAPSEC_VERMILION_CITY,       6 },
-    { MAPSEC_CELADON_CITY,         7 },
-    { MAPSEC_FUCHSIA_CITY,         8 },
-    { MAPSEC_CINNABAR_ISLAND,      9 },
-    { MAPSEC_INDIGO_PLATEAU,      10 },
-    { MAPSEC_SAFFRON_CITY,        11 },
-    { MAPSEC_ROUTE_4_FLYDUP,      15 },
-    { MAPSEC_ROUTE_10_FLYDUP,     21 },
-    { MAPSEC_ROUTE_1,             12 },
-    { MAPSEC_ROUTE_2,             13 },
-    { MAPSEC_ROUTE_3,             14 },
-    { MAPSEC_ROUTE_4,             15 },
-    { MAPSEC_ROUTE_5,             16 },
-    { MAPSEC_ROUTE_6,             17 },
-    { MAPSEC_ROUTE_7,             18 },
-    { MAPSEC_ROUTE_8,             19 },
-    { MAPSEC_ROUTE_9,             20 },
-    { MAPSEC_ROUTE_10,            21 },
-    { MAPSEC_ROUTE_11,            22 },
-    { MAPSEC_ROUTE_12,            23 },
-    { MAPSEC_ROUTE_13,            24 },
-    { MAPSEC_ROUTE_14,            25 },
-    { MAPSEC_ROUTE_15,            26 },
-    { MAPSEC_ROUTE_16,            27 },
-    { MAPSEC_ROUTE_17,            28 },
-    { MAPSEC_ROUTE_18,            29 },
-    { MAPSEC_ROUTE_19,            30 },
-    { MAPSEC_ROUTE_20,            31 },
-    { MAPSEC_ROUTE_21,            32 },
-    { MAPSEC_ROUTE_22,            33 },
-    { MAPSEC_ROUTE_23,            34 },
-    { MAPSEC_ROUTE_24,            35 },
-    { MAPSEC_ROUTE_25,            36 },
-    { MAPSEC_VIRIDIAN_FOREST,     37 },
-    { MAPSEC_MT_MOON,             39 },
-    { MAPSEC_S_S_ANNE,             6 },
-    { MAPSEC_UNDERGROUND_PATH,    11 },
-    { MAPSEC_UNDERGROUND_PATH_2,  11 },
-    { MAPSEC_DIGLETTS_CAVE,       38 },
-    { MAPSEC_KANTO_VICTORY_ROAD,  47 },
-    { MAPSEC_ROCKET_HIDEOUT,       7 },
-    { MAPSEC_SILPH_CO,            11 },
-    { MAPSEC_POKEMON_MANSION,     46 },
-    { MAPSEC_KANTO_SAFARI_ZONE,   44 },
-    { MAPSEC_POKEMON_LEAGUE,      47 },
-    { MAPSEC_ROCK_TUNNEL,         41 },
-    { MAPSEC_SEAFOAM_ISLANDS,     45 },
-    { MAPSEC_POKEMON_TOWER,       43 },
-    { MAPSEC_CERULEAN_CAVE,       40 },
-    { MAPSEC_POWER_PLANT,         42 }
+    { MAPSEC_NEW_BARK_TOWN,        1 },
+    { MAPSEC_CHERRYGROVE_CITY,     2 },
+    { MAPSEC_VIOLET_CITY,          3 },
+    { MAPSEC_AZALEA_TOWN,          4 },
+    { MAPSEC_GOLDENROD_CITY,       5 },
+    { MAPSEC_ECRUTEAK_CITY,        6 },
+    { MAPSEC_OLIVINE_CITY,         7 },
+    { MAPSEC_CIANWOOD_CITY,        8 },
+    { MAPSEC_MAHOGANY_TOWN,        9 },
+    { MAPSEC_LAKE_OF_RAGE,        10 },
+    { MAPSEC_BLACKTHORN_CITY,     11 },
+    { MAPSEC_POKEMON_LEAGUE,      12 },
+    { MAPSEC_ROUTE_29,            13 },
+    { MAPSEC_ROUTE_30,            14 },
+    { MAPSEC_ROUTE_31,            15 },
+    { MAPSEC_ROUTE_32,            16 },
+    { MAPSEC_ROUTE_32_FLYDUP,     16 },
+    { MAPSEC_ROUTE_33,            17 },
+    { MAPSEC_ROUTE_34,            18 },
+    { MAPSEC_ROUTE_35,            19 },
+    { MAPSEC_ROUTE_36,            20 },
+    { MAPSEC_ROUTE_37,            21 },
+    { MAPSEC_ROUTE_38,            22 },
+    { MAPSEC_ROUTE_39,            23 },
+    { MAPSEC_ROUTE_40,            24 },
+    { MAPSEC_ROUTE_41,            25 },
+    { MAPSEC_ROUTE_42,            26 },
+    { MAPSEC_ROUTE_43,            27 },
+    { MAPSEC_ROUTE_44,            28 },
+    { MAPSEC_ROUTE_45,            29 },
+    { MAPSEC_ROUTE_46,            30 },
+    { MAPSEC_ROUTE_47,            31 },
+    { MAPSEC_ROUTE_48,            32 },
+    { MAPSEC_BELL_TOWER,          33 },
+    { MAPSEC_DRAGONS_DEN,         34 },
+    { MAPSEC_ROUTE_27,            35 },
+    { MAPSEC_TOHJO_FALLS,         35 },
+    { MAPSEC_ROUTE_28,            36 },
+    { MAPSEC_MT_SILVER,           37 },
+    { MAPSEC_MT_SILVER_CAVE,      37 },
+    { MAPSEC_DARK_CAVE,           29 },
+    { MAPSEC_ILEX_FOREST,         18 },
+    { MAPSEC_S_S_AQUA,             7 },
+    { MAPSEC_ROCKET_HQ,           38 },
+    { MAPSEC_ICE_PATH,            28 },
+    { MAPSEC_SPROUT_TOWER,         3 },
+    { MAPSEC_JOHTO_VICTORY_ROAD,  32 },
+    { MAPSEC_SLOWPOKE_WELL,        4 },
+    { MAPSEC_GOLDENROD_TOWER,     39 },
+    { MAPSEC_BURNED_TOWER,         6 },
+    { MAPSEC_NATIONAL_PARK,       19 },
+    { MAPSEC_UNION_CAVE,          15 },
+    { MAPSEC_WHIRL_ISLANDS,       25 },
+    { MAPSEC_RUINS_OF_ALPH,       40 },
+    { MAPSEC_MT_MORTAR,           26 },
+    { MAPSEC_GOLDENROD_SEWERS,     5 },
+    { MAPSEC_CLIFF_CAVE,          31 },
+    { MAPSEC_LIGHTHOUSE,           7 }
 };
 
 static const u16 sDexAreas_Sevii1[][2] = {
-	{ MAPSEC_KINDLE_ROAD,    55 },
-	{ MAPSEC_TREASURE_BEACH, 56 },
-	{ MAPSEC_ONE_ISLAND,     48 },
-	{ MAPSEC_MT_EMBER,       72 }    
+	{ MAPSEC_PALLET_TOWN,         41 },
+    { MAPSEC_VIRIDIAN_CITY,       42 },
+    { MAPSEC_PEWTER_CITY,         43 },
+    { MAPSEC_CERULEAN_CITY,       44 },
+    { MAPSEC_VERMILION_CITY,      45 },
+    { MAPSEC_CELADON_CITY,        46 },
+    { MAPSEC_LAVENDER_TOWN,       47 },
+    { MAPSEC_FUCHSIA_CITY,        48 },
+    { MAPSEC_CINNABAR_ISLAND,     49 },
+    { MAPSEC_INDIGO_PLATEAU,      50 },
+    { MAPSEC_SAFFRON_CITY,        51 },
+    { MAPSEC_ROUTE_1,             52 },
+    { MAPSEC_ROUTE_2,             53 },
+    { MAPSEC_ROUTE_3,             54 },
+    { MAPSEC_ROUTE_4,             55 },
+    { MAPSEC_ROUTE_5,             56 },
+    { MAPSEC_ROUTE_6,             57 },
+    { MAPSEC_ROUTE_7,             58 },
+    { MAPSEC_ROUTE_8,             59 },
+    { MAPSEC_ROUTE_9,             60 },
+    { MAPSEC_ROUTE_10,            61 },
+    { MAPSEC_ROUTE_11,            62 },
+    { MAPSEC_ROUTE_12,            63 },
+    { MAPSEC_ROUTE_13,            64 },
+    { MAPSEC_ROUTE_14,            65 },
+    { MAPSEC_ROUTE_15,            66 },
+    { MAPSEC_ROUTE_16,            67 },
+    { MAPSEC_ROUTE_17,            68 },
+    { MAPSEC_ROUTE_18,            69 },
+    { MAPSEC_ROUTE_19,            70 },
+    { MAPSEC_ROUTE_20,            71 },
+    { MAPSEC_ROUTE_21,            72 },
+    { MAPSEC_ROUTE_22,            73 },
+    { MAPSEC_ROUTE_23,            74 },
+    { MAPSEC_ROUTE_24,            75 },
+    { MAPSEC_ROUTE_25,            76 },
+    { MAPSEC_ROUTE_26,            77 },
+    { MAPSEC_VIRIDIAN_FOREST,     53 },
+    { MAPSEC_MT_MOON,             54 },
+    { MAPSEC_CERULEAN_CAVE,       44 },
+    { MAPSEC_DIGLETTS_CAVE,       62 },
+    { MAPSEC_ROCK_TUNNEL,         61 },
+    { MAPSEC_KANTO_SAFARI_ZONE,   48 },
+    { MAPSEC_SEAFOAM_ISLANDS,     71 },
+    { MAPSEC_MEMORIAL_HOUSE,      47 },
+    { MAPSEC_KANTO_VICTORY_ROAD,  74 }
 };
 
 static const u16 sDexAreas_Sevii2[][2] = {
-	{ MAPSEC_CAPE_BRINK, 57 },
-	{ MAPSEC_TWO_ISLAND, 49 }    
+	{ MAPSEC_SINJOH_RUINS, 78 },
+	{ MAPSEC_UNUSED_C4,    79 }    
 };
 
 static const u16 sDexAreas_Sevii3[][2] = {
-	{ MAPSEC_BOND_BRIDGE,     58 },
-	{ MAPSEC_THREE_ISLE_PORT, 59 },
-	{ MAPSEC_THREE_ISLAND,    50 },
-	{ MAPSEC_BERRY_FOREST,    73 },
-	{ MAPSEC_THREE_ISLE_PATH, 59 }    
+	{ MAPSEC_SINJOH_RUINS, 78 },
+	{ MAPSEC_UNUSED_C4,    79 }       
 };
 
 static const u16 sDexAreas_Sevii4[][2] = {
-	{ MAPSEC_FOUR_ISLAND,  51 },
-	{ MAPSEC_ICEFALL_CAVE, 74 }    
+	{ MAPSEC_SINJOH_RUINS, 78 },
+	{ MAPSEC_UNUSED_C4,    79 }       
 };
 
 static const u16 sDexAreas_Sevii5[][2] = {
-	{ MAPSEC_RESORT_GORGEOUS,  60 },
-	{ MAPSEC_WATER_LABYRINTH,  61 },
-	{ MAPSEC_FIVE_ISLE_MEADOW, 62 },
-	{ MAPSEC_MEMORIAL_PILLAR,  63 },
-	{ MAPSEC_FIVE_ISLAND,      52 },
-	{ MAPSEC_ROCKET_WAREHOUSE, 62 },
-	{ MAPSEC_LOST_CAVE,        75 }    
+	{ MAPSEC_SINJOH_RUINS, 78 },
+	{ MAPSEC_UNUSED_C4,    79 }      
 };
 
 static const u16 sDexAreas_Sevii6[][2] = {
-	{ MAPSEC_OUTCAST_ISLAND, 64 },
-	{ MAPSEC_GREEN_PATH,     65 },
-	{ MAPSEC_WATER_PATH,     66 },
-	{ MAPSEC_RUIN_VALLEY,    67 },
-	{ MAPSEC_DOTTED_HOLE,    78 },
-	{ MAPSEC_PATTERN_BUSH,   77 },
-	{ MAPSEC_ALTERING_CAVE,  76 }    
+	{ MAPSEC_SINJOH_RUINS, 78 },
+	{ MAPSEC_UNUSED_C4,    79 }       
 };
 
 static const u16 sDexAreas_Sevii7[][2] = {
-	{ MAPSEC_TRAINER_TOWER,   68 },
-	{ MAPSEC_CANYON_ENTRANCE, 69 },
-	{ MAPSEC_SEVAULT_CANYON,  70 },
-	{ MAPSEC_TANOBY_RUINS,    71 },
-	{ MAPSEC_MONEAN_CHAMBER,  79 },
-	{ MAPSEC_LIPTOO_CHAMBER,  79 },
-	{ MAPSEC_WEEPTH_CHAMBER,  79 },
-	{ MAPSEC_DILFORD_CHAMBER, 79 },
-	{ MAPSEC_SCUFIB_CHAMBER,  79 },
-	{ MAPSEC_RIXY_CHAMBER,    79 },
-	{ MAPSEC_VIAPOIS_CHAMBER, 79 }    
+	{ MAPSEC_SINJOH_RUINS, 78 },
+	{ MAPSEC_UNUSED_C4,    79 }        
 };
 
 static const struct
@@ -145,6 +168,29 @@ static const struct
     { sDexAreas_Sevii6, ARRAY_COUNT(sDexAreas_Sevii6) },
     { sDexAreas_Sevii7, ARRAY_COUNT(sDexAreas_Sevii7) }
 };
+
+// Music region index: 0 = Johto, 1 = Kanto, 2-7 = other area tables.
+u8 GetBattleMusicDexRegion(u16 mapSection)
+{
+    u32 i, j;
+
+    for (i = 0; i < ARRAY_COUNT(sDexAreas_Kanto); ++i)
+    {
+        if (sDexAreas_Kanto[i][0] == mapSection)
+            return 0; // Johto
+    }
+
+    for (i = 0; i < ARRAY_COUNT(sSeviiDexAreas); ++i)
+    {
+        for (j = 0; j < (u32)sSeviiDexAreas[i].count; ++j)
+        {
+            if (sSeviiDexAreas[i].table[j][0] == mapSection)
+                return i + 1; // Kanto and Sevii 2-7
+        }
+    }
+
+    return 0xFF;
+}
 
 // Scans for the given species and populates 'subsprites' with the area markers.
 // Returns the number of areas where the species was found.
@@ -178,7 +224,7 @@ s32 GetSpeciesPokedexAreaMarkers(u16 species, struct Subsprite * subsprites)
     for (i = 0, areaCount = 0; headerTable[i].mapGroup != MAP_GROUP(UNDEFINED); i++)
     {
         mapSecId = GetMapSecIdFromWildMonHeader(&headerTable[i]);
-        if (mapSecId == MAPSEC_ALTERING_CAVE)
+        if (mapSecId == MAPSEC_UNUSED_C4)
         {
             alteringCaveCount++;
             if (alteringCaveNum != alteringCaveCount - 1)

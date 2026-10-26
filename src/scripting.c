@@ -3236,7 +3236,11 @@ void MiniBoxOpen(void)
         return;
 
     StringExpandPlaceholders(gStringVar4, gLoadPointer);
-	AddTextPrinterParameterized3(sSafariZoneStatsWindowId, 2, 8, 2, sMiniBoxTextColors, TEXT_SPEED_FF, gStringVar4);
+	u16 textWidth = GetStringWidth(0, gStringVar4, 0);
+	s16 textX = (72 - textWidth) / 2;
+	if (textX < 0)
+    textX = 0;
+	AddTextPrinterParameterized3(sSafariZoneStatsWindowId, 0, textX, 2, sMiniBoxTextColors, TEXT_SPEED_FF, gStringVar4);
     PutWindowTilemap(sSafariZoneStatsWindowId);
     CopyWindowToVram(sSafariZoneStatsWindowId, 2);
 }

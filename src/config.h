@@ -113,10 +113,8 @@ enum //These vars need to be one after the other (hence the enum)
 #define VAR_RUNTIME_CHANGEABLE 0x513E		//'Secret Base' variables, save 15 consecutive variables for this. 0x4080 in JPAN engine.
 
 /*===== Assorted Vars =====*/
-#define VAR_TRAINER_BGM_OVERRIDE 0x513F //Switches trainer battle song played to the value entered. Useful for regional music switch
-#define VAR_WILD_BGM_OVERRIDE 0x5140    //Switches wild Pokémon battle song played to the value entered. Useful for regional music switch
 #define VAR_BATTLE_TRANSITION_LOGO 0x5141 //Battle transition logo feature. it seems that setting it up with a value other than 0 causes funny graphic glitches.
-#define VAR_DYNAMIC_SHINY_RATE 0x5142 //Var to handle dynamic shiny rates. Credits to Defa.
+#define VAR_DYNAMIC_SHINY_RATE 0x513F //Var to handle dynamic shiny rates. Credits to Defa.
 
 /*===== Healing Place as in JPAN's Engine =====*/
 #define VAR_HEALINGMAP 0x5137 //0x405A in JPAN's Engine
@@ -275,6 +273,9 @@ enum //These vars need to be one after the other (hence the enum)
 #define SYNCHRONIZE_GIFT_POKEMON //Gift Pokemon can have their natures manipulated with synchronize
 #define CUSTOM_FILE_SIGNATURE 0x66290096
 #define HQ_MIXER //Inserts ipatix' HQ music mixer to maximize the quality of new HGSS music
+/*#define OW_SHADOWS // if defined, overworld sprites will have shadows.
+#define OW_SHADOW_OPACITY 10 // Shadow opacity: 0 (invisible) to 16 (opaque).*/
+#define NEW_BAG_UI_EXPANSION //If defined, will use the new bag UI made by us. It also adds new pockets to bag increasing overall capacity. Highly recommended!
 #define DEBUG_MODE //GS Chronicles specific debugging mode
 
 /*===== Misc Battle Effect Options =====*/

@@ -51,6 +51,7 @@
 
 #define NB_TABS         6
 #define NB_ROWS         5
+#define NB_ROW_HEIGHT   17
 #define NB_MAX_ENTRIES  780
 #define NB_MARK_LOC     0xAB
 #define NB_MARK_ID      0xBEEF
@@ -372,12 +373,12 @@ static const struct BgTemplate sNBBgTemplates[] =
 
 static const struct WindowTemplate sNBWindows[] =
 {
-	[NB_WIN_TABS]   = {.bg = 0, .tilemapLeft = 0,  .tilemapTop = 2,  .width = 30, .height = 2,  .paletteNum = 15, .baseBlock = 1},
-	[NB_WIN_ROWS]   = {.bg = 0, .tilemapLeft = 9,  .tilemapTop = 4,  .width = 21, .height = 10, .paletteNum = 15, .baseBlock = 61},
-	[NB_WIN_DETAIL] = {.bg = 0, .tilemapLeft = 5,  .tilemapTop = 14, .width = 25, .height = 6,  .paletteNum = 15, .baseBlock = 271},
-	[NB_WIN_MONEY]  = {.bg = 0, .tilemapLeft = 0,  .tilemapTop = 12, .width = 9,  .height = 2,  .paletteNum = 15, .baseBlock = 421},
-	[NB_WIN_POPUP]  = {.bg = 0, .tilemapLeft = 19, .tilemapTop = 5,  .width = 10, .height = 8,  .paletteNum = 15, .baseBlock = 439},
-	[NB_WIN_LIST]   = {.bg = 1, .tilemapLeft = 0,  .tilemapTop = 0,  .width = 2,  .height = 2,  .paletteNum = 15, .baseBlock = 519},
+	[NB_WIN_TABS]   = {.bg = 0, .tilemapLeft = 1,  .tilemapTop = 3,  .width = 7,  .height = 2,  .paletteNum = 15, .baseBlock = 1},
+	[NB_WIN_ROWS]   = {.bg = 0, .tilemapLeft = 9,  .tilemapTop = 3,  .width = 21, .height = 11, .paletteNum = 15, .baseBlock = 61},
+	[NB_WIN_DETAIL] = {.bg = 0, .tilemapLeft = 5,  .tilemapTop = 14, .width = 25, .height = 6,  .paletteNum = 15, .baseBlock = 292},
+	[NB_WIN_MONEY]  = {.bg = 0, .tilemapLeft = 0,  .tilemapTop = 12, .width = 9,  .height = 2,  .paletteNum = 15, .baseBlock = 442},
+	[NB_WIN_POPUP]  = {.bg = 0, .tilemapLeft = 19, .tilemapTop = 5,  .width = 10, .height = 8,  .paletteNum = 15, .baseBlock = 460},
+	[NB_WIN_LIST]   = {.bg = 1, .tilemapLeft = 0,  .tilemapTop = 0,  .width = 2,  .height = 2,  .paletteNum = 15, .baseBlock = 540},
 	DUMMY_WIN_TEMPLATE
 };
 
@@ -827,13 +828,19 @@ static void NB_DropChunks(u8 kind, u8 idx)
 
 static void NB_QueueLabel(u8 i)
 {
-	s32 w = GetStringWidth(0, sTabLabels[i], 0);
-	u16 x = 4 + i * 38;
+    s32 w;
+    u16 x;
 
-	NB_DropChunks(NB_KIND_LABEL, i);
-	FillWindowPixelRect(NB_WIN_TABS, PIXEL_FILL(0), x, 0, 34, 16);
-	NB_MarkDirty(NB_WIN_TABS);
-	NB_QueueText(NB_KIND_LABEL, i, NB_WIN_TABS, 0, x + (34 - w) / 2, 0, i == gNB->tab ? NB_COL_WHITE : NB_COL_DIM, sTabLabels[i]);
+    if (i != gNB->tab)
+        return;
+
+    NB_DropChunks(NB_KIND_LABEL, 0xFF);
+    FillWindowPixelBuffer(NB_WIN_TABS, PIXEL_FILL(0));
+    NB_MarkDirty(NB_WIN_TABS);
+
+    w = GetStringWidth(0, sTabLabels[i], 0);
+    x = w < 56 ? (56 - w) / 2 : 0;
+    NB_QueueText(NB_KIND_LABEL, 0, NB_WIN_TABS, 0, x, 0, NB_COL_DIM, sTabLabels[i]);
 }
 
 static void NB_UpdateTabVisuals(void)
@@ -892,10 +899,11 @@ static void NB_QueueRow(u8 r)
 {
 	struct NewBag* bag = gNB;
 	u16 idx = bag->top + r;
-	u16 y = r * 16;
+	u16 y = r * NB_ROW_HEIGHT;
+	u16 textY = y + 2;
 
 	NB_DropChunks(NB_KIND_ROW, r);
-	FillWindowPixelRect(NB_WIN_ROWS, PIXEL_FILL(0), 0, y, 168, 16);
+	FillWindowPixelRect(NB_WIN_ROWS, PIXEL_FILL(0), 0, y, 168, NB_ROW_HEIGHT);
 	NB_MarkDirty(NB_WIN_ROWS);
 
 	if (idx > bag->count)
@@ -906,22 +914,22 @@ static void NB_QueueRow(u8 r)
 		u16 item = bag->ids[idx];
 		u8 buf[12];
 
-		NB_QueueText(NB_KIND_ROW, r, NB_WIN_ROWS, 2, 8, y + 1, NB_COL_DARK, ItemId_GetName(item));
+		NB_QueueText(NB_KIND_ROW, r, NB_WIN_ROWS, 2, 8, textY + 2, NB_COL_DARK, ItemId_GetName(item));
 
 		if (bag->tab == 3)
 		{
 			if (IsItemRegistered(item))
-				NB_QueueText(NB_KIND_ROW, r, NB_WIN_ROWS, 0, 134, y + 1, NB_COL_RED, gText_NB_Reg);
+				NB_QueueText(NB_KIND_ROW, r, NB_WIN_ROWS, 0, 134, textY + 1, NB_COL_RED, gText_NB_Reg);
 		}
 		else
 		{
 			buf[0] = 0xB9; //x
 			ConvertIntToDecimalStringN(buf + 1, bag->qtys[idx], STR_CONV_MODE_RIGHT_ALIGN, 3);
-			NB_QueueText(NB_KIND_ROW, r, NB_WIN_ROWS, 2, 154 - GetStringWidth(2, buf, 0), y, NB_COL_SHADOW, buf);
+			NB_QueueText(NB_KIND_ROW, r, NB_WIN_ROWS, 2, 154 - GetStringWidth(2, buf, 0), textY + 2, NB_COL_SHADOW, buf);
 		}
 	}
 	else
-		NB_QueueText(NB_KIND_ROW, r, NB_WIN_ROWS, 2, 8, y + 1, NB_COL_DARK, gText_NB_Cancel);
+		NB_QueueText(NB_KIND_ROW, r, NB_WIN_ROWS, 2, 8, textY + 2, NB_COL_DARK, gText_NB_Cancel);
 }
 
 static void NB_QueueRows(u8 mask)
@@ -939,64 +947,60 @@ static void NB_QueueLabelsFor(u8 a, u8 b)
 		NB_QueueLabel(b);
 }
 
-//When the rows scroll, text that is still waiting to be drawn moves with its row
-static void NB_ShiftRowChunks(s8 delta)
+// Finish only item-list text immediately; keep detail/label queues asynchronous.
+static void NB_FinishRowText(void)
 {
-	struct NewBag* bag = gNB;
-	u8 n = 0;
-	u8 i;
-	struct NBChunk tmp[NB_QUEUE_SIZE];
+    struct NewBag* bag = gNB;
+    struct NBChunk kept[NB_QUEUE_SIZE];
+    u8 keptCount = 0;
+    u8 i;
 
-	for (i = 0; i < bag->qCount; ++i)
-	{
-		struct NBChunk* ch = &bag->queue[(bag->qHead + i) % NB_QUEUE_SIZE];
-		if (ch->kind == NB_KIND_ROW)
-		{
-			s16 r = (s16) ch->idx + delta;
-			if (r < 0 || r >= NB_ROWS)
-				continue; //That row left the list
-			tmp[n] = *ch;
-			tmp[n].idx = r;
-			tmp[n].y += delta * 16;
-			++n;
-		}
-		else
-			tmp[n++] = *ch;
-	}
-	for (i = 0; i < n; ++i)
-		bag->queue[i] = tmp[i];
-	bag->qHead = 0;
-	bag->qCount = n;
+    for (i = 0; i < bag->qCount; ++i)
+    {
+        struct NBChunk ch = bag->queue[(bag->qHead + i) % NB_QUEUE_SIZE];
+        if (ch.kind == NB_KIND_ROW)
+        {
+            AddTextPrinterParameterized3(ch.win, ch.font, ch.x, ch.y,
+                                         NB_ColorPtr(ch.color), 0, ch.text);
+            NB_MarkDirty(ch.win);
+        }
+        else
+            kept[keptCount++] = ch;
+    }
+    for (i = 0; i < keptCount; ++i)
+        bag->queue[i] = kept[i];
+    bag->qHead = 0;
+    bag->qCount = keptCount;
 }
 
-//Scrolling by exactly one row: shift the rows that are already drawn and only draw the one that appears
+// Shift already-rendered pixels by 17, including across 8-pixel tile boundaries.
+// Each 32-bit word is one horizontal 8-pixel scanline in 4bpp tile memory.
 static void NB_ScrollRows(s8 dir)
 {
-	u8* data = (u8*) GetWindowAttribute(NB_WIN_ROWS, WINDOW_TILE_DATA);
-	u32 rowBytes = 2 * 21 * 32; //Two tile rows = 16 pixels
-	u32 words = rowBytes / 4;
-	vu32 *dst, *src; //volatile: keeps the compiler from turning these loops into a memcpy call
-	u32 i;
+    u32* pixels = (u32*) GetWindowAttribute(NB_WIN_ROWS, WINDOW_TILE_DATA);
+    u32 widthTiles = GetWindowAttribute(NB_WIN_ROWS, WINDOW_WIDTH);
+    u32 y, x;
+    const u32 rowPixels = NB_ROWS * NB_ROW_HEIGHT;
 
-	if (dir > 0) //List moves up: a new row appears at the bottom
-	{
-		dst = (vu32*) data;
-		src = (vu32*) (data + rowBytes);
-		for (i = 0; i < words * (NB_ROWS - 1); ++i)
-			dst[i] = src[i];
-		NB_ShiftRowChunks(-1);
-		NB_QueueRow(NB_ROWS - 1);
-	}
-	else //List moves down: a new row appears at the top
-	{
-		dst = (vu32*) (data + rowBytes);
-		src = (vu32*) data;
-		for (i = words * (NB_ROWS - 1); i > 0; --i)
-			dst[i - 1] = src[i - 1];
-		NB_ShiftRowChunks(1);
-		NB_QueueRow(0);
-	}
-	NB_MarkDirty(NB_WIN_ROWS);
+    NB_FinishRowText();
+    if (dir > 0)
+    {
+        for (y = 0; y < rowPixels - NB_ROW_HEIGHT; ++y)
+            for (x = 0; x < widthTiles; ++x)
+                pixels[((y >> 3) * widthTiles + x) * 8 + (y & 7)] =
+                    pixels[(((y + NB_ROW_HEIGHT) >> 3) * widthTiles + x) * 8 + ((y + NB_ROW_HEIGHT) & 7)];
+        NB_QueueRow(NB_ROWS - 1);
+    }
+    else
+    {
+        for (y = rowPixels; y-- > NB_ROW_HEIGHT; )
+            for (x = 0; x < widthTiles; ++x)
+                pixels[((y >> 3) * widthTiles + x) * 8 + (y & 7)] =
+                    pixels[(((y - NB_ROW_HEIGHT) >> 3) * widthTiles + x) * 8 + ((y - NB_ROW_HEIGHT) & 7)];
+        NB_QueueRow(0);
+    }
+    NB_FinishRowText();
+    NB_MarkDirty(NB_WIN_ROWS);
 }
 
 static void NB_UpdateSelectionSprites(void)
@@ -1004,7 +1008,7 @@ static void NB_UpdateSelectionSprites(void)
 	struct NewBag* bag = gNB;
 	u16 total = bag->count + 1;
 	u32 i;
-	u16 y = 40 + (bag->sel - bag->top) * 16;
+	u16 y = 35 + (bag->sel - bag->top) * NB_ROW_HEIGHT;
 
 	for (i = 0; i < 5; ++i)
 		gSprites[bag->selSprites[i]].pos1.y = y;
@@ -1205,7 +1209,10 @@ static void NB_SetSelection(s32 newSel, bool8 sound)
 		else if (bag->top + 1 == oldTop)
 			NB_ScrollRows(-1);
 		else
+		{
 			NB_QueueRows(0x1F);
+			NB_FinishRowText();
+		}
 	}
 
 	NB_UpdateSelectionSprites();
@@ -1235,6 +1242,7 @@ static void NB_RefreshAll(void)
 {
 	NB_ClampPosition();
 	NB_QueueRows(0x1F);
+	NB_FinishRowText();
 	NB_UpdateSelectionSprites();
 	NB_QueueDetail();
 }
@@ -1993,15 +2001,15 @@ static void NB_LoadSprites(void)
 	pal.data = (const u16*) (gender ? NB_BagGirlPal : NB_BagBoyPal);
 	pal.tag = NB_TAG_BAG_PAL;
 	LoadSpritePalette(&pal);
-	bag->bagSprite = CreateSprite(&sBagTemplate, 36, 72, 2);
+	bag->bagSprite = CreateSprite(&sBagTemplate, 36, 74, 2);
 	StartSpriteAnim(&gSprites[bag->bagSprite], bag->tab);
 
 	//Selection bar: left cap, 3 middle pieces, right cap (covers the 160px wide row card)
-	bag->selSprites[0] = CreateSprite(&sSelLTemplate, 90, 40, 3);
-	bag->selSprites[1] = CreateSprite(&sSelMTemplate, 122, 40, 3);
-	bag->selSprites[2] = CreateSprite(&sSelMTemplate, 154, 40, 3);
-	bag->selSprites[3] = CreateSprite(&sSelMTemplate, 186, 40, 3);
-	bag->selSprites[4] = CreateSprite(&sSelRTemplate, 218, 40, 3);
+	bag->selSprites[0] = CreateSprite(&sSelLTemplate, 90, 36, 3);
+	bag->selSprites[1] = CreateSprite(&sSelMTemplate, 122, 36, 3);
+	bag->selSprites[2] = CreateSprite(&sSelMTemplate, 154, 36, 3);
+	bag->selSprites[3] = CreateSprite(&sSelMTemplate, 186, 36, 3);
+	bag->selSprites[4] = CreateSprite(&sSelRTemplate, 218, 36, 3);
 	bag->thumbSprite = CreateSprite(&sThumbTemplate, 238, 41, 3);
 	bag->itemIconSprite = 0xFF;
 }
@@ -2066,7 +2074,7 @@ static void NB_FinishSetup(void)
 	NB_ShowWindow(NB_WIN_DETAIL);
 	NB_LoadSprites();
 	NB_UpdateTabVisuals();
-	{ u8 i; for (i = 0; i < NB_TABS; ++i) NB_QueueLabel(i); }
+	NB_QueueLabel(tab);
 	NB_BuildEntries(tab);
 
 	taskId = CreateTask(Task_NB_Input, 0);

@@ -2147,6 +2147,9 @@ gSafariZoneStepCounter = 0x2039996;
 CB2_OpenPokedexFromStartMenu = 0x810275c | 1;
 CB2_PartyMenuFromStartMenu = 0x8126eb0 | 1;
 PlayCry_Normal = 0x8071df0 | 1;
+Cmd_getmoneyreward = 0x80258ac | 1;
+gWirelessCommType = 0x03003f3c;
+gReceivedRemoteLinkPlayers = 0x03003f64;
 
 /* New Bag */
 IsWritingMailAllowed = 0x80BF6D8 | 1;
@@ -2167,8 +2170,6 @@ NBv_AddPCItem = 0x809A3C8 | 1;
 InitTMCase = 0x81317F8 | 1;
 InitBerryPouch = 0x813CD50 | 1;
 DecompressAndCopyTileDataToVram = 0x80F6878 | 1;
-
-SetCaughtUnown = 0x8B00A10 | 1;
 
 /* IO */
 BG3HOFS = 0x400001C;

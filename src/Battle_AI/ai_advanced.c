@@ -1107,7 +1107,7 @@ static bool8 BankHasAbilityUsefulToProtectFor(u8 bankAtk, u8 bankDef)
 	return FALSE;
 }
 
-u8 ShouldProtect(u8 bankAtk, u8 bankDef, u16 move)
+enum ProtectQueries ShouldProtect(u8 bankAtk, u8 bankDef, u16 move)
 {
 	u16 predictedMove = IsValidMovePrediction(bankDef, bankAtk);
 	u8 predictedMoveEffect = gBattleMoves[predictedMove].effect;

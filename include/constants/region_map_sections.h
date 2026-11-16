@@ -123,7 +123,7 @@ u8 __attribute__((long_call)) GetCurrentRegionMapSectionId(void);
 #define METLOC_IN_GAME_TRADE                0xFE
 #define METLOC_FATEFUL_ENCOUNTER            0xFF
 
-#define KANTO_MAPSEC_COUNT (MAPSEC_CELADON_DEPT - MAPSEC_DYNAMIC)
+#define KANTO_MAPSEC_COUNT (MAPSEC_UNUSED_C4 - MAPSEC_DYNAMIC)
 
 #ifdef UNBOUND //For Pokemon Unbound
 

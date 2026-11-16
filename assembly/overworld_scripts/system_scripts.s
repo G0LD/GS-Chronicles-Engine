@@ -1223,7 +1223,32 @@ EventScript_CableClub_WirelessTrade:
 
 .global SystemScript_DebugMenu
 SystemScript_DebugMenu:
-	goto 0x8C4176A
+	lockall
+setvar 0x8008 0x0
+setvar 0x8009 0x0
+msgbox gBuildTimestampText MSG_KEEPOPEN
+waitmsg
+setvar 0x8000 0x0
+setvar 0x8001 0x7
+setvar 0x8004 0x0
+special 0x158
+waitstate
+compare LASTRESULT 0x0
+if 0x1 _goto 0x8C417DB
+compare LASTRESULT 0x1
+if 0x1 _goto 0x8C4180E
+compare LASTRESULT 0x2
+if 0x1 _goto 0x8C41837
+compare LASTRESULT 0x3
+if 0x1 _goto 0x8C41840
+compare LASTRESULT 0x4
+if 0x1 _goto 0x8C41871
+compare LASTRESULT 0x5
+if 0x1 _goto 0x8C41892
+compare LASTRESULT 0x6
+if 0x1 _goto 0x8C418C8
+releaseall
+end
 
 @;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
@@ -1286,3 +1311,124 @@ EventScript_exit:
 	end
 
 @;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+.global EventScript_mom_savings
+EventScript_mom_savings:
+	lock
+	faceplayer
+	msgbox gText_Greeting MSG_KEEPOPEN
+	multichoice 0x0 0x0 77 0x0
+	compare LASTRESULT 0x0
+	if equal _goto Eventscript_Withdraw
+	compare LASTRESULT 0x1
+	if equal _goto Eventscript_Deposit
+	compare LASTRESULT 0x2
+	if equal _goto Eventscript_Change
+	compare LASTRESULT 0x3
+	if equal _goto Eventscript_Exit
+	compare LASTRESULT 0x7F
+	if equal _goto Eventscript_ExitB
+	end
+
+Eventscript_Withdraw:
+    callasm Special_MomPrepareWithdrawal +1
+    compare LASTRESULT 0x0
+    if equal _goto Eventscript_WithdrawUnavailable
+	showmoney 0x0 0x0 0x0
+    callasm Special_MomShowSavings +1
+    msgbox gText_WithdrawQuestion MSG_KEEPOPEN
+    special 0x146
+    waitstate
+    compare LASTRESULT 0x7F
+    if equal _goto Eventscript_Cancel
+    callasm Special_MomCompleteWithdrawal +1
+    compare LASTRESULT 0x1
+    if equal _goto Eventscript_WithdrawSuccess
+    compare LASTRESULT 0x2
+    if equal _goto Eventscript_WithdrawInsufficient
+    goto Eventscript_Cancel
+
+Eventscript_Deposit:
+	checkflag 0x1446
+	if 0x0 _goto Eventscript_Change
+	callasm Special_MomPrepareDeposit +1
+	compare LASTRESULT 0x3
+	if equal _goto Eventscript_SavingsFull
+	compare LASTRESULT 0x0
+	if equal _goto Eventscript_DepositUnavailable
+	showmoney 0x0 0x0 0x0
+	msgbox gText_DepositQuestion MSG_KEEPOPEN
+	special 0x146
+	waitstate
+	compare LASTRESULT 0x7F
+	if equal _goto Eventscript_Cancel
+	callasm Special_MomCompleteDeposit +1
+	compare LASTRESULT 0x1
+	if equal _goto Eventscript_DepositSuccess
+	compare LASTRESULT 0x2
+	if equal _goto Eventscript_DepositInsufficient
+	compare LASTRESULT 0x3
+	if equal _goto Eventscript_SavingsFull
+	goto Eventscript_Cancel
+
+Eventscript_WithdrawSuccess:
+	sound 248
+	updatemoney
+	msgbox gText_WithdrawSuccess MSG_NORMAL
+	checksound
+	goto Eventscript_Exit
+
+Eventscript_DepositSuccess:
+	sound 248
+	updatemoney
+	msgbox gText_DepositSuccess MSG_NORMAL
+	checksound
+	goto Eventscript_Exit
+
+Eventscript_WithdrawUnavailable:
+	msgbox gText_WithdrawUnavailable MSG_NORMAL
+	goto Eventscript_Exit
+
+Eventscript_WithdrawInsufficient:
+	msgbox gText_WithdrawInsufficient MSG_NORMAL
+	goto Eventscript_Exit
+
+Eventscript_DepositUnavailable:
+	msgbox gText_DepositUnavailable MSG_NORMAL
+	goto Eventscript_Exit
+
+Eventscript_DepositInsufficient:
+	msgbox gText_DepositInsufficient MSG_NORMAL
+	goto Eventscript_Exit
+
+Eventscript_SavingsFull:
+	msgbox gText_SavingsFull MSG_KEEPOPEN
+	goto Eventscript_Exit
+
+Eventscript_Change:
+	msgbox gText_ChangeQuestion MSG_YESNO
+	compare LASTRESULT 0x1
+	if equal _goto Eventscript_ChangeYes
+	clearflag 0x1446
+	goto Eventscript_ChangeFarewell
+
+Eventscript_ChangeYes:
+	setflag 0x1446
+	goto Eventscript_ChangeFarewell
+
+Eventscript_ChangeFarewell:
+	msgbox gText_ChangeFarewell 0x6
+	goto Eventscript_Exit
+
+Eventscript_Cancel:
+	msgbox gText_Cancel 0x6
+	goto Eventscript_Exit
+
+Eventscript_ExitB:
+	closeonkeypress
+	releaseall
+	end
+
+Eventscript_Exit:
+	hidemoney
+	releaseall
+	end

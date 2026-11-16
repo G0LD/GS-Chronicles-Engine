@@ -107,7 +107,7 @@ gBattleScriptingCommandsTable:
 .word 0x802537d					@yesnoboxlearnmove
 .word 0x80256e1					@yesnoboxstoplearningmove
 .word atk5C_hitanimation		@flash
-.word 0x80258ad					@getmoneyreward
+.word Cmd_GetMoneyRewardWithMom	@getmoneyreward
 .word 0x8025a71					@atk5e
 .word 0x8025b25					@atk5f
 .word 0x8025b75					@incrementgamestat
@@ -159,7 +159,7 @@ gBattleScriptingCommandsTable:
 .word 0x802821d					@initmultihitstring
 .word atk8F_forcerandomswitch
 .word atk90_tryconversiontypechange	@changetypestoenemyattacktype
-.word atk91_givepaydaymoney
+.word Cmd_GivePayDayWithMom
 .word atk92_setlightscreen
 .word atk93_tryKO
 .word atk94_damagetohalftargethp	@gethalfcurrentenemyhp

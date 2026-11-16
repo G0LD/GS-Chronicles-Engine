@@ -1557,7 +1557,7 @@ void CreateSummaryScreenGigantamaxIcon(void)
 	//Base the position of the icon off of where the Poke Ball sprite is
 	struct Sprite* ballSprite = &gSprites[sMonSummaryScreen->ballIconSpriteId];
 
-	if (false)
+	if (0)
 	{
 		LoadCompressedSpriteSheetUsingHeap(&sSummaryScreenGigantamaxIconSpriteSheet);
 		LoadPalette(sSummaryScreenGigantamaxIconSpritePalette.data, (15 * 16) + 0x100, 32); //Load into last sprite palette slot

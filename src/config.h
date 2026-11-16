@@ -69,6 +69,10 @@
 #define FLAG_LEGENDARY_APPEARED_STRING 0x1443 //Load string "Species" appeared!
 #define FLAG_DISABLE_POKEDEX_REGISTRY 0x1444 //Disables the Pokédex to prevent caught Pokémon to be registered
 #define FLAG_ROGUE_APPEARED_STRING 0x1445 //Load string for mad Pokemon!
+#define FLAG_MOM_SAVING 0x1446 //Flag to enable or disable Mom saving 5% of your trainer battle money earnings.
+#define VAR_MOM_MONEY_LOW 0x402C //32-bit var to save money. Var 1 of 2 since vars can't hold over 65,536 pokedollars.
+#define VAR_MOM_MONEY_HIGH 0x402D //32-bit var to save money. Var 2 of 2 since vars can't hold over 65,536 pokedollars.
+#define VAR_MOM_LAST_DEPOSIT 0x402F //Var to remember how much was deposited.
 
 /*===== Start Menu/Poketools Flags =====*/
 #define FLAG_SYS_BAG_HIDE 0x141B		//Toggle bag off
@@ -276,6 +280,7 @@ enum //These vars need to be one after the other (hence the enum)
 /*#define OW_SHADOWS // if defined, overworld sprites will have shadows.
 #define OW_SHADOW_OPACITY 10 // Shadow opacity: 0 (invisible) to 16 (opaque).*/
 #define NEW_BAG_UI_EXPANSION //If defined, will use the new bag UI made by us. It also adds new pockets to bag increasing overall capacity. Highly recommended!
+#define NEW_BATTLE_TEXTBOX //Dark UI for the battle message box, action menu (FIGHT/BAG/POKEMON/RUN), move menu and Yes/No box. Comment out to use the vanilla look.
 #define DEBUG_MODE //GS Chronicles specific debugging mode
 
 /*===== Misc Battle Effect Options =====*/
@@ -334,8 +339,8 @@ enum //These vars need to be one after the other (hence the enum)
 #define HAIL_IN_BATTLE //Uncommenting this line enables the Hail weather effect in battle when the OW weather is set to WEATHER_STEADY_SNOW (0x7)
 #define FOG_IN_BATTLE //Uncommenting this line enables the Fog weather effect in battle. Don't uncomment this line without uncommenting one of the lines below!
 #define FOG_IN_BATTLE_1 //Uncommenting this line enables the Fog weather effect when the OW weather is set to WEATHER_FOG_1 (0x6)
-#define FOG_IN_BATTLE_2 //Uncommenting this line enables the Fog weather effect when the OW weather is set to WEATHER_FOG_2 (0x9)
-#define FOG_IN_BATTLE_3 //Uncommenting this line enables the Fog weather effect when the OW weather is set to WEATHER_FOG_3 (0xA)
+//#define FOG_IN_BATTLE_2 //Uncommenting this line enables the Fog weather effect when the OW weather is set to WEATHER_FOG_2 (0x9)
+//#define FOG_IN_BATTLE_3 //Uncommenting this line enables the Fog weather effect when the OW weather is set to WEATHER_FOG_3 (0xA)
 #define HIDE_HEALTHBOXES_DURING_ANIMS //Commenting this line prevents the health boxes from being hidden during move animations and some special animations.
 //#define DONT_HIDE_HEALTHBOXES_ATTACKER_STATUS_MOVES //Uncommenting this line doesn't hide the healthboxes when the attacker is using a status move that targets itself (Gen 4).
 #define FASTER_HEALTHBOX_CHANGE //The healthbar increases/decreases at a somewhat constant rate for all Pokemon
@@ -351,7 +356,7 @@ enum //These vars need to be one after the other (hence the enum)
 #define TAKE_WILD_MON_ITEM_ON_CAPTURE //Items held by Wild Pokemon when caught can be placed in the bag at the player's request
 //#define PAYDAY_MONEY_CAP //Pay Day and G-Max Gold Rush should cap at $99999 per battle
 //#define QUICK_CLAW_PROCING_ALWAYS_ALLOWS_FLEEING //Fleeing from wild battles will never fail the turn a Quick Claw activates
-#define FROSTBITE //Replaces the Freeze status condition with the Frostbite status condition from PLA
+//#define FROSTBITE //Replaces the Freeze status condition with the Frostbite status condition from PLA
 
 /* DexNav Options */
 //See "include/new/dexnav_config.h"

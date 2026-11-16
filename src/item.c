@@ -1194,7 +1194,7 @@ struct BagSlots
 	u16 pocket;
 };
 
-struct BagPockets
+/*struct BagPockets
 {
 	struct ItemSlot* itemRam;
 	u32 itemAmount;
@@ -1206,7 +1206,7 @@ struct BagPockets
 	u32 tmAmount;
 	struct ItemSlot* berryRam;
 	u32 berryAmount;
-};
+};*/
 
 static const struct BagPockets sBagPocketArrangement =
 {

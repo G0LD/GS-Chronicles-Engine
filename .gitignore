@@ -53,3 +53,6 @@ test.sa4
 test-16.png
 test-20.png
 test-21.png
+strings/build_timestamp.string
+*.faulty
+scripts/apply_continueanim_guard.py

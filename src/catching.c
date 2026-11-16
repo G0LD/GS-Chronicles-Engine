@@ -23,6 +23,8 @@
 #include "../include/new/mega.h"
 #include "../include/new/pokemon_storage_system.h"
 
+#define VAR_UNOWNCAUGHT_PT1 0x40B3
+#define VAR_UNOWNCAUGHT_PT2 0x40B4
 /*
 catching.c
 	handles the catch probability logic, expands pokeballs, etc.
@@ -59,6 +61,23 @@ extern species_t gUltraBeastList[];
 //This file's functions:
 static u8 GetCatchingBattler(void);
 static bool8 CriticalCapture(u32 odds);
+
+static void RegisterCaughtUnownForm(u32 personality)//Remade function to wake up original Unown Report and fix compatibility
+{
+    u32 letter = (personality & 3)
+               | ((personality >> 6) & 0xC)
+               | ((personality >> 12) & 0x30)
+               | ((personality >> 18) & 0xC0);
+    u32 flags;
+
+    letter %= 28;
+    flags = (u32)VarGet(VAR_UNOWNCAUGHT_PT1)
+          | ((u32)VarGet(VAR_UNOWNCAUGHT_PT2) << 16);
+    flags |= (1u << letter);
+    VarSet(VAR_UNOWNCAUGHT_PT1, (u16)flags);
+    VarSet(VAR_UNOWNCAUGHT_PT2, (u16)(flags >> 16));
+}
+
 
 void atkEF_handleballthrow(void)
 {
@@ -802,9 +821,8 @@ void atkF1_trysetcaughtmondexflags(void)
 	u16 species = GetMonData(mon, MON_DATA_SPECIES, NULL);
 	u32 personality = GetMonData(mon, MON_DATA_PERSONALITY, NULL);
 
-	/*if (species == SPECIES_UNOWN) {
-        SetCaughtUnown(GetUnownLetterByPersonality(personality));
-    }*/
+	if (species == SPECIES_UNOWN)
+		RegisterCaughtUnownForm(personality);
 
     species = SpeciesToNationalPokedexNum(species);
     if (GetSetPokedexFlag(species, FLAG_GET_CAUGHT)) {

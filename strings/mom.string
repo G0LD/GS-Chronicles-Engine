@@ -1,0 +1,59 @@
+#org @gText_Greeting
+Hi! Welcome home!\nYou're doing fine, I see.\pI've kept your room tidy and clean.\nOr...\lIs this about your money?
+
+#org @gText_WithdrawQuestion
+You currently have:\n\$[BUFFER1] saved.\lHow much would you like to withdraw?
+
+#org @gText_DepositQuestion
+How much money do you want me\nto keep safe?
+
+#org @gText_WithdrawSuccess
+Here's your money, sweetie!\nDon't spend it all at once!
+
+#org @gText_DepositSuccess
+I'll keep your money safe!\nYou can withdraw it anytime.
+
+#org @gText_WithdrawUnavailable
+You don't have any money\navailable to withdraw, sweetie!
+
+#org @gText_WithdrawInsufficient
+You don't have that much\nmoney saved, sweetie!
+
+#org @gText_DepositUnavailable
+You don't have any money\navailable to deposit, sweetie!
+
+#org @gText_DepositInsufficient
+You don't have that much\nmoney with you, sweetie!
+
+#org @gText_SavingsFull
+Oh! I can't hold any\nmore money right now!
+
+#org @gText_ChangeQuestion
+Do you want to save some money?
+
+#org @gText_ChangeFarewell
+OK, but be careful out there.\pPok\emon are your friends.\nWhen you work as a team,\lyou can accomplish everything!\lNow, go on!
+
+#org @gText_Cancel
+All right, sweetie!\nI'll keep your money safe.
+
+#org @gText_MomJourney
+You can count on me in your\njourney, [PLAYER]!
+
+#org @gText_MomElmWaiting
+Prof.Elm has been waiting for you,\nhoney. Please, go and help him!
+
+#org @gText_MomIntroduction
+Oh! [PLAYER]! That's a cute\nPokémon you have. Professor Elm\lmust have given it to you?\pOh, Professor Elm has a task for\nyou, you say? What kind of task?\p...\pI see. That sounds a little\ndifficult. But when someone takes\lthat kind of request of you, it\lmust be important! Oh, that's\lright! I completely forgot! Your\lPokégear came back from the\lrepair shop! Here you go!
+
+#org @gText_MomKanto
+I can't believe my beloved baby\nis now travelling to Kanto!\pMr. Aspryus was very thoughful\nby giving you a ticket. We have\lbeen friends for a long time.\lI'm glad to see he remains\lhumble even after becoming\lrich overnight.
+
+#org @gText_MomPokegear
+[BLUE]The Pokémon Gear[BLACK]... or [RED]Pokégear[BLACK],\nas it's often called, is what\levery Trainer should have. Guess\lwhat? You can use the Pokégear to\lmake a phone call, too.\pJust power on the Pokégear and\ntouch the telephone button, OK?\lThe names of people you can call\lare automatically registered.\lJust select one to give him or\lher a call. Wow, I can't believe\lit's so easy to make a phone call!
+
+#org @gText_Momasksaving
+Before I let you go. I can save some\nof your money earned after you win\la Pok\emon battle!\lDo you want me to save some money?
+
+#org @gText_Momoktosaving
+All right, sweetie!\nI'll keep your money safe.!\pPok\emon are your friends.\nWhen you work as a team,\lyou can accomplish everything!\lNow, go on!

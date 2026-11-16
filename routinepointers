@@ -187,6 +187,7 @@ sp11C_GiveRaidBattleRewards 081601D0
 MysteryGift_Start 081601E8
 sp12C_DoEnterPhraseScreen 08160210
 sp12D_CompareEnteredPhrase 08160214
+sp14E_ShowBuildTimestamp 08160298
 
 sp196_TryCopyTMNameToBuffer1 081603B8
 
@@ -249,8 +250,8 @@ VBlankCB_Battle 8077A9C
 
 ##Assorted GS Chronicles Repoints
 CompressedMonToMon 08f3b7ec
-PokegearDexNavCallback 091d84ec
-GetBattleMusicDexRegion 08f68170
+PokegearDexNavCallback 091e537c
+GetBattleMusicDexRegion 08f681a0
 MiniBoxOpen 089f008f
 
 FieldUseFunc_EVReducingBerry 8F71A68

@@ -17,6 +17,7 @@ npc 1 76 0  EventScript_E4Rematches_Koga
 npc 1 77 0  EventScript_E4Rematches_Aile
 npc 1 78 0  EventScript_E4Rematches_Karen
 npc 9 0 0   EventScript_Randomevent03
+npc 26 1 0  Eventscript_Mom
 
 ##Trigger Scripts
 tile 3 24 0 EventScript_RivalRoute34_0XC16B40
